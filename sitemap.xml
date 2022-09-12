@@ -20,25 +20,43 @@
   </url>
   
   <url>
+    <loc>https://www.timeshike.com/2022/03/31/%E9%9D%92%E8%8D%89/</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.timeshike.com/2022/03/25/%E9%A3%8E%E4%B8%AD%E8%A1%8C%E5%AE%A2/</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.timeshike.com/about/index.html</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.timeshike.com/categories/index.html</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.timeshike.com/2022/03/20/%E6%B5%81%E5%B9%B4%E4%BC%BC%E6%B0%B4%EF%BC%8C%E7%9F%B3%E5%88%BB%E6%B0%B8%E6%81%92/</loc>
-    
-    <lastmod>2022-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.timeshike.com/2022/09/12/JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
-    
-    <lastmod>2022-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.timeshike.com/2022/09/08/9%E6%9C%888%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -182,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://www.timeshike.com/2022/03/31/%E9%9D%92%E8%8D%89/</loc>
-    
-    <lastmod>2022-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.timeshike.com/2022/03/30/%E6%9C%88%E5%A4%9C%E6%BC%82%E6%B5%81/</loc>
     
     <lastmod>2022-09-12</lastmod>
@@ -210,15 +219,6 @@
   
   <url>
     <loc>https://www.timeshike.com/2022/03/26/%E4%BB%8E%E5%A4%AA%E7%A9%BA%E4%B8%AD%E7%9C%8B%E5%9C%B0%E7%90%83%E8%83%BD%E7%9C%8B%E8%A7%81%E4%BB%80%E4%B9%88%EF%BC%9F/</loc>
-    
-    <lastmod>2022-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.timeshike.com/2022/03/25/%E9%A3%8E%E4%B8%AD%E8%A1%8C%E5%AE%A2/</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -353,7 +353,7 @@
   </url>
   
   <url>
-    <loc>https://www.timeshike.com/about/index.html</loc>
+    <loc>https://www.timeshike.com/2022/09/12/Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -362,7 +362,16 @@
   </url>
   
   <url>
-    <loc>https://www.timeshike.com/categories/index.html</loc>
+    <loc>https://www.timeshike.com/2022/09/12/JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.timeshike.com/2022/09/08/9%E6%9C%888%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2022-09-12</lastmod>
     
@@ -1601,20 +1610,6 @@
   </url>
   
   <url>
-    <loc>https://www.timeshike.com/categories/%E5%BD%B1%E8%A7%86%E4%B9%A6%E8%AF%84/</loc>
-    <lastmod>2022-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.timeshike.com/categories/%E4%BA%BA%E7%94%9F%E6%95%85%E4%BA%8B/</loc>
-    <lastmod>2022-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.timeshike.com/categories/%E7%8E%B0%E4%BB%A3%E8%AF%97%E6%AD%8C/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1629,7 +1624,21 @@
   </url>
   
   <url>
+    <loc>https://www.timeshike.com/categories/%E5%BD%B1%E8%A7%86%E4%B9%A6%E8%AF%84/</loc>
+    <lastmod>2022-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.timeshike.com/categories/%E7%8E%B0%E4%BB%A3%E6%95%A3%E6%96%87/</loc>
+    <lastmod>2022-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.timeshike.com/categories/%E4%BA%BA%E7%94%9F%E6%95%85%E4%BA%8B/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
