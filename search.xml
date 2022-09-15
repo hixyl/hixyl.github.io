@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>Vue使用axios下载文件的方法</title>
+      <link href="/2022/09/15/Vue%E4%BD%BF%E7%94%A8axios%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+      <url>/2022/09/15/Vue%E4%BD%BF%E7%94%A8axios%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>axios &#x8BF7;&#x6C42;&#x5934;&#x90E8;&#x52A0;&#x4E0A;responseType=&#x2019;blob&#x2019;</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">download</span> = (<span class="params">data</span>) =&gt; {</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">request</span>({</span><br><span class="line">    <span class="attr">url</span>:<span class="string">&apos;&#x8BF7;&#x6C42;&#x5730;&#x5740;&apos;</span>,</span><br><span class="line">    <span class="attr">method</span>: <span class="string">&apos;post&apos;</span>,</span><br><span class="line">    <span class="attr">responseType</span>:<span class="string">&apos;blob&apos;</span>,</span><br><span class="line">    <span class="attr">data</span>: data</span><br><span class="line">  })</span><br><span class="line">}</span><br></pre></td></tr></table></figure><p>&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x54CD;&#x5E94;&#x5934;&#x90E8;&#x9700;&#x8981;&#x8BBE;&#x7F6E;Access-Control-Expose-Headers&#x5934;&#x90E8;&#x4FE1;&#x606F;&#xFF0C;&#x628A;&#x4F60;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x5934;&#x90E8;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x5728;&#x8FD9;&#x4E2A;&#x503C;&#x91CC;&#x9762;&#x524D;&#x7AEF;&#x54CD;&#x5E94;&#x90E8;&#x5206;&#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x53EF;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#xFF08;&#x591A;&#x4E2A;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#x8BBE;&#x7F6E;&#x524D;&#x7AEF;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x540D;&#x5B57;</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">response.setHeader(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment;filename=&quot;</span> + URLEncoder.encode(message, <span class="string">&quot;UTF-8&quot;</span>));</span><br><span class="line">response.setContentType(<span class="string">&quot;application/octet-stream&quot;</span>);</span><br><span class="line">response.setHeader(<span class="string">&quot;Access-Control-Expose-Headers&quot;</span>, <span class="string">&quot;Content-Disposition&quot;</span>);</span><br></pre></td></tr></table></figure><p>&#x524D;&#x7AEF;js&#x5904;&#x7406;&#x54CD;&#x5E94;&#x90E8;&#x5206;&#x8FDB;&#x884C;blob&#x5B57;&#x8282;&#x5904;&#x7406;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> filename = res.<span class="property">headers</span>[<span class="string">&quot;content-disposition&quot;</span>];</span><br><span class="line"><span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([res.<span class="property">data</span>]);</span><br><span class="line"><span class="keyword">var</span> downloadElement = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> href = <span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">createObjectURL</span>(blob);</span><br><span class="line">downloadElement.<span class="property">href</span> = href;</span><br><span class="line">downloadElement.<span class="property">download</span> = <span class="built_in">decodeURIComponent</span>(filename.<span class="title function_">split</span>(<span class="string">&quot;filename=&quot;</span>)[<span class="number">1</span>]);</span><br><span class="line"><span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(downloadElement);</span><br><span class="line">downloadElement.<span class="title function_">click</span>();</span><br><span class="line"><span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(downloadElement);</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">revokeObjectURL</span>(href);   </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 新知笔记 </category>
+          
+          <category> 前端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> html </tag>
+            
+            <tag> css </tag>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>9月15日spring笔记</title>
       <link href="/2022/09/15/9%E6%9C%8815%E6%97%A5spring%E7%AC%94%E8%AE%B0/"/>
       <url>/2022/09/15/9%E6%9C%8815%E6%97%A5spring%E7%AC%94%E8%AE%B0/</url>
