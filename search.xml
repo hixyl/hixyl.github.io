@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Spring切面编程错误warning no match for this type name:com.xxx.xxx 解决方案</title>
+      <link href="/2022/09/23/Spring%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B%E9%94%99%E8%AF%AFwarning-no-match-for-this-type-name-com-xxx-xxx-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>/2022/09/23/Spring%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B%E9%94%99%E8%AF%AFwarning-no-match-for-this-type-name-com-xxx-xxx-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="&#x9519;&#x8BEF;"><a href="#&#x9519;&#x8BEF;" class="headerlink" title="&#x9519;&#x8BEF;"></a>&#x9519;&#x8BEF;</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Before(&quot;execution(* com.LightseaBlue.Spring.*(..))&quot;)</span><br></pre></td></tr></table></figure><h2 id="&#x5206;&#x6790;"><a href="#&#x5206;&#x6790;" class="headerlink" title="&#x5206;&#x6790;"></a>&#x5206;&#x6790;</h2><p>&#x4FEE;&#x6539;&#x6210;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x591A;&#x4E00;&#x4E2A;&#x70B9;&#x7684;&#x4E8B;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x8BE6;&#x7EC6;&#x7406;&#x89E3;&#x8FD9;&#x91CC;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;<br>&#x6211;&#x4EEC;&#x8981;&#x627E;&#x5230;Spring&#x5305;&#x4E0B;&#x5B50;&#x5305;&#x7684;&#x7C7B;&#x8FDB;&#x884C;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;.&#x4EE3;&#x8868;&#x4E86;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5305;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;<br>&#x2026; &#x4EE3;&#x8868;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5305;&#x548C;&#x5B50;&#x5305;&#x7684;&#x65B9;&#x6CD5;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Before(&quot;execution(* com.LightseaBlue.Spring..*(..))&quot;)</span><br></pre></td></tr></table></figure><h2 id="&#x5E38;&#x89C1;&#x7684;&#x5207;&#x9762;&#x8868;&#x8FBE;&#x5F0F;"><a href="#&#x5E38;&#x89C1;&#x7684;&#x5207;&#x9762;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x5E38;&#x89C1;&#x7684;&#x5207;&#x9762;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x5E38;&#x89C1;&#x7684;&#x5207;&#x9762;&#x8868;&#x8FBE;&#x5F0F;</h2><p>1 &#x6240;&#x6709;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x6267;&#x884C;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(public * *(..))</span><br></pre></td></tr></table></figure><p>2 &#x6240;&#x6709;&#x4EE5;set&#x5F00;&#x5934;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x6267;&#x884C;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(* set*(..))</span><br></pre></td></tr></table></figure><p>3 AccountService&#x63A5;&#x53E3;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x6267;&#x884C;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(* com.LightseaBlue.service.AccountService.*(..))</span><br></pre></td></tr></table></figure><p>4 com.LightseaBlue.service&#x5305;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x6267;&#x884C;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(* com.LightseaBlue.service.*.*(..))</span><br></pre></td></tr></table></figure><p>5 com.LightseaBlue.service&#x5305;&#x53CA;&#x5176;&#x5B50;&#x5305;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x7684;&#x6267;&#x884C;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">execution(* com.LightseaBlue.service..*.*(..))</span><br></pre></td></tr></table></figure><p>6 &#x5339;&#x914D;com.LightseaBlue.service&#x5305;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF08;&#x4E0D;&#x542B;&#x5B50;&#x5305;&#xFF09;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">within(com.LightseaBlue.service.*)</span><br></pre></td></tr></table></figure><p>7 com.LightseaBlue.service&#x5305;&#x548C;&#x5B50;&#x5305;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">within(com.LightseaBlue.service..*)</span><br></pre></td></tr></table></figure><p>8 &#x5339;&#x914D;AccountService&#x7684;&#x4EE3;&#x7406;&#x7C7B;&#xFF08;&#x4E0D;&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#xFF09;</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this(com.LightseaBlue.service.AccountService)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 新知笔记 </category>
+          
+          <category> 后端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AOP </tag>
+            
+            <tag> Spring </tag>
+            
+            <tag> bug </tag>
+            
+            <tag> 解决方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>9月22日Spring笔记</title>
       <link href="/2022/09/22/9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
       <url>/2022/09/22/9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</url>
