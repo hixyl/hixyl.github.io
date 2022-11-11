@@ -6,7 +6,7 @@
   <link href="https://www.timeshike.com/atom.xml" rel="self"/>
   
   <link href="https://www.timeshike.com/"/>
-  <updated>2022-11-10T09:19:54.044Z</updated>
+  <updated>2022-11-11T09:23:28.316Z</updated>
   <id>https://www.timeshike.com/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>11月11日Android学习笔记</title>
+    <link href="https://www.timeshike.com/2022/11/11/11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://www.timeshike.com/2022/11/11/11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-11-11T17:17:11.000Z</published>
+    <updated>2022-11-11T09:23:28.316Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Android-&amp;#x5F02;&amp;#x6B65;&amp;#x4EFB;&amp;#x52A1;&quot;&gt;&lt;a href=&quot;#Android-&amp;#x5F02;&amp;#x6B65;&amp;#x4EFB;&amp;#x52A1;&quot; class=&quot;headerlink&quot; title=&quot;Android</summary>
+        
+      
+    
+    
+    
+    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
+    
+    <category term="Thread" scheme="https://www.timeshike.com/tags/Thread/"/>
+    
+    <category term="AsyncTask" scheme="https://www.timeshike.com/tags/AsyncTask/"/>
+    
+    <category term="Notification" scheme="https://www.timeshike.com/tags/Notification/"/>
+    
+  </entry>
+  
+  <entry>
     <title>11月10日Android学习笔记</title>
     <link href="https://www.timeshike.com/2022/11/10/11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/10/11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-10T17:17:36.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -56,7 +89,7 @@
     <link href="https://www.timeshike.com/2022/11/09/11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/09/11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-09T18:35:23.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -91,7 +124,7 @@
     <link href="https://www.timeshike.com/2022/11/08/11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/08/11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-08T18:46:22.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -128,7 +161,7 @@
     <link href="https://www.timeshike.com/2022/11/07/11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/07/11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-07T16:44:56.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -161,7 +194,7 @@
     <link href="https://www.timeshike.com/2022/11/05/11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/05/11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-05T16:46:24.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -196,7 +229,7 @@
     <link href="https://www.timeshike.com/2022/11/04/11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/04/11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-04T16:40:52.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -233,7 +266,7 @@
     <link href="https://www.timeshike.com/2022/11/03/11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/11/03/11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-11-03T16:38:53.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -264,7 +297,7 @@
     <link href="https://www.timeshike.com/2022/10/10/10%E6%9C%8810%E6%97%A5MongoDB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/10/10/10%E6%9C%8810%E6%97%A5MongoDB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-10T17:04:31.000Z</published>
-    <updated>2022-11-10T09:19:54.040Z</updated>
+    <updated>2022-11-11T09:23:28.312Z</updated>
     
     
       
@@ -295,7 +328,7 @@
     <link href="https://www.timeshike.com/2022/10/08/10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/10/08/10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-08T17:02:27.000Z</published>
-    <updated>2022-11-10T09:19:54.044Z</updated>
+    <updated>2022-11-11T09:23:28.316Z</updated>
     
     
       
@@ -330,7 +363,7 @@
     <link href="https://www.timeshike.com/2022/10/07/10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/10/07/10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-07T17:00:52.000Z</published>
-    <updated>2022-11-10T09:19:54.040Z</updated>
+    <updated>2022-11-11T09:23:28.312Z</updated>
     
     
       
@@ -363,7 +396,7 @@
     <link href="https://www.timeshike.com/2022/10/06/10%E6%9C%886%E6%97%A5%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>https://www.timeshike.com/2022/10/06/10%E6%9C%886%E6%97%A5%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
     <published>2022-10-06T17:16:18.000Z</published>
-    <updated>2022-11-10T09:19:54.040Z</updated>
+    <updated>2022-11-11T09:23:28.312Z</updated>
     
     
       
@@ -398,7 +431,7 @@
     <link href="https://www.timeshike.com/2022/09/27/9%E6%9C%8827%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/27/9%E6%9C%8827%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-27T17:26:20.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -433,7 +466,7 @@
     <link href="https://www.timeshike.com/2022/09/26/9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/26/9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-26T17:15:37.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -466,7 +499,7 @@
     <link href="https://www.timeshike.com/2022/09/24/9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/24/9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-24T08:25:28.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -501,7 +534,7 @@
     <link href="https://www.timeshike.com/2022/09/23/Spring%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B%E9%94%99%E8%AF%AFwarning-no-match-for-this-type-name-com-xxx-xxx-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     <id>https://www.timeshike.com/2022/09/23/Spring%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B%E9%94%99%E8%AF%AFwarning-no-match-for-this-type-name-com-xxx-xxx-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</id>
     <published>2022-09-23T08:34:22.000Z</published>
-    <updated>2022-11-10T09:19:54.084Z</updated>
+    <updated>2022-11-11T09:23:28.360Z</updated>
     
     
       
@@ -534,7 +567,7 @@
     <link href="https://www.timeshike.com/2022/09/22/9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/22/9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-22T17:13:44.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -569,7 +602,7 @@
     <link href="https://www.timeshike.com/2022/09/21/9%E6%9C%8821%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/21/9%E6%9C%8821%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-21T17:13:15.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -604,7 +637,7 @@
     <link href="https://www.timeshike.com/2022/09/20/9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/20/9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-20T17:18:59.000Z</published>
-    <updated>2022-11-10T09:19:54.064Z</updated>
+    <updated>2022-11-11T09:23:28.340Z</updated>
     
     
       
@@ -639,7 +672,7 @@
     <link href="https://www.timeshike.com/2022/09/19/9%E6%9C%8819%E6%97%A5Spring%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.timeshike.com/2022/09/19/9%E6%9C%8819%E6%97%A5Spring%E7%AC%94%E8%AE%B0/</id>
     <published>2022-09-19T17:28:40.000Z</published>
-    <updated>2022-11-10T09:19:54.060Z</updated>
+    <updated>2022-11-11T09:23:28.332Z</updated>
     
     
       
@@ -664,37 +697,6 @@
     <category term="后端" scheme="https://www.timeshike.com/tags/%E5%90%8E%E7%AB%AF/"/>
     
     <category term="springMVC" scheme="https://www.timeshike.com/tags/springMVC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Spring的jdbcTemplate.batchUpdate()执行慢的问题</title>
-    <link href="https://www.timeshike.com/2022/09/19/%E8%A7%A3%E5%86%B3Spring%E7%9A%84jdbcTemplate-batchUpdate()%E6%89%A7%E8%A1%8C%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.timeshike.com/2022/09/19/%E8%A7%A3%E5%86%B3Spring%E7%9A%84jdbcTemplate-batchUpdate()%E6%89%A7%E8%A1%8C%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</id>
-    <published>2022-09-19T13:52:24.000Z</published>
-    <updated>2022-11-10T09:19:54.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;&amp;#x5173;&amp;#x4E8E;jdbcTemplate-batchUpdate&amp;#xFF08;&amp;#xFF09;&amp;#x6267;&amp;#x884C;&amp;#x6162;&amp;#x7684;&amp;#x539F;&amp;#x56E0;&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="spring" scheme="https://www.timeshike.com/tags/spring/"/>
-    
-    <category term="后端" scheme="https://www.timeshike.com/tags/%E5%90%8E%E7%AB%AF/"/>
-    
-    <category term="jdbc" scheme="https://www.timeshike.com/tags/jdbc/"/>
     
   </entry>
   
