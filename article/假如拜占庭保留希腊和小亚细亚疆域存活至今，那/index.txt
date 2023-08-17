@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
-0:["kqGJ11qchGYJlJUDlvVom",[[["",{"children":["article",{"children":[["id","%E5%81%87%E5%A6%82%E6%8B%9C%E5%8D%A0%E5%BA%AD%E4%BF%9D%E7%95%99%E5%B8%8C%E8%85%8A%E5%92%8C%E5%B0%8F%E4%BA%9A%E7%BB%86%E4%BA%9A%E7%96%86%E5%9F%9F%E5%AD%98%E6%B4%BB%E8%87%B3%E4%BB%8A%EF%BC%8C%E9%82%A3","d"],{"children":["__PAGE__?{\"id\":\"假如拜占庭保留希腊和小亚细亚疆域存活至今，那\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+0:["TZdPdktbLm1-lkjqdI8Qg",[[["",{"children":["article",{"children":[["id","%E5%81%87%E5%A6%82%E6%8B%9C%E5%8D%A0%E5%BA%AD%E4%BF%9D%E7%95%99%E5%B8%8C%E8%85%8A%E5%92%8C%E5%B0%8F%E4%BA%9A%E7%BB%86%E4%BA%9A%E7%96%86%E5%9F%9F%E5%AD%98%E6%B4%BB%E8%87%B3%E4%BB%8A%EF%BC%8C%E9%82%A3","d"],{"children":["__PAGE__?{\"id\":\"假如拜占庭保留希腊和小亚细亚疆域存活至今，那\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
 5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
 6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
