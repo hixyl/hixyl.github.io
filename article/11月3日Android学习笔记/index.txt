@@ -1,0 +1,219 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月3日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月3日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月3日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T2d98,
+    <p class="time">发布时间：<time datetime="03 November, 2022">2022-11-03 16:38:53</time></p>
+    <p class="words">本文字数：310 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><h2>今日内容总结</h2>
+<pre><code class="language-text">今天内容总结：
+<span class="hljs-number">1</span>.安装android studio   、sdk，mumu，关联studio和模拟器
+<span class="hljs-number">2</span>.创建android项目，运行android项目
+<span class="hljs-number">3</span>.介绍android项目文件夹结构
+    java 编写代码
+    res 
+        mipmap:放置图片，
+        drawable:用xml编写图片背景，
+        layout-编写布局
+        values:放置统一的资源设置信息 
+            <span class="hljs-keyword">string</span>.<span class="hljs-keyword">xml</span>     <span class="hljs-title">color</span>.<span class="hljs-keyword">xml</span>     <span class="hljs-title">dimens</span>.<span class="hljs-keyword">xml</span>        <span class="hljs-title">themes</span>.<span class="hljs-keyword">xml</span>
+    <span class="hljs-title">AndroidManifest</span>.<span class="hljs-keyword">xml</span>
+<span class="hljs-title">4</span>.容器类控件----布局
+    线性布局
+        放置方向
+        权重
+        gravity    layout_gravity
+    相对布局
+        <span class="hljs-number">4</span>+<span class="hljs-number">4</span>+<span class="hljs-number">4</span>+<span class="hljs-number">3</span>
+        内部控件属性
+    约束布局
+<span class="hljs-number">5</span>.常见控件
+    View:
+        OnClickListener
+    <span class="hljs-attr">TextView=</span>========AppCompatTextView
+    会根据设置应用样式发生改变，Button等其他控件同理
+    相关属性：
+    
+    Button
+        <span class="hljs-number">1</span>.在代码中设置监听
+        <span class="hljs-number">2</span>.在drawable设置点击效果
+    
+    EditText
+        hint：提示信息
+        inputType：输入类型
+        设置背景：图片或者自己绘制<span class="hljs-keyword">xml</span>
+    <span class="hljs-title">CheckBox</span>
+        监听器
+        Compound.OnCheckChangeListener
+
+<span class="hljs-number">6</span>.页面跳转
+    Intent intent = new Intent(<span class="hljs-string">"当前的activity的对象"</span>,<span class="hljs-string">"即将跳转的页面.class"</span>)；
+    startActivity(intent)
+
+</code></pre>
+<h2>android系统的体系结构</h2>
+<p>应用程序层  应用程序框架层  函数层  android运行时  Linux内核</p>
+<h2>DVM与JVM的区别</h2>
+<ol>
+<li>基于内存不同。 DVM基于寄存器，JVM基于栈</li>
+<li>字节码不同。 .dex    .class</li>
+<li>SDK不同</li>
+<li>运行环境不同</li>
+</ol>
+<h2>生成的应用程序中重要的文件夹结构</h2>
+<p>src:java源代码 ，放置处理逻辑的代码<br>
+res:存放资源文件，放置图片，xml文件<br>
+AndroidMainFest.xml   清单文件，包名，应用名，版本号，icon，使用权限，注册各种组件</p>
+<h2>Android的四大组件</h2>
+<ol>
+<li>Activity：提供了与用户交互的视图。</li>
+<li>Service：    服务，一般很少有界面，多是后台的操作，例如后台下载等等。</li>
+<li>BroadcastReceiver：广播接收者，相当于一个监视器，当程序发送广播时，会处理相应的逻辑</li>
+<li>ContentProvider： 内容提供者，实现了跨进程的通信。</li>
+</ol>
+<h2>android的ui控件分为两类</h2>
+<ol>
+<li>容器类控件：<br>
+ViewGroup<br>
+LinearLayout（线性布局）<br>
+RelativeLayout（相对布局）<br>
+FrameLayout(帧布局)<br>
+AbsoluteLayout（绝对布局）TableLayout  (表格布局)<br>
+GridLayout(网格布局)</li>
+<li>视图类控件：<br>
+View   Button   TextView   EditText   RadioButton   Checkbox   ImageView  ImageButton.......</li>
+</ol>
+<h2>view</h2>
+<p>View  android中所有UI控件的父类</p>
+<p>android中所有的ui控件都放在两个包中，android.view,android.widget</p>
+<ol>
+<li>android:id<br>
+该控件在布局当中的唯一标识，（在同一个布局当中，id名不能重复）</li>
+<li>android:background<br>
+为控件设置背景（可以设置为颜色的色值，也可以直接使用图片）</li>
+<li>android:padding<br>
+控件对于其子控件设置的四个边的内边距</li>
+<li>android:paddingTop<br>
+控件对于其子控件设置的上边的内边距</li>
+<li>android:paddingBottom<br>
+控件对于其子控件设置的下边的内边距</li>
+<li>android:paddingLeft<br>
+控件对于其子控件设置的左边的内边距</li>
+<li>android:paddingRight<br>
+控件对于其子控件设置的右边的内边距</li>
+</ol>
+<h2>ViewGroup：布局管理器</h2>
+<p>提供了两个内部类：<br>
+ViewGroup.LayoutParams<br>
+android:layout_height: 控件在屏幕纵向的长度<br>
+android:layout_width：控件在屏幕横向的长度<br>
+上面的两个属性提供了三个属性值<br>
+FILL_PARENT：填充父类，填充窗体<br>
+MATCH_PARENT：匹配父类，和fill_parent效果是相同的，在android2.2之后建议使用这种属性。<br>
+WRAP_CONTENT：包裹内容，只要确定包裹住内部控件就可以了。<br>
+也可以使用绝对的数值对以上两个属性进行赋值。
+150dp，120dp</p>
+<h2>ViewGroup.MarginLayoutParams</h2>
+<p>android:layout_margin: 设置控件在四个边上的外边距。<br>
+android:layout_marginTop: 设置控件在上边的外边距。<br>
+android:layout_marginBottom: 设置控件在下边的外边距。<br>
+android:layout_marginLeft: 设置控件在左边的外边距。<br>
+android:layout_marginRight: 设置控件在右边的外边距。</p>
+<h2>什么是dp？</h2>
+<p>dp：代表每英寸上有多少个像素点，和px是不同的。<br>
+dip：和dp完全相同<br>
+sp：文字大小使用的单位<br>
+px：分辨率，屏幕上的像素点</p>
+<h2>怎么用xml文件去控制ui布局？</h2>
+<ol>
+<li>在res/layout文件夹中新建一个布局文件：.xml文件<br>
+Android XML File</li>
+<li>在src文件夹对应的包中新建一个类，让这个类继承Activity</li>
+<li>重写Activity的onCreate()方法，然后在这个方法当中调用setContentView()方法，可以把布局和代码相连接。<br>
+格式：setContentView(R.layout.&lt;资源文件名&gt;);
+4 在清单文件中注册此activity。<br>
+<code>&lt;activity <span class="hljs-attribute">name</span>=<span class="hljs-string">"com.qf.demo01.FirstActivity"</span>/&gt;</code></li>
+</ol>
+<h2>LinearLayout(线性布局)</h2>
+<ol>
+<li>将其中包含的控件使用横向或者是纵向排列。</li>
+<li>控件的长度和宽度可以带权重。<br>
+android:orientation   设置布局内控件的排列方式。<br>
+horizontal：水平的<br>
+vertical：垂直的<br>
+android:weightSum     设置布局内控件的总权重<br>
+android:gravity       设置布局管理器内控件的放置位置   （外对内的要求，是容器对内容的重力要求）</li>
+</ol>
+<p>包含的子控件常用的属性：<br>
+android:layout_weight   设置该控件在线性布局中所占的权重。<br>
+【内对外的请求，用于分配剩余空间的权重属性】<br>
+剩余空间 = 总长度-已分配的长度<br>
+备注：<br>
+如果是水平方向设置权重，就把layout_width的属性值设为0dp<br>
+如果是垂直方向设置权重，就把layout_height的属性值设为0dp</p>
+<p>android:layout_gravity  设置该控件在布局中的放置位置。  （内对外的请求，用来设置控件相对于外层容器的控制位置）</p>
+<p><strong>特点</strong>:
+1.垂直线性布局，每一行只能放一个控件，到底部装不下的就会被挤出去。（全部或者部分）
+2.水平线性布局，每一列只能放一个控件，到右边装不下的就会被挤出去。 （全部或者部分）</p>
+<p>代表事例：爬格子事例，计算器事例</p>
+<h2>RelativeLayout(相对布局)</h2>
+<p>概念：指控件之间或者控件与容器之间的相对位置进行排列的。<br>
+相对布局的特有属性：<br>
+android:gravity        设置布局容器内子控件对于容器的对齐方式，相对布局默认的方向是左上<br>
+android:ignoreGravity    设置布局容器内哪个控件都不受gravity属性的影响。   属性值为指定控件的id。</p>
+<p>RelativeLayout的子元素（子控件）特有的属性。   4+5+7=16 个属性<br>
+1.第一组（4个）：兄弟控件之间的相对位置。该组属性的值就是另一个控件的id。<br>
+android:layout_toLeftOf      :该控件在哪个控件的左侧   api17之后建议使用    layout_toStartOf
+android:layout_toRightOf      该控件在哪个控件的右侧   api17之后建议使用   layout_toEndOf<br>
+android:layout_above   该控件在哪个控件的上边<br>
+android:layout_below   该控件在哪个控件的下边</p>
+<p>2.第二组（5个）：兄弟控件之间的对齐位置（都是以align开头的）。该组属性的值就是另一个控件的id。
+android:layout_alignRight     该控件的右边与指定控件的右边对齐。<br>
+android:layout_alignLeft      该控件的左边与指定控件的左边对齐。<br>
+android:layout_alignTop       该控件的上边与指定控件的上边对齐。<br>
+android:layout_alignBottom    该控件的下边与指定控件的下边对齐。<br>
+android:layout_alignBaseLine  该控件与指定控件的基线对齐。（首行文本对齐）</p>
+<p>3.第三组（7个）：控件与父布局（父容器）的对齐关系。该组属性的值是true或者是false。<br>
+android:layout_alignParentRight    设置是否该控件与其父容器右对齐<br>
+android:layout_alignParentLeft 设置是否该控件与其父容器左对齐<br>
+android:layout_alignParentTop 设置是否该控件与其父容器上对齐<br>
+android:layout_alignParentBottom 设置是否该控件与其父容器下对齐<br>
+android:layout_centerVertical 设置是否该控件位于父类控件垂直中心方向<br>
+android:layout_centerHorizontal 设置是否该控件位于父类控件水平中心方向<br>
+android:layout_centerInParent 设置是否该控件位于父类控件中心位置</p>
+<p>使用注意点：
+1.在相对布局中必须避免循环的描述。
+2.在布局里面，线性布局特有的属性在相对布局中不一定有效果。比如说weight这个属性在相对布局中不生效。
+相对布局独有的属性，放在线性布局当中一样不生效。</p>
+<p>相对布局代表事例：梅花布局，登录注册布局</p>
+<h2>FrameLayout(帧布局)</h2>
+<ol>
+<li>帧布局中每一个组件都代表了一个“独立的”画面。</li>
+<li>默认以屏幕左上角作为（0，0）坐标。按组件定义的先后顺序依次逐层显示，后面出现的会覆盖前面的画面。每新加一个组件就相当于新的一层覆盖上去。</li>
+</ol>
+<p>属性介绍：</p>
+<p>android:foreground 会放置在布局管理器所有组件之上
+android:foregroundGravity 控制放置在最前面的图片的位置。</p>
+<p>帧布局代表事例：拉花布局，霓虹灯布局</p>
+<h2>AbsoluteLayout（绝对布局）</h2>
+<p>还有一个名字：坐标布局，可以直接的指定子元素的绝对位置。<br>
+这种布局有一个好处，简单直接，直观性强<br>
+使用android:layout_x这个属性确定x坐标，以左上角为定点<br>
+使用android:layout_y这个属性确定y坐标，以左上角为定点<br>
+如果子元素不设置android:layout_x，android:layout_y这两个属性，默认值是0，会出现在左上角。<br>
+由于手机屏幕尺寸差距比较大，使用绝对布局适应性就比较差，所以就过时了。</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月3日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"layout"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"activity"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

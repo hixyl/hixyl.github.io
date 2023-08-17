@@ -1,0 +1,102 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"10月7日spring学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"10月7日spring学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T1601,
+    <p class="time">发布时间：<time datetime="07 October, 2022">2022-10-07 17:00:52</time></p>
+    <p class="words">本文字数：160 字       阅读完需：约 1 分钟</p>
+    <html><head></head><body><h2>actuator 健康监控</h2>
+<p>如果要查看应用指标或对应用进行监控，可以加入执行器actuator的依赖</p>
+<p>监控项目是否alive</p>
+<p>依赖 <code>pom.<span class="hljs-built_in">xml</span></code></p>
+<pre><code class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-actuator<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span> 
+</code></pre>
+<p>访问 <code>http:<span class="hljs-regexp">//</span><span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">8080</span><span class="hljs-regexp">/actuator/</span>health </code>查看效果即可</p>
+<h2>配置文件</h2>
+<p>management.port：<br>
+指定访问这些监控方法的端口，与逻辑接口端口分离。如果不想将这些暴露在http中，可以设置 <code><span class="hljs-title">management</span>.<span class="hljs-keyword">port</span> = -1</code>
+management.address：<br>
+指定地址，比如只能通过本机监控，可以设置 <code><span class="hljs-attr">management.address</span> = <span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span></code></p>
+<p>application.properties</p>
+<pre><code class="language-properties">
+<span class="hljs-comment"># 端口号</span>
+management.server.<span class="hljs-attribute">port</span>=9999
+<span class="hljs-comment"># 敏感信息访问限制(*表示可以访问所有)</span>
+management.endpoints.web.exposure.<span class="hljs-attribute">include</span>=health, <span class="hljs-built_in">info</span>
+</code></pre>
+<p><img src="10_7_01.PNG" alt="alt"></p>
+<h3>yaml配置文件</h3>
+<pre><code class="language-yaml"><span class="hljs-attr">server:</span>
+  <span class="hljs-attr">port:</span> <span class="hljs-number">9090</span>  <span class="hljs-comment"># tomcat端口号</span>
+<span class="hljs-attr">management:</span>
+  <span class="hljs-attr">server:</span>
+    <span class="hljs-attr">port:</span> <span class="hljs-number">9999</span>
+  <span class="hljs-attr">endpoints:</span>
+    <span class="hljs-attr">web:</span>
+      <span class="hljs-attr">exposure:</span>
+        <span class="hljs-attr">include:</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-string">health</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-string">info</span>
+  <span class="hljs-attr">info:</span>
+    <span class="hljs-attr">env:</span>
+      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">info:</span>
+  <span class="hljs-attr">app:</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">SpringBoot项目</span>
+    <span class="hljs-attr">date:</span> <span class="hljs-number">2022-10-07</span>
+    <span class="hljs-attr">author:</span> <span class="hljs-string">zr</span>
+<span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">zr:</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">一汽解放</span>
+</code></pre>
+<h2>banner</h2>
+<h3>banner配置文件</h3>
+<p>resources/banner.txt</p>
+<pre><code class="language-txt"> ████████     ██     ██       ██
+░██░░░░░     ████   ░██      ░██
+░██         ██░░██  ░██   █  ░██
+░███████   ██  ░░██ ░██  ███ ░██
+░██░░░░   ██████████░██ ██░██░██
+░██      ░██░░░░░░██░████ ░░████
+░██      ░██     ░██░██░   ░░░██
+░░       ░░      ░░ ░░       ░░
+
+</code></pre>
+<h3>关闭banner</h3>
+<p>BootTestApplication.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr;
+
+<span class="hljs-keyword">import</span> org.springframework.boot.Banner;
+<span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
+<span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
+
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BootApplication</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-comment">// SpringApplication.run(BootApplication.class, args);</span>
+       <span class="hljs-type">SpringApplication</span> <span class="hljs-variable">application</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SpringApplication</span>(BootApplication.class);
+       application.setBannerMode(Banner.Mode.OFF);
+       application.run(args);
+    }
+
+}
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"10月7日spring学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"springboot"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"actuator"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"banner"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"10月7日spring学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

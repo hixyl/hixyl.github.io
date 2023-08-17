@@ -1,0 +1,164 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","9%E6%9C%8819%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月19日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8819%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月19日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8819%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T3e0b,
+    <p class="time">发布时间：<time datetime="19 September, 2022">2022-09-19 17:28:40</time></p>
+    <p class="words">本文字数：560 字       阅读完需：约 3 分钟</p>
+    <html><head></head><body><h2>SPEL 表达式</h2>
+<p>spring 表达式语言（简称SpEL）：是一个支持运行时查询和操作对象图的强大的表达式语言；<br>
+语法类似于 EL：SpEL 使用 #{…} 作为定界符，所有在大框号中的字符都将被认为是 SpEL；<br>
+SpEL 为 bean 的属性进行动态赋值提供了便利；</p>
+<p>通过 SpEL 可以实现：</p>
+<ol>
+<li>通过 bean 的 id 对 bean 进行引用；</li>
+<li>调用方法以及引用对象中的属性；</li>
+<li>计算表达式的值；</li>
+<li>正则表达式的匹配；</li>
+</ol>
+<h3>字面量的表示</h3>
+<p>整数：<code>&lt;property <span class="hljs-attribute">name</span>=<span class="hljs-string">"count"</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">"#{5}"</span>/&gt;</code><br>
+小数：<code>&lt;property <span class="hljs-attribute">name</span>=<span class="hljs-string">"frequency"</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">"#{89.7}"</span>/&gt;</code><br>
+科学计数法：<code>&lt;property <span class="hljs-attribute">name</span>=<span class="hljs-string">"capacity"</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">"#{1e4}"</span>/&gt;</code><br>
+String可以使用单引号或者双引号作为字符串的定界符号：<code>&lt;property <span class="hljs-attribute">name</span>=“name” <span class="hljs-attribute">value</span>=<span class="hljs-string">"#{'Chuck'}"</span>/&gt;</code> 或 <code>&lt;property <span class="hljs-attribute">name</span>=<span class="hljs-string">'name'</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">'#{"Chuck"}'</span>/&gt;</code><br>
+Boolean：<code>&lt;property <span class="hljs-attribute">name</span>=<span class="hljs-string">"enabled"</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">"#{false}"</span>/&gt;</code></p>
+<p><img src="9_19_01.PNG" alt="alt">
+<img src="9_19_02.PNG" alt="alt">
+<img src="9_19_03.PNG" alt="alt">
+<img src="9_19_04.PNG" alt="alt"></p>
+<h2>SpringMVC</h2>
+<h3>SpringMVC 原理</h3>
+<p><img src="9_19_05.PNG" alt="alt"></p>
+<p>HandlerMapping: 映射处理器<br>
+HandlerAdapter: 映射适配器<br>
+HttpMessageConveter: 消息转换器</p>
+<p>原理解析：<br>
+1、用户向服务器发送请求，请求被Spring前端控制ServeltDispatcherServlet捕获；<br>
+2、DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI）。然后根据该URI，调用HandlerMapping获得该Handler配置的所有相关的对象（包括Handler对象以及Handler对象对应的拦截器），最后以HandlerExecutionChain对象的形式返回；<br>
+3、DispatcherServlet根据获得的Handler，选择一个合适的HandlerAdapter。执行相应的Controller（附注：如果成功获得HandlerAdapter后，此时将开始执行拦截器的preHandler(...)方法）；<br>
+4、提取Request中的模型数据，填充Handler入参，开始执行Handler（Controller)。在填充Handler的入参过程中，根据配置，Spring将帮你做一些额外的工作：<br>
+HttpMessageConveter：将请求消息（如Json、xml等数据）转换成一个对象，将对象转换为指定的响应信息；<br>
+数据转换：对请求消息进行数据转换。如String转换成Integer、Double等；<br>
+数据根式化：对请求消息进行数据格式化。如将字符串转换成格式化数字或格式化日期等；<br>
+数据验证：验证数据的有效性（长度、格式等），验证结果存储到BindingResult或Error中；<br>
+5、Handler执行完成后，向DispatcherServlet返回一个ModelAndView对象；<br>
+6、根据返回的ModelAndView，选择一个适合的ViewResolver（必须是已经注册到Spring容器中的ViewResolver)返回给DispatcherServlet；<br>
+7、ViewResolver结合Model和View，来渲染视图；<br>
+8、将渲染结果返回给客户端；</p>
+<h3>配置示例</h3>
+<p>web.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">web-app</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://xmlns.jcp.org/xml/ns/javaee"</span>
+         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span>
+         <span class="hljs-attr">version</span>=<span class="hljs-string">"4.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>classpath:spring-config.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>classpath:spring-mvc.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>*.action<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">listener</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">listener-class</span>&gt;</span>org.springframework.web.context.ContextLoaderListener<span class="hljs-tag">&lt;/<span class="hljs-name">listener-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">listener</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span>
+</code></pre>
+<p>spring-mvc.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">"http://www.springframework.org/schema/context"</span>
+       <span class="hljs-attr">xmlns:mvc</span>=<span class="hljs-string">"http://www.springframework.org/schema/mvc"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--    包扫描--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"com.zr"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">context:component-scan</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--映射处理器--&gt;</span>
+<span class="hljs-comment">&lt;!--    &lt;bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"&gt;&lt;/bean&gt;--&gt;</span>
+    <span class="hljs-comment">&lt;!--映射适配器--&gt;</span>
+<span class="hljs-comment">&lt;!--    &lt;bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"&gt;&lt;/bean&gt;--&gt;</span>
+
+<span class="hljs-comment">&lt;!--    开启RequestMapping映射处理器和适配器--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mvc:annotation-driven</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mvc:annotation-driven</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"prefix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/WEB-INF/views/"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"suffix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">".jsp"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>UserController.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.controller;
+
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.<span class="hljs-keyword">annotation</span>.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
+
+<span class="hljs-meta">@Controller</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
+    <span class="hljs-meta">@RequestMapping(<span class="hljs-string">"user/login.action"</span>)</span>
+    <span class="hljs-keyword">public</span> ModelAndView login(String userId, String password){
+        System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">"userId:"</span>+userId+<span class="hljs-string">", password"</span>+password);
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName(<span class="hljs-string">"main"</span>);
+        <span class="hljs-keyword">return</span> mav;
+    }
+
+}
+</code></pre>
+<p>index.jsp</p>
+<pre><code class="language-html"><span class="language-xml">&lt;%</span><span class="language-ruby">@ page contentType=<span class="hljs-string">"text/html;charset=UTF-8"</span> language=<span class="hljs-string">"java"</span> </span><span class="language-xml">%&gt;
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"user/login.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span>&gt;</span>
+    账号: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"userId"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    密码: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></code></pre>
+<p>WEB-INF/views/main.jsp</p>
+<pre><code class="language-html">&lt;%--
+  <span class="hljs-title class_">Created</span> by <span class="hljs-title class_">IntelliJ</span> <span class="hljs-variable constant_">IDEA</span>.
+  <span class="hljs-title class_">User</span>: smile
+  <span class="hljs-title class_">Date</span>: <span class="hljs-number">2022</span>/<span class="hljs-number">9</span>/<span class="hljs-number">19</span>
+  <span class="hljs-title class_">Time</span>: <span class="hljs-number">16</span>:<span class="hljs-number">14</span>
+  <span class="hljs-title class_">To</span> change <span class="hljs-variable language_">this</span> template use <span class="hljs-title class_">File</span> | <span class="hljs-title class_">Settings</span> | <span class="hljs-title class_">File</span> <span class="hljs-title class_">Templates</span>.
+--%&gt;
+&lt;%@ page contentType=<span class="hljs-string">"text/html;charset=UTF-8"</span> language=<span class="hljs-string">"java"</span> %&gt;
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>main<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+Main
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+</code></pre>
+<p>效果：在主页输入账号密码后，自动解析账号密码，调用controller层的方法，控制台输出账号密码，同时ModelAndView选择ViewResolver渲染，用户最后会跳转至main页面</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月19日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月19日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

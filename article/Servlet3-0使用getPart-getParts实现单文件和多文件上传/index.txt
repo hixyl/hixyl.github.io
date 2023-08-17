@@ -1,0 +1,145 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],{"children":["__PAGE__?{\"id\":\"Servlet3-0使用getPart-getParts实现单文件和多文件上传\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Servlet3-0使用getPart-getParts实现单文件和多文件上传\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T297c,
+    <p class="time">发布时间：<time datetime="12 September, 2022">2022-09-12 22:01:26</time></p>
+    <p class="words">本文字数：360 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><h3>一、使用工具：</h3>
+<p>（1）Firefox浏览器<br>
+（2）java IDE</p>
+<h3>二、实现单文件上传</h3>
+<p>（1）</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.servlet;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+
+<span class="hljs-keyword">import</span> javax.servlet.ServletException;
+<span class="hljs-keyword">import</span> javax.servlet.annotation.MultipartConfig;
+<span class="hljs-keyword">import</span> javax.servlet.annotation.WebServlet;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServlet;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+<span class="hljs-keyword">import</span> javax.servlet.http.Part;
+
+<span class="hljs-meta">@WebServlet("/upload")</span>
+<span class="hljs-meta">@MultipartConfig</span> <span class="hljs-comment">// 1.设置Servlet可以处理Multipart请求</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UploadFileServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">long</span> <span class="hljs-variable">serialVersionUID</span> <span class="hljs-operator">=</span> <span class="hljs-number">1L</span>;
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doPost</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response)</span>
+            <span class="hljs-keyword">throws</span> ServletException, IOException {
+        <span class="hljs-comment">// 2.获取文件保存的路径</span>
+        <span class="hljs-type">String</span> <span class="hljs-variable">savePath</span> <span class="hljs-operator">=</span> <span class="hljs-built_in">this</span>.getServletContext().getRealPath(<span class="hljs-string">"Files"</span>);
+
+        <span class="hljs-comment">// 3.获取form表单的Multipart请求的文件的name属性</span>
+        <span class="hljs-type">Part</span> <span class="hljs-variable">part</span> <span class="hljs-operator">=</span> request.getPart(<span class="hljs-string">"photo"</span>);
+
+        <span class="hljs-comment">// 4.获取原文件名</span>
+        <span class="hljs-comment">/*
+         * 经过过request请求信息的分析， 原文件名在头信息的Content-Disposition中 所以获取Content-Disposition的值如下
+         * form-data; name="photo"; filename="测试文件.txt"
+         */</span>
+        <span class="hljs-type">String</span> <span class="hljs-variable">header</span> <span class="hljs-operator">=</span> part.getHeader(<span class="hljs-string">"Content-Disposition"</span>);
+        <span class="hljs-type">int</span> <span class="hljs-variable">start</span> <span class="hljs-operator">=</span> header.lastIndexOf(<span class="hljs-string">"="</span>);
+        <span class="hljs-type">String</span> <span class="hljs-variable">fileName</span> <span class="hljs-operator">=</span> header.substring(start + <span class="hljs-number">1</span>)
+                .replace(<span class="hljs-string">"\""</span>, <span class="hljs-string">""</span>);
+
+        <span class="hljs-comment">// 5.保存到第二步获取的文件保存路径下</span>
+        <span class="hljs-keyword">if</span> (fileName != <span class="hljs-literal">null</span> &amp;&amp; !<span class="hljs-string">""</span>.equals(fileName)) {
+            part.write(savePath + <span class="hljs-string">"/"</span> + fileName);
+        }
+
+    }
+
+}
+
+</code></pre>
+<p>这里需要注意的有三点：<br>
+一是 @MultipartConfig 这个注解必须加上，不加不行；<br>
+二是通过 getPart(Stirng name) 方法获取文件，其中 name 为jsp页面中的 input标签的name属性；<br>
+三是为什么要这样获取文件名，这是因为 Servlet3.0 中的 Part 类没有获取上传文件名的方法，然后通过Firefox分析得出header中的 Content-Disposition 包含有文件名。下图<img src="ser01.bmp" alt="Content-Disposition中包含有文件名的信息"><br>
+（2）JSP代码</p>
+<pre><code class="language-java">&lt;form action<span class="hljs-operator">=</span><span class="hljs-string">"${pageContext.request.contextPath }/upload"</span> method<span class="hljs-operator">=</span><span class="hljs-string">"post"</span>
+        enctype<span class="hljs-operator">=</span><span class="hljs-string">"multipart/form-data"</span>&gt;
+        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"file"</span> name<span class="hljs-operator">=</span><span class="hljs-string">"photo"</span>&gt;
+        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"submit"</span> value<span class="hljs-operator">=</span><span class="hljs-string">"上传"</span>&gt;
+&lt;/form&gt;
+</code></pre>
+<h3>三、实现多文件上传</h3>
+<p>（1）Servlet</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.servlet;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> javax.servlet.ServletException;
+<span class="hljs-keyword">import</span> javax.servlet.annotation.MultipartConfig;
+<span class="hljs-keyword">import</span> javax.servlet.annotation.WebServlet;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServlet;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+<span class="hljs-keyword">import</span> javax.servlet.http.Part;
+
+<span class="hljs-meta">@WebServlet("/upload")</span>
+<span class="hljs-meta">@MultipartConfig</span> <span class="hljs-comment">// 1.设置Servlet可以处理Multipart请求</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UploadFileServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">long</span> <span class="hljs-variable">serialVersionUID</span> <span class="hljs-operator">=</span> <span class="hljs-number">1L</span>;
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doPost</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response)</span>
+            <span class="hljs-keyword">throws</span> ServletException, IOException {
+        <span class="hljs-comment">// 2.获取文件保存的路径</span>
+        <span class="hljs-type">String</span> <span class="hljs-variable">savePath</span> <span class="hljs-operator">=</span> <span class="hljs-built_in">this</span>.getServletContext().getRealPath(<span class="hljs-string">"Files"</span>);
+
+        <span class="hljs-comment">// 3.获取form表单上传的多个文件</span>
+        List&lt;Part&gt; parts = (List&lt;Part&gt;) request.getParts();
+        
+        <span class="hljs-comment">//4.循环遍历多个文件</span>
+        <span class="hljs-keyword">for</span>(Part part : parts) {
+            <span class="hljs-comment">// 5.获取原文件名</span>
+            <span class="hljs-comment">/*
+             * 经过过request请求信息的分析， 原文件名在头信息的Content-Disposition中 所以获取Content-Disposition的值如下
+             * form-data; name="photo"; filename="测试文件.txt"
+             */</span>
+            <span class="hljs-type">String</span> <span class="hljs-variable">header</span> <span class="hljs-operator">=</span> part.getHeader(<span class="hljs-string">"Content-Disposition"</span>);
+            <span class="hljs-type">int</span> <span class="hljs-variable">start</span> <span class="hljs-operator">=</span> header.lastIndexOf(<span class="hljs-string">"="</span>);
+            <span class="hljs-type">String</span> <span class="hljs-variable">fileName</span> <span class="hljs-operator">=</span> header.substring(start + <span class="hljs-number">1</span>)
+                    .replace(<span class="hljs-string">"\""</span>, <span class="hljs-string">""</span>);
+
+            <span class="hljs-comment">// 6.保存到第二步获取的文件保存路径下</span>
+            <span class="hljs-keyword">if</span> (fileName != <span class="hljs-literal">null</span> &amp;&amp; !<span class="hljs-string">""</span>.equals(fileName)) {
+                part.write(savePath + <span class="hljs-string">"/"</span> + fileName);
+            }
+        }
+
+    }
+
+}
+
+</code></pre>
+<p>  要实现多文件上传只需要在单文件上传的的基础上改一下方法，通过 getParts() 方法获取多个文件，然后依次处理就好。<br>
+（2）JSP代码</p>
+<pre><code class="language-jsp">&lt;form action<span class="hljs-operator">=</span><span class="hljs-string">"${pageContext.request.contextPath }/upload"</span> method<span class="hljs-operator">=</span><span class="hljs-string">"post"</span>
+        enctype<span class="hljs-operator">=</span><span class="hljs-string">"multipart/form-data"</span>&gt;
+        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"file"</span> name<span class="hljs-operator">=</span><span class="hljs-string">"photo"</span> multiple<span class="hljs-operator">=</span><span class="hljs-string">"multiple"</span>&gt;
+        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"submit"</span> value<span class="hljs-operator">=</span><span class="hljs-string">"上传"</span>&gt;
+&lt;/form&gt;
+</code></pre>
+<p>  注意：input 标签多了一个属性 multiple=“multiple”</p>
+<h3>四、总结</h3>
+<p>  要实现单文件上传只要使用方法 getPart(Stirng name)，实现多文件上传需要在增加Jsp页面 input 标签的 multiple=“multiple”，将 getPart(Stirng name) 方法改为 getParts() 方法，同时遍历文件就可以了。</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"alibaba"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"fastjson"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"date"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

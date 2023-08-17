@@ -1,0 +1,411 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","9%E6%9C%8814%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月14日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8814%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月14日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8814%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月14日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T9531,
+    <p class="time">发布时间：<time datetime="14 September, 2022">2022-09-14 17:13:50</time></p>
+    <p class="words">本文字数：1,300 字       阅读完需：约 7 分钟</p>
+    <html><head></head><body><h2>BeanFactory与ApplicationContext</h2>
+<p>在Spring中，那些组成应用的主体(backbone)及由Spring IoC容器所管理的对象被称之为bean。简单地讲，bean就是由Spring容器初始化、装配及被管理的对象，除此之外，bean就没有特别之处了(与应用中的其他对象没有什么区别)。而bean定义以及bean相互间的依赖关系将通过配置元数据来描述；<br>
+<code>org<span class="hljs-selector-class">.springframework</span><span class="hljs-selector-class">.beans</span><span class="hljs-selector-class">.factory</span>.BeanFactory</code>是Spring IoC容器的实际代表者，IoC容器负责容纳此前所描述的bean，并对bean进行管理；<br>
+在Spring中，BeanFactory是IoC容器的核心接口。它的职责包括：<strong>实例化、定位、配置应用程序中的对象及建立这些对象间的依赖</strong>；</p>
+<p>spring.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--  Spring 创建的 bean 对象 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>context包的核心是ApplicationContext接口。它由BeanFactory接口派生而来，因而提供了BeanFactory所有的功能。</p>
+<p>延迟加载：<br>
+<code><span class="hljs-attribute">BeanFactroy</span></code>采用的是延迟加载形式来注入Bean的，即只有在使用到某个Bean时(调用<code><span class="hljs-function"><span class="hljs-title">getBean</span><span class="hljs-params">()</span></span></code>)，才对该Bean进行加载实例化，这样，我们就不能发现一些存在的spring的配置问题。而<code><span class="hljs-attribute">ApplicationContext</span></code>则相反，它是在容器启动时，一次性创建了所有的Bean。这样，在容器启动时，我们就可以发现Spring中存在的配置错误</p>
+<p>延迟加载：使用时采取加载<br>
+立即加载：启动时就去加载</p>
+<h2>Bean的作用域</h2>
+<p>Spring创建bean对象，默认是单例模式<br>
+单例模式：内存中创建java对象，只能创建一个</p>
+<p>Spring Framework支持以下几种作用域:</p>
+<p>|作用域|描述|
+|--|--|
+|singleton|在每个Spring IoC容器中一个bean定义对应一个单例对象实例|
+|prototype|一个bean定义对应多个对象实例（每次使用该Bean构建一个新的对象）|
+|request|每次HTTP请求将会构建各自的bean实例（Web环境中生效）|
+|session|在一个HTTP Session中，一个bean定义对应一个实例（Web环境中生效）|</p>
+<p>在xml文件中使用<code><span class="hljs-keyword">scope</span></code>定义模式</p>
+<p>示例: spring.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 默认为单例模式 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- 非单例模式 scope = "prototype" --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"prototype"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>java单例模式：在jvm中，单例模式的类的对象只有一个<br>
+Spring单例模式：在同一个spring容器中，单例模式的类的对象只有一个</p>
+<h3>延迟加载</h3>
+<p>可以通过配置明确要求ApplicationContext也采用延迟加载策略加载：</p>
+<p>|作用域|描述|
+|--|--|
+|default|默认值，相当于false|
+|true|当第一次获取对象实例时创建Bean实例对象|
+|false|容器加载时创建Bean实例对象|</p>
+<pre><code class="language-xml"><span class="hljs-comment">&lt;!--    spring的bean对象 lazy-init 设置延迟加载--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span> <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<h3>bean标签的属性</h3>
+<p>name和id的特点：</p>
+<ol>
+<li>name可以赋多个值,id只能有一个值</li>
+<li>二者都不能重复</li>
+<li>ApplicationContext 对象的 <code><span class="hljs-function"><span class="hljs-title">getBean</span><span class="hljs-params">()</span></span></code>方法均能获取name或id</li>
+</ol>
+<p>示例：<br>
+spring.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!--    spring的bean对象 lazy-init 设置延迟加载--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span> <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 设置多个name,只能设置一个id --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"wang,gou"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"prototype"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>SpringTest.java</p>
+<pre><code class="language-java">   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring.xml"</span>);
+        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog</span> <span class="hljs-operator">=</span> (Dog)ac.getBean(<span class="hljs-string">"dog"</span>); <span class="hljs-comment">//通过id获取对象</span>
+        <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> ac.getBean(Person.class); <span class="hljs-comment">//通过类名获取对象，不用转换类型</span>
+        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog1</span> <span class="hljs-operator">=</span> (Dog)ac.getBean(<span class="hljs-string">"wang"</span>); <span class="hljs-comment">//通过name获取对象</span>
+        System.out.println(dog1);
+
+    }
+</code></pre>
+<h2>Bean的初始化方式</h2>
+<p>方式：</p>
+<ol>
+<li>构造方法初始化</li>
+<li>工厂方法初始化</li>
+</ol>
+<p>工厂模式：</p>
+<p>1.普通工厂模式：工厂类的方法是普通方法</p>
+<p>CarFactory.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.factory;
+
+<span class="hljs-keyword">import</span> com.zr.vo.Car;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarFactory</span> </span>{
+    <span class="hljs-keyword">public</span> Car createCar(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Car</span>();
+    }
+}
+</code></pre>
+<p>2.静态工厂模式: 工厂类的方法是静态方法</p>
+<p>CarFactory.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.factory;
+
+<span class="hljs-keyword">import</span> com.zr.vo.Car;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarFactory</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Car createCar(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Car</span>();
+    }
+}
+</code></pre>
+<h3>工厂模式初始化示例</h3>
+<p>spring.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!--    spring的bean对象 lazy-init 设置延迟加载--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span> <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"wang,gou0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"prototype"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"factory"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.factory.AnimalFactory"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-comment">&lt;!--    普通工厂方法--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"ren"</span> <span class="hljs-attr">factory-bean</span>=<span class="hljs-string">"factory"</span> <span class="hljs-attr">factory-method</span>=<span class="hljs-string">"createPerson"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-comment">&lt;!--    静态工厂方法--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"gou"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.factory.AnimalFactory"</span> <span class="hljs-attr">factory-method</span>=<span class="hljs-string">"createDog"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+
+</code></pre>
+<p>AnimalFactory.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.factory;
+
+<span class="hljs-keyword">import</span> com.zr.vo.Person;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnimalFactory</span> </span>{
+    <span class="hljs-keyword">public</span>  Person createPerson(){
+        Person person = <span class="hljs-keyword">new</span> <span class="hljs-type">Person</span>();
+        <span class="hljs-keyword">return</span> person;
+    }
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Dog createDog(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Dog</span>();
+    }
+}
+</code></pre>
+<p>SpringTest.java</p>
+<pre><code class="language-java">package com.zr;
+
+<span class="hljs-keyword">import</span> com.zr.vo.Dog;
+<span class="hljs-keyword">import</span> com.zr.vo.Person;
+<span class="hljs-keyword">import</span> org.springframework.context.ApplicationContext;
+<span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+
+<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> SpringTest {
+    <span class="hljs-built_in">public</span> static <span class="hljs-type">void</span> main(String[] args){
+        ApplicationContext ac = <span class="hljs-built_in">new</span> ClassPathXmlApplicationContext("spring.xml");
+        Dog dog = (Dog)ac.getBean("dog");
+//        Person person = ac.getBean(Person.<span class="hljs-keyword">class</span>);
+        Person person0 = (Person) ac.getBean("person");
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(person0);
+        Dog dog1 = (Dog)ac.getBean("wang");
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(dog1);
+        Person person2 = (Person) ac.getBean("ren");
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(person2);
+        Person person3 = (Person) ac.getBean("ren");
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(person3);
+        Dog dog2 = (Dog) ac.getBean("gou");
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println("dog地址："+dog);
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println("dog2地址："+dog2);
+
+    }
+}
+</code></pre>
+<p>输出如下：</p>
+<pre><code class="language-text">Person对象被初始化
+Person对象被初始化
+<span class="hljs-keyword">com</span>.zr.vo.Person<span class="hljs-subst">@1</span>e127982
+<span class="hljs-keyword">com</span>.zr.vo.Dog<span class="hljs-subst">@60</span>c6f5b
+<span class="hljs-keyword">com</span>.zr.vo.Person<span class="hljs-subst">@2038</span>ae61
+<span class="hljs-keyword">com</span>.zr.vo.Person<span class="hljs-subst">@2038</span>ae61
+dog地址：<span class="hljs-keyword">com</span>.zr.vo.Dog<span class="hljs-subst">@60</span>c6f5b
+dog2地址：<span class="hljs-keyword">com</span>.zr.vo.Dog<span class="hljs-subst">@2038</span>ae61
+
+</code></pre>
+<p>可见，构造方法初始化和工厂方法初始化获得的类地址是不同的，但由于默认为单例模式，统一方法初始化两个对象的地址相同，上例地址均为<code><span class="hljs-symbol">@2038ae61</span></code>。</p>
+<p><img src="9_14_01.PNG" alt="alt"></p>
+<p>使用工厂模式创建的对象，本质上是注册了一个bean属性，类名和使用构造方法初始化注册的bean属性相同。此时，如果之前采用构造方法并使用类名获取对象，因为调用工厂模式获得对象则是相当于通过类型获取对象，那么会报错。原因就是上图所说的注册了多次的相同的bean，但用同一个class获取，spring不知道获取哪个对象。而用id获取对象则不会报错。</p>
+<h2>依赖注入(DI)</h2>
+<p>DI：Dependency Injection (依赖注入), 即给对象的属性赋值</p>
+<p>依赖：根据什么<br>
+注入：赋值</p>
+<p>注入方式：</p>
+<ol>
+<li>Setter 注入</li>
+<li>构造器注入</li>
+<li>工厂方法注入</li>
+<li>接口注入</li>
+</ol>
+<h3>Setter 注入</h3>
+<p>示例</p>
+<p>(在本例中，Dog和Person都是普通对象，且有<code><span class="hljs-function"><span class="hljs-title">set</span><span class="hljs-params">()</span></span></code>方法和<code><span class="hljs-function"><span class="hljs-title">toString</span><span class="hljs-params">()</span></span></code>方法)</p>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.ioc.vo.Person"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"李雷"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"20"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- 用ref标签表示id为"dog"的Dog类型的对象 --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"dog"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.ioc.vo.Dog"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 通过子标签给对象的属性赋值 --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"哈士奇"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>TestIoc.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.ioc;
+
+<span class="hljs-keyword">import</span> com.ioc.vo.Dog;
+<span class="hljs-keyword">import</span> com.ioc.vo.Person;
+<span class="hljs-keyword">import</span> org.springframework.context.ApplicationContext;
+<span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestIoc</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring-ioc.xml"</span>);
+        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog</span> <span class="hljs-operator">=</span> (Dog) ac.getBean(<span class="hljs-string">"dog"</span>);
+        <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> (Person) ac.getBean(<span class="hljs-string">"person"</span>);
+        System.out.println(dog);
+        System.out.println(person);
+    }
+}
+</code></pre>
+<p>输出结果如下：</p>
+<pre><code class="language-text">Dog{<span class="hljs-attribute">name</span>=<span class="hljs-string">'哈士奇'</span>}
+Person{<span class="hljs-attribute">name</span>=<span class="hljs-string">'李雷'</span>, <span class="hljs-attribute">age</span>=20, <span class="hljs-attribute">dog</span>=Dog{<span class="hljs-attribute">name</span>=<span class="hljs-string">'哈士奇'</span>}}
+</code></pre>
+<p><code><span class="hljs-function"><span class="hljs-title">setName</span><span class="hljs-params">()</span></span></code> 中的<code><span class="hljs-keyword">Name</span></code>决定了依赖注入的属性名为name，而不是<code><span class="hljs-function"><span class="hljs-title">setName</span><span class="hljs-params">()</span></span></code>方法中的属性名</p>
+<h4>p命名空间注入</h4>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.ioc.vo.Person"</span> <span class="hljs-attr">p:age</span>=<span class="hljs-string">"18"</span> <span class="hljs-attr">p:dog-ref</span>=<span class="hljs-string">"dog"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"李雷"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+<span class="hljs-comment">&lt;!--        &lt;property name="age" value="20"&gt;&lt;/property&gt;--&gt;</span>
+<span class="hljs-comment">&lt;!--        &lt;property name="dog" ref="dog"&gt;&lt;/property&gt;--&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<h3>构造方法注入</h3>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.ioc.vo.Dog"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"哈士奇"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">constructor-arg</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"大型犬"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">constructor-arg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<p><code>&lt;<span class="hljs-function"><span class="hljs-keyword">constructor</span>-<span class="hljs-title">arg</span>&gt;</span></code>标签的顺序按照构造方法的属性顺序写</p>
+<h2>Bean的管理</h2>
+<h3>生命周期</h3>
+<p>初始化方法和销毁方法示例</p>
+<p>Dog.java</p>
+<pre><code class="language-java"><span class="hljs-comment">// ......</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span>()</span>{
+        System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">"Dog的bean初始化方法"</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">destroy</span>()</span>{
+        System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">"Dog的bean销毁方法"</span>);
+    }
+<span class="hljs-comment">//......</span>
+</code></pre>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml">    &lt;bean id<span class="hljs-operator">=</span><span class="hljs-string">"dog"</span> class<span class="hljs-operator">=</span><span class="hljs-string">"com.ioc.vo.Dog"</span> init-method<span class="hljs-operator">=</span><span class="hljs-string">"init"</span> destroy-method<span class="hljs-operator">=</span><span class="hljs-string">"destroy"</span>&gt;
+        &lt;constructor-arg value<span class="hljs-operator">=</span><span class="hljs-string">"哈士奇"</span>&gt;&lt;/constructor-arg&gt;
+        &lt;constructor-arg value<span class="hljs-operator">=</span><span class="hljs-string">"大型犬"</span>&gt;&lt;/constructor-arg&gt;
+    &lt;/bean&gt;
+</code></pre>
+<p>TestIoc.java</p>
+<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestIoc</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring-ioc.xml"</span>);
+        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog</span> <span class="hljs-operator">=</span> (Dog) ac.getBean(<span class="hljs-string">"dog"</span>);
+        <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> (Person) ac.getBean(<span class="hljs-string">"person"</span>);
+        System.out.println(dog);
+        System.out.println(person);
+        ((ClassPathXmlApplicationContext)ac).close();
+        <span class="hljs-comment">// close()方法是ClassPathXmlApplicationContext对象特有的方法，所以要向下转型后才能调用</span>
+    }
+}
+</code></pre>
+<h3>BeanPostProcessor</h3>
+<p>如果想在Spring容器完成bean的实例化、配置和其它的初始化后执行一些自定义逻辑，你可以插入一个或多个的BeanPostProcessor实现；</p>
+<p>可以用BeanPostProcessor在bean的实例化过程中修改bean对象</p>
+<p>示例：</p>
+<p><code>config/MyBeanPostProcessor.java</code></p>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.ioc.config;
+
+<span class="hljs-keyword">import</span> com.ioc.vo.Person;
+<span class="hljs-keyword">import</span> org.springframework.beans.BeansException;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.config.BeanPostProcessor;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyBeanPostProcessor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">BeanPostProcessor</span> {
+    <span class="hljs-comment">/**
+     * 赋值后初始化方法之前执行
+     * <span class="hljs-doctag">@param</span> bean
+     * <span class="hljs-doctag">@param</span> beanName
+     * <span class="hljs-doctag">@return</span>
+     * <span class="hljs-doctag">@throws</span> BeansException
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Object <span class="hljs-title function_">postProcessBeforeInitialization</span><span class="hljs-params">(Object bean, String beanName)</span> <span class="hljs-keyword">throws</span> BeansException {
+        <span class="hljs-keyword">return</span> BeanPostProcessor.<span class="hljs-built_in">super</span>.postProcessBeforeInitialization(bean, beanName);
+    }
+    <span class="hljs-comment">/**
+     * bean 被创建后执行, 初始化方法之后执行
+     * <span class="hljs-doctag">@param</span> bean
+     * <span class="hljs-doctag">@param</span> beanName
+     * <span class="hljs-doctag">@return</span>
+     * <span class="hljs-doctag">@throws</span> BeansException
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Object <span class="hljs-title function_">postProcessAfterInitialization</span><span class="hljs-params">(Object bean, String beanName)</span> <span class="hljs-keyword">throws</span> BeansException {
+        System.out.println(bean);
+        <span class="hljs-keyword">if</span>(<span class="hljs-string">"person"</span>.equalsIgnoreCase(beanName)){
+            <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> (Person) bean;
+            person.setAge(<span class="hljs-number">16</span>);
+        }
+        <span class="hljs-keyword">return</span> BeanPostProcessor.<span class="hljs-built_in">super</span>.postProcessAfterInitialization(bean, beanName);
+    }
+}
+</code></pre>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml"><span class="hljs-comment">&lt;!-- 省略若干行 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.ioc.config.MyBeanPostProcessor"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 省略若干行 --&gt;</span>
+</code></pre>
+<p>效果：在bean被创建且赋值之后将 beanName为 person 的对象的age属性设置为16。</p>
+<h2>属性注入方式</h2>
+<p><img src="9_14_02.PNG" alt="alt"></p>
+<h3>List集合的注入</h3>
+<p>Person.java</p>
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-title class_">List</span>&lt;<span class="hljs-title class_">String</span>&gt; address;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">List</span>&lt;<span class="hljs-title class_">String</span>&gt; <span class="hljs-title function_">getAddress</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> address;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setAddress</span>(<span class="hljs-params">List&lt;<span class="hljs-built_in">String</span>&gt; address</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">address</span> = address;
+    }
+</code></pre>
+<p>spring-ioc.xml</p>
+<pre><code class="language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"address"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">list</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>长春<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>大连<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">list</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+</code></pre>
+<p>效果：为<code><span class="hljs-built_in">List</span><span class="hljs-operator">&lt;</span><span class="hljs-built_in">String</span><span class="hljs-operator">&gt;</span></code> 类型的集合对象注入属性值</p>
+<p><img src="9_14_03.PNG" alt="alt"></p>
+<p><img src="9_14_04.PNG" alt="alt"></p>
+<h2>自动装配及类型</h2>
+<p>Spring IoC容器可以自动装配（autowire）相互协作bean之间的关联依赖关系，可以自动让Spring通过检查BeanFactory中的内容，来指定bean的协作者（其他被依赖的属性bean）;</p>
+<p><img src="9_14_05.PNG" alt="alt"></p>
+<p>在上图中，Person 中的Dog 属性可以用 <code><span class="hljs-attribute">autowire</span><span class="hljs-operator">=</span><span class="hljs-string">"byName"</span></code> 参数在属性注入的时候自动装配，注意Bean <code><span class="hljs-attribute">Dog</span></code>的<code><span class="hljs-built_in">id</span></code>要与<code><span class="hljs-attribute">Person</span></code>的属性名<code><span class="hljs-attribute">dog</span></code>以及setDog方法相同。</p>
+<p><code><span class="hljs-attribute">autowire</span><span class="hljs-operator">=</span><span class="hljs-string">"byType"</span></code>示例</p>
+<p>spring-auto.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.auto.vo.Person"</span> <span class="hljs-attr">autowire</span>=<span class="hljs-string">"byType"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-comment">&lt;!--    byType要求bean类型在容器中唯一 --&gt;</span>
+<span class="hljs-comment">&lt;!--    &lt;bean id="dog" class="com.auto.vo.Dog"&gt;&lt;/bean&gt;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.auto.vo.Dog"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p><strong>注意</strong> byType要求bean类型在容器中唯一</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月14日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"IOC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"DI"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"控制反转"}],["$","p","6",{"className":"tags_tag__HZYxk ","children":"依赖注入"}],["$","p","7",{"className":"tags_tag__HZYxk ","children":"xml"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

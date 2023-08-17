@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.timeshike.com
+
+# Sitemaps
+Sitemap: https://www.timeshike.com/sitemap.xml

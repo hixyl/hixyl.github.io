@@ -1,0 +1,121 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","%E4%BD%BF%E7%94%A8ubuntu-debian%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAwordpress%E7%BD%91%E7%AB%99","d"],{"children":["__PAGE__?{\"id\":\"使用ubuntu-debian快速搭建wordpress网站\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","%E4%BD%BF%E7%94%A8ubuntu-debian%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAwordpress%E7%BD%91%E7%AB%99","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"使用ubuntu-debian快速搭建wordpress网站\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","%E4%BD%BF%E7%94%A8ubuntu-debian%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAwordpress%E7%BD%91%E7%AB%99","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"使用Ubuntu/Debian快速搭建Wordpress网站 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T2ff5,
+    <p class="time">发布时间：<time datetime="21 March, 2022">2022-03-21 09:20:29</time></p>
+    <p class="words">本文字数：510 字       阅读完需：约 3 分钟</p>
+    <html><head></head><body><h2>一、概述</h2>
+<p>WordPress 是网络上最流行的开源博客系统和 CMS。它基于 PHP 和 MySQL。它的功能可以通过数以千计的免费插件和主题进行扩展。 在本教程中，我们将在 Apache2 服务器上安装 WordPress 并创建我们的第一篇文章。</p>
+<h2>二、安装依赖</h2>
+<p>要安装 PHP 和 Apache，使用以下命令：</p>
+<pre><code>sudo apt update
+sudo apt install apache2 <span class="hljs-string">\</span>
+                 ghostscript <span class="hljs-string">\</span>
+                 libapache2-mod-php <span class="hljs-string">\</span>
+                 mysql-server <span class="hljs-string">\</span>
+                 php <span class="hljs-string">\</span>
+                 php-bcmath <span class="hljs-string">\</span>
+                 php-curl <span class="hljs-string">\</span>
+                 php-imagick <span class="hljs-string">\</span>
+                 php-intl <span class="hljs-string">\</span>
+                 php-json <span class="hljs-string">\</span>
+                 php-mbstring <span class="hljs-string">\</span>
+                 php-mysql <span class="hljs-string">\</span>
+                 php-xml <span class="hljs-string">\</span>
+                 php-zip
+</code></pre>
+<p>&nbsp; &nbsp;</p>
+<h2>三、安装WordPress</h2>
+<p>我们将使用来自<a href="http://wordpress.org/">WordPress.org</a>的版本，而不是 Ubuntu 存档中的 APT 包，因为这是上游 WordPress 的首选方法。这也将减少 WordPress 支持志愿者无法预料并因此无法提供帮助的“陷阱”问题。 创建安装目录并从<a href="http://wordpress.org/">WordPress.org</a>下载文件： &nbsp;</p>
+<pre><code>sudo mkdir -p <span class="hljs-regexp">/srv/</span>www
+sudo chown www-data: <span class="hljs-regexp">/srv/</span>www
+curl https:<span class="hljs-regexp">//</span>wordpress.org<span class="hljs-regexp">/latest.tar.gz  sudo -u www-data tar zx -C /</span>srv/www
+</code></pre>
+<p>&nbsp;</p>
+<p>请注意，这会将所有权设置为 user www-data，这可能是不安全的，例如当您的服务器托管具有不同维护者的多个站点时。您应该调查在这种情况下使用每个网站的用户，并使文件仅对这些用户可读和可写。这将需要配置 PHP-FPM 为每个站点启动一个单独的实例，每个实例都作为站点的用户帐户运行。在这样的设置中，wp-config.php应该（阅读：如果你做的不同，你需要一个很好的理由）对站点所有者和组是只读的，并且其他权限设置为无访问权限（chmod 400）。但是，这超出了本指南的范围。</p>
+<h2>四、为 WordPress 配置 Apache</h2>
+<p>为 WordPress 创建 Apache 站点。使用命令<code>vim <span class="hljs-regexp">/etc/</span>apache2<span class="hljs-regexp">/sites-available/</span>wordpress.conf</code>&nbsp;键入以下内容：</p>
+<pre><code><span class="hljs-section">&lt;VirtualHost *<span class="hljs-number">:80</span>&gt;</span>
+    <span class="hljs-attribute">DocumentRoot</span> /srv/www/wordpress
+    <span class="hljs-section">&lt;Directory /srv/www/wordpress&gt;</span>
+        <span class="hljs-attribute">Options</span> FollowSymLinks
+        <span class="hljs-attribute">AllowOverride</span> Limit Options FileInfo
+        <span class="hljs-attribute">DirectoryIndex</span> index.php
+        <span class="hljs-attribute">Require</span> <span class="hljs-literal">all</span> granted
+    <span class="hljs-section">&lt;/Directory&gt;</span>
+    <span class="hljs-section">&lt;Directory /srv/www/wordpress/wp-content&gt;</span>
+        <span class="hljs-attribute">Options</span> FollowSymLinks
+        <span class="hljs-attribute">Require</span> <span class="hljs-literal">all</span> granted
+    <span class="hljs-section">&lt;/Directory&gt;</span>
+<span class="hljs-section">&lt;/VirtualHost&gt;</span>
+</code></pre>
+<p>启用网站：<code><span class="hljs-attribute">sudo</span> a2enmod wordpress</code>&nbsp; &nbsp; 启用 URL 重写：<code>sudo a2ensite <span class="hljs-built_in">rewrite</span></code>&nbsp; (使用以下命令禁用默认的“It Works”站点：<code>sudo a2dissite <span class="hljs-number">000</span>-<span class="hljs-keyword">default</span></code> ) 或者，您可以编辑我们的配置文件以添加 WordPress 安装将响应请求的主机名，而不是禁用“它可以工作”页面。这个主机名必须以某种方式映射到您的机器上，例如通过 DNS，或编辑客户端系统的<code><span class="hljs-regexp">/etc/</span>hosts</code>文件（在 Windows 上相当于<code><span class="hljs-name">C</span>:\Windows\System32\drivers\etc\hosts</code>）。添加<code><span class="hljs-attribute">ServerName</span></code>如下：</p>
+<pre><code><span class="hljs-variable">&lt;VirtualHost *:80&gt;</span>
+    ServerName hostname.example.com
+    ... <span class="hljs-comment"># the rest of the VHost configuration</span>
+<span class="hljs-variable">&lt;/VirtualHost&gt;</span>
+</code></pre>
+<p>最后，重新加载 apache2 以应用所有这些更改：<code>sudo service apache2 <span class="hljs-keyword">reload</span></code></p>
+<h2>五、配置数据库</h2>
+<p>要配置 WordPress，我们需要创建 MySQL 数据库。我们开始做吧！</p>
+<pre><code>$ sudo mysql -u root
+Welcome <span class="hljs-keyword">to</span> the MySQL monitor.  Commands <span class="hljs-keyword">end</span> <span class="hljs-keyword">with</span> ; <span class="hljs-keyword">or</span> \g.
+Your MySQL <span class="hljs-keyword">connection</span> id <span class="hljs-keyword">is</span> <span class="hljs-number">7</span>
+<span class="hljs-keyword">Server</span> <span class="hljs-keyword">version</span>: <span class="hljs-number">5.7</span><span class="hljs-number">.20</span><span class="hljs-number">-0</span>ubuntu0<span class="hljs-number">.16</span><span class="hljs-number">.04</span><span class="hljs-number">.1</span> (Ubuntu)
+
+Copyright (c) <span class="hljs-number">2000</span>, <span class="hljs-number">2017</span>, Oracle <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> its affiliates. <span class="hljs-keyword">All</span> rights reserved.
+
+Oracle <span class="hljs-keyword">is</span> a registered trademark <span class="hljs-keyword">of</span> Oracle Corporation <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> its
+affiliates. Other names may be trademarks <span class="hljs-keyword">of</span> their respective
+owners.
+
+<span class="hljs-keyword">Type</span> <span class="hljs-string">'help;'</span> <span class="hljs-keyword">or</span> <span class="hljs-string">'\h'</span> <span class="hljs-keyword">for</span> help. <span class="hljs-keyword">Type</span> <span class="hljs-string">'\c'</span> <span class="hljs-keyword">to</span> clear the <span class="hljs-keyword">current</span> <span class="hljs-keyword">input</span> <span class="hljs-keyword">statement</span>.
+
+mysql&gt; <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> wordpress;
+Query OK, <span class="hljs-number">1</span> <span class="hljs-keyword">row</span> affected (<span class="hljs-number">0</span>,<span class="hljs-number">00</span> sec)
+
+mysql&gt; <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> wordpress@localhost IDENTIFIED <span class="hljs-keyword">BY</span> <span class="hljs-string">'&lt;your-password&gt;'</span>;
+Query OK, <span class="hljs-number">1</span> <span class="hljs-keyword">row</span> affected (<span class="hljs-number">0</span>,<span class="hljs-number">00</span> sec)
+
+mysql&gt; <span class="hljs-keyword">GRANT</span> <span class="hljs-keyword">SELECT</span>,<span class="hljs-keyword">INSERT</span>,<span class="hljs-keyword">UPDATE</span>,<span class="hljs-keyword">DELETE</span>,<span class="hljs-keyword">CREATE</span>,<span class="hljs-keyword">DROP</span>,<span class="hljs-keyword">ALTER</span>
+    -&gt; <span class="hljs-keyword">ON</span> wordpress.*
+    -&gt; <span class="hljs-keyword">TO</span> wordpress@localhost;
+Query OK, <span class="hljs-number">1</span> <span class="hljs-keyword">row</span> affected (<span class="hljs-number">0</span>,<span class="hljs-number">00</span> sec)
+
+mysql&gt; FLUSH <span class="hljs-keyword">PRIVILEGES</span>;
+Query OK, <span class="hljs-number">1</span> <span class="hljs-keyword">row</span> affected (<span class="hljs-number">0</span>,<span class="hljs-number">00</span> sec)
+
+mysql&gt; quit
+Bye
+</code></pre>
+<p>使用<code>sudo service mysql <span class="hljs-literal">start</span></code>.</p>
+<h2>六、配置WordPress连接数据库</h2>
+<p>现在，让我们配置 WordPress 以使用该数据库。首先，将示例配置文件复制到<code>wp-config.php</code>： <code>sudo -u www-data cp <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config-sample.php <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config.php</code> 接下来，在配置文件中设置数据库凭据（不要替换<code><span class="hljs-attribute">database_name_here</span></code>或<code><span class="hljs-attribute">username_here</span></code>&nbsp;在下面的命令中。_请_替换<code><span class="hljs-section">&lt;your-password&gt;</span></code>为您的数据库密码。）： <code>sudo -u www-data sed -i <span class="hljs-string">'s/database_name_here/wordpress/'</span> <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config.php sudo -u www-data sed -i <span class="hljs-string">'s/username_here/wordpress/'</span> <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config.php sudo -u www-data sed -i <span class="hljs-string">'s/password_here/&lt;your-password&gt;/'</span> <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config.php</code> 最后，在终端会话中打开 nano 中的配置文件： <code>sudo -u www-data nano <span class="hljs-regexp">/srv/</span>www<span class="hljs-regexp">/wordpress/</span>wp-config.php</code> 找到以下内容：</p>
+<pre><code>define( 'AUTH_KEY', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'SECURE_AUTH_KEY', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'LOGGED_IN_KEY', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'NONCE_KEY', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'AUTH_SALT', 'put your unique phrase here' )<span class="hljs-comment">;</span>
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'LOGGED_IN_SALT', 'put your unique phrase here' )<span class="hljs-comment">; </span>
+define( 'NONCE_SALT', 'put your unique phrase here' )<span class="hljs-comment">;</span>
+</code></pre>
+<p>删除这些行（ctrl+k将在您每次按序列时删除一行）。然后替换为<a href="https://api.wordpress.org/secret-key/1.1/salt/">https://api.wordpress.org/secret-key/1.1/salt/</a>的内容。（此地址是一个随机生成器，每次打开时都会返回完全随机的密钥。）此步骤对于确保您的站点不易受到“已知秘密”攻击非常重要。 <code>ctrl+<span class="hljs-keyword">x</span></code>&nbsp;保存并关闭配置文件，然后输入<code><span class="hljs-attribute">y enter</span></code>&nbsp;</p>
+<h2>七、配置WordPress</h2>
+<p>在浏览器中打开<a href="http://localhost/">http://localhost/ 。</a>您将被要求提供新站点的名称、用户名、密码和电子邮件地址。请注意，您在此处选择的用户名和密码用于 WordPress，并且不提供对服务器任何其他部分的访问权限 - 选择与我们为 WordPress 使用而配置的 MySQL（数据库）凭据不同的用户名和密码，并且与您登录计算机或服务器的桌面或外壳的凭据不同。您可以选择是否要让您的网站被搜索引擎索引。</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"使用Ubuntu/Debian快速搭建Wordpress网站"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/建站技术/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"建站技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"debian"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"ubuntu"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"wordpress"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"搭建"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"网站"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

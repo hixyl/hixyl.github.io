@@ -1,0 +1,102 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","linux%E4%B8%8Bssh%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE","d"],{"children":["__PAGE__?{\"id\":\"linux下ssh客户端配置\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","linux%E4%B8%8Bssh%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"linux下ssh客户端配置\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","linux%E4%B8%8Bssh%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Linux下ssh客户端配置 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T19cf,
+    <p class="time">发布时间：<time datetime="05 April, 2022">2022-04-05 09:01:23</time></p>
+    <p class="words">本文字数：220 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><p>在linux下，~/.ssh目录是ssh的配置文件路径，其中./ssh/config文件可以用于自定义ssh服务器。</p>
+<h2>1.概述</h2>
+<p>通常，当通过 SSH 连接到远程服务器时，您将指定远程用户名、主机名和端口。例如，要从命令行以名为port<code><span class="hljs-attribute">john</span></code>的主机的用户身份登录，您可以键入：<code><span class="hljs-attribute">dev</span>.example.com``<span class="hljs-number">2322</span></code></p>
+<pre><code>ssh john@dev<span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.com</span> -<span class="hljs-selector-tag">p</span> <span class="hljs-number">2322</span>
+</code></pre>
+<p>要使用与上面命令中提供的相同选项连接到服务器，只需键入<code><span class="hljs-attribute">ssh dev</span></code>，同时将以下行放入您的<code><span class="hljs-string">"~/.ssh/config</span></code>文件中：</p>
+<pre><code class="language-ini">Host dev
+    HostName dev.example.com
+    <span class="hljs-keyword">User</span> <span class="hljs-title">john</span>
+    Port <span class="hljs-number">2322</span>
+</code></pre>
+<p>现在，当您键入 时，ssh 客户端将读取配置文件并使用为主机<code><span class="hljs-attribute">ssh dev</span></code>指定的连接详细信息：<code><span class="hljs-attribute">dev</span></code></p>
+<h2>2.SSH配置文件示例</h2>
+<p>文件路径&nbsp;<code>~<span class="hljs-regexp">/.ssh/</span>config</code></p>
+<pre><code class="language-ini">Host targaryen
+    HostName <span class="hljs-number">192.168</span>.<span class="hljs-number">1.10</span>
+    <span class="hljs-keyword">User</span> <span class="hljs-title">daenerys</span>
+    Port <span class="hljs-number">7654</span>
+    IdentityFile ~/.ssh/targaryen.key
+
+Host tyrell
+    HostName <span class="hljs-number">192.168</span>.<span class="hljs-number">10.20</span>
+
+Host martell
+    HostName <span class="hljs-number">192.168</span>.<span class="hljs-number">10.50</span>
+
+Host *ell
+    <span class="hljs-keyword">user</span> <span class="hljs-title">oberyn</span>
+
+Host * !martell
+    LogLevel <span class="hljs-literal">INF</span>O
+
+Host *
+    <span class="hljs-keyword">User</span> <span class="hljs-title">root</span>
+    Compression yes
+</code></pre>
+<ul>
+<li>
+<p>当您键入<code><span class="hljs-attribute">ssh targaryen</span></code>时，ssh 客户端会读取文件并应用第一个匹配项中的选项，即<code><span class="hljs-attribute">Host targaryen</span></code>.&nbsp;然后它一个接一个地检查下一个节是否有匹配的模式。下一个匹配的是<code>Host * !martell</code>（表示除 之外的所有主机<code><span class="hljs-attribute">martell</span></code>），它将应用此节中的连接选项。最后一个定义<code><span class="hljs-attribute">Host</span> *</code>也匹配，但 ssh 客户端将仅采用该<code><span class="hljs-attribute">Compression</span></code>选项，因为该<code><span class="hljs-keyword">User</span></code>选项已在<code><span class="hljs-attribute">Host targaryen</span></code>节中定义。键入时使用的完整选项列表<code><span class="hljs-attribute">ssh targaryen</span></code>如下：</p>
+<pre><code class="language-ini">HostName 192.168.1.10<span class="hljs-built_in">
+User </span>daenerys<span class="hljs-built_in">
+Port </span>7654
+IdentityFile ~/.ssh/targaryen.key
+LogLevel <span class="hljs-built_in">INFO</span>
+Compression <span class="hljs-literal">yes</span>
+</code></pre>
+</li>
+<li>
+<p>运行<code><span class="hljs-attribute">ssh tyrell</span></code>匹配的主机模式时：<code><span class="hljs-attribute">Host tyrell</span></code>、<code><span class="hljs-attribute">Host</span> *ell</code>和.&nbsp;在这种情况下使用的选项是：<code>Host * !martell<span class="hljs-string">``</span>Host *</code></p>
+<pre><code class="language-ini">HostName 192.168.10.20<span class="hljs-built_in">
+User </span>oberyn
+LogLevel <span class="hljs-built_in">INFO</span>
+Compression <span class="hljs-literal">yes</span>
+</code></pre>
+</li>
+<li>
+<p>如果您运行<code><span class="hljs-attribute">ssh martell</span></code>，则匹配的主机模式是<code><span class="hljs-attribute">Host martell</span></code>：<code><span class="hljs-attribute">Host</span> *ell</code>和<code><span class="hljs-attribute">Host</span> *</code>。在这种情况下使用的选项是：</p>
+<pre><code class="language-ini">HostName <span class="hljs-number">192.168</span>.<span class="hljs-number">10.50</span>
+<span class="hljs-keyword">User</span> <span class="hljs-title">oberyn</span>
+Compression yes
+</code></pre>
+</li>
+<li>
+<p>对于所有其他连接，ssh 客户端将使用<code>Host * !martell</code>和<code><span class="hljs-attribute">Host</span> *</code>部分中指定的选项。</p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h2>3.SSH读取顺序</h2>
+<p>（1）从命令行指定的选项。 （2）<code>~<span class="hljs-regexp">/.ssh/</span>config</code>中定义的选项。 （3）<code><span class="hljs-regexp">/etc/</span>ssh/ssh_config</code>中定义的选项。 如果要覆盖单个选项，可以在命令行上指定它。例如，如果您有以下定义：</p>
+<pre><code class="language-ini">Host dev
+    HostName dev.example.com
+    <span class="hljs-keyword">User</span> <span class="hljs-title">john</span>
+    Port <span class="hljs-number">2322</span>
+</code></pre>
+<p>并且您想使用所有其他选项，但以用户身份连接，<code><span class="hljs-attribute">root</span></code>而不是<code><span class="hljs-attribute">john</span></code>简单地在命令行上指定用户：</p>
+<pre><code><span class="hljs-attribute">ssh</span> -o <span class="hljs-string">"User=root"</span> dev
+</code></pre>
+<p>( <code><span class="hljs-deletion">-F</span></code>)<code><span class="hljs-attribute">configfile</span></code>选项允许您指定替代的每用户配置文件。 要告诉<code><span class="hljs-attribute">ssh</span></code>客户端忽略 ssh 配置文件中指定的所有选项，请使用： <code>ssh -F <span class="hljs-regexp">/dev/</span><span class="hljs-keyword">null</span> user@example.com</code></p>
+<h2>4.dolphin连接ssh服务器</h2>
+<p>直接在地址栏输入sftp://HostName 即可，HostName可以为ssh配置文件中定义的内容。</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Linux下ssh客户端配置"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/linux相关/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"linux相关"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"dev"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"host"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"ssh"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"targaryen"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"user"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

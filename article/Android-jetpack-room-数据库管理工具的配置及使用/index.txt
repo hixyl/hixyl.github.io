@@ -1,0 +1,218 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","Android-jetpack-room-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8","d"],{"children":["__PAGE__?{\"id\":\"Android-jetpack-room-数据库管理工具的配置及使用\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Android-jetpack-room-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Android-jetpack-room-数据库管理工具的配置及使用\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","Android-jetpack-room-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Android jetpack room 数据库管理工具的配置及使用 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T33d0,
+    <p class="time">发布时间：<time datetime="15 May, 2023">2023-05-15 14:54:05</time></p>
+    <p class="words">本文字数：570 字       阅读完需：约 3 分钟</p>
+    <html><head></head><body><h2>配置</h2>
+<p>在根目录的<code>build.gradle</code>的<code><span class="hljs-attribute">plugin</span></code>下添加</p>
+<pre><code class="language-gradle"><span class="hljs-attribute">id</span> 'com.google.devtools.ksp' version '<span class="hljs-number">1</span>.<span class="hljs-number">8</span>.<span class="hljs-number">21</span>-<span class="hljs-number">1</span>.<span class="hljs-number">0</span>.<span class="hljs-number">11</span>' apply false
+</code></pre>
+<p>注意，版本号<code><span class="hljs-attribute">1</span>.<span class="hljs-number">8</span>.<span class="hljs-number">21</span></code>要与<code>org<span class="hljs-selector-class">.jetbrains</span><span class="hljs-selector-class">.kotlin</span>.android</code>版本号一致。示例:</p>
+<p><code>/build.gradle</code></p>
+<pre><code class="language-gradle">plugins {
+   <span class="hljs-built_in"> id</span> <span class="hljs-string">'com.android.application'</span> version <span class="hljs-string">'8.0.1'</span><span class="hljs-built_in"> apply</span><span class="hljs-built_in"> false</span>
+   <span class="hljs-built_in"> id</span> <span class="hljs-string">'com.android.library'</span> version <span class="hljs-string">'8.0.1'</span><span class="hljs-built_in"> apply</span><span class="hljs-built_in"> false</span>
+   <span class="hljs-built_in"> id</span> <span class="hljs-string">'org.jetbrains.kotlin.android'</span> version <span class="hljs-string">'1.8.21'</span><span class="hljs-built_in"> apply</span><span class="hljs-built_in"> false</span>
+   <span class="hljs-built_in"> id</span> <span class="hljs-string">'com.google.devtools.ksp'</span> version <span class="hljs-string">'1.8.21-1.0.11'</span><span class="hljs-built_in"> apply</span><span class="hljs-built_in"> false</span>
+}
+</code></pre>
+<p>在<code>app/build.gradle</code>下添加</p>
+<pre><code class="language-gradle"> def room_version = <span class="hljs-string">"2.5.0"</span>
+
+    implementation <span class="hljs-string">"androidx.room:room-runtime:<span class="hljs-subst">$room_version</span>"</span>
+    annotationProcessor <span class="hljs-string">"androidx.room:room-compiler:<span class="hljs-subst">$room_version</span>"</span>
+
+    <span class="hljs-comment">// To use Kotlin Symbol Processing (KSP)</span>
+    ksp <span class="hljs-string">"androidx.room:room-compiler:<span class="hljs-subst">$room_version</span>"</span>
+
+
+    <span class="hljs-comment">// optional - Test helpers</span>
+    testImplementation <span class="hljs-string">"androidx.room:room-testing:<span class="hljs-subst">$room_version</span>"</span>
+</code></pre>
+<p>将jvm版本改为17</p>
+<pre><code class="language-gradle"> compileOptions {
+        <span class="hljs-keyword">sourceCompatibility</span> JavaVersion.VERSION_17
+        <span class="hljs-keyword">targetCompatibility</span> JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = <span class="hljs-string">'17'</span>
+    }
+</code></pre>
+<p>示例: <code>app/build.gradle</code></p>
+<pre><code class="language-gradle">
+<span class="hljs-section">plugins</span> {
+    <span class="hljs-attribute">id</span> <span class="hljs-string">'com.android.application'</span>
+    id <span class="hljs-string">'org.jetbrains.kotlin.android'</span>
+    id <span class="hljs-string">'com.google.devtools.ksp'</span>
+}
+
+
+android {
+    <span class="hljs-attribute">namespace</span> <span class="hljs-string">'com.xyl.roomdemo'</span>
+    compileSdk <span class="hljs-number">33</span>
+
+    defaultConfig {
+        <span class="hljs-attribute">applicationId</span> <span class="hljs-string">"com.xyl.roomdemo"</span>
+        minSdk <span class="hljs-number">24</span>
+        targetSdk <span class="hljs-number">33</span>
+        versionCode <span class="hljs-number">1</span>
+        versionName <span class="hljs-string">"1.0"</span>
+
+        testInstrumentationRunner <span class="hljs-string">"androidx.test.runner.AndroidJUnitRunner"</span>
+    }
+
+    buildTypes {
+        <span class="hljs-section">release</span> {
+            <span class="hljs-attribute">minifyEnabled</span> <span class="hljs-literal">false</span>
+            proguardFiles getDefaultProguardFile(<span class="hljs-string">'proguard-android-optimize.txt'</span>), <span class="hljs-string">'proguard-rules.pro'</span>
+        }
+    }
+    compileOptions {
+        <span class="hljs-attribute">sourceCompatibility</span> JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        <span class="hljs-attribute">jvmTarget</span> = <span class="hljs-string">'17'</span>
+    }
+}
+
+
+dependencies {
+
+    <span class="hljs-attribute">implementation</span> <span class="hljs-string">'androidx.core:core-ktx:1.10.1'</span>
+    implementation <span class="hljs-string">'androidx.appcompat:appcompat:1.6.1'</span>
+    implementation <span class="hljs-string">'com.google.android.material:material:1.9.0'</span>
+    implementation <span class="hljs-string">'androidx.constraintlayout:constraintlayout:2.1.4'</span>
+    testImplementation <span class="hljs-string">'junit:junit:4.13.2'</span>
+    androidTestImplementation <span class="hljs-string">'androidx.test.ext:junit:1.1.5'</span>
+    androidTestImplementation <span class="hljs-string">'androidx.test.espresso:espresso-core:3.5.1'</span>
+
+    def room_version = <span class="hljs-string">"2.5.0"</span>
+
+    implementation <span class="hljs-string">"androidx.room:room-runtime:<span class="hljs-variable">$room_version</span>"</span>
+    annotationProcessor <span class="hljs-string">"androidx.room:room-compiler:<span class="hljs-variable">$room_version</span>"</span>
+
+    // To use Kotlin Symbol Processing (KSP)
+    ksp <span class="hljs-string">"androidx.room:room-compiler:<span class="hljs-variable">$room_version</span>"</span>
+
+
+    // optional - Test helpers
+    testImplementation <span class="hljs-string">"androidx.room:room-testing:<span class="hljs-variable">$room_version</span>"</span>
+
+
+
+}
+</code></pre>
+<h2>使用</h2>
+<h3>创建数据库抽象类</h3>
+<p><code>AppDataBase.<span class="hljs-built_in">kt</span></code></p>
+<pre><code class="language-kotlin"><span class="hljs-meta">@Database(entities = [User::class], version = 1)</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppDatabase</span> : <span class="hljs-type">RoomDatabase</span>(){
+    <span class="hljs-keyword">abstract</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">userDao</span><span class="hljs-params">()</span></span>: UserDao
+}
+</code></pre>
+<h3>创建entity类</h3>
+<p><code><span class="hljs-keyword">User</span>.kt</code></p>
+<pre><code class="language-kotlin"><span class="hljs-variable">@Entity</span>
+data class User (
+    <span class="hljs-variable">@PrimaryKey</span> val <span class="hljs-attribute">uid</span>: Int,
+    <span class="hljs-variable">@ColumnInfo</span>(name = <span class="hljs-string">"name"</span>) val <span class="hljs-attribute">name</span>: String?,
+    <span class="hljs-variable">@ColumnInfo</span>(name = <span class="hljs-string">"sex"</span>) val <span class="hljs-attribute">sex</span>: String?
+)
+</code></pre>
+<h3>创建Dao类</h3>
+<pre><code class="language-kotlin"><span class="hljs-keyword">package</span> com.xyl.roomdemo.dao
+
+<span class="hljs-keyword">import</span> androidx.room.Dao
+<span class="hljs-keyword">import</span> androidx.room.Delete
+<span class="hljs-keyword">import</span> androidx.room.Insert
+<span class="hljs-keyword">import</span> androidx.room.Query
+<span class="hljs-keyword">import</span> androidx.room.Update
+<span class="hljs-keyword">import</span> com.xyl.roomdemo.entity.User
+
+<span class="hljs-meta">@Dao</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserDao</span> {
+    <span class="hljs-meta">@Query(<span class="hljs-string">"select * from user"</span>)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAll</span><span class="hljs-params">()</span></span>: List&lt;User&gt;
+    <span class="hljs-meta">@Query(<span class="hljs-string">"select * from user where uid = (:queryId)"</span>)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getUserById</span><span class="hljs-params">(queryId: <span class="hljs-type">Int</span>)</span></span>: User
+    <span class="hljs-meta">@Insert</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">addUser</span><span class="hljs-params">(user: <span class="hljs-type">User</span>)</span></span>
+    <span class="hljs-meta">@Update</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateUser</span><span class="hljs-params">(user: <span class="hljs-type">User</span>)</span></span>
+    <span class="hljs-meta">@Delete</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">delUser</span><span class="hljs-params">(user: <span class="hljs-type">User</span>)</span></span>
+
+}
+</code></pre>
+<h3>配置数据库</h3>
+<p><code>App.<span class="hljs-built_in">kt</span></code></p>
+<pre><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">App</span>: <span class="hljs-type">Application</span>() {
+    <span class="hljs-keyword">lateinit</span> <span class="hljs-keyword">var</span> db: AppDatabase
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">super</span>.onCreate()
+        Log.i(TAG, <span class="hljs-string">"onCreate: app启动"</span>)
+        GlobalScope.launch(Dispatchers.IO) {
+            db = Room.databaseBuilder(applicationContext, AppDatabase::<span class="hljs-keyword">class</span>.java, <span class="hljs-string">"database-name"</span>)
+                .build()
+        }
+    }
+}
+</code></pre>
+<h3>使用示例</h3>
+<p><code>MainActivity.<span class="hljs-built_in">kt</span></code></p>
+<pre><code class="language-kotlin"><span class="hljs-keyword">package</span> com.xyl.roomdemo
+
+<span class="hljs-keyword">import</span> androidx.appcompat.app.AppCompatActivity
+<span class="hljs-keyword">import</span> android.os.Bundle
+<span class="hljs-keyword">import</span> android.util.Log
+<span class="hljs-keyword">import</span> com.xyl.roomdemo.entity.User
+<span class="hljs-keyword">import</span> com.xyl.roomdemo.utils.TAG
+<span class="hljs-keyword">import</span> kotlinx.coroutines.DelicateCoroutinesApi
+<span class="hljs-keyword">import</span> kotlinx.coroutines.Dispatchers
+<span class="hljs-keyword">import</span> kotlinx.coroutines.GlobalScope
+<span class="hljs-keyword">import</span> kotlinx.coroutines.launch
+<span class="hljs-keyword">import</span> kotlinx.coroutines.withContext
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        <span class="hljs-keyword">val</span> app: App = application <span class="hljs-keyword">as</span> App
+
+        GlobalScope.launch(Dispatchers.IO) {
+            <span class="hljs-keyword">val</span> dao = app.db.userDao()
+            dao.addUser(User(<span class="hljs-number">1001</span>, <span class="hljs-string">"小明"</span>, <span class="hljs-string">"男"</span>))
+            dao.addUser(User(<span class="hljs-number">1002</span>, <span class="hljs-string">"小红"</span>, <span class="hljs-string">"女"</span>))
+            dao.addUser(User(<span class="hljs-number">1003</span>, <span class="hljs-string">"小花"</span>, <span class="hljs-string">"女"</span>))
+            dao.addUser(User(<span class="hljs-number">1004</span>, <span class="hljs-string">"张三"</span>, <span class="hljs-string">"男"</span>))
+            dao.delUser(User(<span class="hljs-number">1002</span>, <span class="hljs-string">""</span>, <span class="hljs-string">""</span>))
+            <span class="hljs-keyword">val</span> userList = dao.getAll()
+            withContext(Dispatchers.Main) {
+                Log.i(TAG, <span class="hljs-string">"onCreate: <span class="hljs-subst">${userList.toString()}</span>"</span>)
+            }
+
+        }
+
+    }
+}
+</code></pre>
+<h2>参考文档</h2>
+<p><a href="https://developer.android.com/training/data-storage/room?hl=zh-cn#setup">https://developer.android.com/training/data-storage/room?hl=zh-cn#setup</a></p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Android jetpack room 数据库管理工具的配置及使用"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"sqllite"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"jetpack"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"room"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"数据库"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

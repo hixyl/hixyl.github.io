@@ -1,0 +1,628 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","9%E6%9C%885%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月5日vue学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%885%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月5日vue学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%885%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:Td6fe,
+    <p class="time">发布时间：<time datetime="05 September, 2022">2022-09-05 17:18:34</time></p>
+    <p class="words">本文字数：970 字       阅读完需：约 5 分钟</p>
+    <html><head></head><body><h2>模板语法</h2>
+<p>关键字：<code><span class="hljs-keyword">template</span></code></p>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>9月5号<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/vue.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        宁波加油！
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">template</span>:<span class="hljs-string">'&lt;div&gt;长春加油</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">msg</span>}}</span><span class="language-xml"><span class="language-handlebars"><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>',
+            data:{
+                msg:'!'
+            }
+        })
+    </span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></code></pre>
+<p>模板<code><span class="hljs-keyword">template</span></code>内的内容对<code><span class="hljs-meta">#app</span></code>内的内容进行全部覆盖，所以显示效果为长春加油</p>
+<h2>ES6新语法</h2>
+<p>用``替代''，可以在句中直接进行换行</p>
+<h2>rander</h2>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        宁波加油！
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-title function_">render</span>(<span class="hljs-params">h</span>) {
+                <span class="hljs-keyword">return</span> <span class="hljs-title function_">h</span>(<span class="hljs-string">'h1'</span>,{<span class="hljs-attr">style</span>:<span class="hljs-string">'background-color:red'</span>}, <span class="hljs-string">'长春加油'</span>)
+            },
+            <span class="hljs-attr">data</span>:{
+                <span class="hljs-attr">msg</span>:<span class="hljs-string">'!'</span>
+            }
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p><code><span class="hljs-attribute">rander</span></code>:新建一个元素，上述例子则是新建了一个<code><span class="hljs-section">&lt;h1&gt;</span></code>标签</p>
+<h2>观察属性</h2>
+<p>观察属性：监听属性，会监听当前实例对象或组件对象的数据属性</p>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>9月5号<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/vue.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
+        <span class="hljs-selector-tag">body</span>{
+            <span class="hljs-attribute">background-color</span>: black;
+            <span class="hljs-attribute">color</span>: white;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        账号: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"userId"</span>&gt;</span>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>:{
+                <span class="hljs-attr">userId</span>:<span class="hljs-string">''</span>
+            },
+            <span class="hljs-attr">watch</span>:{
+                <span class="hljs-attr">userId</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params">newValue, oldValue</span>){
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(oldValue);
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(newValue); 
+                }
+            }
+
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>上面是监听的简写，以下为完全体</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        账号: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"userId"</span>&gt;</span>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>:{
+                <span class="hljs-attr">userId</span>:<span class="hljs-string">''</span>
+            },
+            <span class="hljs-attr">watch</span>:{
+                <span class="hljs-attr">userId</span>: {
+                    <span class="hljs-title function_">handler</span>(<span class="hljs-params">newVal,oldVal</span>){
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(oldVal);
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(newVal);
+                    },
+                    <span class="hljs-attr">deep</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">//是否深度监听，监听对象时同时监听对象的属性值是否改变，而不是只监听对象内存地址的变化</span>
+                    <span class="hljs-attr">immediate</span>: <span class="hljs-literal">true</span> 
+                },           
+            }
+
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h2>计算属性</h2>
+<p>计算属性：用于处理页面的复杂逻辑</p>
+<p>关键字: <code><span class="hljs-attribute">computed</span></code></p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        姓: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"firstName"</span>/&gt;</span>
+        名: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"lastName"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>:{
+                <span class="hljs-attr">firstName</span>:<span class="hljs-string">''</span>,
+                <span class="hljs-attr">lastName</span>:<span class="hljs-string">''</span>
+                <span class="hljs-comment">//fullName是计算属性，不要在data中定义</span>
+            },
+            <span class="hljs-attr">computed</span>:{
+                <span class="hljs-comment">//默认情况下，function为fullName的get方法，也就是赋值方法</span>
+                <span class="hljs-attr">fullName</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+                    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">fullName</span>+<span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span>;
+                }
+            }
+
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p>完全体：带set方法</p>
+<pre><code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        姓: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"firstName"</span> /&gt;</span>
+        名: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"lastName"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">let</span> vm = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>: {
+                <span class="hljs-attr">firstName</span>: <span class="hljs-string">''</span>,
+                <span class="hljs-attr">lastName</span>: <span class="hljs-string">''</span>
+                <span class="hljs-comment">//fullName是计算属性，不要在data中定义</span>
+            },
+            <span class="hljs-attr">computed</span>: {
+                <span class="hljs-attr">fullName</span>: {
+                    <span class="hljs-comment">//当给fullName赋值时触发</span>
+                    <span class="hljs-attr">set</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">newVal</span>) {
+                        <span class="hljs-keyword">let</span> data = newVal.<span class="hljs-title function_">split</span>(<span class="hljs-string">"."</span>);
+                        <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> = data[<span class="hljs-number">0</span>];
+                        <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span> = data[<span class="hljs-number">1</span>];
+                    },
+                    <span class="hljs-comment">//默认情况下，function为fullName的get方法，也就是赋值方法</span>
+                    <span class="hljs-attr">get</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+                        <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">fullName</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span>;
+                    }
+
+                }
+            }
+
+        });
+        vm.<span class="hljs-property">fullName</span> = <span class="hljs-string">'李.雷'</span>
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h3>实例：字符串实时反转</h3>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        文字: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"origin"</span> /&gt;</span> 反转：</span><span class="hljs-template-variable">{{<span class="hljs-name">reverse_t</span>}}</span><span class="language-xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>:{
+                <span class="hljs-attr">origin</span>:<span class="hljs-string">""</span>,
+            },
+            <span class="hljs-attr">computed</span>:{
+                <span class="hljs-title function_">reverse_t</span>(<span class="hljs-params"></span>){
+                    <span class="hljs-keyword">let</span> arr = <span class="hljs-variable language_">this</span>.<span class="hljs-property">origin</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">""</span>);
+                    arr = arr.<span class="hljs-title function_">reverse</span>();
+                    <span class="hljs-keyword">return</span> arr.<span class="hljs-title function_">join</span>(<span class="hljs-string">""</span>);
+                }
+            }
+
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</span></code></pre>
+<h2>vue组件式开发</h2>
+<h2>组件的定义</h2>
+<p>组件：html/css/js的组合<br>
+目的：复用代码</p>
+<p>使用方法实例：</p>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml">
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-comment">//注册全局组件(横杠命令方式)</span>
+        <span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">component</span>(<span class="hljs-string">'my-com'</span>,</span></span><span class="language-xquery">{
+            template: `<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是全局组件<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">)
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery">{
+            el:<span class="hljs-string">'#app'</span>,
+            data:{
+
+            }</span><span class="language-xml">,
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><span class="language-xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span>
+</code></pre>
+<p>结果：</p>
+<pre><code class="language-text">我是全局组件
+我是全局组件
+我是全局组件
+我是全局组件
+</code></pre>
+<h3>局部组件</h3>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">one</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">one</span>&gt;</span></span><span class="language-xml">
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">two</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">two</span>&gt;</span></span><span class="language-xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml">
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-comment">//注册全局组件(横杠命令方式)</span>
+        <span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">component</span>(<span class="hljs-string">'my-com'</span>,</span></span><span class="language-xquery">{
+            template: `<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是全局组件<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">)
+        <span class="hljs-keyword">let</span> con1 = </span></span><span class="language-xquery">{
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是局部组件1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">let</span> con2 = </span></span><span class="language-xquery">{
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是局部组件2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery">{
+            el:<span class="hljs-string">'#app'</span>,
+            data:{
+            }</span><span class="language-xml"><span class="language-javascript">,
+            <span class="hljs-comment">//局部组件在此声明注册即可</span>
+            <span class="hljs-attr">components</span>:</span></span><span class="language-xquery">{
+                <span class="hljs-string">'one'</span>: con1,
+                <span class="hljs-string">'two'</span>: con2
+            }</span><span class="language-xml">
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><span class="language-xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span>
+</code></pre>
+<p>spa应用：每一个网页作为一个组件嵌入</p>
+<pre><code class="language-html">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">one</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">one</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">two</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">two</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">three</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">three</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-comment">//注册全局组件(横杠命令方式)</span>
+        <span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">component</span>(<span class="hljs-string">'my-com'</span>,{
+            <span class="hljs-attr">template</span>: <span class="hljs-string">`&lt;div&gt;我是全局组件&lt;/div&gt;`</span>
+        })
+        <span class="hljs-keyword">let</span> con1 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-string">`&lt;div&gt;我是局部组件1&lt;/div&gt;`</span>
+        }
+        <span class="hljs-keyword">let</span> con2 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-string">`&lt;div&gt;我是局部组件2&lt;/div&gt;`</span>
+        }
+        <span class="hljs-keyword">let</span> con3 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-string">`&lt;div&gt;我是局部组件3{{msg}}&lt;/div&gt;`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    <span class="hljs-attr">msg</span>:<span class="hljs-string">'!'</span>
+                }
+            },
+        }
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>:{
+            },
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'one'</span>: con1,
+                <span class="hljs-string">'two'</span>: con2,
+                <span class="hljs-string">'three'</span>:con3
+            }
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h2>生命周期和钩子函数</h2>
+<p><img src="md01.PNG" alt="alt">
+<img src="md02.PNG" alt="alt"></p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">three</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">three</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+
+        <span class="hljs-keyword">let</span> con3 = {
+            <span class="hljs-attr">template</span>: <span class="hljs-string">`&lt;div&gt;我是局部组件3{{msg}}&lt;/div&gt;`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    <span class="hljs-attr">msg</span>: <span class="hljs-string">'!'</span>
+                }
+            },
+            <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"created"</span>);
+            },
+            <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"mounted"</span>)
+            },
+        }
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>: {
+            },
+            <span class="hljs-attr">components</span>: {
+                <span class="hljs-string">'three'</span>: con3
+            }
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h2>父子组件</h2>
+<h3>套用关系</h3>
+<pre><code class="language-html">    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span></span><span class="language-xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">let</span> child = </span></span><span class="language-xquery">{
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是子组件<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">let</span> parent = </span></span><span class="language-xquery">{
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是父组件</span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">child</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`,
+            components: {
+                <span class="hljs-string">'child'</span>:child
+            }</span><span class="language-xml"><span class="language-javascript">
+        }
+
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery">{
+            el: <span class="hljs-string">'#app'</span>,
+            data: {
+            }</span><span class="language-xml">,
+            components: </span><span class="language-xquery">{
+                <span class="hljs-string">'parent'</span>:parent
+            }</span><span class="language-xml">
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h3>属性的传递</h3>
+<p><code><span class="hljs-keyword">prop</span></code>关键字用于子组件接收父组件传过来的参数<br>
+示例：</p>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span></span><span class="language-xml">
+        
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml">
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">let</span> child = </span></span><span class="language-xquery">{
+            props:[<span class="hljs-string">'name'</span>],//prop关键字用于接收父组件传过来的属性名<span class="hljs-built_in">为name</span>的参数
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是子组件, </span><span class="language-xquery">{<span class="hljs-built_in">{name</span>}</span></span><span class="language-xml"><span class="language-handlebars"><span class="language-xml">}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span></span><span class="language-xml">`
+        }
+        let parent = </span><span class="language-xquery"><span class="language-xquery">{
+            template:`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是父组件</span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">child</span> <span class="hljs-attr">:name</span>=<span class="hljs-string">"msg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`,
+            components: {
+                <span class="hljs-string">'child'</span>:child
+            }</span></span><span class="language-xml">,
+            data() </span><span class="language-xquery"><span class="language-xquery">{
+                <span class="hljs-keyword">return</span> {
+                    msg:<span class="hljs-string">"来自父组件的问候！"</span>
+                }</span></span><span class="language-xml"><span class="language-javascript">
+            },
+        }
+
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery"><span class="language-xquery">{
+            el: <span class="hljs-string">'#app'</span>,
+            data: {
+            }</span></span><span class="language-xml">,
+            components: </span><span class="language-xquery"><span class="language-xquery">{
+                <span class="hljs-string">'parent'</span>:parent
+            }</span></span><span class="language-xml">
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;/body&gt;
+</code></pre>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>主页<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/vue.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-handlebars"><span class="language-xml">
+    let child = {
+        props: ['user'],
+        template: /*html*/`
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>姓名:<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"person.name"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>性别:</span><span class="hljs-template-variable">{{<span class="hljs-name">user.sex</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>年龄:</span><span class="hljs-template-variable">{{<span class="hljs-name">user.age</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>住址:</span><span class="hljs-template-variable">{{<span class="hljs-name">user.address</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>'`,
+          data() {
+            return {
+                //初始化person对象
+                person:{}
+            }
+          },
+          watch:{
+            user: function (val) {
+                //对象克隆，把val对象里的属性和方法克隆给person对象，新对象内存地址和val不同，达到解绑的目的
+                this.person = Object.assign({},val);
+                
+            }
+          }
+    }
+    let parent = {
+        template: `
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">"show"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">child</span> <span class="hljs-attr">:user</span>=<span class="hljs-string">"user"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>信息表<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>姓名<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>性别<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>年龄<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>住址<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>操作<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"user in dataList"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">user.name</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">user.sex</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">user.age</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">user.address</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"edit(user)"</span> &gt;</span>修改<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>`,
+        data() {
+            return {
+                dataList: [{name: '李雷', sex: '男', age: 20, address: '宁波'}, {name: '韩梅梅', sex: '女', age: 18, address: '长春'}],
+                show: false,
+                user: {}
+            }
+        },
+        methods: {
+          edit(user){
+              this.show = true;
+              this.user = user;
+          }
+        },
+        components: {
+            'child': child
+        }
+    }
+    new Vue({
+        el: '#app',
+        data: {},
+        components: {
+            'parent': parent
+        }
+    });
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2>动态组件</h2>
+<p>关键字: <code>&lt;component <span class="hljs-symbol">:is=<span class="hljs-string">"val"</span>&gt;&lt;/component&gt;</span></code><br>
+在切换的过程中，未被激活的动态组件会被销毁</p>
+<p>例子：点击对应按钮，加载相应的组件</p>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span></span><span class="language-xml">
+        
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml">
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-keyword">let</span> ch1 = </span></span><span class="language-xquery">{
+            template: `<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>子组件1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">let</span> ch2 = </span></span><span class="language-xquery">{
+            template: `<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>子组件2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">let</span> ch3 = </span></span><span class="language-xquery">{
+            template: `<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>子组件3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`
+        }</span><span class="language-xml"><span class="language-javascript">
+        <span class="hljs-keyword">let</span> parent = </span></span><span class="language-xquery">{
+            template:/*html*/`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+               
+                </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"change(1)"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"change(2)"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"change(3)"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span><span class="language-xml">
+                <span class="hljs-comment">&lt;!-- keepalive 不销毁组件，而是存入内存，等待下次加载 --&gt;</span>
+                </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">keep-alive</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- 动态组件 --&gt;</span>
+                </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">:is</span>=<span class="hljs-string">"val"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">component</span>&gt;</span></span><span class="language-xml"> 
+                <span class="hljs-tag">&lt;/<span class="hljs-name">keep-alive</span>&gt;</span></span><span class="language-xml">
+                
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`,
+            components:{
+                <span class="hljs-string">'ch1'</span>:ch1,
+                <span class="hljs-string">'ch2'</span>:ch2,
+                <span class="hljs-string">'ch3'</span>:ch3
+            }</span><span class="language-xml">,
+            data() </span><span class="language-xquery">{
+                <span class="hljs-keyword">return</span> {
+                    val: <span class="hljs-string">'ch1'</span>
+                }</span><span class="language-xml">
+            },
+            methods: </span><span class="language-xquery">{
+                change(i){
+                    this.val = <span class="hljs-string">'ch'</span> + i;
+                }</span><span class="language-xml"><span class="language-javascript">
+            },
+        }
+
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery">{
+            el: <span class="hljs-string">'#app'</span>,
+            data: {
+            }</span><span class="language-xml">,
+            components: </span><span class="language-xquery">{
+                <span class="hljs-string">'parent'</span>:parent
+            }</span><span class="language-xml">
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><span class="language-xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span>
+</code></pre>
+<h2>递归组件</h2>
+<p>示例<br>
+myCom是对象名，my-com是在Vue中的父组件名，com是作为子组件的myCom名，以进行递归</p>
+<pre><code class="language-html"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span></span><span class="language-xml">
+        
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml">
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+
+        <span class="hljs-keyword">let</span> myCom = </span></span><span class="language-xquery">{
+            template:/*html*/`
+                <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"getChild()"</span>&gt;</span>递归组件<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">com</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"show"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">com</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+                `,
+           <span class="hljs-built_in"> name</span>:<span class="hljs-string">'com'</span>,
+            data() {
+                <span class="hljs-keyword">return</span> {
+                    show:false
+                }</span><span class="language-xml">
+            },
+            methods: </span><span class="language-xquery">{
+                getChild(){
+                    this.show=myCom
+                }</span><span class="language-xml"><span class="language-javascript">
+            },
+            
+            
+        }
+
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>(</span></span><span class="language-xquery">{
+            el: <span class="hljs-string">'#app'</span>,
+            data: {
+            }</span><span class="language-xml">,
+            components: </span><span class="language-xquery">{
+                <span class="hljs-string">'my-com'</span>: myCom
+            }</span><span class="language-xml">
+        });
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><span class="language-xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span>
+</code></pre>
+<h2>异步组件</h2>
+<p>vue允许以工厂函数的方式定义组件，这个工厂函数会异步解析组件定义，只有在组件需要渲染的时候才会触发该工厂函数，且把结果缓存起来供未来重新渲染。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">my-com</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">my-com</span>&gt;</span>
+        
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+        <span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">component</span>(<span class="hljs-string">'my-com'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>){
+            <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+                <span class="hljs-title function_">resolve</span>({
+                    <span class="hljs-attr">template</span>: <span class="hljs-string">`&lt;div&gt;我是异步组件&lt;/div&gt;`</span>
+                })
+            }, <span class="hljs-number">3000</span>)
+        })
+       
+
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+            <span class="hljs-attr">data</span>: {
+            }
+            
+        });
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月5日vue学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/前端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"vue"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"前端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"html"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"css"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"javascript"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月5日vue学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

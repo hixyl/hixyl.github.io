@@ -1,0 +1,329 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","9%E6%9C%8816%E6%97%A5spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月16日spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8816%E6%97%A5spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月16日spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8816%E6%97%A5spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月16日spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T73c5,
+    <p class="time">发布时间：<time datetime="16 September, 2022">2022-09-16 17:17:31</time></p>
+    <p class="words">本文字数：910 字       阅读完需：约 5 分钟</p>
+    <html><head></head><body><h2>AOP 通知的配置</h2>
+<p>示例</p>
+<p>Man.java</p>
+<pre><code class="language-java">package com.<span class="hljs-property">aop</span>;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Man</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">String</span> name = <span class="hljs-string">"大壮"</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">getName</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setName</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> name</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">qq</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> toName</span>){
+        <span class="hljs-keyword">if</span>(b) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(<span class="hljs-string">"聊天犯规了"</span>);
+        }
+        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> + <span class="hljs-string">"在和["</span> + toName + <span class="hljs-string">"]聊QQ"</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">mm</span>(<span class="hljs-params"></span>){
+        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> + <span class="hljs-string">"在聊MM"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"很高兴"</span>;
+    }
+}
+</code></pre>
+<p>FBI.java</p>
+<pre><code class="language-java">package com.aop;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.Signature;
+
+import java.util.Arrays;
+
+public <span class="hljs-keyword">class</span> FBI {
+    public void before(JoinPoint joinPoint){
+        Object obj =  joinPoint.get<span class="hljs-constructor">Target()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象: "</span>+ obj.get<span class="hljs-constructor">Class()</span>.get<span class="hljs-constructor">Name()</span>);
+        Object<span class="hljs-literal">[]</span> args = joinPoint.get<span class="hljs-constructor">Args()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法参数: "</span>+ <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Arrays</span>.</span></span><span class="hljs-keyword">to</span><span class="hljs-constructor">String(<span class="hljs-params">args</span>)</span>);
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象的方法: "</span>+signature.get<span class="hljs-constructor">Name()</span>);
+    }
+    public void after(JoinPoint joinPoint, Object <span class="hljs-keyword">val</span>){
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法"</span>+signature.get<span class="hljs-constructor">Name()</span>+<span class="hljs-string">"执行完毕,返回值"</span>+ <span class="hljs-keyword">val</span>);
+    }
+    public void throws<span class="hljs-constructor">Exception(JoinPoint <span class="hljs-params">joinPoint</span>, Throwable <span class="hljs-params">e</span>)</span>{
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法"</span>+signature.get<span class="hljs-constructor">Name()</span>+<span class="hljs-string">"异常! !, 信息: "</span>+e.get<span class="hljs-constructor">Message()</span>);
+    }
+    public void after<span class="hljs-constructor">Finally(JoinPoint <span class="hljs-params">joinPoint</span>)</span>{
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象的方法"</span> + signature.get<span class="hljs-constructor">Name()</span> + <span class="hljs-string">"执行完毕"</span>);
+    }
+    <span class="hljs-comment">// 无论有没有异常，都会执行</span>
+
+}
+</code></pre>
+<p>spring-aop.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">"http://www.springframework.org/schema/aop"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"man"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.aop.Man"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fbi"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.aop.FBI"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">aop:config</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 切面规则   执行在Man的任意方法,参数为任意--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">aop:pointcut</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"pointcut"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"execution(* com.aop.Man.*(..))"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">aop:aspect</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"fbi"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--            fbi这个bean的before方法 :before为前置通知--&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">aop:before</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"before"</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">"pointcut"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aop:before</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">aop:after-returning</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"after"</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">"pointcut"</span> <span class="hljs-attr">returning</span>=<span class="hljs-string">"val"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aop:after-returning</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- 注意：此处的val必须与fbi里面的Object val 参数形参名相同 --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">aop:after-throwing</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"throwsException"</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">"pointcut"</span> <span class="hljs-attr">throwing</span>=<span class="hljs-string">"e"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aop:after-throwing</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- afterFinally 不管有无异常，都会执行 --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">aop:after</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"afterFinally"</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">"pointcut"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aop:after</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">aop:aspect</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">aop:config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>TestAop.java</p>
+<pre><code class="language-java">package com.<span class="hljs-property">aop</span>;
+
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">After</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">Before</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">Test</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">springframework</span>.<span class="hljs-property">context</span>.<span class="hljs-property">support</span>.<span class="hljs-property">ClassPathXmlApplicationContext</span>;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestAop</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span> ac;
+
+    <span class="hljs-meta">@Before</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">init</span>(<span class="hljs-params"></span>){
+        ac = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring-aop.xml"</span>);
+    }
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">test</span>(<span class="hljs-params"></span>){
+        <span class="hljs-title class_">Man</span> man = ac.<span class="hljs-title function_">getBean</span>(<span class="hljs-title class_">Man</span>.<span class="hljs-property">class</span>);
+        man.<span class="hljs-title function_">qq</span>(<span class="hljs-string">"小美"</span>);
+        man.<span class="hljs-title function_">mm</span>();
+    }
+    <span class="hljs-meta">@After</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">destroy</span>(<span class="hljs-params"></span>){
+        ac.<span class="hljs-title function_">close</span>();
+    }
+}
+</code></pre>
+<p>输出结果</p>
+<pre><code class="language-text">目标对象: com.aop.Man
+目标对象方法参数: [小美]
+目标对象的方法: qq
+目标对象方法qq异常! !, 信息: 聊天犯规了
+目标对象的方法qq执行完毕
+java.lang.RuntimeException: 聊天犯规了
+<span class="hljs-comment">&lt;!-- ...以下省略若干异常信息 --&gt;</span>
+<span class="hljs-comment">&lt;!-- 如果没有异常，继续输出以下代码 --&gt;</span>
+大壮在和[小美]聊QQ
+目标对象方法qq执行完毕
+目标对象: com.aop.Man
+目标对象方法参数: []
+目标对象的方法: mm
+大壮在聊MM
+目标对象方法mm执行完毕，返回值：很高兴
+</code></pre>
+<h3>环绕通知</h3>
+<p>aop 配置: spring-aop.xml</p>
+<pre><code class="language-xml">&lt;aop:around <span class="hljs-keyword">method</span>="<span class="hljs-title function_">around</span>" <span class="hljs-title function_">pointcut</span>-<span class="hljs-title function_">ref</span>="<span class="hljs-title function_">pointcut</span>"&gt;&lt;/<span class="hljs-title function_">aop</span>:around&gt;
+</code></pre>
+<p>FBI.java</p>
+<pre><code class="language-java"><span class="hljs-variable">public</span> <span class="hljs-title class_">Object</span> <span class="hljs-title function_">around</span>(<span class="hljs-params">ProceedingJoinPoint</span> <span class="hljs-params">joinPoint</span>){
+        <span class="hljs-title class_">Object</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;
+        <span class="hljs-comment">//前置通知</span>
+        <span class="hljs-title class_">Object</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span>  <span class="hljs-variable">joinPoint</span>.<span class="hljs-property">getTarget</span>();
+        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-property">println</span>(<span class="hljs-string">"目标对象: "</span><span class="hljs-operator">+</span> <span class="hljs-variable">obj</span>.<span class="hljs-property">getClass</span>().<span class="hljs-property">getName</span>());
+        <span class="hljs-title function_">try</span> {
+            <span class="hljs-comment">//执行目标对象方法</span>
+            <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-variable">joinPoint</span>.<span class="hljs-property">proceed</span>();
+            <span class="hljs-comment">//返回后通知</span>
+            <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-property">println</span>(<span class="hljs-string">"result"</span> <span class="hljs-operator">+</span> <span class="hljs-variable">result</span>);
+        }<span class="hljs-title function_">catch</span> (<span class="hljs-title class_">Throwable</span> <span class="hljs-variable">e</span>){
+            <span class="hljs-comment">//执行异常通知</span>
+            <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-property">println</span>(<span class="hljs-string">"catch"</span> <span class="hljs-operator">+</span> <span class="hljs-variable">e</span>.<span class="hljs-property">getMessage</span>());
+        }<span class="hljs-title function_">finally</span> {
+            <span class="hljs-comment">//执行最终通知</span>
+            <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-property">println</span>(<span class="hljs-string">"finally"</span>);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-variable">result</span>;
+    }
+</code></pre>
+<p>结果：</p>
+<pre><code class="language-text">目标对象: com.aop.Man
+catch聊天犯规了
+finally
+目标对象: com.aop.Man
+大壮在聊MM
+result很高兴
+finally
+
+Process finished with <span class="hljs-keyword">exit</span> code <span class="hljs-number">0</span>
+</code></pre>
+<p><img src="9_16_01.PNG" alt="alt"></p>
+<h3>采用注解方式配置通知</h3>
+<p>spring-auto.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">"http://www.springframework.org/schema/aop"</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">"http://www.springframework.org/schema/context"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"</span>&gt;</span>
+<span class="hljs-comment">&lt;!--    通过在的Spring的配置中引入下列元素来启用Spring对@AspectJ的支持--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">aop:aspectj-autoproxy</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">aop:aspectj-autoproxy</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"com.auto"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">context:component-scan</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>FBI.java</p>
+<pre><code class="language-java">package com.auto;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.Signature;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+import java.util.Arrays;
+@Aspect
+public <span class="hljs-keyword">class</span> FBI {
+    @<span class="hljs-constructor">Before(<span class="hljs-string">"execution(* com.auto.Man.*(..))"</span>)</span>
+    public void before(JoinPoint joinPoint){
+        Object obj =  joinPoint.get<span class="hljs-constructor">Target()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象: "</span>+ obj.get<span class="hljs-constructor">Class()</span>.get<span class="hljs-constructor">Name()</span>);
+        Object<span class="hljs-literal">[]</span> args = joinPoint.get<span class="hljs-constructor">Args()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法参数: "</span>+ <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Arrays</span>.</span></span><span class="hljs-keyword">to</span><span class="hljs-constructor">String(<span class="hljs-params">args</span>)</span>);
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象的方法: "</span>+signature.get<span class="hljs-constructor">Name()</span>);
+    }
+    public void after<span class="hljs-constructor">Returning(JoinPoint <span class="hljs-params">joinPoint</span>, Object <span class="hljs-params">val</span>)</span>{
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法"</span>+signature.get<span class="hljs-constructor">Name()</span>+<span class="hljs-string">"执行完毕, 返回值："</span>+<span class="hljs-keyword">val</span>);
+    }
+    public void throws<span class="hljs-constructor">Exception(JoinPoint <span class="hljs-params">joinPoint</span>, Throwable <span class="hljs-params">e</span>)</span>{
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象方法"</span>+signature.get<span class="hljs-constructor">Name()</span>+<span class="hljs-string">"异常! !, 信息: "</span>+e.get<span class="hljs-constructor">Message()</span>);
+    }
+    public void after<span class="hljs-constructor">Finally(JoinPoint <span class="hljs-params">joinPoint</span>)</span>{
+        Signature signature = joinPoint.get<span class="hljs-constructor">Signature()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象的方法"</span> + signature.get<span class="hljs-constructor">Name()</span> + <span class="hljs-string">"执行完毕"</span>);
+    }
+
+    <span class="hljs-comment">//环绕通知</span>
+    public Object around(ProceedingJoinPoint joinPoint){
+        Object result = null;
+        <span class="hljs-comment">//前置通知</span>
+        Object obj =  joinPoint.get<span class="hljs-constructor">Target()</span>;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"目标对象: "</span>+ obj.get<span class="hljs-constructor">Class()</span>.get<span class="hljs-constructor">Name()</span>);
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">//执行目标对象方法</span>
+            result = joinPoint.proceed<span class="hljs-literal">()</span>;
+            <span class="hljs-comment">//返回后通知</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"result"</span> + result);
+        }catch (Throwable e){
+            <span class="hljs-comment">//执行异常通知</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"catch"</span> + e.get<span class="hljs-constructor">Message()</span>);
+        }finally {
+            <span class="hljs-comment">//执行最终通知</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(<span class="hljs-string">"finally"</span>);
+        }
+        return result;
+    }
+}
+</code></pre>
+<p>Man.java</p>
+<pre><code class="language-java">package com.<span class="hljs-property">auto</span>;
+
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">springframework</span>.<span class="hljs-property">stereotype</span>.<span class="hljs-property">Component</span>;
+
+<span class="hljs-keyword">import</span> java.<span class="hljs-property">util</span>.<span class="hljs-property">Random</span>;
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Man</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">String</span> name = <span class="hljs-string">"大壮"</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">getName</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setName</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> name</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">qq</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> toName</span>){
+        <span class="hljs-built_in">boolean</span> b = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Random</span>().<span class="hljs-title function_">nextBoolean</span>();
+        <span class="hljs-keyword">if</span>(b) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(<span class="hljs-string">"聊天犯规了"</span>);
+        }
+
+        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> + <span class="hljs-string">"在和["</span> + toName + <span class="hljs-string">"]聊QQ"</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">mm</span>(<span class="hljs-params"></span>){
+        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> + <span class="hljs-string">"在聊MM"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"很高兴"</span>;
+    }
+
+}
+</code></pre>
+<p>TestAop.java</p>
+<pre><code class="language-java">package com.<span class="hljs-property">auto</span>;
+
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">After</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">Before</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">Test</span>;
+<span class="hljs-keyword">import</span> org.<span class="hljs-property">springframework</span>.<span class="hljs-property">context</span>.<span class="hljs-property">support</span>.<span class="hljs-property">ClassPathXmlApplicationContext</span>;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestAop</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span> ac;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">test</span>(<span class="hljs-params"></span>){
+        <span class="hljs-title class_">Man</span> man = ac.<span class="hljs-title function_">getBean</span>(<span class="hljs-title class_">Man</span>.<span class="hljs-property">class</span>);
+        man.<span class="hljs-title function_">qq</span>(<span class="hljs-string">"小美"</span>);
+    }
+    <span class="hljs-meta">@Before</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">init</span>(<span class="hljs-params"></span>){
+        ac = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring-auto.xml"</span>);
+    }
+    <span class="hljs-meta">@After</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">destroy</span>(<span class="hljs-params"></span>){
+        ac.<span class="hljs-title function_">close</span>();
+    }
+}
+
+</code></pre>
+<p>结果</p>
+<pre><code class="language-text">目标对象: com<span class="hljs-selector-class">.auto</span><span class="hljs-selector-class">.Man</span>
+目标对象方法参数: <span class="hljs-selector-attr">[小美]</span>
+目标对象的方法: qq
+
+java<span class="hljs-selector-class">.lang</span><span class="hljs-selector-class">.RuntimeException</span>: 聊天犯规了
+</code></pre>
+<h2>对数据持久化的支持</h2>
+<p><img src="9_16_02.PNG" alt="alt"></p>
+<p>传统的执行效率最高<br>
+Spring JDBC抽象框架由四部分组成：datasource、support、core、object<br>
+数据源：描述数据库，数据库连接池，(池化技术)</p>
+<p>常用的数据源：DBCP, C3p0, Druid, HikariCP(光)</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月16日spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"AOP"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"面向切面编程"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"jdbc"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

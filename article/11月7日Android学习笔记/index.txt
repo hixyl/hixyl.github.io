@@ -1,0 +1,509 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月7日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月7日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月7日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T9785,
+    <p class="time">发布时间：<time datetime="07 November, 2022">2022-11-07 16:44:56</time></p>
+    <p class="words">本文字数：1,220 字       阅读完需：约 7 分钟</p>
+    <html><head></head><body><h2>自定义控件</h2>
+<p>title_layout.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/titleviews"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"60dp"</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@color/purple_200"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_iv_left"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">"10dp"</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@mipmap/icon_back"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_iv_right"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">"10dp"</span>
+        <span class="hljs-attr">android:layout_alignParentRight</span>=<span class="hljs-string">"true"</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@mipmap/icon_setting"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_tv"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"标题"</span>
+        <span class="hljs-attr">android:layout_centerInParent</span>=<span class="hljs-string">"true"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"20sp"</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+</code></pre>
+<p>TitleView.java</p>
+<pre><code class="language-java">package com.xyl.app1105.view;
+import android.app.Activity;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.xyl.app1105.R;
+
+
+<span class="hljs-comment">/**
+ * 作者：animee on 2022/11/5 17:07
+ * 接口回调：
+ * 当这个类的某项事件由它触发，但是功能不是由它决定，就可以用接口回调解决。
+ * 1. 创建接口，编写回调方法
+ * 2. 在这个类中，将接口设置为成员变量，然后通过set方法对其进行赋值
+ * 3. 在被触发的地方调用这个接口的方法
+ */</span>
+public <span class="hljs-keyword">class</span> TitleView extends RelativeLayout implements View.OnClickListener {
+    ImageView leftIv,rightIv;
+    TextView titleTv;
+    RelativeLayout layout;
+
+    public interface OnClickImgListener{
+        public void on<span class="hljs-constructor">Click(View <span class="hljs-params">view</span>)</span>;
+    }
+    OnClickImgListener leftListener, rightListener;
+    public void set<span class="hljs-constructor">OnClickLeftImgListener(OnClickImgListener <span class="hljs-params">leftListener</span>)</span>{
+        this.leftListener = leftListener;
+    }
+    public void set<span class="hljs-constructor">OnClickRightImgListener(OnClickImgListener <span class="hljs-params">rightListener</span>)</span>{
+        this.rightListener = rightListener;
+    }
+
+    <span class="hljs-comment">// 在代码当中创建view对象时，会调用的构造方法</span>
+    public <span class="hljs-constructor">TitleView(Context <span class="hljs-params">context</span>)</span> {
+        this(context,null);
+    }
+    <span class="hljs-comment">// 在布局当中写view对象时，会调用的构造方法</span>
+    public <span class="hljs-constructor">TitleView(Context <span class="hljs-params">context</span>, AttributeSet <span class="hljs-params">attrs</span>)</span> {
+        super(context, attrs);
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">LayoutInflater</span>.</span></span>from(context).inflate(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.title_layout,this);
+        init<span class="hljs-constructor">View()</span>;
+        set<span class="hljs-constructor">Event()</span>;
+    }
+
+    <span class="hljs-keyword">private</span> void set<span class="hljs-constructor">Event()</span> {
+        leftIv.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+        rightIv.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+    }
+
+    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
+        leftIv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_iv_left</span>)</span>;
+        rightIv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_iv_right</span>)</span>;
+        titleTv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_tv</span>)</span>;
+        layout = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">titleviews</span>)</span>;
+    }
+    <span class="hljs-comment">/** 设置标题*/</span>
+    public void set<span class="hljs-constructor">Title(String <span class="hljs-params">title</span>)</span>{
+        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">title</span>)</span>;
+    }
+    public void set<span class="hljs-constructor">Title(<span class="hljs-params">int</span> <span class="hljs-params">titleId</span>)</span>{
+        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">titleId</span>)</span>;
+    }
+    <span class="hljs-comment">/** 设置标题颜色*/</span>
+    public void set<span class="hljs-constructor">TitleColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
+        titleTv.set<span class="hljs-constructor">TextColor(<span class="hljs-params">color</span>)</span>;
+    }
+    <span class="hljs-comment">/** 设置背景颜色*/</span>
+    public void set<span class="hljs-constructor">BgResource(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
+        layout.set<span class="hljs-constructor">BackgroundResource(<span class="hljs-params">color</span>)</span>;
+    }
+    public void set<span class="hljs-constructor">BgColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
+        layout.set<span class="hljs-constructor">BackgroundColor(<span class="hljs-params">color</span>)</span>;
+    }
+
+    <span class="hljs-comment">/** 设置是否显示左右图片*/</span>
+    public void set<span class="hljs-constructor">VisibleImg(<span class="hljs-params">int</span> <span class="hljs-params">left</span>,<span class="hljs-params">int</span> <span class="hljs-params">right</span>)</span>{
+        leftIv.set<span class="hljs-constructor">Visibility(<span class="hljs-params">left</span>)</span>;
+        rightIv.set<span class="hljs-constructor">Visibility(<span class="hljs-params">right</span>)</span>;
+    }
+
+    <span class="hljs-comment">/** 修改左边显示图片*/</span>
+    public void set<span class="hljs-constructor">LeftImgResource(<span class="hljs-params">int</span> <span class="hljs-params">resId</span>)</span>{
+        leftIv.set<span class="hljs-constructor">ImageResource(<span class="hljs-params">resId</span>)</span>;
+    }
+    public void set<span class="hljs-constructor">RightImgResource(<span class="hljs-params">int</span> <span class="hljs-params">resId</span>)</span>{
+        rightIv.set<span class="hljs-constructor">ImageResource(<span class="hljs-params">resId</span>)</span>;
+    }
+
+    @Override
+    public void on<span class="hljs-constructor">Click(View <span class="hljs-params">view</span>)</span> {
+        switch (view.get<span class="hljs-constructor">Id()</span>) {
+            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.title_iv_left:
+<span class="hljs-comment">//                ((Activity)getContext()).finish();</span>
+                <span class="hljs-keyword">if</span>(leftListener != null){
+                    leftListener.on<span class="hljs-constructor">Click(<span class="hljs-params">view</span>)</span>;
+                }
+                break;
+            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.title_iv_right:
+                <span class="hljs-keyword">if</span>(rightListener!=null){
+                    rightListener.on<span class="hljs-constructor">Click(<span class="hljs-params">view</span>)</span>;
+                }
+                break;
+        }
+    }
+}
+
+</code></pre>
+<h2>对话框</h2>
+<ol>
+<li>新建AlertDialog.Builder对象<br>
+<code>AlertDialog.Builder builder = <span class="hljs-keyword">new</span> <span class="hljs-type">AlertDialog</span>.Builder(<span class="hljs-built_in">this</span>);</code></li>
+<li>设置一些属性<br>
+<code>builder.setXXX<span class="hljs-comment">()</span></code></li>
+<li><code>builder.create<span class="hljs-comment">()</span>.show<span class="hljs-comment">()</span>;</code></li>
+</ol>
+<h3>简单对话框</h3>
+<pre><code class="language-java">    <span class="hljs-comment">/**
+     * 最简单的对话框: 确认对话框
+     */</span>
+    <span class="hljs-keyword">private</span> void simple<span class="hljs-constructor">Dialog()</span> {
+        <span class="hljs-comment">//1. 创建对话框的装饰对象</span>
+        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        <span class="hljs-comment">//2. 设置显示内容</span>
+        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jvxie</span>)</span>
+                .set<span class="hljs-constructor">Title(<span class="hljs-string">"提示信息"</span>)</span>
+                .set<span class="hljs-constructor">Message(<span class="hljs-string">"您确定要退出当前页面吗"</span>)</span>
+                <span class="hljs-comment">//右边按钮</span>
+                .set<span class="hljs-constructor">PositiveButton(<span class="hljs-string">"取消"</span>, <span class="hljs-params">null</span>)</span>
+                <span class="hljs-comment">//左边按钮</span>
+                .set<span class="hljs-constructor">NegativeButton(<span class="hljs-string">"确定"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
+                        finish<span class="hljs-literal">()</span>;
+                    }
+                });
+        <span class="hljs-comment">//3. 获取对话框对象</span>
+        AlertDialog dialog = builder.create<span class="hljs-literal">()</span>;
+        dialog.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>单选对话框</h3>
+<pre><code class="language-java">    <span class="hljs-comment">/**
+     * 单选按钮的对话框
+     */</span>
+    <span class="hljs-keyword">private</span> void single<span class="hljs-constructor">Dialog()</span> {
+        String <span class="hljs-literal">[]</span> arr = {<span class="hljs-string">"男"</span>, <span class="hljs-string">"女"</span>, <span class="hljs-string">"其他"</span>};
+        <span class="hljs-comment">//1. 创建对话框的装饰对象</span>
+        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">baiyang</span>)</span>
+                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的性别"</span>)</span>
+                .set<span class="hljs-constructor">SingleChoiceItems(<span class="hljs-params">arr</span>, 0, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
+                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了性别: "</span> + <span class="hljs-params">arr</span>[<span class="hljs-params">which</span>])</span>;
+                        <span class="hljs-comment">//取消对话框</span>
+                        dialog.cancel<span class="hljs-literal">()</span>;
+                    }
+                });
+        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+    }
+
+    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">Toast(String <span class="hljs-params">s</span>)</span> {
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Toast</span>.</span></span>make<span class="hljs-constructor">Text(<span class="hljs-params">this</span>, <span class="hljs-params">s</span>, Toast.LENGTH_SHORT)</span>.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>列表对话框</h3>
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> void <span class="hljs-built_in">list</span><span class="hljs-constructor">Dialog()</span> {
+        ArrayAdapter&lt;String&gt; adapter = <span class="hljs-keyword">new</span> ArrayAdapter&lt;&gt;(this, android.<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.simple_list_item_1, mDatas);
+        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jinniu</span>)</span>
+                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的学校科目"</span>)</span>
+                .set<span class="hljs-constructor">Adapter(<span class="hljs-params">adapter</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
+                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了: "</span> + <span class="hljs-params">mDatas</span>.<span class="hljs-params">get</span>(<span class="hljs-params">which</span>)</span>);
+                    }
+                });
+        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>多选按钮对话框</h3>
+<pre><code class="language-java"> String mArr<span class="hljs-literal">[]</span> = {<span class="hljs-string">"JAVA"</span>, <span class="hljs-string">"Android"</span>, <span class="hljs-string">"C"</span>, <span class="hljs-string">"C++"</span>, <span class="hljs-string">"Python"</span>, <span class="hljs-string">"数据运营"</span>, <span class="hljs-string">"算法"</span>, <span class="hljs-string">"数据结构"</span>, <span class="hljs-string">"C#"</span>};
+    boolean bArr<span class="hljs-literal">[]</span> = {<span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>};
+    <span class="hljs-comment">/**
+     * 多选按钮对话框
+     */</span>
+    <span class="hljs-keyword">private</span> void multi<span class="hljs-constructor">Dialog()</span> {
+        List&lt;String&gt; <span class="hljs-built_in">list</span> = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;<span class="hljs-literal">()</span>;
+        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jinniu</span>)</span>
+                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的学校科目"</span>)</span>
+                .set<span class="hljs-constructor">MultiChoiceItems(<span class="hljs-params">mArr</span>, <span class="hljs-params">bArr</span>, <span class="hljs-params">new</span> DialogInterface.OnMultiChoiceClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>, <span class="hljs-params">boolean</span> <span class="hljs-params">isChecked</span>)</span> {
+
+                    }
+                }).set<span class="hljs-constructor">PositiveButton(<span class="hljs-string">"确定"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
+                        <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; bArr.length; i++) {
+                            <span class="hljs-keyword">if</span>(bArr<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>){
+                                <span class="hljs-built_in">list</span>.add(mArr<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>);
+                            }
+                        }
+                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了: "</span> + <span class="hljs-params">list</span>.<span class="hljs-params">toString</span>()</span>);
+                    }
+                }).set<span class="hljs-constructor">NegativeButton(<span class="hljs-string">"取消"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
+                    @Override
+                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
+                        dialog.cancel<span class="hljs-literal">()</span>;
+                    }
+                });
+        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>自定义对话框</h3>
+<h4>layout/dialog_input.xml</h4>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"vertical"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@color/white"</span>
+    <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"20dp"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/dialog_input_tv1"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"备注"</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"26sp"</span>
+        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/diput_et1"</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">"20dp"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+        <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"horizontal"</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">"20dp"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">androidx.appcompat.widget.AppCompatButton</span>
+            <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/diput_btn1"</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+            <span class="hljs-attr">android:layout_weight</span>=<span class="hljs-string">"1"</span>
+            <span class="hljs-attr">android:text</span>=<span class="hljs-string">"取消"</span>
+            <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@drawable/bg_btn"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">androidx.appcompat.widget.AppCompatButton</span>
+            <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/diput_btn2"</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"0dp"</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
+            <span class="hljs-attr">android:layout_weight</span>=<span class="hljs-string">"1"</span>
+            <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">"10dp"</span>
+            <span class="hljs-attr">android:text</span>=<span class="hljs-string">"确定"</span>
+            <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@drawable/bg_btn"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+</code></pre>
+<h4>view/inputMsgDialog.java</h4>
+<p>相当于弹出一个小页面，所以与之前自定义view不同的是不需inflate转换成view对象，也因此可以直接在自定义类中调用onClick方法</p>
+<pre><code class="language-java">package com.xyl.app1107.view;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+
+import com.xyl.app1107.R;
+
+public <span class="hljs-keyword">class</span> InputMsgDialog extends Dialog implements View.OnClickListener {
+    EditText inputEt;
+    Button rightBtn, leftBtn;
+    TextView titleTv;
+
+    public <span class="hljs-constructor">InputMsgDialog(@NonNull Context <span class="hljs-params">context</span>)</span> {
+        super(context);
+    }
+
+    public interface OnBtnClickListener{
+        public void on<span class="hljs-constructor">BtnClick(<span class="hljs-params">int</span> <span class="hljs-params">gravity</span>)</span>;
+    }
+    OnBtnClickListener onLeftBtnClickListener, onRightBtnClickListener;
+
+    public void set<span class="hljs-constructor">OnLeftBtnCLickListener(OnBtnClickListener <span class="hljs-params">onLeftBtnClickListener</span>)</span>{
+        this.onLeftBtnClickListener = onLeftBtnClickListener;
+    }
+
+    public void set<span class="hljs-constructor">OnRightBtnClickListener(OnBtnClickListener <span class="hljs-params">onRightBtnClickListener</span>)</span>{
+        this.onRightBtnClickListener = onRightBtnClickListener;
+    }
+
+
+    @Override
+    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
+        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
+        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">dialog_input</span>)</span>;
+        init<span class="hljs-constructor">View()</span>;
+        set<span class="hljs-constructor">Event()</span>;
+    }
+
+    <span class="hljs-keyword">private</span> void set<span class="hljs-constructor">Event()</span> {
+        leftBtn.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+        rightBtn.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+    }
+
+    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
+        titleTv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">dialog_input_tv1</span>)</span>;
+        inputEt = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_et1</span>)</span>;
+        rightBtn = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_btn1</span>)</span>;
+        leftBtn = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_btn2</span>)</span>;
+    }
+    public void set<span class="hljs-constructor">Title(String <span class="hljs-params">text</span>)</span>{
+        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">text</span>)</span>;
+    }
+
+    public void set<span class="hljs-constructor">TitleColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
+        titleTv.set<span class="hljs-constructor">TextColor(<span class="hljs-params">color</span>)</span>;
+    }
+
+    public void set<span class="hljs-constructor">ButtonText(String <span class="hljs-params">left</span>, String <span class="hljs-params">right</span>)</span>{
+        leftBtn.set<span class="hljs-constructor">Text(<span class="hljs-params">left</span>)</span>;
+        rightBtn.set<span class="hljs-constructor">Text(<span class="hljs-params">right</span>)</span>;
+    }
+    public void set<span class="hljs-constructor">Width()</span>{
+        <span class="hljs-comment">//得到当前对话框的窗口</span>
+        Window window = get<span class="hljs-constructor">Window()</span>;
+        <span class="hljs-comment">//得到窗口的属性对象</span>
+        WindowManager.LayoutParams wlp = window.get<span class="hljs-constructor">Attributes()</span>;
+        <span class="hljs-comment">//设置窗口位置</span>
+        wlp.gravity = Gravity.BOTTOM;
+        <span class="hljs-comment">//获取屏幕的宽度</span>
+        Display display = window.get<span class="hljs-constructor">WindowManager()</span>.get<span class="hljs-constructor">DefaultDisplay()</span>;
+        wlp.width = display.get<span class="hljs-constructor">Width()</span>;
+        <span class="hljs-comment">//将背景设置为透明，去除边框</span>
+        window.set<span class="hljs-constructor">BackgroundDrawableResource(<span class="hljs-params">android</span>.R.<span class="hljs-params">color</span>.<span class="hljs-params">transparent</span>)</span>;
+        <span class="hljs-comment">//设置窗口属性</span>
+        window.set<span class="hljs-constructor">Attributes(<span class="hljs-params">wlp</span>)</span>;
+    }
+    <span class="hljs-comment">/**
+     * 获取输入内容的函数
+     */</span>
+    public String get<span class="hljs-constructor">InputMsg()</span>{
+        return inputEt.get<span class="hljs-constructor">Text()</span>.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>.trim<span class="hljs-literal">()</span>;
+    }
+    @Override
+    public void on<span class="hljs-constructor">Click(View <span class="hljs-params">v</span>)</span> {
+        switch (v.get<span class="hljs-constructor">Id()</span>) {
+            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.diput_btn1:
+                <span class="hljs-keyword">if</span>(onLeftBtnClickListener!=null){
+                    onLeftBtnClickListener.on<span class="hljs-constructor">BtnClick(Gravity.LEFT)</span>;
+                }
+                cancel<span class="hljs-literal">()</span>;
+                break;
+            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.diput_btn2:
+                <span class="hljs-keyword">if</span> (onRightBtnClickListener!=null){
+                    onRightBtnClickListener.on<span class="hljs-constructor">BtnClick(Gravity.RIGHT)</span>;
+                }
+                cancel<span class="hljs-literal">()</span>;
+                break;
+        }
+    }
+}
+</code></pre>
+<h4>使用自己写的dialog</h4>
+<pre><code class="language-java">   <span class="hljs-comment">/**
+     * 使用自己写的对话框
+     */</span>
+    <span class="hljs-keyword">private</span> void custom<span class="hljs-constructor">Dialog()</span>{
+        InputMsgDialog dialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">InputMsgDialog(<span class="hljs-params">this</span>)</span>;
+        dialog.show<span class="hljs-literal">()</span>;
+
+        dialog.set<span class="hljs-constructor">Title(<span class="hljs-string">"记录消费信息"</span>)</span>;
+        dialog.set<span class="hljs-constructor">TitleColor(Color.RED)</span>;
+        dialog.set<span class="hljs-constructor">Width()</span>;
+        dialog.set<span class="hljs-constructor">OnRightBtnClickListener(<span class="hljs-params">new</span> InputMsgDialog.OnBtnClickListener()</span> {
+            @Override
+            public void on<span class="hljs-constructor">BtnClick(<span class="hljs-params">int</span> <span class="hljs-params">gravity</span>)</span> {
+                String inputMsg = dialog.get<span class="hljs-constructor">InputMsg()</span>;
+                tv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">tv1</span>)</span>;
+                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">inputMsg</span>)</span>;
+            }
+        });
+    }
+</code></pre>
+<h3>日期对话框</h3>
+<pre><code class="language-java">  <span class="hljs-comment">/**
+     * 显示日期对话框
+     */</span>
+    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">DateDialog()</span> {
+        Calendar calendar = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Calendar</span>.</span></span>get<span class="hljs-constructor">Instance()</span>;
+        DatePickerDialog dialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">DatePickerDialog(<span class="hljs-params">this</span>, <span class="hljs-params">new</span> DatePickerDialog.OnDateSetListener()</span> {
+            @Override
+            public void on<span class="hljs-constructor">DateSet(DatePicker <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">year</span>, <span class="hljs-params">int</span> <span class="hljs-params">month</span>, <span class="hljs-params">int</span> <span class="hljs-params">dayOfMonth</span>)</span> {
+                String msg = year + <span class="hljs-string">"年"</span> + (month+<span class="hljs-number">1</span>) + <span class="hljs-string">"月"</span> + dayOfMonth + <span class="hljs-string">"日"</span>;
+                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">msg</span>)</span>;
+            }
+        }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        dialog.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>时间对话框</h3>
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">TimeDialog()</span> {
+        Calendar calendar = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Calendar</span>.</span></span>get<span class="hljs-constructor">Instance()</span>;
+        TimePickerDialog timePickerDialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">TimePickerDialog(<span class="hljs-params">this</span>, <span class="hljs-params">new</span> TimePickerDialog.OnTimeSetListener()</span> {
+            @Override
+            public void on<span class="hljs-constructor">TimeSet(TimePicker <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">hourOfDay</span>, <span class="hljs-params">int</span> <span class="hljs-params">minute</span>)</span> {
+                String msg = hourOfDay + <span class="hljs-string">":"</span> + minute;
+                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">msg</span>)</span>;
+            }
+        }, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), <span class="hljs-literal">true</span>);
+        timePickerDialog.show<span class="hljs-literal">()</span>;
+    }
+</code></pre>
+<h3>进度对话框</h3>
+<pre><code class="language-java">    <span class="hljs-keyword">int</span> value = <span class="hljs-number">0</span>;
+    ProgressDialog dialog;
+    Handler <span class="hljs-keyword">handler</span> = <span class="hljs-keyword">new</span> Handler(){
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">handleMessage</span><span class="hljs-params">(@NonNull Message msg)</span> </span>{
+            <span class="hljs-keyword">super</span>.handleMessage(msg);
+            <span class="hljs-keyword">if</span> (value&gt;=<span class="hljs-number">100</span>) {
+                dialog.dismiss();
+            }
+            <span class="hljs-keyword">else</span>{
+                value += <span class="hljs-number">1</span>;
+                dialog.setProgress(value);
+                <span class="hljs-keyword">handler</span>.sendEmptyMessageDelayed(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>);
+            }
+        }
+    };
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showProgressDialog</span><span class="hljs-params">()</span> </span>{
+        dialog = <span class="hljs-keyword">new</span> ProgressDialog(<span class="hljs-keyword">this</span>);
+        dialog.setIcon(R.mipmap.shuiping);
+        dialog.setMessage(<span class="hljs-string">"正在加载中...."</span>);
+        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        dialog.setMax(<span class="hljs-number">100</span>);
+        dialog.show();
+        value = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">handler</span>.sendEmptyMessageDelayed(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>);
+    }
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月7日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"layout"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"dialog"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

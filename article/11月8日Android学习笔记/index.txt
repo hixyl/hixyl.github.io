@@ -1,0 +1,287 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月8日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月8日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T5194,
+    <p class="time">发布时间：<time datetime="08 November, 2022">2022-11-08 18:46:22</time></p>
+    <p class="words">本文字数：740 字       阅读完需：约 4 分钟</p>
+    <html><head></head><body><h2>框架的导入</h2>
+<p>在当前项目的<code>build.gradle</code>的<code><span class="hljs-attribute">dependencies</span></code>中加入框架即可，如下例所示</p>
+<p>build.gradle</p>
+<pre><code class="language-java">dependencies {
+
+    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'androidx.appcompat:appcompat:1.4.1'</span>
+    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'com.google.android.material:material:1.5.0'</span>
+    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'androidx.constraintlayout:constraintlayout:2.1.3'</span>
+    testImplementation <span class="hljs-string">'junit:junit:4.13.2'</span>
+    androidTestImplementation <span class="hljs-string">'androidx.test.ext:junit:1.1.3'</span>
+    androidTestImplementation <span class="hljs-string">'androidx.test.espresso:espresso-core:3.4.0'</span>
+    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'com.squareup.picasso:picasso:2.5.2'</span> <span class="hljs-comment">//导入的框架</span>
+}
+</code></pre>
+<h2>加载网络图片</h2>
+<ol>
+<li>
+<p>导入<code><span class="hljs-attribute">picasso</span></code>框架
+<code><span class="hljs-attribute">implementation</span> 'com.squareup.picasso:picasso:<span class="hljs-number">2</span>.<span class="hljs-number">5</span>.<span class="hljs-number">2</span>'</code></p>
+</li>
+<li>
+<p>设置网络权限<br>
+在<code>AndroidManifest.<span class="hljs-built_in">xml</span></code>中添加<code>&lt;uses-permission android:<span class="hljs-attribute">name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/&gt;</code>，申请网络权限
+如下例：</p>
+<pre><code class="language-xml"> &lt;manifest xmlns:<span class="hljs-attribute">android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+ xmlns:<span class="hljs-attribute">tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>&gt;
+ &lt;uses-permission android:<span class="hljs-attribute">name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/&gt;
+ <span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span>.
+</code></pre>
+</li>
+<li>
+<p>加载图片</p>
+</li>
+</ol>
+<pre><code class="language-java">        Picasso.<span class="hljs-keyword">with</span>(context).<span class="hljs-keyword">load</span>(bean.getPic()).<span class="hljs-keyword">into</span>(holder.iv);
+</code></pre>
+<h2>tips</h2>
+<p>listview当中包含button类型，需要在item布局外层添加这个属性，避免被抢占焦点</p>
+<p><code><span class="hljs-symbol">android:</span>descendantFocusability=<span class="hljs-string">"blocksDescendants"</span></code></p>
+<p>如下例</p>
+<p>item_detailgv.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
+    <span class="hljs-attr">android:descendantFocusability</span>=<span class="hljs-string">"blocksDescendants"</span>
+    <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"10dp"</span>&gt;</span>
+</code></pre>
+<h2>启动模式</h2>
+<p>支持四种属性值：</p>
+<ol>
+<li>standard   ：标准模式，默认的启动模式。</li>
+<li>singleTop  ： 栈顶单例模式</li>
+<li>singleTask ： 栈内单例模式</li>
+<li>singleInstance：全局单例模式</li>
+</ol>
+<p>为什么activity会有加载模式呢？加载模式有什么用呢？<br>
+activity的加载模式，就是负责管理实例化，加载activity的方式，并可以控制activity和task之间的加载关系。</p>
+<h3>【standard模式】</h3>
+<p>标准启动模式，当启动目标activity的时候都会创建一个新的实例，并且将当前的activity放在栈顶。
+这个模式不会启动新的task。新的activity会被添加到原来的task当中。</p>
+<h3>【singleTop模式】</h3>
+<p>在栈顶就重用，否则就用新的。<br>
+当需要启动的目标activity已经位于栈顶的时候，系统就不会创建新的目标activity的实例，而是直接复用已有的
+activity的实例。<br>
+原理：主要是因为他调用了activity类的<code><span class="hljs-function"><span class="hljs-title">onNewIntent</span><span class="hljs-params">()</span></span></code>方法,可以在该方法当中刷新页面数据。</p>
+<p>举例：短信编辑页面</p>
+<h3>【singleTask模式】</h3>
+<p>采用这个模式的activity在task栈内只有一个实例，当系统使用这个模式启动目标activity时，可以分为三种情况。<br>
+(1).如果将要启动的目标activity不存在，系统将会创建目标activity的实例，并且将他放到task栈顶。<br>
+(2).如果将要启动的目标activity已经位于task栈顶，此时就和singleTop的模式的行为是相同的。<br>
+(3).如果将要启动的目标activity已经存在，但是没有位于task栈顶，系统将会把位于该activity上面的所有<br>
+activity都移出task栈，从而是的目标activity就转入栈顶。</p>
+<p>singleTop和singleTask的区别：<br>
+singleTop模式每次只检测当前栈顶的activity是否是希望我们创建的，如果是就不用创建了，复用就可以了。<br>
+singleTask模式会检测栈中所有的activity的对象，找到就提到栈顶，将前面挡住的全部销毁</p>
+<p>举例：手机浏览器</p>
+<h3>【singleInstance模式】</h3>
+<p>在这中加载模式下，系统保证无论从哪个task中启动目标activity，只会创建一个目标activity的实例，并且会使用<br>
+一个全新的task的栈来装载这个task的实例。<br>
+使用这种模式启动目标activity，也可以分为两种情况：<br>
+（1）如果将要启动的目标activity不存在，系统会先创建一个全新的task，加载创建目标activity的实例，并且会有一个<br>
+全新的task的栈来装载这个目标activity。<br>
+（2）如果将要启动的目标activity已经存在，无论它位于哪个应用程序中，无论他位于哪个task中，系统将会把这个<br>
+activity所在的task放置在前台，从而使这个activity显示出来。<br>
+<strong>注意:</strong><br>
+采用singleInstance的模式加载的activity使用位于栈顶，并且在栈中只有这个activity。<br>
+举例: 来电显示页面，有道取词页面</p>
+<h2>intent</h2>
+<p>可以通过setAction进行页面跳转</p>
+<p>Intent的概念和作用：</p>
+<ol>
+<li>用于封装程序的调用“意图”</li>
+<li>实现了两个activity之间的数据交互</li>
+<li>各种应用程序组件（activity，service，broadcastReceiver）之间通信的重要媒介。</li>
+</ol>
+<h3>Intent的七大属性</h3>
+<ol>
+<li>ComponentName    :主要用于访问activity，进行显示意图的访问。</li>
+<li>action    ：表示想要启动的activity想要完成什么动作。进行隐士意图的访问。</li>
+<li>category  ：为action增加附加类别的信息。它是action大动作中的小动作。</li>
+<li>data      ：保存需要传递的数据的Uri格式。  Uri：统一资源标识符</li>
+<li>type	    ：区分文件类型</li>
+<li>extras    ：保存需要传递的额外数据。</li>
+<li>flags     ：动态的配置activity的启动模式。</li>
+</ol>
+<h3>【ComponentName】：用于指定启动的组件</h3>
+<p>核心代码：</p>
+<pre><code class="language-java"><span class="hljs-comment">//完整的显示意图的跳转方法：</span>
+Intent intent3 = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+ComponentName cName = <span class="hljs-keyword">new</span> <span class="hljs-constructor">ComponentName(MainActivity.<span class="hljs-params">this</span>, SecondActivity.<span class="hljs-params">class</span>)</span>;
+intent3.set<span class="hljs-constructor">Component(<span class="hljs-params">cName</span>)</span>;
+start<span class="hljs-constructor">Activity(<span class="hljs-params">intent3</span>)</span>;
+</code></pre>
+<h3>【action】：某个activity能够完成什么“动作”</h3>
+<p>intent当中定义的关于action的实参。<br>
+ACTION_MAIN:（android.intent.action.MAIN）   Android的程序的入口<br>
+ACTION_VIEW:(android.intent.action.VIEW)     显示指定的数据<br>
+ACTION_EDIT:(android.intent.action.EDIT)     编辑指定的数据<br>
+ACTION_DIAL:(android.intent.action.DIAL)     显示拨号面板界面<br>
+ACTION_CALL:(android.intent.action.CALL)     直接呼叫data中所带的号码<br>
+ACTION_ANSWER:(android.intent.action.ANSWER)  接听来电<br>
+ACTION_SEND:(android.intent.action.SEND)      向其他人发送数据（彩信，email）<br>
+ACTION_SENDTO:(android.intent.action.SENDTO)  向其他人发送短信<br>
+ACTION_SEARCH:(android.intent.action.SEARCH)  执行搜索<br>
+ACTION_GET_CONTENT:(android.intent.action.GET_CONTENT)  让用户选择数据，并且返回所选数据</p>
+<h3>【Category】：类别属性</h3>
+<p>指明了执行action的分类，是action的子动作。</p>
+<p>category常用的属性值：<br>
+CATEGORY_DEFAULT(android.intent.category.DEFAULT):Android系统中默认的执行方式，
+按照普通的activity的执行方式来执行。<br>
+CATEGORY_HOME(android.intent.category.HOME):回到主屏页面<br>
+CATEGORY_LAUNCHER(android.intent.category.LAUNCHER):设置该组件为当前应用程序中优先级最高的activity，
+通常是与ACTION_MAIN配合使用的。<br>
+CATEGORY_PREFERENCE:设置该组件为preference。<br>
+CATEGORY_BROWSABLE:设置该组件可以使用浏览器启动。</p>
+<p>action和category在清单文件当中注册时，都是添加在activity的子元素<code>&lt;<span class="hljs-built_in">int</span>ent-fileter&gt;</code>当中的。<br>
+这个元素中可以包含多个action属性和多个category属性。</p>
+<p>在应用程序中创建一个intent的属性时，只能设置一个action的属性，因为他使用的是setAction(str)的方法。<br>
+但是可以包含多个category的属性，因为他是使用addCategory(str)的方法的。</p>
+<p><strong>注意</strong>set和add的区别理解</p>
+<h3>【Data】：通常用于向action属性提供数据。</h3>
+<p>Data属性的值是一个uri的对象，URI的格式：  scheme://host:port/path<br>
+scheme:    协议<br>
+host：     主机号<br>
+port：     端口号<br>
+path：     路径</p>
+<p>系统内置的data属性的常量：</p>
+<ol>
+<li>tel：         号码的数据格式，后面跟着电话号码</li>
+<li>mailto：      邮件的数据格式，后面跟着邮件收件人的地址</li>
+<li>smsto：       短信的数据格式，后面跟着短信接受的号码</li>
+<li>content://    内容数据格式，后面跟着需要读取的内容（结合内容提供者）</li>
+<li>file:///      文件数据格式，后面跟着文件的路径，要有三个斜线。</li>
+<li>geo://lat,lon  经纬度数据格式，在地图上显示该经纬度指定的地址。</li>
+</ol>
+<pre><code class="language-java">public void home(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_MAIN)</span>;
+        intent.add<span class="hljs-constructor">Category(Intent.CATEGORY_HOME)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+    
+public void dial(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_DIAL)</span>;   <span class="hljs-comment">//Intent.ACTION_DIAL</span>
+        Uri uri = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"tel:18511698819"</span>);
+        intent.set<span class="hljs-constructor">Data(<span class="hljs-params">uri</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+    
+public  void browser(View v) {
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_VIEW)</span>;
+        Uri data = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"http://www.baidu.com/"</span>);
+        intent.set<span class="hljs-constructor">Data(<span class="hljs-params">data</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+public void map(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_VIEW)</span>;
+        Uri data = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"geo://34.009,152.890"</span>);
+        intent.set<span class="hljs-constructor">Data(<span class="hljs-params">data</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+public void video(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_VIEW)</span>;
+        Uri uri = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"file:///sdcard/and.mp4"</span>);
+        intent.set<span class="hljs-constructor">DataAndType(<span class="hljs-params">uri</span>, <span class="hljs-string">"video/*"</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+public void music(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_VIEW)</span>;
+        Uri uri = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"file:///sdcard/fly.mp3"</span>);
+        intent.set<span class="hljs-constructor">DataAndType(<span class="hljs-params">uri</span>, <span class="hljs-string">"audio/*"</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+public void sms(View v){
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_SENDTO)</span>;
+        Uri uri = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Uri</span>.</span></span>parse(<span class="hljs-string">"smsto:18511690019"</span>);
+        intent.set<span class="hljs-constructor">Data(<span class="hljs-params">uri</span>)</span>;
+        intent.put<span class="hljs-constructor">Extra(<span class="hljs-string">"sms_body"</span>, <span class="hljs-string">"今天的天气好晴朗！！"</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    } 
+public void send<span class="hljs-constructor">Email(View <span class="hljs-params">v</span>)</span>{
+        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent()</span>;
+        intent.set<span class="hljs-constructor">Action(Intent.ACTION_SEND)</span>;
+        String bcc<span class="hljs-literal">[]</span> = {<span class="hljs-string">"liusihui@1000phone.com"</span>};
+        String cc<span class="hljs-literal">[]</span> = {<span class="hljs-string">"android@163.com"</span>,<span class="hljs-string">"zhangsan@126.com"</span>};
+        intent.put<span class="hljs-constructor">Extra(Intent.EXTRA_BCC, <span class="hljs-params">bcc</span>)</span>;
+        intent.put<span class="hljs-constructor">Extra(Intent.EXTRA_CC, <span class="hljs-params">cc</span>)</span>;
+        intent.put<span class="hljs-constructor">Extra(Intent.EXTRA_SUBJECT, <span class="hljs-string">"今天的天气好晴朗"</span>)</span>;
+        intent.put<span class="hljs-constructor">Extra(Intent.EXTRA_TEXT, <span class="hljs-string">"一起出去玩吧~~"</span>)</span>;
+        intent.set<span class="hljs-constructor">Type(<span class="hljs-string">"message/*"</span>)</span>;
+        start<span class="hljs-constructor">Activity(<span class="hljs-params">intent</span>)</span>;
+    }
+</code></pre>
+<h2>读取Assets</h2>
+<ol>
+<li>通过<code><span class="hljs-built_in">context</span>.getAssets()</code>获取<code><span class="hljs-attribute">AssetManager</span></code>对象</li>
+<li>通过<code>assetManager.<span class="hljs-meta">open</span>(<span class="hljs-keyword">fileName</span>)</code>获取输入流</li>
+<li>使用<code><span class="hljs-attribute">ByteArrayOutputStream</span></code>接收输入流并转成字节数组或者字符串</li>
+</ol>
+<h3>示例</h3>
+<pre><code class="language-java">   <span class="hljs-comment">/**
+     * 传入文件的路径 xzcontent/xzcontent.json
+     * @param fname
+     * @return
+     */</span>
+    <span class="hljs-keyword">public</span> String getAssetJson(String fname){
+        <span class="hljs-comment">//获取Asset文件管理者</span>
+        AssetManager assetManager = context.getAssets();
+        ByteArrayOutputStream baos = <span class="hljs-keyword">new</span> ByteArrayOutputStream();
+        <span class="hljs-comment">//打开文件</span>
+        <span class="hljs-keyword">try</span> {
+            InputStream <span class="hljs-keyword">is</span> = assetManager.open(fname);
+            <span class="hljs-comment">//读流的数据</span>
+            <span class="hljs-built_in">int</span> hasRead = <span class="hljs-number">0</span>;
+            <span class="hljs-built_in">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-built_in">byte</span>[<span class="hljs-number">1024</span>];
+            <span class="hljs-keyword">while</span> ((hasRead = <span class="hljs-keyword">is</span>.read(buf))!=<span class="hljs-number">-1</span>){
+                baos.write(buf, <span class="hljs-number">0</span>, hasRead);
+            }
+            baos.<span class="hljs-keyword">flush</span>();
+            <span class="hljs-keyword">is</span>.close();
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+            e.printStackTrace();
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        }
+        <span class="hljs-keyword">return</span> baos.toString();
+    }
+</code></pre>
+<h3>读取assets中的图片</h3>
+<p>使用BitmapFactory将byte数组转换为Bitmap对象，然后setImageBitmap即可<br>
+如下例</p>
+<pre><code class="language-java"> <span class="hljs-comment">// 读取asset文件夹当中的图片，显示在imageview上</span>
+    String fname = <span class="hljs-string">"xzlog/"</span> + dao.get<span class="hljs-constructor">Logoname()</span> + <span class="hljs-string">".png"</span>;
+    byte<span class="hljs-literal">[]</span> <span class="hljs-built_in">bytes</span> = assetsUtils.get<span class="hljs-constructor">AssetByteArray(<span class="hljs-params">fname</span>)</span>;
+    <span class="hljs-comment">//将字节数组转换成位图对象</span>
+    Bitmap bitmap =
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">BitmapFactory</span>.</span></span>decode<span class="hljs-constructor">ByteArray(<span class="hljs-params">bytes</span>, 0, <span class="hljs-params">bytes</span>.<span class="hljs-params">length</span>)</span>;
+    vholder.iv.set<span class="hljs-constructor">ImageBitmap(<span class="hljs-params">bitmap</span>)</span>;
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月8日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"图片"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"启动模式"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"intent"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"Bitmap"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月8日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

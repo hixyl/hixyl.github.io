@@ -1,695 +1,467 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>流年石刻</title>
-  <icon>https://www.timeshike.com/icon.png</icon>
-  <subtitle>流年似水，石刻永恒</subtitle>
-  <link href="https://www.timeshike.com/atom.xml" rel="self"/>
-  
-  <link href="https://www.timeshike.com/"/>
-  <updated>2023-07-02T04:39:56.917Z</updated>
-  <id>https://www.timeshike.com/</id>
-  
-  <author>
-    <name>闲云潭影日悠悠</name>
-    
-  </author>
-  
-  <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>linux rsync 命令的使用</title>
-    <link href="https://www.timeshike.com/2023/07/02/linux-rsync-%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://www.timeshike.com/2023/07/02/linux-rsync-%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
-    <published>2023-07-02T12:36:03.000Z</published>
-    <updated>2023-07-02T04:39:56.917Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;rsync-&amp;#x7528;&amp;#x6CD5;&amp;#x6559;&amp;#x7A0B;&quot;&gt;&lt;a href=&quot;#rsync-&amp;#x7528;&amp;#x6CD5;&amp;#x6559;&amp;#x7A0B;&quot; class=&quot;headerlink&quot; title=&quot;rsync</summary>
-        
-      
-    
-    
-    
-    <category term="linux相关" scheme="https://www.timeshike.com/categories/linux%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="linux" scheme="https://www.timeshike.com/tags/linux/"/>
-    
-    <category term="rsync" scheme="https://www.timeshike.com/tags/rsync/"/>
-    
-    <category term="同步" scheme="https://www.timeshike.com/tags/%E5%90%8C%E6%AD%A5/"/>
-    
-    <category term="backup" scheme="https://www.timeshike.com/tags/backup/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android jetpack room 数据库管理工具的配置及使用</title>
-    <link href="https://www.timeshike.com/2023/05/15/Android-jetpack-room-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>https://www.timeshike.com/2023/05/15/Android-jetpack-room-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</id>
-    <published>2023-05-15T14:54:05.000Z</published>
-    <updated>2023-07-02T04:39:56.885Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x914D;&amp;#x7F6E;&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="https://www.timeshike.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="sqllite" scheme="https://www.timeshike.com/tags/sqllite/"/>
-    
-    <category term="jetpack" scheme="https://www.timeshike.com/tags/jetpack/"/>
-    
-    <category term="room" scheme="https://www.timeshike.com/tags/room/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux桌面版配置aria2教程(以ubuntu22.04为例)</title>
-    <link href="https://www.timeshike.com/2023/05/04/linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B/"/>
-    <id>https://www.timeshike.com/2023/05/04/linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B/</id>
-    <published>2023-05-04T10:50:13.000Z</published>
-    <updated>2023-07-02T04:39:56.917Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x5B89;&amp;#x88C5;aria2&quot;&gt;&lt;a href=&quot;#&amp;#x5B89;&amp;#x88C5;aria2&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="linux相关" scheme="https://www.timeshike.com/categories/linux%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="linux" scheme="https://www.timeshike.com/tags/linux/"/>
-    
-    <category term="ubuntu" scheme="https://www.timeshike.com/tags/ubuntu/"/>
-    
-    <category term="aria2" scheme="https://www.timeshike.com/tags/aria2/"/>
-    
-    <category term="systemctl" scheme="https://www.timeshike.com/tags/systemctl/"/>
-    
-    <category term="下载" scheme="https://www.timeshike.com/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android 性能优化之提升app启动速度</title>
-    <link href="https://www.timeshike.com/2023/03/20/Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6/"/>
-    <id>https://www.timeshike.com/2023/03/20/Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6/</id>
-    <published>2023-03-20T13:37:49.000Z</published>
-    <updated>2023-07-02T04:39:56.885Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-&amp;#x542F;&amp;#x52A8;&amp;#x7684;&amp;#x65B9;&amp;#x5F0F;&quot;&gt;&lt;a href=&quot;#1-&amp;#x542F;&amp;#x52A8;&amp;#x7684;&amp;#x65B9;&amp;#x5F0F;&quot; class=&quot;headerlink&quot; title=&quot;1</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="优化" scheme="https://www.timeshike.com/tags/%E4%BC%98%E5%8C%96/"/>
-    
-    <category term="性能" scheme="https://www.timeshike.com/tags/%E6%80%A7%E8%83%BD/"/>
-    
-    <category term="SplashActivity" scheme="https://www.timeshike.com/tags/SplashActivity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于docker的轻量级邮件服务器的搭建和使用教程</title>
-    <link href="https://www.timeshike.com/2022/11/27/linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>https://www.timeshike.com/2022/11/27/linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
-    <published>2022-11-27T16:28:46.000Z</published>
-    <updated>2023-07-02T04:39:56.917Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x524D;&amp;#x8A00;&quot;&gt;&lt;a href=&quot;#&amp;#x524D;&amp;#x8A00;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="建站技术" scheme="https://www.timeshike.com/categories/%E5%BB%BA%E7%AB%99%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="linux" scheme="https://www.timeshike.com/tags/linux/"/>
-    
-    <category term="教程" scheme="https://www.timeshike.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="docker" scheme="https://www.timeshike.com/tags/docker/"/>
-    
-    <category term="mail" scheme="https://www.timeshike.com/tags/mail/"/>
-    
-    <category term="server" scheme="https://www.timeshike.com/tags/server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>非对称加密初探-理解公钥和私钥</title>
-    <link href="https://www.timeshike.com/2022/11/17/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%88%9D%E6%8E%A2-%E7%90%86%E8%A7%A3%E5%85%AC%E9%92%A5%E5%92%8C%E7%A7%81%E9%92%A5/"/>
-    <id>https://www.timeshike.com/2022/11/17/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%88%9D%E6%8E%A2-%E7%90%86%E8%A7%A3%E5%85%AC%E9%92%A5%E5%92%8C%E7%A7%81%E9%92%A5/</id>
-    <published>2022-11-17T08:30:34.000Z</published>
-    <updated>2023-07-02T04:39:56.921Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x7406;&amp;#x89E3;&amp;#x516C;&amp;#x94A5;&amp;#x4E0E;&amp;#x79C1;&amp;#x94A5;&quot;&gt;&lt;a href=&quot;#&amp;#x7406;&amp;#x89E3;&amp;#x516C;&amp;#x94A5;&amp;#x4E0E;&amp;#x79C1;&amp;#x94A5;&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="网络安全" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-    <category term="公钥" scheme="https://www.timeshike.com/tags/%E5%85%AC%E9%92%A5/"/>
-    
-    <category term="私钥" scheme="https://www.timeshike.com/tags/%E7%A7%81%E9%92%A5/"/>
-    
-    <category term="加密" scheme="https://www.timeshike.com/tags/%E5%8A%A0%E5%AF%86/"/>
-    
-    <category term="非对称加密" scheme="https://www.timeshike.com/tags/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月11日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/11/11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/11/11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-11T17:17:11.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Android-&amp;#x5F02;&amp;#x6B65;&amp;#x4EFB;&amp;#x52A1;&quot;&gt;&lt;a href=&quot;#Android-&amp;#x5F02;&amp;#x6B65;&amp;#x4EFB;&amp;#x52A1;&quot; class=&quot;headerlink&quot; title=&quot;Android</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="Thread" scheme="https://www.timeshike.com/tags/Thread/"/>
-    
-    <category term="AsyncTask" scheme="https://www.timeshike.com/tags/AsyncTask/"/>
-    
-    <category term="Notification" scheme="https://www.timeshike.com/tags/Notification/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月10日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/10/11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/10/11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-10T17:17:36.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x8BFB;&amp;#x53D6;&amp;#x7F51;&amp;#x7EDC;&amp;#x6570;&amp;#x636E;&quot;&gt;&lt;a href=&quot;#&amp;#x8BFB;&amp;#x53D6;&amp;#x7F51;&amp;#x7EDC;&amp;#x6570;&amp;#x636E;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="缓存" scheme="https://www.timeshike.com/tags/%E7%BC%93%E5%AD%98/"/>
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="读取网络数据" scheme="https://www.timeshike.com/tags/%E8%AF%BB%E5%8F%96%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE/"/>
-    
-    <category term="Thread" scheme="https://www.timeshike.com/tags/Thread/"/>
-    
-    <category term="Handler" scheme="https://www.timeshike.com/tags/Handler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月9日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/09/11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/09/11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-09T18:35:23.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;scrollView-&amp;#x6ED1;&amp;#x52A8;&amp;#x89C6;&amp;#x56FE;&quot;&gt;&lt;a href=&quot;#scrollView-&amp;#x6ED1;&amp;#x52A8;&amp;#x89C6;&amp;#x56FE;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="ScrollView" scheme="https://www.timeshike.com/tags/ScrollView/"/>
-    
-    <category term="布局加载器" scheme="https://www.timeshike.com/tags/%E5%B8%83%E5%B1%80%E5%8A%A0%E8%BD%BD%E5%99%A8/"/>
-    
-    <category term="Fragment" scheme="https://www.timeshike.com/tags/Fragment/"/>
-    
-    <category term="CircleImageView" scheme="https://www.timeshike.com/tags/CircleImageView/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月8日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/08/11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/08/11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-08T18:46:22.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x6846;&amp;#x67B6;&amp;#x7684;&amp;#x5BFC;&amp;#x5165;&quot;&gt;&lt;a href=&quot;#&amp;#x6846;&amp;#x67B6;&amp;#x7684;&amp;#x5BFC;&amp;#x5165;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="Activity" scheme="https://www.timeshike.com/tags/Activity/"/>
-    
-    <category term="intent" scheme="https://www.timeshike.com/tags/intent/"/>
-    
-    <category term="图片" scheme="https://www.timeshike.com/tags/%E5%9B%BE%E7%89%87/"/>
-    
-    <category term="启动模式" scheme="https://www.timeshike.com/tags/%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F/"/>
-    
-    <category term="Bitmap" scheme="https://www.timeshike.com/tags/Bitmap/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月7日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/07/11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/07/11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-07T16:44:56.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x81EA;&amp;#x5B9A;&amp;#x4E49;&amp;#x63A7;&amp;#x4EF6;&quot;&gt;&lt;a href=&quot;#&amp;#x81EA;&amp;#x5B9A;&amp;#x4E49;&amp;#x63A7;&amp;#x4EF6;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="layout" scheme="https://www.timeshike.com/tags/layout/"/>
-    
-    <category term="Activity" scheme="https://www.timeshike.com/tags/Activity/"/>
-    
-    <category term="dialog" scheme="https://www.timeshike.com/tags/dialog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月5日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/05/11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/05/11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-05T16:46:24.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x4E0D;&amp;#x540C;&amp;#x6D3B;&amp;#x52A8;&amp;#x9875;&amp;#x9762;&amp;#x4F20;&amp;#x503C;&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="Activity" scheme="https://www.timeshike.com/tags/Activity/"/>
-    
-    <category term="intent" scheme="https://www.timeshike.com/tags/intent/"/>
-    
-    <category term="生命周期" scheme="https://www.timeshike.com/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
-    
-    <category term="SharePreferences" scheme="https://www.timeshike.com/tags/SharePreferences/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月4日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/04/11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/04/11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-04T16:40:52.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x5C55;&amp;#x793A;&amp;#x56FE;&amp;#x7247;&quot;&gt;&lt;a href=&quot;#&amp;#x5C55;&amp;#x793A;&amp;#x56FE;&amp;#x7247;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="Button" scheme="https://www.timeshike.com/tags/Button/"/>
-    
-    <category term="View" scheme="https://www.timeshike.com/tags/View/"/>
-    
-    <category term="GridView" scheme="https://www.timeshike.com/tags/GridView/"/>
-    
-    <category term="ListView" scheme="https://www.timeshike.com/tags/ListView/"/>
-    
-    <category term="adapter" scheme="https://www.timeshike.com/tags/adapter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11月3日Android学习笔记</title>
-    <link href="https://www.timeshike.com/2022/11/03/11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/11/03/11%E6%9C%883%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-11-03T16:38:53.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x4ECA;&amp;#x65E5;&amp;#x5185;&amp;#x5BB9;&amp;#x603B;&amp;#x7ED3;&quot;&gt;&lt;a href=&quot;#&amp;#x4ECA;&amp;#x65E5;&amp;#x5185;&amp;#x5BB9;&amp;#x603B;&amp;#x7ED3;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Android学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/Android%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Android" scheme="https://www.timeshike.com/tags/Android/"/>
-    
-    <category term="layout" scheme="https://www.timeshike.com/tags/layout/"/>
-    
-    <category term="activity" scheme="https://www.timeshike.com/tags/activity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10月10日MongoDB学习笔记</title>
-    <link href="https://www.timeshike.com/2022/10/10/10%E6%9C%8810%E6%97%A5MongoDB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/10/10/10%E6%9C%8810%E6%97%A5MongoDB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-10T17:04:31.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x7B80;&amp;#x4ECB;&quot;&gt;&lt;a href=&quot;#&amp;#x7B80;&amp;#x4ECB;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7B80;&amp;#x4ECB;&quot;&gt;&lt;/a&gt;&amp;#x7B80;&amp;#x4ECB;&lt;/h2&gt;&lt;p&gt;MongoDB</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="https://www.timeshike.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="java" scheme="https://www.timeshike.com/tags/java/"/>
-    
-    <category term="MongoDB" scheme="https://www.timeshike.com/tags/MongoDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10月8日spring学习笔记</title>
-    <link href="https://www.timeshike.com/2022/10/08/10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/10/08/10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-08T17:02:27.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;token-&amp;#x7528;&amp;#x6237;&amp;#x767B;&amp;#x5F55;&quot;&gt;&lt;a href=&quot;#token-&amp;#x7528;&amp;#x6237;&amp;#x767B;&amp;#x5F55;&quot; class=&quot;headerlink&quot; title=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="redis" scheme="https://www.timeshike.com/tags/redis/"/>
-    
-    <category term="spring" scheme="https://www.timeshike.com/tags/spring/"/>
-    
-    <category term="springboot" scheme="https://www.timeshike.com/tags/springboot/"/>
-    
-    <category term="token" scheme="https://www.timeshike.com/tags/token/"/>
-    
-    <category term="Authorization" scheme="https://www.timeshike.com/tags/Authorization/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10月7日spring学习笔记</title>
-    <link href="https://www.timeshike.com/2022/10/07/10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/10/07/10%E6%9C%887%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-07T17:00:52.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;actuator-&amp;#x5065;&amp;#x5EB7;&amp;#x76D1;&amp;#x63A7;&quot;&gt;&lt;a href=&quot;#actuator-&amp;#x5065;&amp;#x5EB7;&amp;#x76D1;&amp;#x63A7;&quot; class=&quot;headerlink&quot; title=&quot;actuator</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="spring" scheme="https://www.timeshike.com/tags/spring/"/>
-    
-    <category term="springboot" scheme="https://www.timeshike.com/tags/springboot/"/>
-    
-    <category term="actuator" scheme="https://www.timeshike.com/tags/actuator/"/>
-    
-    <category term="banner" scheme="https://www.timeshike.com/tags/banner/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10月6日后端学习笔记(数据库)</title>
-    <link href="https://www.timeshike.com/2022/10/06/10%E6%9C%886%E6%97%A5%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <id>https://www.timeshike.com/2022/10/06/10%E6%9C%886%E6%97%A5%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
-    <published>2022-10-06T17:16:18.000Z</published>
-    <updated>2023-07-02T04:39:56.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;jackson-maven-&amp;#x4F9D;&amp;#x8D56;&quot;&gt;&lt;a href=&quot;#jackson-maven-&amp;#x4F9D;&amp;#x8D56;&quot; class=&quot;headerlink&quot; title=&quot;jackson maven</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="https://www.timeshike.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="mybatis" scheme="https://www.timeshike.com/tags/mybatis/"/>
-    
-    <category term="mysql" scheme="https://www.timeshike.com/tags/mysql/"/>
-    
-    <category term="redis" scheme="https://www.timeshike.com/tags/redis/"/>
-    
-    <category term="缓存" scheme="https://www.timeshike.com/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>9月27日MyBatis笔记</title>
-    <link href="https://www.timeshike.com/2022/09/27/9%E6%9C%8827%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/09/27/9%E6%9C%8827%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-09-27T17:26:20.000Z</published>
-    <updated>2023-07-02T04:39:56.873Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;&amp;#x591A;&amp;#x8868;&amp;#x8054;&amp;#x67E5;&quot;&gt;&lt;a href=&quot;#&amp;#x591A;&amp;#x8868;&amp;#x8054;&amp;#x67E5;&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="https://www.timeshike.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="mybatis" scheme="https://www.timeshike.com/tags/mybatis/"/>
-    
-    <category term="mysql" scheme="https://www.timeshike.com/tags/mysql/"/>
-    
-    <category term="多表联查" scheme="https://www.timeshike.com/tags/%E5%A4%9A%E8%A1%A8%E8%81%94%E6%9F%A5/"/>
-    
-    <category term="动态加载" scheme="https://www.timeshike.com/tags/%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>9月26日MyBatis笔记</title>
-    <link href="https://www.timeshike.com/2022/09/26/9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/"/>
-    <id>https://www.timeshike.com/2022/09/26/9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-09-26T17:15:37.000Z</published>
-    <updated>2023-07-02T04:39:56.873Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;MyBatis-&amp;#x57FA;&amp;#x7840;&quot;&gt;&lt;a href=&quot;#MyBatis-&amp;#x57FA;&amp;#x7840;&quot; class=&quot;headerlink&quot; title=&quot;MyBatis &amp;#x57FA;&amp;#x7840;&quot;&gt;&lt;/a&gt;MyBatis</summary>
-        
-      
-    
-    
-    
-    <category term="新知笔记" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="后端学习" scheme="https://www.timeshike.com/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="数据库" scheme="https://www.timeshike.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="mybatis" scheme="https://www.timeshike.com/tags/mybatis/"/>
-    
-    <category term="mysql" scheme="https://www.timeshike.com/tags/mysql/"/>
-    
-    <category term="select" scheme="https://www.timeshike.com/tags/select/"/>
-    
-  </entry>
-  
-</feed>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[流年石刻]]></title>
+        <description><![CDATA[流年似水，石刻永恒]]></description>
+        <link>https://www.timeshike.com</link>
+        <image>
+            <url>https://www.timeshike.com/favicon.png</url>
+            <title>流年石刻</title>
+            <link>https://www.timeshike.com</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 17 Aug 2023 08:16:45 GMT</lastBuildDate>
+        <atom:link href="https://www.timeshike.com/atom.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Thu, 17 Aug 2023 08:16:45 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[10月10日MongoDB学习笔记]]></title>
+            <link>https://www.timeshike.com/article/10月10日MongoDB学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/10月10日MongoDB学习笔记</guid>
+            <pubDate>Mon, 10 Oct 2022 17:04:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[10月6日后端学习笔记(数据库)]]></title>
+            <link>https://www.timeshike.com/article/10月6日后端学习笔记-数据库</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/10月6日后端学习笔记-数据库</guid>
+            <pubDate>Thu, 06 Oct 2022 17:16:18 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[10月7日spring学习笔记]]></title>
+            <link>https://www.timeshike.com/article/10月7日spring学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/10月7日spring学习笔记</guid>
+            <pubDate>Fri, 07 Oct 2022 17:00:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[10月8日spring学习笔记]]></title>
+            <link>https://www.timeshike.com/article/10月8日spring学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/10月8日spring学习笔记</guid>
+            <pubDate>Sat, 08 Oct 2022 17:02:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月10日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月10日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月10日Android学习笔记</guid>
+            <pubDate>Thu, 10 Nov 2022 17:17:36 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月11日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月11日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月11日Android学习笔记</guid>
+            <pubDate>Fri, 11 Nov 2022 17:17:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月3日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月3日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月3日Android学习笔记</guid>
+            <pubDate>Thu, 03 Nov 2022 16:38:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月4日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月4日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月4日Android学习笔记</guid>
+            <pubDate>Fri, 04 Nov 2022 16:40:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月5日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月5日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月5日Android学习笔记</guid>
+            <pubDate>Sat, 05 Nov 2022 16:46:24 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月7日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月7日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月7日Android学习笔记</guid>
+            <pubDate>Mon, 07 Nov 2022 16:44:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月8日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月8日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月8日Android学习笔记</guid>
+            <pubDate>Tue, 08 Nov 2022 18:46:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[11月9日Android学习笔记]]></title>
+            <link>https://www.timeshike.com/article/11月9日Android学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/11月9日Android学习笔记</guid>
+            <pubDate>Wed, 09 Nov 2022 18:35:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[15 个常用高效率 Linux 命令汇总]]></title>
+            <link>https://www.timeshike.com/article/15-个常用高效率-linux-命令汇总</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/15-个常用高效率-linux-命令汇总</guid>
+            <pubDate>Sat, 09 Apr 2022 18:07:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月13日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月13日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月13日Spring笔记</guid>
+            <pubDate>Tue, 13 Sep 2022 17:26:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月14日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月14日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月14日Spring笔记</guid>
+            <pubDate>Wed, 14 Sep 2022 17:13:50 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月15日spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月15日spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月15日spring笔记</guid>
+            <pubDate>Thu, 15 Sep 2022 17:07:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月16日spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月16日spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月16日spring笔记</guid>
+            <pubDate>Fri, 16 Sep 2022 17:17:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月17日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月17日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月17日Spring笔记</guid>
+            <pubDate>Sat, 17 Sep 2022 17:18:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月19日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月19日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月19日Spring笔记</guid>
+            <pubDate>Mon, 19 Sep 2022 17:28:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月20日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月20日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月20日Spring笔记</guid>
+            <pubDate>Tue, 20 Sep 2022 17:18:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月21日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月21日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月21日Spring笔记</guid>
+            <pubDate>Wed, 21 Sep 2022 17:13:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月22日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月22日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月22日Spring笔记</guid>
+            <pubDate>Thu, 22 Sep 2022 17:13:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月23日Spring笔记]]></title>
+            <link>https://www.timeshike.com/article/9月23日Spring笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月23日Spring笔记</guid>
+            <pubDate>Sat, 24 Sep 2022 08:25:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月26日MyBatis笔记]]></title>
+            <link>https://www.timeshike.com/article/9月26日MyBatis笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月26日MyBatis笔记</guid>
+            <pubDate>Mon, 26 Sep 2022 17:15:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月27日MyBatis笔记]]></title>
+            <link>https://www.timeshike.com/article/9月27日MyBatis笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月27日MyBatis笔记</guid>
+            <pubDate>Tue, 27 Sep 2022 17:26:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月5日vue学习笔记]]></title>
+            <link>https://www.timeshike.com/article/9月5日vue学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月5日vue学习笔记</guid>
+            <pubDate>Mon, 05 Sep 2022 17:18:34 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月6日vue学习笔记]]></title>
+            <link>https://www.timeshike.com/article/9月6日vue学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月6日vue学习笔记</guid>
+            <pubDate>Tue, 06 Sep 2022 17:18:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月7日vue学习笔记]]></title>
+            <link>https://www.timeshike.com/article/9月7日vue学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月7日vue学习笔记</guid>
+            <pubDate>Wed, 07 Sep 2022 17:21:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[9月8日vue学习笔记]]></title>
+            <link>https://www.timeshike.com/article/9月8日vue学习笔记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/9月8日vue学习笔记</guid>
+            <pubDate>Thu, 08 Sep 2022 17:25:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Android jetpack room 数据库管理工具的配置及使用]]></title>
+            <link>https://www.timeshike.com/article/Android-jetpack-room-数据库管理工具的配置及使用</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/Android-jetpack-room-数据库管理工具的配置及使用</guid>
+            <pubDate>Mon, 15 May 2023 14:54:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Android 性能优化之提升app启动速度]]></title>
+            <link>https://www.timeshike.com/article/Android-性能优化之提升app启动速度</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/Android-性能优化之提升app启动速度</guid>
+            <pubDate>Mon, 20 Mar 2023 13:37:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[JSONField注解的应用]]></title>
+            <link>https://www.timeshike.com/article/JSONField注解的应用</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/JSONField注解的应用</guid>
+            <pubDate>Mon, 12 Sep 2022 14:25:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Servlet3.0使用getPart/getParts实现单文件和多文件上传]]></title>
+            <link>https://www.timeshike.com/article/Servlet3-0使用getPart-getParts实现单文件和多文件上传</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/Servlet3-0使用getPart-getParts实现单文件和多文件上传</guid>
+            <pubDate>Mon, 12 Sep 2022 22:01:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Spring切面编程错误warning no match for this type name:com.xxx.xxx 解决方案]]></title>
+            <link>https://www.timeshike.com/article/Spring切面编程错误warning-no-match-for-this-type-name-com-xxx-xxx-解决方案</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/Spring切面编程错误warning-no-match-for-this-type-name-com-xxx-xxx-解决方案</guid>
+            <pubDate>Fri, 23 Sep 2022 08:34:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Vue使用axios下载文件的方法]]></title>
+            <link>https://www.timeshike.com/article/Vue使用axios下载文件的方法</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/Vue使用axios下载文件的方法</guid>
+            <pubDate>Thu, 15 Sep 2022 21:00:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Apache配置v2ray方法]]></title>
+            <link>https://www.timeshike.com/article/apache配置v2ray方法</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/apache配置v2ray方法</guid>
+            <pubDate>Mon, 21 Mar 2022 10:04:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Javascript编写简单的网页计算器]]></title>
+            <link>https://www.timeshike.com/article/javascript编写简单的网页计算器</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/javascript编写简单的网页计算器</guid>
+            <pubDate>Sun, 14 Aug 2022 22:23:17 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[linux rsync 命令的使用]]></title>
+            <link>https://www.timeshike.com/article/linux-rsync-命令的使用</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/linux-rsync-命令的使用</guid>
+            <pubDate>Sun, 02 Jul 2023 12:36:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Linux VPS主机设置swap分区教程]]></title>
+            <link>https://www.timeshike.com/article/linux-vps主机设置swap分区教程</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/linux-vps主机设置swap分区教程</guid>
+            <pubDate>Mon, 21 Mar 2022 10:00:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Linux下ssh客户端配置]]></title>
+            <link>https://www.timeshike.com/article/linux下ssh客户端配置</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/linux下ssh客户端配置</guid>
+            <pubDate>Tue, 05 Apr 2022 09:01:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[linux桌面版配置aria2教程(以ubuntu22.04为例)]]></title>
+            <link>https://www.timeshike.com/article/linux桌面版配置aria2教程-以ubuntu22-04为例</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/linux桌面版配置aria2教程-以ubuntu22-04为例</guid>
+            <pubDate>Thu, 04 May 2023 10:50:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[基于docker的轻量级邮件服务器的搭建和使用教程]]></title>
+            <link>https://www.timeshike.com/article/linux轻量级邮件服务器的搭建和使用教程</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/linux轻量级邮件服务器的搭建和使用教程</guid>
+            <pubDate>Sun, 27 Nov 2022 16:28:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[VLC 无法播放 Samba 共享文件的解决方法]]></title>
+            <link>https://www.timeshike.com/article/vlc-无法播放-samba-共享文件的解决方法</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/vlc-无法播放-samba-共享文件的解决方法</guid>
+            <pubDate>Sun, 03 Apr 2022 20:32:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[从太空中看地球能看见什么？]]></title>
+            <link>https://www.timeshike.com/article/从太空中看地球能看见什么？</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/从太空中看地球能看见什么？</guid>
+            <pubDate>Sat, 26 Mar 2022 09:48:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[伤春]]></title>
+            <link>https://www.timeshike.com/article/伤春</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/伤春</guid>
+            <pubDate>Sat, 14 May 2022 14:15:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[使用Ubuntu/Debian快速搭建Wordpress网站]]></title>
+            <link>https://www.timeshike.com/article/使用ubuntu-debian快速搭建wordpress网站</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/使用ubuntu-debian快速搭建wordpress网站</guid>
+            <pubDate>Mon, 21 Mar 2022 09:20:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[俄新社：俄罗斯应该对乌克兰做什么？]]></title>
+            <link>https://www.timeshike.com/article/俄新社：俄罗斯应该对乌克兰做什么？</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/俄新社：俄罗斯应该对乌克兰做什么？</guid>
+            <pubDate>Wed, 06 Apr 2022 06:41:35 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[俄罗斯Yandex Mail：免费域名邮箱申请]]></title>
+            <link>https://www.timeshike.com/article/俄罗斯yandex-mail：免费域名邮箱申请</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/俄罗斯yandex-mail：免费域名邮箱申请</guid>
+            <pubDate>Fri, 25 Mar 2022 15:40:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[假如拜占庭保留希腊和小亚细亚疆域存活至今，那会是一个怎样的国家？]]></title>
+            <link>https://www.timeshike.com/article/假如拜占庭保留希腊和小亚细亚疆域存活至今，那</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/假如拜占庭保留希腊和小亚细亚疆域存活至今，那</guid>
+            <pubDate>Sun, 20 Mar 2022 12:37:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[关于本站迁移到github平台的新尝试]]></title>
+            <link>https://www.timeshike.com/article/关于本站迁移到github平台的新尝试</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/关于本站迁移到github平台的新尝试</guid>
+            <pubDate>Sun, 04 Sep 2022 18:46:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[分享Apache环境禁止目录浏览的方法]]></title>
+            <link>https://www.timeshike.com/article/分享apache环境禁止目录浏览的方法</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/分享apache环境禁止目录浏览的方法</guid>
+            <pubDate>Thu, 24 Mar 2022 15:19:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[利用开源 Sandboxie-Plus 为 Windows 桌面程序创建隔离沙箱环境 守护隐私 保持系统干净整洁]]></title>
+            <link>https://www.timeshike.com/article/利用开源-sandboxie-plus-为-windows-桌面程序创建隔离沙箱环境-守护</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/利用开源-sandboxie-plus-为-windows-桌面程序创建隔离沙箱环境-守护</guid>
+            <pubDate>Sun, 05 Jun 2022 07:46:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[和你一起]]></title>
+            <link>https://www.timeshike.com/article/和你一起</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/和你一起</guid>
+            <pubDate>Wed, 06 Apr 2022 17:50:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[夏日]]></title>
+            <link>https://www.timeshike.com/article/夏日</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/夏日</guid>
+            <pubDate>Mon, 13 Jun 2022 16:55:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[夜来幽梦]]></title>
+            <link>https://www.timeshike.com/article/夜来幽梦</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/夜来幽梦</guid>
+            <pubDate>Fri, 15 Apr 2022 21:29:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[孤舟]]></title>
+            <link>https://www.timeshike.com/article/孤舟</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/孤舟</guid>
+            <pubDate>Mon, 21 Mar 2022 16:37:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[山雨欲来]]></title>
+            <link>https://www.timeshike.com/article/山雨欲来</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/山雨欲来</guid>
+            <pubDate>Wed, 23 Mar 2022 18:01:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[忆阳春]]></title>
+            <link>https://www.timeshike.com/article/忆阳春</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/忆阳春</guid>
+            <pubDate>Fri, 24 Jun 2022 12:34:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[“我请求你的转发”——一位乌克兰数学家/诗人的遗书]]></title>
+            <link>https://www.timeshike.com/article/我请求你的转发-一位乌克兰数学家-诗人的</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/我请求你的转发-一位乌克兰数学家-诗人的</guid>
+            <pubDate>Wed, 23 Mar 2022 20:48:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[春天]]></title>
+            <link>https://www.timeshike.com/article/春天</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/春天</guid>
+            <pubDate>Tue, 22 Mar 2022 16:52:54 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[春日忧思]]></title>
+            <link>https://www.timeshike.com/article/春日忧思</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/春日忧思</guid>
+            <pubDate>Sun, 27 Mar 2022 18:36:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[暗夜飞鸟]]></title>
+            <link>https://www.timeshike.com/article/暗夜飞鸟</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/暗夜飞鸟</guid>
+            <pubDate>Thu, 24 Mar 2022 18:41:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[暗淡蓝点]]></title>
+            <link>https://www.timeshike.com/article/暗淡蓝点-2</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/暗淡蓝点-2</guid>
+            <pubDate>Sun, 20 Mar 2022 11:51:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[月夜漂流]]></title>
+            <link>https://www.timeshike.com/article/月夜漂流</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/月夜漂流</guid>
+            <pubDate>Wed, 30 Mar 2022 17:49:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[梦醒时分]]></title>
+            <link>https://www.timeshike.com/article/梦醒时分</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/梦醒时分</guid>
+            <pubDate>Mon, 21 Mar 2022 12:41:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[流年似水，石刻永恒]]></title>
+            <link>https://www.timeshike.com/article/流年似水，石刻永恒</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/流年似水，石刻永恒</guid>
+            <pubDate>Sun, 20 Mar 2022 22:16:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[知乎回答：孙悟空成佛后，大家看见他还会叫他大圣吗？还是全改口叫胜佛了?]]></title>
+            <link>https://www.timeshike.com/article/知乎回答：孙悟空成佛后，大家看见他还会叫他大</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/知乎回答：孙悟空成佛后，大家看见他还会叫他大</guid>
+            <pubDate>Sun, 07 Aug 2022 22:13:54 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[知乎回答：那些十六七岁就休学的女生现在在干嘛？]]></title>
+            <link>https://www.timeshike.com/article/知乎回答：那些十六七岁就休学的女生现在在干嘛</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/知乎回答：那些十六七岁就休学的女生现在在干嘛</guid>
+            <pubDate>Thu, 07 Jul 2022 11:18:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[秋日]]></title>
+            <link>https://www.timeshike.com/article/秋日</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/秋日</guid>
+            <pubDate>Wed, 07 Sep 2022 21:14:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[第一次世界大战：欧洲民众前后的矛盾态度]]></title>
+            <link>https://www.timeshike.com/article/第一次世界大战：欧洲民众前后的矛盾态度</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/第一次世界大战：欧洲民众前后的矛盾态度</guid>
+            <pubDate>Tue, 02 Aug 2022 15:26:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[蒲公英]]></title>
+            <link>https://www.timeshike.com/article/蒲公英</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/蒲公英</guid>
+            <pubDate>Sun, 20 Mar 2022 21:04:43 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[解决Spring的jdbcTemplate.batchUpdate()执行慢的问题]]></title>
+            <link>https://www.timeshike.com/article/解决Spring的jdbcTemplate-batchUpdate()执行慢的问题</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/解决Spring的jdbcTemplate-batchUpdate()执行慢的问题</guid>
+            <pubDate>Mon, 19 Sep 2022 13:52:24 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[青草]]></title>
+            <link>https://www.timeshike.com/article/青草</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/青草</guid>
+            <pubDate>Thu, 31 Mar 2022 19:09:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[非对称加密初探-理解公钥和私钥]]></title>
+            <link>https://www.timeshike.com/article/非对称加密初探-理解公钥和私钥</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/非对称加密初探-理解公钥和私钥</guid>
+            <pubDate>Thu, 17 Nov 2022 08:30:34 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[风中行客]]></title>
+            <link>https://www.timeshike.com/article/风中行客</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/风中行客</guid>
+            <pubDate>Fri, 25 Mar 2022 18:51:16 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

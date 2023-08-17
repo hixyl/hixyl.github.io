@@ -1,0 +1,127 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B","d"],{"children":["__PAGE__?{\"id\":\"linux桌面版配置aria2教程-以ubuntu22-04为例\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"linux桌面版配置aria2教程-以ubuntu22-04为例\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T1d12,
+    <p class="time">发布时间：<time datetime="04 May, 2023">2023-05-04 10:50:13</time></p>
+    <p class="words">本文字数：270 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><h2>安装aria2</h2>
+<pre><code class="language-shell">sudo apt <span class="hljs-keyword">install</span> aria2
+</code></pre>
+<h2>新建配置文件</h2>
+<p>新建 <code>~<span class="hljs-regexp">/.aria2/</span>aria2.conf</code> 文件，内容如下(下载文件保存位置根据实际情况修改)</p>
+<pre><code class="language-conf"><span class="hljs-comment">#允许rpc</span>
+<span class="hljs-attr">enable-rpc</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#允许所有来源, web界面跨域权限需要</span>
+<span class="hljs-attr">rpc-allow-origin-all</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#允许非外部访问</span>
+<span class="hljs-attr">rpc-listen-all</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#RPC端口, 仅当默认端口被占用时修改</span>
+<span class="hljs-comment">#rpc-listen-port=6800</span>
+ 
+<span class="hljs-comment">#最大同时下载数(任务数), 路由建议值: 3</span>
+<span class="hljs-attr">max-concurrent-downloads</span>=<span class="hljs-number">5</span>
+<span class="hljs-comment">#断点续传</span>
+<span class="hljs-attr">continue</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#同服务器连接数</span>
+<span class="hljs-attr">max-connection-per-server</span>=<span class="hljs-number">5</span>
+<span class="hljs-comment">#最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于小文件重要</span>
+<span class="hljs-attr">min-split-size</span>=<span class="hljs-number">10</span>M
+<span class="hljs-comment">#单文件最大线程数, 路由建议值: 5</span>
+<span class="hljs-attr">split</span>=<span class="hljs-number">10</span>
+<span class="hljs-comment">#下载速度限制</span>
+<span class="hljs-attr">max-overall-download-limit</span>=<span class="hljs-number">0</span>
+<span class="hljs-comment">#单文件速度限制</span>
+<span class="hljs-attr">max-download-limit</span>=<span class="hljs-number">0</span>
+<span class="hljs-comment">#上传速度限制</span>
+<span class="hljs-attr">max-overall-upload-limit</span>=<span class="hljs-number">0</span>
+<span class="hljs-comment">#单文件速度限制</span>
+<span class="hljs-attr">max-upload-limit</span>=<span class="hljs-number">0</span>
+<span class="hljs-comment">#断开速度过慢的连接</span>
+<span class="hljs-comment">#lowest-speed-limit=0</span>
+<span class="hljs-comment">#验证用，需要1.16.1之后的release版本</span>
+<span class="hljs-comment">#referer=*</span>
+ 
+<span class="hljs-attr">input-file</span>=/var/log/aria2.session
+<span class="hljs-attr">save-session</span>=/var/log/aria2_.session
+<span class="hljs-comment">#定时保存会话，需要1.16.1之后的release版</span>
+<span class="hljs-attr">save-session-interval</span>=<span class="hljs-number">60</span>
+ 
+<span class="hljs-comment">#文件保存路径, 默认为当前启动位置</span>
+<span class="hljs-attr">dir</span>=/home/smile/Downloads/
+<span class="hljs-comment">#文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用, 需要1.16及以上版本</span>
+<span class="hljs-comment">#disk-cache=0</span>
+<span class="hljs-comment">#另一种Linux文件缓存方式, 使用前确保您使用的内核支持此选项, 需要1.15及以上版本(?)</span>
+<span class="hljs-comment">#enable-mmap=true</span>
+<span class="hljs-comment">#文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长</span>
+<span class="hljs-comment">#所需时间 none &lt; falloc ? trunc &lt;&lt; prealloc, falloc和trunc需要文件系统和内核支持</span>
+<span class="hljs-attr">file-allocation</span>=prealloc
+<span class="hljs-comment">#启用本地节点查找</span>
+<span class="hljs-attr">bt-enable-lpd</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#添加额外的tracker</span>
+<span class="hljs-comment">#bt-tracker=&lt;URI&gt;,…</span>
+<span class="hljs-comment">#单种子最大连接数</span>
+<span class="hljs-comment">#bt-max-peers=55</span>
+<span class="hljs-comment">#强制加密, 防迅雷必备</span>
+<span class="hljs-comment">#bt-require-crypto=true</span>
+<span class="hljs-comment">#当下载的文件是一个种子(以.torrent结尾)时, 自动下载BT</span>
+<span class="hljs-attr">follow-torrent</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#BT监听端口, 当端口屏蔽时使用</span>
+<span class="hljs-comment">#listen-port=6881-6999</span>
+ 
+<span class="hljs-comment">#不确定是否需要，为保险起见，need more test</span>
+<span class="hljs-attr">enable-dht</span>=<span class="hljs-literal">false</span>
+<span class="hljs-attr">bt-enable-lpd</span>=<span class="hljs-literal">false</span>
+<span class="hljs-attr">enable-peer-exchange</span>=<span class="hljs-literal">false</span>
+<span class="hljs-comment">#修改特征</span>
+<span class="hljs-attr">user-agent</span>=uTorrent/<span class="hljs-number">2210</span>(<span class="hljs-number">25130</span>)
+<span class="hljs-attr">peer-id-prefix</span>=-UT2210-
+<span class="hljs-comment">#修改做种设置, 允许做种</span>
+<span class="hljs-attr">seed-ratio</span>=<span class="hljs-number">0</span>
+<span class="hljs-comment">#保存会话</span>
+<span class="hljs-attr">force-save</span>=<span class="hljs-literal">true</span>
+<span class="hljs-attr">bt-hash-check-seed</span>=<span class="hljs-literal">true</span>
+<span class="hljs-attr">bt-seed-unverified</span>=<span class="hljs-literal">true</span>
+<span class="hljs-attr">bt-save-metadata</span>=<span class="hljs-literal">true</span>
+<span class="hljs-comment">#定时保存会话，需要1.16.1之后的某个release版本（比如1.16.2）</span>
+<span class="hljs-comment">#save-session-interval=60</span>
+</code></pre>
+<h2>新建log文件</h2>
+<pre><code class="language-shell">sudo touch /<span class="hljs-keyword">var</span>/<span class="hljs-built_in">log</span>/aria2.session
+sudo touch /<span class="hljs-keyword">var</span>/<span class="hljs-built_in">log</span>/aria2_.session
+</code></pre>
+<h2>配置系统服务</h2>
+<p>新建 <code><span class="hljs-regexp">/lib/</span>systemd<span class="hljs-regexp">/system/</span>aria2.service</code>，配置如下</p>
+<pre><code class="language-conf"><span class="hljs-attr">Description</span>= aria2
+<span class="hljs-attr">After</span>=network.target
+ 
+<span class="hljs-section">[Service]</span>
+<span class="hljs-attr">User</span>=smile
+<span class="hljs-attr">Group</span>=smile
+
+<span class="hljs-comment">#PIDFile=/run/aria2.pid</span>
+<span class="hljs-attr">ExecStart</span>=aria2c -c --conf-path=/home/smile/.aria2/aria2.conf &amp;
+<span class="hljs-attr">ExecStop</span>=/bin/kill <span class="hljs-variable">$MAINPID</span>
+<span class="hljs-attr">RestartSec</span>=always
+ 
+<span class="hljs-section">[Install]</span>
+<span class="hljs-attr">WantedBy</span>=multi-user.target
+</code></pre>
+<h2>开启服务</h2>
+<pre><code class="language-shell">sudo systemctl <span class="hljs-keyword">enable</span> aria2 <span class="hljs-comment">--now</span>
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"linux桌面版配置aria2教程(以ubuntu22.04为例)"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/linux相关/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"linux相关"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"linux"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"ubuntu"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"aria2"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"systemctl"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"下载"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"linux桌面版配置aria2教程(以ubuntu22.04为例) - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

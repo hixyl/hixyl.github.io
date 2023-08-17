@@ -1,0 +1,143 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月26日MyBatis笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月26日MyBatis笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8826%E6%97%A5MyBatis%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月26日MyBatis笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T394e,
+    <p class="time">发布时间：<time datetime="26 September, 2022">2022-09-26 17:15:37</time></p>
+    <p class="words">本文字数：440 字       阅读完需：约 3 分钟</p>
+    <html><head></head><body><h2>MyBatis 基础</h2>
+<h3>代码示例</h3>
+<p>AppTest.java</p>
+<pre><code class="language-java">package com.zr;
+
+<span class="hljs-keyword">import</span> static org.junit.<span class="hljs-keyword">Assert</span>.assertTrue;
+
+<span class="hljs-keyword">import</span> com.zr.dao.UserDao;
+<span class="hljs-keyword">import</span> com.zr.vo.<span class="hljs-keyword">User</span>;
+<span class="hljs-keyword">import</span> org.apache.ibatis.io.Resources;
+<span class="hljs-keyword">import</span> org.apache.ibatis.<span class="hljs-keyword">session</span>.SqlSession;
+<span class="hljs-keyword">import</span> org.apache.ibatis.<span class="hljs-keyword">session</span>.SqlSessionFactory;
+<span class="hljs-keyword">import</span> org.apache.ibatis.<span class="hljs-keyword">session</span>.SqlSessionFactoryBuilder;
+<span class="hljs-keyword">import</span> org.junit.Test;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.io.Reader;
+
+<span class="hljs-comment">/**
+ * Unit test for simple App.
+ */</span>
+<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> AppTest 
+{
+    <span class="hljs-comment">/**
+     * Rigorous Test :-)
+     */</span>
+    @Test
+    <span class="hljs-built_in">public</span> <span class="hljs-type">void</span> test01() throws IOException {
+        Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
+        //SqlSessionFactory对象封装了需要连接的数据源、表-vo-dao对应关系
+        SqlSessionFactory factory = <span class="hljs-built_in">new</span> SqlSessionFactoryBuilder().build(reader);
+        //相当于jdbc的<span class="hljs-keyword">connection</span>对象, openSession(<span class="hljs-keyword">false</span>)代表手动事务, openSession(<span class="hljs-keyword">true</span>)代表自动事务, 默认为<span class="hljs-keyword">false</span>
+        SqlSession sqlSession = factory.openSession(<span class="hljs-keyword">false</span>);
+        //获取dao接口的实现类，该实现类由mybatis动态(动态代理)生成
+        UserDao userDao = sqlSession.getMapper(UserDao.<span class="hljs-keyword">class</span>);
+        //调用实现类的方法，注意：接口方法必须和对应的映射.xml文件中标签的id值一致
+        <span class="hljs-keyword">User</span> <span class="hljs-keyword">user</span> = userDao.selectByPrimaryKey("admin");
+        //提交事务 sqlSession.<span class="hljs-keyword">commit</span>();
+        //回滚事务 sqlSession.<span class="hljs-keyword">rollback</span>();
+        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(<span class="hljs-keyword">user</span>);
+        //关闭连接
+        sqlSession.<span class="hljs-keyword">close</span>();
+        reader.<span class="hljs-keyword">close</span>();
+    }
+}
+</code></pre>
+<p>关系映射文件 resources/com/zr/dao/UserDao.xml</p>
+<pre><code class="language-xml"><span class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">mapper</span> <span class="hljs-keyword">PUBLIC</span> <span class="hljs-string">"-//mybatis.org//DTD Mapper 3.0//EN"</span> <span class="hljs-string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 定义映射关系 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">"com.zr.dao.UserDao"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"BaseResultMap"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.User"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userId"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"password"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"sex"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"tel"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"status"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"img"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">result</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">resultMap</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectByPrimaryKey"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"BaseResultMap"</span>&gt;</span>
+        select * from t_user where user_id = #</span><span class="hljs-template-variable">{userId}</span><span class="language-xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mapper</span>&gt;</span>
+</span></code></pre>
+<p>配置文件 mybatis-config.xml</p>
+<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span> ?&gt;</span>
+<span class="hljs-comment">&lt;!--描述文件--&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">configuration</span>
+<span class="hljs-keyword">PUBLIC</span> <span class="hljs-string">"-//mybatis.org//DTD Config 3.0//EN"</span>
+<span class="hljs-string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+<span class="hljs-comment">&lt;!--	环境标签代表数据库，default代表默认连接的数据库id--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">environments</span> <span class="hljs-attr">default</span>=<span class="hljs-string">"development"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">environment</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"development"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">transactionManager</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"JDBC"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dataSource</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"POOLED"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"driver"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"com.mysql.jdbc.Driver"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/test"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"root"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"mysql"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">dataSource</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">environment</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">environments</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mappers</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">"com/zr/dao/UserDao.xml"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mapper</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mappers</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+
+</code></pre>
+<h2>OGNL 表达式</h2>
+<p>OGNL(Object Graphic Navigation Language, 对象图导航语言)<br>
+<img src="9_26_01.PNG" alt="alt"></p>
+<ol>
+<li>方法参数是String 或基本数据类型(包装器类型)<br>
+<code><span class="hljs-keyword">select</span>(<span class="hljs-built_in">String</span> userName)     <span class="hljs-meta">#{userName}</span></code></li>
+<li>参数是JavaBean对象类型<br>
+<code>add(<span class="hljs-keyword">User</span> <span class="hljs-title">user</span>)     <span class="hljs-comment">#{属性名} #{userId} #{password}</span></code></li>
+<li>参数是Map的时候<br>
+<code>add(<span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">Object</span>&gt;)     <span class="hljs-comment">#{key} #{userId}</span></code></li>
+<li>多参数1<br>
+<code><span class="hljs-selector-tag">queryList</span>(<span class="hljs-variable">@Param</span>(<span class="hljs-string">"a"</span>)String userId, <span class="hljs-variable">@Param</span>(<span class="hljs-string">"b"</span>)String userName)     #{<span class="hljs-selector-tag">a</span>} #{<span class="hljs-selector-tag">b</span>}</code></li>
+<li>多参数2<br>
+<code><span class="hljs-selector-tag">list</span>(<span class="hljs-variable">@Param</span>(<span class="hljs-string">"u"</span>) User user, <span class="hljs-variable">@Param</span>(<span class="hljs-string">"d"</span>)String deptId)     #{<span class="hljs-selector-tag">u</span><span class="hljs-selector-class">.userId</span>} #{<span class="hljs-selector-tag">u</span><span class="hljs-selector-class">.userName</span>}    #{<span class="hljs-selector-tag">d</span>}</code></li>
+</ol>
+<p><strong>注意</strong> 在xml中，如果参数是字符串类型，如<code><span class="hljs-meta">#{userName}===&gt;<span class="hljs-string">'张三'</span></span></code> (自动加单引号), 写 <code><span class="hljs-variable">${userName}</span>====&gt;张三</code> 没有单引号</p>
+<h2>resultMap 和 resultType的区别</h2>
+<p>二者不可共存</p>
+<p><code><span class="hljs-attribute">resultType</span></code>: 方法返回值是具体的类型,数据库表的【列名】映射到返回值上，如果返回值是JavaBean, 那么返回值映射关系为：列名--&gt;属性名<br>
+<code><span class="hljs-attribute">resultMap</span></code>: 自定义的映射关系</p>
+<h2>显示sql语句和其他细节</h2>
+<p>mybatis-config.xml</p>
+<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"logImpl"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"org.apache.ibatis.logging.stdout.StdOutImpl"</span>/&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月26日MyBatis笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"mybatis"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"mysql"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"数据库"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"select"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]

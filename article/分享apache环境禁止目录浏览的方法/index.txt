@@ -1,0 +1,101 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","%E5%88%86%E4%BA%ABapache%E7%8E%AF%E5%A2%83%E7%A6%81%E6%AD%A2%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88%E7%9A%84%E6%96%B9%E6%B3%95","d"],{"children":["__PAGE__?{\"id\":\"分享apache环境禁止目录浏览的方法\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","%E5%88%86%E4%BA%ABapache%E7%8E%AF%E5%A2%83%E7%A6%81%E6%AD%A2%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88%E7%9A%84%E6%96%B9%E6%B3%95","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"分享apache环境禁止目录浏览的方法\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","%E5%88%86%E4%BA%ABapache%E7%8E%AF%E5%A2%83%E7%A6%81%E6%AD%A2%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88%E7%9A%84%E6%96%B9%E6%B3%95","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T1215,
+    <p class="time">发布时间：<time datetime="24 March, 2022">2022-03-24 15:19:48</time></p>
+    <p class="words">本文字数：260 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><p>在Apache环境中，文件目录列表默认是允许的，也就是说，如果没有默认索引文件，如index.php或index.html，那么访问域名时则会显示目录的内容。在网站上线之后，不建议启用目录浏览，因为它可能导致网站信息泄漏，并帮助攻击者确定网站或Web应用程序是如何构造的，并增加攻击面。本文简单说说在Ubuntu20.04系统中测试和禁用Apache目录浏览。</p>
+<h2><strong>实验环境</strong></h2>
+<p>Ubuntu20.04系统、LAMP环境，网站www.appjzw.com，sudo用户权限。</p>
+<h2>创建测试目录</h2>
+<p>使用SSH登陆远程服务器，然后在根目录下创建一个的测试目录，命令如下：</p>
+<p>$ sudo mkdir /var/www/html/test</p>
+<p>在test目录下创建两个子目录。</p>
+<p>$ sudo mkdir /var/www/html/test/sub-directory_1
+$ sudo mkdir /var/www/html/test/sub-directory_2</p>
+<p>将两个文件添加到<strong>test</strong>目录。</p>
+<p>$ sudo touch /var/www/html/test/file1.txt
+$ sudo touch /var/www/html/test/file2.txt</p>
+<p>打开网页浏览器并访问下面的URL。请将appjzw.com替换成你自己的域名或服务器IP地址**。**</p>
+<p>http://www.appjzw.com/test</p>
+<p>如果启用了Apache目录列表，您应该会看到您创建的所有文件和子目录的列表。</p>
+<h2>在Apache配置中禁用</h2>
+<p>打开**/etc/apache2/apache2.conf配置文件**。</p>
+<p>$ sudo nano /etc/apache2/apache2.conf</p>
+<p>找到下面的内容。</p>
+<p>...
+&lt;Directory /var/www/&gt;
+Options Indexes FollowSymLinks
+AllowOverride None
+Require all granted
+&lt;/Directory&gt;
+...</p>
+<p>将下面的行：</p>
+<p>Options Indexes FollowSymLinks</p>
+<p>更改为：</p>
+<p>Options -Indexes +FollowSymLinks</p>
+<p>替换完成之后，应该是这样的。</p>
+<p>...
+&lt;Directory /var/www/&gt;
+Options -Indexes +FollowSymLinks
+AllowOverride None
+Require all granted
+&lt;/Directory&gt;
+...</p>
+<p>默认情况下，Indexes选项中未检测到默认索引文件时，Apache将会显示文件和目录列表。而在**/var/www**目录的前缀Indexes中使用连字符的选项，表示将禁止显示文件和目录列表。 保存并关闭文件。然后，重新启动Apache Web服务器。</p>
+<p>$ sudo systemctl restart apache2</p>
+<p>尝试访问测试目录的URL。请将appjzw.com替换成你自己的域名或服务器IP地址**。**</p>
+<p>http://www.appjzw.com/test</p>
+<p>这一次访问时将会显示禁止载入，也就不会将网站的文件和目录呈现出来。</p>
+<h2>虚拟主机禁用方法设置</h2>
+<p>如果你有多个网站托管在同一个Apache Web服务器上，则可以通过单独编辑每个网站的虚拟主机配置文件来禁用目录列表。 通过运行下面的命令，列出Apache Web服务器上可用的站点。</p>
+<p>$ sudo ls -lsa /etc/apache2/sites-available</p>
+<p>下面的输出可能是不同的，这取决于在服务器上托管的网站。</p>
+<p>4 drwxr-xr-x 2 root root 4096 Jul 15 12:19 .
+4 drwxr-xr-x 8 root root 4096 Jul 16 11:33 ..
+4 -rw-r--r-- 1 root root 1332 Apr 13 20:19 000-default.conf
+8 -rw-r--r-- 1 root root 6338 Apr 13 20:19 default-ssl.conf</p>
+<p>获取要编辑的网站的配置文件名(例如<strong>000-default.conf</strong>打开文件。</p>
+<p>$ sudo nano /etc/apache2/sites-available/000-default.conf</p>
+<p>这时候文件的内容将在某种程度上类似于下面所示的内容。</p>
+<p>&lt;VirtualHost *:80&gt;
+...
+#ServerName www.appjzw.com  ##这个替换你自己的网站</p>
+<pre><code>    ServerAdmin webmaster@localhost
+    DocumentRoot <span class="hljs-regexp">/var/</span>www/html
+</code></pre>
+<p>...
+&lt;/VirtualHost&gt;</p>
+<p>通过添加<code>&lt;Directory <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/&gt;...&lt;/</span>Directory&gt;</code>备选方案如下：</p>
+<p>&lt;VirtualHost *:80&gt;
+...
+#ServerName www.appjzw.com ##这个替换你自己的网站</p>
+<pre><code>    ServerAdmin webmaster@localhost
+    DocumentRoot <span class="hljs-regexp">/var/</span>www/html
+</code></pre>
+<p>...
+&lt;Directory /var/www/&gt;
+Options -Indexes +FollowSymLinks
+AllowOverride None
+Require all granted
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;</p>
+<p>保存并关闭文件。然后，重新启动Apache Web服务器。</p>
+<p>$ sudo systemctl restart apache2</p>
+<p>这样经成功地禁用了在该站点上的直接浏览。</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"分享Apache环境禁止目录浏览的方法"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/建站技术/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"建站技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"apache"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"分享"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"浏览"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"目录"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"禁止"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"分享Apache环境禁止目录浏览的方法 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

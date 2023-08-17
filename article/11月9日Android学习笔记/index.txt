@@ -1,0 +1,179 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
+0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月9日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
+6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-1be16d417cdc873c.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月9日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/db5abb62272553e3.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/c5bb756983435f23.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%889%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月9日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","520:static/chunks/520-ad0c725f9c7d0b58.js","241:static/chunks/app/article/[id]/page-7f50a38b3f9881e3.js"],"name":"","async":false}
+f:T2f51,
+    <p class="time">发布时间：<time datetime="09 November, 2022">2022-11-09 18:35:23</time></p>
+    <p class="words">本文字数：410 字       阅读完需：约 3 分钟</p>
+    <html><head></head><body><h2>scrollView 滑动视图</h2>
+<p>在ScrollView当中只能有一个子控件</p>
+<h2>布局加载器的获取</h2>
+<p>两种方式</p>
+<pre><code class="language-java">        LayoutInflater layoutInflater <span class="hljs-operator">=</span> LayoutInflater.from(this)<span class="hljs-comment">;</span>
+        LayoutInflater inflater <span class="hljs-operator">=</span> getLayoutInflater()<span class="hljs-comment">;</span>
+</code></pre>
+<h3>将view对象添加到listview的头布局</h3>
+<pre><code class="language-java">        ListView lv<span class="hljs-comment">;</span>
+        lv.addHeaderView(headerView)<span class="hljs-comment">;</span>
+</code></pre>
+<p>示例：设置头布局和尾部局</p>
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> void add<span class="hljs-constructor">HeaderAndFooterView()</span> {
+        <span class="hljs-comment">//将布局文件转换成view对象</span>
+<span class="hljs-comment">//        LayoutInflater layoutInflater = LayoutInflater.from(this);</span>
+        LayoutInflater inflater = get<span class="hljs-constructor">LayoutInflater()</span>;
+        View headerView = inflater.inflate(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.item_lv_header, null);
+        lv.add<span class="hljs-constructor">HeaderView(<span class="hljs-params">headerView</span>)</span>;
+        <span class="hljs-comment">//查找头布局的控件</span>
+        TextView tv1 = headerView.find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">header_tv1</span>)</span>;
+        TextView tv2 = headerView.find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">header_tv2</span>)</span>;
+        ImageView iv = headerView.find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">header_iv</span>)</span>;
+        tv1.set<span class="hljs-constructor">Text(<span class="hljs-params">dao</span>.<span class="hljs-params">getName</span>()</span>);
+        tv2.set<span class="hljs-constructor">Text(<span class="hljs-params">dao</span>.<span class="hljs-params">getDate</span>()</span>);
+        <span class="hljs-comment">//通过asset工具类读取图片数组</span>
+        String fname= <span class="hljs-string">"xzcontentlogo/"</span> + dao.get<span class="hljs-constructor">Logoname()</span> + <span class="hljs-string">".png"</span>;
+        byte<span class="hljs-literal">[]</span> <span class="hljs-built_in">array</span> = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">AssetsUtils</span>.</span></span>get<span class="hljs-constructor">Instance(<span class="hljs-params">this</span>)</span>.get<span class="hljs-constructor">AssetByteArray(<span class="hljs-params">fname</span>)</span>;
+        Bitmap bitmap = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">BitmapFactory</span>.</span></span>decode<span class="hljs-constructor">ByteArray(<span class="hljs-params">array</span>, 0, <span class="hljs-params">array</span>.<span class="hljs-params">length</span>)</span>;
+        iv.set<span class="hljs-constructor">ImageBitmap(<span class="hljs-params">bitmap</span>)</span>;
+        View footerview = inflater.inflate(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.item_footer, null);
+        lv.add<span class="hljs-constructor">FooterView(<span class="hljs-params">footerview</span>)</span>;
+        TextView ft = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">footer_tv2</span>)</span>;
+        ft.set<span class="hljs-constructor">Text(<span class="hljs-params">dao</span>.<span class="hljs-params">getInfo</span>()</span>);
+
+
+    }
+</code></pre>
+<h2>Fragment(活动的碎片)</h2>
+<p>fragment嵌入页面中，将Activity拆分为多个部分</p>
+<h3>在activity中加载StartFragment碎片</h3>
+<p>注意，引入的fragment包要与fragmentManager对应的包头一致</p>
+<pre><code class="language-java"><span class="hljs-regexp">//</span>在activity当中加载碎片的过程
+<span class="hljs-regexp">//</span><span class="hljs-number">1</span>. 获取Fragment对象
+starFragment = new StarFragment();
+<span class="hljs-regexp">//</span><span class="hljs-number">2</span>. 获取碎片管理者
+manager = getSupportFragmentManager();
+<span class="hljs-regexp">//</span><span class="hljs-number">3</span>. 获取碎片事务对象
+FragmentTransaction transaction = manager.beginTransaction();
+<span class="hljs-regexp">//</span><span class="hljs-number">4</span>. 发布任务
+transaction.add(R.id.r2_center, starFragment);
+<span class="hljs-regexp">//</span><span class="hljs-number">5</span>. 提交任务
+transaction.commit();
+</code></pre>
+<h3>fragment示例</h3>
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.xyl.app1108.fragment;
+
+<span class="hljs-keyword">import</span> android.os.<span class="hljs-type">Bundle</span>;
+
+<span class="hljs-keyword">import</span> androidx.fragment.app.<span class="hljs-type">Fragment</span>;
+
+<span class="hljs-keyword">import</span> android.view.<span class="hljs-type">LayoutInflater</span>;
+<span class="hljs-keyword">import</span> android.view.<span class="hljs-type">View</span>;
+<span class="hljs-keyword">import</span> android.view.<span class="hljs-type">ViewGroup</span>;
+
+<span class="hljs-keyword">import</span> com.xyl.app1108.<span class="hljs-type">R</span>;
+
+
+public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StarFragment</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Fragment</span> </span>{
+
+    <span class="hljs-comment">/**
+     * 创建fragment绑定显示的view视图
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    public <span class="hljs-type">View</span> onCreateView(<span class="hljs-type">LayoutInflater</span> inflater, <span class="hljs-type">ViewGroup</span> container,
+                             <span class="hljs-type">Bundle</span> savedInstanceState) {
+        <span class="hljs-comment">// Inflate the layout for this fragment</span>
+        <span class="hljs-type">View</span> view = inflater.inflate(<span class="hljs-type">R</span>.layout.fragment_star, container, <span class="hljs-literal">false</span>);
+        <span class="hljs-keyword">return</span> view;
+    }
+}
+</code></pre>
+<h3>点击radioButton切换fragment示例</h3>
+<pre><code class="language-java"> RadioGroup.OnCheckedChangeListener onCheckedChangeListener = <span class="hljs-keyword">new</span> RadioGroup.OnCheckedChangeListener() {
+        <span class="hljs-meta">@Override</span>
+        public <span class="hljs-keyword">void</span> onCheckedChanged(RadioGroup radioGroup, <span class="hljs-built_in">int</span> id) {
+            transaction = manager.beginTransaction();
+            <span class="hljs-keyword">switch</span> (id) {
+                <span class="hljs-keyword">case</span> R.id.r2_rb1:
+                    titleTv.setText(<span class="hljs-string">"星座"</span>);
+                    transaction.<span class="hljs-keyword">hide</span>(luckyFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(partnerFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(meFragment);
+                    transaction.<span class="hljs-keyword">show</span>(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb2:
+                    titleTv.setText(<span class="hljs-string">"配对"</span>);
+                    transaction.<span class="hljs-keyword">hide</span>(luckyFragment);
+                    transaction.<span class="hljs-keyword">show</span>(partnerFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(meFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb3:
+                    titleTv.setText(<span class="hljs-string">"运势"</span>);
+                    transaction.<span class="hljs-keyword">show</span>(luckyFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(partnerFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(meFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb4:
+                    titleTv.setText(<span class="hljs-string">"我的"</span>);
+                    transaction.<span class="hljs-keyword">hide</span>(luckyFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(partnerFragment);
+                    transaction.<span class="hljs-keyword">show</span>(meFragment);
+                    transaction.<span class="hljs-keyword">hide</span>(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+            }
+        }
+    };
+</code></pre>
+<h2>圆形图像</h2>
+<p>框架地址: <a href="https://github.com/hdodenhof/CircleImageView">https://github.com/hdodenhof/CircleImageView</a></p>
+<h3>Gradle</h3>
+<pre><code class="language-java">dependencies {
+    ...
+    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'de.hdodenhof:circleimageview:3.1.0'</span>
+}
+</code></pre>
+<h3>usage</h3>
+<pre><code class="language-xml">&lt;de.hdodenhof.circleimageview.CircleImageView
+    xmlns:<span class="hljs-attribute">app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span>
+    android:<span class="hljs-attribute">id</span>=<span class="hljs-string">"@+id/profile_image"</span>
+    android:<span class="hljs-attribute">layout_width</span>=<span class="hljs-string">"96dp"</span>
+    android:<span class="hljs-attribute">layout_height</span>=<span class="hljs-string">"96dp"</span>
+    android:<span class="hljs-attribute">src</span>=<span class="hljs-string">"@drawable/profile"</span>
+    app:<span class="hljs-attribute">civ_border_width</span>=<span class="hljs-string">"2dp"</span>
+    app:<span class="hljs-attribute">civ_border_color</span>=<span class="hljs-string">"#FF000000"</span>/&gt;
+</code></pre>
+<h2>Bundle</h2>
+<p>bundle: 放置数据的包装对象</p>
+<h3>放置数据</h3>
+<pre><code class="language-java">Bundle bundle = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Bundle()</span>;
+bundle.put<span class="hljs-constructor">Serializable(<span class="hljs-string">"info"</span>, <span class="hljs-params">dao</span>)</span>;
+starFragment.set<span class="hljs-constructor">Arguments(<span class="hljs-params">bundle</span>)</span>;
+</code></pre>
+<h3>获取数据</h3>
+<p>在fragment的任意位置使用<code><span class="hljs-function"><span class="hljs-title">getArguments</span><span class="hljs-params">()</span></span></code>即可</p>
+<pre><code class="language-java">Bundle bundle <span class="hljs-operator">=</span> getArguments()<span class="hljs-comment">;</span>
+InfoDao info <span class="hljs-operator">=</span> (InfoDao) bundle.getSerializable(<span class="hljs-string">"info"</span>)<span class="hljs-comment">;</span>
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月9日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"ScrollView"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"布局加载器"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Fragment"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"CircleImageView"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
