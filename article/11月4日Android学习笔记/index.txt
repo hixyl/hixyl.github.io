@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
-0:["Yf_PsF6Ln_iCItKXH15sD",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+0:["YXwsRKXICpm_LuVKRVYbE",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
 5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
 6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
