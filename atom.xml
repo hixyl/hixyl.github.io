@@ -9,9 +9,9 @@
             <link>https://www.timeshike.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 17 Aug 2023 08:26:24 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Aug 2023 09:01:15 GMT</lastBuildDate>
         <atom:link href="https://www.timeshike.com/atom.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 17 Aug 2023 08:26:24 GMT</pubDate>
+        <pubDate>Thu, 17 Aug 2023 09:01:15 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[10月10日MongoDB学习笔记]]></title>
@@ -396,6 +396,12 @@
             <link>https://www.timeshike.com/article/月夜漂流</link>
             <guid isPermaLink="true">https://www.timeshike.com/article/月夜漂流</guid>
             <pubDate>Wed, 30 Mar 2022 17:49:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[本站全新开发小记]]></title>
+            <link>https://www.timeshike.com/article/本站全新开发小记</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/本站全新开发小记</guid>
+            <pubDate>Thu, 17 Aug 2023 16:43:01 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[梦醒时分]]></title>

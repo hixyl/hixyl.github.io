@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/cb8e7b5b12152d96.css",{"as":"style"}]
-0:["YXwsRKXICpm_LuVKRVYbE",[[["",{"children":["article",{"children":[["id","linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B","d"],{"children":["__PAGE__?{\"id\":\"linux桌面版配置aria2教程-以ubuntu22-04为例\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
+0:["bvJ764MoBvnZDXskf4OBx",[[["",{"children":["article",{"children":[["id","linux%E6%A1%8C%E9%9D%A2%E7%89%88%E9%85%8D%E7%BD%AEaria2%E6%95%99%E7%A8%8B-%E4%BB%A5ubuntu22-04%E4%B8%BA%E4%BE%8B","d"],{"children":["__PAGE__?{\"id\":\"linux桌面版配置aria2教程-以ubuntu22-04为例\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cb8e7b5b12152d96.css","precedence":"next"}]],"$L4"]]]]
 5:HL["/_next/static/css/db5abb62272553e3.css",{"as":"style"}]
 6:HL["/_next/static/css/c5bb756983435f23.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-8aa3a6cc59f9dfc4.js"],"name":"","async":false}
