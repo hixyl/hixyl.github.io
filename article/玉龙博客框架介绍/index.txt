@@ -1,0 +1,55 @@
+1:HL["/_next/static/media/2aaf0723e720e8b9-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/1f86900aba1a6433.css",{"as":"style"}]
+0:["pZsTogNMwiK-GhyXDAlIH",[[["",{"children":["article",{"children":[["id","%E7%8E%89%E9%BE%99%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D","d"],{"children":["__PAGE__?{\"id\":\"玉龙博客框架介绍\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1f86900aba1a6433.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/43b3c97735dbc54a.css",{"as":"style"}]
+6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-95b96ad4b83a9888.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-daf7175bc37baf20.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-daf7175bc37baf20.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-95b96ad4b83a9888.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_20951f","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","%E7%8E%89%E9%BE%99%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"玉龙博客框架介绍\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/43b3c97735dbc54a.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","%E7%8E%89%E9%BE%99%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+10:I{"id":8914,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+11:I{"id":2953,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+12:I{"id":633,"chunks":["165:static/chunks/165-9f67d2f80e9188a0.js","945:static/chunks/945-dd57d3732d1beca5.js","985:static/chunks/985-6bd998473d3be578.js","241:static/chunks/app/article/[id]/page-87471cc585231b54.js"],"name":"","async":false}
+f:Tb98,
+    <p class="time">发布时间：<time datetime="18 August, 2023">2023-08-18 09:39:01</time></p>
+    <p class="words">本文字数：397 字       阅读完需：约 1 分钟</p>
+    <html><head></head><body><p>本站采用了全新开发的方式，开发的博客框架已经开源，地址在<a href="https://github.com/hixyl/YlBlog">https://github.com/hixyl/YlBlog</a>，欢迎大家Star, Fork。</p>
+<h2>功能介绍</h2>
+<ol>
+<li>本博客支持静态部署，以及服务端动态渲染，基于<code><span class="hljs-keyword">next</span>.js</code>框架。</li>
+<li>已支持生成<code><span class="hljs-attribute">sitemap</span></code>和rss订阅，做好了SEO优化。</li>
+<li>所有文章内容可以用<code><span class="hljs-attribute">markdown</span></code>书写，支持配图和代码块复制。</li>
+<li>基于React，高度自定义，欢迎大家基于玉龙博客框架进行二次开发。</li>
+</ol>
+<h2>开始使用</h2>
+<h3>项目的运行</h3>
+<p>将项目clone到本地之后，在项目目录运行</p>
+<pre><code class="language-bash"><span class="hljs-built_in">npm</span> install
+<span class="hljs-built_in">npm</span> run dev
+</code></pre>
+<p>或</p>
+<pre><code class="language-bash">yarn <span class="hljs-keyword">install</span>
+yarn dev
+</code></pre>
+<p>打开 <a href="http://localhost:3000">http://localhost:3000</a> 即可进行开发</p>
+<h3>项目功能使用指南</h3>
+<p>所有的页面位于<code><span class="hljs-keyword">app</span>/</code>下，<code><span class="hljs-keyword">app</span>/</code>下的目录即为路由。</p>
+<p>将文章的md文件放在<code>articles/</code>目录下即可，模板已经放置在项目中。如果有图片，请放在<code><span class="hljs-keyword">public</span><span class="hljs-regexp">/article/</span>[文章文件名(不含扩展名)]</code>, 具体使用方法可以参考项目中的示例。</p>
+<p>网站的侧边栏位于 <code>components<span class="hljs-regexp">/Sidebar/</span></code>下，可以自定义。</p>
+<p>导航栏配置项在<code>config/</code>目录下，可以参考模板自定义导航栏的图标，导航栏图标可以下载下来放到<code><span class="hljs-keyword">public</span>/</code>目录下即可。</p>
+<h3>项目的部署方法</h3>
+<p>运行 <code>npm <span class="hljs-built_in">run</span> build</code> 即可输出静态文件，如果使用github pages，将<code><span class="hljs-keyword">out</span>/</code>文件夹内容上传到项目中即可完成静态部署。</p>
+<h2>了解更多</h2>
+<p>了解更多关于Next.js的内容:</p>
+<ul>
+<li><a href="https://nextjs.org/docs">Next.js Documentation</a> - learn about Next.js features and API.</li>
+<li><a href="https://nextjs.org/learn">Learn Next.js</a> - an interactive Next.js tutorial.</li>
+</ul>
+<p>You can check out <a href="https://github.com/vercel/next.js/">the Next.js GitHub repository</a> - your feedback and contributions are welcome!</p>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"玉龙博客框架介绍"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/建站技术/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"建站技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"博客框架"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"blog"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"玉龙"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"next.js"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"开源"}]]]}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$f"}}],["$","$L10",null,{}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L11",null,{}]]}]]}],["$","$L12",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"玉龙博客框架介绍 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
