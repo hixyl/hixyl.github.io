@@ -1,23 +1,22 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月6日vue学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月6日vue学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月6日vue学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月6日vue学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T8220,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月6日vue学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:T8880,
     <p class="time">发布时间：<time datetime="06 September, 2022">2022-09-06 17:18:47</time></p>
     <p class="words">本文字数：1,401 字       阅读完需：约 5 分钟</p>
     <html><head></head><body><h2>api接口</h2>
@@ -168,15 +167,15 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 </code></pre>
 <h2>slot组件</h2>
 <p>slot组件插槽：将父组件中的<code><span class="hljs-section">&lt;child1&gt;</span><span class="hljs-section">&lt;/child1&gt;</span></code>标签内插入的代码插入到子组件的任意位置，用法见以下示例：</p>
-<pre><code class="language-javascript">        let child1 = {
-            <span class="hljs-comment">//插槽：slot</span>
-            template:<span class="hljs-comment">/*html*/</span>`&lt;<span class="hljs-keyword">div</span>&gt;我是&lt;slot&gt;&lt;<span class="hljs-regexp">/slot&gt;子组件&lt;/</span><span class="hljs-keyword">div</span>&gt;`,
+<pre><code class="language-javascript">        <span class="hljs-keyword">let</span> child1 = {
+            //插槽：slot
+            template:/*html*/`<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是</span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span></span><span class="language-xml">子组件<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>`,
            
         };
       
-        let parent = {
-            template: <span class="hljs-comment">/*html*/</span>`
-            &lt;<span class="hljs-keyword">div</span>&gt;我是父组件&lt;child1 &gt;&lt;span style=<span class="hljs-string">"color: red"</span>&gt;OK&lt;<span class="hljs-regexp">/span&gt;&lt;/</span>child1&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+        <span class="hljs-keyword">let</span> parent = {
+            template: /*html*/`
+            <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是父组件<span class="hljs-tag">&lt;<span class="hljs-name">child1</span> &gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">child1</span>&gt;</span></span>&lt;/div&gt;
             `,
           
             
@@ -184,7 +183,7 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
                 <span class="hljs-string">'child1'</span>: child1,
             }
         };
-        <span class="hljs-keyword">new</span> Vue({
+        new Vue({
             el:<span class="hljs-string">"#app"</span>,
             data() {
                 <span class="hljs-keyword">return</span> {}
@@ -198,44 +197,44 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <h3>插槽的分类</h3>
 <p>插槽分为默认插槽、具名插槽和作用域插槽</p>
 <p>示例</p>
-<pre><code class="language-javascript">         let child1 = {
-            <span class="hljs-comment">//插槽：slot</span>
-            template:<span class="hljs-comment">/*html*/</span>`&lt;<span class="hljs-keyword">div</span>&gt;我&lt;slot name=<span class="hljs-string">"one"</span> :message=<span class="hljs-string">"msg"</span>&gt;&lt;<span class="hljs-regexp">/slot&gt;是&lt;slot&gt;&lt;/</span>slot&gt;子组&lt;slot name=<span class="hljs-string">"two"</span>&gt;&lt;<span class="hljs-regexp">/slot&gt;件&lt;/</span><span class="hljs-keyword">div</span>&gt;`,
+<pre><code class="language-javascript"><span class="language-xml">         let child1 = {
+            //插槽：slot
+            template:/*html*/`<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我<span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"one"</span> <span class="hljs-attr">:message</span>=<span class="hljs-string">"msg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>是<span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>子组<span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"two"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span>件<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>`,
             data() {
-                <span class="hljs-keyword">return</span> {
-                    msg : <span class="hljs-string">'CHILD'</span>
+                return {
+                    msg : 'CHILD'
                 }
             },
         };
       
         let parent = {
-            template: <span class="hljs-comment">/*html*/</span>`
-            &lt;<span class="hljs-keyword">div</span>&gt;我是父组件&lt;child1 &gt;
-                <span class="hljs-comment">//默认插槽</span>
-                &lt;template v-slot:<span class="hljs-keyword">default</span>&gt;&lt;span style=<span class="hljs-string">"color: red"</span>&gt;OK&lt;<span class="hljs-regexp">/span&gt;&lt;/</span>template&gt;
-                <span class="hljs-comment">//作用域插槽</span>
-                &lt;template v-slot:one=<span class="hljs-string">"prop"</span>&gt;&lt;span style=<span class="hljs-string">"color: red"</span>&gt;One插槽,{{prop}}&lt;<span class="hljs-regexp">/span&gt;&lt;/</span>template&gt;
-                <span class="hljs-comment">//具名插槽</span>
-                &lt;template v-slot:two&gt;&lt;span style=<span class="hljs-string">"color: red"</span>&gt;Two插槽&lt;<span class="hljs-regexp">/span&gt;&lt;/</span>template&gt;
-            &lt;<span class="hljs-regexp">/child1&gt;&lt;/</span><span class="hljs-keyword">div</span>&gt;
+            template: /*html*/`
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>我是父组件<span class="hljs-tag">&lt;<span class="hljs-name">child1</span> &gt;</span>
+                //默认插槽
+                <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:default</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red"</span>&gt;</span>OK<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+                //作用域插槽
+                <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:one</span>=<span class="hljs-string">"prop"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red"</span>&gt;</span>One插槽,</span><span class="hljs-template-variable">{{<span class="hljs-name">prop</span>}}</span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+                //具名插槽
+                <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:two</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red"</span>&gt;</span>Two插槽<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">child1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             `,
           
             
             components:{
-                <span class="hljs-string">'child1'</span>: child1,
+                'child1': child1,
             }
         };
-        <span class="hljs-keyword">new</span> Vue({
-            el:<span class="hljs-string">"#app"</span>,
+        new Vue({
+            el:"#app",
             data() {
-                <span class="hljs-keyword">return</span> {}
+                return {}
             },
         
             components:{
-                <span class="hljs-string">'parent'</span>:parent
+                'parent':parent
             }
         });
-</code></pre>
+</span></code></pre>
 <p>注意示例中的<code><span class="hljs-section">&lt;template&gt;</span></code>标签，以及标签中的<code><span class="hljs-attribute">v-slot</span></code>属性，和插槽的用法。</p>
 <p>效果:</p>
 <div>我是父组件<div>我<span style="color: red;">One插槽,{
@@ -257,8 +256,8 @@ let j <span class="hljs-operator">=</span> <span class="hljs-number">10</span><s
 </ol>
 <h3>const 声明常量</h3>
 <p>const 声明常量，声明常量必须赋值，常量不可更改，不会和window映射</p>
-<pre><code class="language-javascript">const y = <span class="hljs-number">20</span>;
-<span class="hljs-regexp">//</span> y=<span class="hljs-number">30</span> <span class="hljs-regexp">//</span>报错，不可更改
+<pre><code class="language-javascript">const y <span class="hljs-operator">=</span> <span class="hljs-number">20</span><span class="hljs-comment">;</span>
+// y<span class="hljs-operator">=</span><span class="hljs-number">30</span> //报错，不可更改
 </code></pre>
 <h3>`的用法</h3>
 <p>``内可以用$引用其他变量，如下所示</p>
@@ -480,3 +479,4 @@ js/es6.js</p>
 </code></pre>
 </body></html>
   a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月6日vue学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/前端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"vue"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"前端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"html"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"css"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"javascript"}]]]}],["$","$Lf",null,{"path":"9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"9%E6%9C%886%E6%97%A5vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月6日vue学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

@@ -1,22 +1,22 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],{"children":["__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],{"children":["__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T9c26,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:Ta39e,
     <p class="time">发布时间：<time datetime="20 March, 2023">2023-03-20 13:37:49</time></p>
     <p class="words">本文字数：2,864 字       阅读完需：约 6 分钟</p>
     <html><head></head><body><h2>1 启动的方式</h2>
@@ -244,38 +244,38 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <p>一路是在加载viewStub布局，此处的viewStub布局是activity_main，看下面的源码。</p>
 <p>一路是延时加载splash的动画界面，定义了专门的DelayRunnable类。</p>
 <p>需要注意的是：getWindow().getDecorView().post的执行时机是在<strong>onResume()</strong>，即真正的Acitivity可见的时候才会加载ViewStub，才会加载splash。</p>
-<pre><code class="language-java">@Override
-    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">activity_main</span>)</span>;
+<pre><code class="language-java"><span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
+        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-constructor">SplashFragment()</span>;
-        FragmentTransaction transaction = get<span class="hljs-constructor">SupportFragmentManager()</span>.<span class="hljs-keyword">begin</span><span class="hljs-constructor">Transaction()</span>;
-        transaction.replace(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.frame, splashFragment);
-        transaction.commit<span class="hljs-literal">()</span>;
+        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
+        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
+        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
+        transaction.<span class="hljs-title function_">commit</span>();
 
-        viewStub = (ViewStub)find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">content_viewstub</span>)</span>;
+        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
         <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        get<span class="hljs-constructor">Window()</span>.get<span class="hljs-constructor">DecorView()</span>.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-            @Override
-            public void run<span class="hljs-literal">()</span> {
+        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                 <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-                    @Override
-                    public void run<span class="hljs-literal">()</span> {
+                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                         <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.inflate<span class="hljs-literal">()</span>;
+                        viewStub.<span class="hljs-title function_">inflate</span>();
                     }
                 } );
             }
         });
 
         <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
-        get<span class="hljs-constructor">Window()</span>.get<span class="hljs-constructor">DecorView()</span>.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-            @Override
-            public void run<span class="hljs-literal">()</span> {
+        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                 <span class="hljs-comment">// 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.post<span class="hljs-constructor">Delayed(<span class="hljs-params">new</span> DelayRunnable(MainActivity.<span class="hljs-params">this</span>, <span class="hljs-params">splashFragment</span>)</span> ,<span class="hljs-number">2000</span>);
+                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
 <span class="hljs-comment">//                mHandler.post(new DelayRunnable());</span>
             }
         });
@@ -333,38 +333,38 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <p>第二项优化是优化MainAcitivity的加载时间，使用viewStub先不加载MainActivity的布局，在onResume 时候再加载。</p>
 <p>使用了双加载机制，例如：splash的动画执行时间是2s，而MainActivity的viewStub加载时间是1s，那必然在splash加载的过程中viewStub已经加载成功了，是一个并行的过程。</p>
 <p>注意：在此处同时也是可以加载MainActivity使用的到的数据，比如网络数据等等，下面源码中展示的提示。</p>
-<pre><code class="language-java">@Override
-    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">activity_main</span>)</span>;
+<pre><code class="language-java"><span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
+        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-constructor">SplashFragment()</span>;
-        FragmentTransaction transaction = get<span class="hljs-constructor">SupportFragmentManager()</span>.<span class="hljs-keyword">begin</span><span class="hljs-constructor">Transaction()</span>;
-        transaction.replace(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.frame, splashFragment);
-        transaction.commit<span class="hljs-literal">()</span>;
+        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
+        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
+        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
+        transaction.<span class="hljs-title function_">commit</span>();
 
-        viewStub = (ViewStub)find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">content_viewstub</span>)</span>;
+        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
         <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        get<span class="hljs-constructor">Window()</span>.get<span class="hljs-constructor">DecorView()</span>.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-            @Override
-            public void run<span class="hljs-literal">()</span> {
+        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                 <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-                    @Override
-                    public void run<span class="hljs-literal">()</span> {
+                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                         <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.inflate<span class="hljs-literal">()</span>;
+                        viewStub.<span class="hljs-title function_">inflate</span>();
                     }
                 } );
             }
         });
 
         <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
-        get<span class="hljs-constructor">Window()</span>.get<span class="hljs-constructor">DecorView()</span>.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-            @Override
-            public void run<span class="hljs-literal">()</span> {
+        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                 <span class="hljs-comment">// 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.post<span class="hljs-constructor">Delayed(<span class="hljs-params">new</span> DelayRunnable(MainActivity.<span class="hljs-params">this</span>, <span class="hljs-params">splashFragment</span>)</span> ,<span class="hljs-number">2000</span>);
+                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
 <span class="hljs-comment">//                mHandler.post(new DelayRunnable());</span>
             }
         });
@@ -376,33 +376,33 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <h2>7 整理</h2>
 <p>【0】最主要的优化的本质是：防止干扰MainActivity的启动，将耗时的操作都放到onResum之后。</p>
 <p>【1】可以将 两个getWindow().getDecorView().post(new Runnable()整合到一个方法中；</p>
-<pre><code class="language-java">@Override
-    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">activity_main</span>)</span>;
+<pre><code class="language-java"><span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
+        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-constructor">SplashFragment()</span>;
-        FragmentTransaction transaction = get<span class="hljs-constructor">SupportFragmentManager()</span>.<span class="hljs-keyword">begin</span><span class="hljs-constructor">Transaction()</span>;
-        transaction.replace(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.frame, splashFragment);
-        transaction.commit<span class="hljs-literal">()</span>;
+        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
+        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
+        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
+        transaction.<span class="hljs-title function_">commit</span>();
 
-        viewStub = (ViewStub)find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">content_viewstub</span>)</span>;
+        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
         <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        get<span class="hljs-constructor">Window()</span>.get<span class="hljs-constructor">DecorView()</span>.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-            @Override
-            public void run<span class="hljs-literal">()</span> {
+        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                 <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.post(<span class="hljs-keyword">new</span> <span class="hljs-constructor">Runnable()</span> {
-                    @Override
-                    public void run<span class="hljs-literal">()</span> {
+                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
                         <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.inflate<span class="hljs-literal">()</span>;
+                        viewStub.<span class="hljs-title function_">inflate</span>();
                 } );
             }
 
             <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
                 <span class="hljs-comment">//开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.post<span class="hljs-constructor">Delayed(<span class="hljs-params">new</span> DelayRunnable(MainActivity.<span class="hljs-params">this</span>, <span class="hljs-params">splashFragment</span>)</span> ,<span class="hljs-number">2000</span>);
+                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
                 <span class="hljs-comment">//mHandler.post(new DelayRunnable());</span>
 
         });
@@ -414,25 +414,25 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <pre><code class="language-java">mHandler.post(<span class="hljs-keyword">new</span> <span class="hljs-type">DelayRunnable</span>());
 </code></pre>
 <p>【3】问为什么view.inflate 不放在framgent的移除之后来执行？如下代码展示</p>
-<pre><code class="language-java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DelayRunnable</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Runnable</span>{
+<pre><code class="language-java"><span class="hljs-keyword">static</span> <span class="hljs-title class_"><span class="hljs-keyword">class</span> <span class="hljs-title">DelayRunnable</span> <span class="hljs-keyword"><span class="hljs-keyword">implements</span> <span class="hljs-type">Runnable</span></span></span>{
          <span class="hljs-keyword">private</span> WeakReference&lt;Context&gt; contextRef;
          <span class="hljs-keyword">private</span> WeakReference&lt;SplashFragment&gt; fragmentRef;
          
-         <span class="hljs-keyword">public</span> <span class="hljs-title function_">DelayRunnable</span><span class="hljs-params">(Context context, SplashFragment f)</span> {
-             contextRef = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakReference</span>&lt;Context&gt;(context);
-             fragmentRef = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakReference</span>&lt;SplashFragment&gt;(f);
+         <span class="hljs-keyword">public</span> DelayRunnable(Context context, SplashFragment f) {
+             contextRef = <span class="hljs-keyword">new</span> <span class="hljs-type">WeakReference</span>&lt;Context&gt;(context);
+             fragmentRef = <span class="hljs-keyword">new</span> <span class="hljs-type">WeakReference</span>&lt;SplashFragment&gt;(f);
          }
  
          <span class="hljs-meta">@Override</span>
-         <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+         <span class="hljs-keyword">public</span> void run() {
              <span class="hljs-comment">// 移除fragment</span>
              <span class="hljs-keyword">if</span>(contextRef!=<span class="hljs-literal">null</span>){
-                 <span class="hljs-type">SplashFragment</span> <span class="hljs-variable">splashFragment</span> <span class="hljs-operator">=</span> fragmentRef.get();
+                 SplashFragment splashFragment = fragmentRef.<span class="hljs-keyword">get</span>();
                  <span class="hljs-keyword">if</span>(splashFragment==<span class="hljs-literal">null</span>){
                      <span class="hljs-keyword">return</span>;
                  }
-                 <span class="hljs-type">FragmentActivity</span> <span class="hljs-variable">activity</span> <span class="hljs-operator">=</span> (FragmentActivity) contextRef.get();
-                 <span class="hljs-type">FragmentTransaction</span> <span class="hljs-variable">transaction</span> <span class="hljs-operator">=</span> activity.getSupportFragmentManager().beginTransaction();
+                 FragmentActivity activity = (FragmentActivity) contextRef.<span class="hljs-keyword">get</span>();
+                 FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
                  transaction.remove(splashFragment);
                  transaction.commit();
  

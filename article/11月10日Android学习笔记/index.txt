@@ -1,22 +1,23 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月10日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月10日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月10日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T4204,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月10日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月10日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:T3ea6,
     <p class="time">发布时间：<time datetime="10 November, 2022">2022-11-10 17:17:36</time></p>
     <p class="words">本文字数：1,190 字       阅读完需：约 2 分钟</p>
     <html><head></head><body><h2>读取网络数据</h2>
@@ -60,27 +61,27 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 ···
 </span></code></pre>
 <h4>读取流</h4>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> String get<span class="hljs-constructor">StringByConnection(String <span class="hljs-params">path</span>)</span> {
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">String</span> getStringByConnection(<span class="hljs-keyword">String</span> path) {
         <span class="hljs-comment">//内存流</span>
-        ByteArrayOutputStream baos = <span class="hljs-keyword">new</span> <span class="hljs-constructor">ByteArrayOutputStream()</span>;
+        ByteArrayOutputStream baos = <span class="hljs-keyword">new</span> <span class="hljs-type">ByteArrayOutputStream</span>();
         <span class="hljs-keyword">try</span> {
             <span class="hljs-comment">//1. 将网址转换成资源对象</span>
-            URL url = <span class="hljs-keyword">new</span> <span class="hljs-constructor">URL(<span class="hljs-params">path</span>)</span>;
+            URL url = <span class="hljs-keyword">new</span> <span class="hljs-type">URL</span>(path);
             <span class="hljs-comment">//2. 开始连接网络</span>
-            HttpURLConnection conn = (HttpURLConnection) url.<span class="hljs-keyword">open</span><span class="hljs-constructor">Connection()</span>;
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             <span class="hljs-comment">//3. 获取网页信息输入流</span>
-            InputStream is = conn.get<span class="hljs-constructor">InputStream()</span>;
+            InputStream <span class="hljs-keyword">is</span> = conn.getInputStream();
             <span class="hljs-comment">//4. 读取流，写入内存</span>
-            <span class="hljs-built_in">int</span> hasRead = <span class="hljs-number">0</span>;
-            byte<span class="hljs-literal">[]</span> buf = <span class="hljs-keyword">new</span> byte<span class="hljs-literal">[<span class="hljs-number">1024</span>]</span>;
-            <span class="hljs-keyword">while</span> ((hasRead = is.read(buf))!=-<span class="hljs-number">1</span>){
+            int hasRead = <span class="hljs-number">0</span>;
+            byte[] buf = <span class="hljs-keyword">new</span> <span class="hljs-type">byte</span>[<span class="hljs-number">1024</span>];
+            <span class="hljs-keyword">while</span> ((hasRead = <span class="hljs-keyword">is</span>.read(buf))!=<span class="hljs-number">-1</span>){
                 baos.write(buf, <span class="hljs-number">0</span>, hasRead);
             }
-            is.close<span class="hljs-literal">()</span>;
-        } catch (Exception e) {
-            e.print<span class="hljs-constructor">StackTrace()</span>;
+            <span class="hljs-keyword">is</span>.close();
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
         }
-        return baos.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>;
+        <span class="hljs-keyword">return</span> baos.toString();
     }
 </code></pre>
 <h4>线程中开启读取方法</h4>
@@ -117,20 +118,20 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 </li>
 <li>
 <p>在子线程发送消息</p>
-<pre><code class="language-java">     @Override
-     public void run<span class="hljs-literal">()</span> {
+<pre><code class="language-java">     <span class="hljs-meta">@Override</span>
+     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
          <span class="hljs-comment">//表示让当前线程可以作为loop线程，此时该子线程可以创建Handler对象，发送消息</span>
-         <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Looper</span>.</span></span>my<span class="hljs-constructor">Looper()</span>;
-         <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Looper</span>.</span></span>loop<span class="hljs-literal">()</span>;
+         Looper.myLooper();
+         Looper.loop();
          <span class="hljs-comment">//编写获取网络数据的过程</span>
-         String msg = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">HttpUtils</span>.</span></span>get<span class="hljs-constructor">StringByConnection(<span class="hljs-params">url</span>)</span>;
+         String msg = HttpUtils.getStringByConnection(url);
          <span class="hljs-comment">//将要发送的数据封装到message当中</span>
-         Message message = handler.obtain<span class="hljs-constructor">Message()</span>;
+         Message message = <span class="hljs-keyword">handler</span>.obtainMessage();
          <span class="hljs-comment">//区别消息的标识号</span>
          message.what = <span class="hljs-number">1</span>;
          message.obj = msg;
-         handler.send<span class="hljs-constructor">Message(<span class="hljs-params">message</span>)</span>;
-         <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Log</span>.</span></span>i(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
+         <span class="hljs-keyword">handler</span>.sendMessage(message);
+         Log.i(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
      }
 </code></pre>
 </li>
@@ -207,12 +208,12 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 或<br>
 <code><span class="hljs-attribute">binding</span> <span class="hljs-operator">=</span> ItemFoodlvBingding.bind(view)</code><br>
 ---在adapter的用于<code><span class="hljs-function"><span class="hljs-title">getView</span><span class="hljs-params">()</span></span></code>的<code><span class="hljs-attribute">ViewHolder</span></code>中使用</p>
-<pre><code class="language-java">  protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-    super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-    binding = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">ActivityMainBinding</span>.</span></span>inflate(get<span class="hljs-constructor">LayoutInflater()</span>);
-    View rootView = binding.get<span class="hljs-constructor">Root()</span>;
-    set<span class="hljs-constructor">ContentView(<span class="hljs-params">rootView</span>)</span>;
-    binding.mainTv.set<span class="hljs-constructor">Text(<span class="hljs-string">"今天是个好天气"</span>)</span>;
+<pre><code class="language-java">  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState)<span class="hljs-comment">;</span>
+    binding <span class="hljs-operator">=</span> ActivityMainBinding.inflate(getLayoutInflater())<span class="hljs-comment">;</span>
+    View rootView <span class="hljs-operator">=</span> binding.getRoot()<span class="hljs-comment">;</span>
+    setContentView(rootView)<span class="hljs-comment">;</span>
+    binding.mainTv.setText(<span class="hljs-string">"今天是个好天气"</span>)<span class="hljs-comment">;</span>
 }
 </code></pre>
 </li>
@@ -223,4 +224,3 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 如果下载失败，显示错误图片。</p>
 </body></html>
   a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月10日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"读取网络数据"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"Thread"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Handler"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"缓存"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月10日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

@@ -843,6 +843,25 @@
     ]
   },
   {
+    "id": "使用js和React-Hook时的过时闭包问题及解决方案",
+    "title": "使用js和React Hook时的过时闭包问题及解决方案",
+    "date": "2023-10-20T16:40:29.000Z",
+    "categories": [
+      "新知笔记",
+      "前端技术"
+    ],
+    "images": [
+      "guoshibibao1.png"
+    ],
+    "tags": [
+      "javascript",
+      "React",
+      "过时闭包",
+      "Hook",
+      "解决方案"
+    ]
+  },
+  {
     "id": "使用ubuntu-debian快速搭建wordpress网站",
     "title": "使用Ubuntu/Debian快速搭建Wordpress网站",
     "date": "2022-03-21T09:20:29.000Z",

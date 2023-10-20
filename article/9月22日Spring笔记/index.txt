@@ -1,22 +1,23 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月22日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月22日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月22日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T3031,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月22日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月22日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:T2f4f,
     <p class="time">发布时间：<time datetime="22 September, 2022">2022-09-22 17:13:44</time></p>
     <p class="words">本文字数：407 字       阅读完需：约 2 分钟</p>
     <html><head></head><body><h2>数据转换和校验</h2>
@@ -49,21 +50,21 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
     <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
 </code></pre>
 <p>UserConverter.java</p>
-<pre><code class="language-java">package com.zr.converter;
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.converter;
 
-<span class="hljs-keyword">import</span> com.zr.vo.<span class="hljs-keyword">User</span>;
+<span class="hljs-keyword">import</span> com.zr.vo.User;
 <span class="hljs-keyword">import</span> org.springframework.core.convert.converter.Converter;
 
 
-<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> UserConverter implements Converter&lt;String, <span class="hljs-keyword">User</span>&gt; {
+<span class="hljs-keyword">public</span> <span class="hljs-title class_"><span class="hljs-keyword">class</span> <span class="hljs-title">UserConverter</span> <span class="hljs-keyword"><span class="hljs-keyword">implements</span> <span class="hljs-type">Converter</span></span>&lt;<span class="hljs-title">String</span>, <span class="hljs-title">User</span>&gt; </span>{
 
-    @Override
-    <span class="hljs-built_in">public</span> <span class="hljs-keyword">User</span> convert(String source) {
-        <span class="hljs-keyword">User</span> <span class="hljs-keyword">user</span> = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
-        String[] data = source.split("-");
-        <span class="hljs-keyword">user</span>.setUserId(data[<span class="hljs-number">0</span>]);
-        <span class="hljs-keyword">user</span>.setUserName(data[<span class="hljs-number">1</span>]);
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">user</span>;
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> User convert(<span class="hljs-keyword">String</span> source) {
+        User user = <span class="hljs-keyword">new</span> <span class="hljs-type">User</span>();
+        <span class="hljs-keyword">String</span>[] data = source.split(<span class="hljs-string">"-"</span>);
+        user.setUserId(data[<span class="hljs-number">0</span>]);
+        user.setUserName(data[<span class="hljs-number">1</span>]);
+        <span class="hljs-keyword">return</span> user;
     }
 }
 </code></pre>
@@ -73,7 +74,7 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
         <span class="hljs-selector-tag">System</span><span class="hljs-selector-class">.out</span><span class="hljs-selector-class">.println</span>(user);
     }
 </code></pre>
-<p>效果：传入key为data的属性，其值将被转换为User类，转换规则见<code><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">UserConverter</span>.</span></span>java</code></p>
+<p>效果：传入key为data的属性，其值将被转换为User类，转换规则见<code>UserConverter.java</code></p>
 <h3>数据的后台校验</h3>
 <p>JSR 303是Java为Bean数据合法性校验提供的标准框架，它已经包含在 JavaEE6.0中；<br>
 JSR 303通过在 Bean 属性上标注类似于@NotNull、@Max等标准的注解指定校验规则，并通过标准的验证接口对 Bean进行验证；</p>
@@ -87,29 +88,29 @@ JSR 303通过在 Bean 属性上标注类似于@NotNull、@Max等标准的注解�
     <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
 </code></pre>
 <p>User.java</p>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">User</span> {
+<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-title class_"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>{
 
-    <span class="hljs-meta">@NotEmpty(message = <span class="hljs-string">"用户账号不能为空"</span>)</span>
-    <span class="hljs-keyword">private</span> String userId;
+    <span class="hljs-meta">@NotEmpty</span>(message = <span class="hljs-string">"用户账号不能为空"</span>)
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">String</span> userId;
 
-    <span class="hljs-keyword">private</span> String userName;
-    <span class="hljs-meta">@NotEmpty(message = <span class="hljs-string">"密码不能为空"</span>)</span>
-    <span class="hljs-keyword">private</span> String password;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">String</span> userName;
+    <span class="hljs-meta">@NotEmpty</span>(message = <span class="hljs-string">"密码不能为空"</span>)
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">String</span> password;
 }
 </code></pre>
 <p>UserController.java</p>
 <pre><code class="language-java">    @ResponseBody
-    @<span class="hljs-constructor">PostMapping(<span class="hljs-params">value</span> = <span class="hljs-string">"login.action"</span>, <span class="hljs-params">consumes</span> = {<span class="hljs-string">"application/x-www-form-urlencoded"</span>})</span>
-    <span class="hljs-comment">// @Validated 注解，必须和Errors配合使用</span>
-    public String login(@Validated User user, Errors errors){
-        <span class="hljs-keyword">if</span>(errors.has<span class="hljs-constructor">FieldErrors()</span>){
-            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">JSON</span>.</span></span><span class="hljs-keyword">to</span><span class="hljs-constructor">JSONString(AjaxResult.<span class="hljs-params">fail</span>(200,<span class="hljs-params">errors</span>.<span class="hljs-params">getFieldError</span>()</span>.get<span class="hljs-constructor">DefaultMessage()</span>, null));
+    @PostMapping(<span class="hljs-keyword">value</span> = "login.action", consumes = {"application/x-www-form-urlencoded"})
+    // @Validated 注解，必须和Errors配合使用
+    <span class="hljs-built_in">public</span> String <span class="hljs-keyword">login</span>(@Validated <span class="hljs-keyword">User</span> <span class="hljs-keyword">user</span>, Errors errors){
+        <span class="hljs-keyword">if</span>(errors.hasFieldErrors()){
+            <span class="hljs-keyword">return</span> <span class="hljs-type">JSON</span>.toJSONString(AjaxResult.fail(<span class="hljs-number">200</span>,errors.getFieldError().getDefaultMessage(), <span class="hljs-keyword">null</span>));
         }
-        User u = <span class="hljs-keyword">new</span> <span class="hljs-constructor">User()</span>;
-        u.set<span class="hljs-constructor">UserId(<span class="hljs-params">user</span>.<span class="hljs-params">getUserId</span>()</span>);
-        u.set<span class="hljs-constructor">Password(Md5Util.<span class="hljs-params">md5</span>(<span class="hljs-params">user</span>.<span class="hljs-params">getPassword</span>()</span>));
-        AjaxResult robj = userService.login(u);
-        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">JSON</span>.</span></span><span class="hljs-keyword">to</span><span class="hljs-constructor">JSONString(<span class="hljs-params">robj</span>)</span>;
+        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
+        u.setUserId(<span class="hljs-keyword">user</span>.getUserId());
+        u.setPassword(Md5Util.md5(<span class="hljs-keyword">user</span>.getPassword()));
+        AjaxResult robj = userService.<span class="hljs-keyword">login</span>(u);
+        <span class="hljs-keyword">return</span> <span class="hljs-type">JSON</span>.toJSONString(robj);
     }
 </code></pre>
 <h2>国际化</h2>
@@ -119,20 +120,20 @@ JSR 303通过在 Bean 属性上标注类似于@NotNull、@Max等标准的注解�
 </code></pre>
 <p>0为占位符</p>
 <p>UserController.java</p>
-<pre><code class="language-java">    @Autowired
-    <span class="hljs-keyword">private</span> ResourceBundleMessageSource messageSource;
+<pre><code class="language-java">    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ResourceBundleMessageSource</span> messageSource;
 
-    @ResponseBody
-    @<span class="hljs-constructor">PostMapping(<span class="hljs-string">"/getUserList.action"</span>)</span>
-    public String get<span class="hljs-constructor">UserList(Locale <span class="hljs-params">locale</span>)</span>{
-        AjaxResult robj = userService.get<span class="hljs-constructor">List()</span>;
-        <span class="hljs-keyword">if</span>(robj.is<span class="hljs-constructor">Success()</span>){
-            robj.set<span class="hljs-constructor">Message(<span class="hljs-params">messageSource</span>.<span class="hljs-params">getMessage</span>(<span class="hljs-string">"biz.query.success"</span>,<span class="hljs-params">new</span> Object[]{<span class="hljs-string">"!"</span>}, <span class="hljs-params">locale</span>)</span>);
+    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"/getUserList.action"</span>)
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">getUserList</span>(<span class="hljs-params">Locale locale</span>){
+        <span class="hljs-title class_">AjaxResult</span> robj = userService.<span class="hljs-title function_">getList</span>();
+        <span class="hljs-keyword">if</span>(robj.<span class="hljs-title function_">isSuccess</span>()){
+            robj.<span class="hljs-title function_">setMessage</span>(messageSource.<span class="hljs-title function_">getMessage</span>(<span class="hljs-string">"biz.query.success"</span>,<span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>[]{<span class="hljs-string">"!"</span>}, locale));
             <span class="hljs-comment">// {"!"}替换properties文件中的占位符{0}</span>
         }
-        String str = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">JSON</span>.</span></span><span class="hljs-keyword">to</span><span class="hljs-constructor">JSONString(<span class="hljs-params">robj</span>)</span>;
+        <span class="hljs-title class_">String</span> str = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">toJSONString</span>(robj);
 
-        return str;
+        <span class="hljs-keyword">return</span> str;
     }
 </code></pre>
 <p>spring-mvc.xml</p>
@@ -144,4 +145,3 @@ JSR 303通过在 Bean 属性上标注类似于@NotNull、@Max等标准的注解�
 </code></pre>
 </body></html>
   a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月22日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"国际化"}]]]}],["$","$Lf",null,{"path":"9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"9%E6%9C%8822%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月22日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

@@ -1,22 +1,23 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月7日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月7日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月7日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T9785,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月7日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月7日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:Tb5f2,
     <p class="time">发布时间：<time datetime="07 November, 2022">2022-11-07 16:44:56</time></p>
     <p class="words">本文字数：1,200 字       阅读完需：约 7 分钟</p>
     <html><head></head><body><h2>自定义控件</h2>
@@ -52,17 +53,17 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:st
 <span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
 </code></pre>
 <p>TitleView.java</p>
-<pre><code class="language-java">package com.xyl.app1105.view;
-import android.app.Activity;
-import android.content.Context;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1105</span>.<span class="hljs-property">view</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">app</span>.<span class="hljs-property">Activity</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">content</span>.<span class="hljs-property">Context</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">util</span>.<span class="hljs-property">AttributeSet</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">LayoutInflater</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">View</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ImageView</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">RelativeLayout</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">TextView</span>;
 
-import com.xyl.app1105.R;
+<span class="hljs-keyword">import</span> com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1105</span>.<span class="hljs-property">R</span>;
 
 
 <span class="hljs-comment">/**
@@ -73,92 +74,92 @@ import com.xyl.app1105.R;
  * 2. 在这个类中，将接口设置为成员变量，然后通过set方法对其进行赋值
  * 3. 在被触发的地方调用这个接口的方法
  */</span>
-public <span class="hljs-keyword">class</span> TitleView extends RelativeLayout implements View.OnClickListener {
-    ImageView leftIv,rightIv;
-    TextView titleTv;
-    RelativeLayout layout;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TitleView</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">RelativeLayout</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">View</span>.<span class="hljs-property">OnClickListener</span> {
+    <span class="hljs-title class_">ImageView</span> leftIv,rightIv;
+    <span class="hljs-title class_">TextView</span> titleTv;
+    <span class="hljs-title class_">RelativeLayout</span> layout;
 
-    public interface OnClickImgListener{
-        public void on<span class="hljs-constructor">Click(View <span class="hljs-params">view</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnClickImgListener</span>{
+        <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-title class_">View</span> view);
     }
-    OnClickImgListener leftListener, rightListener;
-    public void set<span class="hljs-constructor">OnClickLeftImgListener(OnClickImgListener <span class="hljs-params">leftListener</span>)</span>{
-        this.leftListener = leftListener;
+    <span class="hljs-title class_">OnClickImgListener</span> leftListener, rightListener;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setOnClickLeftImgListener</span>(<span class="hljs-params">OnClickImgListener leftListener</span>){
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">leftListener</span> = leftListener;
     }
-    public void set<span class="hljs-constructor">OnClickRightImgListener(OnClickImgListener <span class="hljs-params">rightListener</span>)</span>{
-        this.rightListener = rightListener;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setOnClickRightImgListener</span>(<span class="hljs-params">OnClickImgListener rightListener</span>){
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">rightListener</span> = rightListener;
     }
 
     <span class="hljs-comment">// 在代码当中创建view对象时，会调用的构造方法</span>
-    public <span class="hljs-constructor">TitleView(Context <span class="hljs-params">context</span>)</span> {
-        this(context,null);
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">TitleView</span>(<span class="hljs-title class_">Context</span> context) {
+        <span class="hljs-title function_">this</span>(context,<span class="hljs-literal">null</span>);
     }
     <span class="hljs-comment">// 在布局当中写view对象时，会调用的构造方法</span>
-    public <span class="hljs-constructor">TitleView(Context <span class="hljs-params">context</span>, AttributeSet <span class="hljs-params">attrs</span>)</span> {
-        super(context, attrs);
-        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">LayoutInflater</span>.</span></span>from(context).inflate(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.title_layout,this);
-        init<span class="hljs-constructor">View()</span>;
-        set<span class="hljs-constructor">Event()</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">TitleView</span>(<span class="hljs-title class_">Context</span> context, <span class="hljs-title class_">AttributeSet</span> attrs) {
+        <span class="hljs-variable language_">super</span>(context, attrs);
+        <span class="hljs-title class_">LayoutInflater</span>.<span class="hljs-title function_">from</span>(context).<span class="hljs-title function_">inflate</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">title_layout</span>,<span class="hljs-variable language_">this</span>);
+        <span class="hljs-title function_">initView</span>();
+        <span class="hljs-title function_">setEvent</span>();
     }
 
-    <span class="hljs-keyword">private</span> void set<span class="hljs-constructor">Event()</span> {
-        leftIv.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
-        rightIv.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setEvent</span>(<span class="hljs-params"></span>) {
+        leftIv.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
+        rightIv.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
     }
 
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
-        leftIv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_iv_left</span>)</span>;
-        rightIv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_iv_right</span>)</span>;
-        titleTv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">title_tv</span>)</span>;
-        layout = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">titleviews</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
+        leftIv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">title_iv_left</span>);
+        rightIv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">title_iv_right</span>);
+        titleTv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">title_tv</span>);
+        layout = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">titleviews</span>);
     }
     <span class="hljs-comment">/** 设置标题*/</span>
-    public void set<span class="hljs-constructor">Title(String <span class="hljs-params">title</span>)</span>{
-        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">title</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setTitle</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> title</span>){
+        titleTv.<span class="hljs-title function_">setText</span>(title);
     }
-    public void set<span class="hljs-constructor">Title(<span class="hljs-params">int</span> <span class="hljs-params">titleId</span>)</span>{
-        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">titleId</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setTitle</span>(<span class="hljs-params">int titleId</span>){
+        titleTv.<span class="hljs-title function_">setText</span>(titleId);
     }
     <span class="hljs-comment">/** 设置标题颜色*/</span>
-    public void set<span class="hljs-constructor">TitleColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
-        titleTv.set<span class="hljs-constructor">TextColor(<span class="hljs-params">color</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setTitleColor</span>(<span class="hljs-params">int color</span>){
+        titleTv.<span class="hljs-title function_">setTextColor</span>(color);
     }
     <span class="hljs-comment">/** 设置背景颜色*/</span>
-    public void set<span class="hljs-constructor">BgResource(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
-        layout.set<span class="hljs-constructor">BackgroundResource(<span class="hljs-params">color</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setBgResource</span>(<span class="hljs-params">int color</span>){
+        layout.<span class="hljs-title function_">setBackgroundResource</span>(color);
     }
-    public void set<span class="hljs-constructor">BgColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
-        layout.set<span class="hljs-constructor">BackgroundColor(<span class="hljs-params">color</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setBgColor</span>(<span class="hljs-params">int color</span>){
+        layout.<span class="hljs-title function_">setBackgroundColor</span>(color);
     }
 
     <span class="hljs-comment">/** 设置是否显示左右图片*/</span>
-    public void set<span class="hljs-constructor">VisibleImg(<span class="hljs-params">int</span> <span class="hljs-params">left</span>,<span class="hljs-params">int</span> <span class="hljs-params">right</span>)</span>{
-        leftIv.set<span class="hljs-constructor">Visibility(<span class="hljs-params">left</span>)</span>;
-        rightIv.set<span class="hljs-constructor">Visibility(<span class="hljs-params">right</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setVisibleImg</span>(<span class="hljs-params">int left,int right</span>){
+        leftIv.<span class="hljs-title function_">setVisibility</span>(left);
+        rightIv.<span class="hljs-title function_">setVisibility</span>(right);
     }
 
     <span class="hljs-comment">/** 修改左边显示图片*/</span>
-    public void set<span class="hljs-constructor">LeftImgResource(<span class="hljs-params">int</span> <span class="hljs-params">resId</span>)</span>{
-        leftIv.set<span class="hljs-constructor">ImageResource(<span class="hljs-params">resId</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setLeftImgResource</span>(<span class="hljs-params">int resId</span>){
+        leftIv.<span class="hljs-title function_">setImageResource</span>(resId);
     }
-    public void set<span class="hljs-constructor">RightImgResource(<span class="hljs-params">int</span> <span class="hljs-params">resId</span>)</span>{
-        rightIv.set<span class="hljs-constructor">ImageResource(<span class="hljs-params">resId</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setRightImgResource</span>(<span class="hljs-params">int resId</span>){
+        rightIv.<span class="hljs-title function_">setImageResource</span>(resId);
     }
 
-    @Override
-    public void on<span class="hljs-constructor">Click(View <span class="hljs-params">view</span>)</span> {
-        switch (view.get<span class="hljs-constructor">Id()</span>) {
-            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.title_iv_left:
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">View view</span>) {
+        <span class="hljs-keyword">switch</span> (view.<span class="hljs-title function_">getId</span>()) {
+            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">title_iv_left</span>:
 <span class="hljs-comment">//                ((Activity)getContext()).finish();</span>
-                <span class="hljs-keyword">if</span>(leftListener != null){
-                    leftListener.on<span class="hljs-constructor">Click(<span class="hljs-params">view</span>)</span>;
+                <span class="hljs-keyword">if</span>(leftListener != <span class="hljs-literal">null</span>){
+                    leftListener.<span class="hljs-title function_">onClick</span>(view);
                 }
-                break;
-            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.title_iv_right:
-                <span class="hljs-keyword">if</span>(rightListener!=null){
-                    rightListener.on<span class="hljs-constructor">Click(<span class="hljs-params">view</span>)</span>;
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">title_iv_right</span>:
+                <span class="hljs-keyword">if</span>(rightListener!=<span class="hljs-literal">null</span>){
+                    rightListener.<span class="hljs-title function_">onClick</span>(view);
                 }
-                break;
+                <span class="hljs-keyword">break</span>;
         }
     }
 }
@@ -176,100 +177,100 @@ public <span class="hljs-keyword">class</span> TitleView extends RelativeLayout 
 <pre><code class="language-java">    <span class="hljs-comment">/**
      * 最简单的对话框: 确认对话框
      */</span>
-    <span class="hljs-keyword">private</span> void simple<span class="hljs-constructor">Dialog()</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">simpleDialog</span><span class="hljs-params">()</span> {
         <span class="hljs-comment">//1. 创建对话框的装饰对象</span>
-        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        AlertDialog.<span class="hljs-type">Builder</span> <span class="hljs-variable">builder</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">AlertDialog</span>.Builder(<span class="hljs-built_in">this</span>);
         <span class="hljs-comment">//2. 设置显示内容</span>
-        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jvxie</span>)</span>
-                .set<span class="hljs-constructor">Title(<span class="hljs-string">"提示信息"</span>)</span>
-                .set<span class="hljs-constructor">Message(<span class="hljs-string">"您确定要退出当前页面吗"</span>)</span>
+        builder.setIcon(R.mipmap.jvxie)
+                .setTitle(<span class="hljs-string">"提示信息"</span>)
+                .setMessage(<span class="hljs-string">"您确定要退出当前页面吗"</span>)
                 <span class="hljs-comment">//右边按钮</span>
-                .set<span class="hljs-constructor">PositiveButton(<span class="hljs-string">"取消"</span>, <span class="hljs-params">null</span>)</span>
+                .setPositiveButton(<span class="hljs-string">"取消"</span>, <span class="hljs-literal">null</span>)
                 <span class="hljs-comment">//左边按钮</span>
-                .set<span class="hljs-constructor">NegativeButton(<span class="hljs-string">"确定"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
-                        finish<span class="hljs-literal">()</span>;
+                .setNegativeButton(<span class="hljs-string">"确定"</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.OnClickListener() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-type">int</span> which)</span> {
+                        finish();
                     }
                 });
         <span class="hljs-comment">//3. 获取对话框对象</span>
-        AlertDialog dialog = builder.create<span class="hljs-literal">()</span>;
-        dialog.show<span class="hljs-literal">()</span>;
+        <span class="hljs-type">AlertDialog</span> <span class="hljs-variable">dialog</span> <span class="hljs-operator">=</span> builder.create();
+        dialog.show();
     }
 </code></pre>
 <h3>单选对话框</h3>
 <pre><code class="language-java">    <span class="hljs-comment">/**
      * 单选按钮的对话框
      */</span>
-    <span class="hljs-keyword">private</span> void single<span class="hljs-constructor">Dialog()</span> {
-        String <span class="hljs-literal">[]</span> arr = {<span class="hljs-string">"男"</span>, <span class="hljs-string">"女"</span>, <span class="hljs-string">"其他"</span>};
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">singleDialog</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-title class_">String</span> [] arr = {<span class="hljs-string">"男"</span>, <span class="hljs-string">"女"</span>, <span class="hljs-string">"其他"</span>};
         <span class="hljs-comment">//1. 创建对话框的装饰对象</span>
-        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
-        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">baiyang</span>)</span>
-                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的性别"</span>)</span>
-                .set<span class="hljs-constructor">SingleChoiceItems(<span class="hljs-params">arr</span>, 0, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
-                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了性别: "</span> + <span class="hljs-params">arr</span>[<span class="hljs-params">which</span>])</span>;
+        <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-property">Builder</span> builder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-title class_">Builder</span>(<span class="hljs-variable language_">this</span>);
+        builder.<span class="hljs-title function_">setIcon</span>(R.<span class="hljs-property">mipmap</span>.<span class="hljs-property">baiyang</span>)
+                .<span class="hljs-title function_">setTitle</span>(<span class="hljs-string">"请选择您的性别"</span>)
+                .<span class="hljs-title function_">setSingleChoiceItems</span>(arr, <span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.<span class="hljs-title class_">OnClickListener</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">DialogInterface dialog, int which</span>) {
+                        <span class="hljs-title function_">showToast</span>(<span class="hljs-string">"您选择了性别: "</span> + arr[which]);
                         <span class="hljs-comment">//取消对话框</span>
-                        dialog.cancel<span class="hljs-literal">()</span>;
+                        dialog.<span class="hljs-title function_">cancel</span>();
                     }
                 });
-        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+        builder.<span class="hljs-title function_">create</span>().<span class="hljs-title function_">show</span>();
     }
 
-    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">Toast(String <span class="hljs-params">s</span>)</span> {
-        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Toast</span>.</span></span>make<span class="hljs-constructor">Text(<span class="hljs-params">this</span>, <span class="hljs-params">s</span>, Toast.LENGTH_SHORT)</span>.show<span class="hljs-literal">()</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">showToast</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> s</span>) {
+        <span class="hljs-title class_">Toast</span>.<span class="hljs-title function_">makeText</span>(<span class="hljs-variable language_">this</span>, s, <span class="hljs-title class_">Toast</span>.<span class="hljs-property">LENGTH_SHORT</span>).<span class="hljs-title function_">show</span>();
     }
 </code></pre>
 <h3>列表对话框</h3>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> void <span class="hljs-built_in">list</span><span class="hljs-constructor">Dialog()</span> {
-        ArrayAdapter&lt;String&gt; adapter = <span class="hljs-keyword">new</span> ArrayAdapter&lt;&gt;(this, android.<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.simple_list_item_1, mDatas);
-        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
-        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jinniu</span>)</span>
-                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的学校科目"</span>)</span>
-                .set<span class="hljs-constructor">Adapter(<span class="hljs-params">adapter</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
-                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了: "</span> + <span class="hljs-params">mDatas</span>.<span class="hljs-params">get</span>(<span class="hljs-params">which</span>)</span>);
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">listDialog</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; adapter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(<span class="hljs-variable language_">this</span>, android.<span class="hljs-property">R</span>.<span class="hljs-property">layout</span>.<span class="hljs-property">simple_list_item_1</span>, mDatas);
+        <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-property">Builder</span> builder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-title class_">Builder</span>(<span class="hljs-variable language_">this</span>);
+        builder.<span class="hljs-title function_">setIcon</span>(R.<span class="hljs-property">mipmap</span>.<span class="hljs-property">jinniu</span>)
+                .<span class="hljs-title function_">setTitle</span>(<span class="hljs-string">"请选择您的学校科目"</span>)
+                .<span class="hljs-title function_">setAdapter</span>(adapter, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.<span class="hljs-title class_">OnClickListener</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">DialogInterface dialog, int which</span>) {
+                        <span class="hljs-title function_">showToast</span>(<span class="hljs-string">"您选择了: "</span> + mDatas.<span class="hljs-title function_">get</span>(which));
                     }
                 });
-        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+        builder.<span class="hljs-title function_">create</span>().<span class="hljs-title function_">show</span>();
     }
 </code></pre>
 <h3>多选按钮对话框</h3>
-<pre><code class="language-java"> String mArr<span class="hljs-literal">[]</span> = {<span class="hljs-string">"JAVA"</span>, <span class="hljs-string">"Android"</span>, <span class="hljs-string">"C"</span>, <span class="hljs-string">"C++"</span>, <span class="hljs-string">"Python"</span>, <span class="hljs-string">"数据运营"</span>, <span class="hljs-string">"算法"</span>, <span class="hljs-string">"数据结构"</span>, <span class="hljs-string">"C#"</span>};
-    boolean bArr<span class="hljs-literal">[]</span> = {<span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>};
+<pre><code class="language-java"> <span class="hljs-title class_">String</span> mArr[] = {<span class="hljs-string">"JAVA"</span>, <span class="hljs-string">"Android"</span>, <span class="hljs-string">"C"</span>, <span class="hljs-string">"C++"</span>, <span class="hljs-string">"Python"</span>, <span class="hljs-string">"数据运营"</span>, <span class="hljs-string">"算法"</span>, <span class="hljs-string">"数据结构"</span>, <span class="hljs-string">"C#"</span>};
+    <span class="hljs-built_in">boolean</span> bArr[] = {<span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>};
     <span class="hljs-comment">/**
      * 多选按钮对话框
      */</span>
-    <span class="hljs-keyword">private</span> void multi<span class="hljs-constructor">Dialog()</span> {
-        List&lt;String&gt; <span class="hljs-built_in">list</span> = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;<span class="hljs-literal">()</span>;
-        AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
-        builder.set<span class="hljs-constructor">Icon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">jinniu</span>)</span>
-                .set<span class="hljs-constructor">Title(<span class="hljs-string">"请选择您的学校科目"</span>)</span>
-                .set<span class="hljs-constructor">MultiChoiceItems(<span class="hljs-params">mArr</span>, <span class="hljs-params">bArr</span>, <span class="hljs-params">new</span> DialogInterface.OnMultiChoiceClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>, <span class="hljs-params">boolean</span> <span class="hljs-params">isChecked</span>)</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">multiDialog</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-title class_">List</span>&lt;<span class="hljs-title class_">String</span>&gt; list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-property">Builder</span> builder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">AlertDialog</span>.<span class="hljs-title class_">Builder</span>(<span class="hljs-variable language_">this</span>);
+        builder.<span class="hljs-title function_">setIcon</span>(R.<span class="hljs-property">mipmap</span>.<span class="hljs-property">jinniu</span>)
+                .<span class="hljs-title function_">setTitle</span>(<span class="hljs-string">"请选择您的学校科目"</span>)
+                .<span class="hljs-title function_">setMultiChoiceItems</span>(mArr, bArr, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.<span class="hljs-title class_">OnMultiChoiceClickListener</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">DialogInterface dialog, int which, <span class="hljs-built_in">boolean</span> isChecked</span>) {
 
                     }
-                }).set<span class="hljs-constructor">PositiveButton(<span class="hljs-string">"确定"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
-                        <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; bArr.length; i++) {
-                            <span class="hljs-keyword">if</span>(bArr<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>){
-                                <span class="hljs-built_in">list</span>.add(mArr<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>);
+                }).<span class="hljs-title function_">setPositiveButton</span>(<span class="hljs-string">"确定"</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.<span class="hljs-title class_">OnClickListener</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">DialogInterface dialog, int which</span>) {
+                        <span class="hljs-keyword">for</span> (int i = <span class="hljs-number">0</span>; i &lt; bArr.<span class="hljs-property">length</span>; i++) {
+                            <span class="hljs-keyword">if</span>(bArr[i]){
+                                list.<span class="hljs-title function_">add</span>(mArr[i]);
                             }
                         }
-                        show<span class="hljs-constructor">Toast(<span class="hljs-string">"您选择了: "</span> + <span class="hljs-params">list</span>.<span class="hljs-params">toString</span>()</span>);
+                        <span class="hljs-title function_">showToast</span>(<span class="hljs-string">"您选择了: "</span> + list.<span class="hljs-title function_">toString</span>());
                     }
-                }).set<span class="hljs-constructor">NegativeButton(<span class="hljs-string">"取消"</span>, <span class="hljs-params">new</span> DialogInterface.OnClickListener()</span> {
-                    @Override
-                    public void on<span class="hljs-constructor">Click(DialogInterface <span class="hljs-params">dialog</span>, <span class="hljs-params">int</span> <span class="hljs-params">which</span>)</span> {
-                        dialog.cancel<span class="hljs-literal">()</span>;
+                }).<span class="hljs-title function_">setNegativeButton</span>(<span class="hljs-string">"取消"</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">DialogInterface</span>.<span class="hljs-title class_">OnClickListener</span>() {
+                    <span class="hljs-meta">@Override</span>
+                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">DialogInterface dialog, int which</span>) {
+                        dialog.<span class="hljs-title function_">cancel</span>();
                     }
                 });
-        builder.create<span class="hljs-literal">()</span>.show<span class="hljs-literal">()</span>;
+        builder.<span class="hljs-title function_">create</span>().<span class="hljs-title function_">show</span>();
     }
 </code></pre>
 <h3>自定义对话框</h3>
@@ -319,111 +320,111 @@ public <span class="hljs-keyword">class</span> TitleView extends RelativeLayout 
 </code></pre>
 <h4>view/inputMsgDialog.java</h4>
 <p>相当于弹出一个小页面，所以与之前自定义view不同的是不需inflate转换成view对象，也因此可以直接在自定义类中调用onClick方法</p>
-<pre><code class="language-java">package com.xyl.app1107.view;
+<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1107</span>.<span class="hljs-property">view</span>;
 
-import android.app.Dialog;
-import android.content.Context;
-import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">app</span>.<span class="hljs-property">Dialog</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">content</span>.<span class="hljs-property">Context</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">os</span>.<span class="hljs-property">Bundle</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">Gravity</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">View</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">Button</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">EditText</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">TextView</span>;
 
-import androidx.annotation.NonNull;
+<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">annotation</span>.<span class="hljs-property">NonNull</span>;
 
-import com.xyl.app1107.R;
+<span class="hljs-keyword">import</span> com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1107</span>.<span class="hljs-property">R</span>;
 
-public <span class="hljs-keyword">class</span> InputMsgDialog extends Dialog implements View.OnClickListener {
-    EditText inputEt;
-    Button rightBtn, leftBtn;
-    TextView titleTv;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InputMsgDialog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Dialog</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">View</span>.<span class="hljs-property">OnClickListener</span> {
+    <span class="hljs-title class_">EditText</span> inputEt;
+    <span class="hljs-title class_">Button</span> rightBtn, leftBtn;
+    <span class="hljs-title class_">TextView</span> titleTv;
 
-    public <span class="hljs-constructor">InputMsgDialog(@NonNull Context <span class="hljs-params">context</span>)</span> {
-        super(context);
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">InputMsgDialog</span>(<span class="hljs-meta">@NonNull</span> <span class="hljs-title class_">Context</span> context) {
+        <span class="hljs-variable language_">super</span>(context);
     }
 
-    public interface OnBtnClickListener{
-        public void on<span class="hljs-constructor">BtnClick(<span class="hljs-params">int</span> <span class="hljs-params">gravity</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnBtnClickListener</span>{
+        <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onBtnClick</span>(int gravity);
     }
-    OnBtnClickListener onLeftBtnClickListener, onRightBtnClickListener;
+    <span class="hljs-title class_">OnBtnClickListener</span> onLeftBtnClickListener, onRightBtnClickListener;
 
-    public void set<span class="hljs-constructor">OnLeftBtnCLickListener(OnBtnClickListener <span class="hljs-params">onLeftBtnClickListener</span>)</span>{
-        this.onLeftBtnClickListener = onLeftBtnClickListener;
-    }
-
-    public void set<span class="hljs-constructor">OnRightBtnClickListener(OnBtnClickListener <span class="hljs-params">onRightBtnClickListener</span>)</span>{
-        this.onRightBtnClickListener = onRightBtnClickListener;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setOnLeftBtnCLickListener</span>(<span class="hljs-params">OnBtnClickListener onLeftBtnClickListener</span>){
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">onLeftBtnClickListener</span> = onLeftBtnClickListener;
     }
 
-
-    @Override
-    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">dialog_input</span>)</span>;
-        init<span class="hljs-constructor">View()</span>;
-        set<span class="hljs-constructor">Event()</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setOnRightBtnClickListener</span>(<span class="hljs-params">OnBtnClickListener onRightBtnClickListener</span>){
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">onRightBtnClickListener</span> = onRightBtnClickListener;
     }
 
-    <span class="hljs-keyword">private</span> void set<span class="hljs-constructor">Event()</span> {
-        leftBtn.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
-        rightBtn.set<span class="hljs-constructor">OnClickListener(<span class="hljs-params">this</span>)</span>;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
+        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">dialog_input</span>);
+        <span class="hljs-title function_">initView</span>();
+        <span class="hljs-title function_">setEvent</span>();
     }
 
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
-        titleTv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">dialog_input_tv1</span>)</span>;
-        inputEt = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_et1</span>)</span>;
-        rightBtn = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_btn1</span>)</span>;
-        leftBtn = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">diput_btn2</span>)</span>;
-    }
-    public void set<span class="hljs-constructor">Title(String <span class="hljs-params">text</span>)</span>{
-        titleTv.set<span class="hljs-constructor">Text(<span class="hljs-params">text</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setEvent</span>(<span class="hljs-params"></span>) {
+        leftBtn.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
+        rightBtn.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
     }
 
-    public void set<span class="hljs-constructor">TitleColor(<span class="hljs-params">int</span> <span class="hljs-params">color</span>)</span>{
-        titleTv.set<span class="hljs-constructor">TextColor(<span class="hljs-params">color</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
+        titleTv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">dialog_input_tv1</span>);
+        inputEt = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">diput_et1</span>);
+        rightBtn = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">diput_btn1</span>);
+        leftBtn = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">diput_btn2</span>);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setTitle</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> text</span>){
+        titleTv.<span class="hljs-title function_">setText</span>(text);
     }
 
-    public void set<span class="hljs-constructor">ButtonText(String <span class="hljs-params">left</span>, String <span class="hljs-params">right</span>)</span>{
-        leftBtn.set<span class="hljs-constructor">Text(<span class="hljs-params">left</span>)</span>;
-        rightBtn.set<span class="hljs-constructor">Text(<span class="hljs-params">right</span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setTitleColor</span>(<span class="hljs-params">int color</span>){
+        titleTv.<span class="hljs-title function_">setTextColor</span>(color);
     }
-    public void set<span class="hljs-constructor">Width()</span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setButtonText</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> left, <span class="hljs-built_in">String</span> right</span>){
+        leftBtn.<span class="hljs-title function_">setText</span>(left);
+        rightBtn.<span class="hljs-title function_">setText</span>(right);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setWidth</span>(<span class="hljs-params"></span>){
         <span class="hljs-comment">//得到当前对话框的窗口</span>
-        Window window = get<span class="hljs-constructor">Window()</span>;
+        <span class="hljs-title class_">Window</span> <span class="hljs-variable language_">window</span> = <span class="hljs-title function_">getWindow</span>();
         <span class="hljs-comment">//得到窗口的属性对象</span>
-        WindowManager.LayoutParams wlp = window.get<span class="hljs-constructor">Attributes()</span>;
+        <span class="hljs-title class_">WindowManager</span>.<span class="hljs-property">LayoutParams</span> wlp = <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">getAttributes</span>();
         <span class="hljs-comment">//设置窗口位置</span>
-        wlp.gravity = Gravity.BOTTOM;
+        wlp.<span class="hljs-property">gravity</span> = <span class="hljs-title class_">Gravity</span>.<span class="hljs-property">BOTTOM</span>;
         <span class="hljs-comment">//获取屏幕的宽度</span>
-        Display display = window.get<span class="hljs-constructor">WindowManager()</span>.get<span class="hljs-constructor">DefaultDisplay()</span>;
-        wlp.width = display.get<span class="hljs-constructor">Width()</span>;
+        <span class="hljs-title class_">Display</span> display = <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">getWindowManager</span>().<span class="hljs-title function_">getDefaultDisplay</span>();
+        wlp.<span class="hljs-property">width</span> = display.<span class="hljs-title function_">getWidth</span>();
         <span class="hljs-comment">//将背景设置为透明，去除边框</span>
-        window.set<span class="hljs-constructor">BackgroundDrawableResource(<span class="hljs-params">android</span>.R.<span class="hljs-params">color</span>.<span class="hljs-params">transparent</span>)</span>;
+        <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">setBackgroundDrawableResource</span>(android.<span class="hljs-property">R</span>.<span class="hljs-property">color</span>.<span class="hljs-property">transparent</span>);
         <span class="hljs-comment">//设置窗口属性</span>
-        window.set<span class="hljs-constructor">Attributes(<span class="hljs-params">wlp</span>)</span>;
+        <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">setAttributes</span>(wlp);
     }
     <span class="hljs-comment">/**
      * 获取输入内容的函数
      */</span>
-    public String get<span class="hljs-constructor">InputMsg()</span>{
-        return inputEt.get<span class="hljs-constructor">Text()</span>.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>.trim<span class="hljs-literal">()</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">getInputMsg</span>(<span class="hljs-params"></span>){
+        <span class="hljs-keyword">return</span> inputEt.<span class="hljs-title function_">getText</span>().<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">trim</span>();
     }
-    @Override
-    public void on<span class="hljs-constructor">Click(View <span class="hljs-params">v</span>)</span> {
-        switch (v.get<span class="hljs-constructor">Id()</span>) {
-            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.diput_btn1:
-                <span class="hljs-keyword">if</span>(onLeftBtnClickListener!=null){
-                    onLeftBtnClickListener.on<span class="hljs-constructor">BtnClick(Gravity.LEFT)</span>;
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">View v</span>) {
+        <span class="hljs-keyword">switch</span> (v.<span class="hljs-title function_">getId</span>()) {
+            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">diput_btn1</span>:
+                <span class="hljs-keyword">if</span>(onLeftBtnClickListener!=<span class="hljs-literal">null</span>){
+                    onLeftBtnClickListener.<span class="hljs-title function_">onBtnClick</span>(<span class="hljs-title class_">Gravity</span>.<span class="hljs-property">LEFT</span>);
                 }
-                cancel<span class="hljs-literal">()</span>;
-                break;
-            case <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.diput_btn2:
-                <span class="hljs-keyword">if</span> (onRightBtnClickListener!=null){
-                    onRightBtnClickListener.on<span class="hljs-constructor">BtnClick(Gravity.RIGHT)</span>;
+                <span class="hljs-title function_">cancel</span>();
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">diput_btn2</span>:
+                <span class="hljs-keyword">if</span> (onRightBtnClickListener!=<span class="hljs-literal">null</span>){
+                    onRightBtnClickListener.<span class="hljs-title function_">onBtnClick</span>(<span class="hljs-title class_">Gravity</span>.<span class="hljs-property">RIGHT</span>);
                 }
-                cancel<span class="hljs-literal">()</span>;
-                break;
+                <span class="hljs-title function_">cancel</span>();
+                <span class="hljs-keyword">break</span>;
         }
     }
 }
@@ -432,19 +433,19 @@ public <span class="hljs-keyword">class</span> InputMsgDialog extends Dialog imp
 <pre><code class="language-java">   <span class="hljs-comment">/**
      * 使用自己写的对话框
      */</span>
-    <span class="hljs-keyword">private</span> void custom<span class="hljs-constructor">Dialog()</span>{
-        InputMsgDialog dialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">InputMsgDialog(<span class="hljs-params">this</span>)</span>;
-        dialog.show<span class="hljs-literal">()</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">customDialog</span><span class="hljs-params">()</span>{
+        <span class="hljs-type">InputMsgDialog</span> <span class="hljs-variable">dialog</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">InputMsgDialog</span>(<span class="hljs-built_in">this</span>);
+        dialog.show();
 
-        dialog.set<span class="hljs-constructor">Title(<span class="hljs-string">"记录消费信息"</span>)</span>;
-        dialog.set<span class="hljs-constructor">TitleColor(Color.RED)</span>;
-        dialog.set<span class="hljs-constructor">Width()</span>;
-        dialog.set<span class="hljs-constructor">OnRightBtnClickListener(<span class="hljs-params">new</span> InputMsgDialog.OnBtnClickListener()</span> {
-            @Override
-            public void on<span class="hljs-constructor">BtnClick(<span class="hljs-params">int</span> <span class="hljs-params">gravity</span>)</span> {
-                String inputMsg = dialog.get<span class="hljs-constructor">InputMsg()</span>;
-                tv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">tv1</span>)</span>;
-                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">inputMsg</span>)</span>;
+        dialog.setTitle(<span class="hljs-string">"记录消费信息"</span>);
+        dialog.setTitleColor(Color.RED);
+        dialog.setWidth();
+        dialog.setOnRightBtnClickListener(<span class="hljs-keyword">new</span> <span class="hljs-title class_">InputMsgDialog</span>.OnBtnClickListener() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onBtnClick</span><span class="hljs-params">(<span class="hljs-type">int</span> gravity)</span> {
+                <span class="hljs-type">String</span> <span class="hljs-variable">inputMsg</span> <span class="hljs-operator">=</span> dialog.getInputMsg();
+                tv = findViewById(R.id.tv1);
+                tv.setText(inputMsg);
             }
         });
     }
@@ -453,29 +454,29 @@ public <span class="hljs-keyword">class</span> InputMsgDialog extends Dialog imp
 <pre><code class="language-java">  <span class="hljs-comment">/**
      * 显示日期对话框
      */</span>
-    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">DateDialog()</span> {
-        Calendar calendar = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Calendar</span>.</span></span>get<span class="hljs-constructor">Instance()</span>;
-        DatePickerDialog dialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">DatePickerDialog(<span class="hljs-params">this</span>, <span class="hljs-params">new</span> DatePickerDialog.OnDateSetListener()</span> {
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showDateDialog</span>()</span> {
+        Calendar calendar = Calendar.getInstance();
+        DatePickerDialog dialog = <span class="hljs-keyword">new</span> DatePickerDialog(<span class="hljs-keyword">this</span>, <span class="hljs-keyword">new</span> DatePickerDialog.OnDateSetListener() {
             @Override
-            public void on<span class="hljs-constructor">DateSet(DatePicker <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">year</span>, <span class="hljs-params">int</span> <span class="hljs-params">month</span>, <span class="hljs-params">int</span> <span class="hljs-params">dayOfMonth</span>)</span> {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDateSet</span>(<span class="hljs-params">DatePicker view, <span class="hljs-built_in">int</span> year, <span class="hljs-built_in">int</span> month, <span class="hljs-built_in">int</span> dayOfMonth</span>)</span> {
                 String msg = year + <span class="hljs-string">"年"</span> + (month+<span class="hljs-number">1</span>) + <span class="hljs-string">"月"</span> + dayOfMonth + <span class="hljs-string">"日"</span>;
-                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">msg</span>)</span>;
+                tv.setText(msg);
             }
-        }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
-        dialog.show<span class="hljs-literal">()</span>;
+        }, calendar.<span class="hljs-keyword">get</span>(Calendar.YEAR), calendar.<span class="hljs-keyword">get</span>(Calendar.MONTH), calendar.<span class="hljs-keyword">get</span>(Calendar.DAY_OF_MONTH));
+        dialog.show();
     }
 </code></pre>
 <h3>时间对话框</h3>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> void show<span class="hljs-constructor">TimeDialog()</span> {
-        Calendar calendar = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Calendar</span>.</span></span>get<span class="hljs-constructor">Instance()</span>;
-        TimePickerDialog timePickerDialog = <span class="hljs-keyword">new</span> <span class="hljs-constructor">TimePickerDialog(<span class="hljs-params">this</span>, <span class="hljs-params">new</span> TimePickerDialog.OnTimeSetListener()</span> {
-            @Override
-            public void on<span class="hljs-constructor">TimeSet(TimePicker <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">hourOfDay</span>, <span class="hljs-params">int</span> <span class="hljs-params">minute</span>)</span> {
-                String msg = hourOfDay + <span class="hljs-string">":"</span> + minute;
-                tv.set<span class="hljs-constructor">Text(<span class="hljs-params">msg</span>)</span>;
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">showTimeDialog</span><span class="hljs-params">()</span> {
+        <span class="hljs-type">Calendar</span> <span class="hljs-variable">calendar</span> <span class="hljs-operator">=</span> Calendar.getInstance();
+        <span class="hljs-type">TimePickerDialog</span> <span class="hljs-variable">timePickerDialog</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">TimePickerDialog</span>(<span class="hljs-built_in">this</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">TimePickerDialog</span>.OnTimeSetListener() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onTimeSet</span><span class="hljs-params">(TimePicker view, <span class="hljs-type">int</span> hourOfDay, <span class="hljs-type">int</span> minute)</span> {
+                <span class="hljs-type">String</span> <span class="hljs-variable">msg</span> <span class="hljs-operator">=</span> hourOfDay + <span class="hljs-string">":"</span> + minute;
+                tv.setText(msg);
             }
         }, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), <span class="hljs-literal">true</span>);
-        timePickerDialog.show<span class="hljs-literal">()</span>;
+        timePickerDialog.show();
     }
 </code></pre>
 <h3>进度对话框</h3>
@@ -508,4 +509,3 @@ public <span class="hljs-keyword">class</span> InputMsgDialog extends Dialog imp
 </code></pre>
 </body></html>
   a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月7日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"layout"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"dialog"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%887%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月7日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]

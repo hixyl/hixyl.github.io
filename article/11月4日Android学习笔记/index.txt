@@ -1,22 +1,22 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月4日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T8229,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月4日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:T8bb7,
     <p class="time">发布时间：<time datetime="04 November, 2022">2022-11-04 16:40:52</time></p>
     <p class="words">本文字数：1,385 字       阅读完需：约 6 分钟</p>
     <html><head></head><body><h2>展示图片</h2>
@@ -169,92 +169,92 @@ RadioButton 单选按钮</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
 </code></pre>
 <p>ShopTypeActivity.java</p>
-<pre><code class="language-java">package com.xyl.app1104;
+<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1104</span>;
 
-import androidx.appcompat.app.AppCompatActivity;
+<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">appcompat</span>.<span class="hljs-property">app</span>.<span class="hljs-property">AppCompatActivity</span>;
 
-import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.ListView;
-import android.widget.Spinner;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">os</span>.<span class="hljs-property">Bundle</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ArrayAdapter</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">GridView</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ListView</span>;
+<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">Spinner</span>;
 
-import java.util.ArrayList;
-import java.util.List;
+<span class="hljs-keyword">import</span> java.<span class="hljs-property">util</span>.<span class="hljs-property">ArrayList</span>;
+<span class="hljs-keyword">import</span> java.<span class="hljs-property">util</span>.<span class="hljs-property">List</span>;
 
-public <span class="hljs-keyword">class</span> ShopTypeActivity extends AppCompatActivity {
-    ListView typeLv;
-    GridView typeGv;
-    List&lt;String&gt; mDatas; <span class="hljs-comment">//数据源</span>
-    Spinner typeSp;
-    String<span class="hljs-literal">[]</span> spArr = {<span class="hljs-string">"列表视图"</span>, <span class="hljs-string">"网格视图"</span>};
-    <span class="hljs-keyword">private</span> ArrayAdapter&lt;String&gt; stringArrayAdapter;
-    <span class="hljs-keyword">private</span> ArrayAdapter&lt;String&gt; stringArrayAdapter1;
-    <span class="hljs-keyword">private</span> ArrayAdapter&lt;String&gt; stringArrayAdapter2;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ShopTypeActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppCompatActivity</span> {
+    <span class="hljs-title class_">ListView</span> typeLv;
+    <span class="hljs-title class_">GridView</span> typeGv;
+    <span class="hljs-title class_">List</span>&lt;<span class="hljs-title class_">String</span>&gt; mDatas; <span class="hljs-comment">//数据源</span>
+    <span class="hljs-title class_">Spinner</span> typeSp;
+    <span class="hljs-title class_">String</span>[] spArr = {<span class="hljs-string">"列表视图"</span>, <span class="hljs-string">"网格视图"</span>};
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter;
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter1;
+    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter2;
 
-    @Override
-    protected void on<span class="hljs-constructor">Create(Bundle <span class="hljs-params">savedInstanceState</span>)</span> {
-        super.on<span class="hljs-constructor">Create(<span class="hljs-params">savedInstanceState</span>)</span>;
-        set<span class="hljs-constructor">ContentView(R.<span class="hljs-params">layout</span>.<span class="hljs-params">activity_shop_type</span>)</span>;
-        init<span class="hljs-constructor">View()</span>;
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
+        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_shop_type</span>);
+        <span class="hljs-title function_">initView</span>();
         <span class="hljs-comment">//获取数据源</span>
-        init<span class="hljs-constructor">Datas()</span>;
+        <span class="hljs-title function_">initDatas</span>();
         <span class="hljs-comment">//设置适配器 ArrayAdapter:当列表或者网格当中的每一项只有一个文本框，可以使用这个适配器</span>
         <span class="hljs-comment">//参数2：每一项的item的布局 参数3：显示数据的文本 参数4：数据</span>
-        stringArrayAdapter = <span class="hljs-keyword">new</span> ArrayAdapter&lt;&gt;(
-                this, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.item_st, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.item_st_tv, mDatas);
-        typeLv.set<span class="hljs-constructor">Adapter(<span class="hljs-params">stringArrayAdapter</span>)</span>;
+        stringArrayAdapter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(
+                <span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st</span>, R.<span class="hljs-property">id</span>.<span class="hljs-property">item_st_tv</span>, mDatas);
+        typeLv.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter);
         <span class="hljs-comment">//给gridview设置adapter</span>
-        stringArrayAdapter1 = <span class="hljs-keyword">new</span> ArrayAdapter&lt;&gt;(this, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.item_st_gv,
-                <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.item_gtv, mDatas);
-        typeGv.set<span class="hljs-constructor">Adapter(<span class="hljs-params">stringArrayAdapter1</span>)</span>;
+        stringArrayAdapter1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(<span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st_gv</span>,
+                R.<span class="hljs-property">id</span>.<span class="hljs-property">item_gtv</span>, mDatas);
+        typeGv.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter1);
         <span class="hljs-comment">//给Spinner设置adapter</span>
-        stringArrayAdapter2 = <span class="hljs-keyword">new</span> ArrayAdapter&lt;&gt;(this, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>layout.item_st_sp, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>id.item_st_tv, spArr);
-        typeSp.set<span class="hljs-constructor">Adapter(<span class="hljs-params">stringArrayAdapter2</span>)</span>;
+        stringArrayAdapter2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(<span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st_sp</span>, R.<span class="hljs-property">id</span>.<span class="hljs-property">item_st_tv</span>, spArr);
+        typeSp.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter2);
     }
 
     <span class="hljs-comment">/**
      * 对于ListView的数据源进行初始化
      */</span>
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">Datas()</span> {
-        mDatas = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;<span class="hljs-literal">()</span>;
-        mDatas.add(<span class="hljs-string">"调料干货"</span>);
-        mDatas.add(<span class="hljs-string">"零食"</span>);
-        mDatas.add(<span class="hljs-string">"饮料"</span>);
-        mDatas.add(<span class="hljs-string">"厨房用品"</span>);
-        mDatas.add(<span class="hljs-string">"日用品"</span>);
-        mDatas.add(<span class="hljs-string">"烟酒"</span>);
-        <span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
-            mDatas.add(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initDatas</span>(<span class="hljs-params"></span>) {
+        mDatas = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"调料干货"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"零食"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"饮料"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"厨房用品"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"日用品"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"烟酒"</span>);
+        <span class="hljs-keyword">for</span>(int i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
+            mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
         }
     }
 
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
-        typeLv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">st_lv</span>)</span>;
-        typeGv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">st_gv</span>)</span>;
-        typeSp = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">st_sp</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
+        typeLv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_lv</span>);
+        typeGv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_gv</span>);
+        typeSp = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_sp</span>);
     }
 }
 
     <span class="hljs-comment">/**
      * 对于ListView的数据源进行初始化
      */</span>
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">Datas()</span> {
-        mDatas = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;<span class="hljs-literal">()</span>;
-        mDatas.add(<span class="hljs-string">"调料干货"</span>);
-        mDatas.add(<span class="hljs-string">"零食"</span>);
-        mDatas.add(<span class="hljs-string">"饮料"</span>);
-        mDatas.add(<span class="hljs-string">"厨房用品"</span>);
-        mDatas.add(<span class="hljs-string">"日用品"</span>);
-        mDatas.add(<span class="hljs-string">"烟酒"</span>);
-        <span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
-            mDatas.add(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initDatas</span>(<span class="hljs-params"></span>) {
+        mDatas = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"调料干货"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"零食"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"饮料"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"厨房用品"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"日用品"</span>);
+        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"烟酒"</span>);
+        <span class="hljs-keyword">for</span>(int i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
+            mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
         }
     }
 
-    <span class="hljs-keyword">private</span> void init<span class="hljs-constructor">View()</span> {
-        typeLv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">st_lv</span>)</span>;
-        typeGv = find<span class="hljs-constructor">ViewById(R.<span class="hljs-params">id</span>.<span class="hljs-params">st_gv</span>)</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
+        typeLv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_lv</span>);
+        typeGv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_gv</span>);
     }
 }
 </code></pre>

@@ -1,23 +1,22 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
 2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
-0:["7rLqxkEwvhWujqEQeKbCo",[[["",{"children":["article",{"children":[["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月11日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+0:["b9a8PnxJ6T87cYHNh85eN",[[["",{"children":["article",{"children":[["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月11日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/4d166e604f6ba619.css",{"as":"style"}]
 6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
 7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-5297ab80a73cd07d.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
 b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月11日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月11日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-5d725420b9f8c1af.js","231:static/chunks/9316e0b3-01127c4abe77ae6c.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-87283166367a5537.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T82db,
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月11日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4d166e604f6ba619.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-eb04291402bd74ea.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-18aa656a1117c673.js"],"name":"","async":false}
+10:T8128,
     <p class="time">发布时间：<time datetime="11 November, 2022">2022-11-11 17:17:11</time></p>
     <p class="words">本文字数：2,028 字       阅读完需：约 5 分钟</p>
     <html><head></head><body><h2>Android 异步任务</h2>
@@ -237,24 +236,24 @@ AsyncTask&lt;params,progress,result&gt;是一个抽象类。
 </code></pre>
 <h2>滚动分页加载</h2>
 <pre><code class="language-java">   <span class="hljs-comment">//ListView 滚动监听接口</span>
-    AbsListView.OnScrollListener listener = <span class="hljs-keyword">new</span> AbsListView.<span class="hljs-constructor">OnScrollListener()</span> {
+    AbsListView.<span class="hljs-type">OnScrollListener</span> <span class="hljs-variable">listener</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">AbsListView</span>.OnScrollListener() {
         <span class="hljs-comment">// 当滚动状态发生改变时，回调的方法</span>
 <span class="hljs-comment">//        SCROLL_STATE_IDLE 停止状态  SCROLL_STATE_TOUCH_SCROLL 手指触摸滚动</span>
 <span class="hljs-comment">//        SCROLL_STATE_FLING 惯性滚动</span>
-        @Override
-        public void on<span class="hljs-constructor">ScrollStateChanged(AbsListView <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">scrollState</span>)</span> {
-            <span class="hljs-keyword">if</span> (scrollState<span class="hljs-operator"> == </span>SCROLL_STATE_IDLE<span class="hljs-operator">
-                    &amp;&amp; </span>lastVisibleItem==adapter.get<span class="hljs-constructor">Count()</span>) {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onScrollStateChanged</span><span class="hljs-params">(AbsListView view, <span class="hljs-type">int</span> scrollState)</span> {
+            <span class="hljs-keyword">if</span> (scrollState == SCROLL_STATE_IDLE
+                    &amp;&amp; lastVisibleItem==adapter.getCount()) {
                 <span class="hljs-comment">//显示尾布局，并且开始加载</span>
-                footerView.set<span class="hljs-constructor">Visibility(View.VISIBLE)</span>;
+                footerView.setVisibility(View.VISIBLE);
                 page++;
-                String url = creat<span class="hljs-constructor">URL()</span>;
-                load<span class="hljs-constructor">Datas(<span class="hljs-params">url</span>)</span>;
+                <span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> creatURL();
+                loadDatas(url);
             }
         }
         <span class="hljs-comment">//    firstVisibleItem：当前可见第一条的位置   visibleItemCount 可见条目数量   totalItemCount 一共有多少条</span>
-        @Override
-        public void on<span class="hljs-constructor">Scroll(AbsListView <span class="hljs-params">view</span>, <span class="hljs-params">int</span> <span class="hljs-params">firstVisibleItem</span>, <span class="hljs-params">int</span> <span class="hljs-params">visibleItemCount</span>, <span class="hljs-params">int</span> <span class="hljs-params">totalItemCount</span>)</span> {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onScroll</span><span class="hljs-params">(AbsListView view, <span class="hljs-type">int</span> firstVisibleItem, <span class="hljs-type">int</span> visibleItemCount, <span class="hljs-type">int</span> totalItemCount)</span> {
             lastVisibleItem = firstVisibleItem+visibleItemCount-<span class="hljs-number">1</span>;
         }
     };
@@ -264,16 +263,16 @@ AsyncTask&lt;params,progress,result&gt;是一个抽象类。
 <pre><code class="language-java">    <span class="hljs-keyword">implementation</span> <span class="hljs-string">"androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"</span>
 </code></pre>
 <h3>使用</h3>
-<pre><code class="language-java">    binding.srLayout.set<span class="hljs-constructor">ColorSchemeColors(Color.RED)</span>;
-    binding.srLayout.set<span class="hljs-constructor">OnRefreshListener(<span class="hljs-params">onRefreshListener</span>)</span>;
+<pre><code class="language-java">    binding.srLayout.setColorSchemeColors(Color.RED);
+    binding.srLayout.setOnRefreshListener(onRefreshListener);
     <span class="hljs-comment">//    下拉刷新的监听接口</span>
-    SwipeRefreshLayout.OnRefreshListener onRefreshListener = <span class="hljs-keyword">new</span> SwipeRefreshLayout.<span class="hljs-constructor">OnRefreshListener()</span> {
-        @Override
-        public void on<span class="hljs-constructor">Refresh()</span> {
+    SwipeRefreshLayout.<span class="hljs-type">OnRefreshListener</span> <span class="hljs-variable">onRefreshListener</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SwipeRefreshLayout</span>.OnRefreshListener() {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onRefresh</span><span class="hljs-params">()</span> {
             page=<span class="hljs-number">1</span>;
-            String url = creat<span class="hljs-constructor">URL()</span>;
-            mDatas.clear<span class="hljs-literal">()</span>;
-            load<span class="hljs-constructor">Datas(<span class="hljs-params">url</span>)</span>;
+            <span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> creatURL();
+            mDatas.clear();
+            loadDatas(url);
         }
     };
 </code></pre>
@@ -282,24 +281,24 @@ AsyncTask&lt;params,progress,result&gt;是一个抽象类。
 <pre><code class="language-java">    <span class="hljs-comment">/**
      * 发送简单通知
      */</span>
-    <span class="hljs-keyword">private</span> void send<span class="hljs-constructor">NormalNotify()</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendNormalNotify</span><span class="hljs-params">()</span> {
         <span class="hljs-comment">//创建通知的装饰对象</span>
-        Notification.Builder builder = <span class="hljs-keyword">new</span> Notification.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+        Notification.<span class="hljs-type">Builder</span> <span class="hljs-variable">builder</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Notification</span>.Builder(<span class="hljs-built_in">this</span>);
         <span class="hljs-comment">//设置通知显示内容</span>
-        builder.set<span class="hljs-constructor">ContentTitle(<span class="hljs-string">"好消息, 好消息！！！！"</span>)</span>;
-        builder.set<span class="hljs-constructor">ContentText(<span class="hljs-string">"新冠疫情神奇消失了。。。"</span>)</span>;
-        builder.set<span class="hljs-constructor">SmallIcon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">ib_luck_normal</span>)</span>;
-        Bitmap bitmap = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">BitmapFactory</span>.</span></span>decode<span class="hljs-constructor">Resource(<span class="hljs-params">getResources</span>()</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>mipmap.jinniu);
-        builder.set<span class="hljs-constructor">LargeIcon(<span class="hljs-params">bitmap</span>)</span>;
-        builder.set<span class="hljs-constructor">AutoCancel(<span class="hljs-params">true</span>)</span>;
-        builder.set<span class="hljs-constructor">Ongoing(<span class="hljs-params">false</span>)</span>;<span class="hljs-comment">//侧滑能不能取消通知</span>
-        builder.set<span class="hljs-constructor">Priority(Notification.PRIORITY_HIGH)</span>;
-        builder.set<span class="hljs-constructor">Ticker(<span class="hljs-string">"放心Go向你发来了双11问候，快来看我....."</span>)</span>;
+        builder.setContentTitle(<span class="hljs-string">"好消息, 好消息！！！！"</span>);
+        builder.setContentText(<span class="hljs-string">"新冠疫情神奇消失了。。。"</span>);
+        builder.setSmallIcon(R.mipmap.ib_luck_normal);
+        <span class="hljs-type">Bitmap</span> <span class="hljs-variable">bitmap</span> <span class="hljs-operator">=</span> BitmapFactory.decodeResource(getResources(), R.mipmap.jinniu);
+        builder.setLargeIcon(bitmap);
+        builder.setAutoCancel(<span class="hljs-literal">true</span>);
+        builder.setOngoing(<span class="hljs-literal">false</span>);<span class="hljs-comment">//侧滑能不能取消通知</span>
+        builder.setPriority(Notification.PRIORITY_HIGH);
+        builder.setTicker(<span class="hljs-string">"放心Go向你发来了双11问候，快来看我....."</span>);
         <span class="hljs-comment">//设置点击预先跳转意图</span>
-        Intent intent = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Intent(<span class="hljs-params">this</span>, NewsInfoActivity.<span class="hljs-params">class</span>)</span>;
-        builder.set<span class="hljs-constructor">ContentIntent(PendingIntent.<span class="hljs-params">getActivity</span>(<span class="hljs-params">this</span>, 100, <span class="hljs-params">intent</span>, PendingIntent.FLAG_ONE_SHOT)</span>);
+        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>(<span class="hljs-built_in">this</span>, NewsInfoActivity.class);
+        builder.setContentIntent(PendingIntent.getActivity(<span class="hljs-built_in">this</span>, <span class="hljs-number">100</span>, intent, PendingIntent.FLAG_ONE_SHOT));
         <span class="hljs-comment">//获取通知对象</span>
-        Notification notification = builder.build<span class="hljs-literal">()</span>;
+        <span class="hljs-type">Notification</span> <span class="hljs-variable">notification</span> <span class="hljs-operator">=</span> builder.build();
         <span class="hljs-comment">//发送通知</span>
         manager.notify(<span class="hljs-number">1</span>, notification);
     }
@@ -398,45 +397,46 @@ AsyncTask&lt;params,progress,result&gt;是一个抽象类。
 }
 </code></pre>
 <h3>发送大图通知</h3>
-<pre><code class="language-java"> <span class="hljs-keyword">private</span> void send<span class="hljs-constructor">BigImgNotify()</span> {
-        NotificationCompat.Builder builder
-                = <span class="hljs-keyword">new</span> NotificationCompat.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
-        NotificationCompat.BigPictureStyle style = <span class="hljs-keyword">new</span> NotificationCompat.<span class="hljs-constructor">BigPictureStyle()</span>;
-        Bitmap bm1 = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">BitmapFactory</span>.</span></span>decode<span class="hljs-constructor">Resource(<span class="hljs-params">getResources</span>()</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">R</span>.</span></span>mipmap.jinniu);
-        style.big<span class="hljs-constructor">LargeIcon(<span class="hljs-params">bm1</span>)</span>;
-        style.set<span class="hljs-constructor">BigContentTitle(<span class="hljs-string">"美图来袭....."</span>)</span>;
-        style.set<span class="hljs-constructor">SummaryText(<span class="hljs-string">"每日壁纸更新更多内容，点击查看"</span>)</span>;
-        builder.set<span class="hljs-constructor">Style(<span class="hljs-params">style</span>)</span>;
-        builder.set<span class="hljs-constructor">ShowWhen(<span class="hljs-params">true</span>)</span>;
+<pre><code class="language-java"> <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendBigImgNotify</span><span class="hljs-params">()</span> {
+        NotificationCompat.<span class="hljs-type">Builder</span> <span class="hljs-variable">builder</span>
+                <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NotificationCompat</span>.Builder(<span class="hljs-built_in">this</span>);
+        NotificationCompat.<span class="hljs-type">BigPictureStyle</span> <span class="hljs-variable">style</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NotificationCompat</span>.BigPictureStyle();
+        <span class="hljs-type">Bitmap</span> <span class="hljs-variable">bm1</span> <span class="hljs-operator">=</span> BitmapFactory.decodeResource(getResources(), R.mipmap.jinniu);
+        style.bigLargeIcon(bm1);
+        style.setBigContentTitle(<span class="hljs-string">"美图来袭....."</span>);
+        style.setSummaryText(<span class="hljs-string">"每日壁纸更新更多内容，点击查看"</span>);
+        builder.setStyle(style);
+        builder.setShowWhen(<span class="hljs-literal">true</span>);
         <span class="hljs-comment">//必须设置小图标</span>
-        builder.set<span class="hljs-constructor">SmallIcon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">ib_luck_normal</span>)</span>;
+        builder.setSmallIcon(R.mipmap.ib_luck_normal);
         <span class="hljs-keyword">if</span> (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.O) {
-            builder.set<span class="hljs-constructor">ChannelId(CHANNEL_ID)</span>;
+            builder.setChannelId(CHANNEL_ID);
         }
-        Notification nf = builder.build<span class="hljs-literal">()</span>;
+        <span class="hljs-type">Notification</span> <span class="hljs-variable">nf</span> <span class="hljs-operator">=</span> builder.build();
         manager.notify(<span class="hljs-number">2</span>, nf);
     }
 </code></pre>
 <h3>发送多条消息通知</h3>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> void send<span class="hljs-constructor">ListNotify()</span> {
+<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendListNotify</span><span class="hljs-params">()</span> {
         <span class="hljs-comment">//        创建通知的装饰对象</span>
-        Notification.Builder builder = null;
+        Notification.<span class="hljs-type">Builder</span> <span class="hljs-variable">builder</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;
         <span class="hljs-keyword">if</span> (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.O) {
-            builder = <span class="hljs-keyword">new</span> Notification.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>, CHANNEL_ID)</span>;
+            builder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Notification</span>.Builder(<span class="hljs-built_in">this</span>, CHANNEL_ID);
         }
         <span class="hljs-keyword">else</span>{
-            builder = <span class="hljs-keyword">new</span> Notification.<span class="hljs-constructor">Builder(<span class="hljs-params">this</span>)</span>;
+            builder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Notification</span>.Builder(<span class="hljs-built_in">this</span>);
         }
-        builder.set<span class="hljs-constructor">SmallIcon(R.<span class="hljs-params">mipmap</span>.<span class="hljs-params">ic_launcher</span>)</span>;
-        builder.set<span class="hljs-constructor">ContentTitle(<span class="hljs-string">"今日卫健委发出通告"</span>)</span>;
-        Notification.InboxStyle style = <span class="hljs-keyword">new</span> Notification.<span class="hljs-constructor">InboxStyle()</span>;
-        style.add<span class="hljs-constructor">Line(<span class="hljs-string">"取消健康码"</span>)</span>;
-        style.add<span class="hljs-constructor">Line(<span class="hljs-string">"取消隔离"</span>)</span>;
-        style.add<span class="hljs-constructor">Line(<span class="hljs-string">"取消核酸检测"</span>)</span>;
-        builder.set<span class="hljs-constructor">Style(<span class="hljs-params">style</span>)</span>;
-        Notification notify = builder.build<span class="hljs-literal">()</span>;
+        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setContentTitle(<span class="hljs-string">"今日卫健委发出通告"</span>);
+        Notification.<span class="hljs-type">InboxStyle</span> <span class="hljs-variable">style</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Notification</span>.InboxStyle();
+        style.addLine(<span class="hljs-string">"取消健康码"</span>);
+        style.addLine(<span class="hljs-string">"取消隔离"</span>);
+        style.addLine(<span class="hljs-string">"取消核酸检测"</span>);
+        builder.setStyle(style);
+        <span class="hljs-type">Notification</span> <span class="hljs-variable">notify</span> <span class="hljs-operator">=</span> builder.build();
         manager.notify(<span class="hljs-number">3</span>, notify);
     }
 </code></pre>
 </body></html>
   a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月11日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Thread"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"AsyncTask"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Notification"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%8811%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月11日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
