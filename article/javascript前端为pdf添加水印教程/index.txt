@@ -1,0 +1,352 @@
+1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/c6771dd8c665257b.css",{"as":"style"}]
+0:["C5ijfSUZW0dcUB94NoRxf",[[["",{"children":["article",{"children":[["id","javascript%E5%89%8D%E7%AB%AF%E4%B8%BApdf%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%95%99%E7%A8%8B","d"],{"children":["__PAGE__?{\"id\":\"javascript前端为pdf添加水印教程\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c6771dd8c665257b.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-9a49a66100e46c59.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-1c7fcb8e096f7f78.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_e66fe9","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","javascript%E5%89%8D%E7%AB%AF%E4%B8%BApdf%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%95%99%E7%A8%8B","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"javascript前端为pdf添加水印教程\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","javascript%E5%89%8D%E7%AB%AF%E4%B8%BApdf%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%95%99%E7%A8%8B","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"javascript前端为pdf添加水印教程 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-304029f251e18a25.js","231:static/chunks/9316e0b3-06fce1d7b5082435.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-a175b8ff92d72522.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+10:T6ad0,
+    <p class="time">发布时间：<time datetime="24 October, 2023">2023-10-24 11:18:29</time></p>
+    <p class="words">本文字数：1,565 字       阅读完需：约 4 分钟</p>
+    <html><head></head><body><blockquote>
+<p><code>场景</code>：前端下载 pdf 文件的时候，需要加上水印，再反给用户下载<br>
+<code>用到的库</code>：<code>pdf-<span class="hljs-class"><span class="hljs-keyword">lib</span></span></code> (文档) <code><span class="hljs-variable">@pdf</span>-<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">fontkit</span></span></code><br>
+<code>字体</code>：github<br>
+<code>方案目标</code>：logo图 + 中文 + 英文 + 数字 =&gt; 透明水印 ​</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>​</p>
+</blockquote>
+<blockquote>
+<p>首先安装 <code>pdf-<span class="hljs-class"><span class="hljs-keyword">lib</span></span></code>: 它是前端创建和修改 PDF 文档的一个工具（默认_<code>不支持中文</code>_，需要加载自定义字体文件）</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>npm install --save pdf-lib</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>安装 <code><span class="hljs-variable">@pdf</span>-<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">fontkit</span></span></code>：为 pdf-lib 加载自定义字体的工具</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>npm install --save @pdf-lib/fontkit</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>​</p>
+</blockquote>
+<blockquote>
+<p>没有使用<code>pdf<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code>的原因是因为：</p>
+</blockquote>
+<ol>
+<li>会将 PDF 转成图片，无法选中</li>
+<li>操作后 PDF 会变模糊</li>
+<li>文档体积会变得异常大</li>
+</ol>
+<blockquote>
+<p>​</p>
+</blockquote>
+<hr>
+<h3>实现：</h3>
+<blockquote>
+<p>首先我们的目标是在 PDF 文档中，加上一个带 logo 的，同时包含中文、英文、数字字符的透明水印，所以我们先来尝试着从本地加载一个文件，一步步搭建。</p>
+</blockquote>
+<h4>1. 获取 PDF 文件</h4>
+<blockquote>
+<p>本地：</p>
+</blockquote>
+<pre><code>// &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="file" <span class="hljs-type">name</span>="pdf" id="pdf-input"&gt;
+let input = document.querySelector(<span class="hljs-string">'#pdf-input'</span>);
+<span class="hljs-keyword">input</span>.onchange = onFileUpload;
+// 上传文件
+<span class="hljs-keyword">function</span> onFileUpload(e) {
+  let event = <span class="hljs-keyword">window</span>.event || e;
+  let file = event.target.files[<span class="hljs-number">0</span>];
+}
+</code></pre>
+<blockquote>
+<p>除了本地上传文件之外，我们也可以通过网络请求一个 PDF 回来，注意响应格式为 **blob **。 网络：</p>
+</blockquote>
+<pre><code><span class="hljs-keyword">var</span> x = <span class="hljs-keyword">new</span> XMLHttpRequest();
+x.open(<span class="hljs-string">"GET"</span>, url, <span class="hljs-literal">true</span>);
+x.responseType = <span class="hljs-string">'blob'</span>;
+x.onload = <span class="hljs-keyword">function</span> (e) {
+  <span class="hljs-keyword">let</span> file = x.response;
+}
+x.send();
+<span class="hljs-regexp">// 获取直接转成 pdf-lib 需要的 arrayBuffer
+//</span> <span class="hljs-keyword">const</span> fileBytes = <span class="hljs-keyword">await</span> fetch(url).<span class="hljs-keyword">then</span>(res =&gt; res.arrayBuffer())
+</code></pre>
+<h4>2. 文字水印</h4>
+<blockquote>
+<p>在获取到 PDF 文件数据之后，我们通过 pdf-lib 提供的接口来对文档做修改。</p>
+</blockquote>
+<pre><code><span class="hljs-comment">// 修改文档</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">modifyPdf</span>(<span class="hljs-params">file</span>) {
+  <span class="hljs-keyword">const</span> pdfDoc = <span class="hljs-keyword">await</span> <span class="hljs-title class_">PDFDocument</span>.<span class="hljs-title function_">load</span>(<span class="hljs-keyword">await</span> file.<span class="hljs-title function_">arrayBuffer</span>());
+  <span class="hljs-comment">// 加载内置字体</span>
+  <span class="hljs-keyword">const</span> helveticaFont = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">embedFont</span>(<span class="hljs-title class_">StandardFonts</span>.<span class="hljs-property">Courier</span>);
+  <span class="hljs-comment">// 获取文档所有页</span>
+  <span class="hljs-keyword">const</span> pages = pdfDoc.<span class="hljs-title function_">getPages</span>();
+  <span class="hljs-comment">// 文字渲染配置</span>
+  <span class="hljs-keyword">const</span> drawTextParams = {
+    <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">50</span>,
+    <span class="hljs-attr">font</span>: helveticaFont,
+    <span class="hljs-attr">size</span>: <span class="hljs-number">12</span>,
+    <span class="hljs-attr">color</span>: <span class="hljs-title function_">rgb</span>(<span class="hljs-number">08</span>, <span class="hljs-number">08</span>, <span class="hljs-number">2</span>),
+    <span class="hljs-attr">rotate</span>: <span class="hljs-title function_">degrees</span>(<span class="hljs-number">15</span>),
+    <span class="hljs-attr">opacity</span>: <span class="hljs-number">5</span>,
+  };
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; pages.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">const</span> page = pages[i];
+    <span class="hljs-comment">// 获取当前页宽高</span>
+    <span class="hljs-keyword">const</span> { width, height } = page.<span class="hljs-title function_">getSize</span>();
+    <span class="hljs-comment">// 要渲染的文字内容</span>
+    <span class="hljs-keyword">let</span> text = <span class="hljs-string">"water 121314"</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> ix = <span class="hljs-number">1</span>; ix &lt; width; ix += <span class="hljs-number">230</span>) { <span class="hljs-comment">// 水印横向间隔</span>
+      <span class="hljs-keyword">let</span> lineNum = <span class="hljs-number">0</span>; 
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> iy = <span class="hljs-number">50</span>; iy &lt;= height; iy += <span class="hljs-number">110</span>) { <span class="hljs-comment">// 水印纵向间隔</span>
+        lineNum++;
+
+        page.<span class="hljs-title function_">drawText</span>(text, {
+          <span class="hljs-attr">x</span>: lineNum &amp; <span class="hljs-number">1</span> ? ix : ix + <span class="hljs-number">70</span>,
+          <span class="hljs-attr">y</span>: iy,
+          ...drawTextParams,
+        });
+      }
+    }
+  }
+</code></pre>
+<blockquote>
+<p>来看一下现在的效果 <img src="imgabc1.webp" alt="image.png"></p>
+</blockquote>
+<h4>3. 加载本地 logo</h4>
+<blockquote>
+<p>在加载图片这块，我们最终想要的其实是图片的 Blob 数据，获取网图的话，这里就不做介绍了，下边主要着重介绍一下，如何通过 js 从本地加载一张图。 先贴上代码：</p>
+</blockquote>
+<pre><code><span class="hljs-comment">//  加载 logo blob 数据</span>
+~(<span class="hljs-keyword">function</span> <span class="hljs-title function_">loadImg</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">let</span> img = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Image</span>();
+  img.<span class="hljs-property">src</span> = <span class="hljs-string">"./water-logo.png"</span>;
+  <span class="hljs-keyword">let</span> canvas = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"canvas"</span>);
+  <span class="hljs-keyword">let</span> ctx = canvas.<span class="hljs-title function_">getContext</span>(<span class="hljs-string">"2d"</span>);
+  img.<span class="hljs-property">crossOrigin</span> = <span class="hljs-string">""</span>;
+  img.<span class="hljs-property">onload</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    canvas.<span class="hljs-property">width</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">width</span>;
+    canvas.<span class="hljs-property">height</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">height</span>;
+    ctx.<span class="hljs-property">fillStyle</span> = <span class="hljs-string">"rgba(255, 255, 255, 1)"</span>; 
+    ctx.<span class="hljs-title function_">fillRect</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.<span class="hljs-property">width</span>, canvas.<span class="hljs-property">height</span>);
+    ctx.<span class="hljs-title function_">drawImage</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">width</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">height</span>);
+    canvas.<span class="hljs-title function_">toBlob</span>(
+      <span class="hljs-keyword">function</span> (<span class="hljs-params">blob</span>) {
+        imgBytes = blob;  <span class="hljs-comment">// 保存数据到 imgBytes 中</span>
+      },
+      <span class="hljs-string">"image/jpeg"</span>,
+      <span class="hljs-number">1</span>
+    ); <span class="hljs-comment">// 参数为输出质量</span>
+  };
+})();
+</code></pre>
+<blockquote>
+<p>首先通过一个自执行函数，在初期就自动加载 logo 数据，当然我们也可以根据实际情况做相应的优化。 整体的思路就是，首先通过 image 元素来加载本地资源，再将 img 渲染到 canvas 中，再通过 canvas 的 toBlob 来得到我们想要的数据。 ​</p>
+</blockquote>
+<blockquote>
+<p>在这块我们需要注意两行代码：</p>
+</blockquote>
+<pre><code><span class="hljs-attribute">ctx</span>.fillStyle = <span class="hljs-string">"rgba(255, 255, 255, 1)"</span>; 
+<span class="hljs-attribute">ctx</span>.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.width, canvas.height);
+</code></pre>
+<blockquote>
+<p>如果我们不加这两行代码的话，同时本地图片还是透明图，最后我们得到的数据将会是一个黑色的方块。所以我们需要在 drawImage 之前，用白色填充一下 canvas 。 ​</p>
+</blockquote>
+<h4>4. 渲染 logo</h4>
+<blockquote>
+<p>在渲染 logo 图片到 PDF 文档上之前，我们还需要和加载字体类似的，把图片数据也挂载到 pdf-lib 创建的文档对象上（pdfDoc），其中 imgBytes 是我们已经加载好的图片数据。</p>
+</blockquote>
+<pre><code><span class="hljs-keyword">let</span> _img = <span class="hljs-keyword">await</span> pdfDoc.embedJpg(<span class="hljs-keyword">await</span> imgBytes.arrayBuffer());
+</code></pre>
+<blockquote>
+<p>挂载完之后，做一些个性化的配置</p>
+</blockquote>
+<pre><code>page.drawImage(_img, <span class="hljs-punctuation">{</span>
+<span class="hljs-symbol">  x:</span> lineNum &amp; <span class="hljs-number">1</span> ? ix - <span class="hljs-number">18</span> : ix + <span class="hljs-number">70</span> - <span class="hljs-number">18</span>, <span class="hljs-comment">// 奇偶行的坐标</span>
+<span class="hljs-symbol">  y:</span> iy - <span class="hljs-number">8</span>,
+<span class="hljs-symbol">  width:</span> <span class="hljs-number">15</span>,
+<span class="hljs-symbol">  height:</span> <span class="hljs-number">15</span>,
+<span class="hljs-symbol">  opacity:</span> <span class="hljs-number">5</span>,
+<span class="hljs-punctuation">}</span>)<span class="hljs-punctuation">;</span>
+</code></pre>
+<h4>5. 查看文档</h4>
+<blockquote>
+<p>这一步的思路就是先通过 pdf-lib 提供的 save 方法，得到最后的文档数据，将数据转成 Blob，最后通过 a 标签打开查看。</p>
+</blockquote>
+<pre><code><span class="hljs-comment">// 保存文档 Serialize the PDFDocument to bytes (a Uint8Array)</span>
+  <span class="hljs-keyword">const</span> pdfBytes = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">save</span>();
+  <span class="hljs-keyword">let</span> blobData = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Blob</span>([pdfBytes], { <span class="hljs-attr">type</span>: <span class="hljs-string">"application/pdf;Base64"</span> });
+  <span class="hljs-comment">// 新标签页预览</span>
+  <span class="hljs-keyword">let</span> a = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"a"</span>);
+  a.<span class="hljs-property">target</span> = <span class="hljs-string">"_blank"</span>;
+  a.<span class="hljs-property">href</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">URL</span>.<span class="hljs-title function_">createObjectURL</span>(blobData);
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(a);
+  a.<span class="hljs-title function_">click</span>();
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeChild</span>(a);
+</code></pre>
+<blockquote>
+<p>到目前的效果 <img src="imgabc2.webp" alt="image.png"></p>
+</blockquote>
+<h4>6. 中文字体</h4>
+<blockquote>
+<p>由于默认的 pdf-lib 是不支持渲染中文的</p>
+</blockquote>
+<pre><code>Uncaught (<span class="hljs-keyword">in</span> promise) <span class="hljs-keyword">Error</span>: WinAnsi cannot <span class="hljs-keyword">encode</span> <span class="hljs-string">"水"</span> (0x6c34)
+</code></pre>
+<p><img src="imgabc3.webp" alt="image.png"></p>
+<blockquote>
+<p>所以我们需要加载自定义字体，但是常规的字体文件都会很大，为了使用，需要将字体文件压缩一下，压缩好的字体在文档头部，包含空格和基础的3500字符。 压缩字体用到的是 <code><span class="hljs-attribute">gulp-fontmin</span></code> 命令行工具，不是客户端。具体压缩方法，可自行搜索。 ​</p>
+</blockquote>
+<blockquote>
+<p>​</p>
+</blockquote>
+<blockquote>
+<p>在拿到字体之后（ttf文件），将字体文件上传到网上，再拿到其 arrayBuffer 数据。之后再结合 pdf-lib 的文档对象，对字体进行注册和挂载。同时记得将文字渲染的字体配置改过来。</p>
+</blockquote>
+<pre><code><span class="hljs-comment">// 加载自定义字体</span>
+<span class="hljs-keyword">const</span> url = <span class="hljs-string">'https://xxx.xxx/xxxx'</span>;
+<span class="hljs-keyword">const</span> fontBytes = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.<span class="hljs-title function_">arrayBuffer</span>());
+<span class="hljs-comment">// 自定义字体挂载</span>
+pdfDoc.<span class="hljs-title function_">registerFontkit</span>(fontkit)
+<span class="hljs-keyword">const</span> customFont = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">embedFont</span>(fontBytes)
+<span class="hljs-comment">// 文字渲染配置</span>
+  <span class="hljs-keyword">const</span> drawTextParams = {
+    <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">50</span>,
+    <span class="hljs-attr">font</span>: customFont,  <span class="hljs-comment">// 改字体配置</span>
+    <span class="hljs-attr">size</span>: <span class="hljs-number">12</span>,
+    <span class="hljs-attr">color</span>: <span class="hljs-title function_">rgb</span>(<span class="hljs-number">08</span>, <span class="hljs-number">08</span>, <span class="hljs-number">2</span>),
+    <span class="hljs-attr">rotate</span>: <span class="hljs-title function_">degrees</span>(<span class="hljs-number">15</span>),
+    <span class="hljs-attr">opacity</span>: <span class="hljs-number">5</span>,
+  };
+</code></pre>
+<blockquote>
+<p>所以到现在的效果 <img src="imgabc4.webp" alt="image.png"></p>
+</blockquote>
+<h4>7. 完整代码</h4>
+<pre><code><span class="hljs-keyword">import</span> { <span class="hljs-title class_">PDFDocument</span>, <span class="hljs-title class_">StandardFonts</span>, rgb, degrees } <span class="hljs-keyword">from</span> <span class="hljs-string">"pdf-lib"</span>;
+<span class="hljs-keyword">import</span> fontkit <span class="hljs-keyword">from</span> <span class="hljs-string">"@pdf-lib/fontkit"</span>;
+<span class="hljs-keyword">let</span> input = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">"#pdf-input"</span>);
+<span class="hljs-keyword">let</span> imgBytes;
+input.<span class="hljs-property">onchange</span> = onFileUpload;
+<span class="hljs-comment">// 上传文件</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">onFileUpload</span>(<span class="hljs-params">e</span>) {
+  <span class="hljs-keyword">let</span> event = <span class="hljs-variable language_">window</span>.<span class="hljs-property">event</span> || e;
+  <span class="hljs-keyword">let</span> file = event.<span class="hljs-property">target</span>.<span class="hljs-property">files</span>[<span class="hljs-number">0</span>];
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(file);
+  <span class="hljs-keyword">if</span> (file.<span class="hljs-property">size</span>) {
+    <span class="hljs-title function_">modifyPdf</span>(file);
+  }
+}
+<span class="hljs-comment">// 修改文档</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">modifyPdf</span>(<span class="hljs-params">file</span>) {
+  <span class="hljs-keyword">const</span> pdfDoc = <span class="hljs-keyword">await</span> <span class="hljs-title class_">PDFDocument</span>.<span class="hljs-title function_">load</span>(<span class="hljs-keyword">await</span> file.<span class="hljs-title function_">arrayBuffer</span>());
+  <span class="hljs-comment">// 加载内置字体</span>
+  <span class="hljs-keyword">const</span> helveticaFont = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">embedFont</span>(<span class="hljs-title class_">StandardFonts</span>.<span class="hljs-property">Courier</span>);
+  <span class="hljs-comment">// 加载自定义字体</span>
+  <span class="hljs-keyword">const</span> url = <span class="hljs-string">'pttps://xxx.xxx/xxx'</span>;
+  <span class="hljs-keyword">const</span> fontBytes = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> res.<span class="hljs-title function_">arrayBuffer</span>());
+  <span class="hljs-comment">// 自定义字体挂载</span>
+  pdfDoc.<span class="hljs-title function_">registerFontkit</span>(fontkit)
+  <span class="hljs-keyword">const</span> customFont = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">embedFont</span>(fontBytes)
+  <span class="hljs-comment">// 获取文档所有页</span>
+  <span class="hljs-keyword">const</span> pages = pdfDoc.<span class="hljs-title function_">getPages</span>();
+  <span class="hljs-comment">// 文字渲染配置</span>
+  <span class="hljs-keyword">const</span> drawTextParams = {
+    <span class="hljs-attr">lineHeight</span>: <span class="hljs-number">50</span>,
+    <span class="hljs-attr">font</span>: customFont,
+    <span class="hljs-attr">size</span>: <span class="hljs-number">12</span>,
+    <span class="hljs-attr">color</span>: <span class="hljs-title function_">rgb</span>(<span class="hljs-number">08</span>, <span class="hljs-number">08</span>, <span class="hljs-number">2</span>),
+    <span class="hljs-attr">rotate</span>: <span class="hljs-title function_">degrees</span>(<span class="hljs-number">15</span>),
+    <span class="hljs-attr">opacity</span>: <span class="hljs-number">5</span>,
+  };
+  <span class="hljs-keyword">let</span> _img = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">embedJpg</span>(<span class="hljs-keyword">await</span> imgBytes.<span class="hljs-title function_">arrayBuffer</span>());
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; pages.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-keyword">const</span> page = pages[i];
+    <span class="hljs-comment">// 获取当前页宽高</span>
+    <span class="hljs-keyword">const</span> { width, height } = page.<span class="hljs-title function_">getSize</span>();
+    <span class="hljs-comment">// 要渲染的文字内容</span>
+    <span class="hljs-keyword">let</span> text = <span class="hljs-string">"水印 water 121314"</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> ix = <span class="hljs-number">1</span>; ix &lt; width; ix += <span class="hljs-number">230</span>) { <span class="hljs-comment">// 水印横向间隔</span>
+      <span class="hljs-keyword">let</span> lineNum = <span class="hljs-number">0</span>; 
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> iy = <span class="hljs-number">50</span>; iy &lt;= height; iy += <span class="hljs-number">110</span>) { <span class="hljs-comment">// 水印纵向间隔</span>
+        lineNum++;
+        page.<span class="hljs-title function_">drawImage</span>(_img, {
+          <span class="hljs-attr">x</span>: lineNum &amp; <span class="hljs-number">1</span> ? ix - <span class="hljs-number">18</span> : ix + <span class="hljs-number">70</span> - <span class="hljs-number">18</span>,
+          <span class="hljs-attr">y</span>: iy - <span class="hljs-number">8</span>,
+          <span class="hljs-attr">width</span>: <span class="hljs-number">15</span>,
+          <span class="hljs-attr">height</span>: <span class="hljs-number">15</span>,
+          <span class="hljs-attr">opacity</span>: <span class="hljs-number">7</span>,
+        });
+        page.<span class="hljs-title function_">drawText</span>(text, {
+          <span class="hljs-attr">x</span>: lineNum &amp; <span class="hljs-number">1</span> ? ix : ix + <span class="hljs-number">70</span>,
+          <span class="hljs-attr">y</span>: iy,
+          ...drawTextParams,
+        });
+      }
+    }
+  }
+  <span class="hljs-comment">// 保存文档 Serialize the PDFDocument to bytes (a Uint8Array)</span>
+  <span class="hljs-keyword">const</span> pdfBytes = <span class="hljs-keyword">await</span> pdfDoc.<span class="hljs-title function_">save</span>();
+  <span class="hljs-keyword">let</span> blobData = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Blob</span>([pdfBytes], { <span class="hljs-attr">type</span>: <span class="hljs-string">"application/pdf;Base64"</span> });
+  <span class="hljs-comment">// 新标签页预览</span>
+  <span class="hljs-keyword">let</span> a = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"a"</span>);
+  a.<span class="hljs-property">target</span> = <span class="hljs-string">"_blank"</span>;
+  a.<span class="hljs-property">href</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">URL</span>.<span class="hljs-title function_">createObjectURL</span>(blobData);
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(a);
+  a.<span class="hljs-title function_">click</span>();
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeChild</span>(a);
+}
+<span class="hljs-comment">//  加载 logo blob 数据</span>
+~(<span class="hljs-keyword">function</span> <span class="hljs-title function_">loadImg</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">let</span> img = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Image</span>();
+  img.<span class="hljs-property">src</span> = <span class="hljs-string">"./water-logo.png"</span>;
+  <span class="hljs-keyword">let</span> canvas = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"canvas"</span>);
+  <span class="hljs-keyword">let</span> ctx = canvas.<span class="hljs-title function_">getContext</span>(<span class="hljs-string">"2d"</span>);
+  img.<span class="hljs-property">crossOrigin</span> = <span class="hljs-string">""</span>;
+  img.<span class="hljs-property">onload</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+    canvas.<span class="hljs-property">width</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">width</span>;
+    canvas.<span class="hljs-property">height</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">height</span>;
+    ctx.<span class="hljs-property">fillStyle</span> = <span class="hljs-string">"rgba(255, 255, 255, 1)"</span>;
+    ctx.<span class="hljs-title function_">fillRect</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.<span class="hljs-property">width</span>, canvas.<span class="hljs-property">height</span>);
+    ctx.<span class="hljs-title function_">drawImage</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">width</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">height</span>);
+    canvas.<span class="hljs-title function_">toBlob</span>(
+      <span class="hljs-keyword">function</span> (<span class="hljs-params">blob</span>) {
+        imgBytes = blob;
+      },
+      <span class="hljs-string">"image/jpeg"</span>,
+      <span class="hljs-number">1</span>
+    ); <span class="hljs-comment">// 参数为输出质量</span>
+  };
+})();
+</code></pre>
+<h4>8. 不完美的地方</h4>
+<blockquote>
+<p>当前方案虽然可以实现在前端为 PDF 加水印，但是由于时间关系，有些瑕疵还需要再进一步探索解决 💪：</p>
+</blockquote>
+<ol>
+<li>水印是浮在原文本之上的，可以被选中</li>
+<li>logo 的背景虽然不注意看不到，但是实际上还未完全透明 🤔</li>
+</ol>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"javascript前端为pdf添加水印教程"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/前端技术/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"javascript"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"前端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"pdf"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"pdfLib"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"font"}]]]}],["$","$Lf",null,{"path":"javascript%E5%89%8D%E7%AB%AF%E4%B8%BApdf%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"javascript%E5%89%8D%E7%AB%AF%E4%B8%BApdf%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
