@@ -9,9 +9,9 @@
             <link>https://www.timeshike.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 24 Oct 2023 03:28:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Dec 2023 06:30:24 GMT</lastBuildDate>
         <atom:link href="https://www.timeshike.com/atom.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 24 Oct 2023 03:28:12 GMT</pubDate>
+        <pubDate>Tue, 12 Dec 2023 06:30:24 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023, Ibas]]></copyright>
         <item>
             <title><![CDATA[10月10日MongoDB学习笔记]]></title>
@@ -204,6 +204,12 @@
             <link>https://www.timeshike.com/article/JSONField注解的应用</link>
             <guid isPermaLink="true">https://www.timeshike.com/article/JSONField注解的应用</guid>
             <pubDate>Mon, 12 Sep 2022 14:25:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[JS自定义debounce函数实现防抖]]></title>
+            <link>https://www.timeshike.com/article/JS自定义debounce函数实现防抖</link>
+            <guid isPermaLink="true">https://www.timeshike.com/article/JS自定义debounce函数实现防抖</guid>
+            <pubDate>Tue, 12 Dec 2023 14:20:29 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Servlet3.0使用getPart/getParts实现单文件和多文件上传]]></title>
