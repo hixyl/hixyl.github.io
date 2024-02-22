@@ -1,0 +1,131 @@
+1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
+0:["m9Cm4ckvT3rvlvlKp1xGB",[[["",{"children":["article",{"children":[["id","%E5%9F%BA%E4%BA%8EReact%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89ToolTips%E6%B5%AE%E5%B1%82%E7%BB%84%E4%BB%B6%E7%BC%96%E5%86%99","d"],{"children":["__PAGE__?{\"id\":\"基于React的自定义ToolTips浮层组件编写\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
+6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
+7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
+8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
+b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
+3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","%E5%9F%BA%E4%BA%8EReact%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89ToolTips%E6%B5%AE%E5%B1%82%E7%BB%84%E4%BB%B6%E7%BC%96%E5%86%99","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"基于React的自定义ToolTips浮层组件编写\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","%E5%9F%BA%E4%BA%8EReact%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89ToolTips%E6%B5%AE%E5%B1%82%E7%BB%84%E4%BB%B6%E7%BC%96%E5%86%99","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"基于React的自定义ToolTips浮层组件编写 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
+13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
+10:T30d3,
+    <p class="time">发布时间：<time datetime="22 February, 2024">2024-02-22 19:14:00</time></p>
+    <p class="words">本文字数：815 字       阅读完需：约 2 分钟</p>
+    <html><head></head><body><h2>基本思路</h2>
+<p>本文要实现自定义浮层组件，基于React框架实现。目标是实现类似于一个按钮或者图标，鼠标hover上去后，弹出一个提示浮层，位置在图标附近。同时鼠标移动到浮层后，浮层不会消失。鼠标移开图标或浮层，浮层消失。</p>
+<h2>实现步骤</h2>
+<h3>借助<code>ReactDOM.createPortal<span class="hljs-comment">()</span></code></h3>
+<p>浮层一定要显示在所有元素的最上面，当我们使用各种组件库时，浮层不一定能建立在最上面。所以，要求浮层的dom基于<code>document.<span class="hljs-keyword">body</span></code>，同时<code>z-<span class="hljs-keyword">index</span></code>设置为足够大。</p>
+<p>ReactDOM.createPortal 是 React 提供的一个 API，它允许你把子节点渲染到存在于父组件之外的 DOM 节点上。这个方法的签名如下：</p>
+<p><code>ReactDOM.createPortal(child, <span class="hljs-built_in">container</span>);</code></p>
+<p>其中 child 是任何可以渲染的 React 子元素，例如一个元素、字符串或碎片（fragment），而 container 是一个 DOM 元素。</p>
+<p>createPortal 的主要用处包括：</p>
+<ol>
+<li>
+<p>事件冒泡：使用 createPortal 渲染的子组件会在 DOM 树上处于不同的位置，但从 React 的角度来看，它仍然存在于 React 组件树中原来的位置，这意味着事件可以正常冒泡到 React 父组件，尽管这些元素在 DOM 层级结构中并不直接相连。</p>
+</li>
+<li>
+<p>避免 CSS 约束：在某些情况下，你可能不希望子组件受到父组件 CSS 的影响，例如在一个设置了overflow: hidden或z-index的父元素内部渲染一个模态对话框（modal）或工具提示（tooltip）。通过使用 createPortal，模态或工具提示可以渲染到 DOM 树中的其他位置，例如直接渲染到document.body下，从而避免了这些 CSS 约束。</p>
+</li>
+<li>
+<p>视觉上的“脱离”：当你需要组件在视觉上位于页面层次结构之外时（如模态框、通知、悬浮卡片等），createPortal 提供了一种将组件结构上与视觉结构分离的方法。这可能是因为这些组件需要在页面上占据最顶层，以避免被其他元素遮挡。</p>
+</li>
+</ol>
+<p>使用的代码样例如下：</p>
+<pre><code class="language-javascript">    <span class="hljs-keyword">const</span> toolTip = isShow &amp;&amp; <span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">createPortal</span>(<span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.card}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">position:</span> '<span class="hljs-attr">absolute</span>', <span class="hljs-attr">zIndex:</span> <span class="hljs-attr">9999</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>, <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>);
+</code></pre>
+<h3>浮层定位的计算</h3>
+<p>直接利用ref api 获取 dom元素的定位即可。具体代码如下：</p>
+<pre><code class="language-javascript">    <span class="hljs-keyword">const</span> [isShow, setIsShow] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+    <span class="hljs-keyword">const</span> [imgAbsolutePos, setImgAbsolutePos] = <span class="hljs-title function_">useState</span>({});
+    <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">const</span> <span class="hljs-title function_">getImgAbsolutePosition</span> = (<span class="hljs-params"></span>) =&gt; {
+            <span class="hljs-keyword">const</span> imgDom = imgRef.<span class="hljs-property">current</span>;
+            <span class="hljs-keyword">const</span> imgRect = imgDom.<span class="hljs-title function_">getBoundingClientRect</span>();
+            <span class="hljs-keyword">return</span> {
+                <span class="hljs-attr">left</span>: imgRect.<span class="hljs-property">left</span> + imgRect.<span class="hljs-property">width</span> / <span class="hljs-number">2</span>,
+                <span class="hljs-attr">top</span>: imgRect.<span class="hljs-property">top</span> + imgRect.<span class="hljs-property">height</span> / <span class="hljs-number">2</span>
+            }
+        }
+        <span class="hljs-keyword">const</span> imgAbsolutePos = <span class="hljs-title function_">getImgAbsolutePosition</span>();
+        <span class="hljs-title function_">setImgAbsolutePos</span>(imgAbsolutePos);
+    }, [isShow]);
+     <span class="hljs-keyword">const</span> toolTip = isShow &amp;&amp; <span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">createPortal</span>(<span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.card}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">position:</span> '<span class="hljs-attr">absolute</span>', <span class="hljs-attr">zIndex:</span> <span class="hljs-attr">9999</span>, <span class="hljs-attr">left:</span> <span class="hljs-attr">imgAbsolutePos.left</span> <span class="hljs-attr">-</span> <span class="hljs-attr">45</span>, <span class="hljs-attr">top:</span> <span class="hljs-attr">imgAbsolutePos.top</span> + <span class="hljs-attr">20</span> }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>, <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>);
+</code></pre>
+<p>其中left和top值可以根据实际情况微调位置。</p>
+<h3>鼠标hover浮层显示</h3>
+<p>要实现这个功能，只需要<code><span class="hljs-attribute">onMouseEnter</span></code> <code><span class="hljs-attribute">onMouseLeave</span></code>这两个api即可。但是要实现鼠标移动到浮层后，浮层不会消失。鼠标移开图标或浮层，浮层消失就比较困难了。我的实现思路是借助<code>setTimeout</code>延时器，给500ms的缓冲。</p>
+<h2>完整的代码如下</h2>
+<pre><code class="language-javascript">
+<span class="hljs-comment">/**
+ * 自定义提示浮动块
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">CusToolTip</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> imgRef = <span class="hljs-title function_">useRef</span>(<span class="hljs-literal">null</span>);
+    <span class="hljs-keyword">const</span> [isShow, setIsShow] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+    <span class="hljs-keyword">const</span> [imgAbsolutePos, setImgAbsolutePos] = <span class="hljs-title function_">useState</span>({});
+    <span class="hljs-keyword">let</span> mouseInCard = <span class="hljs-literal">false</span>
+    <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">const</span> <span class="hljs-title function_">getImgAbsolutePosition</span> = (<span class="hljs-params"></span>) =&gt; {
+            <span class="hljs-keyword">const</span> imgDom = imgRef.<span class="hljs-property">current</span>;
+            <span class="hljs-keyword">const</span> imgRect = imgDom.<span class="hljs-title function_">getBoundingClientRect</span>();
+            <span class="hljs-keyword">return</span> {
+                <span class="hljs-attr">left</span>: imgRect.<span class="hljs-property">left</span> + imgRect.<span class="hljs-property">width</span> / <span class="hljs-number">2</span>,
+                <span class="hljs-attr">top</span>: imgRect.<span class="hljs-property">top</span> + imgRect.<span class="hljs-property">height</span> / <span class="hljs-number">2</span>
+            }
+        }
+        <span class="hljs-keyword">const</span> imgAbsolutePos = <span class="hljs-title function_">getImgAbsolutePosition</span>();
+        <span class="hljs-title function_">setImgAbsolutePos</span>(imgAbsolutePos);
+    }, [isShow]);
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">onMouseEnterIcon</span> = (<span class="hljs-params"></span>) =&gt; {
+        <span class="hljs-title function_">setIsShow</span>(<span class="hljs-literal">true</span>);
+    }
+
+
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">onMouseLeaveIcon</span> = (<span class="hljs-params"></span>) =&gt; {
+        <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+            <span class="hljs-keyword">if</span> (!mouseInCard) {
+                <span class="hljs-title function_">setIsShow</span>(<span class="hljs-literal">false</span>);
+            }
+        }, <span class="hljs-number">500</span>);
+    }
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">onCardMouseLeave</span> = (<span class="hljs-params"></span>) =&gt; {
+            mouseInCard = <span class="hljs-literal">false</span>
+            <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+                <span class="hljs-keyword">if</span> (!mouseInCard) {
+                    <span class="hljs-title function_">setIsShow</span>(<span class="hljs-literal">false</span>);
+                }
+            }, <span class="hljs-number">500</span>);
+        }
+    
+
+    <span class="hljs-keyword">const</span> toolTip = isShow &amp;&amp; <span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">createPortal</span>(<span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.card}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">position:</span> '<span class="hljs-attr">absolute</span>', <span class="hljs-attr">left:</span> <span class="hljs-attr">imgAbsolutePos.left</span> <span class="hljs-attr">-</span> <span class="hljs-attr">45</span>, <span class="hljs-attr">top:</span> <span class="hljs-attr">imgAbsolutePos.top</span> + <span class="hljs-attr">20</span> }} <span class="hljs-attr">onMouseEnter</span>=<span class="hljs-string">{()</span> =&gt;</span> mouseInCard = true} onMouseLeave={onCardMouseLeave}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span></span>, <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>);
+    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{imgRef}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.quanwenhao}</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{quanWenhao}</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">onMouseEnter</span>=<span class="hljs-string">{onMouseEnterIcon}</span> <span class="hljs-attr">onMouseLeave</span>=<span class="hljs-string">{onMouseLeaveIcon}</span> /&gt;</span>
+        {toolTip}
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+}
+</code></pre>
+</body></html>
+  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"基于React的自定义ToolTips浮层组件编写"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/前端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"React"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"前端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"ToolTips"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"html"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"javascript"}]]]}],["$","$Lf",null,{"path":"%E5%9F%BA%E4%BA%8EReact%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89ToolTips%E6%B5%AE%E5%B1%82%E7%BB%84%E4%BB%B6%E7%BC%96%E5%86%99","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"%E5%9F%BA%E4%BA%8EReact%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89ToolTips%E6%B5%AE%E5%B1%82%E7%BB%84%E4%BB%B6%E7%BC%96%E5%86%99","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
