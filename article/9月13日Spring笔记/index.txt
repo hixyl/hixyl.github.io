@@ -1,81 +1,77 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月13日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月13日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T3b60,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月13日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T180a,
     <p class="time">发布时间：<time datetime="13 September, 2022">2022-09-13 17:26:57</time></p>
     <p class="words">本文字数：544 字       阅读完需：约 3 分钟</p>
-    <html><head></head><body><h2>项目管理工具 Maven</h2>
+    <h2>项目管理工具 Maven</h2>
 <p>使用Maven 创建的项目，名字叫Maven 项目。Maven 项目分为：Java项目和web项目，注意：Maven项目目录和普通的目录不同</p>
 <p><img src="9_13_01.PNG" alt="alt"></p>
 <p>放在测试目录下的资源，不会被发布到正式的项目中</p>
 <p>pom.xml 解析</p>
-<pre><code class="language-xml"><span class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span>
-         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
-         &lt;!<span class="hljs-attr">--</span> <span class="hljs-attr">xsd</span> <span class="hljs-attr">文件</span>：<span class="hljs-attr">描述文件</span>，<span class="hljs-attr">约束pom.xml格式</span> <span class="hljs-attr">--</span>&gt;</span>
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt; 
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="UTF-8"?>
+&#x3C;project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         &#x3C;!-- xsd 文件：描述文件，约束pom.xml格式 -->
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> 
 
-    <span class="hljs-comment">&lt;!-- model版本为4.0 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- groupId一般为网址倒序 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.zr<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    &#x3C;!-- model版本为4.0 -->
+    &#x3C;modelVersion>4.0.0&#x3C;/modelVersion>
+    &#x3C;!-- groupId一般为网址倒序 -->
+    &#x3C;groupId>com.zr&#x3C;/groupId>
     
-    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mvn-1<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- 版本号：正式发布版本用整数1.0,2.0等，内测版本用小数 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    &#x3C;artifactId>mvn-1&#x3C;/artifactId>
+    &#x3C;!-- 版本号：正式发布版本用整数1.0,2.0等，内测版本用小数 -->
+    &#x3C;version>1.0-SNAPSHOT&#x3C;/version>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span>
-        <span class="hljs-comment">&lt;!-- java版本为8 --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.source</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.source</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.target</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.target</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- 以下添加依赖包 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>4.13.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+    &#x3C;properties>
+        &#x3C;!-- java版本为8 -->
+        &#x3C;maven.compiler.source>8&#x3C;/maven.compiler.source>
+        &#x3C;maven.compiler.target>8&#x3C;/maven.compiler.target>
+    &#x3C;/properties>
+    &#x3C;!-- 以下添加依赖包 -->
+    &#x3C;dependencies>
+        &#x3C;dependency>
+            &#x3C;groupId>junit&#x3C;/groupId>
+            &#x3C;artifactId>junit&#x3C;/artifactId>
+            &#x3C;version>4.13.2&#x3C;/version>
+            &#x3C;scope>test&#x3C;/scope>
+        &#x3C;/dependency>
+    &#x3C;/dependencies>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span>
-</span></code></pre>
+&#x3C;/project>
+</code></pre>
 <h2>junit 单元测试</h2>
 <p>在test文件夹下的测试类中</p>
-<pre><code class="language-java">package com.<span class="hljs-property">faw</span>;
+<pre><code class="language-java">package com.faw;
 
-<span class="hljs-keyword">import</span> org.<span class="hljs-property">junit</span>.<span class="hljs-property">Test</span>;
+import org.junit.Test;
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FawTest</span> {
-    <span class="hljs-comment">// 后置方法</span>
-    <span class="hljs-meta">@After</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">t1</span>(<span class="hljs-params"></span>){
-        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-string">"t1"</span>);
+public class FawTest {
+    // 后置方法
+    @After
+    public void t1(){
+        System.out.println("t1");
     }
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">t2</span>(<span class="hljs-params"></span>){
-        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-string">"t1"</span>);
+    @Test
+    public void t2(){
+        System.out.println("t1");
     }
-    <span class="hljs-comment">// 前置方法</span>
-    <span class="hljs-meta">@Before</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">t3</span>(<span class="hljs-params"></span>){
-        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-string">"t1"</span>);
+    // 前置方法
+    @Before
+    public void t3(){
+        System.out.println("t1");
     }
 }
 </code></pre>
@@ -95,46 +91,46 @@ Spring 实现了使用简单的组件配置组合成一个复杂的应用
 </ol>
 <h2>引入Spring 的方法</h2>
 <p>利用Maven引入相关包<br>
-<code>pom.<span class="hljs-built_in">xml</span></code>文件示例</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span>
-         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
-         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span>
+<code>pom.xml</code>文件示例</p>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="UTF-8"?>
+&#x3C;project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    &#x3C;modelVersion>4.0.0&#x3C;/modelVersion>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.example<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>SpringIOC<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>4.12<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-core<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.3.22<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-beans<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.3.22<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-context<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.3.22<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+    &#x3C;groupId>org.example&#x3C;/groupId>
+    &#x3C;artifactId>SpringIOC&#x3C;/artifactId>
+    &#x3C;version>1.0-SNAPSHOT&#x3C;/version>
+    &#x3C;dependencies>
+        &#x3C;dependency>
+            &#x3C;groupId>junit&#x3C;/groupId>
+            &#x3C;artifactId>junit&#x3C;/artifactId>
+            &#x3C;version>4.12&#x3C;/version>
+            &#x3C;scope>test&#x3C;/scope>
+        &#x3C;/dependency>
+        &#x3C;dependency>
+            &#x3C;groupId>org.springframework&#x3C;/groupId>
+            &#x3C;artifactId>spring-core&#x3C;/artifactId>
+            &#x3C;version>5.3.22&#x3C;/version>
+        &#x3C;/dependency>
+        &#x3C;dependency>
+            &#x3C;groupId>org.springframework&#x3C;/groupId>
+            &#x3C;artifactId>spring-beans&#x3C;/artifactId>
+            &#x3C;version>5.3.22&#x3C;/version>
+        &#x3C;/dependency>
+        &#x3C;dependency>
+            &#x3C;groupId>org.springframework&#x3C;/groupId>
+            &#x3C;artifactId>spring-context&#x3C;/artifactId>
+            &#x3C;version>5.3.22&#x3C;/version>
+        &#x3C;/dependency>
+    &#x3C;/dependencies>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.source</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.source</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.target</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.target</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span>
+    &#x3C;properties>
+        &#x3C;maven.compiler.source>8&#x3C;/maven.compiler.source>
+        &#x3C;maven.compiler.target>8&#x3C;/maven.compiler.target>
+    &#x3C;/properties>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span>
+&#x3C;/project>
 </code></pre>
 <h2>Spring 核心</h2>
 <ol>
@@ -145,36 +141,37 @@ Spring 实现了使用简单的组件配置组合成一个复杂的应用
 <p>控制反转(IOC): 对象创建的控制权油编程人员控制，反转成由Spring框架控制</p>
 <h2>Spring 第一个项目示例</h2>
 <p>spring.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
-       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
-       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="UTF-8"?>
+&#x3C;beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    &#x3C;bean id="person" class="com.zr.vo.Person">&#x3C;/bean>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    &#x3C;bean id="dog" class="com.zr.vo.Dog">&#x3C;/bean>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+&#x3C;/beans>
 </code></pre>
 <p>SpringTest.java</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr;
+<pre><code class="language-java">package com.zr;
 
-<span class="hljs-keyword">import</span> com.zr.vo.Dog;
-<span class="hljs-keyword">import</span> com.zr.vo.Person;
-<span class="hljs-keyword">import</span> org.springframework.context.ApplicationContext;
-<span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.zr.vo.Dog;
+import com.zr.vo.Person;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringTest</span> {
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
-        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring.xml"</span>);
-        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog</span> <span class="hljs-operator">=</span> (Dog)ac.getBean(<span class="hljs-string">"dog"</span>);
-        <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> ac.getBean(Person.class);
+public class SpringTest {
+    public static void main(String[] args){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring.xml");
+        Dog dog = (Dog)ac.getBean("dog");
+        Person person = ac.getBean(Person.class);
         System.out.println(dog);
         System.out.println(person);
 
     }
 }
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月13日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"maven"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"xml"}]]]}],["$","$Lf",null,{"path":"9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月13日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月13日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"maven"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"xml"}]]]}],["$","$Lc",null,{"path":"9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"9%E6%9C%8813%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"9月13日Spring笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

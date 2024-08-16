@@ -1,71 +1,67 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月8日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月8日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T507e,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月8日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T3477,
     <p class="time">发布时间：<time datetime="08 November, 2022">2022-11-08 18:46:22</time></p>
     <p class="words">本文字数：1,905 字       阅读完需：约 4 分钟</p>
-    <html><head></head><body><h2>框架的导入</h2>
-<p>在当前项目的<code>build.gradle</code>的<code><span class="hljs-attribute">dependencies</span></code>中加入框架即可，如下例所示</p>
+    <h2>框架的导入</h2>
+<p>在当前项目的<code>build.gradle</code>的<code>dependencies</code>中加入框架即可，如下例所示</p>
 <p>build.gradle</p>
 <pre><code class="language-java">dependencies {
 
-    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'androidx.appcompat:appcompat:1.4.1'</span>
-    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'com.google.android.material:material:1.5.0'</span>
-    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'androidx.constraintlayout:constraintlayout:2.1.3'</span>
-    testImplementation <span class="hljs-string">'junit:junit:4.13.2'</span>
-    androidTestImplementation <span class="hljs-string">'androidx.test.ext:junit:1.1.3'</span>
-    androidTestImplementation <span class="hljs-string">'androidx.test.espresso:espresso-core:3.4.0'</span>
-    <span class="hljs-keyword">implementation</span> <span class="hljs-string">'com.squareup.picasso:picasso:2.5.2'</span> <span class="hljs-comment">//导入的框架</span>
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2' //导入的框架
 }
 </code></pre>
 <h2>加载网络图片</h2>
 <ol>
 <li>
-<p>导入<code><span class="hljs-attribute">picasso</span></code>框架
-<code><span class="hljs-attribute">implementation</span> 'com.squareup.picasso:picasso:<span class="hljs-number">2</span>.<span class="hljs-number">5</span>.<span class="hljs-number">2</span>'</code></p>
+<p>导入<code>picasso</code>框架
+<code>implementation 'com.squareup.picasso:picasso:2.5.2'</code></p>
 </li>
 <li>
 <p>设置网络权限<br>
-在<code>AndroidManifest.<span class="hljs-built_in">xml</span></code>中添加<code>&lt;uses-permission android:<span class="hljs-attribute">name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/&gt;</code>，申请网络权限
+在<code>AndroidManifest.xml</code>中添加<code>&#x3C;uses-permission android:name="android.permission.INTERNET"/></code>，申请网络权限
 如下例：</p>
-<pre><code class="language-xml"> &lt;manifest xmlns:<span class="hljs-attribute">android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
- xmlns:<span class="hljs-attribute">tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>&gt;
- &lt;uses-permission android:<span class="hljs-attribute">name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/&gt;
- <span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span><span class="hljs-built_in">..</span>.
+<pre><code class="language-xml"> &#x3C;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools">
+ &#x3C;uses-permission android:name="android.permission.INTERNET"/>
+ .........
 </code></pre>
 </li>
 <li>
 <p>加载图片</p>
 </li>
 </ol>
-<pre><code class="language-java">        Picasso.<span class="hljs-keyword">with</span>(context).<span class="hljs-keyword">load</span>(bean.getPic()).<span class="hljs-keyword">into</span>(holder.iv);
+<pre><code class="language-java">        Picasso.with(context).load(bean.getPic()).into(holder.iv);
 </code></pre>
 <h2>tips</h2>
 <p>listview当中包含button类型，需要在item布局外层添加这个属性，避免被抢占焦点</p>
-<p><code><span class="hljs-symbol">android:</span>descendantFocusability=<span class="hljs-string">"blocksDescendants"</span></code></p>
+<p><code>android:descendantFocusability="blocksDescendants"</code></p>
 <p>如下例</p>
 <p>item_detailgv.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:descendantFocusability</span>=<span class="hljs-string">"blocksDescendants"</span>
-    <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"10dp"</span>&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
 </code></pre>
 <h2>启动模式</h2>
 <p>支持四种属性值：</p>
@@ -84,7 +80,7 @@ activity的加载模式，就是负责管理实例化，加载activity的方式�
 <p>在栈顶就重用，否则就用新的。<br>
 当需要启动的目标activity已经位于栈顶的时候，系统就不会创建新的目标activity的实例，而是直接复用已有的
 activity的实例。<br>
-原理：主要是因为他调用了activity类的<code><span class="hljs-function"><span class="hljs-title">onNewIntent</span><span class="hljs-params">()</span></span></code>方法,可以在该方法当中刷新页面数据。</p>
+原理：主要是因为他调用了activity类的<code>onNewIntent()</code>方法,可以在该方法当中刷新页面数据。</p>
 <p>举例：短信编辑页面</p>
 <h3>【singleTask模式】</h3>
 <p>采用这个模式的activity在task栈内只有一个实例，当系统使用这个模式启动目标activity时，可以分为三种情况。<br>
@@ -127,9 +123,9 @@ activity所在的task放置在前台，从而使这个activity显示出来。<br
 </ol>
 <h3>【ComponentName】：用于指定启动的组件</h3>
 <p>核心代码：</p>
-<pre><code class="language-java"><span class="hljs-comment">//完整的显示意图的跳转方法：</span>
-Intent intent3 = <span class="hljs-keyword">new</span> <span class="hljs-type">Intent</span>();
-ComponentName cName = <span class="hljs-keyword">new</span> <span class="hljs-type">ComponentName</span>(MainActivity.<span class="hljs-built_in">this</span>, SecondActivity.class);
+<pre><code class="language-java">//完整的显示意图的跳转方法：
+Intent intent3 = new Intent();
+ComponentName cName = new ComponentName(MainActivity.this, SecondActivity.class);
 intent3.setComponent(cName);
 startActivity(intent3);
 </code></pre>
@@ -155,7 +151,7 @@ CATEGORY_LAUNCHER(android.intent.category.LAUNCHER):设置该组件为当前应�
 通常是与ACTION_MAIN配合使用的。<br>
 CATEGORY_PREFERENCE:设置该组件为preference。<br>
 CATEGORY_BROWSABLE:设置该组件可以使用浏览器启动。</p>
-<p>action和category在清单文件当中注册时，都是添加在activity的子元素<code>&lt;<span class="hljs-built_in">int</span>ent-fileter&gt;</code>当中的。<br>
+<p>action和category在清单文件当中注册时，都是添加在activity的子元素<code>&#x3C;intent-fileter></code>当中的。<br>
 这个元素中可以包含多个action属性和多个category属性。</p>
 <p>在应用程序中创建一个intent的属性时，只能设置一个action的属性，因为他使用的是setAction(str)的方法。<br>
 但是可以包含多个category的属性，因为他是使用addCategory(str)的方法的。</p>
@@ -175,115 +171,116 @@ path：     路径</p>
 <li>file:///      文件数据格式，后面跟着文件的路径，要有三个斜线。</li>
 <li>geo://lat,lon  经纬度数据格式，在地图上显示该经纬度指定的地址。</li>
 </ol>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">home</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+<pre><code class="language-java">public void home(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         startActivity(intent);
     }
     
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">dial</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
-        intent.setAction(Intent.ACTION_DIAL);   <span class="hljs-comment">//Intent.ACTION_DIAL</span>
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">uri</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"tel:18511698819"</span>);
+public void dial(View v){
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_DIAL);   //Intent.ACTION_DIAL
+        Uri uri = Uri.parse("tel:18511698819");
         intent.setData(uri);
         startActivity(intent);
     }
     
-<span class="hljs-keyword">public</span>  <span class="hljs-keyword">void</span> <span class="hljs-title function_">browser</span><span class="hljs-params">(View v)</span> {
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public  void browser(View v) {
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">data</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"http://www.baidu.com/"</span>);
+        Uri data = Uri.parse("http://www.baidu.com/");
         intent.setData(data);
         startActivity(intent);
     }
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">map</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public void map(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">data</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"geo://34.009,152.890"</span>);
+        Uri data = Uri.parse("geo://34.009,152.890");
         intent.setData(data);
         startActivity(intent);
     }
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">video</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public void video(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">uri</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"file:///sdcard/and.mp4"</span>);
-        intent.setDataAndType(uri, <span class="hljs-string">"video/*"</span>);
+        Uri uri = Uri.parse("file:///sdcard/and.mp4");
+        intent.setDataAndType(uri, "video/*");
         startActivity(intent);
     }
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">music</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public void music(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">uri</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"file:///sdcard/fly.mp3"</span>);
-        intent.setDataAndType(uri, <span class="hljs-string">"audio/*"</span>);
+        Uri uri = Uri.parse("file:///sdcard/fly.mp3");
+        intent.setDataAndType(uri, "audio/*");
         startActivity(intent);
     }
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sms</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public void sms(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SENDTO);
-        <span class="hljs-type">Uri</span> <span class="hljs-variable">uri</span> <span class="hljs-operator">=</span> Uri.parse(<span class="hljs-string">"smsto:18511690019"</span>);
+        Uri uri = Uri.parse("smsto:18511690019");
         intent.setData(uri);
-        intent.putExtra(<span class="hljs-string">"sms_body"</span>, <span class="hljs-string">"今天的天气好晴朗！！"</span>);
+        intent.putExtra("sms_body", "今天的天气好晴朗！！");
         startActivity(intent);
     } 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendEmail</span><span class="hljs-params">(View v)</span>{
-        <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
+public void sendEmail(View v){
+        Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
-        String bcc[] = {<span class="hljs-string">"liusihui@1000phone.com"</span>};
-        String cc[] = {<span class="hljs-string">"android@163.com"</span>,<span class="hljs-string">"zhangsan@126.com"</span>};
+        String bcc[] = {"liusihui@1000phone.com"};
+        String cc[] = {"android@163.com","zhangsan@126.com"};
         intent.putExtra(Intent.EXTRA_BCC, bcc);
         intent.putExtra(Intent.EXTRA_CC, cc);
-        intent.putExtra(Intent.EXTRA_SUBJECT, <span class="hljs-string">"今天的天气好晴朗"</span>);
-        intent.putExtra(Intent.EXTRA_TEXT, <span class="hljs-string">"一起出去玩吧~~"</span>);
-        intent.setType(<span class="hljs-string">"message/*"</span>);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "今天的天气好晴朗");
+        intent.putExtra(Intent.EXTRA_TEXT, "一起出去玩吧~~");
+        intent.setType("message/*");
         startActivity(intent);
     }
 </code></pre>
 <h2>读取Assets</h2>
 <ol>
-<li>通过<code><span class="hljs-built_in">context</span>.getAssets()</code>获取<code><span class="hljs-attribute">AssetManager</span></code>对象</li>
-<li>通过<code>assetManager.<span class="hljs-meta">open</span>(<span class="hljs-keyword">fileName</span>)</code>获取输入流</li>
-<li>使用<code><span class="hljs-attribute">ByteArrayOutputStream</span></code>接收输入流并转成字节数组或者字符串</li>
+<li>通过<code>context.getAssets()</code>获取<code>AssetManager</code>对象</li>
+<li>通过<code>assetManager.open(fileName)</code>获取输入流</li>
+<li>使用<code>ByteArrayOutputStream</code>接收输入流并转成字节数组或者字符串</li>
 </ol>
 <h3>示例</h3>
-<pre><code class="language-java">   <span class="hljs-comment">/**
+<pre><code class="language-java">   /**
      * 传入文件的路径 xzcontent/xzcontent.json
      * @param fname
      * @return
-     */</span>
-    <span class="hljs-keyword">public</span> String getAssetJson(String fname){
-        <span class="hljs-comment">//获取Asset文件管理者</span>
+     */
+    public String getAssetJson(String fname){
+        //获取Asset文件管理者
         AssetManager assetManager = context.getAssets();
-        ByteArrayOutputStream baos = <span class="hljs-keyword">new</span> ByteArrayOutputStream();
-        <span class="hljs-comment">//打开文件</span>
-        <span class="hljs-keyword">try</span> {
-            InputStream <span class="hljs-keyword">is</span> = assetManager.open(fname);
-            <span class="hljs-comment">//读流的数据</span>
-            <span class="hljs-built_in">int</span> hasRead = <span class="hljs-number">0</span>;
-            <span class="hljs-built_in">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-built_in">byte</span>[<span class="hljs-number">1024</span>];
-            <span class="hljs-keyword">while</span> ((hasRead = <span class="hljs-keyword">is</span>.read(buf))!=<span class="hljs-number">-1</span>){
-                baos.write(buf, <span class="hljs-number">0</span>, hasRead);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        //打开文件
+        try {
+            InputStream is = assetManager.open(fname);
+            //读流的数据
+            int hasRead = 0;
+            byte[] buf = new byte[1024];
+            while ((hasRead = is.read(buf))!=-1){
+                baos.write(buf, 0, hasRead);
             }
-            baos.<span class="hljs-keyword">flush</span>();
-            <span class="hljs-keyword">is</span>.close();
-        } <span class="hljs-keyword">catch</span> (IOException e) {
+            baos.flush();
+            is.close();
+        } catch (IOException e) {
             e.printStackTrace();
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+            return null;
         }
-        <span class="hljs-keyword">return</span> baos.toString();
+        return baos.toString();
     }
 </code></pre>
 <h3>读取assets中的图片</h3>
 <p>使用BitmapFactory将byte数组转换为Bitmap对象，然后setImageBitmap即可<br>
 如下例</p>
-<pre><code class="language-java"> <span class="hljs-comment">// 读取asset文件夹当中的图片，显示在imageview上</span>
-    <span class="hljs-type">String</span> <span class="hljs-variable">fname</span> <span class="hljs-operator">=</span> <span class="hljs-string">"xzlog/"</span> + dao.getLogoname() + <span class="hljs-string">".png"</span>;
-    <span class="hljs-type">byte</span>[] bytes = assetsUtils.getAssetByteArray(fname);
-    <span class="hljs-comment">//将字节数组转换成位图对象</span>
-    <span class="hljs-type">Bitmap</span> <span class="hljs-variable">bitmap</span> <span class="hljs-operator">=</span>
-            BitmapFactory.decodeByteArray(bytes, <span class="hljs-number">0</span>, bytes.length);
+<pre><code class="language-java"> // 读取asset文件夹当中的图片，显示在imageview上
+    String fname = "xzlog/" + dao.getLogoname() + ".png";
+    byte[] bytes = assetsUtils.getAssetByteArray(fname);
+    //将字节数组转换成位图对象
+    Bitmap bitmap =
+            BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     vholder.iv.setImageBitmap(bitmap);
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月8日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"图片"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"启动模式"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"intent"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"Bitmap"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月8日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月8日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"图片"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"启动模式"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"intent"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"Bitmap"}]]]}],["$","$Lc",null,{"path":"11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"11%E6%9C%888%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"11月8日Android学习笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

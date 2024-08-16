@@ -1,32 +1,28 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月20日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月20日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T40c8,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月20日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T23b2,
     <p class="time">发布时间：<time datetime="20 September, 2022">2022-09-20 17:18:59</time></p>
     <p class="words">本文字数：933 字       阅读完需：约 4 分钟</p>
-    <html><head></head><body><h2>SpringMVC处理器</h2>
+    <h2>SpringMVC处理器</h2>
 <p>Controller控制器，是MVC中的部分C，是部分的原因是因为此处的控制器主要负责功能处理部分：<br>
 收集、验证请求参数并绑定到命令对象；<br>
 将命令对象交给业务对象，由业务对象处理并返回模型数据；<br>
-返回ModelAndView（Model部分是业务对象返回的模型数据，视图部分为逻辑视图名）&nbsp;；<br>
+返回ModelAndView（Model部分是业务对象返回的模型数据，视图部分为逻辑视图名） ；<br>
 而DispatcherServlet主要负责整体的控制流程的调度部分：<br>
 负责将请求委托给控制器进行处理；<br>
-根据控制器返回的逻辑视图名选择具体的视图进行渲染（并把模型数据传入）&nbsp;；<br>
+根据控制器返回的逻辑视图名选择具体的视图进行渲染（并把模型数据传入） ；<br>
 因此MVC中完整的C（包含控制逻辑+功能处理）由（DispatcherServlet + Controller）组成，此处的控制器也可以称为页面控制器、动作、处理器；</p>
 <h2>ModelAndView</h2>
 <p>ModelAndView 配合 jsp 使用，如果前台是html, 则没有必要用 ModelAndView<br>
@@ -35,200 +31,201 @@ jsp的本质是servlet, 执行时会编译成 java 文件</p>
 <p>UserController.java</p>
 <pre><code class="language-java">package com.zr.controller;
 
-<span class="hljs-keyword">import</span> com.zr.service.UserService;
-<span class="hljs-keyword">import</span> com.zr.utils.Md5Util;
-<span class="hljs-keyword">import</span> com.zr.utils.ResultObj;
-<span class="hljs-keyword">import</span> com.zr.vo.<span class="hljs-keyword">User</span>;
-<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
-<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
-<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
+import com.zr.service.UserService;
+import com.zr.utils.Md5Util;
+import com.zr.utils.ResultObj;
+import com.zr.vo.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 
-<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> UserController {
+public class UserController {
     @Autowired
     private UserService userService;
     @RequestMapping("user/login.action")
-    <span class="hljs-built_in">public</span> ModelAndView <span class="hljs-keyword">login</span>(String userId, String <span class="hljs-keyword">password</span>){
-        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println("userId:"+userId+", password"+<span class="hljs-keyword">password</span>);
-        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
+    public ModelAndView login(String userId, String password){
+        System.out.println("userId:"+userId+", password"+password);
+        User u = new User();
         u.setUserId(userId);
-        u.setPassword(Md5Util.md5(<span class="hljs-keyword">password</span>));
-        ResultObj robj = userService.<span class="hljs-keyword">login</span>(u);
-        ModelAndView mav = <span class="hljs-built_in">new</span> ModelAndView();
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            mav.addObject("userName", ((<span class="hljs-keyword">User</span>)robj.getObject()).getUserName());
+        u.setPassword(Md5Util.md5(password));
+        ResultObj robj = userService.login(u);
+        ModelAndView mav = new ModelAndView();
+        if(robj.isSuccess()){
+            mav.addObject("userName", ((User)robj.getObject()).getUserName());
             mav.setViewName("main");
         }
-        <span class="hljs-keyword">else</span>{
+        else{
             mav.setViewName("failed");
         }
-        <span class="hljs-keyword">return</span> mav;
+        return mav;
     }
 
 }
 </code></pre>
 <p>main.jsp</p>
-<pre><code class="language-html">&lt;%--
-  <span class="hljs-title class_">Created</span> by <span class="hljs-title class_">IntelliJ</span> <span class="hljs-variable constant_">IDEA</span>.
-  <span class="hljs-title class_">User</span>: smile
-  <span class="hljs-title class_">Date</span>: <span class="hljs-number">2022</span>/<span class="hljs-number">9</span>/<span class="hljs-number">19</span>
-  <span class="hljs-title class_">Time</span>: <span class="hljs-number">19</span>:<span class="hljs-number">24</span>
-  <span class="hljs-title class_">To</span> change <span class="hljs-variable language_">this</span> template use <span class="hljs-title class_">File</span> | <span class="hljs-title class_">Settings</span> | <span class="hljs-title class_">File</span> <span class="hljs-title class_">Templates</span>.
---%&gt;
-&lt;%@ page contentType=<span class="hljs-string">"text/html;charset=UTF-8"</span> language=<span class="hljs-string">"java"</span> %&gt;
-<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>恭喜您登录成功<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>${userName}, 恭喜您登录成功<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+<pre><code class="language-html">&#x3C;%--
+  Created by IntelliJ IDEA.
+  User: smile
+  Date: 2022/9/19
+  Time: 19:24
+  To change this template use File | Settings | File Templates.
+--%>
+&#x3C;%@ page contentType="text/html;charset=UTF-8" language="java" %>
+&#x3C;html>
+&#x3C;head>
+    &#x3C;title>恭喜您登录成功&#x3C;/title>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;h1>${userName}, 恭喜您登录成功&#x3C;/h1>
+&#x3C;/body>
+&#x3C;/html>
 </code></pre>
 <p>上例将userName传入main.jsp</p>
 <h3>model和view</h3>
 <p>UserController.java</p>
 <pre><code class="language-java">@RequestMapping("user/login.action")
-    <span class="hljs-built_in">public</span> String <span class="hljs-keyword">login</span>(String userId, String <span class="hljs-keyword">password</span>, Model model){
-        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
-        u.setUserId(userId);
-        u.setPassword(Md5Util.md5(<span class="hljs-keyword">password</span>));
-        ResultObj robj = userService.<span class="hljs-keyword">login</span>(u);
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            model.addAttribute("user", ((<span class="hljs-keyword">User</span>)robj.getObject()));
-            <span class="hljs-keyword">return</span> "main";
-        }
-        <span class="hljs-keyword">return</span> "user";
-    }
-</code></pre>
-<p>上例中，单独将Model拆出，返回值String就是View</p>
-<p>其中，Model对象可以改为ModelMap对象或Map对象，底层都是Map<br>
-引入javaee包后，可以用<code><span class="hljs-attribute">httpservletrequest</span></code>传参，如下示例</p>
-<pre><code class="language-java">@RequestMapping("user/login.action")
-    <span class="hljs-built_in">public</span> String <span class="hljs-keyword">login</span>(String userId, String <span class="hljs-keyword">password</span>, HttpServletRequest req, HttpServletResponse resp){
-        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
-        u.setUserId(userId);
-        u.setPassword(Md5Util.md5(<span class="hljs-keyword">password</span>));
-        ResultObj robj = userService.<span class="hljs-keyword">login</span>(u);
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            req.setAttribute("user",((<span class="hljs-keyword">User</span>)robj.getObject()));
-            <span class="hljs-keyword">return</span> "main";
-        }
-        <span class="hljs-keyword">return</span> "user";
-    }
-</code></pre>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.controller;
-
-<span class="hljs-keyword">import</span> com.zr.service.UserService;
-<span class="hljs-keyword">import</span> com.zr.utils.Md5Util;
-<span class="hljs-keyword">import</span> com.zr.utils.ResultObj;
-<span class="hljs-keyword">import</span> com.zr.vo.User;
-<span class="hljs-keyword">import</span> org.springframework.beans.factory.<span class="hljs-keyword">annotation</span>.Autowired;
-<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
-<span class="hljs-keyword">import</span> org.springframework.ui.Model;
-<span class="hljs-keyword">import</span> org.springframework.web.bind.<span class="hljs-keyword">annotation</span>.RequestMapping;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
-
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
-
-<span class="hljs-meta">@Controller</span>
-<span class="hljs-meta">@RequestMapping(<span class="hljs-string">"/user"</span>)</span>
-<span class="hljs-comment">// 注解可以加在此处</span>
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
-    <span class="hljs-meta">@Autowired</span>
-    <span class="hljs-keyword">private</span> UserService userService;
-<span class="hljs-meta">@RequestMapping(<span class="hljs-string">"login.action"</span>)</span>
-<span class="hljs-comment">// 与类注解合并，最终为/user/login.action</span>
-    <span class="hljs-keyword">public</span> String login(String userId, String password, HttpServletRequest req, HttpServletResponse resp){
+    public String login(String userId, String password, Model model){
         User u = new User();
         u.setUserId(userId);
         u.setPassword(Md5Util.md5(password));
         ResultObj robj = userService.login(u);
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            req.setAttribute(<span class="hljs-string">"user"</span>,((User)robj.getObject()));
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        if(robj.isSuccess()){
+            model.addAttribute("user", ((User)robj.getObject()));
+            return "main";
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+        return "user";
+    }
+</code></pre>
+<p>上例中，单独将Model拆出，返回值String就是View</p>
+<p>其中，Model对象可以改为ModelMap对象或Map对象，底层都是Map<br>
+引入javaee包后，可以用<code>httpservletrequest</code>传参，如下示例</p>
+<pre><code class="language-java">@RequestMapping("user/login.action")
+    public String login(String userId, String password, HttpServletRequest req, HttpServletResponse resp){
+        User u = new User();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        ResultObj robj = userService.login(u);
+        if(robj.isSuccess()){
+            req.setAttribute("user",((User)robj.getObject()));
+            return "main";
+        }
+        return "user";
+    }
+</code></pre>
+<pre><code class="language-java">package com.zr.controller;
+
+import com.zr.service.UserService;
+import com.zr.utils.Md5Util;
+import com.zr.utils.ResultObj;
+import com.zr.vo.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@Controller
+@RequestMapping("/user")
+// 注解可以加在此处
+
+public class UserController {
+    @Autowired
+    private UserService userService;
+@RequestMapping("login.action")
+// 与类注解合并，最终为/user/login.action
+    public String login(String userId, String password, HttpServletRequest req, HttpServletResponse resp){
+        User u = new User();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        ResultObj robj = userService.login(u);
+        if(robj.isSuccess()){
+            req.setAttribute("user",((User)robj.getObject()));
+            return "main";
+        }
+        return "user";
     }
 }
 </code></pre>
-<p><code><span class="hljs-meta">@PostMapping</span></code>, <code><span class="hljs-meta">@GetMapping</span></code> 分别是<code><span class="hljs-meta">@RequestMapping</span></code>的子注解，可以区分请求是Post或Get，从而使同一url映射不同的方法</p>
-<pre><code class="language-java">    <span class="hljs-meta">@RequestMapping</span>(value = <span class="hljs-string">"/login.action"</span>, method = <span class="hljs-title class_">RequestMethod</span>.<span class="hljs-property">GET</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">login</span>(<span class="hljs-params"></span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"login"</span>;
+<p><code>@PostMapping</code>, <code>@GetMapping</code> 分别是<code>@RequestMapping</code>的子注解，可以区分请求是Post或Get，从而使同一url映射不同的方法</p>
+<pre><code class="language-java">    @RequestMapping(value = "/login.action", method = RequestMethod.GET)
+    public String login(){
+        return "login";
     }
 </code></pre>
-<p>上例使用<code><span class="hljs-keyword">method</span></code>参数，效果等于<code><span class="hljs-meta">@GetMapping</span></code>注解</p>
+<p>上例使用<code>method</code>参数，效果等于<code>@GetMapping</code>注解</p>
 <h3>常见的get请求</h3>
-<p><code><span class="hljs-attr">window.location.href</span>=<span class="hljs-string">""</span></code><br>
-<code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span>&gt;</span>百度<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code>
+<p><code>window.location.href=""</code><br>
+<code>&#x3C;a href="...">百度&#x3C;/a></code>
 输入网址<br>
 所有的src属性<br>
-<code><span class="hljs-section">&lt;form&gt;</span></code>不写method属性默认为get</p>
+<code>&#x3C;form></code>不写method属性默认为get</p>
 <p>http状态码 405-方法不允许<br>
 400-错误的请求（参数绑定错误）</p>
 <h3>PostMapping注解的参数</h3>
 <p>示例</p>
-<pre><code class="language-java">    <span class="hljs-meta">@PostMapping(value = <span class="hljs-string">"/add.action"</span>, <span class="hljs-string">"/insert.action"</span>, params = {<span class="hljs-string">"userId!=admin"</span>,<span class="hljs-string">"userName"</span>,<span class="hljs-string">"!info"</span>})</span>
-    <span class="hljs-keyword">public</span> String add(User u){
-        System.<span class="hljs-keyword">out</span>.println(u);
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+<pre><code class="language-java">    @PostMapping(value = "/add.action", "/insert.action", params = {"userId!=admin","userName","!info"})
+    public String add(User u){
+        System.out.println(u);
+        return "main";
     }
 </code></pre>
 <p>限制userId不能等于admin, 必须有userName参数，不能有info参数</p>
 <h3>获取url传参</h3>
-<pre><code class="language-java">    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"/{year}/print.action"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">print</span>(<span class="hljs-params"><span class="hljs-meta">@PathVariable</span>(<span class="hljs-string">"year"</span>) <span class="hljs-built_in">String</span> year</span>){
-        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(year);
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+<pre><code class="language-java">    @RequestMapping("/{year}/print.action")
+    public String print(@PathVariable("year") String year){
+        System.out.println(year);
+        return "main";
     }
 </code></pre>
-<p>上例，用注解<code><span class="hljs-meta">@PathVariable(<span class="hljs-string">"传入的参数名"</span>)</span></code>接收url中传入的参数，url使用<code><span class="hljs-template-variable">{传入的参数名}</span></code>给后端传参</p>
+<p>上例，用注解<code>@PathVariable("传入的参数名")</code>接收url中传入的参数，url使用<code>{传入的参数名}</code>给后端传参</p>
 <h3>Ant风格的URL路径映射</h3>
-<p><code><span class="hljs-meta">@RequestMapping(value=<span class="hljs-string">"/users/**"</span>)</span></code>：<br>
-可以匹配“/users/abc/abc”，但“/users/123”将会被<code><span class="hljs-string">[URI模板模式映射中的“/users/{userId}”模式优先映射到]</span></code>；<br>
-<code><span class="hljs-meta">@RequestMapping(value=<span class="hljs-string">"/product?"</span>)</span></code>：<br>
+<p><code>@RequestMapping(value="/users/**")</code>：<br>
+可以匹配“/users/abc/abc”，但“/users/123”将会被<code>[URI模板模式映射中的“/users/{userId}”模式优先映射到]</code>；<br>
+<code>@RequestMapping(value="/product?")</code>：<br>
 可匹配“/product1”或“/producta”，但不匹配“/product”或“/productaa”；<br>
-<code><span class="hljs-meta">@RequestMapping(value=<span class="hljs-string">"/product*"</span>)</span></code>：<br>
+<code>@RequestMapping(value="/product*")</code>：<br>
 可匹配“/productabc”或“/product”，但不匹配“/productabc/abc”；<br>
-<code><span class="hljs-meta">@RequestMapping(value=<span class="hljs-string">"/product/*"</span>)</span></code>：<br>
+<code>@RequestMapping(value="/product/*")</code>：<br>
 可匹配“/product/abc”，但不匹配“/productabc”；<br>
-<code><span class="hljs-meta">@RequestMapping(value=<span class="hljs-string">"/products/**/{productId}"</span>)</span></code>：<br>
+<code>@RequestMapping(value="/products/**/{productId}")</code>：<br>
 可匹配“/products/abc/abc/123”或“/products/123”，也就是Ant风格和URI模板变量风格可混用；</p>
 <h3>自定义请求头</h3>
-<pre><code class="language-java">@PostMapping(<span class="hljs-keyword">value</span> = "login.action", headers = {"info"})
-    <span class="hljs-built_in">public</span> String <span class="hljs-keyword">login</span>(String userId, String <span class="hljs-keyword">password</span>, HttpServletRequest req, HttpServletResponse resp){
-        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
+<pre><code class="language-java">@PostMapping(value = "login.action", headers = {"info"})
+    public String login(String userId, String password, HttpServletRequest req, HttpServletResponse resp){
+        User u = new User();
         u.setUserId(userId);
-        u.setPassword(Md5Util.md5(<span class="hljs-keyword">password</span>));
-        ResultObj robj = userService.<span class="hljs-keyword">login</span>(u);
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            req.setAttribute("user",((<span class="hljs-keyword">User</span>)robj.getObject()));
-            <span class="hljs-keyword">return</span> "main";
+        u.setPassword(Md5Util.md5(password));
+        ResultObj robj = userService.login(u);
+        if(robj.isSuccess()){
+            req.setAttribute("user",((User)robj.getObject()));
+            return "main";
         }
-        <span class="hljs-keyword">return</span> "user";
+        return "user";
     }
 </code></pre>
-<p>定义后，headers里面必须包含<code><span class="hljs-attribute">info</span></code>后端才能执行<code><span class="hljs-function"><span class="hljs-title">login</span><span class="hljs-params">()</span></span></code>方法, 否则返回404</p>
+<p>定义后，headers里面必须包含<code>info</code>后端才能执行<code>login()</code>方法, 否则返回404</p>
 <h3>对请求的content-type进行限制</h3>
-<pre><code class="language-java">@PostMapping(<span class="hljs-keyword">value</span> = "login.action", consumes = {"application/x-www-form-urlencoded"})
-    <span class="hljs-built_in">public</span> String <span class="hljs-keyword">login</span>(String userId, String <span class="hljs-keyword">password</span>, HttpServletRequest req, HttpServletResponse resp){
-        <span class="hljs-keyword">User</span> u = <span class="hljs-built_in">new</span> <span class="hljs-keyword">User</span>();
+<pre><code class="language-java">@PostMapping(value = "login.action", consumes = {"application/x-www-form-urlencoded"})
+    public String login(String userId, String password, HttpServletRequest req, HttpServletResponse resp){
+        User u = new User();
         u.setUserId(userId);
-        u.setPassword(Md5Util.md5(<span class="hljs-keyword">password</span>));
-        ResultObj robj = userService.<span class="hljs-keyword">login</span>(u);
-        <span class="hljs-keyword">if</span>(robj.isSuccess()){
-            req.setAttribute("user",((<span class="hljs-keyword">User</span>)robj.getObject()));
-            <span class="hljs-keyword">return</span> "main";
+        u.setPassword(Md5Util.md5(password));
+        ResultObj robj = userService.login(u);
+        if(robj.isSuccess()){
+            req.setAttribute("user",((User)robj.getObject()));
+            return "main";
         }
-        <span class="hljs-keyword">return</span> "user";
+        return "user";
     }
 </code></pre>
-<p>用<code><span class="hljs-attribute">consumes</span></code>参数进行设置，上例表示必须为表单类型</p>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月20日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"RequestMapping"}]]]}],["$","$Lf",null,{"path":"9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月20日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+<p>用<code>consumes</code>参数进行设置，上例表示必须为表单类型</p>
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月20日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"RequestMapping"}]]]}],["$","$Lc",null,{"path":"9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"9%E6%9C%8820%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"9月20日Spring笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

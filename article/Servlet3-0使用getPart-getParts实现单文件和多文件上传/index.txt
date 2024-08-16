@@ -1,67 +1,63 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],{"children":["__PAGE__?{\"id\":\"Servlet3-0使用getPart-getParts实现单文件和多文件上传\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Servlet3-0使用getPart-getParts实现单文件和多文件上传\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T297c,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],{"children":["__PAGE__?{\"id\":\"Servlet3-0使用getPart-getParts实现单文件和多文件上传\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T1547,
     <p class="time">发布时间：<time datetime="12 September, 2022">2022-09-12 22:01:26</time></p>
     <p class="words">本文字数：620 字       阅读完需：约 2 分钟</p>
-    <html><head></head><body><h3>一、使用工具：</h3>
+    <h3>一、使用工具：</h3>
 <p>（1）Firefox浏览器<br>
 （2）java IDE</p>
 <h3>二、实现单文件上传</h3>
 <p>（1）</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.servlet;
+<pre><code class="language-java">package com.servlet;
 
-<span class="hljs-keyword">import</span> java.io.IOException;
+import java.io.IOException;
 
-<span class="hljs-keyword">import</span> javax.servlet.ServletException;
-<span class="hljs-keyword">import</span> javax.servlet.annotation.MultipartConfig;
-<span class="hljs-keyword">import</span> javax.servlet.annotation.WebServlet;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServlet;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
-<span class="hljs-keyword">import</span> javax.servlet.http.Part;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
-<span class="hljs-meta">@WebServlet("/upload")</span>
-<span class="hljs-meta">@MultipartConfig</span> <span class="hljs-comment">// 1.设置Servlet可以处理Multipart请求</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UploadFileServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> {
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">long</span> <span class="hljs-variable">serialVersionUID</span> <span class="hljs-operator">=</span> <span class="hljs-number">1L</span>;
+@WebServlet("/upload")
+@MultipartConfig // 1.设置Servlet可以处理Multipart请求
+public class UploadFileServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
 
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doPost</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response)</span>
-            <span class="hljs-keyword">throws</span> ServletException, IOException {
-        <span class="hljs-comment">// 2.获取文件保存的路径</span>
-        <span class="hljs-type">String</span> <span class="hljs-variable">savePath</span> <span class="hljs-operator">=</span> <span class="hljs-built_in">this</span>.getServletContext().getRealPath(<span class="hljs-string">"Files"</span>);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // 2.获取文件保存的路径
+        String savePath = this.getServletContext().getRealPath("Files");
 
-        <span class="hljs-comment">// 3.获取form表单的Multipart请求的文件的name属性</span>
-        <span class="hljs-type">Part</span> <span class="hljs-variable">part</span> <span class="hljs-operator">=</span> request.getPart(<span class="hljs-string">"photo"</span>);
+        // 3.获取form表单的Multipart请求的文件的name属性
+        Part part = request.getPart("photo");
 
-        <span class="hljs-comment">// 4.获取原文件名</span>
-        <span class="hljs-comment">/*
+        // 4.获取原文件名
+        /*
          * 经过过request请求信息的分析， 原文件名在头信息的Content-Disposition中 所以获取Content-Disposition的值如下
          * form-data; name="photo"; filename="测试文件.txt"
-         */</span>
-        <span class="hljs-type">String</span> <span class="hljs-variable">header</span> <span class="hljs-operator">=</span> part.getHeader(<span class="hljs-string">"Content-Disposition"</span>);
-        <span class="hljs-type">int</span> <span class="hljs-variable">start</span> <span class="hljs-operator">=</span> header.lastIndexOf(<span class="hljs-string">"="</span>);
-        <span class="hljs-type">String</span> <span class="hljs-variable">fileName</span> <span class="hljs-operator">=</span> header.substring(start + <span class="hljs-number">1</span>)
-                .replace(<span class="hljs-string">"\""</span>, <span class="hljs-string">""</span>);
+         */
+        String header = part.getHeader("Content-Disposition");
+        int start = header.lastIndexOf("=");
+        String fileName = header.substring(start + 1)
+                .replace("\"", "");
 
-        <span class="hljs-comment">// 5.保存到第二步获取的文件保存路径下</span>
-        <span class="hljs-keyword">if</span> (fileName != <span class="hljs-literal">null</span> &amp;&amp; !<span class="hljs-string">""</span>.equals(fileName)) {
-            part.write(savePath + <span class="hljs-string">"/"</span> + fileName);
+        // 5.保存到第二步获取的文件保存路径下
+        if (fileName != null &#x26;&#x26; !"".equals(fileName)) {
+            part.write(savePath + "/" + fileName);
         }
 
     }
@@ -74,55 +70,55 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 二是通过 getPart(Stirng name) 方法获取文件，其中 name 为jsp页面中的 input标签的name属性；<br>
 三是为什么要这样获取文件名，这是因为 Servlet3.0 中的 Part 类没有获取上传文件名的方法，然后通过Firefox分析得出header中的 Content-Disposition 包含有文件名。下图<img src="ser01.bmp" alt="Content-Disposition中包含有文件名的信息"><br>
 （2）JSP代码</p>
-<pre><code class="language-java">&lt;form action<span class="hljs-operator">=</span><span class="hljs-string">"${pageContext.request.contextPath }/upload"</span> method<span class="hljs-operator">=</span><span class="hljs-string">"post"</span>
-        enctype<span class="hljs-operator">=</span><span class="hljs-string">"multipart/form-data"</span>&gt;
-        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"file"</span> name<span class="hljs-operator">=</span><span class="hljs-string">"photo"</span>&gt;
-        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"submit"</span> value<span class="hljs-operator">=</span><span class="hljs-string">"上传"</span>&gt;
-&lt;/form&gt;
+<pre><code class="language-java">&#x3C;form action="${pageContext.request.contextPath }/upload" method="post"
+        enctype="multipart/form-data">
+        &#x3C;input type="file" name="photo">
+        &#x3C;input type="submit" value="上传">
+&#x3C;/form>
 </code></pre>
 <h3>三、实现多文件上传</h3>
 <p>（1）Servlet</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.servlet;
+<pre><code class="language-java">package com.servlet;
 
-<span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.util.List;
+import java.io.IOException;
+import java.util.List;
 
-<span class="hljs-keyword">import</span> javax.servlet.ServletException;
-<span class="hljs-keyword">import</span> javax.servlet.annotation.MultipartConfig;
-<span class="hljs-keyword">import</span> javax.servlet.annotation.WebServlet;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServlet;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
-<span class="hljs-keyword">import</span> javax.servlet.http.Part;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
-<span class="hljs-meta">@WebServlet("/upload")</span>
-<span class="hljs-meta">@MultipartConfig</span> <span class="hljs-comment">// 1.设置Servlet可以处理Multipart请求</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UploadFileServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> {
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">long</span> <span class="hljs-variable">serialVersionUID</span> <span class="hljs-operator">=</span> <span class="hljs-number">1L</span>;
+@WebServlet("/upload")
+@MultipartConfig // 1.设置Servlet可以处理Multipart请求
+public class UploadFileServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
 
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doPost</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response)</span>
-            <span class="hljs-keyword">throws</span> ServletException, IOException {
-        <span class="hljs-comment">// 2.获取文件保存的路径</span>
-        <span class="hljs-type">String</span> <span class="hljs-variable">savePath</span> <span class="hljs-operator">=</span> <span class="hljs-built_in">this</span>.getServletContext().getRealPath(<span class="hljs-string">"Files"</span>);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // 2.获取文件保存的路径
+        String savePath = this.getServletContext().getRealPath("Files");
 
-        <span class="hljs-comment">// 3.获取form表单上传的多个文件</span>
-        List&lt;Part&gt; parts = (List&lt;Part&gt;) request.getParts();
+        // 3.获取form表单上传的多个文件
+        List&#x3C;Part> parts = (List&#x3C;Part>) request.getParts();
         
-        <span class="hljs-comment">//4.循环遍历多个文件</span>
-        <span class="hljs-keyword">for</span>(Part part : parts) {
-            <span class="hljs-comment">// 5.获取原文件名</span>
-            <span class="hljs-comment">/*
+        //4.循环遍历多个文件
+        for(Part part : parts) {
+            // 5.获取原文件名
+            /*
              * 经过过request请求信息的分析， 原文件名在头信息的Content-Disposition中 所以获取Content-Disposition的值如下
              * form-data; name="photo"; filename="测试文件.txt"
-             */</span>
-            <span class="hljs-type">String</span> <span class="hljs-variable">header</span> <span class="hljs-operator">=</span> part.getHeader(<span class="hljs-string">"Content-Disposition"</span>);
-            <span class="hljs-type">int</span> <span class="hljs-variable">start</span> <span class="hljs-operator">=</span> header.lastIndexOf(<span class="hljs-string">"="</span>);
-            <span class="hljs-type">String</span> <span class="hljs-variable">fileName</span> <span class="hljs-operator">=</span> header.substring(start + <span class="hljs-number">1</span>)
-                    .replace(<span class="hljs-string">"\""</span>, <span class="hljs-string">""</span>);
+             */
+            String header = part.getHeader("Content-Disposition");
+            int start = header.lastIndexOf("=");
+            String fileName = header.substring(start + 1)
+                    .replace("\"", "");
 
-            <span class="hljs-comment">// 6.保存到第二步获取的文件保存路径下</span>
-            <span class="hljs-keyword">if</span> (fileName != <span class="hljs-literal">null</span> &amp;&amp; !<span class="hljs-string">""</span>.equals(fileName)) {
-                part.write(savePath + <span class="hljs-string">"/"</span> + fileName);
+            // 6.保存到第二步获取的文件保存路径下
+            if (fileName != null &#x26;&#x26; !"".equals(fileName)) {
+                part.write(savePath + "/" + fileName);
             }
         }
 
@@ -133,15 +129,16 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 </code></pre>
 <p>  要实现多文件上传只需要在单文件上传的的基础上改一下方法，通过 getParts() 方法获取多个文件，然后依次处理就好。<br>
 （2）JSP代码</p>
-<pre><code class="language-jsp">&lt;form action<span class="hljs-operator">=</span><span class="hljs-string">"${pageContext.request.contextPath }/upload"</span> method<span class="hljs-operator">=</span><span class="hljs-string">"post"</span>
-        enctype<span class="hljs-operator">=</span><span class="hljs-string">"multipart/form-data"</span>&gt;
-        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"file"</span> name<span class="hljs-operator">=</span><span class="hljs-string">"photo"</span> multiple<span class="hljs-operator">=</span><span class="hljs-string">"multiple"</span>&gt;
-        &lt;input type<span class="hljs-operator">=</span><span class="hljs-string">"submit"</span> value<span class="hljs-operator">=</span><span class="hljs-string">"上传"</span>&gt;
-&lt;/form&gt;
+<pre><code class="language-jsp">&#x3C;form action="${pageContext.request.contextPath }/upload" method="post"
+        enctype="multipart/form-data">
+        &#x3C;input type="file" name="photo" multiple="multiple">
+        &#x3C;input type="submit" value="上传">
+&#x3C;/form>
 </code></pre>
 <p>  注意：input 标签多了一个属性 multiple=“multiple”</p>
 <h3>四、总结</h3>
 <p>  要实现单文件上传只要使用方法 getPart(Stirng name)，实现多文件上传需要在增加Jsp页面 input 标签的 multiple=“multiple”，将 getPart(Stirng name) 方法改为 getParts() 方法，同时遍历文件就可以了。</p>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"alibaba"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"fastjson"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"date"}]]]}],["$","$Lf",null,{"path":"Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"alibaba"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"fastjson"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"date"}]]]}],["$","$Lc",null,{"path":"Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"Servlet3-0%E4%BD%BF%E7%94%A8getPart-getParts%E5%AE%9E%E7%8E%B0%E5%8D%95%E6%96%87%E4%BB%B6%E5%92%8C%E5%A4%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Servlet3.0使用getPart/getParts实现单文件和多文件上传 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

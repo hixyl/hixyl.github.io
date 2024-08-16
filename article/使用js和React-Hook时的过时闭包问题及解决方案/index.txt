@@ -1,57 +1,53 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"],{"children":["__PAGE__?{\"id\":\"使用js和React-Hook时的过时闭包问题及解决方案\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"使用js和React-Hook时的过时闭包问题及解决方案\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T6bf9,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"],{"children":["__PAGE__?{\"id\":\"使用js和React-Hook时的过时闭包问题及解决方案\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T31c3,
     <p class="time">发布时间：<time datetime="20 October, 2023">2023-10-20 16:40:29</time></p>
     <p class="words">本文字数：1,764 字       阅读完需：约 4 分钟</p>
-    <html><head></head><body><h2>1. JS 中的闭包</h2>
-<p>下面定义了一个工厂函数 <code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">(i)</span></span></code>，它返回一个<code><span class="hljs-attribute">increment</span></code>函数。之后，每次调用<code><span class="hljs-attribute">increment</span></code>函数时，内部计数器的值都会增加<code><span class="hljs-selector-tag">i</span></code>。</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createIncrement</span>(<span class="hljs-params">i</span>) {
-  <span class="hljs-keyword">let</span> value = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+    <h2>1. JS 中的闭包</h2>
+<p>下面定义了一个工厂函数 <code>createIncrement(i)</code>，它返回一个<code>increment</code>函数。之后，每次调用<code>increment</code>函数时，内部计数器的值都会增加<code>i</code>。</p>
+<pre><code class="language-javascript">function createIncrement(i) {
+  let value = 0;
+  function increment() {
     value += i;
-    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value);
+    console.log(value);
   }
-  <span class="hljs-keyword">return</span> increment;
+  return increment;
 }
 
-<span class="hljs-keyword">const</span> inc = <span class="hljs-title function_">createIncrement</span>(<span class="hljs-number">1</span>);
-<span class="hljs-title function_">inc</span>(); <span class="hljs-comment">// 1</span>
-<span class="hljs-title function_">inc</span>(); <span class="hljs-comment">// 2</span>
+const inc = createIncrement(1);
+inc(); // 1
+inc(); // 2
 </code></pre>
-<p><code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">(<span class="hljs-number">1</span>)</span></span></code> 返回一个增量函数，该函数赋值给<code><span class="hljs-keyword">inc</span></code>变量。当调用<code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>时，<code><span class="hljs-attribute">value</span></code> 变量加<code>1</code>。</p>
-<p>第一次调用<code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>返回<code>1</code>，第二次调用返回<code>2</code>，依此类推。</p>
-<p>这挺趣的，只要调用<code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>还不带参数，JS 仍然知道当前 <code><span class="hljs-attribute">value</span></code> 和 <code><span class="hljs-selector-tag">i</span></code> 的增量，来看看这玩意是如何工作的。</p>
-<p>原理就在 <code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">()</span></span></code> 中。当在函数上返回一个函数时，有会有闭包产生。闭包捕获词法作用域中的变量 <code><span class="hljs-attribute">value</span></code> 和 <code><span class="hljs-selector-tag">i</span></code>。</p>
-<p>词法作用域是定义闭包的外部作用域。在本例中，<code><span class="hljs-function"><span class="hljs-title">increment</span><span class="hljs-params">()</span></span></code> 的词法作用域是<code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">()</span></span></code>的作用域，其中包含变量 <code><span class="hljs-attribute">value</span></code> 和 <code><span class="hljs-selector-tag">i</span></code>。</p>
+<p><code>createIncrement(1)</code> 返回一个增量函数，该函数赋值给<code>inc</code>变量。当调用<code>inc()</code>时，<code>value</code> 变量加<code>1</code>。</p>
+<p>第一次调用<code>inc()</code>返回<code>1</code>，第二次调用返回<code>2</code>，依此类推。</p>
+<p>这挺趣的，只要调用<code>inc()</code>还不带参数，JS 仍然知道当前 <code>value</code> 和 <code>i</code> 的增量，来看看这玩意是如何工作的。</p>
+<p>原理就在 <code>createIncrement()</code> 中。当在函数上返回一个函数时，有会有闭包产生。闭包捕获词法作用域中的变量 <code>value</code> 和 <code>i</code>。</p>
+<p>词法作用域是定义闭包的外部作用域。在本例中，<code>increment()</code> 的词法作用域是<code>createIncrement()</code>的作用域，其中包含变量 <code>value</code> 和 <code>i</code>。</p>
 <p><img src="guoshibibao1.png" alt=""></p>
-<p>无论在何处调用 <code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>，甚至在 <code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">()</span></span></code> 的作用域之外，它都可以访问 <code><span class="hljs-attribute">value</span></code> 和 <code><span class="hljs-selector-tag">i</span></code>。</p>
+<p>无论在何处调用 <code>inc()</code>，甚至在 <code>createIncrement()</code> 的作用域之外，它都可以访问 <code>value</code> 和 <code>i</code>。</p>
 <blockquote>
 <p>闭包是一个可以从其词法作用域记住和修改变量的函数，不管执行作用域是什么。</p>
 </blockquote>
-<p>继续这个例子，可以在任何地方调用 <code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>，甚至在异步回调中也可以:</p>
+<p>继续这个例子，可以在任何地方调用 <code>inc()</code>，甚至在异步回调中也可以:</p>
 <pre><code class="language-javascript">(function() {
-  <span class="hljs-built_in">inc</span>(); <span class="hljs-comment">// 3</span>
+  inc(); // 3
 }());
 
-<span class="hljs-built_in">setTimeout</span>(function() {
-  <span class="hljs-built_in">inc</span>(); <span class="hljs-comment">// 4</span>
-}, <span class="hljs-number">1000</span>);
+setTimeout(function() {
+  inc(); // 4
+}, 1000);
 </code></pre>
 <h2>2. React Hooks 中的闭包</h2>
 <p>通过简化状态重用和副作用管理，Hooks 取代了基于类的组件。此外，咱们可以将重复的逻辑提取到自定义 Hook 中，以便在应用程序之间重用。</p>
@@ -59,180 +55,180 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>当咱们使用一个有多种副作用和状态管理的 React 组件时，可能会遇到的一个问题是过时的闭包，这可能很难解决。</p>
 <p>咱们从提炼出过时的闭包开始。然后，看看过时的闭包如何影响 React Hook，以及如何解决这个问题。</p>
 <h2>3. 过时的闭包</h2>
-<p>工厂函数<code><span class="hljs-function"><span class="hljs-title">createIncrement</span><span class="hljs-params">(i)</span></span></code>返回一个<code><span class="hljs-attribute">increment</span></code>函数。<code><span class="hljs-attribute">increment</span></code> 函数对 <code><span class="hljs-attribute">value</span></code> 增加i<code>请输入代码</code> ，并返回一个记录当前 <code><span class="hljs-attribute">value</span></code> 的函数</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createIncrement</span>(<span class="hljs-params">i</span>) {
-  let value = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+<p>工厂函数<code>createIncrement(i)</code>返回一个<code>increment</code>函数。<code>increment</code> 函数对 <code>value</code> 增加i<code>请输入代码</code> ，并返回一个记录当前 <code>value</code> 的函数</p>
+<pre><code class="language-javascript">function createIncrement(i) {
+  let value = 0;
+  function increment() {
     value += i;
-    <span class="hljs-built_in">console</span>.<span class="hljs-built_in">log</span>(value);
-    const message = <span class="hljs-string">`Current value is <span class="hljs-subst">${value}</span>`</span>;
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">logValue</span>(<span class="hljs-params"></span>) {
-      <span class="hljs-built_in">console</span>.<span class="hljs-built_in">log</span>(message);
+    console.log(value);
+    const message = `Current value is ${value}`;
+    return function logValue() {
+      console.log(message);
     };
   }
   
-  <span class="hljs-keyword">return</span> increment;
+  return increment;
 }
 
-const inc = createIncrement(<span class="hljs-number">1</span>);
-const <span class="hljs-built_in">log</span> = inc(); <span class="hljs-comment">// 打印 1</span>
-inc();             <span class="hljs-comment">// 打印 2</span>
-inc();             <span class="hljs-comment">// 打印 3</span>
-<span class="hljs-comment">// 无法正确工作</span>
-<span class="hljs-built_in">log</span>();             <span class="hljs-comment">// 打印 "Current value is 1"</span>
+const inc = createIncrement(1);
+const log = inc(); // 打印 1
+inc();             // 打印 2
+inc();             // 打印 3
+// 无法正确工作
+log();             // 打印 "Current value is 1"
 </code></pre>
-<p>在第一次调用<code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code>时，返回的闭包被分配给变量 <code><span class="hljs-built_in">log</span></code>。对 <code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code> 的 <code>3</code> 次调用的增量 <code><span class="hljs-attribute">value</span></code> 为 <code>3</code>。</p>
-<p>最后，调用<code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 打印 message <code>“<span class="hljs-keyword">Current</span> <span class="hljs-keyword">value</span> <span class="hljs-keyword">is</span> <span class="hljs-number">1</span>”</code>，这是出乎意料的，因为此时 <code><span class="hljs-attribute">value</span></code> 等于 <code>3</code>。</p>
-<p><code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code>是过时的闭包。在第一次调用 <code><span class="hljs-function"><span class="hljs-title">inc</span><span class="hljs-params">()</span></span></code> 时，闭包 <code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 捕获了具有 <code>“<span class="hljs-keyword">Current</span> <span class="hljs-keyword">value</span> <span class="hljs-keyword">is</span> <span class="hljs-number">1</span>”</code> 的 <code><span class="hljs-keyword">message</span></code> 变量。而现在，当 <code><span class="hljs-attribute">value</span></code> 已经是 <code>3</code> 时，<code><span class="hljs-keyword">message</span></code> 变量已经过时了。</p>
+<p>在第一次调用<code>inc()</code>时，返回的闭包被分配给变量 <code>log</code>。对 <code>inc()</code> 的 <code>3</code> 次调用的增量 <code>value</code> 为 <code>3</code>。</p>
+<p>最后，调用<code>log()</code> 打印 message <code>“Current value is 1”</code>，这是出乎意料的，因为此时 <code>value</code> 等于 <code>3</code>。</p>
+<p><code>log()</code>是过时的闭包。在第一次调用 <code>inc()</code> 时，闭包 <code>log()</code> 捕获了具有 <code>“Current value is 1”</code> 的 <code>message</code> 变量。而现在，当 <code>value</code> 已经是 <code>3</code> 时，<code>message</code> 变量已经过时了。</p>
 <blockquote>
 <p>过时的闭包捕获具有过时值的变量。</p>
 </blockquote>
 <h2>4.修复过时闭包的问题</h2>
 <h4>使用新的闭包</h4>
 <p>解决过时闭包的第一种方法是找到捕获最新变量的闭包。</p>
-<p>咱们找到捕获了最新 <code><span class="hljs-keyword">message</span></code> 变量的闭包。就是从最后一次调用 inc() 返回的闭包。</p>
-<pre><code class="language-javascript">const inc <span class="hljs-operator">=</span> createIncrement(<span class="hljs-number">1</span>)<span class="hljs-comment">;</span>
+<p>咱们找到捕获了最新 <code>message</code> 变量的闭包。就是从最后一次调用 inc() 返回的闭包。</p>
+<pre><code class="language-javascript">const inc = createIncrement(1);
 
-inc()<span class="hljs-comment">;  // 打印 1</span>
-inc()<span class="hljs-comment">;  // 打印 2</span>
-const latestLog <span class="hljs-operator">=</span> inc()<span class="hljs-comment">; // 打印 3</span>
+inc();  // 打印 1
+inc();  // 打印 2
+const latestLog = inc(); // 打印 3
 // 正常工作
-latestLog()<span class="hljs-comment">; // 打印 "Current value is 3"</span>
+latestLog(); // 打印 "Current value is 3"
 </code></pre>
-<p><code><span class="hljs-attribute">latestLog</span></code> 捕获的 <code><span class="hljs-keyword">message</span></code> 变量具有最新的的值 “Current value is 3”。</p>
+<p><code>latestLog</code> 捕获的 <code>message</code> 变量具有最新的的值 “Current value is 3”。</p>
 <p>顺便说一下，这大概就是 React Hook 处理闭包新鲜度的方式。</p>
-<p>Hooks 实现假设在组件重新渲染之间，作为 Hook 回调提供的最新闭包(例如 <code><span class="hljs-function"><span class="hljs-title">useEffect</span><span class="hljs-params">(callback)</span></span></code>) 已经从组件的函数作用域捕获了最新的变量。</p>
+<p>Hooks 实现假设在组件重新渲染之间，作为 Hook 回调提供的最新闭包(例如 <code>useEffect(callback)</code>) 已经从组件的函数作用域捕获了最新的变量。</p>
 <h4>关闭已更改的变量</h4>
-<p>第二种方法是让<code><span class="hljs-function"><span class="hljs-title">logValue</span><span class="hljs-params">()</span></span></code>直接使用 <code><span class="hljs-attribute">value</span></code>。</p>
-<p>让我们移动行 <code>const message <span class="hljs-operator">=</span> ...<span class="hljs-comment">;</span></code> 到 <code><span class="hljs-function"><span class="hljs-title">logValue</span><span class="hljs-params">()</span></span></code> 函数体中：</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createIncrementFixed</span>(<span class="hljs-params">i</span>) {
-  let value = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+<p>第二种方法是让<code>logValue()</code>直接使用 <code>value</code>。</p>
+<p>让我们移动行 <code>const message = ...;</code> 到 <code>logValue()</code> 函数体中：</p>
+<pre><code class="language-javascript">function createIncrementFixed(i) {
+  let value = 0;
+  function increment() {
     value += i;
-    <span class="hljs-built_in">console</span>.<span class="hljs-built_in">log</span>(value);
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">logValue</span>(<span class="hljs-params"></span>) {
-      const message = <span class="hljs-string">`Current value is <span class="hljs-subst">${value}</span>`</span>;
-      <span class="hljs-built_in">console</span>.<span class="hljs-built_in">log</span>(message);
+    console.log(value);
+    return function logValue() {
+      const message = `Current value is ${value}`;
+      console.log(message);
     };
   }
   
-  <span class="hljs-keyword">return</span> increment;
+  return increment;
 }
 
-const inc = createIncrementFixed(<span class="hljs-number">1</span>);
-const <span class="hljs-built_in">log</span> = inc(); <span class="hljs-comment">// 打印 1</span>
-inc();             <span class="hljs-comment">// 打印 2</span>
-inc();             <span class="hljs-comment">// 打印 3</span>
-<span class="hljs-comment">// 正常工作</span>
-<span class="hljs-built_in">log</span>();             <span class="hljs-comment">// 打印 "Current value is 3"</span>
+const inc = createIncrementFixed(1);
+const log = inc(); // 打印 1
+inc();             // 打印 2
+inc();             // 打印 3
+// 正常工作
+log();             // 打印 "Current value is 3"
 </code></pre>
-<p><code><span class="hljs-function"><span class="hljs-title">logValue</span><span class="hljs-params">()</span></span></code> 关闭 <code><span class="hljs-function"><span class="hljs-title">createIncrementFixed</span><span class="hljs-params">()</span></span></code> 作用域内的 <code><span class="hljs-attribute">value</span></code> 变量。<code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 现在打印正确的消息“<code><span class="hljs-keyword">Current</span> <span class="hljs-keyword">value</span> <span class="hljs-keyword">is</span> <span class="hljs-number">3</span></code>”。</p>
+<p><code>logValue()</code> 关闭 <code>createIncrementFixed()</code> 作用域内的 <code>value</code> 变量。<code>log()</code> 现在打印正确的消息“<code>Current value is 3</code>”。</p>
 <h2>5. Hook 中过时的闭包</h2>
 <h4>useEffect()</h4>
-<p>现在来研究一下在使用 <code><span class="hljs-function"><span class="hljs-title">useEffect</span><span class="hljs-params">()</span></span></code> Hook 时出现过时闭包的常见情况。</p>
-<p>在组件 <code><span class="hljs-section">&lt;WatchCount&gt;</span></code> 中，<code><span class="hljs-function"><span class="hljs-title">useEffect</span><span class="hljs-params">()</span></span></code>每秒打印 <code><span class="hljs-built_in">count</span></code> 的值。</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">WatchCount</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+<p>现在来研究一下在使用 <code>useEffect()</code> Hook 时出现过时闭包的常见情况。</p>
+<p>在组件 <code>&#x3C;WatchCount></code> 中，<code>useEffect()</code>每秒打印 <code>count</code> 的值。</p>
+<pre><code class="language-javascript">function WatchCount() {
+  const [count, setCount] = useState(0);
 
-  <span class="hljs-title function_">useEffect</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-built_in">setInterval</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"></span>) {
-      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Count is: <span class="hljs-subst">${count}</span>`</span>);
-    }, <span class="hljs-number">2000</span>);
+  useEffect(function() {
+    setInterval(function log() {
+      console.log(`Count is: ${count}`);
+    }, 2000);
   }, []);
 
-  <span class="hljs-keyword">return</span> (
-    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  return (
+    &#x3C;div>
       {count}
-      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count + 1) }&gt;
+      &#x3C;button onClick={() => setCount(count + 1) }>
         加1
-      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      &#x3C;/button>
+    &#x3C;/div>
   );
 }
 </code></pre>
-<p>打开 <a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcodesandbox.io%2Fs%2Fstale-closure-use-effect-broken-2-gyhzk">CodeSandbox</a> 并单击几次<strong>加1</strong>按钮。然后看看控制台，每2秒打印 <code>Count <span class="hljs-keyword">is</span>: <span class="hljs-number">0</span></code>。</p>
+<p>打开 <a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcodesandbox.io%2Fs%2Fstale-closure-use-effect-broken-2-gyhzk">CodeSandbox</a> 并单击几次<strong>加1</strong>按钮。然后看看控制台，每2秒打印 <code>Count is: 0</code>。</p>
 <p>咋这样呢？</p>
-<p>在第一次渲染时，<code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 中闭包捕获 <code><span class="hljs-built_in">count</span></code> 变量的值 <code>0</code>。过后，即使 <code><span class="hljs-built_in">count</span></code> 增加，<code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code>中使用的仍然是初始化的值 <code>0</code>。<code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 中的闭包是一个过时的闭包。</p>
-<p>解决方案是让 <code><span class="hljs-function"><span class="hljs-title">useEffect</span><span class="hljs-params">()</span></span></code>知道 <code><span class="hljs-function"><span class="hljs-title">log</span><span class="hljs-params">()</span></span></code> 中的闭包依赖于<code><span class="hljs-built_in">count</span></code>：</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">WatchCount</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+<p>在第一次渲染时，<code>log()</code> 中闭包捕获 <code>count</code> 变量的值 <code>0</code>。过后，即使 <code>count</code> 增加，<code>log()</code>中使用的仍然是初始化的值 <code>0</code>。<code>log()</code> 中的闭包是一个过时的闭包。</p>
+<p>解决方案是让 <code>useEffect()</code>知道 <code>log()</code> 中的闭包依赖于<code>count</code>：</p>
+<pre><code class="language-javascript">function WatchCount() {
+  const [count, setCount] = useState(0);
 
-  <span class="hljs-title function_">useEffect</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">const</span> id = <span class="hljs-built_in">setInterval</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"></span>) {
-      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Count is: <span class="hljs-subst">${count}</span>`</span>);
-    }, <span class="hljs-number">2000</span>);
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
-      <span class="hljs-built_in">clearInterval</span>(id);
+  useEffect(function() {
+    const id = setInterval(function log() {
+      console.log(`Count is: ${count}`);
+    }, 2000);
+    return function() {
+      clearInterval(id);
     }
-  }, [count]); <span class="hljs-comment">// 看这里，这行是重点</span>
+  }, [count]); // 看这里，这行是重点
 
-  <span class="hljs-keyword">return</span> (
-    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  return (
+    &#x3C;div>
       {count}
-      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count + 1) }&gt;
+      &#x3C;button onClick={() => setCount(count + 1) }>
         Increase
-      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      &#x3C;/button>
+    &#x3C;/div>
   );
 }
 </code></pre>
-<p>适当地设置依赖项后，一旦 <code><span class="hljs-built_in">count</span></code> 更改，<code><span class="hljs-function"><span class="hljs-title">useEffect</span><span class="hljs-params">()</span></span></code> 就更新闭包。</p>
+<p>适当地设置依赖项后，一旦 <code>count</code> 更改，<code>useEffect()</code> 就更新闭包。</p>
 <p>同样打开修复的 <a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcodesandbox.io%2Fs%2Fstale-closure-use-effect-fixed-2-ybv47">codesandbox</a>，单击几次<strong>加1</strong>按钮。然后看看控制台，这次打印就是正确的值了。</p>
 <p>正确管理 Hook 依赖关系是解决过时闭包问题的关键。推荐安装 <a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Feslint-plugin-react-hooks">eslint-plugin-react-hooks</a>,它可以帮助咱们检测被遗忘的依赖项。</p>
 <h4>useState()</h4>
-<p>组件<code><span class="hljs-section">&lt;DelayedCount&gt;</span></code>有 2 个按钮：</p>
+<p>组件<code>&#x3C;DelayedCount></code>有 2 个按钮：</p>
 <ul>
 <li>点击按键 <strong>“Increase async”</strong> 在异步模式下以<code>1</code>秒的延迟递增计数器</li>
 </ul>
-<pre><code class="language-js"> 在同步模式下，点击按键 “<span class="hljs-title class_">Increase</span> sync” 会立即增加计数器。
- <span class="hljs-keyword">function</span> <span class="hljs-title function_">DelayedCount</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
- <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClickAsync</span>(<span class="hljs-params"></span>) {
- <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">delay</span>(<span class="hljs-params"></span>) {   <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>); }, <span class="hljs-number">1000</span>);
+<pre><code class="language-js"> 在同步模式下，点击按键 “Increase sync” 会立即增加计数器。
+ function DelayedCount() {
+  const [count, setCount] = useState(0);
+ function handleClickAsync() {
+ setTimeout(function delay() {   setCount(count + 1); }, 1000);
  }
- <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClickSync</span>(<span class="hljs-params"></span>) {
- <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>);
+ function handleClickSync() {
+ setCount(count + 1);
  }
- <span class="hljs-keyword">return</span> (
- <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>   {count}   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClickAsync}</span>&gt;</span>Increase async<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClickSync}</span>&gt;</span>Increase sync<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+ return (
+ &#x3C;div>   {count}   &#x3C;button onClick={handleClickAsync}>Increase async&#x3C;/button>   &#x3C;button onClick={handleClickSync}>Increase sync&#x3C;/button> &#x3C;/div>
  );
 }
  
 </code></pre>
-<p>现在<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcodesandbox.io%2Fs%2Fuse-state-broken-0q994">打开 codesandbox 演示</a>。点击 <strong>“Increase async”</strong> 按键然后立即点击 <strong>“Increase sync”</strong> 按钮，<code><span class="hljs-built_in">count</span></code> 只更新到 <code>1</code>。</p>
-<p>这是因为 <code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 是一个过时的闭包。</p>
+<p>现在<a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fcodesandbox.io%2Fs%2Fuse-state-broken-0q994">打开 codesandbox 演示</a>。点击 <strong>“Increase async”</strong> 按键然后立即点击 <strong>“Increase sync”</strong> 按钮，<code>count</code> 只更新到 <code>1</code>。</p>
+<p>这是因为 <code>delay()</code> 是一个过时的闭包。</p>
 <p>来看看这个过程发生了什么：</p>
 <ol>
-<li>初始渲染：<code><span class="hljs-built_in">count</span></code> 值为 <code>0</code>。</li>
-<li>点击 <strong>'Increase async'</strong> 按钮。<code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 闭包捕获 <code><span class="hljs-built_in">count</span></code> 的值 <code>0</code>。<code><span class="hljs-function"><span class="hljs-title">setTimeout</span><span class="hljs-params">()</span></span></code> 1 秒后调用 <code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code>。</li>
-<li>点击 <strong>“Increase async”</strong> 按键。<code><span class="hljs-function"><span class="hljs-title">handleClickSync</span><span class="hljs-params">()</span></span></code> 调用 <code><span class="hljs-function"><span class="hljs-title">setCount</span><span class="hljs-params">(<span class="hljs-number">0</span> + <span class="hljs-number">1</span>)</span></span></code> 将 <code><span class="hljs-built_in">count</span></code> 的值设置为 <code>1</code>，组件重新渲染。</li>
-<li><code>1</code> 秒之后，<code><span class="hljs-function"><span class="hljs-title">setTimeout</span><span class="hljs-params">()</span></span></code> 执行 <code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 函数。但是 <code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 中闭包保存 <code><span class="hljs-built_in">count</span></code> 的值是初始渲染的值 <code>0</code>，所以调用 <code><span class="hljs-function"><span class="hljs-title">setState</span><span class="hljs-params">(<span class="hljs-number">0</span> + <span class="hljs-number">1</span>)</span></span></code>，结果<code><span class="hljs-built_in">count</span></code>保持为 <code>1</code>。</li>
+<li>初始渲染：<code>count</code> 值为 <code>0</code>。</li>
+<li>点击 <strong>'Increase async'</strong> 按钮。<code>delay()</code> 闭包捕获 <code>count</code> 的值 <code>0</code>。<code>setTimeout()</code> 1 秒后调用 <code>delay()</code>。</li>
+<li>点击 <strong>“Increase async”</strong> 按键。<code>handleClickSync()</code> 调用 <code>setCount(0 + 1)</code> 将 <code>count</code> 的值设置为 <code>1</code>，组件重新渲染。</li>
+<li><code>1</code> 秒之后，<code>setTimeout()</code> 执行 <code>delay()</code> 函数。但是 <code>delay()</code> 中闭包保存 <code>count</code> 的值是初始渲染的值 <code>0</code>，所以调用 <code>setState(0 + 1)</code>，结果<code>count</code>保持为 <code>1</code>。</li>
 </ol>
-<p><code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 是一个过时的闭包，它使用在初始渲染期间捕获的过时的 <code><span class="hljs-built_in">count</span></code> 变量。</p>
-<p>为了解决这个问题，可以使用函数方法来更新 <code><span class="hljs-built_in">count</span></code> 状态：</p>
-<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">DelayedCount</span>(<span class="hljs-params"></span>) {
-  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+<p><code>delay()</code> 是一个过时的闭包，它使用在初始渲染期间捕获的过时的 <code>count</code> 变量。</p>
+<p>为了解决这个问题，可以使用函数方法来更新 <code>count</code> 状态：</p>
+<pre><code class="language-javascript">function DelayedCount() {
+  const [count, setCount] = useState(0);
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClickAsync</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">delay</span>(<span class="hljs-params"></span>) {
-      <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">count</span> =&gt;</span> count + <span class="hljs-number">1</span>); <span class="hljs-comment">// 这行是重点</span>
-    }, <span class="hljs-number">1000</span>);
+  function handleClickAsync() {
+    setTimeout(function delay() {
+      setCount(count => count + 1); // 这行是重点
+    }, 1000);
   }
 
-  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClickSync</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>);
+  function handleClickSync() {
+    setCount(count + 1);
   }
 
-  <span class="hljs-keyword">return</span> (
-    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  return (
+    &#x3C;div>
       {count}
-      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClickAsync}</span>&gt;</span>Increase async<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClickSync}</span>&gt;</span>Increase sync<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      &#x3C;button onClick={handleClickAsync}>Increase async&#x3C;/button>
+      &#x3C;button onClick={handleClickSync}>Increase sync&#x3C;/button>
+    &#x3C;/div>
   );
 }
 </code></pre>
-<p>现在 <code>setCount(<span class="hljs-function"><span class="hljs-params">count</span> =&gt;</span> <span class="hljs-built_in">count</span> + <span class="hljs-number">1</span>)</code> 更新了 <code><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code> 中的 <code><span class="hljs-built_in">count</span></code> 状态。React 确保将最新状态值作为参数提供给更新状态函数，过时的闭包的问题就解决了。</p>
+<p>现在 <code>setCount(count => count + 1)</code> 更新了 <code>delay()</code> 中的 <code>count</code> 状态。React 确保将最新状态值作为参数提供给更新状态函数，过时的闭包的问题就解决了。</p>
 <h2>总结</h2>
 <p>闭包是一个函数，它从定义变量的地方(或其词法范围)捕获变量。闭包是每个 JS 开发人员都应该知道的一个重要概念。</p>
 <p>当闭包捕获过时的变量时，就会出现过时闭包的问题。解决过时闭包的一个有效方法是正确设置 React Hook 的依赖项。或者，对于过时的状态，使用函数方式更新状态。</p>
@@ -244,6 +240,7 @@ inc();             <span class="hljs-comment">// 打印 3</span>
 来源：dmitripavlutin<br>
 原文： <a href="https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fdmitripavlutin.com%2Fsimple-explanation-of-javascript-closures%2F">https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fdmitripavlutin.com%2Fsimple-explanation-of-javascript-closures%2F</a></p>
 </blockquote>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"使用js和React Hook时的过时闭包问题及解决方案"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/前端技术/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"javascript"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"React"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"过时闭包"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Hook"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"解决方案"}]]]}],["$","$Lf",null,{"path":"%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"使用js和React Hook时的过时闭包问题及解决方案 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"使用js和React Hook时的过时闭包问题及解决方案"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/前端技术/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"前端技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"javascript"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"React"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"过时闭包"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Hook"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"解决方案"}]]]}],["$","$Lc",null,{"path":"%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"%E4%BD%BF%E7%94%A8js%E5%92%8CReact-Hook%E6%97%B6%E7%9A%84%E8%BF%87%E6%97%B6%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"使用js和React Hook时的过时闭包问题及解决方案 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

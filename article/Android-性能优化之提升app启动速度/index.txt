@@ -1,25 +1,21 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],{"children":["__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:Ta39e,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],{"children":["__PAGE__?{\"id\":\"Android-性能优化之提升app启动速度\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T5b13,
     <p class="time">发布时间：<time datetime="20 March, 2023">2023-03-20 13:37:49</time></p>
     <p class="words">本文字数：2,864 字       阅读完需：约 6 分钟</p>
-    <html><head></head><body><h2>1 启动的方式</h2>
+    <h2>1 启动的方式</h2>
 <p>启动分为两种方式：<br>
 1）冷启动：当直接从桌面上直接启动，同时后台没有该进程的缓存，这个时候系统就需要重新创建一个新的进程并且分配各种资源。<br>
 2）热启动：该app后台有该进程的缓存，这时候启动的进程就属于热启动。</p>
@@ -27,10 +23,10 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p><a href="https://www.cnblogs.com/Oztaking/p/9385216.html#_labelTop">回到顶部</a></p>
 <h2>2. 测试应用启动的时间</h2>
 <p>使用命令行来启动app，同时进行时间测量。单位：毫秒</p>
-<pre><code class="language-shell">    adb shell am start -W <span class="hljs-selector-attr">[PackageName]</span>/<span class="hljs-selector-attr">[PackageName.MainActivity]</span>
-    adb shell am start -W com<span class="hljs-selector-class">.gzsll</span>.hupu/<span class="hljs-selector-class">.ui</span><span class="hljs-selector-class">.splash</span><span class="hljs-selector-class">.SplashActivity</span>
-    adb shell am start -W com<span class="hljs-selector-class">.example</span>.applicationstartoptimizedemo/com<span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.applicationstartoptimizedemo</span><span class="hljs-selector-class">.SplashActivity</span>
-    adb shell am start -W com<span class="hljs-selector-class">.dn</span>.splashoptimize/com<span class="hljs-selector-class">.dn</span><span class="hljs-selector-class">.splashoptimize</span><span class="hljs-selector-class">.MainActivity</span>
+<pre><code class="language-shell">    adb shell am start -W [PackageName]/[PackageName.MainActivity]
+    adb shell am start -W com.gzsll.hupu/.ui.splash.SplashActivity
+    adb shell am start -W com.example.applicationstartoptimizedemo/com.example.applicationstartoptimizedemo.SplashActivity
+    adb shell am start -W com.dn.splashoptimize/com.dn.splashoptimize.MainActivity
 </code></pre>
 <p><img src="989346-20180729143009772-125609983.png" alt=""></p>
 <ul>
@@ -40,8 +36,8 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 </ul>
 <p><img src="989346-20180729143939230-1453036201.png" alt=""></p>
 <h2>3.应用启动的流程</h2>
-<p>Application从构造方法开始---&gt;<code><span class="hljs-function"><span class="hljs-title">attachBaseContext</span><span class="hljs-params">()</span></span></code>---&gt;<code><span class="hljs-function"><span class="hljs-title">onCreate</span><span class="hljs-params">()</span></span></code></p>
-<p>Activity构造方法---&gt;<code><span class="hljs-function"><span class="hljs-title">onCreate</span><span class="hljs-params">()</span></span></code>---&gt;设置显示界面布局，设置主题、背景等等属性---&gt;<code><span class="hljs-function"><span class="hljs-title">onStart</span><span class="hljs-params">()</span></span></code>---&gt;<code><span class="hljs-function"><span class="hljs-title">onResume</span><span class="hljs-params">()</span></span></code>---&gt;显示里面的view（测量、布局、绘制，显示到界面上）</p>
+<p>Application从构造方法开始---><code>attachBaseContext()</code>---><code>onCreate()</code></p>
+<p>Activity构造方法---><code>onCreate()</code>--->设置显示界面布局，设置主题、背景等等属性---><code>onStart()</code>---><code>onResume()</code>--->显示里面的view（测量、布局、绘制，显示到界面上）</p>
 <h2>4.减少应用的启动时间的耗时</h2>
 <p>1）、不要在Application的构造方法、attachBaseContext()、onCreate()里面进行初始化耗时操作。</p>
 <p>2）、MainActivity，由于用户只关心最后的显示的这一帧，对我们的布局的层次要求要减少，自定义控件的话测量、布局、绘制的时间。<br>
@@ -50,7 +46,7 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>因为他初始化的时候是需要将数据全部读取出来放到内存当中。</p>
 <p>优化1：可以尽可能减少sp文件数量(IO需要时间)；2.像这样的初始化最好放到线程里面；3.大的数据缓存到数据库里面。</p>
 <p>app启动的耗时主要是在：Application初始化 + MainActivity的界面加载绘制时间。</p>
-<p>Application可以优化的时间很少。主要从<code><span class="hljs-attribute">MainAcitivity</span></code>入手。</p>
+<p>Application可以优化的时间很少。主要从<code>MainAcitivity</code>入手。</p>
 <p>【优化初步】</p>
 <p>由于MainActivity的业务和布局复杂度非常高，甚至该界面必须要有一些初始化的数据才能显示。</p>
 <p>那么这个时候MainActivity就可能半天都出不来，这就给用户感觉app太卡了。</p>
@@ -82,18 +78,18 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>原因是这个延迟时间无法控制。</p>
 <p>不同的机器启动速度不一样。</p>
 <p>如果我们这样：在onCreate中执行handler.postDelayed的延时操作，会在什么时刻执行其中的handler.post的事件呢？</p>
-<pre><code class="language-java"><span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
+<pre><code class="language-java">@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-         mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-             <span class="hljs-meta">@Override</span>
-             <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                 mProgressBar.<span class="hljs-title function_">setVisibility</span>(<span class="hljs-title class_">View</span>.<span class="hljs-property">GONE</span>);
-                 iv.<span class="hljs-title function_">setVisibility</span>(<span class="hljs-title class_">View</span>.<span class="hljs-property">VISIBLE</span>);
+         mHandler.postDelayed(new Runnable() {
+             @Override
+             public void run() {
+                 mProgressBar.setVisibility(View.GONE);
+                 iv.setVisibility(View.VISIBLE);
              }
-         }, <span class="hljs-number">2500</span>);
+         }, 2500);
  }
 </code></pre>
 <p>【答】是在执行完第一次的performTraversale()之后才开始执行handler.postDelay插入的动作的（perfromTraversales()方法会执行两次）。此前该动作是在MessQueue中排队等待。</p>
@@ -108,130 +104,130 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <h2>5 .优化初步</h2>
 <p>【说明】最主要的优化的本质是：防止干扰MainActivity的启动，将耗时的操作都放到onResum之后。</p>
 <p>【fragment_splash.xml】使用framLayout，显示一张图片，作为splashFrament的布局</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">"com.example.applicationstartoptimizedemo.MainActivity"</span> &gt;</span>
+<pre><code class="language-xml">&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.applicationstartoptimizedemo.MainActivity" >
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">FrameLayout</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/frame"</span>
-        <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@drawable/splash12"</span>  //<span class="hljs-attr">显示一张图片</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span> &gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">FrameLayout</span>&gt;</span>
+    &#x3C;FrameLayout
+        android:id="@+id/frame"
+        android:background="@drawable/splash12"  //显示一张图片
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    &#x3C;/FrameLayout>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 </code></pre>
 <p>【SplashFragment.java】</p>
-<pre><code class="language-java">    <span class="hljs-selector-tag">public</span> <span class="hljs-selector-tag">class</span> <span class="hljs-selector-tag">SplashFragment</span> <span class="hljs-selector-tag">extends</span> <span class="hljs-selector-tag">Fragment</span> {
-        <span class="hljs-variable">@Override</span>
-        <span class="hljs-variable">@Nullable</span>
-        public View <span class="hljs-built_in">onCreateView</span>(LayoutInflater inflater,
-            <span class="hljs-variable">@Nullable</span> ViewGroup container, <span class="hljs-variable">@Nullable</span> Bundle savedInstanceState) {
-        <span class="hljs-comment">// TODO Auto-generated method stub</span>
-        <span class="hljs-selector-tag">return</span> <span class="hljs-selector-tag">inflater</span><span class="hljs-selector-class">.inflate</span>(R.layout.fragment_splash, container, false);  <span class="hljs-comment">//转换布局</span>
+<pre><code class="language-java">    public class SplashFragment extends Fragment {
+        @Override
+        @Nullable
+        public View onCreateView(LayoutInflater inflater,
+            @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        return inflater.inflate(R.layout.fragment_splash, container, false);  //转换布局
         }
     }
 </code></pre>
 <p>【activity_main.xml】</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">"com.example.applicationstartoptimizedemo.MainActivity"</span> &gt;</span>
+<pre><code class="language-xml">&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.applicationstartoptimizedemo.MainActivity" >
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">FrameLayout</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/content"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>&gt;</span>
+    &#x3C;FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">ProgressBar</span>
-            <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/progressBar1"</span>
-            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-            <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">"center"</span> /&gt;</span>
+        &#x3C;ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
-            <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/iv"</span>
-            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-            <span class="hljs-attr">android:scaleType</span>=<span class="hljs-string">"fitStart"</span>
-            <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@drawable/content"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">FrameLayout</span>&gt;</span>
+        &#x3C;ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@drawable/content" />
+    &#x3C;/FrameLayout>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">FrameLayout</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/frame"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span> &gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">FrameLayout</span>&gt;</span>
+    &#x3C;FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    &#x3C;/FrameLayout>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 
 </code></pre>
 <p>【MainActivity.java】</p>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">FragmentActivity</span> {
-    <span class="hljs-keyword">private</span> <span class="hljs-type">Handler</span> <span class="hljs-variable">mHandler</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>();
-    <span class="hljs-keyword">private</span> ProgressBar mProgressBar;
+<pre><code class="language-java">public class MainActivity extends FragmentActivity {
+    private Handler mHandler = new Handler();
+    private ProgressBar mProgressBar;
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> {
-        <span class="hljs-built_in">super</span>.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar1);
 
-        <span class="hljs-keyword">final</span> <span class="hljs-type">SplashFragment</span> <span class="hljs-variable">splashFragment</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
-        <span class="hljs-keyword">final</span> <span class="hljs-type">FragmentTransaction</span> <span class="hljs-variable">transaction</span> <span class="hljs-operator">=</span> getSupportFragmentManager()
+        final SplashFragment splashFragment = new SplashFragment();
+        final FragmentTransaction transaction = getSupportFragmentManager()
                 .beginTransaction();
         transaction.replace(R.id.frame, splashFragment);
         transaction.commit();
 
-<span class="hljs-comment">//        mHandler.postDelayed(new DelayRunnable(this, splashFragment,</span>
-<span class="hljs-comment">//                mProgressBar), 2500);</span>
-         getWindow().getDecorView().post(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {  <span class="hljs-comment">//判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-                <span class="hljs-meta">@Override</span>
-                <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
-                    mHandler.postDelayed(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(MainActivity.<span class="hljs-built_in">this</span>, splashFragment,
-                            mProgressBar), <span class="hljs-number">2500</span>);  <span class="hljs-comment">//此处的2.5s此时真正的延时时间</span>
+//        mHandler.postDelayed(new DelayRunnable(this, splashFragment,
+//                mProgressBar), 2500);
+         getWindow().getDecorView().post(new Runnable() {  //判断当窗体加载完毕的时候,立马再加载真正的布局进来
+                @Override
+                public void run() {
+                    mHandler.postDelayed(new DelayRunnable(MainActivity.this, splashFragment,
+                            mProgressBar), 2500);  //此处的2.5s此时真正的延时时间
                 }
             });
 
     }
 
-    <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DelayRunnable</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Runnable</span> {
-        <span class="hljs-keyword">private</span> WeakReference&lt;Context&gt; contextRef;
-        <span class="hljs-keyword">private</span> WeakReference&lt;SplashFragment&gt; fragmentRef;
-        <span class="hljs-keyword">private</span> WeakReference&lt;ProgressBar&gt; progressBarRef;
+    static class DelayRunnable implements Runnable {
+        private WeakReference&#x3C;Context> contextRef;
+        private WeakReference&#x3C;SplashFragment> fragmentRef;
+        private WeakReference&#x3C;ProgressBar> progressBarRef;
 
-        <span class="hljs-keyword">public</span> <span class="hljs-title function_">DelayRunnable</span><span class="hljs-params">(Context context, SplashFragment splashFragment,
-                ProgressBar progressBar)</span> {
-            contextRef = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakReference</span>&lt;Context&gt;(context);
-            fragmentRef = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakReference</span>&lt;SplashFragment&gt;(splashFragment);
-            progressBarRef = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakReference</span>&lt;ProgressBar&gt;(progressBar);
+        public DelayRunnable(Context context, SplashFragment splashFragment,
+                ProgressBar progressBar) {
+            contextRef = new WeakReference&#x3C;Context>(context);
+            fragmentRef = new WeakReference&#x3C;SplashFragment>(splashFragment);
+            progressBarRef = new WeakReference&#x3C;ProgressBar>(progressBar);
         }
 
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
-            <span class="hljs-type">ProgressBar</span> <span class="hljs-variable">progressBar</span> <span class="hljs-operator">=</span> progressBarRef.get();
-            <span class="hljs-keyword">if</span> (progressBar != <span class="hljs-literal">null</span>)
+        @Override
+        public void run() {
+            ProgressBar progressBar = progressBarRef.get();
+            if (progressBar != null)
                 progressBar.setVisibility(View.GONE);
-            <span class="hljs-type">FragmentActivity</span> <span class="hljs-variable">context</span> <span class="hljs-operator">=</span> (FragmentActivity) contextRef.get();
-            <span class="hljs-keyword">if</span> (context != <span class="hljs-literal">null</span>) {
-                <span class="hljs-type">SplashFragment</span> <span class="hljs-variable">splashFragment</span> <span class="hljs-operator">=</span> fragmentRef.get();
-                <span class="hljs-keyword">if</span> (splashFragment == <span class="hljs-literal">null</span>)
-                    <span class="hljs-keyword">return</span>;
-                <span class="hljs-keyword">final</span> <span class="hljs-type">FragmentTransaction</span> <span class="hljs-variable">transaction</span> <span class="hljs-operator">=</span> context
+            FragmentActivity context = (FragmentActivity) contextRef.get();
+            if (context != null) {
+                SplashFragment splashFragment = fragmentRef.get();
+                if (splashFragment == null)
+                    return;
+                final FragmentTransaction transaction = context
                         .getSupportFragmentManager().beginTransaction();
-                transaction.remove(splashFragment);  <span class="hljs-comment">//移除fragment</span>
+                transaction.remove(splashFragment);  //移除fragment
                 transaction.commit();
             }
         }
     }
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onDestroy</span><span class="hljs-params">()</span> {
-        <span class="hljs-built_in">super</span>.onDestroy();
-        mHandler.removeCallbacksAndMessages(<span class="hljs-literal">null</span>);
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mHandler.removeCallbacksAndMessages(null);
     }
 
 }
@@ -240,135 +236,135 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p><img src="989346-20180804094934465-193769041.gif" alt=""></p>
 <p><img src="989346-20180804095139735-1721962743.png" alt=""></p>
 <h2>6 使用Viewstub优化</h2>
-<p>&nbsp;在用户点击直接进入的是MainAcitivity，但是MainActivity中，分为了两路<strong>同时</strong>加载，如下下面代码执行了两个getWindow().getDecorView().post；</p>
+<p> 在用户点击直接进入的是MainAcitivity，但是MainActivity中，分为了两路<strong>同时</strong>加载，如下下面代码执行了两个getWindow().getDecorView().post；</p>
 <p>一路是在加载viewStub布局，此处的viewStub布局是activity_main，看下面的源码。</p>
 <p>一路是延时加载splash的动画界面，定义了专门的DelayRunnable类。</p>
 <p>需要注意的是：getWindow().getDecorView().post的执行时机是在<strong>onResume()</strong>，即真正的Acitivity可见的时候才会加载ViewStub，才会加载splash。</p>
-<pre><code class="language-java"><span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
+<pre><code class="language-java">@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
-        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
-        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
-        transaction.<span class="hljs-title function_">commit</span>();
+        splashFragment = new SplashFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame, splashFragment);
+        transaction.commit();
 
-        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
-        <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-                    <span class="hljs-meta">@Override</span>
-                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                        <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.<span class="hljs-title function_">inflate</span>();
+        viewStub = (ViewStub)findViewById(R.id.content_viewstub);
+        //1.判断当窗体加载完毕的时候,立马再加载真正的布局进来
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        //将viewstub加载进来
+                        viewStub.inflate();
                     }
                 } );
             }
         });
 
-        <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
-        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">// 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
-<span class="hljs-comment">//                mHandler.post(new DelayRunnable());</span>
+        //2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）
+                mHandler.postDelayed(new DelayRunnable(MainActivity.this, splashFragment) ,2000);
+//                mHandler.post(new DelayRunnable());
             }
         });
-        <span class="hljs-comment">//3.同时进行异步加载数据</span>
+        //3.同时进行异步加载数据
     }
 </code></pre>
 <p>【布局的viewStub】</p>
 <p>【activity_main.xml源码】</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">"com.example.applicationstartoptimizedemo.MainActivity"</span> &gt;</span>
+<pre><code class="language-xml">&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.applicationstartoptimizedemo.MainActivity" >
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">ViewStub</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/content_viewstub"</span>
-        <span class="hljs-attr">android:layout</span>=<span class="hljs-string">"@layout/activity_main_viewstub"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>/&gt;</span>
+    &#x3C;ViewStub
+        android:id="@+id/content_viewstub"
+        android:layout="@layout/activity_main_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">FrameLayout</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/frame"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span> &gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">FrameLayout</span>&gt;</span>
+    &#x3C;FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    &#x3C;/FrameLayout>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 </code></pre>
 <p>其中指定了ViewStub的layout参数，指向的是之前的acitivity_main的布局；</p>
 <p>使用VIewStub系统会延时加载，只有在使用到的时候才会加载该布局。layout参数指定的布局源码如下：</p>
 <p>【activity_main_viewstub.xml源码】此布局填充的内容就是原来的MainAcitivity要指定的布局内容，其中使用ImageView临时作为内容加载。</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">FrameLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/content"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span> &gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">ProgressBar</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/progressBar1"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">"center"</span> /&gt;</span>
+    &#x3C;ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/iv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:scaleType</span>=<span class="hljs-string">"fitStart"</span>
-        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@drawable/content"</span> /&gt;</span>
+    &#x3C;ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/content" />
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">FrameLayout</span>&gt;</span>
+&#x3C;/FrameLayout>
 </code></pre>
 <p>【优化说明】此处主要做了两项优化：</p>
 <p>第一项优化是使用fragment优化，在fragment的布局中添加splash的启动页面。</p>
 <p>第二项优化是优化MainAcitivity的加载时间，使用viewStub先不加载MainActivity的布局，在onResume 时候再加载。</p>
 <p>使用了双加载机制，例如：splash的动画执行时间是2s，而MainActivity的viewStub加载时间是1s，那必然在splash加载的过程中viewStub已经加载成功了，是一个并行的过程。</p>
 <p>注意：在此处同时也是可以加载MainActivity使用的到的数据，比如网络数据等等，下面源码中展示的提示。</p>
-<pre><code class="language-java"><span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
+<pre><code class="language-java">@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
-        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
-        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
-        transaction.<span class="hljs-title function_">commit</span>();
+        splashFragment = new SplashFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame, splashFragment);
+        transaction.commit();
 
-        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
-        <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-                    <span class="hljs-meta">@Override</span>
-                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                        <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.<span class="hljs-title function_">inflate</span>();
+        viewStub = (ViewStub)findViewById(R.id.content_viewstub);
+        //1.判断当窗体加载完毕的时候,立马再加载真正的布局进来
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        //将viewstub加载进来
+                        viewStub.inflate();
                     }
                 } );
             }
         });
 
-        <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
-        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">// 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
-<span class="hljs-comment">//                mHandler.post(new DelayRunnable());</span>
+        //2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）
+                mHandler.postDelayed(new DelayRunnable(MainActivity.this, splashFragment) ,2000);
+//                mHandler.post(new DelayRunnable());
             }
         });
-        <span class="hljs-comment">//3.同时进行异步加载数据</span>
+        //3.同时进行异步加载数据
     }
 </code></pre>
 <p>优化之后的时间对比：此处的viewstub的布局比较简单，看到的优化时间比较短，如果布局非常复杂，看到的优化时间会更明显。</p>
@@ -376,67 +372,67 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <h2>7 整理</h2>
 <p>【0】最主要的优化的本质是：防止干扰MainActivity的启动，将耗时的操作都放到onResum之后。</p>
 <p>【1】可以将 两个getWindow().getDecorView().post(new Runnable()整合到一个方法中；</p>
-<pre><code class="language-java"><span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
+<pre><code class="language-java">@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        splashFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SplashFragment</span>();
-        <span class="hljs-title class_">FragmentTransaction</span> transaction = <span class="hljs-title function_">getSupportFragmentManager</span>().<span class="hljs-title function_">beginTransaction</span>();
-        transaction.<span class="hljs-title function_">replace</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">frame</span>, splashFragment);
-        transaction.<span class="hljs-title function_">commit</span>();
+        splashFragment = new SplashFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame, splashFragment);
+        transaction.commit();
 
-        viewStub = (<span class="hljs-title class_">ViewStub</span>)<span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">content_viewstub</span>);
-        <span class="hljs-comment">//1.判断当窗体加载完毕的时候,立马再加载真正的布局进来</span>
-        <span class="hljs-title function_">getWindow</span>().<span class="hljs-title function_">getDecorView</span>().<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">// 开启延迟加载</span>
-                mHandler.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-                    <span class="hljs-meta">@Override</span>
-                    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                        <span class="hljs-comment">//将viewstub加载进来</span>
-                        viewStub.<span class="hljs-title function_">inflate</span>();
+        viewStub = (ViewStub)findViewById(R.id.content_viewstub);
+        //1.判断当窗体加载完毕的时候,立马再加载真正的布局进来
+        getWindow().getDecorView().post(new Runnable() {
+            @Override
+            public void run() {
+                // 开启延迟加载
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        //将viewstub加载进来
+                        viewStub.inflate();
                 } );
             }
 
-            <span class="hljs-comment">//2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。</span>
-                <span class="hljs-comment">//开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）</span>
-                mHandler.<span class="hljs-title function_">postDelayed</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">DelayRunnable</span>(<span class="hljs-title class_">MainActivity</span>.<span class="hljs-property">this</span>, splashFragment) ,<span class="hljs-number">2000</span>);
-                <span class="hljs-comment">//mHandler.post(new DelayRunnable());</span>
+            //2.判断当窗体加载完毕的时候执行,延迟一段时间做动画。
+                //开启延迟加载,也可以不用延迟可以立马执行（我这里延迟是为了实现fragment里面的动画效果的耗时）
+                mHandler.postDelayed(new DelayRunnable(MainActivity.this, splashFragment) ,2000);
+                //mHandler.post(new DelayRunnable());
 
         });
 
-        <span class="hljs-comment">//3.同时进行异步加载数据</span>
+        //3.同时进行异步加载数据
     }
 </code></pre>
 <p>【2】此处只是为了模拟，将fragment的延时时间设置为了2000。如果执行动画则不必再延时，执行post；</p>
-<pre><code class="language-java">mHandler.post(<span class="hljs-keyword">new</span> <span class="hljs-type">DelayRunnable</span>());
+<pre><code class="language-java">mHandler.post(new DelayRunnable());
 </code></pre>
 <p>【3】问为什么view.inflate 不放在framgent的移除之后来执行？如下代码展示</p>
-<pre><code class="language-java"><span class="hljs-keyword">static</span> <span class="hljs-title class_"><span class="hljs-keyword">class</span> <span class="hljs-title">DelayRunnable</span> <span class="hljs-keyword"><span class="hljs-keyword">implements</span> <span class="hljs-type">Runnable</span></span></span>{
-         <span class="hljs-keyword">private</span> WeakReference&lt;Context&gt; contextRef;
-         <span class="hljs-keyword">private</span> WeakReference&lt;SplashFragment&gt; fragmentRef;
+<pre><code class="language-java">static class DelayRunnable implements Runnable{
+         private WeakReference&#x3C;Context> contextRef;
+         private WeakReference&#x3C;SplashFragment> fragmentRef;
          
-         <span class="hljs-keyword">public</span> DelayRunnable(Context context, SplashFragment f) {
-             contextRef = <span class="hljs-keyword">new</span> <span class="hljs-type">WeakReference</span>&lt;Context&gt;(context);
-             fragmentRef = <span class="hljs-keyword">new</span> <span class="hljs-type">WeakReference</span>&lt;SplashFragment&gt;(f);
+         public DelayRunnable(Context context, SplashFragment f) {
+             contextRef = new WeakReference&#x3C;Context>(context);
+             fragmentRef = new WeakReference&#x3C;SplashFragment>(f);
          }
  
-         <span class="hljs-meta">@Override</span>
-         <span class="hljs-keyword">public</span> void run() {
-             <span class="hljs-comment">// 移除fragment</span>
-             <span class="hljs-keyword">if</span>(contextRef!=<span class="hljs-literal">null</span>){
-                 SplashFragment splashFragment = fragmentRef.<span class="hljs-keyword">get</span>();
-                 <span class="hljs-keyword">if</span>(splashFragment==<span class="hljs-literal">null</span>){
-                     <span class="hljs-keyword">return</span>;
+         @Override
+         public void run() {
+             // 移除fragment
+             if(contextRef!=null){
+                 SplashFragment splashFragment = fragmentRef.get();
+                 if(splashFragment==null){
+                     return;
                  }
-                 FragmentActivity activity = (FragmentActivity) contextRef.<span class="hljs-keyword">get</span>();
+                 FragmentActivity activity = (FragmentActivity) contextRef.get();
                  FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
                  transaction.remove(splashFragment);
                  transaction.commit();
  
-                 <span class="hljs-comment">//将viewstub加载进来</span>
+                 //将viewstub加载进来
              viewStub.inflate();   
              }
          }
@@ -449,7 +445,8 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>【7】如果向之前一样mainActivity没有展示在用户面前就开始执行动画，则相当于t时间浪费。</p>
 <p><img src="989346-20180804113312843-120597367.png" alt=""></p>
 <p>【8】白屏的问题在此处应该已经不存在了，需要验证一下。</p>
-<p>&nbsp;源码下载地址：<a href="https://download.csdn.net/download/wsxingjun/10583183">https://download.csdn.net/download/wsxingjun/10583183</a></p>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Android 性能优化之提升app启动速度"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"优化"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"性能"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"SplashActivity"}]]]}],["$","$Lf",null,{"path":"Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Android 性能优化之提升app启动速度 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+<p> 源码下载地址：<a href="https://download.csdn.net/download/wsxingjun/10583183">https://download.csdn.net/download/wsxingjun/10583183</a></p>
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Android 性能优化之提升app启动速度"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"优化"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"性能"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"SplashActivity"}]]]}],["$","$Lc",null,{"path":"Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"Android-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E6%8F%90%E5%8D%87app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Android 性能优化之提升app启动速度 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

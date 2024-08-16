@@ -1,403 +1,399 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月4日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T8bb7,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月4日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T3d32,
     <p class="time">发布时间：<time datetime="04 November, 2022">2022-11-04 16:40:52</time></p>
     <p class="words">本文字数：1,385 字       阅读完需：约 6 分钟</p>
-    <html><head></head><body><h2>展示图片</h2>
+    <h2>展示图片</h2>
 <p>使用AppCompatImageView标签展示图片，放置图片的控件<br>
 src: 设置显示在控件上的图片<br>
 app:srcCompat="" 可以放置显示图片(不会显示),设计时展示，运行时不展示</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"55dp"</span>
-    <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@color/purple_200"</span>&gt;</span>
-<span class="hljs-comment">&lt;!--    放置图片的控件
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/purple_200">
+&#x3C;!--    放置图片的控件
         src: 设置显示在控件上的图片
         app:srcCompat="" 可以放置显示图片(不会显示),设计时展示，运行时不展示
---&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">androidx.appcompat.widget.AppCompatImageView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_iv_left"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">"10dp"</span>
-        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@mipmap/icon_back"</span>/&gt;</span>
+-->
+    &#x3C;androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/title_iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_back"/>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">androidx.appcompat.widget.AppCompatImageView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_iv_right"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">"10dp"</span>
-        <span class="hljs-attr">android:layout_alignParentRight</span>=<span class="hljs-string">"true"</span>
-        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@mipmap/icon_setting"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/title_tv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_centerInParent</span>=<span class="hljs-string">"true"</span>
-        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"18sp"</span>
-        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
-        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"日常用品"</span>/&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+    &#x3C;androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/title_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_setting"/>
+    &#x3C;TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="日常用品"/>
+&#x3C;/RelativeLayout>
 </code></pre>
 <h2>引用布局</h2>
 <p>使用include引用其他布局，示例</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span>
-    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"vertical"</span>
-    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">".MainActivity"</span>&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <span class="hljs-comment">&lt;!-- 引用其他布局 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">include</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/main_title"</span>
-        <span class="hljs-attr">layout</span>=<span class="hljs-string">"@layout/title_layout"</span>/&gt;</span>
+    &#x3C;!-- 引用其他布局 -->
+    &#x3C;include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout"/>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+&#x3C;/LinearLayout>
 </code></pre>
 <h2>单选按钮</h2>
 <p>RadioGroup 单选按钮组<br>
 RadioButton 单选按钮</p>
 <p>布局示例</p>
-<pre><code class="language-xml">    &lt;RadioGroup
-        android:<span class="hljs-built_in">id</span>=<span class="hljs-string">"@+id/rg"</span>
-        android:layout_width=<span class="hljs-string">"match_parent"</span>
-        android:layout_below=<span class="hljs-string">"@+id/tv"</span>
-        android:layout_margin=<span class="hljs-string">"10dp"</span>
-        android:layout_height=<span class="hljs-string">"wrap_content"</span>&gt;
+<pre><code class="language-xml">    &#x3C;RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
 
-        &lt;RadioButton
-            android:<span class="hljs-built_in">id</span>=<span class="hljs-string">"@+id/rb_man"</span>
-            android:layout_width=<span class="hljs-string">"wrap_content"</span>
-            android:layout_height=<span class="hljs-string">"wrap_content"</span>
-            android:<span class="hljs-built_in">text</span>=<span class="hljs-string">"男"</span>
-            android:checked=<span class="hljs-string">"true"</span>/&gt;
-        &lt;RadioButton
-            android:<span class="hljs-built_in">id</span>=<span class="hljs-string">"@+id/rb_woman"</span>
-            android:layout_width=<span class="hljs-string">"wrap_content"</span>
-            android:layout_height=<span class="hljs-string">"wrap_content"</span>
-            android:<span class="hljs-built_in">text</span>=<span class="hljs-string">"女"</span>/&gt;
-        &lt;RadioButton
-            android:<span class="hljs-built_in">id</span>=<span class="hljs-string">"@+id/rb_qt"</span>
-            android:layout_width=<span class="hljs-string">"wrap_content"</span>
-            android:layout_height=<span class="hljs-string">"wrap_content"</span>
-            android:<span class="hljs-built_in">text</span>=<span class="hljs-string">"其他"</span>/&gt;
+        &#x3C;RadioButton
+            android:id="@+id/rb_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"/>
+        &#x3C;RadioButton
+            android:id="@+id/rb_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+        &#x3C;RadioButton
+            android:id="@+id/rb_qt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"/>
 
-    &lt;/RadioGroup&gt;
+    &#x3C;/RadioGroup>
 </code></pre>
 <h3>单选按钮点击事件监听</h3>
-<pre><code class="language-java">    <span class="hljs-comment">//单选按钮监听器</span>
-    RadioGroup.<span class="hljs-type">OnCheckedChangeListener</span> <span class="hljs-variable">changeListener</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RadioGroup</span>.OnCheckedChangeListener() {
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onCheckedChanged</span><span class="hljs-params">(RadioGroup radioGroup, <span class="hljs-type">int</span> id)</span> {
-            <span class="hljs-comment">//如果一个页面当中有多个单选按钮，可以判断一下哪个组被触发了</span>
-            <span class="hljs-keyword">if</span>(radioGroup.getId() == R.id.rg){
-                <span class="hljs-comment">//选中的单选按钮的id</span>
-                <span class="hljs-keyword">switch</span> (id){
-                    <span class="hljs-keyword">case</span> R.id.rb_man:
-                        showToast(<span class="hljs-string">"您选择了男性"</span>);
-                        <span class="hljs-keyword">break</span>;
-                    <span class="hljs-keyword">case</span> R.id.rb_woman:
-                        showToast(<span class="hljs-string">"您选择了女性"</span>);
-                        <span class="hljs-keyword">break</span>;
-                    <span class="hljs-keyword">case</span> R.id.rb_qt:
-                        showToast(<span class="hljs-string">"您选择了其他"</span>);
-                        <span class="hljs-keyword">break</span>;
+<pre><code class="language-java">    //单选按钮监听器
+    RadioGroup.OnCheckedChangeListener changeListener = new RadioGroup.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(RadioGroup radioGroup, int id) {
+            //如果一个页面当中有多个单选按钮，可以判断一下哪个组被触发了
+            if(radioGroup.getId() == R.id.rg){
+                //选中的单选按钮的id
+                switch (id){
+                    case R.id.rb_man:
+                        showToast("您选择了男性");
+                        break;
+                    case R.id.rb_woman:
+                        showToast("您选择了女性");
+                        break;
+                    case R.id.rb_qt:
+                        showToast("您选择了其他");
+                        break;
                 }
             }
         }
     };
 </code></pre>
 <h3>activity跳转</h3>
-<p>结束当前avtivity: <code><span class="hljs-function"><span class="hljs-title">finish</span><span class="hljs-params">()</span></span></code></p>
+<p>结束当前avtivity: <code>finish()</code></p>
 <p>activity跳转是压栈过程，打开新的活动，相当于往栈中push一个新的活动对象。结束活动，相当于pop出栈</p>
 <h2>视图</h2>
 <p>ListView, 使用适配器ArrayAdapter进行绑定设置。示例</p>
 <p>activity_shop_type.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"vertical"</span>
-    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">".ShopTypeActivity"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">layout</span>=<span class="hljs-string">"@layout/title_layout"</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/st_title"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">include</span>&gt;</span>
-    <span class="hljs-comment">&lt;!--    下拉列表视图--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Spinner</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/st_sp"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@drawable/bg_sp"</span>
-        <span class="hljs-attr">android:dropDownWidth</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:spinnerMode</span>=<span class="hljs-string">"dropdown"</span>
-        <span class="hljs-attr">android:overlapAnchor</span>=<span class="hljs-string">"false"</span>
-        <span class="hljs-attr">android:layout_margin</span>=<span class="hljs-string">"10dp"</span>/&gt;</span>
-<span class="hljs-comment">&lt;!--    列表视图--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ListView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/st_lv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:divider</span>=<span class="hljs-string">"@color/teal_200"</span>
-        <span class="hljs-attr">android:dividerHeight</span>=<span class="hljs-string">"1dp"</span>
-        <span class="hljs-attr">android:visibility</span>=<span class="hljs-string">"gone"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">GridView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/st_gv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>
-        <span class="hljs-attr">android:numColumns</span>=<span class="hljs-string">"3"</span>/&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShopTypeActivity">
+    &#x3C;include layout="@layout/title_layout"
+        android:id="@+id/st_title">&#x3C;/include>
+    &#x3C;!--    下拉列表视图-->
+    &#x3C;Spinner
+        android:id="@+id/st_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        android:overlapAnchor="false"
+        android:layout_margin="10dp"/>
+&#x3C;!--    列表视图-->
+    &#x3C;ListView
+        android:id="@+id/st_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/teal_200"
+        android:dividerHeight="1dp"
+        android:visibility="gone"/>
+    &#x3C;GridView
+        android:id="@+id/st_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"/>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+&#x3C;/LinearLayout>
 </code></pre>
 <p>ShopTypeActivity.java</p>
-<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1104</span>;
+<pre><code class="language-java">package com.xyl.app1104;
 
-<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">appcompat</span>.<span class="hljs-property">app</span>.<span class="hljs-property">AppCompatActivity</span>;
+import androidx.appcompat.app.AppCompatActivity;
 
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">os</span>.<span class="hljs-property">Bundle</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ArrayAdapter</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">GridView</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ListView</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">Spinner</span>;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+import android.widget.ListView;
+import android.widget.Spinner;
 
-<span class="hljs-keyword">import</span> java.<span class="hljs-property">util</span>.<span class="hljs-property">ArrayList</span>;
-<span class="hljs-keyword">import</span> java.<span class="hljs-property">util</span>.<span class="hljs-property">List</span>;
+import java.util.ArrayList;
+import java.util.List;
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ShopTypeActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppCompatActivity</span> {
-    <span class="hljs-title class_">ListView</span> typeLv;
-    <span class="hljs-title class_">GridView</span> typeGv;
-    <span class="hljs-title class_">List</span>&lt;<span class="hljs-title class_">String</span>&gt; mDatas; <span class="hljs-comment">//数据源</span>
-    <span class="hljs-title class_">Spinner</span> typeSp;
-    <span class="hljs-title class_">String</span>[] spArr = {<span class="hljs-string">"列表视图"</span>, <span class="hljs-string">"网格视图"</span>};
-    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter;
-    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter1;
-    <span class="hljs-keyword">private</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;<span class="hljs-title class_">String</span>&gt; stringArrayAdapter2;
+public class ShopTypeActivity extends AppCompatActivity {
+    ListView typeLv;
+    GridView typeGv;
+    List&#x3C;String> mDatas; //数据源
+    Spinner typeSp;
+    String[] spArr = {"列表视图", "网格视图"};
+    private ArrayAdapter&#x3C;String> stringArrayAdapter;
+    private ArrayAdapter&#x3C;String> stringArrayAdapter1;
+    private ArrayAdapter&#x3C;String> stringArrayAdapter2;
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_shop_type</span>);
-        <span class="hljs-title function_">initView</span>();
-        <span class="hljs-comment">//获取数据源</span>
-        <span class="hljs-title function_">initDatas</span>();
-        <span class="hljs-comment">//设置适配器 ArrayAdapter:当列表或者网格当中的每一项只有一个文本框，可以使用这个适配器</span>
-        <span class="hljs-comment">//参数2：每一项的item的布局 参数3：显示数据的文本 参数4：数据</span>
-        stringArrayAdapter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(
-                <span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st</span>, R.<span class="hljs-property">id</span>.<span class="hljs-property">item_st_tv</span>, mDatas);
-        typeLv.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter);
-        <span class="hljs-comment">//给gridview设置adapter</span>
-        stringArrayAdapter1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(<span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st_gv</span>,
-                R.<span class="hljs-property">id</span>.<span class="hljs-property">item_gtv</span>, mDatas);
-        typeGv.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter1);
-        <span class="hljs-comment">//给Spinner设置adapter</span>
-        stringArrayAdapter2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayAdapter</span>&lt;&gt;(<span class="hljs-variable language_">this</span>, R.<span class="hljs-property">layout</span>.<span class="hljs-property">item_st_sp</span>, R.<span class="hljs-property">id</span>.<span class="hljs-property">item_st_tv</span>, spArr);
-        typeSp.<span class="hljs-title function_">setAdapter</span>(stringArrayAdapter2);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_shop_type);
+        initView();
+        //获取数据源
+        initDatas();
+        //设置适配器 ArrayAdapter:当列表或者网格当中的每一项只有一个文本框，可以使用这个适配器
+        //参数2：每一项的item的布局 参数3：显示数据的文本 参数4：数据
+        stringArrayAdapter = new ArrayAdapter&#x3C;>(
+                this, R.layout.item_st, R.id.item_st_tv, mDatas);
+        typeLv.setAdapter(stringArrayAdapter);
+        //给gridview设置adapter
+        stringArrayAdapter1 = new ArrayAdapter&#x3C;>(this, R.layout.item_st_gv,
+                R.id.item_gtv, mDatas);
+        typeGv.setAdapter(stringArrayAdapter1);
+        //给Spinner设置adapter
+        stringArrayAdapter2 = new ArrayAdapter&#x3C;>(this, R.layout.item_st_sp, R.id.item_st_tv, spArr);
+        typeSp.setAdapter(stringArrayAdapter2);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 对于ListView的数据源进行初始化
-     */</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initDatas</span>(<span class="hljs-params"></span>) {
-        mDatas = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"调料干货"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"零食"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"饮料"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"厨房用品"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"日用品"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"烟酒"</span>);
-        <span class="hljs-keyword">for</span>(int i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
-            mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
+     */
+    private void initDatas() {
+        mDatas = new ArrayList&#x3C;>();
+        mDatas.add("调料干货");
+        mDatas.add("零食");
+        mDatas.add("饮料");
+        mDatas.add("厨房用品");
+        mDatas.add("日用品");
+        mDatas.add("烟酒");
+        for(int i = 1; i &#x3C; 20; i++){
+            mDatas.add("第" + i + "条数据");
         }
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
-        typeLv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_lv</span>);
-        typeGv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_gv</span>);
-        typeSp = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_sp</span>);
+    private void initView() {
+        typeLv = findViewById(R.id.st_lv);
+        typeGv = findViewById(R.id.st_gv);
+        typeSp = findViewById(R.id.st_sp);
     }
 }
 
-    <span class="hljs-comment">/**
+    /**
      * 对于ListView的数据源进行初始化
-     */</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initDatas</span>(<span class="hljs-params"></span>) {
-        mDatas = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"调料干货"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"零食"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"饮料"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"厨房用品"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"日用品"</span>);
-        mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"烟酒"</span>);
-        <span class="hljs-keyword">for</span>(int i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">20</span>; i++){
-            mDatas.<span class="hljs-title function_">add</span>(<span class="hljs-string">"第"</span> + i + <span class="hljs-string">"条数据"</span>);
+     */
+    private void initDatas() {
+        mDatas = new ArrayList&#x3C;>();
+        mDatas.add("调料干货");
+        mDatas.add("零食");
+        mDatas.add("饮料");
+        mDatas.add("厨房用品");
+        mDatas.add("日用品");
+        mDatas.add("烟酒");
+        for(int i = 1; i &#x3C; 20; i++){
+            mDatas.add("第" + i + "条数据");
         }
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
-        typeLv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_lv</span>);
-        typeGv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">st_gv</span>);
+    private void initView() {
+        typeLv = findViewById(R.id.st_lv);
+        typeGv = findViewById(R.id.st_gv);
     }
 }
 </code></pre>
 <h3>列表视图</h3>
 <p>item_st.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"horizontal"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"20dp"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>&gt;</span>
-<span class="hljs-comment">&lt;!--    listView中每一条的布局--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/item_st_tv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"20sp"</span>
-        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
-        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"酒水饮料"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/item_st_iv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_alignParentRight</span>=<span class="hljs-string">"true"</span>
-        <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@mipmap/icon_enter"</span>/&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+&#x3C;!--    listView中每一条的布局-->
+    &#x3C;TextView
+        android:id="@+id/item_st_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="酒水饮料"/>
+    &#x3C;ImageView
+        android:id="@+id/item_st_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_enter"/>
 
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 </code></pre>
 <h3>网格视图</h3>
 <p>gridView</p>
 <p>item_st_gv.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"100dp"</span>
-    <span class="hljs-attr">android:background</span>=<span class="hljs-string">"@drawable/bg_gitem"</span>
-    <span class="hljs-attr">android:layout_margin</span>=<span class="hljs-string">"5dp"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/item_gtv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_centerInParent</span>=<span class="hljs-string">"true"</span>
-        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
-        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"20sp"</span>
-        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"111"</span>/&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_gitem"
+    android:layout_margin="5dp">
+    &#x3C;TextView
+        android:id="@+id/item_gtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="111"/>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 </code></pre>
 <p>drawable/bg_gitem.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">shape</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:shape</span>=<span class="hljs-string">"rectangle"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">corners</span> <span class="hljs-attr">android:radius</span>=<span class="hljs-string">"20dp"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">stroke</span> <span class="hljs-attr">android:width</span>=<span class="hljs-string">"3dp"</span> <span class="hljs-attr">android:color</span>=<span class="hljs-string">"@color/teal_700"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">solid</span> <span class="hljs-attr">android:color</span>=<span class="hljs-string">"@color/pink2"</span>/&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    &#x3C;corners android:radius="20dp"/>
+    &#x3C;stroke android:width="3dp" android:color="@color/teal_700"/>
+    &#x3C;solid android:color="@color/pink2"/>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">shape</span>&gt;</span>
+&#x3C;/shape>
 </code></pre>
 <h3>下拉列表视图</h3>
 <p>Spinner</p>
 <p>设置下拉列表不遮挡下拉框可以使用</p>
-<p><code><span class="hljs-symbol">android:</span>overlapAnchor=<span class="hljs-string">"false"</span></code> 这条属性代码提示没有</p>
+<p><code>android:overlapAnchor="false"</code> 这条属性代码提示没有</p>
 <p>layout/item_st_sp.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">RelativeLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>
-    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"horizontal"</span>
-    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span>
-    <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"5dp"</span>
-    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span>&gt;</span>
-<span class="hljs-comment">&lt;!--    listView中每一条的布局--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
-        <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/item_st_tv"</span>
-        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"wrap_content"</span>
-        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"20sp"</span>
-        <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span>
-        <span class="hljs-attr">android:text</span>=<span class="hljs-string">"酒水饮料"</span>/&gt;</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+&#x3C;!--    listView中每一条的布局-->
+    &#x3C;TextView
+        android:id="@+id/item_st_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="酒水饮料"/>
 
 
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">RelativeLayout</span>&gt;</span>
+&#x3C;/RelativeLayout>
 </code></pre>
 <h2>自定义适配器</h2>
 <p>示例</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.xyl.app1104;
+<pre><code class="language-java">package com.xyl.app1104;
 
-<span class="hljs-keyword">import</span> android.content.Context;
-<span class="hljs-keyword">import</span> android.view.LayoutInflater;
-<span class="hljs-keyword">import</span> android.view.View;
-<span class="hljs-keyword">import</span> android.view.ViewGroup;
-<span class="hljs-keyword">import</span> android.widget.BaseAdapter;
-<span class="hljs-keyword">import</span> android.widget.ImageView;
-<span class="hljs-keyword">import</span> android.widget.TextView;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-<span class="hljs-keyword">import</span> java.util.List;
+import java.util.List;
 
-<span class="hljs-comment">/**
+/**
  * ListView的适配器
  * 因为每一个item的布局不只有一个TextView，所以要自己写适配器
  * 1. 继承于BaseAdapter
  * 2. 重写4个方法，不需要自己调用，
- */</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">BaseAdapter</span> {
-    <span class="hljs-comment">//显示的数据源</span>
-    <span class="hljs-keyword">private</span> List&lt;ItemBean&gt; mDatas;
-    <span class="hljs-keyword">private</span> Context context;
+ */
+public class MyAdapter extends BaseAdapter {
+    //显示的数据源
+    private List&#x3C;ItemBean> mDatas;
+    private Context context;
 
-    <span class="hljs-keyword">public</span> <span class="hljs-title function_">MyAdapter</span><span class="hljs-params">(Context context, List&lt;ItemBean&gt; mDatas)</span> {
-        <span class="hljs-built_in">this</span>.mDatas = mDatas;
-        <span class="hljs-built_in">this</span>.context = context;
+    public MyAdapter(Context context, List&#x3C;ItemBean> mDatas) {
+        this.mDatas = mDatas;
+        this.context = context;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 返回列表的长度
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getCount</span><span class="hljs-params">()</span> {
-        <span class="hljs-keyword">return</span> mDatas.size();
+     * @return
+     */
+    @Override
+    public int getCount() {
+        return mDatas.size();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 返回列表指定位置对应的数据
-     * <span class="hljs-doctag">@param</span> pos
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> Object <span class="hljs-title function_">getItem</span><span class="hljs-params">(<span class="hljs-type">int</span> pos)</span> {
-        <span class="hljs-keyword">return</span> mDatas.get(pos);
+     * @param pos
+     * @return
+     */
+    @Override
+    public Object getItem(int pos) {
+        return mDatas.get(pos);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 返回指定位置的itemView的id
-     * <span class="hljs-doctag">@param</span> pos
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">long</span> <span class="hljs-title function_">getItemId</span><span class="hljs-params">(<span class="hljs-type">int</span> pos)</span> {
-        <span class="hljs-keyword">return</span> pos;
+     * @param pos
+     * @return
+     */
+    @Override
+    public long getItemId(int pos) {
+        return pos;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 返回指定位置的View对象，将布局转换成view对象，view中显示的内容都在这里设置
      * convertView：在ListView当中可以被复用的itemView
      * itembean是对象，在集合当中，如果集合有1000条就有1000个itembean的对象
@@ -405,42 +401,42 @@ RadioButton 单选按钮</p>
      * 如果有1000个itemview对象放到1000个view上就会资源浪费。因为用户在一个屏幕当中
      * 只有几条，当滑动屏幕时，上面的view内容就没用了。无用的view的格式和后面一样。
      * 所以后面就不需要再生成view对象了，就可以直接使用了。
-     * <span class="hljs-doctag">@param</span> pos
-     * <span class="hljs-doctag">@param</span> convertView
-     * <span class="hljs-doctag">@param</span> parent
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> View <span class="hljs-title function_">getView</span><span class="hljs-params">(<span class="hljs-type">int</span> pos, View convertView, ViewGroup parent)</span> {
-        <span class="hljs-type">ViewHolder</span> <span class="hljs-variable">holder</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;
-        <span class="hljs-keyword">if</span> (convertView == <span class="hljs-literal">null</span>) {
-            <span class="hljs-comment">//将布局转换成view对象 LayoutInflater:布局加载器</span>
+     * @param pos
+     * @param convertView
+     * @param parent
+     * @return
+     */
+    @Override
+    public View getView(int pos, View convertView, ViewGroup parent) {
+        ViewHolder holder = null;
+        if (convertView == null) {
+            //将布局转换成view对象 LayoutInflater:布局加载器
             convertView = LayoutInflater.from(context)
-                    .inflate(R.layout.item_text, parent, <span class="hljs-literal">false</span>);
-            <span class="hljs-comment">//进行控件属性的设置</span>
-            holder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ViewHolder</span>(convertView);
-            <span class="hljs-comment">//将holder对象绑定在view上</span>
+                    .inflate(R.layout.item_text, parent, false);
+            //进行控件属性的设置
+            holder = new ViewHolder(convertView);
+            //将holder对象绑定在view上
             convertView.setTag(holder);
         }
-        <span class="hljs-keyword">else</span>{
-            <span class="hljs-comment">//属性已经都找到了，不用重新设置</span>
+        else{
+            //属性已经都找到了，不用重新设置
             holder = (ViewHolder) convertView.getTag();
         }
-        <span class="hljs-type">ItemBean</span> <span class="hljs-variable">bean</span> <span class="hljs-operator">=</span> mDatas.get(pos);
+        ItemBean bean = mDatas.get(pos);
         holder.tv1.setText(bean.getTitle());
         holder.tv2.setText(bean.getMsg());
         holder.iv.setImageResource(bean.getResId());
 
-        <span class="hljs-keyword">return</span> convertView;
+        return convertView;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 将每一个itemview对象当中包含所有需要改变的view放到同一个部分进行保管
-     */</span>
-    <span class="hljs-keyword">class</span> <span class="hljs-title class_">ViewHolder</span>{
+     */
+    class ViewHolder{
         TextView tv1, tv2;
         ImageView iv;
-        <span class="hljs-keyword">public</span> <span class="hljs-title function_">ViewHolder</span><span class="hljs-params">(View itemView)</span>{
+        public ViewHolder(View itemView){
             tv1 = itemView.findViewById(R.id.item_tv1);
             tv2 = itemView.findViewById(R.id.item_tv2);
             iv = itemView.findViewById(R.id.item_iv);
@@ -448,14 +444,15 @@ RadioButton 单选按钮</p>
 
     }
 }
-<span class="hljs-comment">/**
+/**
  * ListView的优化
  * 1. 设置高度固定，避免重复测量显示的高度
  * 2. getView的优化
  *      对于convertView进行判断，如果有创建好的，闲置的view模板，可以直接使用，否则就创建
  *      对于findViewById进行优化，对于可复用的view，不需要重复查找控件id，对于新生成的，查找控件id
- */</span>
+ */
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月4日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Button"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"View"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"GridView"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"ListView"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"adapter"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月4日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月4日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Button"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"View"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"GridView"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"ListView"}],["$","p","5",{"className":"tags_tag__HZYxk ","children":"adapter"}]]]}],["$","$Lc",null,{"path":"11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"11%E6%9C%884%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"11月4日Android学习笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

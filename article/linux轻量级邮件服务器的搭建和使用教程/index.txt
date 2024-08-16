@@ -1,25 +1,21 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"],{"children":["__PAGE__?{\"id\":\"linux轻量级邮件服务器的搭建和使用教程\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"linux轻量级邮件服务器的搭建和使用教程\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T2af4,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"],{"children":["__PAGE__?{\"id\":\"linux轻量级邮件服务器的搭建和使用教程\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T1d21,
     <p class="time">发布时间：<time datetime="27 November, 2022">2022-11-27 16:28:46</time></p>
     <p class="words">本文字数：1,080 字       阅读完需：约 3 分钟</p>
-    <html><head></head><body><h2>前言</h2>
+    <h2>前言</h2>
 <p>很早就想配置一个自己的邮件服务器，苦于没有时间。偶然的机会，黑色星期五买了一台1G内存的特价服务器，开放了25端口，于是趁这个周末，决定搭建一个自己的域名邮箱。</p>
 <p>技术选型: docker-mailserver</p>
 <p>优势:</p>
@@ -41,91 +37,91 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>|类型|记录名|记录值|
 |--|--|--|
 |A|mail|xxx.xxx.xxx.xxx(自己服务器的ip)|
-|MX|@|mail.example.com(mail.&lt;域名&gt;); 优先级选10|
+|MX|@|mail.example.com(mail.&#x3C;域名>); 优先级选10|
 |TXT|@|v=spf1 mx ~all|</p>
 <h3>使用certbot申请https证书</h3>
 <p>安装好管理工具之后, 我们需要申请证书下来, 这里我的web服务器是NGINX, 并且我没有网站的静态目录, 所以我使用这个命令申请:</p>
-<pre><code class="language-bash">sudo certbot certonly <span class="hljs-attr">--standalone</span> -d example<span class="hljs-selector-class">.com</span> -d www<span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.com</span> -d m<span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.com</span>
+<pre><code class="language-bash">sudo certbot certonly --standalone -d example.com -d www.example.com -d m.example.com
 </code></pre>
-<p>如果你的网站有静态目录的话, 可以把<code><span class="hljs-comment">--standalone</span></code>改成<code><span class="hljs-comment">--webroot</span></code>并且加上<code><span class="hljs-deletion">-w</span></code>参数申请, 类似这样:</p>
-<pre><code class="language-bash">sudo certbot certonly <span class="hljs-attr">--webroot</span> -w /var/www/<span class="hljs-selector-tag">html</span> -d example<span class="hljs-selector-class">.com</span> -d www<span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.com</span>
+<p>如果你的网站有静态目录的话, 可以把<code>--standalone</code>改成<code>--webroot</code>并且加上<code>-w</code>参数申请, 类似这样:</p>
+<pre><code class="language-bash">sudo certbot certonly --webroot -w /var/www/html -d example.com -d www.example.com
 </code></pre>
-<p>在你使用<code><span class="hljs-comment">--standalone</span></code>申请证书的时候需要关闭nginx, 因为certbot会启用443端口校验你的域名信息, 如果nginx没有关闭, 会导致端口占用, 所以我们关闭nginx, 我这里是使用ubuntu, 所以使用这个命令关闭nginx:</p>
+<p>在你使用<code>--standalone</code>申请证书的时候需要关闭nginx, 因为certbot会启用443端口校验你的域名信息, 如果nginx没有关闭, 会导致端口占用, 所以我们关闭nginx, 我这里是使用ubuntu, 所以使用这个命令关闭nginx:</p>
 <pre><code class="language-bash">sudo services nginx stop
 </code></pre>
-<p>更新证书时使用<code><span class="hljs-attribute">certbot renew</span></code>命令即可</p>
-<p>使用<code><span class="hljs-attribute">crontab</span></code>添加定时任务</p>
+<p>更新证书时使用<code>certbot renew</code>命令即可</p>
+<p>使用<code>crontab</code>添加定时任务</p>
 <p>可使用crontab配置证书自动续签</p>
-<pre><code class="language-bash"><span class="hljs-attribute">crontab</span> -e
-<span class="hljs-comment"># 添加如下</span>
-<span class="hljs-attribute">0</span> <span class="hljs-number">3</span> <span class="hljs-number">1</span> * * /usr/bin/certbot renew --quiet
+<pre><code class="language-bash">crontab -e
+# 添加如下
+0 3 1 * * /usr/bin/certbot renew --quiet
 </code></pre>
 <ul>
-<li><code><span class="hljs-symbol">0 </span><span class="hljs-number">3</span> <span class="hljs-number">1</span> * *</code> 指每个月1号3点0分执行任务</li>
+<li><code>0 3 1 * *</code> 指每个月1号3点0分执行任务</li>
 </ul>
 <h3>解析验证</h3>
 <p>使用dig验证解析是否生效</p>
 <pre><code class="language-bash">apt-get install dnsutils
-dig TXT _acme-challenge<span class="hljs-selector-class">.mail</span><span class="hljs-selector-class">.example</span><span class="hljs-selector-class">.com</span>
+dig TXT _acme-challenge.mail.example.com
 </code></pre>
 <h3>安装docker</h3>
 <p>基于debian11系统进行，参考官方文档 <a href="https://docs.docker.com/engine/install/debian/">https://docs.docker.com/engine/install/debian/</a></p>
 <pre><code class="language-bash"># 移除之前的版本
-sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-built_in">remove</span> docker docker-engine docker.io containerd runc 
+sudo apt-get remove docker docker-engine docker.io containerd runc 
 # 安装依赖
-sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
-sudo apt-<span class="hljs-built_in">get</span> install \
-    <span class="hljs-keyword">ca</span>-certificates \
+sudo apt-get update
+sudo apt-get install \
+    ca-certificates \
     curl \
     gnupg \
     lsb-release
 # 配置apt源
-sudo <span class="hljs-built_in">mkdir</span> -<span class="hljs-keyword">p</span> /etc/apt/keyrings
-curl -fsSL https://download.docker.<span class="hljs-keyword">com</span>/linux/debian/gpg | sudo gpg --dearmor -<span class="hljs-keyword">o</span> /etc/apt/keyrings/docker.gpg
-<span class="hljs-keyword">echo</span> \
-  <span class="hljs-comment">"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \</span>
-  $(lsb_release -<span class="hljs-keyword">cs</span>) stable<span class="hljs-comment">" | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span>
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 # 安装
-sudo apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>
-sudo apt-<span class="hljs-built_in">get</span> install docker-<span class="hljs-keyword">ce</span> docker-<span class="hljs-keyword">ce</span>-cli containerd.io docker-compose-plugin
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 </code></pre>
 <h3>修改docker存储目录(可选)</h3>
 <p>查看原始存储目录</p>
-<pre><code class="language-bash"><span class="hljs-attribute">docker</span> <span class="hljs-literal">info</span>
+<pre><code class="language-bash">docker info
 </code></pre>
-<p>可以发现<code><span class="hljs-attribute">Docker Root</span></code>项默认目录为<code>/<span class="hljs-keyword">var</span>/lib/docker</code></p>
-<pre><code class="language-bash"><span class="hljs-built_in">cd</span> /etc/docker/
+<p>可以发现<code>Docker Root</code>项默认目录为<code>/var/lib/docker</code></p>
+<pre><code class="language-bash">cd /etc/docker/
 vim daemon.json
 </code></pre>
 <p>添加以下内容</p>
-<pre><code class="language-json"><span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"data-root"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"/data/docker"</span>
-<span class="hljs-punctuation">}</span>
+<pre><code class="language-json">{
+        "data-root": "/data/docker"
+}
 </code></pre>
 <p>保存退出，然后重启 docker 服务：</p>
-<pre><code class="language-bash"><span class="hljs-attribute">systemctl</span> restart docker
-docker <span class="hljs-literal">info</span> <span class="hljs-comment"># 查看是否修改成功</span>
+<pre><code class="language-bash">systemctl restart docker
+docker info # 查看是否修改成功
 </code></pre>
 <h3>拉取配置文件</h3>
-<pre><code class="language-bash">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/docker-mailserver/docker-mailserver.git
-<span class="hljs-comment"># 所需文件</span>
+<pre><code class="language-bash">git clone https://github.com/docker-mailserver/docker-mailserver.git
+# 所需文件
 - docker-compose.yml 容器部署文件
 - setup.sh 服务配置脚本
 </code></pre>
-<p>如果后续读取配置报错，需要在<code>docker-compose.yml</code>头部添加 <code><span class="hljs-symbol">version:</span> <span class="hljs-string">'3'</span></code> ，以配置版本</p>
+<p>如果后续读取配置报错，需要在<code>docker-compose.yml</code>头部添加 <code>version: '3'</code> ，以配置版本</p>
 <h3>开放端口</h3>
 <p>需要开放[25,193,993,465,587]这几个端口，以下以ufw举例，具体开放防火墙请自行Google</p>
-<pre><code class="language-bash"><span class="hljs-attribute">ufw</span> <span class="hljs-literal">allow</span> <span class="hljs-number">25</span>
-<span class="hljs-attribute">ufw</span> <span class="hljs-literal">allow</span> <span class="hljs-number">143</span>
-<span class="hljs-attribute">ufw</span> <span class="hljs-literal">allow</span> <span class="hljs-number">993</span>
-<span class="hljs-attribute">ufw</span> <span class="hljs-literal">allow</span> <span class="hljs-number">465</span>
-<span class="hljs-attribute">ufw</span> <span class="hljs-literal">allow</span> <span class="hljs-number">587</span>
+<pre><code class="language-bash">ufw allow 25
+ufw allow 143
+ufw allow 993
+ufw allow 465
+ufw allow 587
 </code></pre>
 <h3>生成DKIM签名记录</h3>
 <pre><code class="language-bash">./setup.sh config dkim keysize 2048
-<span class="hljs-built_in">cd</span> ~/docker-mailserver/docker-data/dms/
-<span class="hljs-built_in">cat</span> config/opendkim/keys/example.com/mail.txt
-<span class="hljs-comment"># 截取格式如下</span>
+cd ~/docker-mailserver/docker-data/dms/
+cat config/opendkim/keys/example.com/mail.txt
+# 截取格式如下
 v=DKIM1;h=sha256;k=rsa;p=xxx
 </code></pre>
 <p>添加到dns解析当中</p>
@@ -134,28 +130,28 @@ v=DKIM1;h=sha256;k=rsa;p=xxx
 |TXT|mail._domainkey|v=DKIM1;h=sha256;k=rsa;p=xxx</p>
 <h3>配置tls</h3>
 <p>编辑docker-mailserver配置文件</p>
-<pre><code class="language-bash"><span class="hljs-built_in">cd</span> docker-mailserver
-vim .<span class="hljs-built_in">env</span>
+<pre><code class="language-bash">cd docker-mailserver
+vim .env
 </code></pre>
-<p>编辑 -volumes配置项下添加 <code>- /etc/letsencrypt/<span class="hljs-symbol">:/etc/letsencrypt</span><span class="hljs-symbol">:ro</span></code></p>
-<p>编辑<code>mailserver.<span class="hljs-keyword">env</span></code>文件</p>
-<pre><code class="language-env"><span class="hljs-attr">SSL_TYPE</span>=letsencrypt
-<span class="hljs-attr">SSL_CERT_PATH</span>=/etc/letsencrypt/live/mail.timeshike.com/fullchain.pem
-<span class="hljs-attr">SSL_KEY_PATH</span>=/etc/letsencrypt/live/mail.timeshike.com/privkey.pem
+<p>编辑 -volumes配置项下添加 <code>- /etc/letsencrypt/:/etc/letsencrypt:ro</code></p>
+<p>编辑<code>mailserver.env</code>文件</p>
+<pre><code class="language-env">SSL_TYPE=letsencrypt
+SSL_CERT_PATH=/etc/letsencrypt/live/mail.timeshike.com/fullchain.pem
+SSL_KEY_PATH=/etc/letsencrypt/live/mail.timeshike.com/privkey.pem
 </code></pre>
 <p>最后重启docker-mailserver即可：</p>
-<pre><code class="language-bash">docker-compose <span class="hljs-literal">stop</span>
+<pre><code class="language-bash">docker-compose stop
 systemctl restart docker.service
 docker-compose up -d
-docker-compose logs -f <span class="hljs-comment"># 查看容器日志</span>
+docker-compose logs -f # 查看容器日志
 </code></pre>
 <p>安装完成!</p>
 <h2>邮箱服务器管理</h2>
 <p>利用<code>setup.sh</code>脚本可以轻松实现管理账户</p>
 <p>可参考官方文档 <a href="https://docker-mailserver.github.io/docker-mailserver/edge/config/setup.sh/">https://docker-mailserver.github.io/docker-mailserver/edge/config/setup.sh/</a></p>
-<pre><code class="language-bash">./setup.<span class="hljs-keyword">sh</span> email <span class="hljs-built_in">add</span> admin@example.<span class="hljs-keyword">com</span> <span class="hljs-string">"xxx"</span> # 添加账号密码
-# 其他功能参见<span class="hljs-keyword">help</span>
-./setup.<span class="hljs-keyword">sh</span> <span class="hljs-keyword">help</span>
+<pre><code class="language-bash">./setup.sh email add admin@example.com "xxx" # 添加账号密码
+# 其他功能参见help
+./setup.sh help
 </code></pre>
 <h2>参考文章</h2>
 <p>本文参考了以下博文，感谢作者的付出</p>
@@ -165,6 +161,7 @@ docker-compose logs -f <span class="hljs-comment"># 查看容器日志</span>
 <li><a href="https://docker-mailserver.github.io/docker-mailserver/edge/">https://docker-mailserver.github.io/docker-mailserver/edge/</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/95533274">https://zhuanlan.zhihu.com/p/95533274</a></li>
 </ol>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"基于docker的轻量级邮件服务器的搭建和使用教程"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/建站技术/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"建站技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"linux"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"docker"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"mail"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"server"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"教程"}]]]}],["$","$Lf",null,{"path":"linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"基于docker的轻量级邮件服务器的搭建和使用教程 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"基于docker的轻量级邮件服务器的搭建和使用教程"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/建站技术/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"建站技术"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"linux"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"docker"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"mail"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"server"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"教程"}]]]}],["$","$Lc",null,{"path":"linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"linux%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"基于docker的轻量级邮件服务器的搭建和使用教程 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

@@ -1,162 +1,159 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月23日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"9月23日Spring笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T39f9,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"9月23日Spring笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T14ca,
     <p class="time">发布时间：<time datetime="24 September, 2022">2022-09-24 08:25:28</time></p>
     <p class="words">本文字数：302 字       阅读完需：约 3 分钟</p>
-    <html><head></head><body><h2>springmvc文件上传</h2>
+    <h2>springmvc文件上传</h2>
 <h3>前端实现</h3>
 <p>前端使用bootstrap</p>
 <p>file.html</p>
-<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>上传<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>日志记录<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/jquery-2.1.0.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/bootstrap.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/docs.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../css/bootstrap.min.css"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
-        $(()=&gt;{
-            $(<span class="hljs-string">"#import"</span>).<span class="hljs-title function_">click</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
-                <span class="hljs-keyword">let</span> files = $(<span class="hljs-string">'#csv_file'</span>).<span class="hljs-title function_">prop</span>(<span class="hljs-string">'files'</span>);
-                <span class="hljs-keyword">let</span> data = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormData</span>();
-                data.<span class="hljs-title function_">append</span>(<span class="hljs-string">'myFile'</span>, files[<span class="hljs-number">0</span>]);
+<pre><code class="language-html">&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;title>上传&#x3C;/title>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;title>日志记录&#x3C;/title>
+    &#x3C;script src="../js/jquery-2.1.0.js">&#x3C;/script>
+    &#x3C;script src="../js/bootstrap.min.js">&#x3C;/script>
+    &#x3C;script src="../js/docs.min.js">&#x3C;/script>
+    &#x3C;link link rel="stylesheet" href="../css/bootstrap.min.css">
+    &#x3C;script>
+        $(()=>{
+            $("#import").click(function () {
+                let files = $('#csv_file').prop('files');
+                let data = new FormData();
+                data.append('myFile', files[0]);
 
-                $.<span class="hljs-title function_">ajax</span>({
-                    <span class="hljs-attr">type</span>: <span class="hljs-string">'POST'</span>,
-                    <span class="hljs-attr">url</span>: <span class="hljs-string">"myFile.action"</span>,
-                    <span class="hljs-attr">data</span>: data,
-                    <span class="hljs-attr">cache</span>: <span class="hljs-literal">false</span>,
-                    <span class="hljs-attr">processData</span>: <span class="hljs-literal">false</span>,
-                    <span class="hljs-attr">contentType</span>: <span class="hljs-literal">false</span>,
-                    <span class="hljs-attr">success</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">ret</span>) {
-                        <span class="hljs-title function_">alert</span>(ret);
+                $.ajax({
+                    type: 'POST',
+                    url: "myFile.action",
+                    data: data,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    success: function (ret) {
+                        alert(ret);
                     }
                 });
             });
         })
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"myFile.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">"multipart/form-data"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>选择文件<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"myFile"</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>&gt;</span>上传<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>ajax上传文件<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"myFile.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">"multipart/form-data"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>选择文件<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"csv_file"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"myFile"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"import"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>上传<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+    &#x3C;/script>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;form role="form" action="myFile.action" method="post" enctype="multipart/form-data">
+        &#x3C;div class="form-group">
+            &#x3C;label>选择文件&#x3C;/label>
+            &#x3C;input type="file" name="myFile">
+        &#x3C;/div>
+        &#x3C;button type="submit" class="btn btn-default">上传&#x3C;/button>
+    &#x3C;/form>
+    &#x3C;div>
+        &#x3C;h3>ajax上传文件&#x3C;/h3>
+        &#x3C;div class="form-group">
+            &#x3C;form role="form" action="myFile.action" method="post" enctype="multipart/form-data">
+            &#x3C;p>选择文件&#x3C;input type="file" id="csv_file" name="myFile"/>&#x3C;/p>
+                &#x3C;button id="import" type="button">上传&#x3C;/button>
+            &#x3C;/form>
+        &#x3C;/div>
+    &#x3C;/div>
+&#x3C;/body>
+&#x3C;/html>
 </code></pre>
 <h3>后端</h3>
-<p><code><span class="hljs-keyword">spring</span>-mvc.xml</code>配置</p>
-<pre><code class="language-xml"><span class="hljs-comment">&lt;!-- 此处必须有id属性 --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"multipartResolver"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.web.multipart.commons.CommonsMultipartResolver"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"defaultEncoding"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"utf-8"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<p><code>spring-mvc.xml</code>配置</p>
+<pre><code class="language-xml">&#x3C;!-- 此处必须有id属性 -->
+    &#x3C;bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        &#x3C;property name="defaultEncoding" value="utf-8">&#x3C;/property>
+    &#x3C;/bean>
 </code></pre>
 <p>WorkController.java</p>
-<pre><code class="language-java">    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">"/file.action"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">file</span>(<span class="hljs-params"></span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"file"</span>;
+<pre><code class="language-java">    @GetMapping("/file.action")
+    public String file(){
+        return "file";
     }
 
-    <span class="hljs-meta">@ResponseBody</span>
-    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"/myFile.action"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">myFile</span>(<span class="hljs-params">MultipartFile myFile</span>){
-        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(myFile);
-        <span class="hljs-keyword">return</span> myFile.<span class="hljs-title function_">getContentType</span>();
+    @ResponseBody
+    @PostMapping("/myFile.action")
+    public String myFile(MultipartFile myFile){
+        System.out.println(myFile);
+        return myFile.getContentType();
     }
 </code></pre>
 <h2>拦截器</h2>
-<p>implements <code><span class="hljs-attribute">HandlerInterceptor</span></code>接口</p>
+<p>implements <code>HandlerInterceptor</code>接口</p>
 <p>preHandle: 前置拦截</p>
 <p>spring-mvc.xml</p>
-<pre><code class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">mvc:interceptors</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">mvc:interceptor</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">mvc:mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/**"</span>/&gt;</span>
-            <span class="hljs-comment">&lt;!-- 排除不适用拦截器的路径 --&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">mvc:exclude-mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/user/login.action"</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">mvc:exclude-mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/work/**"</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.interceptor.SessionInterceptor"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">mvc:interceptor</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">mvc:interceptors</span>&gt;</span>
+<pre><code class="language-xml">    &#x3C;mvc:interceptors>
+        &#x3C;mvc:interceptor>
+            &#x3C;mvc:mapping path="/**"/>
+            &#x3C;!-- 排除不适用拦截器的路径 -->
+            &#x3C;mvc:exclude-mapping path="/user/login.action"/>
+            &#x3C;mvc:exclude-mapping path="/work/**"/>
+            &#x3C;bean class="com.zr.interceptor.SessionInterceptor">&#x3C;/bean>
+        &#x3C;/mvc:interceptor>
+    &#x3C;/mvc:interceptors>
 </code></pre>
 <p>SessionInterceptor.java</p>
 <pre><code class="language-java">package com.zr.interceptor;
 
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
-<span class="hljs-keyword">import</span> com.zr.utils.AjaxResult;
-<span class="hljs-keyword">import</span> com.zr.vo.<span class="hljs-keyword">User</span>;
-<span class="hljs-keyword">import</span> org.springframework.util.StringUtils;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.HandlerInterceptor;
+import com.alibaba.fastjson.JSON;
+import com.zr.utils.AjaxResult;
+import com.zr.vo.User;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.HandlerInterceptor;
 
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
-<span class="hljs-keyword">import</span> java.io.PrintWriter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 
-<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> SessionInterceptor implements HandlerInterceptor {
+public class SessionInterceptor implements HandlerInterceptor {
     @Override
-    <span class="hljs-built_in">public</span> <span class="hljs-type">boolean</span> preHandle(HttpServletRequest request, HttpServletResponse response, <span class="hljs-keyword">Object</span> <span class="hljs-keyword">handler</span>) throws <span class="hljs-keyword">Exception</span> {
-//        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(<span class="hljs-keyword">handler</span>);
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+//        System.out.println(handler);
         //判断是否为ajax请求，默认不是
-        String <span class="hljs-keyword">header</span> = request.getHeader("x-requested-with");
+        String header = request.getHeader("x-requested-with");
 
 
-        <span class="hljs-keyword">User</span> <span class="hljs-keyword">user</span> = (<span class="hljs-keyword">User</span>)request.getSession().getAttribute("user");
-        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">user</span>==<span class="hljs-keyword">null</span>||<span class="hljs-keyword">user</span>.getUserId()==<span class="hljs-keyword">null</span>||<span class="hljs-keyword">user</span>.getUserId().equals("")){
-            <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println("未登录");
-            <span class="hljs-keyword">if</span>(StringUtils.hasLength(<span class="hljs-keyword">header</span>) &amp;&amp; <span class="hljs-keyword">header</span>.equals("XMLHttpRequest")){
+        User user = (User)request.getSession().getAttribute("user");
+        if(user==null||user.getUserId()==null||user.getUserId().equals("")){
+            System.out.println("未登录");
+            if(StringUtils.hasLength(header) &#x26;&#x26; header.equals("XMLHttpRequest")){
                 response.setContentType("text/html;charset=utf-8");
                 response.setCharacterEncoding("utf-8");
                 PrintWriter o = response.getWriter();
-                o.<span class="hljs-keyword">write</span>(<span class="hljs-type">JSON</span>.toJSONString(AjaxResult.fail(<span class="hljs-number">200</span>, "用户未登录",<span class="hljs-keyword">null</span>)));
+                o.write(JSON.toJSONString(AjaxResult.fail(200, "用户未登录",null)));
             }
-            <span class="hljs-keyword">else</span>{
+            else{
                 response.sendRedirect(request.getContextPath()+"/user/login.action");
             }
 
-            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            return false;
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        return true;
     }
 }
 
 </code></pre>
 <p>web.xml :设置session失效时间</p>
-<pre><code class="language-xml">  <span class="hljs-tag">&lt;<span class="hljs-name">session-config</span>&gt;</span>
-<span class="hljs-comment">&lt;!--    session失效时间：15分钟--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">session-timeout</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">session-timeout</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">session-config</span>&gt;</span>
+<pre><code class="language-xml">  &#x3C;session-config>
+&#x3C;!--    session失效时间：15分钟-->
+    &#x3C;session-timeout>15&#x3C;/session-timeout>
+  &#x3C;/session-config>
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月23日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"文件上传"}]]]}],["$","$Lf",null,{"path":"9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"9月23日Spring笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"9月23日Spring笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"springMVC"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"文件上传"}]]]}],["$","$Lc",null,{"path":"9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"9%E6%9C%8823%E6%97%A5Spring%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"9月23日Spring笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

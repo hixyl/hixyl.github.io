@@ -1,123 +1,119 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月5日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月5日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T667d,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月5日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T2788,
     <p class="time">发布时间：<time datetime="05 November, 2022">2022-11-05 16:46:24</time></p>
     <p class="words">本文字数：913 字       阅读完需：约 4 分钟</p>
-    <html><head></head><body><h2>不同活动页面传值</h2>
+    <h2>不同活动页面传值</h2>
 <p>使用intent进行传值</p>
-<pre><code class="language-java"><span class="hljs-keyword">Intent</span> <span class="hljs-keyword">intent</span> = new <span class="hljs-keyword">Intent</span>(this, ResultActivity.<span class="hljs-keyword">class</span>);
+<pre><code class="language-java">Intent intent = new Intent(this, ResultActivity.class);
 //传值
-<span class="hljs-keyword">intent</span>.putExtra(<span class="hljs-string">"jia"</span>, jRes);
-<span class="hljs-keyword">intent</span>.putExtra(<span class="hljs-string">"yi"</span>, yRes);
-startActivity(<span class="hljs-keyword">intent</span>);
+intent.putExtra("jia", jRes);
+intent.putExtra("yi", yRes);
+startActivity(intent);
 </code></pre>
 <pre><code class="language-java">//接收跳转过来页面的传值
-Intent intent <span class="hljs-operator">=</span> getIntent()<span class="hljs-comment">;</span>
-String jia <span class="hljs-operator">=</span> intent.getStringExtra(<span class="hljs-string">"jia"</span>)<span class="hljs-comment">;</span>
-String yi <span class="hljs-operator">=</span> intent.getStringExtra(<span class="hljs-string">"yi"</span>)<span class="hljs-comment">;</span>
+Intent intent = getIntent();
+String jia = intent.getStringExtra("jia");
+String yi = intent.getStringExtra("yi");
 </code></pre>
 <h2>activity</h2>
 <p>编写页面逻辑代码的类，有对应的绑定布局</p>
 <h3>生命周期</h3>
-<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1105</span>;
+<pre><code class="language-java">package com.xyl.app1105;
 
-<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">appcompat</span>.<span class="hljs-property">app</span>.<span class="hljs-property">AppCompatActivity</span>;
+import androidx.appcompat.app.AppCompatActivity;
 
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">content</span>.<span class="hljs-property">Intent</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">os</span>.<span class="hljs-property">Bundle</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">View</span>;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 
-<span class="hljs-comment">/**
+/**
  * 编写页面逻辑代码的类，有对应的绑定布局
  * 1. 生命周期：
  * 2. 跳转页面 startActivity(intent)
  * 3. 结束页面 finish()
  * 4. 传值
- * A---&gt;B      B----&gt;A  将B页面返回到A页面，然后怎么传数据
- */</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppCompatActivity</span> {
+ * A--->B      B---->A  将B页面返回到A页面，然后怎么传数据
+ */
+public class MainActivity extends AppCompatActivity {
 
-    <span class="hljs-comment">/**
+    /**
      * 在创建时会被调用
      * 初始化控件，初始化数据源
-     * <span class="hljs-doctag">@param</span> <span class="hljs-variable">savedInstanceState</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_main</span>);
+     * @param savedInstanceState
+     */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 当activity启动时会调用
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onStart</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onStart</span>();
+     */
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * resume:获取焦点
      * 获取到焦点时被调用
      * 更新数据信息
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onResume</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onResume</span>();
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 失去焦点时被调用
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onPause</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onPause</span>();
+     */
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 当当前页面暂停时会被调用
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onStop</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onStop</span>();
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 当activity销毁时调用 finish()
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onDestroy</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onDestroy</span>();
+     */
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 当页面重新获取焦点时被调用
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onRestart</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onRestart</span>();
+     */
+    @Override
+    protected void onRestart() {
+        super.onRestart();
     }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">View view</span>) {
-        <span class="hljs-keyword">switch</span> (view.<span class="hljs-title function_">getId</span>()) {
-            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">btn1</span>:
-                <span class="hljs-title function_">startActivity</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-title class_">SecondActivity</span>.<span class="hljs-property">class</span>));
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn1:
+                startActivity(new Intent(this, SecondActivity.class));
         }
     }
 }
@@ -126,45 +122,45 @@ String yi <span class="hljs-operator">=</span> intent.getStringExtra(<span class
 <p><img src="11_5_01.png" alt="alt"></p>
 <h2>页面传值回之前页面</h2>
 <p>父页面</p>
-<pre><code class="language-java"> <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onClick</span><span class="hljs-params">(View view)</span> {
-        <span class="hljs-keyword">switch</span> (view.getId()) {
-            <span class="hljs-keyword">case</span> R.id.log_iv:
-                <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>(<span class="hljs-built_in">this</span>, SelectIconActivity.class);
-                startActivityIfNeeded(intent, <span class="hljs-number">1</span>);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-keyword">case</span> R.id.log_btn:
-                <span class="hljs-keyword">break</span>;
+<pre><code class="language-java"> @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.log_iv:
+                Intent intent = new Intent(this, SelectIconActivity.class);
+                startActivityIfNeeded(intent, 1);
+                break;
+            case R.id.log_btn:
+                break;
         }
     }
 
-    <span class="hljs-comment">/**
-     * 接收其他页面传回来的数值的方法  A----&gt;B   B----&gt;A
-     * <span class="hljs-doctag">@param</span> requestCode
-     * <span class="hljs-doctag">@param</span> resultCode
-     * <span class="hljs-doctag">@param</span> data
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onActivityResult</span><span class="hljs-params">(<span class="hljs-type">int</span> requestCode, <span class="hljs-type">int</span> resultCode, <span class="hljs-meta">@Nullable</span> Intent data)</span> {
-        <span class="hljs-built_in">super</span>.onActivityResult(requestCode, resultCode, data);
-        <span class="hljs-comment">//判断是哪个页面传回来的，根据结果码判断</span>
-        <span class="hljs-keyword">if</span> (resultCode == <span class="hljs-number">100</span>) {
-            <span class="hljs-comment">//第二个参数为默认值</span>
-            <span class="hljs-type">int</span> <span class="hljs-variable">resId</span> <span class="hljs-operator">=</span> data.getIntExtra(<span class="hljs-string">"resId"</span>, R.mipmap.baiyang);
+    /**
+     * 接收其他页面传回来的数值的方法  A---->B   B---->A
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //判断是哪个页面传回来的，根据结果码判断
+        if (resultCode == 100) {
+            //第二个参数为默认值
+            int resId = data.getIntExtra("resId", R.mipmap.baiyang);
             iconIv.setImageResource(resId);
         }
     }
 </code></pre>
 <p>子页面</p>
-<pre><code class="language-java">    AdapterView.<span class="hljs-type">OnItemClickListener</span> <span class="hljs-variable">listener</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">AdapterView</span>.OnItemClickListener() {
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onItemClick</span><span class="hljs-params">(AdapterView&lt;?&gt; adapterView, View view, <span class="hljs-type">int</span> pos, <span class="hljs-type">long</span> l)</span> {
-            <span class="hljs-type">int</span> <span class="hljs-variable">resId</span> <span class="hljs-operator">=</span> mDatas.get(pos);
-            <span class="hljs-comment">//将当前被选中的图片的地址，传到上一级</span>
-            <span class="hljs-type">Intent</span> <span class="hljs-variable">intent</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>();
-            intent.putExtra(<span class="hljs-string">"resId"</span>, resId);
-            <span class="hljs-comment">//将当前页面数据传递给上一级页面的方法</span>
-            setResult(<span class="hljs-number">100</span>, intent);
+<pre><code class="language-java">    AdapterView.OnItemClickListener listener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView&#x3C;?> adapterView, View view, int pos, long l) {
+            int resId = mDatas.get(pos);
+            //将当前被选中的图片的地址，传到上一级
+            Intent intent = new Intent();
+            intent.putExtra("resId", resId);
+            //将当前页面数据传递给上一级页面的方法
+            setResult(100, intent);
             finish();
         }
     };
@@ -174,178 +170,179 @@ String yi <span class="hljs-operator">=</span> intent.getStringExtra(<span class
 保存一些键值对到本地(手机内存当中), 如果有需要使用，可以调用</p>
 <ol>
 <li>
-<p>创建对象 <code><span class="hljs-attribute">SharedPreferences preferences</span></code><br>
-<code><span class="hljs-attr">preferences</span> = getSharedPreferences(<span class="hljs-string">"user_pref"</span>, MODE_PRIVATE)<span class="hljs-comment">;</span></code></p>
+<p>创建对象 <code>SharedPreferences preferences</code><br>
+<code>preferences = getSharedPreferences("user_pref", MODE_PRIVATE);</code></p>
 </li>
 <li>
 <p>在onCreate生命周期显示共享参数信息<br>
-<code><span class="hljs-built_in">showPreferenceInfo</span>();</code></p>
+<code>showPreferenceInfo();</code></p>
 <pre><code class="language-java">/**
  * 显示共享参数的信息
  */
-<span class="hljs-keyword">private</span> void showPreferenceInfo() {
-    String uname = preferences.<span class="hljs-keyword">get</span><span class="hljs-built_in">String</span>(<span class="hljs-string">"uname"</span>, <span class="hljs-string">""</span>);
-    String upwd = preferences.<span class="hljs-keyword">get</span><span class="hljs-built_in">String</span>(<span class="hljs-string">"upwd"</span>, <span class="hljs-string">""</span>);
-    iconId = preferences.<span class="hljs-keyword">get</span><span class="hljs-built_in">Int</span>(<span class="hljs-string">"uImg"</span>, iconId);
-    <span class="hljs-keyword">if</span>(!TextUtils.<span class="hljs-built_in">isEmpty</span>(uname)){
+private void showPreferenceInfo() {
+    String uname = preferences.getString("uname", "");
+    String upwd = preferences.getString("upwd", "");
+    iconId = preferences.getInt("uImg", iconId);
+    if(!TextUtils.isEmpty(uname)){
         nameEt.setText(uname);
         pwdEt.setText(upwd);
         iconIv.setImageResource(iconId);
-        saveCb.setChecked(<span class="hljs-literal">true</span>);
+        saveCb.setChecked(true);
     }
 }
 </code></pre>
 </li>
 <li>
-<p>使用 <code>SharedPreferences.Editor editor <span class="hljs-operator">=</span> preferences.edit()<span class="hljs-comment">;</span></code> 进行存储</p>
-<pre><code class="language-java"><span class="hljs-keyword">editor</span>.putString(<span class="hljs-string">"uname"</span>, uname);
-<span class="hljs-keyword">editor</span>.putString(<span class="hljs-string">"upwd"</span>, upwd);
-<span class="hljs-keyword">editor</span>.putInt(<span class="hljs-string">"uImg"</span>, iconId);
-<span class="hljs-keyword">editor</span>.commit();
+<p>使用 <code>SharedPreferences.Editor editor = preferences.edit();</code> 进行存储</p>
+<pre><code class="language-java">editor.putString("uname", uname);
+editor.putString("upwd", upwd);
+editor.putInt("uImg", iconId);
+editor.commit();
 </code></pre>
 </li>
 <li>
-<p>使用<code><span class="hljs-function"><span class="hljs-title">clear</span><span class="hljs-params">()</span></span></code>清空</p>
-<pre><code class="language-java"><span class="hljs-keyword">editor</span>.<span class="hljs-keyword">clear</span>();
-<span class="hljs-keyword">editor</span>.commit();
+<p>使用<code>clear()</code>清空</p>
+<pre><code class="language-java">editor.clear();
+editor.commit();
 </code></pre>
 </li>
 </ol>
 <h3>示例代码</h3>
 <p>LoginActivity.java</p>
-<pre><code class="language-java">package com.<span class="hljs-property">xyl</span>.<span class="hljs-property">app1105</span>;
+<pre><code class="language-java">package com.xyl.app1105;
 
-<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">annotation</span>.<span class="hljs-property">Nullable</span>;
-<span class="hljs-keyword">import</span> androidx.<span class="hljs-property">appcompat</span>.<span class="hljs-property">app</span>.<span class="hljs-property">AppCompatActivity</span>;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">content</span>.<span class="hljs-property">Intent</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">content</span>.<span class="hljs-property">SharedPreferences</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">os</span>.<span class="hljs-property">Bundle</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">text</span>.<span class="hljs-property">TextUtils</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">view</span>.<span class="hljs-property">View</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">Button</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">CheckBox</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">EditText</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">ImageView</span>;
-<span class="hljs-keyword">import</span> android.<span class="hljs-property">widget</span>.<span class="hljs-property">Toast</span>;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">LoginActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">AppCompatActivity</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">View</span>.<span class="hljs-property">OnClickListener</span> {
-    <span class="hljs-title class_">EditText</span> nameEt, pwdEt;
-    <span class="hljs-title class_">ImageView</span> iconIv;
-    <span class="hljs-title class_">CheckBox</span> saveCb;
-    <span class="hljs-title class_">Button</span> logBtn;
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    EditText nameEt, pwdEt;
+    ImageView iconIv;
+    CheckBox saveCb;
+    Button logBtn;
 
-    <span class="hljs-title class_">SharedPreferences</span> preferences;
-    int iconId = R.<span class="hljs-property">mipmap</span>.<span class="hljs-property">baiyang</span>; <span class="hljs-comment">//头像显示的资源</span>
+    SharedPreferences preferences;
+    int iconId = R.mipmap.baiyang; //头像显示的资源
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onCreate</span>(<span class="hljs-params">Bundle savedInstanceState</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onCreate</span>(savedInstanceState);
-        <span class="hljs-title function_">setContentView</span>(R.<span class="hljs-property">layout</span>.<span class="hljs-property">activity_login</span>);
-        <span class="hljs-title function_">initView</span>();
-        <span class="hljs-title function_">setEvent</span>();
-        <span class="hljs-comment">//创建共享参数对象</span>
-        preferences = <span class="hljs-title function_">getSharedPreferences</span>(<span class="hljs-string">"user_pref"</span>, <span class="hljs-variable constant_">MODE_PRIVATE</span>);
-        <span class="hljs-comment">//显示共享参数的信息</span>
-        <span class="hljs-title function_">showPreferenceInfo</span>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        initView();
+        setEvent();
+        //创建共享参数对象
+        preferences = getSharedPreferences("user_pref", MODE_PRIVATE);
+        //显示共享参数的信息
+        showPreferenceInfo();
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 显示共享参数的信息
-     */</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">showPreferenceInfo</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-title class_">String</span> uname = preferences.<span class="hljs-title function_">getString</span>(<span class="hljs-string">"uname"</span>, <span class="hljs-string">""</span>);
-        <span class="hljs-title class_">String</span> upwd = preferences.<span class="hljs-title function_">getString</span>(<span class="hljs-string">"upwd"</span>, <span class="hljs-string">""</span>);
-        iconId = preferences.<span class="hljs-title function_">getInt</span>(<span class="hljs-string">"uImg"</span>, iconId);
-        <span class="hljs-keyword">if</span>(!<span class="hljs-title class_">TextUtils</span>.<span class="hljs-title function_">isEmpty</span>(uname)){
-            nameEt.<span class="hljs-title function_">setText</span>(uname);
-            pwdEt.<span class="hljs-title function_">setText</span>(upwd);
-            iconIv.<span class="hljs-title function_">setImageResource</span>(iconId);
-            saveCb.<span class="hljs-title function_">setChecked</span>(<span class="hljs-literal">true</span>);
+     */
+    private void showPreferenceInfo() {
+        String uname = preferences.getString("uname", "");
+        String upwd = preferences.getString("upwd", "");
+        iconId = preferences.getInt("uImg", iconId);
+        if(!TextUtils.isEmpty(uname)){
+            nameEt.setText(uname);
+            pwdEt.setText(upwd);
+            iconIv.setImageResource(iconId);
+            saveCb.setChecked(true);
         }
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setEvent</span>(<span class="hljs-params"></span>) {
-        iconIv.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
-        logBtn.<span class="hljs-title function_">setOnClickListener</span>(<span class="hljs-variable language_">this</span>);
+    private void setEvent() {
+        iconIv.setOnClickListener(this);
+        logBtn.setOnClickListener(this);
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">initView</span>(<span class="hljs-params"></span>) {
-        nameEt = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">log_et_name</span>);
-        pwdEt = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">log_et_pwd</span>);
-        iconIv = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">log_iv</span>);
-        saveCb = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">log_cb</span>);
-        logBtn = <span class="hljs-title function_">findViewById</span>(R.<span class="hljs-property">id</span>.<span class="hljs-property">log_btn</span>);
+    private void initView() {
+        nameEt = findViewById(R.id.log_et_name);
+        pwdEt = findViewById(R.id.log_et_pwd);
+        iconIv = findViewById(R.id.log_iv);
+        saveCb = findViewById(R.id.log_cb);
+        logBtn = findViewById(R.id.log_btn);
     }
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onClick</span>(<span class="hljs-params">View view</span>) {
-        <span class="hljs-keyword">switch</span> (view.<span class="hljs-title function_">getId</span>()) {
-            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">log_iv</span>:
-                <span class="hljs-title class_">Intent</span> intent = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intent</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-title class_">SelectIconActivity</span>.<span class="hljs-property">class</span>);
-<span class="hljs-comment">//                startActivityForResult(intent, 1);</span>
-                <span class="hljs-title function_">startActivityIfNeeded</span>(intent, <span class="hljs-number">1</span>);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-keyword">case</span> R.<span class="hljs-property">id</span>.<span class="hljs-property">log_btn</span>:
-                <span class="hljs-comment">//获取内容</span>
-                <span class="hljs-title class_">String</span> uname = nameEt.<span class="hljs-title function_">getText</span>().<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">trim</span>();
-                <span class="hljs-title class_">String</span> upwd = pwdEt.<span class="hljs-title function_">getText</span>().<span class="hljs-title function_">toString</span>().<span class="hljs-title function_">trim</span>();
-                <span class="hljs-comment">//判断用户名和密码是否正确</span>
-                <span class="hljs-built_in">boolean</span> isSuccess = <span class="hljs-title function_">judgeInfo</span>(uname, upwd);
-                <span class="hljs-keyword">if</span> (isSuccess) {
-                    <span class="hljs-comment">//登录成功，判断是否保存用户信息</span>
-                    <span class="hljs-title class_">SharedPreferences</span>.<span class="hljs-property">Editor</span> editor = preferences.<span class="hljs-title function_">edit</span>();
-                    <span class="hljs-keyword">if</span> (saveCb.<span class="hljs-title function_">isChecked</span>()) {
-                        <span class="hljs-comment">//保存数据到共享参数当中</span>
-                        editor.<span class="hljs-title function_">putString</span>(<span class="hljs-string">"uname"</span>, uname);
-                        editor.<span class="hljs-title function_">putString</span>(<span class="hljs-string">"upwd"</span>, upwd);
-                        editor.<span class="hljs-title function_">putInt</span>(<span class="hljs-string">"uImg"</span>, iconId);
-                        editor.<span class="hljs-title function_">commit</span>();
-                        <span class="hljs-keyword">return</span>;
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.log_iv:
+                Intent intent = new Intent(this, SelectIconActivity.class);
+//                startActivityForResult(intent, 1);
+                startActivityIfNeeded(intent, 1);
+                break;
+            case R.id.log_btn:
+                //获取内容
+                String uname = nameEt.getText().toString().trim();
+                String upwd = pwdEt.getText().toString().trim();
+                //判断用户名和密码是否正确
+                boolean isSuccess = judgeInfo(uname, upwd);
+                if (isSuccess) {
+                    //登录成功，判断是否保存用户信息
+                    SharedPreferences.Editor editor = preferences.edit();
+                    if (saveCb.isChecked()) {
+                        //保存数据到共享参数当中
+                        editor.putString("uname", uname);
+                        editor.putString("upwd", upwd);
+                        editor.putInt("uImg", iconId);
+                        editor.commit();
+                        return;
                     }
-                    <span class="hljs-comment">//如果选择不保存，原来的数据清空</span>
-                    <span class="hljs-keyword">else</span>{
-                        editor.<span class="hljs-title function_">clear</span>();
-                        editor.<span class="hljs-title function_">commit</span>();
-                        <span class="hljs-keyword">return</span>;
+                    //如果选择不保存，原来的数据清空
+                    else{
+                        editor.clear();
+                        editor.commit();
+                        return;
                     }
                 }
-                <span class="hljs-keyword">break</span>;
+                break;
         }
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-built_in">boolean</span> <span class="hljs-title function_">judgeInfo</span>(<span class="hljs-params"><span class="hljs-built_in">String</span> uname, <span class="hljs-built_in">String</span> upwd</span>) {
-        <span class="hljs-comment">/**
+    private boolean judgeInfo(String uname, String upwd) {
+        /**
          * 省略联网判断登录的过程
-         */</span>
-        <span class="hljs-keyword">if</span> (<span class="hljs-title class_">TextUtils</span>.<span class="hljs-title function_">isEmpty</span>(uname) || <span class="hljs-title class_">TextUtils</span>.<span class="hljs-title function_">isEmpty</span>(upwd)) {
-            <span class="hljs-title class_">Toast</span>.<span class="hljs-title function_">makeText</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-string">"登录失败"</span>, <span class="hljs-title class_">Toast</span>.<span class="hljs-property">LENGTH_SHORT</span>).<span class="hljs-title function_">show</span>();
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+         */
+        if (TextUtils.isEmpty(uname) || TextUtils.isEmpty(upwd)) {
+            Toast.makeText(this, "登录失败", Toast.LENGTH_SHORT).show();
+            return false;
         }
-        <span class="hljs-title class_">Toast</span>.<span class="hljs-title function_">makeText</span>(<span class="hljs-variable language_">this</span>, <span class="hljs-string">"登录成功"</span>, <span class="hljs-title class_">Toast</span>.<span class="hljs-property">LENGTH_SHORT</span>).<span class="hljs-title function_">show</span>();
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
+        return true;
     }
 
-    <span class="hljs-comment">/**
-     * 接收其他页面传回来的数值的方法  A----&gt;B   B----&gt;A
+    /**
+     * 接收其他页面传回来的数值的方法  A---->B   B---->A
      *
-     * <span class="hljs-doctag">@param</span> <span class="hljs-variable">requestCode</span>
-     * <span class="hljs-doctag">@param</span> <span class="hljs-variable">resultCode</span>
-     * <span class="hljs-doctag">@param</span> <span class="hljs-variable">data</span>
-     */</span>
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">onActivityResult</span>(<span class="hljs-params">int requestCode, int resultCode, <span class="hljs-meta">@Nullable</span> Intent data</span>) {
-        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">onActivityResult</span>(requestCode, resultCode, data);
-        <span class="hljs-comment">//判断是哪个页面传回来的，根据结果码判断</span>
-        <span class="hljs-keyword">if</span> (resultCode == <span class="hljs-number">100</span>) {
-            <span class="hljs-comment">//第二个参数为默认值</span>
-            int resId = data.<span class="hljs-title function_">getIntExtra</span>(<span class="hljs-string">"resId"</span>, R.<span class="hljs-property">mipmap</span>.<span class="hljs-property">baiyang</span>);
-            iconIv.<span class="hljs-title function_">setImageResource</span>(resId);
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //判断是哪个页面传回来的，根据结果码判断
+        if (resultCode == 100) {
+            //第二个参数为默认值
+            int resId = data.getIntExtra("resId", R.mipmap.baiyang);
+            iconIv.setImageResource(resId);
             iconId = resId;
         }
     }
 }
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月5日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"intent"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"生命周期"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"SharePreferences"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月5日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月5日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"Activity"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"intent"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"生命周期"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"SharePreferences"}]]]}],["$","$Lc",null,{"path":"11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"11%E6%9C%885%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"11月5日Android学习笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

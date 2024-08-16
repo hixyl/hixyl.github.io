@@ -1,100 +1,96 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月10日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"11月10日Android学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T3ea6,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"11月10日Android学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T210b,
     <p class="time">发布时间：<time datetime="10 November, 2022">2022-11-10 17:17:36</time></p>
     <p class="words">本文字数：1,190 字       阅读完需：约 2 分钟</p>
-    <html><head></head><body><h2>读取网络数据</h2>
+    <h2>读取网络数据</h2>
 <p>获取网络请求属于耗时操作。在Android主线程当中不允许出现耗时操作，开启异步线程，解决获取网络请求的问题。<br>
 获取网络请求必须在子线程当中完成，UI控件的设置必须在主线程当中完成。</p>
 <h3>线程知识点回顾</h3>
 <h4>开启新线程</h4>
 <ol>
 <li>创建Thread子类对象，调用start方法，启动新线程</li>
-<li>编写Runnable实现类，创建Runnable子类的对象，<code><span class="hljs-keyword">new</span> <span class="hljs-type">Thread</span>(<span class="hljs-keyword">new</span> <span class="hljs-type">MyRunnable</span>).start()</code></li>
+<li>编写Runnable实现类，创建Runnable子类的对象，<code>new Thread(new MyRunnable).start()</code></li>
 </ol>
 <h4>创建新线程对象</h4>
-<pre><code class="language-java">    <span class="hljs-comment">//创建新的线程对象</span>
-    <span class="hljs-type">Thread</span> <span class="hljs-variable">thread</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+<pre><code class="language-java">    //创建新的线程对象
+    Thread thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
             
         }
     });
-    <span class="hljs-comment">//创建线程对象的方法2</span>
-    <span class="hljs-type">Thread</span> <span class="hljs-variable">t2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(){
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
-            <span class="hljs-built_in">super</span>.run();
+    //创建线程对象的方法2
+    Thread t2 = new Thread(){
+        @Override
+        public void run() {
+            super.run();
         }
     };
-    <span class="hljs-comment">//启动线程</span>
+    //启动线程
     thread.start();
 </code></pre>
 <h4>线程的生命周期</h4>
-<p>线程的生命周期: 新建-----&gt;&gt;就绪-----&gt;&gt;运行&lt;==&gt;阻塞------&gt;&gt;消亡</p>
-<p>当调用<code>t1.<span class="hljs-literal">start</span>()</code>方法时，让线程处于就绪状态，有cpu的执行资格，但是没有执行权力。</p>
+<p>线程的生命周期: 新建----->>就绪----->>运行&#x3C;==>阻塞------>>消亡</p>
+<p>当调用<code>t1.start()</code>方法时，让线程处于就绪状态，有cpu的执行资格，但是没有执行权力。</p>
 <h3>原生读取网络数据</h3>
 <h4>配置网络访问权限</h4>
 <p>AndroidManifest.xml</p>
-<pre><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">manifest</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">uses-permission</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">application</span>
-        <span class="hljs-attr">android:usesCleartextTraffic</span>=<span class="hljs-string">"true"</span>
+<pre><code class="language-xml">&#x3C;?xml version="1.0" encoding="utf-8"?>
+&#x3C;manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    &#x3C;uses-permission android:name="android.permission.INTERNET"/>
+    &#x3C;application
+        android:usesCleartextTraffic="true"
 ···
-</span></code></pre>
+</code></pre>
 <h4>读取流</h4>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">String</span> getStringByConnection(<span class="hljs-keyword">String</span> path) {
-        <span class="hljs-comment">//内存流</span>
-        ByteArrayOutputStream baos = <span class="hljs-keyword">new</span> <span class="hljs-type">ByteArrayOutputStream</span>();
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-comment">//1. 将网址转换成资源对象</span>
-            URL url = <span class="hljs-keyword">new</span> <span class="hljs-type">URL</span>(path);
-            <span class="hljs-comment">//2. 开始连接网络</span>
+<pre><code class="language-java">    private String getStringByConnection(String path) {
+        //内存流
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try {
+            //1. 将网址转换成资源对象
+            URL url = new URL(path);
+            //2. 开始连接网络
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            <span class="hljs-comment">//3. 获取网页信息输入流</span>
-            InputStream <span class="hljs-keyword">is</span> = conn.getInputStream();
-            <span class="hljs-comment">//4. 读取流，写入内存</span>
-            int hasRead = <span class="hljs-number">0</span>;
-            byte[] buf = <span class="hljs-keyword">new</span> <span class="hljs-type">byte</span>[<span class="hljs-number">1024</span>];
-            <span class="hljs-keyword">while</span> ((hasRead = <span class="hljs-keyword">is</span>.read(buf))!=<span class="hljs-number">-1</span>){
-                baos.write(buf, <span class="hljs-number">0</span>, hasRead);
+            //3. 获取网页信息输入流
+            InputStream is = conn.getInputStream();
+            //4. 读取流，写入内存
+            int hasRead = 0;
+            byte[] buf = new byte[1024];
+            while ((hasRead = is.read(buf))!=-1){
+                baos.write(buf, 0, hasRead);
             }
-            <span class="hljs-keyword">is</span>.close();
-        } <span class="hljs-keyword">catch</span> (Exception e) {
+            is.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        <span class="hljs-keyword">return</span> baos.toString();
+        return baos.toString();
     }
 </code></pre>
 <h4>线程中开启读取方法</h4>
-<pre><code class="language-java">    <span class="hljs-keyword">private</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">loadDatas</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-comment">//创建新的线程对象</span>
-        <span class="hljs-title class_">Thread</span> t1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">//编写获取网络数据的过程</span>
-                <span class="hljs-title class_">String</span> msg = <span class="hljs-title function_">getStringByConnection</span>(url);
-                <span class="hljs-title class_">Log</span>.<span class="hljs-title function_">i</span>(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
+<pre><code class="language-java">    private void loadDatas() {
+        //创建新的线程对象
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //编写获取网络数据的过程
+                String msg = getStringByConnection(url);
+                Log.i("lsh", "run: msg====" + msg);
             }
         });
-        t1.<span class="hljs-title function_">start</span>();
+        t1.start();
 
     }
 </code></pre>
@@ -106,90 +102,90 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <li>
 <p>创建一个线程间通信类，该类可以在子线程当中发送消息，然后在主线程中接收消息。<br>
 发送消息和接收消息得是同一个handler对象</p>
-<pre><code class="language-java">    <span class="hljs-type">Handler</span> <span class="hljs-variable">handler</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>.Callback() {
-        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">handleMessage</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Message msg)</span> {
-            <span class="hljs-comment">//可以接收消息的方法</span>
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+<pre><code class="language-java">    Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(@NonNull Message msg) {
+            //可以接收消息的方法
+            return false;
         }
     });
 </code></pre>
 </li>
 <li>
 <p>在子线程发送消息</p>
-<pre><code class="language-java">     <span class="hljs-meta">@Override</span>
-     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-         <span class="hljs-comment">//表示让当前线程可以作为loop线程，此时该子线程可以创建Handler对象，发送消息</span>
+<pre><code class="language-java">     @Override
+     public void run() {
+         //表示让当前线程可以作为loop线程，此时该子线程可以创建Handler对象，发送消息
          Looper.myLooper();
          Looper.loop();
-         <span class="hljs-comment">//编写获取网络数据的过程</span>
+         //编写获取网络数据的过程
          String msg = HttpUtils.getStringByConnection(url);
-         <span class="hljs-comment">//将要发送的数据封装到message当中</span>
-         Message message = <span class="hljs-keyword">handler</span>.obtainMessage();
-         <span class="hljs-comment">//区别消息的标识号</span>
-         message.what = <span class="hljs-number">1</span>;
+         //将要发送的数据封装到message当中
+         Message message = handler.obtainMessage();
+         //区别消息的标识号
+         message.what = 1;
          message.obj = msg;
-         <span class="hljs-keyword">handler</span>.sendMessage(message);
-         Log.i(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
+         handler.sendMessage(message);
+         Log.i("lsh", "run: msg====" + msg);
      }
 </code></pre>
 </li>
 <li>
 <p>在主线程接收消息</p>
-<pre><code class="language-java">        <span class="hljs-meta">@Override</span>
-        <span class="hljs-keyword">public</span> <span class="hljs-built_in">boolean</span> <span class="hljs-title function_">handleMessage</span>(<span class="hljs-params"><span class="hljs-meta">@NonNull</span> Message message</span>) {
-            <span class="hljs-comment">//可以接收消息的方法</span>
-            <span class="hljs-keyword">if</span> (message.<span class="hljs-property">what</span> == <span class="hljs-number">1</span>) {
-                <span class="hljs-title class_">String</span> str = (<span class="hljs-title class_">String</span>) message.<span class="hljs-property">obj</span>;
-                binding.<span class="hljs-property">mainTv</span>.<span class="hljs-title function_">setText</span>(str);
+<pre><code class="language-java">        @Override
+        public boolean handleMessage(@NonNull Message message) {
+            //可以接收消息的方法
+            if (message.what == 1) {
+                String str = (String) message.obj;
+                binding.mainTv.setText(str);
             }
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            return false;
         }
 </code></pre>
 </li>
 <li>
 <p>回到主线程执行任务<br>
-在子线程的run方法中执行<code><span class="hljs-function"><span class="hljs-title">runOnIoThread</span><span class="hljs-params">()</span></span></code>即可</p>
-<pre><code class="language-java"><span class="hljs-comment">//回到主线程执行任务</span>
-<span class="hljs-title function_">runOnUiThread</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-        adapter.<span class="hljs-title function_">notifyDataSetChanged</span>();
+在子线程的run方法中执行<code>runOnIoThread()</code>即可</p>
+<pre><code class="language-java">//回到主线程执行任务
+runOnUiThread(new Runnable() {
+    @Override
+    public void run() {
+        adapter.notifyDataSetChanged();
     }
 });
 </code></pre>
-<pre><code class="language-java"><span class="hljs-title class_">Handler</span> handler2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>();
-<span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(){
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-        <span class="hljs-title class_">String</span> json = <span class="hljs-string">"ksdfjalkjf"</span>;
-        handler2.<span class="hljs-title function_">post</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
-            <span class="hljs-meta">@Override</span>
-            <span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>) {
-                <span class="hljs-comment">//回到主线程执行</span>
+<pre><code class="language-java">Handler handler2 = new Handler();
+new Thread(){
+    @Override
+    public void run() {
+        String json = "ksdfjalkjf";
+        handler2.post(new Runnable() {
+            @Override
+            public void run() {
+                //回到主线程执行
             }
         });
     }
-}.<span class="hljs-title function_">start</span>();
+}.start();
 </code></pre>
 </li>
 </ol>
 <h3>Handler，Looper，Message，MessageQueue之间的关系</h3>
 <p>答：从应用的角度举例，可以把地铁当中的安检机看作是一个线程，然后安检机中的传送带就就当中Looper对象，因为有这个传送带，安检机才能无限循环进行安检，接受安检的人就相当于handler对象，在传送带上放置包裹即 Message，然后在传送带到达指定地点后，提示给放置包裹的人接受包裹。</p>
-<p>从源码的角度讲，线程当中可以通过<code>Looper.prepare<span class="hljs-comment">()</span></code>方法，在线程当中定义<code><span class="hljs-attribute">looper</span></code>对象，使线程能够循环。然后通过调用<code>Looper.<span class="hljs-keyword">loop</span>()</code>的方法使他循环起来。然后Looper上有一个封装的<code><span class="hljs-attribute">MessageQueue</span></code>对象，用来处理循环消息，调用handler的<code><span class="hljs-attribute">sendMessage</span></code>方法，把message消息的target属性设置为当前handler，然后在调用<code><span class="hljs-attribute">messagequeue</span></code>当中<code><span class="hljs-attribute">enqueueMessage</span></code>方法把消息放置在消息队列上，然后调用<code><span class="hljs-keyword">handler</span></code>的<code><span class="hljs-attribute">dispatchMessage</span></code>分发这条消息，放置这条消息的handler能够获取到此消息, 通过handleMessage方法。</p>
+<p>从源码的角度讲，线程当中可以通过<code>Looper.prepare()</code>方法，在线程当中定义<code>looper</code>对象，使线程能够循环。然后通过调用<code>Looper.loop()</code>的方法使他循环起来。然后Looper上有一个封装的<code>MessageQueue</code>对象，用来处理循环消息，调用handler的<code>sendMessage</code>方法，把message消息的target属性设置为当前handler，然后在调用<code>messagequeue</code>当中<code>enqueueMessage</code>方法把消息放置在消息队列上，然后调用<code>handler</code>的<code>dispatchMessage</code>分发这条消息，放置这条消息的handler能够获取到此消息, 通过handleMessage方法。</p>
 <h2>视图绑定</h2>
-<p>不用写<code><span class="hljs-attribute">findViewById</span></code></p>
+<p>不用写<code>findViewById</code></p>
 <h3>流程</h3>
 <ol>
 <li>
-<p><code>build.gradle</code>中添加<code><span class="hljs-attribute">viewBinding</span></code></p>
-<pre><code class="language-java"> <span class="hljs-keyword">android</span> {
- <span class="hljs-keyword">namespace</span> <span class="hljs-symbol">'com</span>.xyl.app1110'
- compileSdk <span class="hljs-number">32</span>
- <span class="hljs-keyword">viewBinding</span> {
-     enabled <span class="hljs-literal">true</span>
+<p><code>build.gradle</code>中添加<code>viewBinding</code></p>
+<pre><code class="language-java"> android {
+ namespace 'com.xyl.app1110'
+ compileSdk 32
+ viewBinding {
+     enabled true
  }
- <span class="hljs-operator">...</span>
+ ...
  }
 </code></pre>
 </li>
@@ -197,22 +193,22 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>每一个view上设置id</p>
 </li>
 <li>
-<p>在Activity类中声明<code><span class="hljs-attribute">ActivityMainBinding</span></code>对象，如</p>
-<pre><code class="language-java">ActivityMainBinding binding<span class="hljs-comment">;</span>
+<p>在Activity类中声明<code>ActivityMainBinding</code>对象，如</p>
+<pre><code class="language-java">ActivityMainBinding binding;
 </code></pre>
 </li>
 <li>
-<p>在<code><span class="hljs-function"><span class="hljs-title">onCreate</span><span class="hljs-params">()</span></span></code>方法中获取绑定对象</p>
-<p><code><span class="hljs-attribute">binding</span> <span class="hljs-operator">=</span> ActivityMainBinding.inflate(getLayoutInflater())<span class="hljs-comment">;</span></code><br>
+<p>在<code>onCreate()</code>方法中获取绑定对象</p>
+<p><code>binding = ActivityMainBinding.inflate(getLayoutInflater());</code><br>
 或<br>
-<code><span class="hljs-attribute">binding</span> <span class="hljs-operator">=</span> ItemFoodlvBingding.bind(view)</code><br>
----在adapter的用于<code><span class="hljs-function"><span class="hljs-title">getView</span><span class="hljs-params">()</span></span></code>的<code><span class="hljs-attribute">ViewHolder</span></code>中使用</p>
+<code>binding = ItemFoodlvBingding.bind(view)</code><br>
+---在adapter的用于<code>getView()</code>的<code>ViewHolder</code>中使用</p>
 <pre><code class="language-java">  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState)<span class="hljs-comment">;</span>
-    binding <span class="hljs-operator">=</span> ActivityMainBinding.inflate(getLayoutInflater())<span class="hljs-comment">;</span>
-    View rootView <span class="hljs-operator">=</span> binding.getRoot()<span class="hljs-comment">;</span>
-    setContentView(rootView)<span class="hljs-comment">;</span>
-    binding.mainTv.setText(<span class="hljs-string">"今天是个好天气"</span>)<span class="hljs-comment">;</span>
+    super.onCreate(savedInstanceState);
+    binding = ActivityMainBinding.inflate(getLayoutInflater());
+    View rootView = binding.getRoot();
+    setContentView(rootView);
+    binding.mainTv.setText("今天是个好天气");
 }
 </code></pre>
 </li>
@@ -221,6 +217,7 @@ f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:st
 <p>三级缓存：<br>
 从网络上获取图片或者复杂的数据，可以先从内存当中查找，是否有这个图片，有就显示，没有就查找本地存储文件，如果本地存储有这个图片，就读入内存，然后显示，如果没有这个图片，就上网下载这个图片，下载成功，存放到本地存储，存放到内存，显示图片。<br>
 如果下载失败，显示错误图片。</p>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月10日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"读取网络数据"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"Thread"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Handler"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"缓存"}]]]}],["$","$Lf",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"11月10日Android学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"11月10日Android学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/Android学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"Android学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"Android"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"读取网络数据"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"Thread"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Handler"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"缓存"}]]]}],["$","$Lc",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"11%E6%9C%8810%E6%97%A5Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"11月10日Android学习笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

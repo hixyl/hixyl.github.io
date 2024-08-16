@@ -1,25 +1,21 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"],{"children":["__PAGE__?{\"id\":\"JSONField注解的应用\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"JSONField注解的应用\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T302d,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"],{"children":["__PAGE__?{\"id\":\"JSONField注解的应用\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T1793,
     <p class="time">发布时间：<time datetime="12 September, 2022">2022-09-12 14:25:11</time></p>
     <p class="words">本文字数：656 字       阅读完需：约 3 分钟</p>
-    <html><head></head><body><p>讲到@JSONField 注解，就不得不提到Alibaba 开源的fasejson</p>
+    <p>讲到@JSONField 注解，就不得不提到Alibaba 开源的fasejson</p>
 <p>fastjson是目前java语言中最快的json库，比自称最快的jackson速度要快，第三方独立测试结果看这里：<a href="https://github.com/eishay/jvm-serializers/wiki">https://github.com/eishay/jvm-serializers/wiki</a></p>
 <p>这里有jackson作者cowtowncoder等人对fastjson的性能评价：<a href="https://groups.google.com/forum/#!topic/java-serialization-benchmarking/8eS1KOquAhw">https://groups.google.com/forum/#!topic/java-serialization-benchmarking/8eS1KOquAhw</a></p>
 <p>Fastjson VS gson性能<br>
@@ -27,104 +23,104 @@ fastjson比gson快大约6倍，测试结果上这里：<a href="https://github.c
 <p>下面我们来介绍@JSONField 注解的应用:</p>
 <h3>1. JSONField 介绍</h3>
 <p>注意：1.1、若属性是私有的，必须有set*方法。否则无法反序列化。</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.alibaba.fastjson.annotation;
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> JSONField {
-<span class="hljs-comment">// 配置序列化和反序列化的顺序，1.1.42版本之后才⽀持</span>
-<span class="hljs-type">int</span> <span class="hljs-title function_">ordinal</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span>;
-<span class="hljs-comment">// 指定字段的名称</span>
-String <span class="hljs-title function_">name</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-string">""</span>;
-<span class="hljs-comment">// 指定字段的格式，对⽇期格式有⽤</span>
-String <span class="hljs-title function_">format</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-string">""</span>;
-<span class="hljs-comment">// 是否序列化</span>
-<span class="hljs-type">boolean</span> <span class="hljs-title function_">serialize</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-literal">true</span>;
-<span class="hljs-comment">// 是否反序列化</span>
-<span class="hljs-type">boolean</span> <span class="hljs-title function_">deserialize</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-literal">true</span>;
+<pre><code class="language-java">package com.alibaba.fastjson.annotation;
+public @interface JSONField {
+// 配置序列化和反序列化的顺序，1.1.42版本之后才⽀持
+int ordinal() default 0;
+// 指定字段的名称
+String name() default "";
+// 指定字段的格式，对⽇期格式有⽤
+String format() default "";
+// 是否序列化
+boolean serialize() default true;
+// 是否反序列化
+boolean deserialize() default true;
 }
 </code></pre>
 <h3>2. JSONField配置方式</h3>
 <h4>2.1FieldInfo可以配置在getter/setter方法或者字段上。例如：</h4>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;
+<pre><code class="language-java">public class A {
+    private int id;
 
-    <span class="hljs-meta">@JSONField</span>(name=<span class="hljs-string">"ID"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getId</span><span class="hljs-params">()</span> </span>{<span class="hljs-keyword">return</span> id;}
-    <span class="hljs-meta">@JSONField</span>(name=<span class="hljs-string">"ID"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setId</span><span class="hljs-params">(<span class="hljs-keyword">int</span> value)</span> </span>{<span class="hljs-keyword">this</span>.id = id;}
+    @JSONField(name="ID")
+    public int getId() {return id;}
+    @JSONField(name="ID")
+    public void setId(int value) {this.id = id;}
 }
 </code></pre>
 <h4>2.2 配置在field上</h4>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-meta">@JSONField</span>(name=<span class="hljs-string">"ID"</span>)
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;
+<pre><code class="language-java">public class A {
+    @JSONField(name="ID")
+    private int id;
 
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getId</span><span class="hljs-params">()</span> </span>{<span class="hljs-keyword">return</span> id;}
-    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setId</span><span class="hljs-params">(<span class="hljs-keyword">int</span> value)</span> </span>{<span class="hljs-keyword">this</span>.id = id;}
+    public int getId() {return id;}
+    public void setId(int value) {this.id = id;}
 }
 </code></pre>
 <h4>2.3 使⽤format配置⽇期格式化</h4>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
-    <span class="hljs-comment">// 配置date序列化和反序列使⽤yyyyMMdd⽇期格式</span>
-    <span class="hljs-meta">@JSONField(format=<span class="hljs-string">"yyyyMMdd"</span>)</span>
-    <span class="hljs-keyword">public</span> Date date;
+<pre><code class="language-java">public class A {
+    // 配置date序列化和反序列使⽤yyyyMMdd⽇期格式
+    @JSONField(format="yyyyMMdd")
+    public Date date;
 }
 </code></pre>
 <h4>2.4 使⽤serialize/deserialize指定字段不序列化</h4>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
-    @JSONField(serialize=<span class="hljs-literal">false</span>)
-    <span class="hljs-keyword">public</span> Date <span class="hljs-built_in">date</span>;
+<pre><code class="language-java">public class A {
+    @JSONField(serialize=false)
+    public Date date;
 }
 </code></pre>
 <h4>2.5 使⽤ordinal指定字段的顺序</h4>
 <p><em>注:缺省fastjson序列化一个java bean，是根据fieldName的字母序进行序列的你可以通过ordinal指定字段的顺序。这个特性需要1.1.42以上版本。</em></p>
-<pre><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">VO</span> {
-    <span class="hljs-meta">@JSONField(ordinal = 3)</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f0;
-    <span class="hljs-meta">@JSONField(ordinal = 2)</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f1;
-    <span class="hljs-meta">@JSONField(ordinal = 1)</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f2;
+<pre><code class="language-java">public static class VO {
+    @JSONField(ordinal = 3)
+    private int f0;
+    @JSONField(ordinal = 2)
+    private int f1;
+    @JSONField(ordinal = 1)
+    private int f2;
 }
 </code></pre>
 <h4>2.6 使⽤serializeUsing制定属性的序列化类</h4>
-<pre><code class="language-java">*在fastjson <span class="hljs-number">1.2</span><span class="hljs-number">.16</span>版本之后，JSONField的持新的定制化配置serializeUsing，可以单独对某个类的某个属性定制序列化，例如：*
+<pre><code class="language-java">*在fastjson 1.2.16版本之后，JSONField的持新的定制化配置serializeUsing，可以单独对某个类的某个属性定制序列化，例如：*
 
 
 package com.fxbin123.bean;
 
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.annotation.JSONField;
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.JSONSerializer;
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.ObjectSerializer;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson.serializer.JSONSerializer;
+import com.alibaba.fastjson.serializer.ObjectSerializer;
 
-<span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.lang.reflect.<span class="hljs-keyword">Type</span>;
+import java.io.IOException;
+import java.lang.reflect.Type;
 
-<span class="hljs-comment">/**
+/**
  * @创建用户: fxb
  * @创建时间: 2017年11月07日 10:00
  * @描述: myself test demo 
- */</span>
-<span class="hljs-built_in">public</span> <span class="hljs-keyword">class</span> MyTest {
-    <span class="hljs-built_in">public</span> static <span class="hljs-keyword">class</span> A {
-        @JSONField(serializeUsing = AValueSerializer.<span class="hljs-keyword">class</span>)
-        <span class="hljs-built_in">public</span> <span class="hljs-type">int</span> <span class="hljs-keyword">value</span>;
+ */
+public class MyTest {
+    public static class A {
+        @JSONField(serializeUsing = AValueSerializer.class)
+        public int value;
     }
 
-    <span class="hljs-built_in">public</span> static <span class="hljs-keyword">class</span> AValueSerializer implements ObjectSerializer {
+    public static class AValueSerializer implements ObjectSerializer {
         @Override
-        <span class="hljs-built_in">public</span> <span class="hljs-type">void</span> <span class="hljs-keyword">write</span>(JSONSerializer serializer, <span class="hljs-keyword">Object</span> <span class="hljs-keyword">object</span>, <span class="hljs-keyword">Object</span> fieldName, <span class="hljs-keyword">Type</span> fieldType,
-                          <span class="hljs-type">int</span> features) throws IOException {
-            <span class="hljs-type">Integer</span> <span class="hljs-keyword">value</span> = (<span class="hljs-type">Integer</span>) <span class="hljs-keyword">object</span>;
-            String <span class="hljs-type">text</span> = <span class="hljs-keyword">value</span> + "元";
-            serializer.<span class="hljs-keyword">write</span>(<span class="hljs-type">text</span>);
+        public void write(JSONSerializer serializer, Object object, Object fieldName, Type fieldType,
+                          int features) throws IOException {
+            Integer value = (Integer) object;
+            String text = value + "元";
+            serializer.write(text);
         }
     }
 
-    <span class="hljs-built_in">public</span> static <span class="hljs-type">void</span> main(String[] args) {
-        A obj = <span class="hljs-built_in">new</span> A();
-        obj.<span class="hljs-keyword">value</span> = <span class="hljs-number">100</span>;
-        String <span class="hljs-type">json</span> = <span class="hljs-type">JSON</span>.toJSONString(obj);
-        <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(<span class="hljs-type">json</span>);
+    public static void main(String[] args) {
+        A obj = new A();
+        obj.value = 100;
+        String json = JSON.toJSONString(obj);
+        System.out.println(json);
     }
 }
 </code></pre>
@@ -132,41 +128,42 @@ package com.fxbin123.bean;
 <img src="https://img-blog.csdn.net/20171107111043388?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZnhiaW4xMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="在这里插入图片描述"></p>
 <h4>2.8 JSONField jsonDirect</h4>
 <p>在fastjson-1.2.12版本中，JSONField增加了一个新的配置项jsonDirect，它的⽤是：当你有一个字段是字符串类型，但不是json格式数据，你希望直接输json，而不是经过转义之后再输出。</p>
-<pre><code class="language-java"> <span class="hljs-keyword">package</span> com.fxbin123.bean;
+<pre><code class="language-java"> package com.fxbin123.bean;
     
-    <span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
-    <span class="hljs-keyword">import</span> com.alibaba.fastjson.annotation.JSONField;
-    <span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.JSONSerializer;
-    <span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.ObjectSerializer;
+    import com.alibaba.fastjson.JSON;
+    import com.alibaba.fastjson.annotation.JSONField;
+    import com.alibaba.fastjson.serializer.JSONSerializer;
+    import com.alibaba.fastjson.serializer.ObjectSerializer;
     
-    <span class="hljs-keyword">import</span> java.io.IOException;
-    <span class="hljs-keyword">import</span> java.lang.reflect.Type;
+    import java.io.IOException;
+    import java.lang.reflect.Type;
     
-    <span class="hljs-comment">/**
+    /**
      * @创建用户: fxb
      * @创建时间: 2017年11月07日 10:00
      * @描述: myself test demo
-     */</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyTest</span> {
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
-    <span class="hljs-comment">//        A obj = new A();</span>
-    <span class="hljs-comment">//        obj.value = 100;</span>
-    <span class="hljs-comment">//        String json = JSON.toJSONString(obj);</span>
-    <span class="hljs-comment">//        System.out.println(json);</span>
+     */
+    public class MyTest {
+        public static void main(String[] args) {
+    //        A obj = new A();
+    //        obj.value = 100;
+    //        String json = JSON.toJSONString(obj);
+    //        System.out.println(json);
     
-            <span class="hljs-type">B</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">B</span>();
-            b.id = <span class="hljs-number">9999</span>;
-            b.value = <span class="hljs-string">"{}"</span>;
-            <span class="hljs-type">String</span> <span class="hljs-variable">json</span> <span class="hljs-operator">=</span> JSON.toJSONString(b);
+            B b = new B();
+            b.id = 9999;
+            b.value = "{}";
+            String json = JSON.toJSONString(b);
             System.out.println(json);
         }
-        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span>{
-            <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> id;
-            <span class="hljs-meta">@JSONField(jsonDirect = true)</span>
-            <span class="hljs-keyword">public</span> String value;
+        public static class B{
+            public int id;
+            @JSONField(jsonDirect = true)
+            public String value;
         }
     }
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"JSONField注解的应用"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"alibaba"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"fastjson"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"date"}]]]}],["$","$Lf",null,{"path":"JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"JSONField注解的应用 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"JSONField注解的应用"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"java"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"后端"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"alibaba"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"fastjson"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"date"}]]]}],["$","$Lc",null,{"path":"JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"JSONField%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%BA%94%E7%94%A8","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"JSONField注解的应用 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

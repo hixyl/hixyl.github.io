@@ -1,416 +1,413 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"10月8日spring学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"10月8日spring学习笔记\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T8a7b,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__?{\"id\":\"10月8日spring学习笔记\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T2a97,
     <p class="time">发布时间：<time datetime="08 October, 2022">2022-10-08 17:02:27</time></p>
     <p class="words">本文字数：883 字       阅读完需：约 5 分钟</p>
-    <html><head></head><body><h2>token 用户登录</h2>
+    <h2>token 用户登录</h2>
 <p><img src="10_8_01.PNG" alt="alt"></p>
 <h3>存入redis</h3>
-<p>Vo对象必须实现<code><span class="hljs-attribute">Serializable</span></code>序列化接口</p>
+<p>Vo对象必须实现<code>Serializable</code>序列化接口</p>
 <p>application.xml</p>
-<pre><code class="language-xml"><span class="hljs-comment"># Spring配置</span>
-<span class="hljs-attr">spring:</span>
-  <span class="hljs-comment"># redis配置  </span>
-  <span class="hljs-attr">redis:</span> 
-     <span class="hljs-comment"># 地址</span>
-     <span class="hljs-attr">host:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>
-     <span class="hljs-comment"># 端口，默认为6379</span>
-     <span class="hljs-attr">port:</span> <span class="hljs-number">6379</span> 
-     <span class="hljs-comment"># 连接超时时间</span>
-     <span class="hljs-attr">timeout:</span> <span class="hljs-string">10s</span>
-     <span class="hljs-attr">lettuce:</span>
-      <span class="hljs-attr">pool:</span>
-        <span class="hljs-comment"># 连接池中的最小空闲连接</span>
-        <span class="hljs-attr">min-idle:</span> <span class="hljs-number">0</span>
-        <span class="hljs-comment"># 连接池中的最大空闲连接</span>
-        <span class="hljs-attr">max-idle:</span> <span class="hljs-number">8</span>
-        <span class="hljs-comment"># 连接池的最大数据库连接数</span>
-        <span class="hljs-attr">max-active:</span> <span class="hljs-number">8</span>
-        <span class="hljs-comment"># #连接池最大阻塞等待时间（使用负值表示没有限制）</span>
-        <span class="hljs-attr">max-wait:</span> <span class="hljs-string">-1m</span>
+<pre><code class="language-xml"># Spring配置
+spring:
+  # redis配置  
+  redis: 
+     # 地址
+     host: 127.0.0.1
+     # 端口，默认为6379
+     port: 6379 
+     # 连接超时时间
+     timeout: 10s
+     lettuce:
+      pool:
+        # 连接池中的最小空闲连接
+        min-idle: 0
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池的最大数据库连接数
+        max-active: 8
+        # #连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1m
 </code></pre>
 <h3>RedisUtil工具类</h3>
-<pre><code class="language-java"><span class="hljs-keyword">import</span> <span class="hljs-variable">org</span>.<span class="hljs-property">springframework</span>.<span class="hljs-property">beans</span>.<span class="hljs-property">factory</span>.<span class="hljs-property">annotation</span>.<span class="hljs-property">Autowired</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-variable">org</span>.<span class="hljs-property">springframework</span>.<span class="hljs-property">data</span>.<span class="hljs-property">redis</span>.<span class="hljs-property">core</span>.<span class="hljs-operator">*</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-variable">org</span>.<span class="hljs-property">springframework</span>.<span class="hljs-property">stereotype</span>.<span class="hljs-property">Component</span>;
+<pre><code class="language-java">import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.*;
+import org.springframework.stereotype.Component;
 
-<span class="hljs-keyword">import</span> <span class="hljs-variable">java</span>.<span class="hljs-property">io</span>.<span class="hljs-property">Serializable</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-variable">java</span>.<span class="hljs-property">util</span>.<span class="hljs-property">List</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-variable">java</span>.<span class="hljs-property">util</span>.<span class="hljs-property">Set</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-variable">java</span>.<span class="hljs-property">util</span>.<span class="hljs-property">concurrent</span>.<span class="hljs-property">TimeUnit</span>;
-<span class="hljs-operator">*</span><span class="hljs-operator">*</span>
- <span class="hljs-operator">*</span> 缓存操作类
- <span class="hljs-operator">*</span>/
-@<span class="hljs-title class_">Component</span>
-<span class="hljs-variable">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RedisUtil</span> {
+import java.io.Serializable;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+**
+ * 缓存操作类
+ */
+@Component
+public class RedisUtil {
 
-    @<span class="hljs-title class_">Autowired</span>
-    <span class="hljs-variable">private</span> <span class="hljs-title class_">RedisTemplate</span> <span class="hljs-variable">redisTemplate</span>;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
-    <span class="hljs-comment">/**
+    /**
      * 写入缓存
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> value
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">boolean</span> <span class="hljs-title function_">set</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">value</span>) {
-        <span class="hljs-variable">boolean</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">false</span>;
-        <span class="hljs-title function_">try</span> {
-            <span class="hljs-title class_">ValueOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Serializable</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">operations</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForValue</span>();
-            <span class="hljs-variable">operations</span>.<span class="hljs-property">set</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">value</span>);
-            <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">true</span>;
-        } <span class="hljs-title function_">catch</span> (<span class="hljs-title class_">Exception</span> <span class="hljs-variable">e</span>) {
-            <span class="hljs-variable">e</span>.<span class="hljs-property">printStackTrace</span>();
-            <span class="hljs-variable">throw</span>  <span class="hljs-variable">e</span>;
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean set(final String key, Object value) {
+        boolean result = false;
+        try {
+            ValueOperations&#x3C;Serializable, Object> operations = redisTemplate.opsForValue();
+            operations.set(key, value);
+            result = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw  e;
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">result</span>;
+        return result;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 写入缓存设置时效时间
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> value
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">boolean</span> <span class="hljs-title function_">set</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">value</span>, <span class="hljs-params">Long</span> <span class="hljs-params">expireTime</span>, <span class="hljs-params">TimeUnit</span> <span class="hljs-params">timeUnit</span>) {
-        <span class="hljs-variable">boolean</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">false</span>;
-        <span class="hljs-title function_">try</span> {
-            <span class="hljs-title class_">ValueOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Serializable</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">operations</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForValue</span>();
-            <span class="hljs-variable">operations</span>.<span class="hljs-property">set</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">value</span>);
-            <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">expire</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">expireTime</span>, <span class="hljs-variable">timeUnit</span>);
-            <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">true</span>;
-        } <span class="hljs-title function_">catch</span> (<span class="hljs-title class_">Exception</span> <span class="hljs-variable">e</span>) {
-            <span class="hljs-variable">e</span>.<span class="hljs-property">printStackTrace</span>();
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean set(final String key, Object value, Long expireTime, TimeUnit timeUnit) {
+        boolean result = false;
+        try {
+            ValueOperations&#x3C;Serializable, Object> operations = redisTemplate.opsForValue();
+            operations.set(key, value);
+            redisTemplate.expire(key, expireTime, timeUnit);
+            result = true;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">result</span>;
+        return result;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 批量删除对应的value
      *
-     * <span class="hljs-doctag">@param</span> keys
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">remove</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span>... <span class="hljs-params">keys</span>) {
-        <span class="hljs-keyword">for</span> (<span class="hljs-title class_">String</span> <span class="hljs-variable">key</span> : <span class="hljs-variable">keys</span>) {
-            <span class="hljs-title function_">remove</span>(<span class="hljs-variable">key</span>);
+     * @param keys
+     */
+    public void remove(final String... keys) {
+        for (String key : keys) {
+            remove(key);
         }
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 批量删除key
      *
-     * <span class="hljs-doctag">@param</span> pattern
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">removePattern</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">pattern</span>) {
-        <span class="hljs-title class_">Set</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Serializable</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">keys</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">keys</span>(<span class="hljs-variable">pattern</span>);
-        <span class="hljs-keyword">if</span> (<span class="hljs-variable">keys</span>.<span class="hljs-property">size</span>() <span class="hljs-operator">&gt;</span> <span class="hljs-number">0</span>) {
-            <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">delete</span>(<span class="hljs-variable">keys</span>);
+     * @param pattern
+     */
+    public void removePattern(final String pattern) {
+        Set&#x3C;Serializable> keys = redisTemplate.keys(pattern);
+        if (keys.size() > 0) {
+            redisTemplate.delete(keys);
         }
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 删除对应的value
      *
-     * <span class="hljs-doctag">@param</span> key
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">remove</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">key</span>) {
-        <span class="hljs-keyword">if</span> (<span class="hljs-title function_">exists</span>(<span class="hljs-variable">key</span>)) {
-            <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">delete</span>(<span class="hljs-variable">key</span>);
+     * @param key
+     */
+    public void remove(final String key) {
+        if (exists(key)) {
+            redisTemplate.delete(key);
         }
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 判断缓存中是否有对应的value
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">boolean</span> <span class="hljs-title function_">exists</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">key</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">hasKey</span>(<span class="hljs-variable">key</span>);
+     * @param key
+     * @return
+     */
+    public boolean exists(final String key) {
+        return redisTemplate.hasKey(key);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 读取缓存
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-title class_">Object</span> <span class="hljs-title function_">get</span>(<span class="hljs-params">final</span> <span class="hljs-params">String</span> <span class="hljs-params">key</span>) {
-        <span class="hljs-title class_">Object</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;
-        <span class="hljs-title class_">ValueOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Serializable</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">operations</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForValue</span>();
-        <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-variable">operations</span>.<span class="hljs-property">get</span>(<span class="hljs-variable">key</span>);
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">result</span>;
+     * @param key
+     * @return
+     */
+    public Object get(final String key) {
+        Object result = null;
+        ValueOperations&#x3C;Serializable, Object> operations = redisTemplate.opsForValue();
+        result = operations.get(key);
+        return result;
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 哈希 添加
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> hashKey
-     * <span class="hljs-doctag">@param</span> value
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">hmSet</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">hashKey</span>, <span class="hljs-params">Object</span> <span class="hljs-params">value</span>) {
-        <span class="hljs-title class_">HashOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">hash</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForHash</span>();
-        <span class="hljs-variable">hash</span>.<span class="hljs-property">put</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">hashKey</span>, <span class="hljs-variable">value</span>);
+     * @param key
+     * @param hashKey
+     * @param value
+     */
+    public void hmSet(String key, Object hashKey, Object value) {
+        HashOperations&#x3C;String, Object, Object> hash = redisTemplate.opsForHash();
+        hash.put(key, hashKey, value);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 哈希获取数据
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> hashKey
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-title class_">Object</span> <span class="hljs-title function_">hmGet</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">hashKey</span>) {
-        <span class="hljs-title class_">HashOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">hash</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForHash</span>();
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">hash</span>.<span class="hljs-property">get</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">hashKey</span>);
+     * @param key
+     * @param hashKey
+     * @return
+     */
+    public Object hmGet(String key, Object hashKey) {
+        HashOperations&#x3C;String, Object, Object> hash = redisTemplate.opsForHash();
+        return hash.get(key, hashKey);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 列表添加
      *
-     * <span class="hljs-doctag">@param</span> k
-     * <span class="hljs-doctag">@param</span> v
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">lPush</span>(<span class="hljs-params">String</span> <span class="hljs-params">k</span>, <span class="hljs-params">Object</span> <span class="hljs-params">v</span>) {
-        <span class="hljs-title class_">ListOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">list</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForList</span>();
-        <span class="hljs-variable">list</span>.<span class="hljs-property">rightPush</span>(<span class="hljs-variable">k</span>, <span class="hljs-variable">v</span>);
+     * @param k
+     * @param v
+     */
+    public void lPush(String k, Object v) {
+        ListOperations&#x3C;String, Object> list = redisTemplate.opsForList();
+        list.rightPush(k, v);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 列表获取
      *
-     * <span class="hljs-doctag">@param</span> k
-     * <span class="hljs-doctag">@param</span> l
-     * <span class="hljs-doctag">@param</span> l1
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-title class_">List</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-title function_">lRange</span>(<span class="hljs-params">String</span> <span class="hljs-params">k</span>, <span class="hljs-params">long</span> <span class="hljs-params">l</span>, <span class="hljs-params">long</span> <span class="hljs-params">l1</span>) {
-        <span class="hljs-title class_">ListOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">list</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForList</span>();
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">list</span>.<span class="hljs-property">range</span>(<span class="hljs-variable">k</span>, <span class="hljs-variable">l</span>, <span class="hljs-variable">l1</span>);
+     * @param k
+     * @param l
+     * @param l1
+     * @return
+     */
+    public List&#x3C;Object> lRange(String k, long l, long l1) {
+        ListOperations&#x3C;String, Object> list = redisTemplate.opsForList();
+        return list.range(k, l, l1);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 集合添加
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> value
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">value</span>) {
-        <span class="hljs-title class_">SetOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">set</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForSet</span>();
-        <span class="hljs-variable">set</span>.<span class="hljs-property">add</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">value</span>);
+     * @param key
+     * @param value
+     */
+    public void add(String key, Object value) {
+        SetOperations&#x3C;String, Object> set = redisTemplate.opsForSet();
+        set.add(key, value);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 集合获取
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-title class_">Set</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-title function_">setMembers</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>) {
-        <span class="hljs-title class_">SetOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">set</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForSet</span>();
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">set</span>.<span class="hljs-property">members</span>(<span class="hljs-variable">key</span>);
+     * @param key
+     * @return
+     */
+    public Set&#x3C;Object> setMembers(String key) {
+        SetOperations&#x3C;String, Object> set = redisTemplate.opsForSet();
+        return set.members(key);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 有序集合添加
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> value
-     * <span class="hljs-doctag">@param</span> scoure
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-variable">void</span> <span class="hljs-title function_">zAdd</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">Object</span> <span class="hljs-params">value</span>, <span class="hljs-params">double</span> <span class="hljs-params">scoure</span>) {
-        <span class="hljs-title class_">ZSetOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">zset</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForZSet</span>();
-        <span class="hljs-variable">zset</span>.<span class="hljs-property">add</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">value</span>, <span class="hljs-variable">scoure</span>);
+     * @param key
+     * @param value
+     * @param scoure
+     */
+    public void zAdd(String key, Object value, double scoure) {
+        ZSetOperations&#x3C;String, Object> zset = redisTemplate.opsForZSet();
+        zset.add(key, value, scoure);
     }
 
-    <span class="hljs-comment">/**
+    /**
      * 有序集合获取
      *
-     * <span class="hljs-doctag">@param</span> key
-     * <span class="hljs-doctag">@param</span> scoure
-     * <span class="hljs-doctag">@param</span> scoure1
-     * <span class="hljs-doctag">@return</span>
-     */</span>
-    <span class="hljs-variable">public</span> <span class="hljs-title class_">Set</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-title function_">rangeByScore</span>(<span class="hljs-params">String</span> <span class="hljs-params">key</span>, <span class="hljs-params">double</span> <span class="hljs-params">scoure</span>, <span class="hljs-params">double</span> <span class="hljs-params">scoure1</span>) {
-        <span class="hljs-title class_">ZSetOperations</span><span class="hljs-operator">&lt;</span><span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span><span class="hljs-operator">&gt;</span> <span class="hljs-variable">zset</span> <span class="hljs-operator">=</span> <span class="hljs-variable">redisTemplate</span>.<span class="hljs-property">opsForZSet</span>();
-        <span class="hljs-keyword">return</span> <span class="hljs-variable">zset</span>.<span class="hljs-property">rangeByScore</span>(<span class="hljs-variable">key</span>, <span class="hljs-variable">scoure</span>, <span class="hljs-variable">scoure1</span>);
+     * @param key
+     * @param scoure
+     * @param scoure1
+     * @return
+     */
+    public Set&#x3C;Object> rangeByScore(String key, double scoure, double scoure1) {
+        ZSetOperations&#x3C;String, Object> zset = redisTemplate.opsForZSet();
+        return zset.rangeByScore(key, scoure, scoure1);
     }
 }
 
 </code></pre>
 <h3>工具类调用</h3>
-<p>使用<code>redisUtil.<span class="hljs-keyword">get</span></code>或<code><span class="hljs-keyword">set</span></code>即可</p>
-<pre><code class="language-java"><span class="hljs-meta">@Autowired</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-title class_">RedisUtil</span> redisUtil;
-    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"/login"</span>)
-    <span class="hljs-keyword">public</span> <span class="hljs-title class_">AjaxResult</span> <span class="hljs-title function_">login</span>(<span class="hljs-params"><span class="hljs-meta">@RequestBody</span> SysUser sysUser</span>){
-        <span class="hljs-title class_">SysUser</span> user = sysUserService.<span class="hljs-title function_">login</span>(sysUser);
-        <span class="hljs-title class_">AjaxResult</span> ajaxResult = <span class="hljs-literal">null</span>;
-        <span class="hljs-keyword">if</span>(user != <span class="hljs-literal">null</span>) {
-            <span class="hljs-title class_">Map</span>&lt;<span class="hljs-title class_">String</span>, <span class="hljs-title class_">Object</span>&gt; objectMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();
-            objectMap.<span class="hljs-title function_">put</span>(<span class="hljs-string">"loginUserName"</span>,user.<span class="hljs-title function_">getUserName</span>());
-            objectMap.<span class="hljs-title function_">put</span>(<span class="hljs-string">"headImgUrl"</span>,sysUserService.<span class="hljs-title function_">getHeadImgUrl</span>(user.<span class="hljs-title function_">getImgUrl</span>()));
-            <span class="hljs-title class_">String</span> token =  <span class="hljs-variable constant_">UUID</span>.<span class="hljs-title function_">randomUUID</span>().<span class="hljs-title function_">toString</span>();
-            objectMap.<span class="hljs-title function_">put</span>(<span class="hljs-string">"token"</span>, token);
-            <span class="hljs-comment">//token存入redis</span>
-            redisUtil.<span class="hljs-title function_">set</span>(token, user, 15L, <span class="hljs-title class_">TimeUnit</span>.<span class="hljs-property">MINUTES</span>);
-            ajaxResult = <span class="hljs-title class_">AjaxResult</span>.<span class="hljs-title function_">success</span>(<span class="hljs-number">200</span>,<span class="hljs-string">"登录成功"</span>, objectMap);
-        }<span class="hljs-keyword">else</span>{
-            ajaxResult = <span class="hljs-title class_">AjaxResult</span>.<span class="hljs-title function_">fail</span>(<span class="hljs-number">200</span>,<span class="hljs-string">"账号或密码错误"</span>, <span class="hljs-literal">null</span>);
+<p>使用<code>redisUtil.get</code>或<code>set</code>即可</p>
+<pre><code class="language-java">@Autowired
+    private RedisUtil redisUtil;
+    @PostMapping("/login")
+    public AjaxResult login(@RequestBody SysUser sysUser){
+        SysUser user = sysUserService.login(sysUser);
+        AjaxResult ajaxResult = null;
+        if(user != null) {
+            Map&#x3C;String, Object> objectMap = new HashMap&#x3C;>();
+            objectMap.put("loginUserName",user.getUserName());
+            objectMap.put("headImgUrl",sysUserService.getHeadImgUrl(user.getImgUrl()));
+            String token =  UUID.randomUUID().toString();
+            objectMap.put("token", token);
+            //token存入redis
+            redisUtil.set(token, user, 15L, TimeUnit.MINUTES);
+            ajaxResult = AjaxResult.success(200,"登录成功", objectMap);
+        }else{
+            ajaxResult = AjaxResult.fail(200,"账号或密码错误", null);
         }
-         <span class="hljs-keyword">return</span> ajaxResult;
+         return ajaxResult;
     }
 </code></pre>
 <h3>后端处理</h3>
 <p>拦截器配置类</p>
 <p>WebConfig.java</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.config;
+<pre><code class="language-java">package com.zr.config;
 
-<span class="hljs-keyword">import</span> javax.<span class="hljs-keyword">annotation</span>.Resource;
+import javax.annotation.Resource;
 
-<span class="hljs-keyword">import</span> org.springframework.context.<span class="hljs-keyword">annotation</span>.Configuration;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.config.<span class="hljs-keyword">annotation</span>.InterceptorRegistration;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.config.<span class="hljs-keyword">annotation</span>.InterceptorRegistry;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.config.<span class="hljs-keyword">annotation</span>.WebMvcConfigurer;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-<span class="hljs-keyword">import</span> com.zr.interceptor.AuthorizationInterceptor;
+import com.zr.interceptor.AuthorizationInterceptor;
 
-<span class="hljs-comment">// @Configuration</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WebConfig</span> <span class="hljs-title">implements</span> <span class="hljs-title">WebMvcConfigurer</span>{
+// @Configuration
+public class WebConfig implements WebMvcConfigurer{
 
-    <span class="hljs-meta">@Resource</span>
-    <span class="hljs-keyword">private</span> AuthorizationInterceptor authorizationInterceptor;
+    @Resource
+    private AuthorizationInterceptor authorizationInterceptor;
 
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> void addInterceptors(InterceptorRegistry registry) {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
         InterceptorRegistration interceptorRegistration = registry.addInterceptor(authorizationInterceptor);
-        interceptorRegistration.addPathPatterns(<span class="hljs-string">"/**"</span>).excludePathPatterns(<span class="hljs-string">"/sys/user/login"</span>);
+        interceptorRegistration.addPathPatterns("/**").excludePathPatterns("/sys/user/login");
     }
     
 }
 </code></pre>
 <p>AuthorizationInterceptor.java</p>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> com.zr.interceptor;
+<pre><code class="language-java">package com.zr.interceptor;
 
-<span class="hljs-keyword">import</span> java.io.PrintWriter;
-<span class="hljs-keyword">import</span> java.util.concurrent.TimeUnit;
+import java.io.PrintWriter;
+import java.util.concurrent.TimeUnit;
 
-<span class="hljs-keyword">import</span> javax.annotation.Resource;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
-<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-<span class="hljs-keyword">import</span> org.springframework.stereotype.Component;
-<span class="hljs-keyword">import</span> org.springframework.util.StringUtils;
-<span class="hljs-keyword">import</span> org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.HandlerInterceptor;
 
-<span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
-<span class="hljs-keyword">import</span> com.zr.utils.AjaxResult;
-<span class="hljs-keyword">import</span> com.zr.utils.RedisUtil;
+import com.alibaba.fastjson.JSON;
+import com.zr.utils.AjaxResult;
+import com.zr.utils.RedisUtil;
 
-<span class="hljs-meta">@Component</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AuthorizationInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">HandlerInterceptor</span>{
-    <span class="hljs-meta">@Resource</span>
-    <span class="hljs-keyword">private</span> RedisUtil redisUtil;
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">preHandle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span>
-            <span class="hljs-keyword">throws</span> Exception {
-        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> request.getHeader(<span class="hljs-string">"Authorization"</span>);
-        <span class="hljs-keyword">if</span>(!StringUtils.hasLength(token)||redisUtil.get(token) == <span class="hljs-literal">null</span>){
-            <span class="hljs-comment">//返回JSON</span>
-            <span class="hljs-type">AjaxResult</span> <span class="hljs-variable">ajaxResult</span> <span class="hljs-operator">=</span> AjaxResult.fail(<span class="hljs-number">401</span>, <span class="hljs-string">"用户未登录"</span>, <span class="hljs-literal">null</span>);
-            response.setCharacterEncoding(<span class="hljs-string">"utf-8"</span>);
-            response.setContentType(<span class="hljs-string">"text/html;charset=utf-8"</span>);
-            <span class="hljs-type">PrintWriter</span> <span class="hljs-variable">out</span> <span class="hljs-operator">=</span> response.getWriter();
+@Component
+public class AuthorizationInterceptor implements HandlerInterceptor{
+    @Resource
+    private RedisUtil redisUtil;
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+            throws Exception {
+        String token = request.getHeader("Authorization");
+        if(!StringUtils.hasLength(token)||redisUtil.get(token) == null){
+            //返回JSON
+            AjaxResult ajaxResult = AjaxResult.fail(401, "用户未登录", null);
+            response.setCharacterEncoding("utf-8");
+            response.setContentType("text/html;charset=utf-8");
+            PrintWriter out = response.getWriter();
             out.write(JSON.toJSONString(ajaxResult));
             out.flush();
             out.close();
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            return false;
         }
-        <span class="hljs-keyword">else</span>{
-            <span class="hljs-comment">//更新过期时间</span>
-            redisUtil.set(token, redisUtil.get(token), <span class="hljs-number">15L</span>, TimeUnit.MINUTES);
+        else{
+            //更新过期时间
+            redisUtil.set(token, redisUtil.get(token), 15L, TimeUnit.MINUTES);
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        return true;
 
     }
     
 }
 </code></pre>
 <h3>前端处理</h3>
-<p>在 <code><span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.js</span></code>中添加拦截器即可</p>
-<pre><code class="language-javascript"><span class="hljs-comment">// The Vue build version to load with the `import` command</span>
-<span class="hljs-comment">// (runtime-only or standalone) has been set in webpack.base.conf with an alias.</span>
-<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
-<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>
-<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">'./router'</span>
-<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">"axios"</span>
-<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">"./store"</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-title class_">ElementUI</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'element-ui'</span>;
-<span class="hljs-keyword">import</span> <span class="hljs-string">'element-ui/lib/theme-chalk/index.css'</span>;
+<p>在 <code>main.js</code>中添加拦截器即可</p>
+<pre><code class="language-javascript">// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+import axios from "axios"
+import store from "./store";
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
-<span class="hljs-title class_">Vue</span>.<span class="hljs-property">config</span>.<span class="hljs-property">productionTip</span> = <span class="hljs-literal">false</span>
-<span class="hljs-comment">//设置axios为Vue的属性$axios</span>
-<span class="hljs-title class_">Vue</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">$axios</span> = axios
-<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">ElementUI</span>);
+Vue.config.productionTip = false
+//设置axios为Vue的属性$axios
+Vue.prototype.$axios = axios
+Vue.use(ElementUI);
 
-<span class="hljs-comment">// 在封装axios的文件中添加拦截器</span>
-<span class="hljs-comment">// 添加请求拦截器，在请求头中加token</span>
-axios.<span class="hljs-property">interceptors</span>.<span class="hljs-property">request</span>.<span class="hljs-title function_">use</span>(
-  <span class="hljs-function"><span class="hljs-params">config</span> =&gt;</span> {
-    config.<span class="hljs-property">headers</span>.<span class="hljs-property">Authorization</span> = store.<span class="hljs-property">state</span>.<span class="hljs-property">token</span>;
-    <span class="hljs-keyword">return</span> config
+// 在封装axios的文件中添加拦截器
+// 添加请求拦截器，在请求头中加token
+axios.interceptors.request.use(
+  config => {
+    config.headers.Authorization = store.state.token;
+    return config
   },
-  <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(error)
+  error => {
+    return Promise.reject(error)
   })
 
-<span class="hljs-comment">//添加全局响应拦截器</span>
-axios.<span class="hljs-property">interceptors</span>.<span class="hljs-property">response</span>.<span class="hljs-title function_">use</span>(
-  <span class="hljs-function"><span class="hljs-params">resp</span> =&gt;</span>{
-    <span class="hljs-keyword">if</span>(resp.<span class="hljs-property">data</span>.<span class="hljs-property">code</span> == <span class="hljs-number">401</span>){
-      store.<span class="hljs-property">state</span>.<span class="hljs-property">token</span> = <span class="hljs-string">''</span>;
-      router.<span class="hljs-title function_">push</span>(<span class="hljs-string">'Login'</span>).<span class="hljs-title function_">then</span>();
+//添加全局响应拦截器
+axios.interceptors.response.use(
+  resp =>{
+    if(resp.data.code == 401){
+      store.state.token = '';
+      router.push('Login').then();
     }
-    <span class="hljs-keyword">return</span> resp;
+    return resp;
   },
-  <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span>{
-    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(error)
+  error =>{
+    return Promise.reject(error)
   }
 )
-<span class="hljs-comment">/* eslint-disable no-new */</span>
-<span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
-  <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
   router,
   store,
-  <span class="hljs-attr">components</span>: { <span class="hljs-title class_">App</span> },
-  <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;App/&gt;'</span>
+  components: { App },
+  template: '&#x3C;App/>'
 })
 </code></pre>
 <h2>springboot自定义配置文件</h2>
-<p>注解 <code><span class="hljs-meta">@Value(<span class="hljs-string">"<span class="hljs-subst">${img.path}</span>"</span>)</span></code> 中的img.path对应配置文件的</p>
+<p>注解 <code>@Value("${img.path}")</code> 中的img.path对应配置文件的</p>
 <p>application.yaml</p>
-<pre><code class="language-yaml"><span class="hljs-symbol">img:</span>
-<span class="hljs-symbol">  path:</span> D:\\Img\\
+<pre><code class="language-yaml">img:
+  path: D:\\Img\\
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"10月8日spring学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Le","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"springboot"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"token"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Authorization"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"redis"}]]]}],["$","$Lf",null,{"path":"10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"10月8日spring学习笔记 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"10月8日spring学习笔记"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/新知笔记/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"新知笔记"}]}],["$","$Lb","1",{"href":"/articles/后端学习/1","children":["$","p","1",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"后端学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"spring"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"springboot"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"token"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"Authorization"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"redis"}]]]}],["$","$Lc",null,{"path":"10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"10%E6%9C%888%E6%97%A5spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"10月8日spring学习笔记 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null

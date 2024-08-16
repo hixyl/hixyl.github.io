@@ -1,178 +1,175 @@
-1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2",{"as":"font","type":"font/woff2"}]
-2:HL["/_next/static/css/4889457fae64fbaf.css",{"as":"style"}]
-0:["rzM6RvxqX1p23emT7WN45",[[["",{"children":["article",{"children":[["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"],{"children":["__PAGE__?{\"id\":\"javascript编写简单的网页计算器\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4889457fae64fbaf.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/b4d4f9fffc1492fd.css",{"as":"style"}]
-6:HL["/_next/static/css/99f6a99e5e57ec87.css",{"as":"style"}]
-7:I{"id":3015,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-8:I{"id":7767,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-9:I{"id":7920,"chunks":["272:static/chunks/webpack-6827bbf664db4492.js","971:static/chunks/fd9d1056-2a48348db6e9e5e0.js","596:static/chunks/596-38dca328e8a8de9d.js"],"name":"default","async":false}
-b:I{"id":5345,"chunks":["185:static/chunks/app/layout-310f4f1110904b4e.js"],"name":"","async":false}
-3:[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_aaf875","children":[["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","article","children",["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",null],"segment":"__PAGE__?{\"id\":\"javascript编写简单的网页计算器\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b4d4f9fffc1492fd.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next"}]]}],"segment":["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"]},"styles":[]}],"segment":"article"},"styles":[]}],["$","$Lb",null,{}]]}]]}],null]
-c:I{"id":4733,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-d:I{"id":6697,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-e:I{"id":6685,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-f:I{"id":9777,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-11:I{"id":5529,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-12:I{"id":1848,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"Waline","async":false}
-13:I{"id":2953,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-14:I{"id":633,"chunks":["577:static/chunks/221e729c-4a54b4fe5604a5c1.js","231:static/chunks/9316e0b3-dfc595e0ff39c618.js","165:static/chunks/165-9f67d2f80e9188a0.js","681:static/chunks/681-e2d1e0d67cbf2503.js","945:static/chunks/945-dd57d3732d1beca5.js","241:static/chunks/app/article/[id]/page-c217b84edbde72da.js"],"name":"","async":false}
-10:T42f9,
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["185","static/chunks/app/layout-950680b5068c0831.js"],""]
+7:I[4266,["185","static/chunks/app/layout-950680b5068c0831.js"],"default"]
+4:["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"]
+0:["bbFeRMIduFcZud7BNs8NQ",[[["",{"children":["article",{"children":[["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"],{"children":["__PAGE__?{\"id\":\"javascript编写简单的网页计算器\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["article",{"children":[["id","javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/99f6a99e5e57ec87.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/d0df4e9d9cd28850.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/c033a265c4b6e7f8.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/css/81abeb1d965206f7.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","4",{"rel":"stylesheet","href":"/_next/static/css/a46a6036119d7d12.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","5",{"rel":"stylesheet","href":"/_next/static/css/51cbc18a5b192d8f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","article","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"zh","children":[["$","link",null,{"rel":"icon","href":"/favicon.png?<generated>","type":"image/<generated>","sizes":"<generated>"}],["$","$L6",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L6",null,{"id":"google-analytics","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n        \n          gtag('config', 'G-N3DJ3JTVT2');\n        "}],["$","body",null,{"className":"__className_36bd41","children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}],["$","$L7",null,{}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/aae87c042353adfd.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L8"]]]]]
+9:I[2612,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+a:I[4306,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+b:I[231,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],""]
+c:I[4254,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+e:I[3869,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+f:I[5339,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"Waline"]
+10:I[8360,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+11:I[4226,["577","static/chunks/221e729c-e5a67d23aac7644c.js","231","static/chunks/9316e0b3-81def07e0919db1c.js","974","static/chunks/974-9ffea8f9ea4bfaa2.js","536","static/chunks/536-12c341f043d96047.js","665","static/chunks/665-f7c57b2084cbed6b.js","241","static/chunks/app/article/%5Bid%5D/page-28a3798f9eb189fc.js"],"default"]
+d:T14c7,
     <p class="time">发布时间：<time datetime="14 August, 2022">2022-08-14 22:23:17</time></p>
     <p class="words">本文字数：319 字       阅读完需：约 2 分钟</p>
-    <html><head></head><body><p>计算器app如下：</p>
+    <p>计算器app如下：</p>
 <div style="margin: auto; width: 400px;"><iframe style="height: 600px; width: 400px;" src="/html/caculator.html" frameborder="0"></iframe></div>
 <p>学习了js和jquery，编写了一个计算器app。主要思路是将按键事件对应字符串存储，利用eval()方法进行执行。另外简单调整了一些CSS样式。</p>
 <p>源代码如下</p>
-<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<pre><code class="language-html">&#x3C;!DOCTYPE html>
+&#x3C;html lang="en">
 
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>计算器<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css">
-        <span class="hljs-selector-id">#container</span> {
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">margin</span>: auto;
-            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">30px</span>;
-            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
-            <span class="hljs-attribute">background-color</span>: azure;
-        }
-
-        <span class="hljs-selector-id">#screen</span> {
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">280px</span>;
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">90px</span>;
-            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">text-align</span>: right;
-            <span class="hljs-attribute">overflow</span>: auto;
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &#x3C;title>计算器&#x3C;/title>
+    &#x3C;script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js">&#x3C;/script>
+    &#x3C;style>
+        #container {
+            width: 300px;
+            height: 500px;
+            border: solid 1px;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: azure;
         }
 
-        <span class="hljs-selector-id">#formula</span>,
-        <span class="hljs-selector-id">#result</span> {
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">30px</span>;
+        #screen {
+            width: 280px;
+            height: 90px;
+            border: solid 1px;
+            margin: 10px;
+            font-size: 20px;
+            line-height: 1px;
+            text-align: right;
+            overflow: auto;
         }
 
-        <span class="hljs-selector-id">#keyarea</span> {
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">280px</span>;
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">370px</span>;
-            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">margin</span>: auto;
-            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+        #formula,
+        #result {
+            height: 1px;
+            margin-right: 30px;
         }
 
-        <span class="hljs-selector-class">.key</span> {
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
-            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">float</span>: left;
-            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
-            <span class="hljs-attribute">margin</span>: <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> <span class="hljs-number">5px</span> <span class="hljs-number">19px</span>;
-            <span class="hljs-attribute">text-align</span>: center;
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
-            <span class="hljs-attribute">color</span>: white;
-            <span class="hljs-attribute">background-color</span>: darkgrey;
+        #keyarea {
+            width: 280px;
+            height: 370px;
+            border: solid 1px;
+            margin: auto;
+            border-radius: 10px;
         }
-        <span class="hljs-selector-class">.key</span><span class="hljs-selector-pseudo">:hover</span>{
-            <span class="hljs-attribute">background-color</span>: burlywood;
+
+        .key {
+            width: 60px;
+            height: 40px;
+            border: solid 1px;
+            float: left;
+            border-radius: 10px;
+            margin: 8px 10px 5px 19px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 30px;
+            color: white;
+            background-color: darkgrey;
         }
-        <span class="hljs-selector-class">.key</span><span class="hljs-selector-pseudo">:active</span>{
-            <span class="hljs-attribute">background-color</span>: dodgerblue;
+        .key:hover{
+            background-color: burlywood;
+        }
+        .key:active{
+            background-color: dodgerblue;
         }
         
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
-        $(<span class="hljs-variable language_">document</span>).<span class="hljs-title function_">ready</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
-            <span class="hljs-keyword">var</span> key;
-            <span class="hljs-keyword">var</span> formula = <span class="hljs-string">""</span>;
-            <span class="hljs-keyword">var</span> displayF=<span class="hljs-string">""</span>;
-            $(<span class="hljs-string">".key"</span>).<span class="hljs-title function_">click</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
-                <span class="hljs-keyword">if</span>(formula==<span class="hljs-string">""</span>){
-                    $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-string">""</span>);
+    &#x3C;/style>
+    &#x3C;script>
+        $(document).ready(function () {
+            var key;
+            var formula = "";
+            var displayF="";
+            $(".key").click(function () {
+                if(formula==""){
+                    $("#result").text("");
                 }
-                key = $(<span class="hljs-variable language_">this</span>).<span class="hljs-title function_">text</span>();
-                <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"="</span>) {
-                    <span class="hljs-comment">//判断是否为算式</span>
-                    <span class="hljs-keyword">try</span> {
-                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">eval</span>(formula));
-                        $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-built_in">eval</span>(formula));
-                        formula = <span class="hljs-string">""</span>;
-                        <span class="hljs-keyword">return</span>;
-                    } <span class="hljs-keyword">catch</span> (error) {
-                        formula = <span class="hljs-string">""</span>;
-                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"输入错误"</span>);
-                        $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-string">"输入错误"</span>);
+                key = $(this).text();
+                if (key == "=") {
+                    //判断是否为算式
+                    try {
+                        console.log(eval(formula));
+                        $("#result").text(eval(formula));
+                        formula = "";
+                        return;
+                    } catch (error) {
+                        formula = "";
+                        console.log("输入错误");
+                        $("#result").text("输入错误");
                     }
 
                 }
-                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((key &gt;= <span class="hljs-number">0</span> &amp;&amp; key &lt;= <span class="hljs-number">9</span>)  key == <span class="hljs-string">"."</span>) {
+                else if ((key >= 0 &#x26;&#x26; key &#x3C;= 9)  key == ".") {
                     formula += key;
                 }
-                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"C"</span>) {
-                    formula=<span class="hljs-string">""</span>;
+                else if (key == "C") {
+                    formula="";
                 }
                 
-                <span class="hljs-keyword">else</span> {
-                    <span class="hljs-comment">//运算符号</span>
-                    <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"x"</span>) {
-                        formula += <span class="hljs-string">"*"</span>;
-                    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"÷"</span>) {
-                        formula += <span class="hljs-string">"/"</span>;
-                    } <span class="hljs-keyword">else</span> {
+                else {
+                    //运算符号
+                    if (key == "x") {
+                        formula += "*";
+                    } else if (key == "÷") {
+                        formula += "/";
+                    } else {
                         formula += key;
                     }
                 }
                 
-                displayF=formula.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\*/g</span>,<span class="hljs-string">"x"</span>);
-                displayF=displayF.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\//g</span>,<span class="hljs-string">"÷"</span>);
-                $(<span class="hljs-string">"#formula"</span>).<span class="hljs-title function_">text</span>(displayF);
+                displayF=formula.replace(/\*/g,"x");
+                displayF=displayF.replace(/\//g,"÷");
+                $("#formula").text(displayF);
             });
 
         });
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    &#x3C;/script>
+&#x3C;/head>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"screen"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"formula"</span>&gt;</span>计算器<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"result"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"keyarea"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n6"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n7"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n8"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n9"</span>&gt;</span>9<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n9"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>÷<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>=<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>(<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&#x3C;body>
+    &#x3C;div id="container">
+        &#x3C;div id="screen">
+            &#x3C;p id="formula">计算器&#x3C;/p>&#x3C;br>
+            &#x3C;p id="result">&#x3C;/p>
+        &#x3C;/div>
+        &#x3C;div id="keyarea">
+            &#x3C;button class="key" id="n1">1&#x3C;/button>
+            &#x3C;button class="key" id="n2">2&#x3C;/button>
+            &#x3C;button class="key" id="n3">3&#x3C;/button>
+            &#x3C;button class="key" id="n4">4&#x3C;/button>
+            &#x3C;button class="key" id="n5">5&#x3C;/button>
+            &#x3C;button class="key" id="n6">6&#x3C;/button>
+            &#x3C;button class="key" id="n7">7&#x3C;/button>
+            &#x3C;button class="key" id="n8">8&#x3C;/button>
+            &#x3C;button class="key" id="n9">9&#x3C;/button>
+            &#x3C;button class="key" id="n9">0&#x3C;/button>
+            &#x3C;button class="key">+&#x3C;/button>
+            &#x3C;button class="key">-&#x3C;/button>
+            &#x3C;button class="key">x&#x3C;/button>
+            &#x3C;button class="key">÷&#x3C;/button>
+            &#x3C;button class="key">=&#x3C;/button>
+            &#x3C;button class="key">(&#x3C;/button>
+            &#x3C;button class="key">)&#x3C;/button>
+            &#x3C;button class="key">.&#x3C;/button>
+            &#x3C;button class="key">C&#x3C;/button>
 
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        &#x3C;/div>
+    &#x3C;/div>
+&#x3C;/body>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+&#x3C;/html>
 </code></pre>
-</body></html>
-  a:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$Lc",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$Ld",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Javascript编写简单的网页计算器"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Le","0",{"href":"/articles/编程学习/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"编程学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"border"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"height"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"margin"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"px"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"width"}]]]}],["$","$Lf",null,{"path":"javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$10"}}],["$","$L11",null,{}],["$","$L12",null,{"path":"javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L13",null,{}]]}]]}],["$","$L14",null,{}]]}]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Javascript编写简单的网页计算器 - 流年石刻"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","3",{"name":"next-size-adjust"}]]
+
+  2:["$","div",null,{"className":"article_pageBody__Bryg4","children":[["$","$L9",null,{"menuItemList":[{"id":0,"label":"首页","href":"/","icon":"/icons/home_gray.svg","iconSelected":"/icons/home_black.svg"},{"id":1,"label":"文章","href":"/articles/all/1","icon":"/icons/article_gray.svg","iconSelected":"/icons/article_black.svg"},{"id":3,"label":"关于","href":"/about","icon":"/icons/about_gray.svg","iconSelected":"/icons/about_black.svg"},{"id":4,"label":"搜索","href":"/search","icon":"/icons/search_gray.svg","iconSelected":"/icons/search_black.svg"}],"currentSelectedLabel":"文章"}],["$","div",null,{"className":"article_pageBodyMain___x_AF","children":[["$","$La",null,{}],["$","div",null,{"className":"article_articleContainer__uRwUh scrollContent","children":[["$","div",null,{"className":"article_articleBody__0coIY scrollContent","children":[["$","h1",null,{"style":{"marginBottom":"0.1rem","marginTop":"0.2rem"},"children":"Javascript编写简单的网页计算器"}],["$","div",null,{"children":[["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"分类"}],[["$","$Lb","0",{"href":"/articles/编程学习/1","children":["$","p","0",{"className":"tags_tag__HZYxk tags_tagLink__gnw9V","children":"编程学习"}]}]],false]}],["$","div",null,{"className":"tags_tags__qM_Ja","children":[["$","p",null,{"className":"tags_label__Rg6b2","children":"标签"}],"$undefined",[["$","p","0",{"className":"tags_tag__HZYxk ","children":"border"}],["$","p","1",{"className":"tags_tag__HZYxk ","children":"height"}],["$","p","2",{"className":"tags_tag__HZYxk ","children":"margin"}],["$","p","3",{"className":"tags_tag__HZYxk ","children":"px"}],["$","p","4",{"className":"tags_tag__HZYxk ","children":"width"}]]]}],["$","$Lc",null,{"path":"javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","serverURL":"https://remark.timeshike.com/"}]]}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}],["$","$Le",null,{}],["$","$Lf",null,{"path":"javascript%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8","serverURL":"https://remark.timeshike.com/","lang":"zh-CN"}],["$","div",null,{"className":"bottomBar_bottomBar__uHU1W","children":["$","div",null,{"className":"bottomBar_text__iz3cM","children":["Powerd by",["$","a",null,{"href":"https://github.com/hixyl/YlBlog","target":"_blank","children":" YlBlog(玉龙博客)"}]]}]}]]}],["$","$L10",null,{}]]}]]}],["$","$L11",null,{}]]}]
+8:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Javascript编写简单的网页计算器 - 流年石刻"}],["$","meta","3",{"name":"next-size-adjust"}]]
+1:null
