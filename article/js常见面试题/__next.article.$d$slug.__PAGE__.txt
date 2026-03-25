@@ -1,11 +1,12 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
-b:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-c:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-d:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-:HL["/_next/static/chunks/0099i0fc6w7ks.css","style"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 4:T3651,<p>JavaScript 的知识体系庞杂，面试题往往不仅考察你是否知道答案，更看重你是否理解其底层的运行机制。为了避免死记硬背，我们需要从 JavaScript 引擎的设计逻辑出发来解构这些常考点。</p>
 <p>以下为你系统梳理的基础与高级核心考点、经典代码陷阱及完整的推演思路：</p>
 <h3 id="一-数据类型与隐式转换陷阱"><a href="#一-数据类型与隐式转换陷阱">一、 数据类型与隐式转换陷阱</a></h3>
@@ -229,11 +230,12 @@ obj.<span class="hljs-title function_">method</span>(fn, <span class="hljs-numbe
 </li>
 </ul>
 <hr>
-<p>这五个维度构成了 JavaScript 最核心的底层逻辑网络。理解了这些，面对变种题目也能推演出来。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"js常见面试题"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-06T00:00:00.000Z","children":"2026年3月6日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1730," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iwRPV2B5yPrIDYd51Dz5v"}
-5:["$","$Lb",null,{}]
+<p>这五个维度构成了 JavaScript 最核心的底层逻辑网络。理解了这些，面对变种题目也能推演出来。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"js常见面试题"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-06T00:00:00.000Z","children":"2026年3月6日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1730," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4HCFF8Ga6ZVlaiU3vsyym"}
+5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-数据类型与隐式转换陷阱","text":"一、 数据类型与隐式转换陷阱"},{"level":3,"id":"二-作用域闭包与变量生命周期","text":"二、 作用域、闭包与变量生命周期"},{"level":3,"id":"三-this-绑定的动态性","text":"三、 this 绑定的动态性"},{"level":3,"id":"四-原型与面向对象基于委托的继承","text":"四、 原型与面向对象（基于委托的继承）"},{"level":3,"id":"五-异步与事件循环event-loop","text":"五、 异步与事件循环（Event Loop）"}]}]}]
-8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0099i0fc6w7ks.css","precedence":"next"}]
-9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-f:null
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"一-数据类型与隐式转换陷阱","text":"一、 数据类型与隐式转换陷阱"},{"level":3,"id":"二-作用域闭包与变量生命周期","text":"二、 作用域、闭包与变量生命周期"},{"level":3,"id":"三-this-绑定的动态性","text":"三、 this 绑定的动态性"},{"level":3,"id":"四-原型与面向对象基于委托的继承","text":"四、 原型与面向对象（基于委托的继承）"},{"level":3,"id":"五-异步与事件循环event-loop","text":"五、 异步与事件循环（Event Loop）"}]}]}]
+8:["$","$Le",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

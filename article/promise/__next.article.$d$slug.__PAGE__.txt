@@ -1,11 +1,12 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
-b:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-c:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-d:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-:HL["/_next/static/chunks/0099i0fc6w7ks.css","style"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 4:T88da,<p>好的，我们来系统且深入地讲清楚 JavaScript 的 Promise，从它的“是什么”、“为什么需要它”，到“如何使用”，最后再深入到它的“底层实现原理”。</p>
 <hr>
 <h3 id="一promise-是什么为什么需要它"><a href="#一promise-是什么为什么需要它">一、Promise 是什么？为什么需要它？</a></h3>
@@ -482,11 +483,12 @@ e:"$Sreact.suspense"
 <li>
 <p><strong><code>async/await</code></strong> 是 Promise 的高级封装，是目前编写异步代码的最佳实践，但理解 Promise 依然是掌握现代 JavaScript 异步编程的基石。</p>
 </li>
-</ol>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"promise"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2939," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iwRPV2B5yPrIDYd51Dz5v"}
-5:["$","$Lb",null,{}]
+</ol>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"promise"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2939," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4HCFF8Ga6ZVlaiU3vsyym"}
+5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一promise-是什么为什么需要它","text":"一、Promise 是什么？为什么需要它？"},{"level":3,"id":"二如何使用-promise","text":"二、如何使用 Promise？"},{"level":4,"id":"1-创建-promise","text":"1. 创建 Promise"},{"level":4,"id":"2-消费-promisethen-catch-finally","text":"2. 消费 Promise：.then(), .catch(), .finally()"},{"level":4,"id":"3-常用静态方法","text":"3. 常用静态方法"},{"level":3,"id":"三深入底层实现原理","text":"三、深入底层实现原理"},{"level":4,"id":"事件循环与微任务","text":"事件循环与微任务"},{"level":4,"id":"手写一个-mypromise","text":"手写一个 MyPromise"},{"level":3,"id":"四现代实践asyncawait","text":"四、现代实践：Async/Await"},{"level":3,"id":"总结","text":"总结"}]}]}]
-8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0099i0fc6w7ks.css","precedence":"next"}]
-9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-f:null
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"一promise-是什么为什么需要它","text":"一、Promise 是什么？为什么需要它？"},{"level":3,"id":"二如何使用-promise","text":"二、如何使用 Promise？"},{"level":4,"id":"1-创建-promise","text":"1. 创建 Promise"},{"level":4,"id":"2-消费-promisethen-catch-finally","text":"2. 消费 Promise：.then(), .catch(), .finally()"},{"level":4,"id":"3-常用静态方法","text":"3. 常用静态方法"},{"level":3,"id":"三深入底层实现原理","text":"三、深入底层实现原理"},{"level":4,"id":"事件循环与微任务","text":"事件循环与微任务"},{"level":4,"id":"手写一个-mypromise","text":"手写一个 MyPromise"},{"level":3,"id":"四现代实践asyncawait","text":"四、现代实践：Async/Await"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","$Le",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

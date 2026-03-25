@@ -1,10 +1,11 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
-a:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-b:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-c:"$Sreact.suspense"
-:HL["/_next/static/chunks/0099i0fc6w7ks.css","style"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
+b:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+c:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+d:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 4:T3b60,<p>本文<a href="https://ria.ru/20220403/ukraina-1781469605.html">原文</a>于4月3日发表于俄新社官网上，作者为Timofey Sergeytsev。在这篇文章中，所有支持乌克兰主权，抵抗俄罗斯入侵的主张均被作者视为纳粹。进而，作者呼吁对乌克兰国家及其军事力量的彻底摧毁，对乌克兰的分割和长期占领，建立亲俄的傀儡政权，以及对乌克兰身份认同的摧毁。</p>
 <p>通过本文，我们可以一窥俄罗斯对去纳粹化行动的理解。不难看出，所谓去纳粹化，实质上意味着对乌克兰的种族清洗。因此，一个月来发生在布查的事情也就毫不奇怪了。中文使用者也很容易意识到，扬云飞等中文互联网上的亲俄账号的言论中，存在大量与本文内容类似的说法。</p>
 <p>本文由俄语原文的英文译文翻译而来，我在译文中加入了一些我的评论与注释，并将部分值得关注的内容予以加粗。</p>
@@ -41,10 +42,11 @@ c:"$Sreact.suspense"
 <p>为了将乌克兰的非纳粹化计划付诸实施，俄罗斯本身将不得不最终放弃亲欧洲和亲西方的幻想，意识到自己是保护和保存历史上欧洲（旧世界）那些值得的价值的最后实例，而西方最终放弃了这些价值，失去了为自己而战的机会。这场斗争持续了整个20世纪，表现为世界大战和俄国革命，两者之间有着千丝万缕的联系。</p>
 <p>俄罗斯在20世纪为拯救西方做了一切可能的事情。它实施了西方的主要项目，一个替代资本主义的项目，它战胜了民族国家——一个社会主义的红色项目。它粉碎了德国纳粹主义，一个西方文明危机的畸形产物。俄罗斯利他主义的最后行为是俄罗斯伸出的友谊之手，为此，俄罗斯在20世纪90年代受到了畸形的打击。</p>
 <p>俄罗斯为西方所做的一切，都是以自己的代价，通过做出最大的牺牲来完成的。西方最终拒绝了所有这些牺牲，贬低了俄罗斯对解决西方危机的贡献，并决定对俄罗斯无私提供的帮助进行报复。此外，俄罗斯将走自己的路，不担心西方的命运，依靠自己的另一部分遗产——在全球去殖民化进程中的领导地位。</p>
-<p>作为这一进程的一部分，俄罗斯很有可能与那些被西方压迫了几个世纪的国家建立伙伴关系和盟友关系，而这些国家不会再戴上它的枷锁。没有俄罗斯的牺牲和斗争，这些国家就不会得到解放。乌克兰的非纳粹化同时也是它的非殖民化，当乌克兰人民开始从所谓的欧洲选择的陶醉、诱惑和依赖中解脱出来时，他们将不得不理解这一点。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","时评杂谈",{"href":"/categories/%E6%97%B6%E8%AF%84%E6%9D%82%E8%B0%88/","className":"page-module__y-5DuW__meta-link","children":"时评杂谈"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"俄新社：俄罗斯应该对乌克兰做什么？"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-04-06T06:41:35.000Z","children":"2022年4月6日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[4477," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",15," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","乌克兰",{"className":"page-module__y-5DuW__tag","children":"乌克兰"}],["$","span","俄罗斯",{"className":"page-module__y-5DuW__tag","children":"俄罗斯"}],["$","span","本文",{"className":"page-module__y-5DuW__tag","children":"本文"}],["$","span","纳粹",{"className":"page-module__y-5DuW__tag","children":"纳粹"}],["$","span","译文",{"className":"page-module__y-5DuW__tag","children":"译文"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],false]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iwRPV2B5yPrIDYd51Dz5v"}
-5:["$","$La",null,{}]
+<p>作为这一进程的一部分，俄罗斯很有可能与那些被西方压迫了几个世纪的国家建立伙伴关系和盟友关系，而这些国家不会再戴上它的枷锁。没有俄罗斯的牺牲和斗争，这些国家就不会得到解放。乌克兰的非纳粹化同时也是它的非殖民化，当乌克兰人民开始从所谓的欧洲选择的陶醉、诱惑和依赖中解脱出来时，他们将不得不理解这一点。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","时评杂谈",{"href":"/categories/%E6%97%B6%E8%AF%84%E6%9D%82%E8%B0%88/","className":"page-module__y-5DuW__meta-link","children":"时评杂谈"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"俄新社：俄罗斯应该对乌克兰做什么？"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-04-06T06:41:35.000Z","children":"2022年4月6日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[4477," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",15," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","乌克兰",{"className":"page-module__y-5DuW__tag","children":"乌克兰"}],["$","span","俄罗斯",{"className":"page-module__y-5DuW__tag","children":"俄罗斯"}],["$","span","本文",{"className":"page-module__y-5DuW__tag","children":"本文"}],["$","span","纳粹",{"className":"page-module__y-5DuW__tag","children":"纳粹"}],["$","span","译文",{"className":"page-module__y-5DuW__tag","children":"译文"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],false]}]}],"$L7"],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4HCFF8Ga6ZVlaiU3vsyym"}
+5:["$","$Lb",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0099i0fc6w7ks.css","precedence":"next"}]
-8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-9:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
-d:null
+7:["$","$Lc",null,{}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

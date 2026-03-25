@@ -1,12 +1,13 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
-b:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-c:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-d:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-:HL["/_next/static/chunks/0099i0fc6w7ks.css","style"]
-4:T1577,<p>在 JavaScript 中，报错（Error）不仅仅是程序的“罢工”，它是一套完整的对象体系。当代码运行出现问题时，JavaScript 引擎会根据问题的本质，抛出对应类型的错误对象。</p>
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
+4:T1820,<p>在 JavaScript 中，报错（Error）不仅仅是程序的“罢工”，它是一套完整的对象体系。当代码运行出现问题时，JavaScript 引擎会根据问题的本质，抛出对应类型的错误对象。</p>
 <p>这些错误都继承自基类 <strong><code>Error</code></strong>。理解它们能让你在调试时迅速定位是逻辑出了问题，还是语法或是内存超限。</p>
 <hr>
 <h3 id="常见的内置错误类型"><a href="#常见的内置错误类型">常见的内置错误类型</a></h3>
@@ -76,7 +77,7 @@ e:"$Sreact.suspense"
 <h4 id="4-rangeerror触碰了物理或逻辑极限"><a href="#4-rangeerror触碰了物理或逻辑极限">4. RangeError：触碰了物理或逻辑极限</a></h4>
 <p>最典型的场景是<strong>死循环递归</strong>。每一个函数调用都会占用一定的栈内存（Stack），当递归没有出口时，栈会被撑破。</p>
 <ul>
-<li><strong>公式表达</strong>：若递归深度 $n \to \infty$，则必触发 <code>InternalError</code>（非标）或 <code>RangeError</code>。</li>
+<li><strong>公式表达</strong>：若递归深度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n \to \infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>，则必触发 <code>InternalError</code>（非标）或 <code>RangeError</code>。</li>
 </ul>
 <hr>
 <h3 id="异常的处理与自定义"><a href="#异常的处理与自定义">异常的处理与自定义</a></h3>
@@ -92,11 +93,12 @@ e:"$Sreact.suspense"
 </ul>
 <h3 id="进阶思考异步中的报错"><a href="#进阶思考异步中的报错">进阶思考：异步中的报错</a></h3>
 <p>需要注意的是，传统的 <code>try...catch</code> 无法捕获异步回调（如 <code>setTimeout</code>）中的错误。对于现代开发，我们更依赖 <code>Promise.catch()</code> 或 <code>async/await</code> 配合 <code>try...catch</code> 来捕获那些“发生在未来”的异常。</p>
-<p>你想深入了解如何针对某个特定的报错（比如处理异步请求中的错误）进行更优雅的防御性编程吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"js 报错和异常类型"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[854," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iwRPV2B5yPrIDYd51Dz5v"}
-5:["$","$Lb",null,{}]
+<p>你想深入了解如何针对某个特定的报错（比如处理异步请求中的错误）进行更优雅的防御性编程吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"js 报错和异常类型"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[854," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4HCFF8Ga6ZVlaiU3vsyym"}
+5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"常见的内置错误类型","text":"常见的内置错误类型"},{"level":3,"id":"深度解构为什么会报错","text":"深度解构：为什么会报错？"},{"level":4,"id":"1-syntaxerror编译器无法理解你","text":"1. SyntaxError：编译器无法理解你"},{"level":4,"id":"2-referenceerror作用域的迷失","text":"2. ReferenceError：作用域的迷失"},{"level":4,"id":"3-typeerror最常见的运行时杀手","text":"3. TypeError：最常见的“运行时”杀手"},{"level":4,"id":"4-rangeerror触碰了物理或逻辑极限","text":"4. RangeError：触碰了物理或逻辑极限"},{"level":3,"id":"异常的处理与自定义","text":"异常的处理与自定义"},{"level":3,"id":"进阶思考异步中的报错","text":"进阶思考：异步中的报错"}]}]}]
-8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0099i0fc6w7ks.css","precedence":"next"}]
-9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-f:null
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"常见的内置错误类型","text":"常见的内置错误类型"},{"level":3,"id":"深度解构为什么会报错","text":"深度解构：为什么会报错？"},{"level":4,"id":"1-syntaxerror编译器无法理解你","text":"1. SyntaxError：编译器无法理解你"},{"level":4,"id":"2-referenceerror作用域的迷失","text":"2. ReferenceError：作用域的迷失"},{"level":4,"id":"3-typeerror最常见的运行时杀手","text":"3. TypeError：最常见的“运行时”杀手"},{"level":4,"id":"4-rangeerror触碰了物理或逻辑极限","text":"4. RangeError：触碰了物理或逻辑极限"},{"level":3,"id":"异常的处理与自定义","text":"异常的处理与自定义"},{"level":3,"id":"进阶思考异步中的报错","text":"进阶思考：异步中的报错"}]}]}]
+8:["$","$Le",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

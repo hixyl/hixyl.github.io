@@ -1,11 +1,12 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
-b:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-c:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-d:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-:HL["/_next/static/chunks/0099i0fc6w7ks.css","style"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 4:T226c,<p>在前端开发中，处理引用数据类型（对象、数组）时，深拷贝是一个绕不开的核心概念。它的本质是在内存的堆区重新开辟一块空间，完整地复制目标对象及其所有嵌套的子对象，从而彻底切断与原对象的引用联系。</p>
 <p>为了在不同业务场景中做出最合理的选择，我们可以将前端实现深拷贝的方法从原生 API、历史 hack 方案到工程化实现进行系统梳理：</p>
 <h3 id="1-现代原生标准structuredclone"><a href="#1-现代原生标准structuredclone">1. 现代原生标准：<code>structuredClone()</code></a></h3>
@@ -164,11 +165,12 @@ e:"$Sreact.suspense"
 </tbody>
 </table>
 <p><em>注意：即便如 Lodash 这样强大的库，默认也是不深拷贝函数的，因为函数的执行上下文和闭包状态很难在运行时被完美复制，强行深拷贝函数在逻辑上往往是伪命题。</em></p>
-<p>你想深入探讨一下在哪些极其特殊的业务场景下必须手写深拷贝，还是想了解一下这些不同方法在处理海量数据时的性能瓶颈差异？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"深拷贝"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1215," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iwRPV2B5yPrIDYd51Dz5v"}
-5:["$","$Lb",null,{}]
+<p>你想深入探讨一下在哪些极其特殊的业务场景下必须手写深拷贝，还是想了解一下这些不同方法在处理海量数据时的性能瓶颈差异？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"深拷贝"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1215," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4HCFF8Ga6ZVlaiU3vsyym"}
+5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-现代原生标准structuredclone","text":"1. 现代原生标准：structuredClone()"},{"level":3,"id":"2-经典的快捷方案jsonparsejsonstringify","text":"2. 经典的快捷方案：JSON.parse(JSON.stringify())"},{"level":3,"id":"3-第一性原理实现手写递归拷贝","text":"3. 第一性原理实现：手写递归拷贝"},{"level":3,"id":"4-稳健的工程化选择第三方库如-lodash-的-_clonedeep","text":"4. 稳健的工程化选择：第三方库（如 Lodash 的 _.cloneDeep）"},{"level":3,"id":"方法对比总结","text":"方法对比总结"}]}]}]
-8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0099i0fc6w7ks.css","precedence":"next"}]
-9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-f:null
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"1-现代原生标准structuredclone","text":"1. 现代原生标准：structuredClone()"},{"level":3,"id":"2-经典的快捷方案jsonparsejsonstringify","text":"2. 经典的快捷方案：JSON.parse(JSON.stringify())"},{"level":3,"id":"3-第一性原理实现手写递归拷贝","text":"3. 第一性原理实现：手写递归拷贝"},{"level":3,"id":"4-稳健的工程化选择第三方库如-lodash-的-_clonedeep","text":"4. 稳健的工程化选择：第三方库（如 Lodash 的 _.cloneDeep）"},{"level":3,"id":"方法对比总结","text":"方法对比总结"}]}]}]
+8:["$","$Le",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null
