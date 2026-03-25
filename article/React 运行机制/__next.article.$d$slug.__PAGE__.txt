@@ -1,13 +1,13 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
-c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 :HL["/_next/static/chunks/0qyji93gvu336.css","style"]
-4:T3da0,<p>React 的核心不仅在于它的组件化思想，更在于其底层维持高性能和响应性的精妙算法设计。在面试和实际架构理解中，核心算法主要围绕 <strong>找出差异（Diffing）</strong>、<strong>任务调度（Fiber）</strong>、<strong>优先级管理（Lanes）</strong> 以及 <strong>状态闭包与存取（Hooks 机制）</strong> 展开。</p>
+4:T3d34,<p>React 的核心不仅在于它的组件化思想，更在于其底层维持高性能和响应性的精妙算法设计。在面试和实际架构理解中，核心算法主要围绕 <strong>找出差异（Diffing）</strong>、<strong>任务调度（Fiber）</strong>、<strong>优先级管理（Lanes）</strong> 以及 <strong>状态闭包与存取（Hooks 机制）</strong> 展开。</p>
 <p>为了从根本上理解 React 的运行机制，我们可以将这些算法解构为以下四个核心部分：</p>
 <hr>
 <h3 id="1-协调算法-reconciliation--diffing"><a href="#1-协调算法-reconciliation--diffing">1. 协调算法 (Reconciliation / Diffing)</a></h3>
@@ -24,7 +24,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 </li>
 </ol>
 <p><strong>Mermaid 图表：层级对比逻辑</strong></p>
-<pre><code class="hljs language-mermaid">graph TD
+<div class="mermaid">graph TD
     subgraph 旧虚拟DOM
     A1((A)) --> B1((B))
     A1 --> C1((C))
@@ -41,7 +41,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
     B1 -.对比.- B2
     C1 -.对比.- C2
     D1 -.销毁.- E2
-</code></pre>
+</div>
 <p><strong>代码模拟：同级双指针 Diff (常用于列表更新)</strong></p>
 <p>JavaScript</p>
 <pre><code class="hljs language-js"><span class="hljs-comment">// React 实际使用的是单链表遍历，这里为了直观展示 Diff 核心思想（类似 Vue 的双端或 React 的按索引查找）</span>
@@ -74,7 +74,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 <p>在 React 15 及以前，由于采用递归遍历虚拟 DOM，一旦开始就无法中断。如果树很深，主线程会被长时间阻塞，导致掉帧（卡顿）。React 16 引入了 Fiber，本质是将<strong>递归变成了循环</strong>，将树的结构变成了<strong>单链表结构</strong>。</p>
 <p>Fiber 的核心思想是<strong>时间切片（Time Slicing）</strong>：将渲染工作拆分成小任务，每执行完一个小任务就看看主线程是否有更高优先级的任务（如用户输入、动画），如果有，就让出控制权。</p>
 <p><strong>Mermaid 图表：Fiber 的链表树结构</strong></p>
-<pre><code class="hljs language-mermaid">graph TD
+<div class="mermaid">graph TD
     Root((RootFiber)) -- child --> App((App))
     App -- child --> Header((Header))
     Header -- sibling --> Main((Main))
@@ -84,7 +84,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
     Main -. return .-> App
     Footer -. return .-> App
     App -. return .-> Root
-</code></pre>
+</div>
 <p><strong>代码模拟：可中断的工作循环</strong></p>
 <p>JavaScript</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">let</span> nextUnitOfWork = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 指向下一个 Fiber 节点</span>
@@ -125,7 +125,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 <p>在并发模式下，不仅需要打断，还需要决定“先执行谁”。早期的 ExpirationTime（过期时间）模型在处理批量更新和复杂优先级时不够灵活。React 17+ 引入了 Lanes 模型，借鉴了车道的概念，利用<strong>32位整数的位运算</strong>来管理优先级。</p>
 <p>位运算的优势在于速度极快，且能用按位与（<code>&#x26;</code>）、按位或（<code>|</code>）轻松处理批量的任务合并与分离。</p>
 <p><strong>Mermaid 图表：优先级插队处理</strong></p>
-<pre><code class="hljs language-mermaid">sequenceDiagram
+<div class="mermaid">sequenceDiagram
     participant User as 用户
     participant Scheduler as React调度器
     participant Render as 渲染阶段
@@ -138,7 +138,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
     Render->>Render: 放弃旧工作，重新处理高优先级Lane
     Render-->>User: 按钮响应完成
     Scheduler->>Render: 恢复处理之前的低优先级Lane
-</code></pre>
+</div>
 <p><strong>代码模拟：Lanes 位运算</strong></p>
 <p>JavaScript</p>
 <pre><code class="hljs language-js"><span class="hljs-comment">// 不同的数字占用不同的位（二进制表示）</span>
@@ -169,7 +169,7 @@ pendingLanes &#x26;= ~highestPriorityLane;
 <p>答案是：<strong>每个 Fiber 节点上有一个 <code>memoizedState</code> 属性，它存放着一个由 Hooks 组成的单向链表。</strong></p>
 <p>这就是为什么 React 严格规定 <strong>“不要在循环、条件或嵌套函数中调用 Hook”</strong>——因为 React 完全依赖 Hooks 的执行顺序来将状态与对应的 Hook 匹配。</p>
 <p><strong>Mermaid 图表：Hooks 链表结构</strong></p>
-<pre><code class="hljs language-mermaid">graph LR
+<div class="mermaid">graph LR
     subgraph FiberNode
     State[memoizedState]
     end
@@ -182,7 +182,7 @@ pendingLanes &#x26;= ~highestPriorityLane;
     Hook1 -- next --> Hook2
     Hook2 -- next --> Hook3
     Hook3 -- next --> null
-</code></pre>
+</div>
 <p><strong>代码模拟：Hooks 的顺序调用机制</strong></p>
 <p>JavaScript</p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">let</span> currentlyRenderingFiber = <span class="hljs-literal">null</span>;
@@ -211,12 +211,12 @@ pendingLanes &#x26;= ~highestPriorityLane;
   };
   <span class="hljs-keyword">return</span> [hook.<span class="hljs-property">memoizedState</span>, dispatch];
 }
-</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React 运行机制"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-04T00:00:00.000Z","children":"2026年3月4日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1572," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"MeDt6ZvoIwLS8iV6CMZOo"}
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React 运行机制"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-04T00:00:00.000Z","children":"2026年3月4日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1572," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"jnXbfArZwsDhYSWqd2j4t"}
 5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
 7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"1-协调算法-reconciliation--diffing","text":"1. 协调算法 (Reconciliation / Diffing)"},{"level":3,"id":"2-可中断渲染架构-fiber-算法","text":"2. 可中断渲染架构 (Fiber 算法)"},{"level":3,"id":"3-位运算调度优先级-lanes-模型","text":"3. 位运算调度优先级 (Lanes 模型)"},{"level":3,"id":"4-hooks-执行机制-链表存储","text":"4. Hooks 执行机制 (链表存储)"}]}]}]
 8:["$","$Le",null,{}]
 9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
-a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/068fhd_usdoo4.js","async":true}]
 b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
 11:null

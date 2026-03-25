@@ -1,13 +1,13 @@
 1:"$Sreact.fragment"
-2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],""]
-c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/16d_ofq9y2zyl.js"],"default"]
-f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[23422,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+3:I[22016,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],""]
+c:I[34574,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+d:I[55132,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+e:I[71691,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 :HL["/_next/static/chunks/0qyji93gvu336.css","style"]
-4:T740e,<p>要彻底理解 React 的实现原理，我们需要先忘掉那些复杂的框架概念，回到原生前端开发的最基本面：<strong>HTML 负责结构，CSS 负责样式，JavaScript 负责交互。</strong></p>
+4:T73bd,<p>要彻底理解 React 的实现原理，我们需要先忘掉那些复杂的框架概念，回到原生前端开发的最基本面：<strong>HTML 负责结构，CSS 负责样式，JavaScript 负责交互。</strong></p>
 <p>在没有 React 的时代，当数据发生变化时，我们需要用 JavaScript 手动去查找 DOM 节点（比如 <code>document.getElementById</code>），然后手动修改它们（比如 <code>element.innerText = newData</code>）。当页面非常复杂、数据变化频繁时，手动操作 DOM 不仅代码难以维护，而且性能很差，因为浏览器的 DOM 对象非常庞大。</p>
 <p>React 的诞生就是为了解决这个问题。它的核心思想是：<strong>UI 应该是数据的映射。你只需要关心数据是什么样子，React 负责帮你把数据高效地变成页面上的 DOM。</strong></p>
 <p>我们将通过四个逐步递进的阶段，用纯 JavaScript 从头实现一个“迷你版 React”。</p>
@@ -104,7 +104,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 <p><strong>对比子节点（Children Diff）：</strong> 递归地对比它们的子节点。</p>
 </li>
 </ol>
-<pre><code class="hljs language-mermaid">graph TD
+<div class="mermaid">graph TD
     A[数据发生变化] --> B[生成新的 Virtual DOM 树]
     B --> C{与旧 Virtual DOM 对比&#x3C;br/>Diff 算法}
     C -->|类型不同| D[销毁旧节点, 创建新节点]
@@ -114,7 +114,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
     D --> H[将差异打补丁 Patch 到真实 DOM]
     E --> H
     G --> H
-</code></pre>
+</div>
 <p>为了在对比子节点时能精准识别出“哪个节点是哪个”（特别是面对列表项打乱顺序、插入、删除的情况），React 引入了 <code>key</code> 属性。有了 <code>key</code>，React 就能知道一个节点到底是新建的，还是只是从别的位置移动过来的，从而最大化复用 DOM。</p>
 <hr>
 <h3 id="第四阶段从递归到可中断渲染fiber-架构"><a href="#第四阶段从递归到可中断渲染fiber-架构">第四阶段：从递归到可中断渲染（Fiber 架构）</a></h3>
@@ -135,13 +135,13 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 <p><code>return</code>：指向父节点。</p>
 </li>
 </ul>
-<pre><code class="hljs language-mermaid">graph TD
+<div class="mermaid">graph TD
     Div[div 父节点] -->|child| H1[h1 子节点]
     H1 -->|return| Div
     H1 -->|sibling| P[p 兄弟节点]
     P -->|return| Div
     P -. 没有 sibling .-> null
-</code></pre>
+</div>
 <p><strong>Fiber 的工作循环（Work Loop）伪代码：</strong></p>
 <pre><code class="hljs language-js"><span class="hljs-keyword">let</span> nextUnitOfWork = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 下一个要执行的 Fiber 节点</span>
 
@@ -292,7 +292,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 </ol>
 <p><strong>结论：Hooks 的状态能够正确映射，建立在一个不可动摇的条件上——每次渲染时，组件内部 Hooks 的调用顺序和数量必须绝对保持一致。</strong></p>
 <p>代码段</p>
-<pre><code class="hljs language-mermaid">graph LR
+<div class="mermaid">graph LR
     subgraph Fiber 节点
         HooksList[Hooks 链表/数组]
     end
@@ -303,7 +303,7 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
     
     classDef hook fill:#f9f9f9,stroke:#333,stroke-width:2px;
     class Hook0,Hook1,Hook2 hook;
-</code></pre>
+</div>
 <h4 id="3-useeffect-的底层执行链路"><a href="#3-useeffect-的底层执行链路">3. useEffect 的底层执行链路</a></h4>
 <p>如果说 <code>useState</code> 是为了解决数据的存储问题，那么 <code>useEffect</code> 就是为了解决<strong>副作用的调度问题</strong>。副作用指的是那些与 UI 渲染计算无关的操作，比如发起网络请求、操作非 React 控制的真实 DOM、设置定时器等。</p>
 <p><code>useEffect</code> 的内部结构也是一个挂载在 Fiber 节点上的对象，它的核心逻辑围绕着<strong>依赖项（Dependencies）比对</strong>展开。</p>
@@ -368,12 +368,12 @@ f:I[97367,["/_next/static/chunks/0t_t1icbt9mq0.js","/_next/static/chunks/0d3shmw
 <p><strong>状态变更触发重启：</strong> 用户点击按钮触发 <code>setState</code>。React 将更新动作塞入对应 Hook 的队列中，重新将 <code>App</code> 所在的 Fiber 节点标记为起点，重新开启 Work Loop，进入下一轮循环。</p>
 </li>
 </ol>
-<p>这种将状态依附于 Fiber 链表、通过不可变数据（Virtual DOM）描述视图、依靠可中断调度循环（Work Loop）分配计算资源、并在最终统一提交（Commit）的架构，构成了现代 React 运行的全部基石。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React基础底层原理讲解"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[4069," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",14," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"MeDt6ZvoIwLS8iV6CMZOo"}
+<p>这种将状态依附于 Fiber 链表、通过不可变数据（Virtual DOM）描述视图、依靠可中断调度循环（Work Loop）分配计算资源、并在最终统一提交（Commit）的架构，构成了现代 React 运行的全部基石。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","className":"page-module__y-5DuW__meta-link","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React基础底层原理讲解"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[4069," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",14," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"jnXbfArZwsDhYSWqd2j4t"}
 5:["$","$Lc",null,{}]
 6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
 7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"第一阶段用-javascript-对象描述-uivirtual-dom","text":"第一阶段：用 JavaScript 对象描述 UI（Virtual DOM）"},{"level":3,"id":"第二阶段将虚拟-dom-渲染到页面render","text":"第二阶段：将虚拟 DOM 渲染到页面（Render）"},{"level":3,"id":"第三阶段当数据改变时的高效更新diff-算法","text":"第三阶段：当数据改变时的高效更新（Diff 算法）"},{"level":3,"id":"第四阶段从递归到可中断渲染fiber-架构","text":"第四阶段：从递归到可中断渲染（Fiber 架构）"},{"level":3,"id":"整体脉络回顾","text":"整体脉络回顾"},{"level":3,"id":"第五阶段赋予函数组件记忆hooks-架构","text":"第五阶段：赋予函数组件记忆（Hooks 架构）"},{"level":4,"id":"1-usestate-的核心逻辑","text":"1. useState 的核心逻辑"},{"level":4,"id":"2-解构不能在条件语句中使用-hooks的约束边界","text":"2. 解构“不能在条件语句中使用 Hooks”的约束边界"},{"level":4,"id":"3-useeffect-的底层执行链路","text":"3. useEffect 的底层执行链路"},{"level":3,"id":"全景视图react-的闭环运行机制","text":"全景视图：React 的闭环运行机制"}]}]}]
 8:["$","$Le",null,{}]
 9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
-a:["$","script","script-0",{"src":"/_next/static/chunks/16d_ofq9y2zyl.js","async":true}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/068fhd_usdoo4.js","async":true}]
 b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
 11:null
