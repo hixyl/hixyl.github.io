@@ -1,0 +1,217 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T3e03,<h2 id="读取网络数据"><a href="#读取网络数据">读取网络数据</a></h2>
+<p>获取网络请求属于耗时操作。在Android主线程当中不允许出现耗时操作，开启异步线程，解决获取网络请求的问题。<br>
+获取网络请求必须在子线程当中完成，UI控件的设置必须在主线程当中完成。</p>
+<h3 id="线程知识点回顾"><a href="#线程知识点回顾">线程知识点回顾</a></h3>
+<h4 id="开启新线程"><a href="#开启新线程">开启新线程</a></h4>
+<ol>
+<li>创建Thread子类对象，调用start方法，启动新线程</li>
+<li>编写Runnable实现类，创建Runnable子类的对象，<code>new Thread(new MyRunnable).start()</code></li>
+</ol>
+<h4 id="创建新线程对象"><a href="#创建新线程对象">创建新线程对象</a></h4>
+<pre><code class="hljs language-java">    <span class="hljs-comment">//创建新的线程对象</span>
+    <span class="hljs-type">Thread</span> <span class="hljs-variable">thread</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+            
+        }
+    });
+    <span class="hljs-comment">//创建线程对象的方法2</span>
+    <span class="hljs-type">Thread</span> <span class="hljs-variable">t2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(){
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+            <span class="hljs-built_in">super</span>.run();
+        }
+    };
+    <span class="hljs-comment">//启动线程</span>
+    thread.start();
+</code></pre>
+<h4 id="线程的生命周期"><a href="#线程的生命周期">线程的生命周期</a></h4>
+<p>线程的生命周期: 新建----->>就绪----->>运行&#x3C;==>阻塞------>>消亡</p>
+<p>当调用<code>t1.start()</code>方法时，让线程处于就绪状态，有cpu的执行资格，但是没有执行权力。</p>
+<h3 id="原生读取网络数据"><a href="#原生读取网络数据">原生读取网络数据</a></h3>
+<h4 id="配置网络访问权限"><a href="#配置网络访问权限">配置网络访问权限</a></h4>
+<p>AndroidManifest.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">manifest</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">uses-permission</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.permission.INTERNET"</span>/></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">application</span>
+        <span class="hljs-attr">android:usesCleartextTraffic</span>=<span class="hljs-string">"true"</span>
+···
+</span></code></pre>
+<h4 id="读取流"><a href="#读取流">读取流</a></h4>
+<pre><code class="hljs language-java">    <span class="hljs-keyword">private</span> String <span class="hljs-title function_">getStringByConnection</span><span class="hljs-params">(String path)</span> {
+        <span class="hljs-comment">//内存流</span>
+        <span class="hljs-type">ByteArrayOutputStream</span> <span class="hljs-variable">baos</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ByteArrayOutputStream</span>();
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">//1. 将网址转换成资源对象</span>
+            <span class="hljs-type">URL</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">URL</span>(path);
+            <span class="hljs-comment">//2. 开始连接网络</span>
+            <span class="hljs-type">HttpURLConnection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> (HttpURLConnection) url.openConnection();
+            <span class="hljs-comment">//3. 获取网页信息输入流</span>
+            <span class="hljs-type">InputStream</span> <span class="hljs-variable">is</span> <span class="hljs-operator">=</span> conn.getInputStream();
+            <span class="hljs-comment">//4. 读取流，写入内存</span>
+            <span class="hljs-type">int</span> <span class="hljs-variable">hasRead</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+            <span class="hljs-type">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-title class_">byte</span>[<span class="hljs-number">1024</span>];
+            <span class="hljs-keyword">while</span> ((hasRead = is.read(buf))!=-<span class="hljs-number">1</span>){
+                baos.write(buf, <span class="hljs-number">0</span>, hasRead);
+            }
+            is.close();
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
+        }
+        <span class="hljs-keyword">return</span> baos.toString();
+    }
+</code></pre>
+<h4 id="线程中开启读取方法"><a href="#线程中开启读取方法">线程中开启读取方法</a></h4>
+<pre><code class="hljs language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">loadDatas</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">//创建新的线程对象</span>
+        <span class="hljs-type">Thread</span> <span class="hljs-variable">t1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+                <span class="hljs-comment">//编写获取网络数据的过程</span>
+                <span class="hljs-type">String</span> <span class="hljs-variable">msg</span> <span class="hljs-operator">=</span> getStringByConnection(url);
+                Log.i(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
+            }
+        });
+        t1.start();
+
+    }
+</code></pre>
+<h3 id="ui的更新线程间通信"><a href="#ui的更新线程间通信">UI的更新(线程间通信)</a></h3>
+<p>只有UI线程才能更新控件内容，在子线程当中更新UI会出现bug<br>
+但是从子线程获取网络数据，然后通过线程间通信，可以将数据传递给主线程，然后在主线程更新UI控件</p>
+<h4 id="步骤"><a href="#步骤">步骤</a></h4>
+<ol>
+<li>
+<p>创建一个线程间通信类，该类可以在子线程当中发送消息，然后在主线程中接收消息。<br>
+发送消息和接收消息得是同一个handler对象</p>
+<pre><code class="hljs language-java">    <span class="hljs-type">Handler</span> <span class="hljs-variable">handler</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>.Callback() {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">handleMessage</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Message msg)</span> {
+            <span class="hljs-comment">//可以接收消息的方法</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        }
+    });
+</code></pre>
+</li>
+<li>
+<p>在子线程发送消息</p>
+<pre><code class="hljs language-java">     <span class="hljs-meta">@Override</span>
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+         <span class="hljs-comment">//表示让当前线程可以作为loop线程，此时该子线程可以创建Handler对象，发送消息</span>
+         Looper.myLooper();
+         Looper.loop();
+         <span class="hljs-comment">//编写获取网络数据的过程</span>
+         <span class="hljs-type">String</span> <span class="hljs-variable">msg</span> <span class="hljs-operator">=</span> HttpUtils.getStringByConnection(url);
+         <span class="hljs-comment">//将要发送的数据封装到message当中</span>
+         <span class="hljs-type">Message</span> <span class="hljs-variable">message</span> <span class="hljs-operator">=</span> handler.obtainMessage();
+         <span class="hljs-comment">//区别消息的标识号</span>
+         message.what = <span class="hljs-number">1</span>;
+         message.obj = msg;
+         handler.sendMessage(message);
+         Log.i(<span class="hljs-string">"lsh"</span>, <span class="hljs-string">"run: msg===="</span> + msg);
+     }
+</code></pre>
+</li>
+<li>
+<p>在主线程接收消息</p>
+<pre><code class="hljs language-java">        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">handleMessage</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Message message)</span> {
+            <span class="hljs-comment">//可以接收消息的方法</span>
+            <span class="hljs-keyword">if</span> (message.what == <span class="hljs-number">1</span>) {
+                <span class="hljs-type">String</span> <span class="hljs-variable">str</span> <span class="hljs-operator">=</span> (String) message.obj;
+                binding.mainTv.setText(str);
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        }
+</code></pre>
+</li>
+<li>
+<p>回到主线程执行任务<br>
+在子线程的run方法中执行<code>runOnIoThread()</code>即可</p>
+<pre><code class="hljs language-java"><span class="hljs-comment">//回到主线程执行任务</span>
+runOnUiThread(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+        adapter.notifyDataSetChanged();
+    }
+});
+</code></pre>
+<pre><code class="hljs language-java"><span class="hljs-type">Handler</span> <span class="hljs-variable">handler2</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handler</span>();
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(){
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+        <span class="hljs-type">String</span> <span class="hljs-variable">json</span> <span class="hljs-operator">=</span> <span class="hljs-string">"ksdfjalkjf"</span>;
+        handler2.post(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Runnable</span>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> {
+                <span class="hljs-comment">//回到主线程执行</span>
+            }
+        });
+    }
+}.start();
+</code></pre>
+</li>
+</ol>
+<h3 id="handlerloopermessagemessagequeue之间的关系"><a href="#handlerloopermessagemessagequeue之间的关系">Handler，Looper，Message，MessageQueue之间的关系</a></h3>
+<p>答：从应用的角度举例，可以把地铁当中的安检机看作是一个线程，然后安检机中的传送带就就当中Looper对象，因为有这个传送带，安检机才能无限循环进行安检，接受安检的人就相当于handler对象，在传送带上放置包裹即 Message，然后在传送带到达指定地点后，提示给放置包裹的人接受包裹。</p>
+<p>从源码的角度讲，线程当中可以通过<code>Looper.prepare()</code>方法，在线程当中定义<code>looper</code>对象，使线程能够循环。然后通过调用<code>Looper.loop()</code>的方法使他循环起来。然后Looper上有一个封装的<code>MessageQueue</code>对象，用来处理循环消息，调用handler的<code>sendMessage</code>方法，把message消息的target属性设置为当前handler，然后在调用<code>messagequeue</code>当中<code>enqueueMessage</code>方法把消息放置在消息队列上，然后调用<code>handler</code>的<code>dispatchMessage</code>分发这条消息，放置这条消息的handler能够获取到此消息, 通过handleMessage方法。</p>
+<h2 id="视图绑定"><a href="#视图绑定">视图绑定</a></h2>
+<p>不用写<code>findViewById</code></p>
+<h3 id="流程"><a href="#流程">流程</a></h3>
+<ol>
+<li>
+<p><code>build.gradle</code>中添加<code>viewBinding</code></p>
+<pre><code class="hljs language-java"> android {
+ namespace <span class="hljs-string">'com.xyl.app1110'</span>
+ compileSdk <span class="hljs-number">32</span>
+ viewBinding {
+     enabled <span class="hljs-literal">true</span>
+ }
+ ...
+ }
+</code></pre>
+</li>
+<li>
+<p>每一个view上设置id</p>
+</li>
+<li>
+<p>在Activity类中声明<code>ActivityMainBinding</code>对象，如</p>
+<pre><code class="hljs language-java">ActivityMainBinding binding;
+</code></pre>
+</li>
+<li>
+<p>在<code>onCreate()</code>方法中获取绑定对象</p>
+<p><code>binding = ActivityMainBinding.inflate(getLayoutInflater());</code><br>
+或<br>
+<code>binding = ItemFoodlvBingding.bind(view)</code><br>
+---在adapter的用于<code>getView()</code>的<code>ViewHolder</code>中使用</p>
+<pre><code class="hljs language-java">  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> {
+    <span class="hljs-built_in">super</span>.onCreate(savedInstanceState);
+    binding = ActivityMainBinding.inflate(getLayoutInflater());
+    <span class="hljs-type">View</span> <span class="hljs-variable">rootView</span> <span class="hljs-operator">=</span> binding.getRoot();
+    setContentView(rootView);
+    binding.mainTv.setText(<span class="hljs-string">"今天是个好天气"</span>);
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="三级缓存"><a href="#三级缓存">三级缓存</a></h2>
+<p>三级缓存：<br>
+从网络上获取图片或者复杂的数据，可以先从内存当中查找，是否有这个图片，有就显示，没有就查找本地存储文件，如果本地存储有这个图片，就读入内存，然后显示，如果没有这个图片，就上网下载这个图片，下载成功，存放到本地存储，存放到内存，显示图片。<br>
+如果下载失败，显示错误图片。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","Android学习",{"className":"page-module__y-5DuW__cat-badge","children":"Android学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"11月10日Android学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-11-10T17:17:36.000Z","children":"2022年11月10日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1190," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Android",{"className":"page-module__y-5DuW__tag","children":"Android"}],["$","span","读取网络数据",{"className":"page-module__y-5DuW__tag","children":"读取网络数据"}],["$","span","Thread",{"className":"page-module__y-5DuW__tag","children":"Thread"}],["$","span","Handler",{"className":"page-module__y-5DuW__tag","children":"Handler"}],["$","span","缓存",{"className":"page-module__y-5DuW__tag","children":"缓存"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"读取网络数据","text":"读取网络数据"},{"level":3,"id":"线程知识点回顾","text":"线程知识点回顾"},{"level":4,"id":"开启新线程","text":"开启新线程"},{"level":4,"id":"创建新线程对象","text":"创建新线程对象"},{"level":4,"id":"线程的生命周期","text":"线程的生命周期"},{"level":3,"id":"原生读取网络数据","text":"原生读取网络数据"},{"level":4,"id":"配置网络访问权限","text":"配置网络访问权限"},{"level":4,"id":"读取流","text":"读取流"},{"level":4,"id":"线程中开启读取方法","text":"线程中开启读取方法"},{"level":3,"id":"ui的更新线程间通信","text":"UI的更新(线程间通信)"},{"level":4,"id":"步骤","text":"步骤"},{"level":3,"id":"handlerloopermessagemessagequeue之间的关系","text":"Handler，Looper，Message，MessageQueue之间的关系"},{"level":2,"id":"视图绑定","text":"视图绑定"},{"level":3,"id":"流程","text":"流程"},{"level":2,"id":"三级缓存","text":"三级缓存"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

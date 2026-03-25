@@ -1,0 +1,473 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T86a6,<h2 id="api接口"><a href="#api接口">api接口</a></h2>
+<p><img src="/article/9月6日vue学习笔记/md01.PNG" alt="alt">
+<img src="/article/9月6日vue学习笔记/md02.PNG" alt="alt"></p>
+<p>示例：通过refs获取对象</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"nb"</span>></span>宁波<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"msg"</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"get"</span>></span>获取<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">"#app"</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    <span class="hljs-attr">msg</span>:<span class="hljs-string">'hello'</span>
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+                <span class="hljs-title function_">get</span>(<span class="hljs-params"></span>){
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">$refs</span>.<span class="hljs-property">nb</span>)
+                }
+            },
+        })
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+</code></pre>
+<p>结果:控制台输出</p>
+<pre><code class="hljs language-text">&#x3C;div>宁波&#x3C;/div>
+</code></pre>
+<h2 id="组件的通信"><a href="#组件的通信">组件的通信</a></h2>
+<h3 id="发布订阅者模式"><a href="#发布订阅者模式">发布订阅者模式</a></h3>
+<p>用于定义发布者对象与订阅者对象的一对一或一对多的关系，当发布者对象状态发生改变时，所有依赖于它的订阅者对象都会得到通知。</p>
+<p>特点：</p>
+<ol>
+<li>支持广播通信</li>
+<li>发布者和订阅者低耦合</li>
+</ol>
+<p>应用场景：微信公众号</p>
+<h3 id="父子通信"><a href="#父子通信">父子通信</a></h3>
+<p>(见9月5日笔记)</p>
+<h3 id="子父通信"><a href="#子父通信">子父通信</a></h3>
+<p>子组件通过<code>$emit</code>触发自定义事件，第一个参数为事件名，第二个参数为要传递的参数。<br>
+示例1：子组件点击"发送"按钮，父组件触发控制台输出消息</p>
+<pre><code class="hljs language-javascript">        <span class="hljs-keyword">let</span> child1 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-comment">/*html*/</span><span class="hljs-string">`&#x3C;div>我是子组件1,&#x3C;button @click="send">发送&#x3C;/button>&#x3C;/div>`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+                <span class="hljs-title function_">send</span>(<span class="hljs-params"></span>){
+                    <span class="hljs-variable language_">this</span>.$emit(<span class="hljs-string">'msg'</span>,<span class="hljs-string">'来自子组件1'</span>)
+                }
+            },
+        };
+        <span class="hljs-keyword">let</span> parent = {
+            <span class="hljs-attr">template</span>: <span class="hljs-comment">/*html*/</span><span class="hljs-string">`
+            &#x3C;div>我是父组件&#x3C;child1 @msg="f">&#x3C;/child1>&#x3C;child2>&#x3C;/child2>&#x3C;/div>
+            `</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+                <span class="hljs-title function_">f</span>(<span class="hljs-params">data</span>){
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data)
+                }
+            },
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'child1'</span>: child1
+            }
+        };
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">"#app"</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {}
+            },
+            <span class="hljs-attr">methods</span>: {
+            },
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'parent'</span>:parent
+            }
+        });
+</code></pre>
+<h3 id="非父子通信"><a href="#非父子通信">非父子通信</a></h3>
+<p>创建一个Vue实例作为中央事件总线，通过它来监听<code>($on)</code>和触发<code>($emit)</code>事件。适用于组件间全部通信方式。</p>
+<pre><code class="hljs language-javascript">       <span class="hljs-keyword">let</span> bus = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>();<span class="hljs-comment">//bus当成事件总线</span>
+        <span class="hljs-keyword">let</span> child1 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-comment">/*html*/</span><span class="hljs-string">`&#x3C;div>我是子组件1,&#x3C;button @click="send()" >发送&#x3C;/button>&#x3C;/div>`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+                <span class="hljs-title function_">send</span>(<span class="hljs-params"></span>){
+                    bus.$emit(<span class="hljs-string">'data-child1'</span>,<span class="hljs-string">'来自子组件1'</span>)
+                }
+            },
+        };
+        <span class="hljs-keyword">let</span> child2 = {
+            <span class="hljs-attr">template</span>:<span class="hljs-string">`&#x3C;div>我是子组件2&#x3C;/div>`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+                
+            },
+            <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
+                bus.$on(<span class="hljs-string">'data-child1'</span>,<span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>){
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(value)
+                })
+            },
+        };
+        <span class="hljs-keyword">let</span> parent = {
+            <span class="hljs-attr">template</span>: <span class="hljs-comment">/*html*/</span><span class="hljs-string">`
+            &#x3C;div>我是父组件&#x3C;child1 >&#x3C;/child1>&#x3C;child2>&#x3C;/child2>&#x3C;/div>
+            `</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    
+                }
+            },
+            <span class="hljs-attr">methods</span>: {
+             
+            },
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'child1'</span>: child1,
+                <span class="hljs-string">'child2'</span>: child2
+            }
+        };
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">"#app"</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {}
+            },
+            <span class="hljs-attr">methods</span>: {
+            },
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'parent'</span>:parent
+            }
+        });
+</code></pre>
+<h2 id="slot组件"><a href="#slot组件">slot组件</a></h2>
+<p>slot组件插槽：将父组件中的<code>&#x3C;child1>&#x3C;/child1></code>标签内插入的代码插入到子组件的任意位置，用法见以下示例：</p>
+<pre><code class="hljs language-javascript">        <span class="hljs-keyword">let</span> child1 = {
+            <span class="hljs-comment">//插槽：slot</span>
+            <span class="hljs-attr">template</span>:<span class="hljs-comment">/*html*/</span><span class="hljs-string">`&#x3C;div>我是&#x3C;slot>&#x3C;/slot>子组件&#x3C;/div>`</span>,
+           
+        };
+      
+        <span class="hljs-keyword">let</span> parent = {
+            <span class="hljs-attr">template</span>: <span class="hljs-comment">/*html*/</span><span class="hljs-string">`
+            &#x3C;div>我是父组件&#x3C;child1 >&#x3C;span style="color: red">OK&#x3C;/span>&#x3C;/child1>&#x3C;/div>
+            `</span>,
+          
+            
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'child1'</span>: child1,
+            }
+        };
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">"#app"</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {}
+            },
+        
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'parent'</span>:parent
+            }
+        });
+</code></pre>
+<h3 id="插槽的分类"><a href="#插槽的分类">插槽的分类</a></h3>
+<p>插槽分为默认插槽、具名插槽和作用域插槽</p>
+<p>示例</p>
+<pre><code class="hljs language-javascript">         <span class="hljs-keyword">let</span> child1 = {
+            <span class="hljs-comment">//插槽：slot</span>
+            <span class="hljs-attr">template</span>:<span class="hljs-comment">/*html*/</span><span class="hljs-string">`&#x3C;div>我&#x3C;slot name="one" :message="msg">&#x3C;/slot>是&#x3C;slot>&#x3C;/slot>子组&#x3C;slot name="two">&#x3C;/slot>件&#x3C;/div>`</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {
+                    msg : <span class="hljs-string">'CHILD'</span>
+                }
+            },
+        };
+      
+        <span class="hljs-keyword">let</span> parent = {
+            <span class="hljs-attr">template</span>: <span class="hljs-comment">/*html*/</span><span class="hljs-string">`
+            &#x3C;div>我是父组件&#x3C;child1 >
+                //默认插槽
+                &#x3C;template v-slot:default>&#x3C;span style="color: red">OK&#x3C;/span>&#x3C;/template>
+                //作用域插槽
+                &#x3C;template v-slot:one="prop">&#x3C;span style="color: red">One插槽,{{prop}}&#x3C;/span>&#x3C;/template>
+                //具名插槽
+                &#x3C;template v-slot:two>&#x3C;span style="color: red">Two插槽&#x3C;/span>&#x3C;/template>
+            &#x3C;/child1>&#x3C;/div>
+            `</span>,
+          
+            
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'child1'</span>: child1,
+            }
+        };
+        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+            <span class="hljs-attr">el</span>:<span class="hljs-string">"#app"</span>,
+            <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">return</span> {}
+            },
+        
+            <span class="hljs-attr">components</span>:{
+                <span class="hljs-string">'parent'</span>:parent
+            }
+        });
+</code></pre>
+<p>注意示例中的<code>&#x3C;template></code>标签，以及标签中的<code>v-slot</code>属性，和插槽的用法。</p>
+<p>效果:</p>
+<div>我是父组件<div>我<span style="color: red;">One插槽,{
+  "message": "CHILD"
+}</span>是<span style="color: red;">OK</span>子组<span style="color: red;">Two插槽</span>件</div></div>
+<h2 id="es6语法"><a href="#es6语法">ES6语法</a></h2>
+<h3 id="var-和-let-的区别"><a href="#var-和-let-的区别">var 和 let 的区别</a></h3>
+<ol>
+<li>let 声明变量和 const 声明常量都有块级作用域，var s声明变量是全局作用域</li>
+<li>var 声明变量可以重复声明，let不可以重复声明</li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> i = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">let</span> j = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// let j = 20; //错误：重复声明</span>
+</code></pre>
+<ol start="3">
+<li>var 会和 window 映射， let 不会</li>
+</ol>
+<h3 id="const-声明常量"><a href="#const-声明常量">const 声明常量</a></h3>
+<p>const 声明常量，声明常量必须赋值，常量不可更改，不会和window映射</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+<span class="hljs-comment">// y=30 //报错，不可更改</span>
+</code></pre>
+<h3 id="的用法"><a href="#的用法">`的用法</a></h3>
+<p>``内可以用$引用其他变量，如下所示</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">let</span> name = <span class="hljs-string">'李雷'</span>;
+<span class="hljs-keyword">let</span> str = <span class="hljs-string">`我的名字叫<span class="hljs-subst">${name}</span>`</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(str);
+</code></pre>
+<h3 id="解构"><a href="#解构">解构</a></h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">let</span> print = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-keyword">let</span> [x, y, z] = print;<span class="hljs-comment">//将数组print的1，2，3赋给x,y,z</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(x, y ,z); 
+
+<span class="hljs-keyword">let</span> user = {
+    name : <span class="hljs-string">'李雷'</span>,
+    age : <span class="hljs-number">20</span>
+}
+<span class="hljs-keyword">let</span> {name, age} = user; <span class="hljs-comment">//将对象属性解构</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(name, age);
+
+<span class="hljs-keyword">let</span> name = <span class="hljs-string">'李雷'</span>;
+<span class="hljs-keyword">let</span> age = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">let</span> user = {name, age, <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">'run'</span>);
+}} <span class="hljs-comment">//只要key和value相同，就可以结构，此时user对象里面的name和age已经被赋值,匿名函数fun:function(){}可以写为run(){};</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(user);
+</code></pre>
+<h3 id="循环"><a href="#循环">循环</a></h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 以下三种循环效果都是输出数组里的所有值</span>
+<span class="hljs-keyword">let</span> x = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>];
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; x.<span class="hljs-property">length</span>; i++){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(x[i]);
+}
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> x){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x[i]);
+}
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> x){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i);<span class="hljs-comment">//相当于java中的加强for</span>
+}
+</code></pre>
+<h3 id="可变参数"><a href="#可变参数">可变参数</a></h3>
+<p>关键字:<code>function 函数名(...数组名)</code></p>
+<pre><code class="hljs language-javascript">        <span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">...arg</span>) <span class="hljs-comment">//可变参数</span>
+        {
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> x <span class="hljs-keyword">of</span> arg){
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(x);
+            }
+        }
+        <span class="hljs-title function_">add</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>)
+</code></pre>
+<h3 id="箭头函数"><a href="#箭头函数">箭头函数</a></h3>
+<p>在箭头函数中，this 指的是父作用域对象</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">//ES6箭头函数</span>
+<span class="hljs-keyword">let</span> <span class="hljs-title function_">add</span> = (<span class="hljs-params">x, y</span>) => x + y; <span class="hljs-comment">//无花括号，省略return关键字，函数返回x+y</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">add</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>));
+
+<span class="hljs-keyword">let</span> <span class="hljs-title function_">add2</span> = (<span class="hljs-params">x, y</span>) => {
+    <span class="hljs-keyword">return</span> x + y; <span class="hljs-comment">//有花括号，必须加return</span>
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">add2</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>));
+</code></pre>
+<h3 id="类"><a href="#类">类</a></h3>
+<p>类是语法糖(可以理解为假的，需要编译)<br>
+示例：</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">student</span>{
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age</span>){ <span class="hljs-comment">//构造函数</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+    }
+    <span class="hljs-title function_">run</span>(<span class="hljs-params"></span>){
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">'run'</span>);
+    }
+}
+<span class="hljs-keyword">let</span> stu = <span class="hljs-keyword">new</span> <span class="hljs-title function_">student</span> (<span class="hljs-string">'李雷'</span>, <span class="hljs-number">20</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(stu.<span class="hljs-property">name</span>, stu.<span class="hljs-property">age</span>);
+stu.<span class="hljs-title function_">run</span>();
+</code></pre>
+<h3 id="es6的模块化编程"><a href="#es6的模块化编程">ES6的模块化编程</a></h3>
+<p>模块化编程：按需加载</p>
+<p>示例<br>
+js/es6.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">let</span> name = <span class="hljs-string">'李雷'</span>;
+<span class="hljs-keyword">let</span> user = {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'韩梅梅'</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>
+};
+<span class="hljs-keyword">let</span> func = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">'func函数'</span>)
+};
+<span class="hljs-keyword">export</span> {name, user, func} <span class="hljs-comment">//导出三个对象</span>
+</code></pre>
+<p>es6.html</p>
+<pre><code class="hljs language-html"><span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>es6<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>></span><span class="javascript"> <span class="hljs-comment">//此处必须加 module</span>
+        <span class="hljs-keyword">import</span> {user} <span class="hljs-keyword">from</span> <span class="hljs-string">'./js/es6.js'</span> <span class="hljs-comment">//导入user对象</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(name); <span class="hljs-comment">//此时会报错，因为name对象未被导入</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(user.<span class="hljs-property">name</span>);
+
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>
+<h3 id="es6异步的实现"><a href="#es6异步的实现">ES6异步的实现</a></h3>
+<h4 id="简单的promise函数"><a href="#简单的promise函数">简单的Promise函数</a></h4>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>)=></span>{
+        <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">()=></span>{
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"异步执行完毕"</span>);
+            <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'任何需要的数据'</span>); <span class="hljs-comment">//执行成功函数</span>
+        },<span class="hljs-number">3000</span>)
+})
+</code></pre>
+<h4 id="then函数"><a href="#then函数">then函数</a></h4>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">runAsync</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(
+                <span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+                    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"异步执行完毕"</span>);
+                        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'任何需要的数据'</span>);
+                    }, <span class="hljs-number">3000</span>)
+                }
+            )
+            <span class="hljs-keyword">return</span> p;
+        }
+
+        <span class="hljs-title function_">runAsync</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>)=></span>{
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data)
+        })
+        
+</code></pre>
+<p>在上述示例中，<code>setTimeout</code>的<code>console.info</code>执行后，<code>then</code>执行，执行参数<code>data</code>是<code>setTimeout</code>的<code>resolve</code>函数传过来的值。</p>
+<h4 id="链式调用"><a href="#链式调用">链式调用</a></h4>
+<pre><code class="hljs language-javascript">     <span class="hljs-keyword">function</span> <span class="hljs-title function_">runAsync1</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(
+                <span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+                    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"异步执行完毕1"</span>);
+                        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'任何需要的数据1'</span>);
+                    }, <span class="hljs-number">3000</span>)
+                }
+            )
+            <span class="hljs-keyword">return</span> p;
+        }
+        <span class="hljs-keyword">function</span> <span class="hljs-title function_">runAsync2</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(
+                <span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+                    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"异步执行完毕2"</span>);
+                        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'任何需要的数据2'</span>);
+                    }, <span class="hljs-number">3000</span>)
+                }
+            )
+            <span class="hljs-keyword">return</span> p;
+        }
+        <span class="hljs-keyword">function</span> <span class="hljs-title function_">runAsync3</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(
+                <span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+                    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"异步执行完毕3"</span>);
+                        <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'任何需要的数据3'</span>);
+                    }, <span class="hljs-number">3000</span>)
+                }
+            )
+            <span class="hljs-keyword">return</span> p;
+        }
+
+        <span class="hljs-title function_">runAsync1</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =></span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data)
+            <span class="hljs-keyword">return</span> <span class="hljs-title function_">runAsync2</span>(); <span class="hljs-comment">//此时执行下一个函数,作为return值</span>
+        }).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>)=></span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data);
+            <span class="hljs-keyword">return</span> <span class="hljs-title function_">runAsync3</span>();
+        }).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>)=></span>{
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data+<span class="hljs-string">" 执行完毕！"</span>);
+        })
+</code></pre>
+<p>结果是依次执行输出异步执行完毕1、任意所需要的数据1。。。</p>
+<h4 id="reject-的用法"><a href="#reject-的用法">reject 的用法</a></h4>
+<pre><code class="hljs language-javascript">       <span class="hljs-keyword">function</span> <span class="hljs-title function_">runAsync1</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">let</span> p = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(
+                <span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+                    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+                        <span class="hljs-keyword">let</span> num = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>();
+                        <span class="hljs-keyword">if</span>(num > <span class="hljs-number">0.5</span>){
+                            <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'数字正好'</span>);
+                        }<span class="hljs-keyword">else</span>{
+                            <span class="hljs-title function_">reject</span>(<span class="hljs-string">'数字太小了'</span>);
+                        }
+                    }, <span class="hljs-number">1000</span>)
+                }
+            )
+            <span class="hljs-keyword">return</span> p;
+        }
+        
+
+        <span class="hljs-title function_">runAsync1</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =></span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data)
+        },<span class="hljs-function">(<span class="hljs-params">err</span>)=></span>{
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(err)
+        })
+
+        <span class="hljs-comment">//利用catch的另外一种写法</span>
+        <span class="hljs-title function_">runAsync1</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =></span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(data)
+        }).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>)=></span>{
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(err)
+        })
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","前端技术",{"className":"page-module__y-5DuW__cat-badge","children":"前端技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月6日vue学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-06T17:18:47.000Z","children":"2022年9月6日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1401," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","vue",{"className":"page-module__y-5DuW__tag","children":"vue"}],["$","span","前端",{"className":"page-module__y-5DuW__tag","children":"前端"}],["$","span","html",{"className":"page-module__y-5DuW__tag","children":"html"}],["$","span","css",{"className":"page-module__y-5DuW__tag","children":"css"}],["$","span","javascript",{"className":"page-module__y-5DuW__tag","children":"javascript"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"api接口","text":"api接口"},{"level":2,"id":"组件的通信","text":"组件的通信"},{"level":3,"id":"发布订阅者模式","text":"发布订阅者模式"},{"level":3,"id":"父子通信","text":"父子通信"},{"level":3,"id":"子父通信","text":"子父通信"},{"level":3,"id":"非父子通信","text":"非父子通信"},{"level":2,"id":"slot组件","text":"slot组件"},{"level":3,"id":"插槽的分类","text":"插槽的分类"},{"level":2,"id":"es6语法","text":"ES6语法"},{"level":3,"id":"var-和-let-的区别","text":"var 和 let 的区别"},{"level":3,"id":"const-声明常量","text":"const 声明常量"},{"level":3,"id":"的用法","text":"`的用法"},{"level":3,"id":"解构","text":"解构"},{"level":3,"id":"循环","text":"循环"},{"level":3,"id":"可变参数","text":"可变参数"},{"level":3,"id":"箭头函数","text":"箭头函数"},{"level":3,"id":"类","text":"类"},{"level":3,"id":"es6的模块化编程","text":"ES6的模块化编程"},{"level":3,"id":"es6异步的实现","text":"ES6异步的实现"},{"level":4,"id":"简单的promise函数","text":"简单的Promise函数"},{"level":4,"id":"then函数","text":"then函数"},{"level":4,"id":"链式调用","text":"链式调用"},{"level":4,"id":"reject-的用法","text":"reject 的用法"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

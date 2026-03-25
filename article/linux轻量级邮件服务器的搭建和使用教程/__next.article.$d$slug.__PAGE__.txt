@@ -1,0 +1,195 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T2610,<h2 id="前言"><a href="#前言">前言</a></h2>
+<p>很早就想配置一个自己的邮件服务器，苦于没有时间。偶然的机会，黑色星期五买了一台1G内存的特价服务器，开放了25端口，于是趁这个周末，决定搭建一个自己的域名邮箱。</p>
+<p>技术选型: docker-mailserver</p>
+<p>优势:</p>
+<ol>
+<li>
+<p>简单/方便。你要知道自己去手动配一台这样功能完全的邮件服务器，也许一个晚上的时间都不够，稍微一个地方出错还可能用不了。</p>
+</li>
+<li>
+<p>安全，你要知道邮件服务器，自用问题不大，如果是公共服务，各种SPAM/病毒邮件，你就会发现原来邮件服务器是真的难伺候。</p>
+</li>
+<li>
+<p>也就是我个人觉得最重要的原因。我自建一个邮件服务器，是出于自用的目的，我拿一台VPS出来就只装一个邮件服务，我真的觉得太浪费。所以像这样用Docker，在部署完了后，我还可以装点别的程序跑一跑。而我之前介绍的Mailcow/Mailu/Poste.io这些，虽然它们都是用Docker部署的，但是都把80/443占用了，我们最多也就只能再跑一些小脚本，如果我们还想建站呢？那这些方案就不适合我们。</p>
+</li>
+</ol>
+<h2 id="搭建步骤"><a href="#搭建步骤">搭建步骤</a></h2>
+<h3 id="配置dns"><a href="#配置dns">配置DNS</a></h3>
+<p>首先需要在主机商配置反向dns解析</p>
+<p>之后前往域名提供商进行dns解析设置</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>记录名</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>mail</td>
+<td>xxx.xxx.xxx.xxx(自己服务器的ip)</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>@</td>
+<td>mail.example.com(mail.&#x3C;域名>); 优先级选10</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>@</td>
+<td>v=spf1 mx ~all</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用certbot申请https证书"><a href="#使用certbot申请https证书">使用certbot申请https证书</a></h3>
+<p>安装好管理工具之后, 我们需要申请证书下来, 这里我的web服务器是NGINX, 并且我没有网站的静态目录, 所以我使用这个命令申请:</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">sudo</span> certbot certonly --standalone -d example.com -d www.example.com -d m.example.com
+</code></pre>
+<p>如果你的网站有静态目录的话, 可以把<code>--standalone</code>改成<code>--webroot</code>并且加上<code>-w</code>参数申请, 类似这样:</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">sudo</span> certbot certonly --webroot -w /var/www/html -d example.com -d www.example.com
+</code></pre>
+<p>在你使用<code>--standalone</code>申请证书的时候需要关闭nginx, 因为certbot会启用443端口校验你的域名信息, 如果nginx没有关闭, 会导致端口占用, 所以我们关闭nginx, 我这里是使用ubuntu, 所以使用这个命令关闭nginx:</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">sudo</span> services nginx stop
+</code></pre>
+<p>更新证书时使用<code>certbot renew</code>命令即可</p>
+<p>使用<code>crontab</code>添加定时任务</p>
+<p>可使用crontab配置证书自动续签</p>
+<pre><code class="hljs language-bash">crontab -e
+<span class="hljs-comment"># 添加如下</span>
+0 3 1 * * /usr/bin/certbot renew --quiet
+</code></pre>
+<ul>
+<li><code>0 3 1 * *</code> 指每个月1号3点0分执行任务</li>
+</ul>
+<h3 id="解析验证"><a href="#解析验证">解析验证</a></h3>
+<p>使用dig验证解析是否生效</p>
+<pre><code class="hljs language-bash">apt-get install dnsutils
+dig TXT _acme-challenge.mail.example.com
+</code></pre>
+<h3 id="安装docker"><a href="#安装docker">安装docker</a></h3>
+<p>基于debian11系统进行，参考官方文档 <a href="https://docs.docker.com/engine/install/debian/">https://docs.docker.com/engine/install/debian/</a></p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 移除之前的版本</span>
+<span class="hljs-built_in">sudo</span> apt-get remove docker docker-engine docker.io containerd runc 
+<span class="hljs-comment"># 安装依赖</span>
+<span class="hljs-built_in">sudo</span> apt-get update
+<span class="hljs-built_in">sudo</span> apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+<span class="hljs-comment"># 配置apt源</span>
+<span class="hljs-built_in">sudo</span> <span class="hljs-built_in">mkdir</span> -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | <span class="hljs-built_in">sudo</span> gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+<span class="hljs-built_in">echo</span> \
+  <span class="hljs-string">"deb [arch=<span class="hljs-subst">$(dpkg --print-architecture)</span> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  <span class="hljs-subst">$(lsb_release -cs)</span> stable"</span> | <span class="hljs-built_in">sudo</span> <span class="hljs-built_in">tee</span> /etc/apt/sources.list.d/docker.list > /dev/null
+<span class="hljs-comment"># 安装</span>
+<span class="hljs-built_in">sudo</span> apt-get update
+<span class="hljs-built_in">sudo</span> apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre>
+<h3 id="修改docker存储目录可选"><a href="#修改docker存储目录可选">修改docker存储目录(可选)</a></h3>
+<p>查看原始存储目录</p>
+<pre><code class="hljs language-bash">docker info
+</code></pre>
+<p>可以发现<code>Docker Root</code>项默认目录为<code>/var/lib/docker</code></p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> /etc/docker/
+vim daemon.json
+</code></pre>
+<p>添加以下内容</p>
+<pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
+        <span class="hljs-attr">"data-root"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"/data/docker"</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<p>保存退出，然后重启 docker 服务：</p>
+<pre><code class="hljs language-bash">systemctl restart docker
+docker info <span class="hljs-comment"># 查看是否修改成功</span>
+</code></pre>
+<h3 id="拉取配置文件"><a href="#拉取配置文件">拉取配置文件</a></h3>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/docker-mailserver/docker-mailserver.git
+<span class="hljs-comment"># 所需文件</span>
+- docker-compose.yml 容器部署文件
+- setup.sh 服务配置脚本
+</code></pre>
+<p>如果后续读取配置报错，需要在<code>docker-compose.yml</code>头部添加 <code>version: '3'</code> ，以配置版本</p>
+<h3 id="开放端口"><a href="#开放端口">开放端口</a></h3>
+<p>需要开放[25,193,993,465,587]这几个端口，以下以ufw举例，具体开放防火墙请自行Google</p>
+<pre><code class="hljs language-bash">ufw allow 25
+ufw allow 143
+ufw allow 993
+ufw allow 465
+ufw allow 587
+</code></pre>
+<h3 id="生成dkim签名记录"><a href="#生成dkim签名记录">生成DKIM签名记录</a></h3>
+<pre><code class="hljs language-bash">./setup.sh config dkim keysize 2048
+<span class="hljs-built_in">cd</span> ~/docker-mailserver/docker-data/dms/
+<span class="hljs-built_in">cat</span> config/opendkim/keys/example.com/mail.txt
+<span class="hljs-comment"># 截取格式如下</span>
+v=DKIM1;h=sha256;k=rsa;p=xxx
+</code></pre>
+<p>添加到dns解析当中</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>记录名</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TXT</td>
+<td>mail._domainkey</td>
+<td>v=DKIM1;h=sha256;k=rsa;p=xxx</td>
+</tr>
+</tbody>
+</table>
+<h3 id="配置tls"><a href="#配置tls">配置tls</a></h3>
+<p>编辑docker-mailserver配置文件</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> docker-mailserver
+vim .<span class="hljs-built_in">env</span>
+</code></pre>
+<p>编辑 -volumes配置项下添加 <code>- /etc/letsencrypt/:/etc/letsencrypt:ro</code></p>
+<p>编辑<code>mailserver.env</code>文件</p>
+<pre><code class="hljs language-env">SSL_TYPE=letsencrypt
+SSL_CERT_PATH=/etc/letsencrypt/live/mail.timeshike.com/fullchain.pem
+SSL_KEY_PATH=/etc/letsencrypt/live/mail.timeshike.com/privkey.pem
+</code></pre>
+<p>最后重启docker-mailserver即可：</p>
+<pre><code class="hljs language-bash">docker-compose stop
+systemctl restart docker.service
+docker-compose up -d
+docker-compose logs -f <span class="hljs-comment"># 查看容器日志</span>
+</code></pre>
+<p>安装完成!</p>
+<h2 id="邮箱服务器管理"><a href="#邮箱服务器管理">邮箱服务器管理</a></h2>
+<p>利用<code>setup.sh</code>脚本可以轻松实现管理账户</p>
+<p>可参考官方文档 <a href="https://docker-mailserver.github.io/docker-mailserver/edge/config/setup.sh/">https://docker-mailserver.github.io/docker-mailserver/edge/config/setup.sh/</a></p>
+<pre><code class="hljs language-bash">./setup.sh email add admin@example.com <span class="hljs-string">"xxx"</span> <span class="hljs-comment"># 添加账号密码</span>
+<span class="hljs-comment"># 其他功能参见help</span>
+./setup.sh <span class="hljs-built_in">help</span>
+</code></pre>
+<h2 id="参考文章"><a href="#参考文章">参考文章</a></h2>
+<p>本文参考了以下博文，感谢作者的付出</p>
+<ol>
+<li><a href="https://blog.cetacean.top/mailserver/">https://blog.cetacean.top/mailserver/</a></li>
+<li><a href="https://lala.im/4224.html">https://lala.im/4224.html</a></li>
+<li><a href="https://docker-mailserver.github.io/docker-mailserver/edge/">https://docker-mailserver.github.io/docker-mailserver/edge/</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/95533274">https://zhuanlan.zhihu.com/p/95533274</a></li>
+</ol>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","建站技术",{"className":"page-module__y-5DuW__cat-badge","children":"建站技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"基于docker的轻量级邮件服务器的搭建和使用教程"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-11-27T16:28:46.000Z","children":"2022年11月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1080," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","linux",{"className":"page-module__y-5DuW__tag","children":"linux"}],["$","span","docker",{"className":"page-module__y-5DuW__tag","children":"docker"}],["$","span","mail",{"className":"page-module__y-5DuW__tag","children":"mail"}],["$","span","server",{"className":"page-module__y-5DuW__tag","children":"server"}],["$","span","教程",{"className":"page-module__y-5DuW__tag","children":"教程"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"前言","text":"前言"},{"level":2,"id":"搭建步骤","text":"搭建步骤"},{"level":3,"id":"配置dns","text":"配置DNS"},{"level":3,"id":"使用certbot申请https证书","text":"使用certbot申请https证书"},{"level":3,"id":"解析验证","text":"解析验证"},{"level":3,"id":"安装docker","text":"安装docker"},{"level":3,"id":"修改docker存储目录可选","text":"修改docker存储目录(可选)"},{"level":3,"id":"拉取配置文件","text":"拉取配置文件"},{"level":3,"id":"开放端口","text":"开放端口"},{"level":3,"id":"生成dkim签名记录","text":"生成DKIM签名记录"},{"level":3,"id":"配置tls","text":"配置tls"},{"level":2,"id":"邮箱服务器管理","text":"邮箱服务器管理"},{"level":2,"id":"参考文章","text":"参考文章"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

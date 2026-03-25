@@ -1,0 +1,163 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T328f,<p>讲到@JSONField 注解，就不得不提到Alibaba 开源的fasejson</p>
+<p>fastjson是目前java语言中最快的json库，比自称最快的jackson速度要快，第三方独立测试结果看这里：<a href="https://github.com/eishay/jvm-serializers/wiki">https://github.com/eishay/jvm-serializers/wiki</a></p>
+<p>这里有jackson作者cowtowncoder等人对fastjson的性能评价：<a href="https://groups.google.com/forum/#!topic/java-serialization-benchmarking/8eS1KOquAhw">https://groups.google.com/forum/#!topic/java-serialization-benchmarking/8eS1KOquAhw</a></p>
+<p>Fastjson VS gson性能<br>
+fastjson比gson快大约6倍，测试结果上这里：<a href="https://github.com/eishay/jvm-serializers/wiki/Staging-Results">https://github.com/eishay/jvm-serializers/wiki/Staging-Results</a></p>
+<p>下面我们来介绍@JSONField 注解的应用:</p>
+<h3 id="1-jsonfield-介绍"><a href="#1-jsonfield-介绍">1. JSONField 介绍</a></h3>
+<p>注意：1.1、若属性是私有的，必须有set*方法。否则无法反序列化。</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.alibaba.fastjson.annotation;
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> JSONField {
+<span class="hljs-comment">// 配置序列化和反序列化的顺序，1.1.42版本之后才⽀持</span>
+<span class="hljs-type">int</span> <span class="hljs-title function_">ordinal</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-number">0</span>;
+<span class="hljs-comment">// 指定字段的名称</span>
+String <span class="hljs-title function_">name</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-string">""</span>;
+<span class="hljs-comment">// 指定字段的格式，对⽇期格式有⽤</span>
+String <span class="hljs-title function_">format</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-string">""</span>;
+<span class="hljs-comment">// 是否序列化</span>
+<span class="hljs-type">boolean</span> <span class="hljs-title function_">serialize</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-literal">true</span>;
+<span class="hljs-comment">// 是否反序列化</span>
+<span class="hljs-type">boolean</span> <span class="hljs-title function_">deserialize</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
+<h3 id="2-jsonfield配置方式"><a href="#2-jsonfield配置方式">2. JSONField配置方式</a></h3>
+<h4 id="21fieldinfo可以配置在gettersetter方法或者字段上例如"><a href="#21fieldinfo可以配置在gettersetter方法或者字段上例如">2.1FieldInfo可以配置在getter/setter方法或者字段上。例如：</a></h4>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> id;
+
+    <span class="hljs-meta">@JSONField(name="ID")</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getId</span><span class="hljs-params">()</span> {<span class="hljs-keyword">return</span> id;}
+    <span class="hljs-meta">@JSONField(name="ID")</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setId</span><span class="hljs-params">(<span class="hljs-type">int</span> value)</span> {<span class="hljs-built_in">this</span>.id = id;}
+}
+</code></pre>
+<h4 id="22-配置在field上"><a href="#22-配置在field上">2.2 配置在field上</a></h4>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@JSONField(name="ID")</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> id;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getId</span><span class="hljs-params">()</span> {<span class="hljs-keyword">return</span> id;}
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setId</span><span class="hljs-params">(<span class="hljs-type">int</span> value)</span> {<span class="hljs-built_in">this</span>.id = id;}
+}
+</code></pre>
+<h4 id="23-使format配置期格式化"><a href="#23-使format配置期格式化">2.3 使⽤format配置⽇期格式化</a></h4>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-comment">// 配置date序列化和反序列使⽤yyyyMMdd⽇期格式</span>
+    <span class="hljs-meta">@JSONField(format="yyyyMMdd")</span>
+    <span class="hljs-keyword">public</span> Date date;
+}
+</code></pre>
+<h4 id="24-使serializedeserialize指定字段不序列化"><a href="#24-使serializedeserialize指定字段不序列化">2.4 使⽤serialize/deserialize指定字段不序列化</a></h4>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-meta">@JSONField(serialize=false)</span>
+    <span class="hljs-keyword">public</span> Date date;
+}
+</code></pre>
+<h4 id="25-使ordinal指定字段的顺序"><a href="#25-使ordinal指定字段的顺序">2.5 使⽤ordinal指定字段的顺序</a></h4>
+<p><em>注:缺省fastjson序列化一个java bean，是根据fieldName的字母序进行序列的你可以通过ordinal指定字段的顺序。这个特性需要1.1.42以上版本。</em></p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">VO</span> {
+    <span class="hljs-meta">@JSONField(ordinal = 3)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f0;
+    <span class="hljs-meta">@JSONField(ordinal = 2)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f1;
+    <span class="hljs-meta">@JSONField(ordinal = 1)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> f2;
+}
+</code></pre>
+<h4 id="26-使serializeusing制定属性的序列化类"><a href="#26-使serializeusing制定属性的序列化类">2.6 使⽤serializeUsing制定属性的序列化类</a></h4>
+<pre><code class="hljs language-java">*在fastjson <span class="hljs-number">1.2</span><span class="hljs-number">.16</span>版本之后，JSONField的持新的定制化配置serializeUsing，可以单独对某个类的某个属性定制序列化，例如：*
+
+
+<span class="hljs-keyword">package</span> com.fxbin123.bean;
+
+<span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
+<span class="hljs-keyword">import</span> com.alibaba.fastjson.annotation.JSONField;
+<span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.JSONSerializer;
+<span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.ObjectSerializer;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.lang.reflect.Type;
+
+<span class="hljs-comment">/**
+ * @创建用户: fxb
+ * @创建时间: 2017年11月07日 10:00
+ * @描述: myself test demo 
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyTest</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span> {
+        <span class="hljs-meta">@JSONField(serializeUsing = AValueSerializer.class)</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> value;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AValueSerializer</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">ObjectSerializer</span> {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">write</span><span class="hljs-params">(JSONSerializer serializer, Object object, Object fieldName, Type fieldType,
+                          <span class="hljs-type">int</span> features)</span> <span class="hljs-keyword">throws</span> IOException {
+            <span class="hljs-type">Integer</span> <span class="hljs-variable">value</span> <span class="hljs-operator">=</span> (Integer) object;
+            <span class="hljs-type">String</span> <span class="hljs-variable">text</span> <span class="hljs-operator">=</span> value + <span class="hljs-string">"元"</span>;
+            serializer.write(text);
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">A</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">A</span>();
+        obj.value = <span class="hljs-number">100</span>;
+        <span class="hljs-type">String</span> <span class="hljs-variable">json</span> <span class="hljs-operator">=</span> JSON.toJSONString(obj);
+        System.out.println(json);
+    }
+}
+</code></pre>
+<p>运行结果打印输出<br>
+<img src="https://img-blog.csdn.net/20171107111043388?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZnhiaW4xMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="在这里插入图片描述"></p>
+<h4 id="28-jsonfield-jsondirect"><a href="#28-jsonfield-jsondirect">2.8 JSONField jsonDirect</a></h4>
+<p>在fastjson-1.2.12版本中，JSONField增加了一个新的配置项jsonDirect，它的⽤是：当你有一个字段是字符串类型，但不是json格式数据，你希望直接输json，而不是经过转义之后再输出。</p>
+<pre><code class="hljs language-java"> <span class="hljs-keyword">package</span> com.fxbin123.bean;
+    
+    <span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
+    <span class="hljs-keyword">import</span> com.alibaba.fastjson.annotation.JSONField;
+    <span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.JSONSerializer;
+    <span class="hljs-keyword">import</span> com.alibaba.fastjson.serializer.ObjectSerializer;
+    
+    <span class="hljs-keyword">import</span> java.io.IOException;
+    <span class="hljs-keyword">import</span> java.lang.reflect.Type;
+    
+    <span class="hljs-comment">/**
+     * @创建用户: fxb
+     * @创建时间: 2017年11月07日 10:00
+     * @描述: myself test demo
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyTest</span> {
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+    <span class="hljs-comment">//        A obj = new A();</span>
+    <span class="hljs-comment">//        obj.value = 100;</span>
+    <span class="hljs-comment">//        String json = JSON.toJSONString(obj);</span>
+    <span class="hljs-comment">//        System.out.println(json);</span>
+    
+            <span class="hljs-type">B</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">B</span>();
+            b.id = <span class="hljs-number">9999</span>;
+            b.value = <span class="hljs-string">"{}"</span>;
+            <span class="hljs-type">String</span> <span class="hljs-variable">json</span> <span class="hljs-operator">=</span> JSON.toJSONString(b);
+            System.out.println(json);
+        }
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span>{
+            <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> id;
+            <span class="hljs-meta">@JSONField(jsonDirect = true)</span>
+            <span class="hljs-keyword">public</span> String value;
+        }
+    }
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"JSONField注解的应用"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-12T14:25:11.000Z","children":"2022年9月12日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[656," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","alibaba",{"className":"page-module__y-5DuW__tag","children":"alibaba"}],["$","span","fastjson",{"className":"page-module__y-5DuW__tag","children":"fastjson"}],["$","span","date",{"className":"page-module__y-5DuW__tag","children":"date"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-jsonfield-介绍","text":"1. JSONField 介绍"},{"level":3,"id":"2-jsonfield配置方式","text":"2. JSONField配置方式"},{"level":4,"id":"21fieldinfo可以配置在gettersetter方法或者字段上例如","text":"2.1FieldInfo可以配置在getter/setter方法或者字段上。例如："},{"level":4,"id":"22-配置在field上","text":"2.2 配置在field上"},{"level":4,"id":"23-使format配置期格式化","text":"2.3 使⽤format配置⽇期格式化"},{"level":4,"id":"24-使serializedeserialize指定字段不序列化","text":"2.4 使⽤serialize/deserialize指定字段不序列化"},{"level":4,"id":"25-使ordinal指定字段的顺序","text":"2.5 使⽤ordinal指定字段的顺序"},{"level":4,"id":"26-使serializeusing制定属性的序列化类","text":"2.6 使⽤serializeUsing制定属性的序列化类"},{"level":4,"id":"28-jsonfield-jsondirect","text":"2.8 JSONField jsonDirect"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

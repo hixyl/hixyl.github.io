@@ -1,0 +1,120 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:Te20,<h2 id="安装aria2"><a href="#安装aria2">安装aria2</a></h2>
+<pre><code class="hljs language-shell">sudo apt install aria2
+</code></pre>
+<h2 id="新建配置文件"><a href="#新建配置文件">新建配置文件</a></h2>
+<p>新建 <code>~/.aria2/aria2.conf</code> 文件，内容如下(下载文件保存位置根据实际情况修改)</p>
+<pre><code class="hljs language-conf">#允许rpc
+enable-rpc=true
+#允许所有来源, web界面跨域权限需要
+rpc-allow-origin-all=true
+#允许非外部访问
+rpc-listen-all=true
+#RPC端口, 仅当默认端口被占用时修改
+#rpc-listen-port=6800
+ 
+#最大同时下载数(任务数), 路由建议值: 3
+max-concurrent-downloads=5
+#断点续传
+continue=true
+#同服务器连接数
+max-connection-per-server=5
+#最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于小文件重要
+min-split-size=10M
+#单文件最大线程数, 路由建议值: 5
+split=10
+#下载速度限制
+max-overall-download-limit=0
+#单文件速度限制
+max-download-limit=0
+#上传速度限制
+max-overall-upload-limit=0
+#单文件速度限制
+max-upload-limit=0
+#断开速度过慢的连接
+#lowest-speed-limit=0
+#验证用，需要1.16.1之后的release版本
+#referer=*
+ 
+input-file=/var/log/aria2.session
+save-session=/var/log/aria2_.session
+#定时保存会话，需要1.16.1之后的release版
+save-session-interval=60
+ 
+#文件保存路径, 默认为当前启动位置
+dir=/home/smile/Downloads/
+#文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用, 需要1.16及以上版本
+#disk-cache=0
+#另一种Linux文件缓存方式, 使用前确保您使用的内核支持此选项, 需要1.15及以上版本(?)
+#enable-mmap=true
+#文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长
+#所需时间 none &#x3C; falloc ? trunc &#x3C;&#x3C; prealloc, falloc和trunc需要文件系统和内核支持
+file-allocation=prealloc
+#启用本地节点查找
+bt-enable-lpd=true
+#添加额外的tracker
+#bt-tracker=&#x3C;URI>,…
+#单种子最大连接数
+#bt-max-peers=55
+#强制加密, 防迅雷必备
+#bt-require-crypto=true
+#当下载的文件是一个种子(以.torrent结尾)时, 自动下载BT
+follow-torrent=true
+#BT监听端口, 当端口屏蔽时使用
+#listen-port=6881-6999
+ 
+#不确定是否需要，为保险起见，need more test
+enable-dht=false
+bt-enable-lpd=false
+enable-peer-exchange=false
+#修改特征
+user-agent=uTorrent/2210(25130)
+peer-id-prefix=-UT2210-
+#修改做种设置, 允许做种
+seed-ratio=0
+#保存会话
+force-save=true
+bt-hash-check-seed=true
+bt-seed-unverified=true
+bt-save-metadata=true
+#定时保存会话，需要1.16.1之后的某个release版本（比如1.16.2）
+#save-session-interval=60
+</code></pre>
+<h2 id="新建log文件"><a href="#新建log文件">新建log文件</a></h2>
+<pre><code class="hljs language-shell">sudo touch /var/log/aria2.session
+sudo touch /var/log/aria2_.session
+</code></pre>
+<h2 id="配置系统服务"><a href="#配置系统服务">配置系统服务</a></h2>
+<p>新建 <code>/lib/systemd/system/aria2.service</code>，配置如下</p>
+<pre><code class="hljs language-conf">Description= aria2
+After=network.target
+ 
+[Service]
+User=smile
+Group=smile
+
+#PIDFile=/run/aria2.pid
+ExecStart=aria2c -c --conf-path=/home/smile/.aria2/aria2.conf &#x26;
+ExecStop=/bin/kill $MAINPID
+RestartSec=always
+ 
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<h2 id="开启服务"><a href="#开启服务">开启服务</a></h2>
+<pre><code class="hljs language-shell">sudo systemctl enable aria2 --now
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","linux相关",{"className":"page-module__y-5DuW__cat-badge","children":"linux相关"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"linux桌面版配置aria2教程(以ubuntu22.04为例)"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2023-05-04T10:50:13.000Z","children":"2023年5月4日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[557," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","linux",{"className":"page-module__y-5DuW__tag","children":"linux"}],["$","span","ubuntu",{"className":"page-module__y-5DuW__tag","children":"ubuntu"}],["$","span","aria2",{"className":"page-module__y-5DuW__tag","children":"aria2"}],["$","span","systemctl",{"className":"page-module__y-5DuW__tag","children":"systemctl"}],["$","span","下载",{"className":"page-module__y-5DuW__tag","children":"下载"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"安装aria2","text":"安装aria2"},{"level":2,"id":"新建配置文件","text":"新建配置文件"},{"level":2,"id":"新建log文件","text":"新建log文件"},{"level":2,"id":"配置系统服务","text":"配置系统服务"},{"level":2,"id":"开启服务","text":"开启服务"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

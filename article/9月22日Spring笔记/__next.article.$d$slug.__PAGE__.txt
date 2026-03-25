@@ -1,0 +1,138 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T2d18,<h2 id="数据转换和校验"><a href="#数据转换和校验">数据转换和校验</a></h2>
+<p>SpringMVC通过反射机制对目标处理方法进行解析，将请求消息绑定到处理方法的参数中。</p>
+<h3 id="自定义消息转换器"><a href="#自定义消息转换器">自定义消息转换器</a></h3>
+<p>spring-mvc.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&#x3C;!--    开启RequestMapping映射处理器和适配器--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:annotation-driven</span> <span class="hljs-attr">conversion-service</span>=<span class="hljs-string">"conversionServiceFactory"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:message-converters</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.http.converter.StringHttpMessageConverter"</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"supportedMediaTypes"</span>></span>
+                    <span class="hljs-tag">&#x3C;<span class="hljs-name">list</span>></span>
+                        <span class="hljs-tag">&#x3C;<span class="hljs-name">value</span>></span>text/html;charset=utf-8<span class="hljs-tag">&#x3C;/<span class="hljs-name">value</span>></span>
+                    <span class="hljs-tag">&#x3C;/<span class="hljs-name">list</span>></span>
+                <span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">mvc:message-converters</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">mvc:annotation-driven</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"prefix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/WEB-INF/views/"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"suffix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">".html"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"conversionServiceFactory"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.context.support.ConversionServiceFactoryBean"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"converters"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">set</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.converter.UserConverter"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">set</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+</code></pre>
+<p>UserConverter.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.converter;
+
+<span class="hljs-keyword">import</span> com.zr.vo.User;
+<span class="hljs-keyword">import</span> org.springframework.core.convert.converter.Converter;
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserConverter</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Converter</span>&#x3C;String, User> {
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> User <span class="hljs-title function_">convert</span><span class="hljs-params">(String source)</span> {
+        <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        String[] data = source.split(<span class="hljs-string">"-"</span>);
+        user.setUserId(data[<span class="hljs-number">0</span>]);
+        user.setUserName(data[<span class="hljs-number">1</span>]);
+        <span class="hljs-keyword">return</span> user;
+    }
+}
+</code></pre>
+<p>UserController.java</p>
+<pre><code class="hljs language-java">   <span class="hljs-meta">@RequestMapping("/converter.action")</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">converter</span><span class="hljs-params">(<span class="hljs-meta">@RequestParam("data")</span> User user)</span>{
+        System.out.println(user);
+    }
+</code></pre>
+<p>效果：传入key为data的属性，其值将被转换为User类，转换规则见<code>UserConverter.java</code></p>
+<h3 id="数据的后台校验"><a href="#数据的后台校验">数据的后台校验</a></h3>
+<p>JSR 303是Java为Bean数据合法性校验提供的标准框架，它已经包含在 JavaEE6.0中；<br>
+JSR 303通过在 Bean 属性上标注类似于@NotNull、@Max等标准的注解指定校验规则，并通过标准的验证接口对 Bean进行验证；</p>
+<h4 id="校验示例"><a href="#校验示例">校验示例</a></h4>
+<p>导入hibernate jar包，在对象类上加相应的注解，在controller层使用<code>@Validated</code>注解</p>
+<p>pom.xml</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.hibernate<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>hibernate-validator<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>6.1.0.Final<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+</code></pre>
+<p>User.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">User</span> {
+
+    <span class="hljs-meta">@NotEmpty(message = "用户账号不能为空")</span>
+    <span class="hljs-keyword">private</span> String userId;
+
+    <span class="hljs-keyword">private</span> String userName;
+    <span class="hljs-meta">@NotEmpty(message = "密码不能为空")</span>
+    <span class="hljs-keyword">private</span> String password;
+}
+</code></pre>
+<p>UserController.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-meta">@PostMapping(value = "login.action", consumes = {"application/x-www-form-urlencoded"})</span>
+    <span class="hljs-comment">// @Validated 注解，必须和Errors配合使用</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(<span class="hljs-meta">@Validated</span> User user, Errors errors)</span>{
+        <span class="hljs-keyword">if</span>(errors.hasFieldErrors()){
+            <span class="hljs-keyword">return</span> JSON.toJSONString(AjaxResult.fail(<span class="hljs-number">200</span>,errors.getFieldError().getDefaultMessage(), <span class="hljs-literal">null</span>));
+        }
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(user.getUserId());
+        u.setPassword(Md5Util.md5(user.getPassword()));
+        <span class="hljs-type">AjaxResult</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">return</span> JSON.toJSONString(robj);
+    }
+</code></pre>
+<h2 id="国际化"><a href="#国际化">国际化</a></h2>
+<p><code>message.properties</code> 默认
+<code>message_zh_CN</code> 中文中国</p>
+<pre><code class="hljs language-properties">biz.query.success=默认:查询成功{0}
+</code></pre>
+<p>0为占位符</p>
+<p>UserController.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> ResourceBundleMessageSource messageSource;
+
+    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-meta">@PostMapping("/getUserList.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getUserList</span><span class="hljs-params">(Locale locale)</span>{
+        <span class="hljs-type">AjaxResult</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.getList();
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            robj.setMessage(messageSource.getMessage(<span class="hljs-string">"biz.query.success"</span>,<span class="hljs-keyword">new</span> <span class="hljs-title class_">Object</span>[]{<span class="hljs-string">"!"</span>}, locale));
+            <span class="hljs-comment">// {"!"}替换properties文件中的占位符{0}</span>
+        }
+        <span class="hljs-type">String</span> <span class="hljs-variable">str</span> <span class="hljs-operator">=</span> JSON.toJSONString(robj);
+
+        <span class="hljs-keyword">return</span> str;
+    }
+</code></pre>
+<p>spring-mvc.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&#x3C;!--    国际化--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.context.support.ResourceBundleMessageSource"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"basename"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"message"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"useCodeAsDefaultMessage"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"true"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月22日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-22T17:13:44.000Z","children":"2022年9月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[407," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springMVC",{"className":"page-module__y-5DuW__tag","children":"springMVC"}],["$","span","国际化",{"className":"page-module__y-5DuW__tag","children":"国际化"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"数据转换和校验","text":"数据转换和校验"},{"level":3,"id":"自定义消息转换器","text":"自定义消息转换器"},{"level":3,"id":"数据的后台校验","text":"数据的后台校验"},{"level":4,"id":"校验示例","text":"校验示例"},{"level":2,"id":"国际化","text":"国际化"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

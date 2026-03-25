@@ -1,0 +1,306 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T8198,<h2 id="spring-jdbc"><a href="#spring-jdbc">spring-jdbc</a></h2>
+<h3 id="示例"><a href="#示例">示例</a></h3>
+<p>pom.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span>
+         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">modelVersion</span>></span>4.0.0<span class="hljs-tag">&#x3C;/<span class="hljs-name">modelVersion</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>com.zr<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>SpringJdbc<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>1.0-SNAPSHOT<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">properties</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.source</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.source</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.target</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.target</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">properties</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">dependencies</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>4.13.2<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-core<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-beans<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-context<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-aop<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-jdbc<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>com.alibaba<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>druid<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>1.1.17<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>mysql<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>mysql-connector-java<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.1.27<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.aspectj<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>aspectjweaver<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>1.9.9.1<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependencies</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">project</span>></span>
+</code></pre>
+<p>AreaDaoImpl.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.dao.impl;
+
+<span class="hljs-keyword">import</span> com.zr.dao.AreaDao;
+<span class="hljs-keyword">import</span> com.zr.vo.Area;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.dao.DataAccessException;
+<span class="hljs-keyword">import</span> org.springframework.jdbc.core.JdbcTemplate;
+<span class="hljs-keyword">import</span> org.springframework.jdbc.core.ResultSetExtractor;
+<span class="hljs-keyword">import</span> org.springframework.jdbc.core.RowMapper;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Repository;
+
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-meta">@Repository</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AreaDaoImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">AreaDao</span> {
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> JdbcTemplate jdbcTemplate;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Area <span class="hljs-title function_">query</span><span class="hljs-params">(Integer areaId)</span> {
+        <span class="hljs-keyword">return</span> jdbcTemplate.queryForObject(<span class="hljs-string">"select * from t_area where area_id = ?"</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">RowMapper</span>&#x3C;Area>() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> Area <span class="hljs-title function_">mapRow</span><span class="hljs-params">(ResultSet rs, <span class="hljs-type">int</span> rowNum)</span> <span class="hljs-keyword">throws</span> SQLException {
+                    Area area= <span class="hljs-keyword">new</span> <span class="hljs-title class_">Area</span>();
+                    area.setAreaId(rs.getInt(<span class="hljs-string">"area_id"</span>));
+                    area.setAreaName(rs.getString(<span class="hljs-string">"area_name"</span>));
+                    area.setParentId(rs.getInt(<span class="hljs-string">"parent_id"</span>));
+                    <span class="hljs-keyword">return</span> area;
+            }
+        }, areaId);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> List&#x3C;Area> <span class="hljs-title function_">queryList</span><span class="hljs-params">(Integer parentId)</span> {
+        <span class="hljs-keyword">return</span> jdbcTemplate.query(<span class="hljs-string">"select * from t_area where parent_id = ?"</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">RowMapper</span>&#x3C;Area>(){
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> Area <span class="hljs-title function_">mapRow</span><span class="hljs-params">(ResultSet rs, <span class="hljs-type">int</span> rowNum)</span> <span class="hljs-keyword">throws</span> SQLException {
+                Area area= <span class="hljs-keyword">new</span> <span class="hljs-title class_">Area</span>();
+                area.setAreaId(rs.getInt(<span class="hljs-string">"area_id"</span>));
+                area.setAreaName(rs.getString(<span class="hljs-string">"area_name"</span>));
+                area.setParentId(rs.getInt(<span class="hljs-string">"parent_id"</span>));
+                <span class="hljs-keyword">return</span> area;
+            }
+        }, parentId);
+    }
+}
+</code></pre>
+<h2 id="jdbc使用配置类配置"><a href="#jdbc使用配置类配置">jdbc使用配置类配置</a></h2>
+<p>示例</p>
+<p>SpringConfig.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.config;
+
+<span class="hljs-keyword">import</span> com.alibaba.druid.pool.DruidDataSource;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Bean;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.ComponentScan;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Configuration;
+<span class="hljs-keyword">import</span> org.springframework.jdbc.core.JdbcTemplate;
+
+<span class="hljs-keyword">import</span> javax.sql.DataSource;
+
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@ComponentScan("com.zr")</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringConfig</span> {
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-keyword">public</span> JdbcTemplate <span class="hljs-title function_">jdbcTemplate</span><span class="hljs-params">()</span>{
+        <span class="hljs-comment">// new 一个类对象</span>
+        <span class="hljs-type">JdbcTemplate</span> <span class="hljs-variable">jdbcTemplate</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JdbcTemplate</span>();
+        jdbcTemplate.setDataSource(dataSource());
+        <span class="hljs-keyword">return</span> jdbcTemplate;
+    }
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-keyword">public</span> DataSource <span class="hljs-title function_">dataSource</span><span class="hljs-params">()</span>{
+        <span class="hljs-type">DruidDataSource</span> <span class="hljs-variable">dataSource</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DruidDataSource</span>();
+        <span class="hljs-comment">// 使用set方法给new的对象赋值，相当于配置文件中的propeties标签</span>
+        dataSource.setDriverClassName(<span class="hljs-string">"com.mysql.jdbc.Driver"</span>);
+        dataSource.setUrl(<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/test"</span>);
+        dataSource.setUsername(<span class="hljs-string">"root"</span>);
+        dataSource.setPassword(<span class="hljs-string">"mysql"</span>);
+        <span class="hljs-keyword">return</span> dataSource;
+    }
+}
+</code></pre>
+<p>TestConfig.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr;
+
+<span class="hljs-keyword">import</span> com.zr.action.AreaAction;
+<span class="hljs-keyword">import</span> com.zr.config.SpringConfig;
+<span class="hljs-keyword">import</span> com.zr.vo.Area;
+<span class="hljs-keyword">import</span> org.junit.Test;
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestConfig</span> {
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test</span><span class="hljs-params">()</span>{
+        <span class="hljs-type">AnnotationConfigApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">AnnotationConfigApplicationContext</span>(SpringConfig.class);
+        <span class="hljs-type">AreaAction</span> <span class="hljs-variable">areaAction</span> <span class="hljs-operator">=</span> ac.getBean(AreaAction.class);
+        List&#x3C;Area> areaList = areaAction.query(<span class="hljs-number">1</span>);
+        System.out.println(areaList);
+    }
+}
+</code></pre>
+<h2 id="事务"><a href="#事务">事务</a></h2>
+<h3 id="事务的传播特性"><a href="#事务的传播特性">事务的传播特性</a></h3>
+<p>事务的特性：ACID(原子性、一致性、隔离性和持久性)</p>
+<p>原子性(Atomicity): 即事务是不可分割的最小工作单元，事务内的操作要么全做，要么全不做<br>
+一致性(Consistency): 事务执行前后数据库中的数据都处于正确状态，数据完整性没有被破坏
+隔离性(Isolation): 并发事务之间互相影响的程度，比如一个事务会不会读取到另一个未提交的事务修改的数据。<br>
+持久性(Durability):  事务提交后，对系统的影响是永久的。</p>
+<p><img src="/article/9月17日Spring笔记/9_17_01.PNG" alt="alt">
+<img src="/article/9月17日Spring笔记/9_17_02.PNG" alt="alt"></p>
+<h3 id="数据库锁"><a href="#数据库锁">数据库锁</a></h3>
+<p>悲观锁：查询数据后锁死该数据，其他用户无法更改<br>
+乐观锁：乐观锁在操作数据时非常乐观，认为别人不会同时修改数据。. 因此乐观锁不会上锁，只是在执行更新的时候判断一下在此期间别人是否修改了数据：如果别人修改了数据则放弃操作，否则执行操作。</p>
+<h3 id="spring事务管理示例"><a href="#spring事务管理示例">spring事务管理示例</a></h3>
+<h4 id="声明式事务"><a href="#声明式事务">声明式事务</a></h4>
+<p>spring-config.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">"http://www.springframework.org/schema/context"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"com.zr"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">context:component-scan</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"jdbcTemplate"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.jdbc.core.JdbcTemplate"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"dataSource"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.alibaba.druid.pool.DruidDataSource"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"driverClassName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"com.mysql.jdbc.Driver"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/test"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"root"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"mysql"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+<span class="hljs-comment">&#x3C;!--    配置事务管理器--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"transactionManager"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.jdbc.datasource.DataSourceTransactionManager"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"dataSource"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+    <span class="hljs-comment">&#x3C;!-- 以下配置xml声明式事务 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:advice</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"transactionInterceptor"</span> <span class="hljs-attr">transaction-manager</span>=<span class="hljs-string">"transactionManager"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:attributes</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:method</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"query*"</span> <span class="hljs-attr">isolation</span>=<span class="hljs-string">"DEFAULT"</span> <span class="hljs-attr">propagation</span>=<span class="hljs-string">"REQUIRED"</span> <span class="hljs-attr">read-only</span>=<span class="hljs-string">"true"</span>/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:method</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"add*"</span> <span class="hljs-attr">isolation</span>=<span class="hljs-string">"DEFAULT"</span> <span class="hljs-attr">propagation</span>=<span class="hljs-string">"REQUIRED"</span> <span class="hljs-attr">read-only</span>=<span class="hljs-string">"false"</span>/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:method</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"edit*"</span> <span class="hljs-attr">isolation</span>=<span class="hljs-string">"DEFAULT"</span> <span class="hljs-attr">propagation</span>=<span class="hljs-string">"REQUIRED"</span> <span class="hljs-attr">read-only</span>=<span class="hljs-string">"false"</span>/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:method</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"remove*"</span> <span class="hljs-attr">isolation</span>=<span class="hljs-string">"DEFAULT"</span> <span class="hljs-attr">propagation</span>=<span class="hljs-string">"REQUIRED"</span> <span class="hljs-attr">read-only</span>=<span class="hljs-string">"false"</span>/></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">tx:attributes</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">tx:advice</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">aop:config</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">aop:pointcut</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"pointcut"</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">"execution(* com.zr.service.*.*(..))"</span>/></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">aop:advisor</span> <span class="hljs-attr">advice-ref</span>=<span class="hljs-string">"transactionInterceptor"</span> <span class="hljs-attr">pointcut-ref</span>=<span class="hljs-string">"pointcut"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">aop:advisor</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">aop:config</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">beans</span>></span>
+</code></pre>
+<p>如果已开启查询事务，进行修改，会报错，因为查询的<code>read-only="true"</code><br>
+如果添加失败，会自动回滚(事务的一致性)</p>
+<h4 id="编程式事务"><a href="#编程式事务">编程式事务</a></h4>
+<p>spring-config.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">"http://www.springframework.org/schema/context"</span> <span class="hljs-attr">xmlns:tx</span>=<span class="hljs-string">"http://www.springframework.org/schema/tx"</span>
+       <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">"http://www.springframework.org/schema/aop"</span>
+
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"com.zr"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">context:component-scan</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"jdbcTemplate"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.jdbc.core.JdbcTemplate"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"dataSource"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.alibaba.druid.pool.DruidDataSource"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"driverClassName"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"com.mysql.jdbc.Driver"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/test"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"root"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"mysql"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+<span class="hljs-comment">&#x3C;!--    配置事务管理器--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"transactionManager"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.jdbc.datasource.DataSourceTransactionManager"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"dataSource"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">tx:annotation-driven</span> <span class="hljs-attr">transaction-manager</span>=<span class="hljs-string">"transactionManager"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">tx:annotation-driven</span>></span>
+
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">beans</span>></span>
+</code></pre>
+<p>AreaServiceImpl.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.service.impl;
+
+<span class="hljs-keyword">import</span> com.zr.dao.AreaDao;
+<span class="hljs-keyword">import</span> com.zr.service.AreaService;
+<span class="hljs-keyword">import</span> com.zr.vo.Area;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Service;
+<span class="hljs-keyword">import</span> org.springframework.transaction.annotation.Transactional;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AreaServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">AreaService</span> {
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> AreaDao areaDao;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> List&#x3C;Area> <span class="hljs-title function_">query</span><span class="hljs-params">(Integer areaId)</span> {
+        <span class="hljs-keyword">return</span> areaDao.query(areaId);
+    }
+    <span class="hljs-comment">// 声明事务</span>
+    <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">add</span><span class="hljs-params">()</span> {
+        <span class="hljs-type">Area</span> <span class="hljs-variable">area</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Area</span>();
+        area.setAreaId(<span class="hljs-number">29</span>);
+        area.setAreaName(<span class="hljs-string">"绿园区"</span>);
+        area.setParentId(<span class="hljs-number">4</span>);
+        areaDao.add(area);
+        <span class="hljs-keyword">return</span>  areaDao.add(area);
+    }
+}
+</code></pre>
+<p>对一个表进行多次操作时可以加事务，只进行一次没必要加事务</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月17日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-17T17:18:07.000Z","children":"2022年9月17日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[855," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","jdbc",{"className":"page-module__y-5DuW__tag","children":"jdbc"}],["$","span","事务管理",{"className":"page-module__y-5DuW__tag","children":"事务管理"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"spring-jdbc","text":"spring-jdbc"},{"level":3,"id":"示例","text":"示例"},{"level":2,"id":"jdbc使用配置类配置","text":"jdbc使用配置类配置"},{"level":2,"id":"事务","text":"事务"},{"level":3,"id":"事务的传播特性","text":"事务的传播特性"},{"level":3,"id":"数据库锁","text":"数据库锁"},{"level":3,"id":"spring事务管理示例","text":"spring事务管理示例"},{"level":4,"id":"声明式事务","text":"声明式事务"},{"level":4,"id":"编程式事务","text":"编程式事务"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background transparent, wait, let's make it a nice seal or stone shape -->
+  <defs>
+    <linearGradient id="stoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a6741" />
+      <stop offset="100%" stop-color="#2c3e27" />
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8ba888" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c1d5be" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- The Stone Base (Rounded uneven polygon) -->
+  <path d="M25,20 C45,10 75,15 85,35 C95,55 80,85 55,90 C30,95 10,75 15,50 C20,30 15,25 25,20 Z" fill="url(#stoneGrad)" />
+  
+  <!-- Flowing Water Rings (Time / Flow) -->
+  <path d="M10,60 C30,75 60,85 90,60" fill="none" stroke="url(#waterGrad)" stroke-width="4" stroke-linecap="round" />
+  <path d="M5,45 C35,60 70,65 95,40" fill="none" stroke="url(#waterGrad)" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <path d="M20,30 C45,45 65,40 85,25" fill="none" stroke="url(#waterGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+
+  <!-- The Carved Text "刻" (abstract representation) -->
+  <path d="M40,35 L40,70 M30,50 L50,50 M60,35 L60,70 M60,45 L75,45 M65,45 C65,55 60,65 55,75 M70,45 C70,60 75,65 80,75" fill="none" stroke="#e0e5df" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

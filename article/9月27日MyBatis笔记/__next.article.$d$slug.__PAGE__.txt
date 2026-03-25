@@ -1,0 +1,301 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:Tb597,<h2 id="多表联查"><a href="#多表联查">多表联查</a></h2>
+<h3 id="示例1查询人员及人员所在的部门"><a href="#示例1查询人员及人员所在的部门">示例1：查询人员及人员所在的部门</a></h3>
+<p>AppTest.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test16</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException{
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession();
+        <span class="hljs-type">UserDao</span> <span class="hljs-variable">userDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(UserDao.class);
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> userDao.selectUserAndDeptByPrimaryKey01(<span class="hljs-string">"admin"</span>);
+        System.out.println(u);
+        sqlSession.close();
+        reader.close();
+    }
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test17</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession();
+        <span class="hljs-type">UserDao</span> <span class="hljs-variable">userDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(UserDao.class);
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> userDao.selectUserAndDeptByPrimaryKey02(<span class="hljs-string">"admin"</span>);
+        System.out.println(u);
+        sqlSession.close();
+        reader.close();
+
+
+    }
+</code></pre>
+<p>DeptDao.java</p>
+<pre><code class="hljs language-java">    Dept <span class="hljs-title function_">selectByPrimaryKey</span><span class="hljs-params">(Integer deptId)</span>;
+</code></pre>
+<p>DeptDao.xml</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectByPrimaryKey"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"BaseResultMap"</span>></span>
+        select <span class="hljs-tag">&#x3C;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">"columnName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">include</span>></span> from t_dept where dept_id = #{deptId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+</code></pre>
+<p>UserDao.java</p>
+<pre><code class="hljs language-java">    User <span class="hljs-title function_">selectUserAndDeptByPrimaryKey01</span><span class="hljs-params">(String userId)</span>;
+
+    User <span class="hljs-title function_">selectUserAndDeptByPrimaryKey02</span><span class="hljs-params">(String userId)</span>;
+
+    List&#x3C;User> <span class="hljs-title function_">selectAllByDeptId</span><span class="hljs-params">(String DeptId)</span>;
+</code></pre>
+<p>UserDao.xml</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Rm01"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.User"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"password"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"sex"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"tel"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"status"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"img"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">association</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"dept"</span> <span class="hljs-attr">javaType</span>=<span class="hljs-string">"com.zr.vo.Dept"</span> <span class="hljs-attr">select</span>=<span class="hljs-string">"com.zr.dao.DeptDao.selectByPrimaryKey"</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">association</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">resultMap</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Rm02"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.User"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"password"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"sex"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"tel"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"status"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"img"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">association</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"dept"</span> ></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_dept_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_location"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"location"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">association</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">resultMap</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectUserAndDeptByPrimaryKey01"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"Rm01"</span>></span>
+        select * from t_user where user_id = #{userId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectUserAndDeptByPrimaryKey02"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"Rm02"</span>></span>
+        select u.*,
+        d.dept_id as dept_dept_id,
+        d.dept_name as dept_dept_name,
+        d.location as dept_location,
+        d.create_time as dept_create_time,
+        d.create_user as dept_create_user,
+        d.modify_time as dept_modify_time,
+        d.modify_user as dept_modify_user
+
+        from t_user u left join t_dept d on u.dept_id=d.dept_id where u.user_id=#{userId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectAllByDeptId"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"BaseResultMap"</span>></span>
+        select * from t_user where dept_id=#{deptId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+</code></pre>
+<h3 id="示例2查询部门及该部门的所有人员"><a href="#示例2查询部门及该部门的所有人员">示例2：查询部门及该部门的所有人员</a></h3>
+<p>AppTest.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-comment">/**
+     * 查询部门及该部门的所有人员
+     *
+     * <span class="hljs-doctag">@throws</span> IOException
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test18</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession();
+        <span class="hljs-type">DeptDao</span> <span class="hljs-variable">deptDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(DeptDao.class);
+        <span class="hljs-type">Dept</span> <span class="hljs-variable">dept</span> <span class="hljs-operator">=</span> deptDao.selectByPrimaryKey01(<span class="hljs-number">1</span>);
+        System.out.println(dept);
+        sqlSession.close();
+        reader.close();
+
+
+    }
+    <span class="hljs-comment">/**
+     * 查询部门及该部门的所有人员
+     *
+     * <span class="hljs-doctag">@throws</span> IOException
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test19</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession();
+        <span class="hljs-type">DeptDao</span> <span class="hljs-variable">deptDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(DeptDao.class);
+        <span class="hljs-type">Dept</span> <span class="hljs-variable">dept</span> <span class="hljs-operator">=</span> deptDao.selectByPrimaryKey02(<span class="hljs-number">1</span>);
+        System.out.println(dept);
+        sqlSession.close();
+        reader.close();
+
+
+    }
+</code></pre>
+<p>DeptDao.xml</p>
+<pre><code class="hljs language-xml">   <span class="hljs-tag">&#x3C;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Rm01"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.Dept"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"location"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"location"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">collection</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userList"</span> <span class="hljs-attr">select</span>=<span class="hljs-string">"com.zr.dao.UserDao.selectAllByDeptId"</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">collection</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">resultMap</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Rm02"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.Dept"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_location"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"location"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+<span class="hljs-comment">&#x3C;!--        ofType collection的对象类型--></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">collection</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userList"</span> <span class="hljs-attr">ofType</span>=<span class="hljs-string">"com.zr.vo.User"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"password"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"sex"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"tel"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"status"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"img"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"dept_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"deptId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">collection</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">resultMap</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectByPrimaryKey01"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"Rm01"</span>></span>
+        select <span class="hljs-tag">&#x3C;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">"columnName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">include</span>></span> from t_dept where dept_id = #{deptId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectByPrimaryKey02"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"Rm02"</span>></span>
+        select u.* ,d.dept_id as dept_dept_id,
+               d.dept_name as dept_dept_name,
+               d.location as dept_location,
+               d.create_time as dept_create_time,
+               d.create_user as dept_create_user,
+               d.modify_time as dept_modify_time,
+               d.modify_user as dept_modify_user from t_dept d left join t_user u
+        on d.dept_id = u.dept_id where d.dept_id = #{deptId)}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+</code></pre>
+<p>DeptDao.java</p>
+<pre><code class="hljs language-java">    Dept <span class="hljs-title function_">selectByPrimaryKey01</span><span class="hljs-params">(Integer deptId)</span>;
+
+    Dept <span class="hljs-title function_">selectByPrimaryKey02</span><span class="hljs-params">(Integer deptId)</span>;
+</code></pre>
+<h3 id="延迟加载"><a href="#延迟加载">延迟加载</a></h3>
+<p>多表联查时配置延迟加载，可以在不需要查询某些表的时候不进行查询</p>
+<p>配置方法: mybatis-config.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">configuration</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">settings</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"logImpl"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"org.apache.ibatis.logging.stdout.StdOutImpl"</span>/></span>
+  <span class="hljs-comment">&#x3C;!-- 配置延迟加载 --></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"lazyLoadingEnabled"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"true"</span>/></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">settings</span>></span>
+</code></pre>
+<h3 id="动态sql"><a href="#动态sql">动态sql</a></h3>
+<p>适用于模糊查询，动态添加查询条件，使用<code>&#x3C;where></code>标签，其中用<code>&#x3C;if></code>标签做判断，用法如下</p>
+<p>UserDao.xml</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectAll"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"BaseResultMap"</span>></span>
+        select * from t_user
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">where</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userId != null and userId != ''"</span>></span>and user_id like '%${userId}%'<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userName != null"</span>></span>and user_name like '%${userName}%'<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">where</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+</code></pre>
+<p>AppTest.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-comment">/**
+     * 查询多条数据
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test02</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession(<span class="hljs-literal">false</span>);
+        <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        user.setUserId(<span class="hljs-string">"ad"</span>);
+        <span class="hljs-type">UserDao</span> <span class="hljs-variable">userDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(UserDao.class);
+        List&#x3C;User> userList = userDao.selectAll(user);
+        System.out.println(userList);
+        sqlSession.close();
+        reader.close();
+    }
+</code></pre>
+<h3 id="选择标签"><a href="#选择标签">选择标签</a></h3>
+<p><code>&#x3C;where>&#x3C;choose>&#x3C;when>&#x3C;otherwise></code>相当于 <code>if...else if... else...</code></p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectAllByOp"</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">"com.zr.vo.User"</span>></span>
+        select * from t_user
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">where</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">choose</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"op=='All'"</span>></span>user_name = #{userName}<span class="hljs-tag">&#x3C;/<span class="hljs-name">when</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"op=='Left'"</span>></span>user_name like '${userName}%'<span class="hljs-tag">&#x3C;/<span class="hljs-name">when</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">when</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"op=='Right'"</span>></span>user_name like '%${userName}'<span class="hljs-tag">&#x3C;/<span class="hljs-name">when</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">otherwise</span>></span>user_name like '%${userName}%'<span class="hljs-tag">&#x3C;/<span class="hljs-name">otherwise</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">choose</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">where</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+</code></pre>
+<p><code>test='判断语句'</code> 作为判断条件，满足则加入标签内的语句</p>
+<h3 id="trim标签"><a href="#trim标签">trim标签</a></h3>
+<p>mybatis的trim标签一般用于去除sql语句中多余的and关键字，逗号，或者给sql语句前拼接 “where“、“set“以及“values(“ 等前缀，或者添加“)“等后缀，可用于选择性插入、更新、删除或者条件查询等操作。</p>
+<p>示例</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">insert</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"insert"</span>></span>
+<span class="hljs-comment">&#x3C;!--        insert into t_user values (#{userId}, #{userName}, #{password}, #{sex}, #{tel}, #{status}, #{img}, #{deptId} #{createTime}, #{createUser}, #{modifyTime}, #{modifyUser})--></span>
+        insert into t_user
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">trim</span> <span class="hljs-attr">prefix</span>=<span class="hljs-string">"("</span> <span class="hljs-attr">suffix</span>=<span class="hljs-string">")"</span> <span class="hljs-attr">suffixOverrides</span>=<span class="hljs-string">","</span>></span> <span class="hljs-comment">&#x3C;!--忽略后缀逗号 --></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userId != null"</span>></span>user_id,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userName != null"</span>></span>user_name,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"password!= null"</span>></span>password,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"sex != null"</span>></span>sex,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"tel != null"</span>></span>tel,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"status!= null"</span>></span>status,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"img != null"</span>></span>img,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"deptId != null"</span>></span>dept_id,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"createTime!= null"</span>></span>create_time,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"createUser!= null"</span>></span>create_user,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"modifyTime!= null"</span>></span>modify_time,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"modifyUser!= null"</span>></span>modify_user,<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">trim</span>></span>
+                values
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">trim</span> <span class="hljs-attr">prefix</span>=<span class="hljs-string">"("</span> <span class="hljs-attr">suffix</span>=<span class="hljs-string">")"</span> <span class="hljs-attr">suffixOverrides</span>=<span class="hljs-string">","</span>></span> <span class="hljs-comment">&#x3C;!--忽略后缀逗号 --></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userId != null"</span>></span>#{userId},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"userName != null"</span>></span>#{userName},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"password!= null"</span>></span>#{password},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"sex != null"</span>></span>#{sex},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"tel != null"</span>></span>#{tel},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"status!= null"</span>></span>#{status},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"img != null"</span>></span>#{img},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"deptId != null"</span>></span>#{deptId},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"createTime!= null"</span>></span>#{createTime},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"createUser!= null"</span>></span>#{createUser},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"modifyTime!= null"</span>></span>#{modifyTime},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">"modifyUser!= null"</span>></span>#{modifyUser},<span class="hljs-tag">&#x3C;/<span class="hljs-name">if</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">trim</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">insert</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月27日MyBatis笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-27T17:26:20.000Z","children":"2022年9月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[927," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","mybatis",{"className":"page-module__y-5DuW__tag","children":"mybatis"}],["$","span","mysql",{"className":"page-module__y-5DuW__tag","children":"mysql"}],["$","span","数据库",{"className":"page-module__y-5DuW__tag","children":"数据库"}],["$","span","多表联查",{"className":"page-module__y-5DuW__tag","children":"多表联查"}],["$","span","动态加载",{"className":"page-module__y-5DuW__tag","children":"动态加载"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"多表联查","text":"多表联查"},{"level":3,"id":"示例1查询人员及人员所在的部门","text":"示例1：查询人员及人员所在的部门"},{"level":3,"id":"示例2查询部门及该部门的所有人员","text":"示例2：查询部门及该部门的所有人员"},{"level":3,"id":"延迟加载","text":"延迟加载"},{"level":3,"id":"动态sql","text":"动态sql"},{"level":3,"id":"选择标签","text":"选择标签"},{"level":3,"id":"trim标签","text":"trim标签"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

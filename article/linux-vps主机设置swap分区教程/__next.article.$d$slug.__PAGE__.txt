@@ -1,0 +1,43 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:Tbf7,<p>新买的VPS主机内存较小，跑的程序容易崩溃，为了解决这个问题，决定设置虚拟内存swap分页文件。</p>
+<h2 id="1-创建swap分区"><a href="#1-创建swap分区">1. 创建swap分区</a></h2>
+<p>Linux VPS主机设置swap空间的基本命令如下：</p>
+<pre><code class="hljs language-bash"><span class="hljs-comment">#查看swap分区的大小</span>
+free -h 
+<span class="hljs-comment">#删除所有SWAP分区</span>
+swapoff -a
+<span class="hljs-comment">#创建swap分区的文件，其中bs是每块的大小，count是块的数量，bs*count，就是swap文件的大小了，这里就是1M*2048=2G </span>
+<span class="hljs-built_in">dd</span> <span class="hljs-keyword">if</span>=/dev/zero of=/root/swapfile bs=1M count=2048
+<span class="hljs-comment">#格式化交换分区文件： </span>
+mkswap /root/swapfile
+<span class="hljs-comment">#启用swap分区文件： </span>
+swapon /root/swapfile
+<span class="hljs-comment">#添加开机启动，修改 /etc/fstab 这个文件，添加或者修改这一行：</span>
+/root/swapfile swap swap defaults 0 0 <span class="hljs-comment">#适用于redhat或centos系统</span>
+/root/swapfile none swap sw  0 0  <span class="hljs-comment">#适用于Ubuntu系统</span>
+<span class="hljs-comment">#或者直接执行以下命令写入/etc/fstab</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"/root/swapfile swap swap defaults 0 0"</span> >>/etc/fstab <span class="hljs-comment">#适用于redhat或ce</span>
+</code></pre>
+<p> </p>
+<h2 id="2-linux真实使用内存查看"><a href="#2-linux真实使用内存查看">2. Linux真实使用内存查看</a></h2>
+<p>Linux的内存管理机制与Windows有所不同，linux系统中，是进程优先使用内存，而不是磁盘，这样会加快读取速度。当有新的进程启动时，再从内存中开辟出一定空间，为新的进程所用。即使进程退出，也不会立刻从内存中清理掉，这样可以加快下次启动进程的速度，所以内存一直是使用率很高的。那么如何查看Linux真实使用内存？ 执行命令：<code>free -h</code> 可以查看Linux VPS主机的内存使用情况：</p>
+<pre><code class="hljs language-css">root<span class="hljs-keyword">@localhost</span>:~# free -h
+               total        used        free      shared  buff/cache   available
+<span class="hljs-attribute">Mem</span>:           <span class="hljs-number">2.0</span>G        <span class="hljs-number">1.3</span>G        <span class="hljs-number">382</span>M        <span class="hljs-number">106</span>M        <span class="hljs-number">280</span>M        <span class="hljs-number">416</span>M
+<span class="hljs-attribute">Swap</span>:          <span class="hljs-number">2.7</span>G        <span class="hljs-number">146</span>M        <span class="hljs-number">2.5</span>G
+</code></pre>
+<p>Linux VPS主机真实内存占用到底是多少呢？用 free 指令查看一下输出，用 used 减去 buffer 和 cache，才是你运行中的程序所占用的空间。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","建站技术",{"className":"page-module__y-5DuW__cat-badge","children":"建站技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Linux VPS主机设置swap分区教程"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-03-21T10:00:04.000Z","children":"2022年3月21日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[425," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","linux",{"className":"page-module__y-5DuW__tag","children":"linux"}],["$","span","swap",{"className":"page-module__y-5DuW__tag","children":"swap"}],["$","span","vps",{"className":"page-module__y-5DuW__tag","children":"vps"}],["$","span","主机",{"className":"page-module__y-5DuW__tag","children":"主机"}],["$","span","教程",{"className":"page-module__y-5DuW__tag","children":"教程"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1-创建swap分区","text":"1. 创建swap分区"},{"level":2,"id":"2-linux真实使用内存查看","text":"2. Linux真实使用内存查看"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

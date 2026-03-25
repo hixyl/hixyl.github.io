@@ -1,0 +1,172 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T2d61,<h2 id="scrollview-滑动视图"><a href="#scrollview-滑动视图">scrollView 滑动视图</a></h2>
+<p>在ScrollView当中只能有一个子控件</p>
+<h2 id="布局加载器的获取"><a href="#布局加载器的获取">布局加载器的获取</a></h2>
+<p>两种方式</p>
+<pre><code class="hljs language-java">        <span class="hljs-type">LayoutInflater</span> <span class="hljs-variable">layoutInflater</span> <span class="hljs-operator">=</span> LayoutInflater.from(<span class="hljs-built_in">this</span>);
+        <span class="hljs-type">LayoutInflater</span> <span class="hljs-variable">inflater</span> <span class="hljs-operator">=</span> getLayoutInflater();
+</code></pre>
+<h3 id="将view对象添加到listview的头布局"><a href="#将view对象添加到listview的头布局">将view对象添加到listview的头布局</a></h3>
+<pre><code class="hljs language-java">        ListView lv;
+        lv.addHeaderView(headerView);
+</code></pre>
+<p>示例：设置头布局和尾部局</p>
+<pre><code class="hljs language-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addHeaderAndFooterView</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">//将布局文件转换成view对象</span>
+<span class="hljs-comment">//        LayoutInflater layoutInflater = LayoutInflater.from(this);</span>
+        <span class="hljs-type">LayoutInflater</span> <span class="hljs-variable">inflater</span> <span class="hljs-operator">=</span> getLayoutInflater();
+        <span class="hljs-type">View</span> <span class="hljs-variable">headerView</span> <span class="hljs-operator">=</span> inflater.inflate(R.layout.item_lv_header, <span class="hljs-literal">null</span>);
+        lv.addHeaderView(headerView);
+        <span class="hljs-comment">//查找头布局的控件</span>
+        <span class="hljs-type">TextView</span> <span class="hljs-variable">tv1</span> <span class="hljs-operator">=</span> headerView.findViewById(R.id.header_tv1);
+        <span class="hljs-type">TextView</span> <span class="hljs-variable">tv2</span> <span class="hljs-operator">=</span> headerView.findViewById(R.id.header_tv2);
+        <span class="hljs-type">ImageView</span> <span class="hljs-variable">iv</span> <span class="hljs-operator">=</span> headerView.findViewById(R.id.header_iv);
+        tv1.setText(dao.getName());
+        tv2.setText(dao.getDate());
+        <span class="hljs-comment">//通过asset工具类读取图片数组</span>
+        String fname= <span class="hljs-string">"xzcontentlogo/"</span> + dao.getLogoname() + <span class="hljs-string">".png"</span>;
+        <span class="hljs-type">byte</span>[] array = AssetsUtils.getInstance(<span class="hljs-built_in">this</span>).getAssetByteArray(fname);
+        <span class="hljs-type">Bitmap</span> <span class="hljs-variable">bitmap</span> <span class="hljs-operator">=</span> BitmapFactory.decodeByteArray(array, <span class="hljs-number">0</span>, array.length);
+        iv.setImageBitmap(bitmap);
+        <span class="hljs-type">View</span> <span class="hljs-variable">footerview</span> <span class="hljs-operator">=</span> inflater.inflate(R.layout.item_footer, <span class="hljs-literal">null</span>);
+        lv.addFooterView(footerview);
+        <span class="hljs-type">TextView</span> <span class="hljs-variable">ft</span> <span class="hljs-operator">=</span> findViewById(R.id.footer_tv2);
+        ft.setText(dao.getInfo());
+
+
+    }
+</code></pre>
+<h2 id="fragment活动的碎片"><a href="#fragment活动的碎片">Fragment(活动的碎片)</a></h2>
+<p>fragment嵌入页面中，将Activity拆分为多个部分</p>
+<h3 id="在activity中加载startfragment碎片"><a href="#在activity中加载startfragment碎片">在activity中加载StartFragment碎片</a></h3>
+<p>注意，引入的fragment包要与fragmentManager对应的包头一致</p>
+<pre><code class="hljs language-java"><span class="hljs-comment">//在activity当中加载碎片的过程</span>
+<span class="hljs-comment">//1. 获取Fragment对象</span>
+starFragment = <span class="hljs-keyword">new</span> <span class="hljs-title class_">StarFragment</span>();
+<span class="hljs-comment">//2. 获取碎片管理者</span>
+manager = getSupportFragmentManager();
+<span class="hljs-comment">//3. 获取碎片事务对象</span>
+<span class="hljs-type">FragmentTransaction</span> <span class="hljs-variable">transaction</span> <span class="hljs-operator">=</span> manager.beginTransaction();
+<span class="hljs-comment">//4. 发布任务</span>
+transaction.add(R.id.r2_center, starFragment);
+<span class="hljs-comment">//5. 提交任务</span>
+transaction.commit();
+</code></pre>
+<h3 id="fragment示例"><a href="#fragment示例">fragment示例</a></h3>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.xyl.app1108.fragment;
+
+<span class="hljs-keyword">import</span> android.os.Bundle;
+
+<span class="hljs-keyword">import</span> androidx.fragment.app.Fragment;
+
+<span class="hljs-keyword">import</span> android.view.LayoutInflater;
+<span class="hljs-keyword">import</span> android.view.View;
+<span class="hljs-keyword">import</span> android.view.ViewGroup;
+
+<span class="hljs-keyword">import</span> com.xyl.app1108.R;
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">StarFragment</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Fragment</span> {
+
+    <span class="hljs-comment">/**
+     * 创建fragment绑定显示的view视图
+     * <span class="hljs-doctag">@param</span> inflater
+     * <span class="hljs-doctag">@param</span> container
+     * <span class="hljs-doctag">@param</span> savedInstanceState
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> View <span class="hljs-title function_">onCreateView</span><span class="hljs-params">(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState)</span> {
+        <span class="hljs-comment">// Inflate the layout for this fragment</span>
+        <span class="hljs-type">View</span> <span class="hljs-variable">view</span> <span class="hljs-operator">=</span> inflater.inflate(R.layout.fragment_star, container, <span class="hljs-literal">false</span>);
+        <span class="hljs-keyword">return</span> view;
+    }
+}
+</code></pre>
+<h3 id="点击radiobutton切换fragment示例"><a href="#点击radiobutton切换fragment示例">点击radioButton切换fragment示例</a></h3>
+<pre><code class="hljs language-java"> RadioGroup.<span class="hljs-type">OnCheckedChangeListener</span> <span class="hljs-variable">onCheckedChangeListener</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RadioGroup</span>.OnCheckedChangeListener() {
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onCheckedChanged</span><span class="hljs-params">(RadioGroup radioGroup, <span class="hljs-type">int</span> id)</span> {
+            transaction = manager.beginTransaction();
+            <span class="hljs-keyword">switch</span> (id) {
+                <span class="hljs-keyword">case</span> R.id.r2_rb1:
+                    titleTv.setText(<span class="hljs-string">"星座"</span>);
+                    transaction.hide(luckyFragment);
+                    transaction.hide(partnerFragment);
+                    transaction.hide(meFragment);
+                    transaction.show(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb2:
+                    titleTv.setText(<span class="hljs-string">"配对"</span>);
+                    transaction.hide(luckyFragment);
+                    transaction.show(partnerFragment);
+                    transaction.hide(meFragment);
+                    transaction.hide(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb3:
+                    titleTv.setText(<span class="hljs-string">"运势"</span>);
+                    transaction.show(luckyFragment);
+                    transaction.hide(partnerFragment);
+                    transaction.hide(meFragment);
+                    transaction.hide(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> R.id.r2_rb4:
+                    titleTv.setText(<span class="hljs-string">"我的"</span>);
+                    transaction.hide(luckyFragment);
+                    transaction.hide(partnerFragment);
+                    transaction.show(meFragment);
+                    transaction.hide(starFragment);
+                    transaction.commit();
+                    <span class="hljs-keyword">break</span>;
+            }
+        }
+    };
+</code></pre>
+<h2 id="圆形图像"><a href="#圆形图像">圆形图像</a></h2>
+<p>框架地址: <a href="https://github.com/hdodenhof/CircleImageView">https://github.com/hdodenhof/CircleImageView</a></p>
+<h3 id="gradle"><a href="#gradle">Gradle</a></h3>
+<pre><code class="hljs language-java">dependencies {
+    ...
+    implementation <span class="hljs-string">'de.hdodenhof:circleimageview:3.1.0'</span>
+}
+</code></pre>
+<h3 id="usage"><a href="#usage">usage</a></h3>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">de.hdodenhof.circleimageview.CircleImageView</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/profile_image"</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"96dp"</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"96dp"</span>
+    <span class="hljs-attr">android:src</span>=<span class="hljs-string">"@drawable/profile"</span>
+    <span class="hljs-attr">app:civ_border_width</span>=<span class="hljs-string">"2dp"</span>
+    <span class="hljs-attr">app:civ_border_color</span>=<span class="hljs-string">"#FF000000"</span>/></span>
+</code></pre>
+<h2 id="bundle"><a href="#bundle">Bundle</a></h2>
+<p>bundle: 放置数据的包装对象</p>
+<h3 id="放置数据"><a href="#放置数据">放置数据</a></h3>
+<pre><code class="hljs language-java"><span class="hljs-type">Bundle</span> <span class="hljs-variable">bundle</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Bundle</span>();
+bundle.putSerializable(<span class="hljs-string">"info"</span>, dao);
+starFragment.setArguments(bundle);
+</code></pre>
+<h3 id="获取数据"><a href="#获取数据">获取数据</a></h3>
+<p>在fragment的任意位置使用<code>getArguments()</code>即可</p>
+<pre><code class="hljs language-java"><span class="hljs-type">Bundle</span> <span class="hljs-variable">bundle</span> <span class="hljs-operator">=</span> getArguments();
+<span class="hljs-type">InfoDao</span> <span class="hljs-variable">info</span> <span class="hljs-operator">=</span> (InfoDao) bundle.getSerializable(<span class="hljs-string">"info"</span>);
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","Android学习",{"className":"page-module__y-5DuW__cat-badge","children":"Android学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"11月9日Android学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-11-09T18:35:23.000Z","children":"2022年11月9日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[434," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Android",{"className":"page-module__y-5DuW__tag","children":"Android"}],["$","span","ScrollView",{"className":"page-module__y-5DuW__tag","children":"ScrollView"}],["$","span","布局加载器",{"className":"page-module__y-5DuW__tag","children":"布局加载器"}],["$","span","Fragment",{"className":"page-module__y-5DuW__tag","children":"Fragment"}],["$","span","CircleImageView",{"className":"page-module__y-5DuW__tag","children":"CircleImageView"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"scrollview-滑动视图","text":"scrollView 滑动视图"},{"level":2,"id":"布局加载器的获取","text":"布局加载器的获取"},{"level":3,"id":"将view对象添加到listview的头布局","text":"将view对象添加到listview的头布局"},{"level":2,"id":"fragment活动的碎片","text":"Fragment(活动的碎片)"},{"level":3,"id":"在activity中加载startfragment碎片","text":"在activity中加载StartFragment碎片"},{"level":3,"id":"fragment示例","text":"fragment示例"},{"level":3,"id":"点击radiobutton切换fragment示例","text":"点击radioButton切换fragment示例"},{"level":2,"id":"圆形图像","text":"圆形图像"},{"level":3,"id":"gradle","text":"Gradle"},{"level":3,"id":"usage","text":"usage"},{"level":2,"id":"bundle","text":"Bundle"},{"level":3,"id":"放置数据","text":"放置数据"},{"level":3,"id":"获取数据","text":"获取数据"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

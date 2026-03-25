@@ -1,0 +1,274 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T54c6,<h2 id="简介"><a href="#简介">简介</a></h2>
+<p>MongoDB 是一个开源的文档数据库，并是领先的NoSQL数据库。</p>
+<h2 id="基础使用"><a href="#基础使用">基础使用</a></h2>
+<ol>
+<li>使用 <code>use 数据库名称</code> 用于创建数据库。该命令将创建一个新的数据库，如果它不存在，否则将返回现有的数据库。</li>
+<li>使用 <code>db</code> 用于查看当前所在数据库</li>
+<li>使用 <code>show dbs</code> 查看当前所有数据库</li>
+<li>使用<code>db.dropDatabase()</code> 删除当前所在的数据库。</li>
+<li>使用<code>db.createCollection(name, options)</code> 是用来创建集合。<br>
+<code>name：String</code> 要创建的集合名称<br>
+<code>options：Document</code> （可选）指定有关内存大小和索引选项</li>
+<li>使用<code>show collections</code> 查看当前数据库中的所有集合。</li>
+<li>使用<code>db.集合名称.drop()</code>用来删除一个集合。</li>
+</ol>
+<h2 id="查询"><a href="#查询">查询</a></h2>
+<ol>
+<li>插入一条数据:<br>
+<code>db.集合名称.insert({key1:val1,…..})</code><br>
+例：<code>db.c_user.insert({userid: "admin", username: "administrator", age: 20, address: "shanghai"})</code></li>
+<li>插入多条数据: 使用数组形式<br>
+例：<code>mymovies=[{name:"my movies02"},{name:"my movies03"}]</code></li>
+<li>使用MongoDB 的 <code>find()</code> 方法以非结构化的方式显示所有的文件。</li>
+<li>查询指定条目<br>
+<code>db.c_user.find({address: "changchun"})</code><br>
+查询c_user表中的address为changchun的所有数据
+<code>db.c_user.find({address: {$ne:"changchun"}})</code><br>
+查询不等于changchun的数据<br>
+<strong>其他关键字：</strong> <code>$lt</code> 小于； <code>$lte</code> 小于等于 ；  <code>$gt 大于</code>；  <code>$gte</code> 大于等于；  <code>$ne</code> 不等于<br>
+<strong>多条件<code>and</code>查询示例</strong>： <code>db.c_user.find({age:{$gt: 18},address:"shanghai"})</code><br>
+<strong>多条件<code>or</code>查询示例</strong>: <code>db.c_user.find({$or:[{age: 18}, {age: 20}]})</code><br>
+查询年龄大于18且居住在上海或存储的用户:<br>
+<code>db.c_user.find({age:{$gt:18},$or:[{address: "shanghai"},{address:"changchun"}]})</code></li>
+<li>使用MongoDB 的 <code>find() .pretty()</code>方法以结构化的方式显示所有的文件。<br>
+例：<code>db.c_user.find().pretty()</code> 查询<code>c_user</code>表中所有数据，并格式化显示</li>
+<li>使用MongoDB 的 <code>findOne()</code> 返回集合中的第一条文档数据。</li>
+</ol>
+<h2 id="修改"><a href="#修改">修改</a></h2>
+<p>使用<code>db.collection.update( criteria, objNew, upsert, multi )</code>更新现有的文档。
+Criteria 更新操作的条件，类似于SQL语句中的where字句<br>
+objNew update的对象和一些更新的操作符（如$,$inc...）等，也可以理解为sql update查询内set后面的<br>
+Upsert 这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。<br>
+multi  mongodb默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。</p>
+<p>例： <code>db.c_user.update({username:"zhangsan"},{$set:{age:22}}, false, true)</code><br>
+将用户名为张三的数据的年龄修改为22,<code>false</code>的意思指若无数据，是否添加，true的意思是否更新所有记录</p>
+<h2 id="删除"><a href="#删除">删除</a></h2>
+<p>MongoDB的 <code>remove(deletion criteria， justOne)</code> 方法用于从集合中删除文档。remove() 方法接受两个参数。<br>
+deletion criteria :（可选）删除标准，根据文件将被删除。<br>
+justOne : （可选）如果设置为true或1，然后只删除一个文件。</p>
+<p><strong>示例</strong>删除address为changchun的user:<br>
+<code>db.c_user.remove({address: "changchun"})</code></p>
+<h2 id="投影"><a href="#投影">投影</a></h2>
+<p>mongodb 投影意思是只选择必要的数据而不是选择一个文件的数据的整体。如果一个文档有5个字段，需要显示只有3个，然后选择其中只有3个字段。<br>
+MongoDB 的find()方法，在MongoDB查询文档接受的第二个可选参数是要检索的字段列表。<br>
+在MongoDB中，当执行find()方法，那么它会显示一个文档所有字段。要限制这一点，需要设置的字段列表值1或0。 1用来显示字段而0是用来隐藏字段。</p>
+<p>例: <code>db.c_user.find({age:{$gt: 18}},{_id:0, userid:1, username: 1})</code></p>
+<h2 id="限制记录"><a href="#限制记录">限制记录</a></h2>
+<p>要限制 MongoDB 中的记录，需要使用 <code>limit()</code> 方法。 <code>limit()</code> 方法接受一个数字型的参数，这是要显示的文档数。如果不指定数量 <code>limit()</code> 方法的参数，它会显示从集合中的所有文件。 </p>
+<p><code>db.infos.find().limit(2)</code></p>
+<p>除了<code>limit()</code> 方法，还有一个方法<code>skip()</code> 也接受数字类型的参数，并使用跳过的文档数。默认值skip()方法是0<br>
+<code>db.infos.find().limit(1).skip(1)</code></p>
+<h3 id="分页"><a href="#分页">分页</a></h3>
+<p><code>Skip()+Limit()</code> 实现文档数据分页显示<br>
+操作：分页显示用户数据，每页显示2条数据（pageSize=2）<br>
+pageSize: 单页显示的文档个数,使用limit(pageSize)控制<br>
+skip是第<code>(n-1)*pageSize</code>，n代表页数<br>
+显示第1页数据 <code>limit(pageSize)  skip((1-1)*pageSize)</code><br>
+db.infos.find(). limit(2).skip(0)<br>
+显示第2页数据 <code>limit(pageSize)  skip((2-1)*pageSize)</code><br>
+<code>db.infos.find(). limit(2). skip(2)</code></p>
+<h2 id="排序"><a href="#排序">排序</a></h2>
+<p>要在 MongoDB 中的文档进行排序，需要使用<code>sort()</code>法。 sort() 方法接受一个文档，其中包含的字段列表连同他们的排序顺序。要指定排序顺序1和-1。 1用于升序排列，而-1用于降序。<br>
+操作：按照年龄降序排列用户信息<br>
+<code>db.infos.find().sort({age:-1})</code></p>
+<h2 id="java连接mongodb示例"><a href="#java连接mongodb示例">java连接MongoDb示例</a></h2>
+<h3 id="导入依赖"><a href="#导入依赖">导入依赖</a></h3>
+<p>pom.xml</p>
+<pre><code class="hljs language-java">    &#x3C;dependency>
+      &#x3C;groupId>org.mongodb&#x3C;/groupId>
+      &#x3C;artifactId>mongo-java-driver&#x3C;/artifactId>
+      &#x3C;version><span class="hljs-number">3.12</span><span class="hljs-number">.11</span>&#x3C;/version>
+    &#x3C;/dependency>
+</code></pre>
+<h3 id="操作示例"><a href="#操作示例">操作示例</a></h3>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> org.bson.Document;
+
+<span class="hljs-keyword">import</span> com.mongodb.MongoClient;
+<span class="hljs-keyword">import</span> com.mongodb.client.FindIterable;
+<span class="hljs-keyword">import</span> com.mongodb.client.MongoCollection;
+<span class="hljs-keyword">import</span> com.mongodb.client.MongoCursor;
+<span class="hljs-keyword">import</span> com.mongodb.client.MongoDatabase;
+<span class="hljs-keyword">import</span> com.mongodb.client.model.Filters;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MongoDBJDBC</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span> {
+        <span class="hljs-comment">// deleteDocument();</span>
+        <span class="hljs-comment">// getCollection();</span>
+        <span class="hljs-comment">// insertDocuments();</span>
+        <span class="hljs-comment">// createCollection();</span>
+        getAllDocument();
+    }
+
+    <span class="hljs-comment">// 创建集合</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">createCollection</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// 连接到 mongodb 服务</span>
+            <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>(<span class="hljs-string">"localhost"</span>, <span class="hljs-number">27017</span>);
+            <span class="hljs-comment">// 连接到数据库</span>
+            <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);
+            System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+            mongoDatabase.createCollection(<span class="hljs-string">"test"</span>);
+            System.out.println(<span class="hljs-string">"集合创建成功"</span>);
+            mongoClient.close();
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            System.err.println(e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage());
+        }
+    }
+
+    <span class="hljs-comment">// 获取集合</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">getCollection</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// 连接到 mongodb 服务</span>
+            <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>(<span class="hljs-string">"localhost"</span>, <span class="hljs-number">27017</span>);
+            <span class="hljs-comment">// 连接到数据库</span>
+            <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);
+            System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+
+            MongoCollection&#x3C;Document> collection = mongoDatabase.getCollection(<span class="hljs-string">"test"</span>);
+            System.out.println(<span class="hljs-string">"集合test选择成功:"</span> + collection);
+            mongoClient.close();
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            System.err.println(e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage());
+        }
+    }
+    
+        <span class="hljs-comment">// 插入文档</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">insertDocuments</span><span class="hljs-params">()</span> {
+             <span class="hljs-keyword">try</span>{   
+                 <span class="hljs-comment">// 连接到 mongodb 服务</span>
+                 <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>( <span class="hljs-string">"localhost"</span> , <span class="hljs-number">27017</span> );
+                 
+                 <span class="hljs-comment">// 连接到数据库</span>
+                 <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);  
+                 System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+                 
+                 MongoCollection&#x3C;Document> collection = mongoDatabase.getCollection(<span class="hljs-string">"test"</span>);
+                 System.out.println(<span class="hljs-string">"集合 test 选择成功"</span>);
+                 <span class="hljs-comment">//插入文档  </span>
+                 <span class="hljs-comment">/** 
+                 * 1. 创建文档 org.bson.Document 参数为key-value的格式 
+                 * 2. 创建文档集合List&#x3C;Document> 
+                 * 3. 将文档集合插入数据库集合中 mongoCollection.insertMany(List&#x3C;Document>) 插入单个文档可以用 mongoCollection.insertOne(Document) 
+                 * */</span>
+                 <span class="hljs-type">Document</span> <span class="hljs-variable">document</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Document</span>(<span class="hljs-string">"title"</span>, <span class="hljs-string">"MongoDB"</span>).  
+                 append(<span class="hljs-string">"description"</span>, <span class="hljs-string">"database"</span>).  
+                 append(<span class="hljs-string">"likes"</span>, <span class="hljs-number">100</span>).  
+                 append(<span class="hljs-string">"by"</span>, <span class="hljs-string">"ZR"</span>);  
+                 List&#x3C;Document> documents = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&#x3C;Document>();  
+                 documents.add(document);  
+                 collection.insertMany(documents);  
+                 System.out.println(<span class="hljs-string">"文档插入成功"</span>); 
+                 mongoClient.close();
+              }<span class="hljs-keyword">catch</span>(Exception e){
+                 System.err.println( e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage() );
+              }
+        }
+        
+        <span class="hljs-comment">//检索所有文档</span>
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">getAllDocument</span><span class="hljs-params">()</span> {
+             <span class="hljs-keyword">try</span>{   
+                 <span class="hljs-comment">// 连接到 mongodb 服务</span>
+                 <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>( <span class="hljs-string">"localhost"</span> , <span class="hljs-number">27017</span> );
+                 
+                 <span class="hljs-comment">// 连接到数据库</span>
+                 <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);  
+                 System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+                 
+                 MongoCollection&#x3C;Document> collection = mongoDatabase.getCollection(<span class="hljs-string">"test"</span>);
+                 System.out.println(<span class="hljs-string">"集合 test 选择成功"</span>);
+                 
+                 <span class="hljs-comment">//检索所有文档  </span>
+                 <span class="hljs-comment">/** 
+                 * 1. 获取迭代器FindIterable&#x3C;Document> 
+                 * 2. 获取游标MongoCursor&#x3C;Document> 
+                 * 3. 通过游标遍历检索出的文档集合 
+                 * */</span>  
+                 FindIterable&#x3C;Document> findIterable = collection.find();  
+                 MongoCursor&#x3C;Document> mongoCursor = findIterable.iterator();  
+                 <span class="hljs-keyword">while</span>(mongoCursor.hasNext()){  
+                    System.out.println(mongoCursor.next());  
+                 }  
+                 mongoClient.close();
+              }<span class="hljs-keyword">catch</span>(Exception e){
+                 System.err.println( e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage() );
+              }
+        }
+        
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">updateDocument</span><span class="hljs-params">()</span> {
+             <span class="hljs-keyword">try</span>{   
+                 <span class="hljs-comment">// 连接到 mongodb 服务</span>
+                 <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>( <span class="hljs-string">"localhost"</span> , <span class="hljs-number">27017</span> );
+                 
+                 <span class="hljs-comment">// 连接到数据库</span>
+                 <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);  
+                 System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+                 
+                 MongoCollection&#x3C;Document> collection = mongoDatabase.getCollection(<span class="hljs-string">"test"</span>);
+                 System.out.println(<span class="hljs-string">"集合 test 选择成功"</span>);
+                 
+                 <span class="hljs-comment">//更新文档   将文档中likes=100的文档修改为likes=200   </span>
+                 collection.updateMany(Filters.eq(<span class="hljs-string">"likes"</span>, <span class="hljs-number">100</span>), <span class="hljs-keyword">new</span> <span class="hljs-title class_">Document</span>(<span class="hljs-string">"$set"</span>,<span class="hljs-keyword">new</span> <span class="hljs-title class_">Document</span>(<span class="hljs-string">"likes"</span>,<span class="hljs-number">200</span>)));  
+                 <span class="hljs-comment">//检索查看结果  </span>
+                 FindIterable&#x3C;Document> findIterable = collection.find();  
+                 MongoCursor&#x3C;Document> mongoCursor = findIterable.iterator();  
+                 <span class="hljs-keyword">while</span>(mongoCursor.hasNext()){  
+                    System.out.println(mongoCursor.next());  
+                 }  
+                 mongoClient.close();
+              }<span class="hljs-keyword">catch</span>(Exception e){
+                 System.err.println( e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage() );
+              }
+        }
+        
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">deleteDocument</span><span class="hljs-params">()</span> {
+            <span class="hljs-keyword">try</span>{   
+                 <span class="hljs-comment">// 连接到 mongodb 服务</span>
+                 <span class="hljs-type">MongoClient</span> <span class="hljs-variable">mongoClient</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MongoClient</span>( <span class="hljs-string">"localhost"</span> , <span class="hljs-number">27017</span> );
+
+                 <span class="hljs-comment">// 连接到数据库</span>
+                 <span class="hljs-type">MongoDatabase</span> <span class="hljs-variable">mongoDatabase</span> <span class="hljs-operator">=</span> mongoClient.getDatabase(<span class="hljs-string">"mydb"</span>);  
+                 System.out.println(<span class="hljs-string">"Connect to database successfully"</span>);
+
+                 MongoCollection&#x3C;Document> collection = mongoDatabase.getCollection(<span class="hljs-string">"test"</span>);
+                 System.out.println(<span class="hljs-string">"集合 test 选择成功"</span>);
+
+                 <span class="hljs-comment">//删除符合条件的第一个文档  </span>
+                 collection.deleteOne(Filters.eq(<span class="hljs-string">"likes"</span>, <span class="hljs-number">200</span>));  
+                 <span class="hljs-comment">//删除所有符合条件的文档  </span>
+                 collection.deleteMany (Filters.eq(<span class="hljs-string">"likes"</span>, <span class="hljs-number">200</span>));  
+                 <span class="hljs-comment">//检索查看结果  </span>
+                 FindIterable&#x3C;Document> findIterable = collection.find();  
+                 MongoCursor&#x3C;Document> mongoCursor = findIterable.iterator();  
+                 <span class="hljs-keyword">while</span>(mongoCursor.hasNext()){  
+                   System.out.println(mongoCursor.next());  
+                 }
+                 mongoClient.close();
+                   
+              }<span class="hljs-keyword">catch</span>(Exception e){
+                System.err.println( e.getClass().getName() + <span class="hljs-string">": "</span> + e.getMessage() );
+             }
+        }
+
+}
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"10月10日MongoDB学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-10-10T17:04:31.000Z","children":"2022年10月10日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1573," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","数据库",{"className":"page-module__y-5DuW__tag","children":"数据库"}],["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","MongoDB",{"className":"page-module__y-5DuW__tag","children":"MongoDB"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"简介","text":"简介"},{"level":2,"id":"基础使用","text":"基础使用"},{"level":2,"id":"查询","text":"查询"},{"level":2,"id":"修改","text":"修改"},{"level":2,"id":"删除","text":"删除"},{"level":2,"id":"投影","text":"投影"},{"level":2,"id":"限制记录","text":"限制记录"},{"level":3,"id":"分页","text":"分页"},{"level":2,"id":"排序","text":"排序"},{"level":2,"id":"java连接mongodb示例","text":"java连接MongoDb示例"},{"level":3,"id":"导入依赖","text":"导入依赖"},{"level":3,"id":"操作示例","text":"操作示例"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

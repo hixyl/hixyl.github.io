@@ -1,0 +1,157 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T3862,<h2 id="spel-表达式"><a href="#spel-表达式">SPEL 表达式</a></h2>
+<p>spring 表达式语言（简称SpEL）：是一个支持运行时查询和操作对象图的强大的表达式语言；<br>
+语法类似于 EL：SpEL 使用 #{…} 作为定界符，所有在大框号中的字符都将被认为是 SpEL；<br>
+SpEL 为 bean 的属性进行动态赋值提供了便利；</p>
+<p>通过 SpEL 可以实现：</p>
+<ol>
+<li>通过 bean 的 id 对 bean 进行引用；</li>
+<li>调用方法以及引用对象中的属性；</li>
+<li>计算表达式的值；</li>
+<li>正则表达式的匹配；</li>
+</ol>
+<h3 id="字面量的表示"><a href="#字面量的表示">字面量的表示</a></h3>
+<p>整数：<code>&#x3C;property name="count" value="#{5}"/></code><br>
+小数：<code>&#x3C;property name="frequency" value="#{89.7}"/></code><br>
+科学计数法：<code>&#x3C;property name="capacity" value="#{1e4}"/></code><br>
+String可以使用单引号或者双引号作为字符串的定界符号：<code>&#x3C;property name=“name” value="#{'Chuck'}"/></code> 或 <code>&#x3C;property name='name' value='#{"Chuck"}'/></code><br>
+Boolean：<code>&#x3C;property name="enabled" value="#{false}"/></code></p>
+<p><img src="/article/9月19日Spring笔记/9_19_01.PNG" alt="alt">
+<img src="/article/9月19日Spring笔记/9_19_02.PNG" alt="alt">
+<img src="/article/9月19日Spring笔记/9_19_03.PNG" alt="alt">
+<img src="/article/9月19日Spring笔记/9_19_04.PNG" alt="alt"></p>
+<h2 id="springmvc"><a href="#springmvc">SpringMVC</a></h2>
+<h3 id="springmvc-原理"><a href="#springmvc-原理">SpringMVC 原理</a></h3>
+<p><img src="/article/9月19日Spring笔记/9_19_05.PNG" alt="alt"></p>
+<p>HandlerMapping: 映射处理器<br>
+HandlerAdapter: 映射适配器<br>
+HttpMessageConveter: 消息转换器</p>
+<p>原理解析：<br>
+1、用户向服务器发送请求，请求被Spring前端控制ServeltDispatcherServlet捕获；<br>
+2、DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI）。然后根据该URI，调用HandlerMapping获得该Handler配置的所有相关的对象（包括Handler对象以及Handler对象对应的拦截器），最后以HandlerExecutionChain对象的形式返回；<br>
+3、DispatcherServlet根据获得的Handler，选择一个合适的HandlerAdapter。执行相应的Controller（附注：如果成功获得HandlerAdapter后，此时将开始执行拦截器的preHandler(...)方法）；<br>
+4、提取Request中的模型数据，填充Handler入参，开始执行Handler（Controller)。在填充Handler的入参过程中，根据配置，Spring将帮你做一些额外的工作：<br>
+HttpMessageConveter：将请求消息（如Json、xml等数据）转换成一个对象，将对象转换为指定的响应信息；<br>
+数据转换：对请求消息进行数据转换。如String转换成Integer、Double等；<br>
+数据根式化：对请求消息进行数据格式化。如将字符串转换成格式化数字或格式化日期等；<br>
+数据验证：验证数据的有效性（长度、格式等），验证结果存储到BindingResult或Error中；<br>
+5、Handler执行完成后，向DispatcherServlet返回一个ModelAndView对象；<br>
+6、根据返回的ModelAndView，选择一个适合的ViewResolver（必须是已经注册到Spring容器中的ViewResolver)返回给DispatcherServlet；<br>
+7、ViewResolver结合Model和View，来渲染视图；<br>
+8、将渲染结果返回给客户端；</p>
+<h3 id="配置示例"><a href="#配置示例">配置示例</a></h3>
+<p>web.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">web-app</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://xmlns.jcp.org/xml/ns/javaee"</span>
+         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"</span>
+         <span class="hljs-attr">version</span>=<span class="hljs-string">"4.0"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">context-param</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">param-name</span>></span>contextConfigLocation<span class="hljs-tag">&#x3C;/<span class="hljs-name">param-name</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">param-value</span>></span>classpath:spring-config.xml<span class="hljs-tag">&#x3C;/<span class="hljs-name">param-value</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">context-param</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">servlet</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">servlet-name</span>></span>DispatcherServlet<span class="hljs-tag">&#x3C;/<span class="hljs-name">servlet-name</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">servlet-class</span>></span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&#x3C;/<span class="hljs-name">servlet-class</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">init-param</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">param-name</span>></span>contextConfigLocation<span class="hljs-tag">&#x3C;/<span class="hljs-name">param-name</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">param-value</span>></span>classpath:spring-mvc.xml<span class="hljs-tag">&#x3C;/<span class="hljs-name">param-value</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">init-param</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">servlet</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">servlet-mapping</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">servlet-name</span>></span>DispatcherServlet<span class="hljs-tag">&#x3C;/<span class="hljs-name">servlet-name</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">url-pattern</span>></span>*.action<span class="hljs-tag">&#x3C;/<span class="hljs-name">url-pattern</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">servlet-mapping</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">listener</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">listener-class</span>></span>org.springframework.web.context.ContextLoaderListener<span class="hljs-tag">&#x3C;/<span class="hljs-name">listener-class</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">listener</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">web-app</span>></span>
+</code></pre>
+<p>spring-mvc.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">"http://www.springframework.org/schema/context"</span>
+       <span class="hljs-attr">xmlns:mvc</span>=<span class="hljs-string">"http://www.springframework.org/schema/mvc"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd"</span>></span>
+<span class="hljs-comment">&#x3C;!--    包扫描--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">"com.zr"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">context:component-scan</span>></span>
+    <span class="hljs-comment">&#x3C;!--映射处理器--></span>
+<span class="hljs-comment">&#x3C;!--    &#x3C;bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">&#x3C;/bean>--></span>
+    <span class="hljs-comment">&#x3C;!--映射适配器--></span>
+<span class="hljs-comment">&#x3C;!--    &#x3C;bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">&#x3C;/bean>--></span>
+
+<span class="hljs-comment">&#x3C;!--    开启RequestMapping映射处理器和适配器--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:annotation-driven</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">mvc:annotation-driven</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"prefix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/WEB-INF/views/"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"suffix"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">".jsp"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">beans</span>></span>
+</code></pre>
+<p>UserController.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.controller;
+
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
+
+<span class="hljs-meta">@Controller</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
+    <span class="hljs-meta">@RequestMapping("user/login.action")</span>
+    <span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password)</span>{
+        System.out.println(<span class="hljs-string">"userId:"</span>+userId+<span class="hljs-string">", password"</span>+password);
+        <span class="hljs-type">ModelAndView</span> <span class="hljs-variable">mav</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ModelAndView</span>();
+        mav.setViewName(<span class="hljs-string">"main"</span>);
+        <span class="hljs-keyword">return</span> mav;
+    }
+
+}
+</code></pre>
+<p>index.jsp</p>
+<pre><code class="hljs language-html">&#x3C;%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">h2</span>></span>Hello World!<span class="hljs-tag">&#x3C;/<span class="hljs-name">h2</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"user/login.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span>></span>
+    账号: <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"userId"</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    密码: <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">form</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>
+<p>WEB-INF/views/main.jsp</p>
+<pre><code class="hljs language-html">&#x3C;%--
+  Created by IntelliJ IDEA.
+  User: smile
+  Date: 2022/9/19
+  Time: 16:14
+  To change this template use File | Settings | File Templates.
+--%>
+&#x3C;%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>main<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+Main
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>
+<p>效果：在主页输入账号密码后，自动解析账号密码，调用controller层的方法，控制台输出账号密码，同时ModelAndView选择ViewResolver渲染，用户最后会跳转至main页面</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月19日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-19T17:28:40.000Z","children":"2022年9月19日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[789," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springMVC",{"className":"page-module__y-5DuW__tag","children":"springMVC"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"spel-表达式","text":"SPEL 表达式"},{"level":3,"id":"字面量的表示","text":"字面量的表示"},{"level":2,"id":"springmvc","text":"SpringMVC"},{"level":3,"id":"springmvc-原理","text":"SpringMVC 原理"},{"level":3,"id":"配置示例","text":"配置示例"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

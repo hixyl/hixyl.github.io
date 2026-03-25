@@ -1,0 +1,42 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+4:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+5:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+6:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+8:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T98a,<h2 id="前言"><a href="#前言">前言</a></h2>
+<p>学习git命令后，体会到其神奇之处，一直想借助github平台和hexo框架，将之前臃肿的wordpress网站迁移上去。终于在这周周末，抽出了时间去做这件事。这篇文章将记录本站的hexo框架部署过程。</p>
+<h2 id="hexo框架的安装"><a href="#hexo框架的安装">hexo框架的安装</a></h2>
+<pre><code class="hljs language-bash">
+<span class="hljs-built_in">sudo</span> npm install hexo-cli -g
+hexo init
+npm install hexo-deployer-git --save
+</code></pre>
+<h2 id="设置主题"><a href="#设置主题">设置主题</a></h2>
+<p>本站使用Butterfly主题，个人感觉非常美观。</p>
+<p>在根目录执行</p>
+<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+npm install hexo-renderer-pug hexo-renderer-stylus --save
+</code></pre>
+<p>修改 Hexo 根目录下的 <code>_config.yml</code>，把主题改为<code>butterfly</code></p>
+<pre><code class="hljs language-yaml"><span class="hljs-string">theme:butterfly</span>
+</code></pre>
+<p>在 hexo 的根目录创建一个文件 <code>_config.butterfly.yml</code>，并把主题目录的 <code>_config.yml</code> 内容复制到 <code>_config.butterfly.yml</code> 去。( 注意: 复制的是主题的 <code>_config.yml</code> ,而不是 hexo 的 <code>_config.yml</code>)</p>
+<blockquote>
+<p><strong>注意</strong>： 不要把主题目录的 <code>_config.yml</code> 删掉</p>
+</blockquote>
+<blockquote>
+<p><strong>注意</strong>： 以后只需要在 <code>_config.butterfly.yml</code>进行配置就行。如果使用了 <code>_config.butterfly.yml</code>， 配置主题的 <code>_config.yml</code> 将不会有效果。</p>
+</blockquote>
+<p>Hexo会自动合并主题中的<code>_config.yml</code>和 <code>_config.butterfly.yml</code>里的配置，如果存在同名配置，会使用<code>_config.butterfly.yml</code>的配置，其优先度较高。</p>
+<h2 id="压缩静态资源"><a href="#压缩静态资源">压缩静态资源</a></h2>
+<p>运用<code>hexo-all-minifier</code>插件</p>
+<pre><code class="hljs language-bash">npm install hexo-all-minifier --save
+</code></pre>
+<p>在<code>_config.yml</code>里添加</p>
+<pre><code class="hljs language-yaml"><span class="hljs-attr">all_minifier:</span> <span class="hljs-literal">true</span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","建站技术",{"className":"page-module__y-5DuW__cat-badge","children":"建站技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"关于本站迁移到github平台的新尝试"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-04T18:46:02.000Z","children":"2022年9月4日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[292," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",1," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],["$","$L4",null,{}],["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L5",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]]}],["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L6",null,{"headings":[{"level":2,"id":"前言","text":"前言"},{"level":2,"id":"hexo框架的安装","text":"hexo框架的安装"},{"level":2,"id":"设置主题","text":"设置主题"},{"level":2,"id":"压缩静态资源","text":"压缩静态资源"}]}]}]]}]}]],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

@@ -1,0 +1,212 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T2d11,<h2 id="今日内容总结"><a href="#今日内容总结">今日内容总结</a></h2>
+<pre><code class="hljs language-text">今天内容总结：
+1.安装android studio   、sdk，mumu，关联studio和模拟器
+2.创建android项目，运行android项目
+3.介绍android项目文件夹结构
+    java 编写代码
+    res 
+        mipmap:放置图片，
+        drawable:用xml编写图片背景，
+        layout-编写布局
+        values:放置统一的资源设置信息 
+            string.xml     color.xml     dimens.xml        themes.xml
+    AndroidManifest.xml
+4.容器类控件----布局
+    线性布局
+        放置方向
+        权重
+        gravity    layout_gravity
+    相对布局
+        4+4+4+3
+        内部控件属性
+    约束布局
+5.常见控件
+    View:
+        OnClickListener
+    TextView=========AppCompatTextView
+    会根据设置应用样式发生改变，Button等其他控件同理
+    相关属性：
+    
+    Button
+        1.在代码中设置监听
+        2.在drawable设置点击效果
+    
+    EditText
+        hint：提示信息
+        inputType：输入类型
+        设置背景：图片或者自己绘制xml
+    CheckBox
+        监听器
+        Compound.OnCheckChangeListener
+
+6.页面跳转
+    Intent intent = new Intent("当前的activity的对象","即将跳转的页面.class")；
+    startActivity(intent)
+
+</code></pre>
+<h2 id="android系统的体系结构"><a href="#android系统的体系结构">android系统的体系结构</a></h2>
+<p>应用程序层  应用程序框架层  函数层  android运行时  Linux内核</p>
+<h2 id="dvm与jvm的区别"><a href="#dvm与jvm的区别">DVM与JVM的区别</a></h2>
+<ol>
+<li>基于内存不同。 DVM基于寄存器，JVM基于栈</li>
+<li>字节码不同。 .dex    .class</li>
+<li>SDK不同</li>
+<li>运行环境不同</li>
+</ol>
+<h2 id="生成的应用程序中重要的文件夹结构"><a href="#生成的应用程序中重要的文件夹结构">生成的应用程序中重要的文件夹结构</a></h2>
+<p>src:java源代码 ，放置处理逻辑的代码<br>
+res:存放资源文件，放置图片，xml文件<br>
+AndroidMainFest.xml   清单文件，包名，应用名，版本号，icon，使用权限，注册各种组件</p>
+<h2 id="android的四大组件"><a href="#android的四大组件">Android的四大组件</a></h2>
+<ol>
+<li>Activity：提供了与用户交互的视图。</li>
+<li>Service：    服务，一般很少有界面，多是后台的操作，例如后台下载等等。</li>
+<li>BroadcastReceiver：广播接收者，相当于一个监视器，当程序发送广播时，会处理相应的逻辑</li>
+<li>ContentProvider： 内容提供者，实现了跨进程的通信。</li>
+</ol>
+<h2 id="android的ui控件分为两类"><a href="#android的ui控件分为两类">android的ui控件分为两类</a></h2>
+<ol>
+<li>容器类控件：<br>
+ViewGroup<br>
+LinearLayout（线性布局）<br>
+RelativeLayout（相对布局）<br>
+FrameLayout(帧布局)<br>
+AbsoluteLayout（绝对布局）TableLayout  (表格布局)<br>
+GridLayout(网格布局)</li>
+<li>视图类控件：<br>
+View   Button   TextView   EditText   RadioButton   Checkbox   ImageView  ImageButton.......</li>
+</ol>
+<h2 id="view"><a href="#view">view</a></h2>
+<p>View  android中所有UI控件的父类</p>
+<p>android中所有的ui控件都放在两个包中，android.view,android.widget</p>
+<ol>
+<li>android:id<br>
+该控件在布局当中的唯一标识，（在同一个布局当中，id名不能重复）</li>
+<li>android:background<br>
+为控件设置背景（可以设置为颜色的色值，也可以直接使用图片）</li>
+<li>android:padding<br>
+控件对于其子控件设置的四个边的内边距</li>
+<li>android:paddingTop<br>
+控件对于其子控件设置的上边的内边距</li>
+<li>android:paddingBottom<br>
+控件对于其子控件设置的下边的内边距</li>
+<li>android:paddingLeft<br>
+控件对于其子控件设置的左边的内边距</li>
+<li>android:paddingRight<br>
+控件对于其子控件设置的右边的内边距</li>
+</ol>
+<h2 id="viewgroup布局管理器"><a href="#viewgroup布局管理器">ViewGroup：布局管理器</a></h2>
+<p>提供了两个内部类：<br>
+ViewGroup.LayoutParams<br>
+android:layout_height: 控件在屏幕纵向的长度<br>
+android:layout_width：控件在屏幕横向的长度<br>
+上面的两个属性提供了三个属性值<br>
+FILL_PARENT：填充父类，填充窗体<br>
+MATCH_PARENT：匹配父类，和fill_parent效果是相同的，在android2.2之后建议使用这种属性。<br>
+WRAP_CONTENT：包裹内容，只要确定包裹住内部控件就可以了。<br>
+也可以使用绝对的数值对以上两个属性进行赋值。
+150dp，120dp</p>
+<h2 id="viewgroupmarginlayoutparams"><a href="#viewgroupmarginlayoutparams">ViewGroup.MarginLayoutParams</a></h2>
+<p>android:layout_margin: 设置控件在四个边上的外边距。<br>
+android:layout_marginTop: 设置控件在上边的外边距。<br>
+android:layout_marginBottom: 设置控件在下边的外边距。<br>
+android:layout_marginLeft: 设置控件在左边的外边距。<br>
+android:layout_marginRight: 设置控件在右边的外边距。</p>
+<h2 id="什么是dp"><a href="#什么是dp">什么是dp？</a></h2>
+<p>dp：代表每英寸上有多少个像素点，和px是不同的。<br>
+dip：和dp完全相同<br>
+sp：文字大小使用的单位<br>
+px：分辨率，屏幕上的像素点</p>
+<h2 id="怎么用xml文件去控制ui布局"><a href="#怎么用xml文件去控制ui布局">怎么用xml文件去控制ui布局？</a></h2>
+<ol>
+<li>在res/layout文件夹中新建一个布局文件：.xml文件<br>
+Android XML File</li>
+<li>在src文件夹对应的包中新建一个类，让这个类继承Activity</li>
+<li>重写Activity的onCreate()方法，然后在这个方法当中调用setContentView()方法，可以把布局和代码相连接。<br>
+格式：setContentView(R.layout.&#x3C;资源文件名>);
+4 在清单文件中注册此activity。<br>
+<code>&#x3C;activity name="com.qf.demo01.FirstActivity"/></code></li>
+</ol>
+<h2 id="linearlayout线性布局"><a href="#linearlayout线性布局">LinearLayout(线性布局)</a></h2>
+<ol>
+<li>将其中包含的控件使用横向或者是纵向排列。</li>
+<li>控件的长度和宽度可以带权重。<br>
+android:orientation   设置布局内控件的排列方式。<br>
+horizontal：水平的<br>
+vertical：垂直的<br>
+android:weightSum     设置布局内控件的总权重<br>
+android:gravity       设置布局管理器内控件的放置位置   （外对内的要求，是容器对内容的重力要求）</li>
+</ol>
+<p>包含的子控件常用的属性：<br>
+android:layout_weight   设置该控件在线性布局中所占的权重。<br>
+【内对外的请求，用于分配剩余空间的权重属性】<br>
+剩余空间 = 总长度-已分配的长度<br>
+备注：<br>
+如果是水平方向设置权重，就把layout_width的属性值设为0dp<br>
+如果是垂直方向设置权重，就把layout_height的属性值设为0dp</p>
+<p>android:layout_gravity  设置该控件在布局中的放置位置。  （内对外的请求，用来设置控件相对于外层容器的控制位置）</p>
+<p><strong>特点</strong>:
+1.垂直线性布局，每一行只能放一个控件，到底部装不下的就会被挤出去。（全部或者部分）
+2.水平线性布局，每一列只能放一个控件，到右边装不下的就会被挤出去。 （全部或者部分）</p>
+<p>代表事例：爬格子事例，计算器事例</p>
+<h2 id="relativelayout相对布局"><a href="#relativelayout相对布局">RelativeLayout(相对布局)</a></h2>
+<p>概念：指控件之间或者控件与容器之间的相对位置进行排列的。<br>
+相对布局的特有属性：<br>
+android:gravity        设置布局容器内子控件对于容器的对齐方式，相对布局默认的方向是左上<br>
+android:ignoreGravity    设置布局容器内哪个控件都不受gravity属性的影响。   属性值为指定控件的id。</p>
+<p>RelativeLayout的子元素（子控件）特有的属性。   4+5+7=16 个属性<br>
+1.第一组（4个）：兄弟控件之间的相对位置。该组属性的值就是另一个控件的id。<br>
+android:layout_toLeftOf      :该控件在哪个控件的左侧   api17之后建议使用    layout_toStartOf
+android:layout_toRightOf      该控件在哪个控件的右侧   api17之后建议使用   layout_toEndOf<br>
+android:layout_above   该控件在哪个控件的上边<br>
+android:layout_below   该控件在哪个控件的下边</p>
+<p>2.第二组（5个）：兄弟控件之间的对齐位置（都是以align开头的）。该组属性的值就是另一个控件的id。
+android:layout_alignRight     该控件的右边与指定控件的右边对齐。<br>
+android:layout_alignLeft      该控件的左边与指定控件的左边对齐。<br>
+android:layout_alignTop       该控件的上边与指定控件的上边对齐。<br>
+android:layout_alignBottom    该控件的下边与指定控件的下边对齐。<br>
+android:layout_alignBaseLine  该控件与指定控件的基线对齐。（首行文本对齐）</p>
+<p>3.第三组（7个）：控件与父布局（父容器）的对齐关系。该组属性的值是true或者是false。<br>
+android:layout_alignParentRight    设置是否该控件与其父容器右对齐<br>
+android:layout_alignParentLeft 设置是否该控件与其父容器左对齐<br>
+android:layout_alignParentTop 设置是否该控件与其父容器上对齐<br>
+android:layout_alignParentBottom 设置是否该控件与其父容器下对齐<br>
+android:layout_centerVertical 设置是否该控件位于父类控件垂直中心方向<br>
+android:layout_centerHorizontal 设置是否该控件位于父类控件水平中心方向<br>
+android:layout_centerInParent 设置是否该控件位于父类控件中心位置</p>
+<p>使用注意点：
+1.在相对布局中必须避免循环的描述。
+2.在布局里面，线性布局特有的属性在相对布局中不一定有效果。比如说weight这个属性在相对布局中不生效。
+相对布局独有的属性，放在线性布局当中一样不生效。</p>
+<p>相对布局代表事例：梅花布局，登录注册布局</p>
+<h2 id="framelayout帧布局"><a href="#framelayout帧布局">FrameLayout(帧布局)</a></h2>
+<ol>
+<li>帧布局中每一个组件都代表了一个“独立的”画面。</li>
+<li>默认以屏幕左上角作为（0，0）坐标。按组件定义的先后顺序依次逐层显示，后面出现的会覆盖前面的画面。每新加一个组件就相当于新的一层覆盖上去。</li>
+</ol>
+<p>属性介绍：</p>
+<p>android:foreground 会放置在布局管理器所有组件之上
+android:foregroundGravity 控制放置在最前面的图片的位置。</p>
+<p>帧布局代表事例：拉花布局，霓虹灯布局</p>
+<h2 id="absolutelayout绝对布局"><a href="#absolutelayout绝对布局">AbsoluteLayout（绝对布局）</a></h2>
+<p>还有一个名字：坐标布局，可以直接的指定子元素的绝对位置。<br>
+这种布局有一个好处，简单直接，直观性强<br>
+使用android:layout_x这个属性确定x坐标，以左上角为定点<br>
+使用android:layout_y这个属性确定y坐标，以左上角为定点<br>
+如果子元素不设置android:layout_x，android:layout_y这两个属性，默认值是0，会出现在左上角。<br>
+由于手机屏幕尺寸差距比较大，使用绝对布局适应性就比较差，所以就过时了。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","Android学习",{"className":"page-module__y-5DuW__cat-badge","children":"Android学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"11月3日Android学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-11-03T16:38:53.000Z","children":"2022年11月3日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2199," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Android",{"className":"page-module__y-5DuW__tag","children":"Android"}],["$","span","layout",{"className":"page-module__y-5DuW__tag","children":"layout"}],["$","span","activity",{"className":"page-module__y-5DuW__tag","children":"activity"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"今日内容总结","text":"今日内容总结"},{"level":2,"id":"android系统的体系结构","text":"android系统的体系结构"},{"level":2,"id":"dvm与jvm的区别","text":"DVM与JVM的区别"},{"level":2,"id":"生成的应用程序中重要的文件夹结构","text":"生成的应用程序中重要的文件夹结构"},{"level":2,"id":"android的四大组件","text":"Android的四大组件"},{"level":2,"id":"android的ui控件分为两类","text":"android的ui控件分为两类"},{"level":2,"id":"view","text":"view"},{"level":2,"id":"viewgroup布局管理器","text":"ViewGroup：布局管理器"},{"level":2,"id":"viewgroupmarginlayoutparams","text":"ViewGroup.MarginLayoutParams"},{"level":2,"id":"什么是dp","text":"什么是dp？"},{"level":2,"id":"怎么用xml文件去控制ui布局","text":"怎么用xml文件去控制ui布局？"},{"level":2,"id":"linearlayout线性布局","text":"LinearLayout(线性布局)"},{"level":2,"id":"relativelayout相对布局","text":"RelativeLayout(相对布局)"},{"level":2,"id":"framelayout帧布局","text":"FrameLayout(帧布局)"},{"level":2,"id":"absolutelayout绝对布局","text":"AbsoluteLayout（绝对布局）"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

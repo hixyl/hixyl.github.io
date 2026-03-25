@@ -1,0 +1,171 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T39dc,<h2 id="项目管理工具-maven"><a href="#项目管理工具-maven">项目管理工具 Maven</a></h2>
+<p>使用Maven 创建的项目，名字叫Maven 项目。Maven 项目分为：Java项目和web项目，注意：Maven项目目录和普通的目录不同</p>
+<p><img src="/article/9月13日Spring笔记/9_13_01.PNG" alt="alt"></p>
+<p>放在测试目录下的资源，不会被发布到正式的项目中</p>
+<p>pom.xml 解析</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span>
+         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+         &#x3C;!<span class="hljs-attr">--</span> <span class="hljs-attr">xsd</span> <span class="hljs-attr">文件</span>：<span class="hljs-attr">描述文件</span>，<span class="hljs-attr">约束pom.xml格式</span> <span class="hljs-attr">--</span>></span>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> 
+
+    <span class="hljs-comment">&#x3C;!-- model版本为4.0 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">modelVersion</span>></span>4.0.0<span class="hljs-tag">&#x3C;/<span class="hljs-name">modelVersion</span>></span>
+    <span class="hljs-comment">&#x3C;!-- groupId一般为网址倒序 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>com.zr<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+    
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>mvn-1<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+    <span class="hljs-comment">&#x3C;!-- 版本号：正式发布版本用整数1.0,2.0等，内测版本用小数 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>1.0-SNAPSHOT<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">properties</span>></span>
+        <span class="hljs-comment">&#x3C;!-- java版本为8 --></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.source</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.source</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.target</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.target</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">properties</span>></span>
+    <span class="hljs-comment">&#x3C;!-- 以下添加依赖包 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">dependencies</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>4.13.2<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">scope</span>></span>test<span class="hljs-tag">&#x3C;/<span class="hljs-name">scope</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependencies</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">project</span>></span>
+</code></pre>
+<h2 id="junit-单元测试"><a href="#junit-单元测试">junit 单元测试</a></h2>
+<p>在test文件夹下的测试类中</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.faw;
+
+<span class="hljs-keyword">import</span> org.junit.Test;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FawTest</span> {
+    <span class="hljs-comment">// 后置方法</span>
+    <span class="hljs-meta">@After</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">t1</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">"t1"</span>);
+    }
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">t2</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">"t1"</span>);
+    }
+    <span class="hljs-comment">// 前置方法</span>
+    <span class="hljs-meta">@Before</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">t3</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">"t1"</span>);
+    }
+}
+</code></pre>
+<h2 id="spring-的特点"><a href="#spring-的特点">Spring 的特点</a></h2>
+<ol>
+<li>轻量级
+Spring 是非侵入性的 - 基于 Spring 开发的应用中的对象可以不依赖于 Spring 的 API</li>
+<li>依赖注入(DI --- dependency injection、IOC)</li>
+<li>面向切面编程(AOP --- aspect oriented programming)</li>
+<li>容器
+Spring 是一个容器, 因为它包含并且管理应用对象的生命周期</li>
+<li>框架
+Spring 实现了使用简单的组件配置组合成一个复杂的应用
+在 Spring 中可以使用 XML 和 Java 注解组合这些对象</li>
+<li>一站式
+在 IOC 和 AOP 的基础上可以整合各种企业应用的开源框架和优秀的第三方类库 （实际上 Spring 自身也提供了展现层的 SpringMVC 和 持久层的 Spring JDBC）</li>
+</ol>
+<h2 id="引入spring-的方法"><a href="#引入spring-的方法">引入Spring 的方法</a></h2>
+<p>利用Maven引入相关包<br>
+<code>pom.xml</code>文件示例</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span>
+         <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+         <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">modelVersion</span>></span>4.0.0<span class="hljs-tag">&#x3C;/<span class="hljs-name">modelVersion</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.example<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>SpringIOC<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>1.0-SNAPSHOT<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">dependencies</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>junit<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>4.12<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">scope</span>></span>test<span class="hljs-tag">&#x3C;/<span class="hljs-name">scope</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-core<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-beans<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">dependency</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">groupId</span>></span>org.springframework<span class="hljs-tag">&#x3C;/<span class="hljs-name">groupId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">artifactId</span>></span>spring-context<span class="hljs-tag">&#x3C;/<span class="hljs-name">artifactId</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">version</span>></span>5.3.22<span class="hljs-tag">&#x3C;/<span class="hljs-name">version</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependency</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">dependencies</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">properties</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.source</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.source</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">maven.compiler.target</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">maven.compiler.target</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">properties</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">project</span>></span>
+</code></pre>
+<h2 id="spring-核心"><a href="#spring-核心">Spring 核心</a></h2>
+<ol>
+<li>IOC (控制反转)</li>
+<li>DI (依赖注入)</li>
+<li>AOP (面向切面编程)</li>
+</ol>
+<p>控制反转(IOC): 对象创建的控制权油编程人员控制，反转成由Spring框架控制</p>
+<h2 id="spring-第一个项目示例"><a href="#spring-第一个项目示例">Spring 第一个项目示例</a></h2>
+<p>spring.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans"</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"person"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Person"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.vo.Dog"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">beans</span>></span>
+</code></pre>
+<p>SpringTest.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr;
+
+<span class="hljs-keyword">import</span> com.zr.vo.Dog;
+<span class="hljs-keyword">import</span> com.zr.vo.Person;
+<span class="hljs-keyword">import</span> org.springframework.context.ApplicationContext;
+<span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringTest</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">ac</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">"spring.xml"</span>);
+        <span class="hljs-type">Dog</span> <span class="hljs-variable">dog</span> <span class="hljs-operator">=</span> (Dog)ac.getBean(<span class="hljs-string">"dog"</span>);
+        <span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> ac.getBean(Person.class);
+        System.out.println(dog);
+        System.out.println(person);
+
+    }
+}
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月13日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-13T17:26:57.000Z","children":"2022年9月13日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[544," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","maven",{"className":"page-module__y-5DuW__tag","children":"maven"}],["$","span","xml",{"className":"page-module__y-5DuW__tag","children":"xml"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"项目管理工具-maven","text":"项目管理工具 Maven"},{"level":2,"id":"junit-单元测试","text":"junit 单元测试"},{"level":2,"id":"spring-的特点","text":"Spring 的特点"},{"level":2,"id":"引入spring-的方法","text":"引入Spring 的方法"},{"level":2,"id":"spring-核心","text":"Spring 核心"},{"level":2,"id":"spring-第一个项目示例","text":"Spring 第一个项目示例"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

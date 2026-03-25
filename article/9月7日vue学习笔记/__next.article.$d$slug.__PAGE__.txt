@@ -1,0 +1,247 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T41f3,<h1 id="vue脚手架"><a href="#vue脚手架">vue脚手架</a></h1>
+<p>安装后，进入脚手架目录</p>
+<pre><code class="hljs language-bash">npm install
+npm run dev
+</code></pre>
+<h2 id="项目结构"><a href="#项目结构">项目结构</a></h2>
+<p><img src="/article/9月7日vue学习笔记/md01.png" alt="alt"></p>
+<p>main.js 解析</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span> <span class="hljs-comment">//从node_modules导入</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span> <span class="hljs-comment">//从当前目录导入App.vue</span>
+<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">'./router'</span> <span class="hljs-comment">//导入router文件夹内的index.js</span>
+</code></pre>
+<p>index.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">HelloWorld</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/HelloWorld'</span><span class="hljs-comment">//@表示src</span>
+</code></pre>
+<h2 id="路由"><a href="#路由">路由</a></h2>
+<p>login.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"login"</span>
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-comment">/*scoped只在当前组件起作用，不影响父组件*/</span>
+
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<p>router/index.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Router</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue-router'</span>
+<span class="hljs-comment">// import HelloWorld from '@/components/HelloWorld'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Login</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/Login'</span>
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">Router</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Router</span>({
+  <span class="hljs-attr">routes</span>: [
+    <span class="hljs-comment">// {</span>
+    <span class="hljs-comment">//   path: '/',</span>
+    <span class="hljs-comment">//   name: 'HelloWorld',</span>
+    <span class="hljs-comment">//   component: HelloWorld</span>
+    <span class="hljs-comment">// }</span>
+    {
+      <span class="hljs-attr">path</span>:<span class="hljs-string">'/'</span>, <span class="hljs-comment">//默认路由，跳转至/Login</span>
+      <span class="hljs-attr">redirect</span>:<span class="hljs-string">'/Login'</span>
+    },
+    {
+      <span class="hljs-attr">path</span>:<span class="hljs-string">'/Login'</span>, <span class="hljs-comment">//可以直接为'/', 如果没有根路由，必须加前面的跳转</span>
+      <span class="hljs-attr">name</span>:<span class="hljs-string">'Login'</span>,
+      <span class="hljs-attr">component</span>: <span class="hljs-title class_">Login</span>
+    }
+  ]
+})
+</code></pre>
+<p>路由模式</p>
+<h3 id="路由配置项"><a href="#路由配置项">路由配置项</a></h3>
+<p><img src="/article/9月7日vue学习笔记/md02.png" alt="alt"></p>
+<p><img src="/article/9月7日vue学习笔记/md03.png" alt="alt"></p>
+<h3 id="router-标签"><a href="#router-标签">router 标签</a></h3>
+<p>router中常用的标签为</p>
+<ol>
+<li>router-link：路由连接标签，最终被解析为a标签。</li>
+<li>router-view：路由插槽，用于视图显示区域。</li>
+</ol>
+<p>router的跳转方式：
+• push： 向history 栈添加一个新的记录，可以使用浏览器的back按键返回。<br>
+• replace：直接替换当前浏览器路径，无法返回。</p>
+<p>• $router : 是路由操作对象，提供了路由切换参数传递等功能。<br>
+• $route : 路由信息对象，只读对象，可以读取当前组件路由信息。</p>
+<p><img src="/article/9月7日vue学习笔记/md04.PNG" alt="alt"></p>
+<p>示例</p>
+<p>Login.vue</p>
+<pre><code class="hljs language-javascript">&#x3C;template>
+  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    登录组件
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">router-link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"Home"</span>></span>主页<span class="hljs-tag">&#x3C;/<span class="hljs-name">router-link</span>></span> //添加链接，点击跳转home组件
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+&#x3C;/template>
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Login"</span>
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span></span>
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-comment">/*scoped只在当前组件起作用，不影响父组件*/</span>
+
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span></span>
+</code></pre>
+<h3 id="router传参"><a href="#router传参">router传参</a></h3>
+<p>Login.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    登录组件
+    <span class="hljs-comment">&#x3C;!-- 用v-bind: 传参 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">router-link</span> <span class="hljs-attr">:to</span>=<span class="hljs-string">"{name:'Home', params:{userName :'李雷'}}"</span> <span class="hljs-attr">tag</span>=<span class="hljs-string">"button"</span>></span>主页<span class="hljs-tag">&#x3C;/<span class="hljs-name">router-link</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">router-link</span> <span class="hljs-attr">:to</span>=<span class="hljs-string">"{path:'/Home', query:{userName2 :'query传的参'}}"</span> <span class="hljs-attr">tag</span>=<span class="hljs-string">"button"</span>></span>主页<span class="hljs-tag">&#x3C;/<span class="hljs-name">router-link</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"toHome"</span>></span>主页<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Login"</span>,
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">toHome</span>(<span class="hljs-params"></span>){
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>({<span class="hljs-attr">name</span>:<span class="hljs-string">'Home'</span>, <span class="hljs-attr">params</span>:{<span class="hljs-attr">userName</span>:<span class="hljs-string">'李雷'</span>}})
+    }
+  },
+
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-comment">/*scoped只在当前组件起作用，不影响父组件*/</span>
+
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<p>Home.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    <span class="hljs-comment">&#x3C;!-- 花括号接收传参 --></span>
+    主页组件,{{userName}} 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    {{this.$route.query.userName2}}
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Home"</span>,
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">userName</span>:<span class="hljs-string">''</span>
+    }
+  },
+  <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">userName</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">$route</span>.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span> <span class="hljs-comment">//接收传参</span>
+  },
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<h2 id="导航守卫"><a href="#导航守卫">导航守卫</a></h2>
+<p>全局路由守卫：<code>beforeEach</code><br>
+守卫的参数：每个守卫函数都具备如下三个参数，通过参数可以获取跳转前、跳转后的路由对象。<br>
+• to：要进入的目标路由对象<br>
+• from：正在离开的路由对象<br>
+• next：函数，只有调用该函数，导航钩子才会被resolved</p>
+<p>main.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// The Vue build version to load with the `import` command</span>
+<span class="hljs-comment">// (runtime-only or standalone) has been set in webpack.base.conf with an alias.</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>
+<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">'./router'</span>
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-property">config</span>.<span class="hljs-property">productionTip</span> = <span class="hljs-literal">false</span>
+
+<span class="hljs-comment">//全局路由守卫</span>
+router.<span class="hljs-title function_">beforeEach</span>(<span class="hljs-function">(<span class="hljs-params">to, <span class="hljs-keyword">from</span>, next</span>) =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(to.<span class="hljs-property">name</span>, <span class="hljs-keyword">from</span>.<span class="hljs-property">name</span>)
+  <span class="hljs-title function_">next</span>()<span class="hljs-comment">//执行组件切换</span>
+  <span class="hljs-comment">// to and from are both route objects. must call `next`.</span>
+})
+<span class="hljs-comment">/* eslint-disable no-new */</span>
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+  <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+  router,
+  <span class="hljs-attr">components</span>: { <span class="hljs-title class_">App</span> },
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&#x3C;App/>'</span>
+})
+</code></pre>
+<h3 id="axios连接服务器"><a href="#axios连接服务器">axios连接服务器</a></h3>
+<p>需要先配置代理服务器api，避免跨域请求</p>
+<p>main.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>
+<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">'./router'</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">'axios'</span>
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-property">config</span>.<span class="hljs-property">productionTip</span> = <span class="hljs-literal">false</span>
+<span class="hljs-comment">//设置axios为Vue的属性$axios</span>
+<span class="hljs-title class_">Vue</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">$axios</span> = axios 
+
+config/index.<span class="hljs-property">js</span>
+</code></pre>
+<p>config/index.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  <span class="hljs-attr">dev</span>: {
+
+    <span class="hljs-comment">// Paths</span>
+    <span class="hljs-attr">assetsSubDirectory</span>: <span class="hljs-string">'static'</span>,
+    <span class="hljs-attr">assetsPublicPath</span>: <span class="hljs-string">'/'</span>,
+    <span class="hljs-attr">proxyTable</span>: {
+        <span class="hljs-string">'/api'</span>: {
+          <span class="hljs-attr">target</span>: <span class="hljs-string">'http://127.0.0.1:9090/day9_7_war_exploded'</span>,
+          <span class="hljs-attr">changeOrigin</span>: <span class="hljs-literal">true</span>,
+          <span class="hljs-attr">pathRewrite</span>: {
+            <span class="hljs-string">'^/api'</span>: <span class="hljs-string">''</span>
+          }
+        }
+  
+    },
+</code></pre>
+<p>Login.vue</p>
+<pre><code class="hljs language-javascript">  <span class="hljs-attr">methods</span>:{
+    <span class="hljs-title function_">login</span>(<span class="hljs-params"></span>){
+      <span class="hljs-variable language_">this</span>.$axios({
+        <span class="hljs-attr">url</span>:<span class="hljs-string">'api/user/login'</span>,
+        <span class="hljs-attr">method</span>:<span class="hljs-string">'post'</span>,
+        <span class="hljs-attr">data</span>:{
+          <span class="hljs-attr">userId</span>:<span class="hljs-variable language_">this</span>.<span class="hljs-property">userId</span>,
+          <span class="hljs-attr">password</span>:<span class="hljs-variable language_">this</span>.<span class="hljs-property">password</span>
+        }
+      }).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">result</span>) =></span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(result)
+      }).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =></span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(err)
+      });
+
+    }
+  }
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","前端技术",{"className":"page-module__y-5DuW__cat-badge","children":"前端技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月7日vue学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-07T17:21:11.000Z","children":"2022年9月7日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[714," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","vue",{"className":"page-module__y-5DuW__tag","children":"vue"}],["$","span","前端",{"className":"page-module__y-5DuW__tag","children":"前端"}],["$","span","html",{"className":"page-module__y-5DuW__tag","children":"html"}],["$","span","css",{"className":"page-module__y-5DuW__tag","children":"css"}],["$","span","javascript",{"className":"page-module__y-5DuW__tag","children":"javascript"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"项目结构","text":"项目结构"},{"level":2,"id":"路由","text":"路由"},{"level":3,"id":"路由配置项","text":"路由配置项"},{"level":3,"id":"router-标签","text":"router 标签"},{"level":3,"id":"router传参","text":"router传参"},{"level":2,"id":"导航守卫","text":"导航守卫"},{"level":3,"id":"axios连接服务器","text":"axios连接服务器"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

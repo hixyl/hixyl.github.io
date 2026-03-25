@@ -1,0 +1,95 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T10e2,<p>在linux下，~/.ssh目录是ssh的配置文件路径，其中./ssh/config文件可以用于自定义ssh服务器。</p>
+<h2 id="1概述"><a href="#1概述">1.概述</a></h2>
+<p>通常，当通过 SSH 连接到远程服务器时，您将指定远程用户名、主机名和端口。例如，要从命令行以名为port<code>john</code>的主机的用户身份登录，您可以键入：<code>dev.example.com``2322</code></p>
+<pre><code class="hljs language-css">ssh john<span class="hljs-keyword">@dev</span>.example.com -p <span class="hljs-number">2322</span>
+</code></pre>
+<p>要使用与上面命令中提供的相同选项连接到服务器，只需键入<code>ssh dev</code>，同时将以下行放入您的<code>"~/.ssh/config</code>文件中：</p>
+<pre><code class="hljs language-ini">Host dev
+    HostName dev.example.com
+    User john
+    Port 2322
+</code></pre>
+<p>现在，当您键入 时，ssh 客户端将读取配置文件并使用为主机<code>ssh dev</code>指定的连接详细信息：<code>dev</code></p>
+<h2 id="2ssh配置文件示例"><a href="#2ssh配置文件示例">2.SSH配置文件示例</a></h2>
+<p>文件路径 <code>~/.ssh/config</code></p>
+<pre><code class="hljs language-ini">Host targaryen
+    HostName 192.168.1.10
+    User daenerys
+    Port 7654
+    IdentityFile ~/.ssh/targaryen.key
+
+Host tyrell
+    HostName 192.168.10.20
+
+Host martell
+    HostName 192.168.10.50
+
+Host *ell
+    user oberyn
+
+Host * !martell
+    LogLevel INFO
+
+Host *
+    User root
+    Compression yes
+</code></pre>
+<ul>
+<li>
+<p>当您键入<code>ssh targaryen</code>时，ssh 客户端会读取文件并应用第一个匹配项中的选项，即<code>Host targaryen</code>. 然后它一个接一个地检查下一个节是否有匹配的模式。下一个匹配的是<code>Host * !martell</code>（表示除 之外的所有主机<code>martell</code>），它将应用此节中的连接选项。最后一个定义<code>Host *</code>也匹配，但 ssh 客户端将仅采用该<code>Compression</code>选项，因为该<code>User</code>选项已在<code>Host targaryen</code>节中定义。键入时使用的完整选项列表<code>ssh targaryen</code>如下：</p>
+<pre><code class="hljs language-ini">HostName 192.168.1.10
+User daenerys
+Port 7654
+IdentityFile ~/.ssh/targaryen.key
+LogLevel INFO
+Compression yes
+</code></pre>
+</li>
+<li>
+<p>运行<code>ssh tyrell</code>匹配的主机模式时：<code>Host tyrell</code>、<code>Host *ell</code>和. 在这种情况下使用的选项是：<code>Host * !martell``Host *</code></p>
+<pre><code class="hljs language-ini">HostName 192.168.10.20
+User oberyn
+LogLevel INFO
+Compression yes
+</code></pre>
+</li>
+<li>
+<p>如果您运行<code>ssh martell</code>，则匹配的主机模式是<code>Host martell</code>：<code>Host *ell</code>和<code>Host *</code>。在这种情况下使用的选项是：</p>
+<pre><code class="hljs language-ini">HostName 192.168.10.50
+User oberyn
+Compression yes
+</code></pre>
+</li>
+<li>
+<p>对于所有其他连接，ssh 客户端将使用<code>Host * !martell</code>和<code>Host *</code>部分中指定的选项。</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="3ssh读取顺序"><a href="#3ssh读取顺序">3.SSH读取顺序</a></h2>
+<p>（1）从命令行指定的选项。 （2）<code>~/.ssh/config</code>中定义的选项。 （3）<code>/etc/ssh/ssh_config</code>中定义的选项。 如果要覆盖单个选项，可以在命令行上指定它。例如，如果您有以下定义：</p>
+<pre><code class="hljs language-ini">Host dev
+    HostName dev.example.com
+    User john
+    Port 2322
+</code></pre>
+<p>并且您想使用所有其他选项，但以用户身份连接，<code>root</code>而不是<code>john</code>简单地在命令行上指定用户：</p>
+<pre><code class="hljs language-arduino">ssh -o <span class="hljs-string">"User=root"</span> dev
+</code></pre>
+<p>( <code>-F</code>)<code>configfile</code>选项允许您指定替代的每用户配置文件。 要告诉<code>ssh</code>客户端忽略 ssh 配置文件中指定的所有选项，请使用： <code>ssh -F /dev/null user@example.com</code></p>
+<h2 id="4dolphin连接ssh服务器"><a href="#4dolphin连接ssh服务器">4.dolphin连接ssh服务器</a></h2>
+<p>直接在地址栏输入sftp://HostName 即可，HostName可以为ssh配置文件中定义的内容。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","linux相关",{"className":"page-module__y-5DuW__cat-badge","children":"linux相关"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Linux下ssh客户端配置"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-04-05T09:01:23.000Z","children":"2022年4月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[641," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","dev",{"className":"page-module__y-5DuW__tag","children":"dev"}],["$","span","host",{"className":"page-module__y-5DuW__tag","children":"host"}],["$","span","ssh",{"className":"page-module__y-5DuW__tag","children":"ssh"}],["$","span","targaryen",{"className":"page-module__y-5DuW__tag","children":"targaryen"}],["$","span","user",{"className":"page-module__y-5DuW__tag","children":"user"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1概述","text":"1.概述"},{"level":2,"id":"2ssh配置文件示例","text":"2.SSH配置文件示例"},{"level":2,"id":"3ssh读取顺序","text":"3.SSH读取顺序"},{"level":2,"id":"4dolphin连接ssh服务器","text":"4.dolphin连接ssh服务器"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

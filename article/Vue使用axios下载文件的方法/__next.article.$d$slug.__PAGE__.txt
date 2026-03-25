@@ -1,0 +1,40 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+9:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:Tc86,<p>axios 请求头部加上responseType='blob'</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">download</span> = (<span class="hljs-params">data</span>) => {
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">request</span>({
+    <span class="hljs-attr">url</span>:<span class="hljs-string">'请求地址'</span>,
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'post'</span>,
+    <span class="hljs-attr">responseType</span>:<span class="hljs-string">'blob'</span>,
+    <span class="hljs-attr">data</span>: data
+  })
+}
+</code></pre>
+<p>后端代码响应头部需要设置Access-Control-Expose-Headers头部信息，把你需要获取的头部属性字段设置在这个值里面前端响应部分就可以获取，否则不可无法获取（多个用逗号分割），如下设置前端可以获取文件名字</p>
+<pre><code class="hljs language-java">response.setHeader(<span class="hljs-string">"Content-Disposition"</span>, <span class="hljs-string">"attachment;filename="</span> + URLEncoder.encode(message, <span class="hljs-string">"UTF-8"</span>));
+response.setContentType(<span class="hljs-string">"application/octet-stream"</span>);
+response.setHeader(<span class="hljs-string">"Access-Control-Expose-Headers"</span>, <span class="hljs-string">"Content-Disposition"</span>);
+</code></pre>
+<p>前端js处理响应部分进行blob字节处理下载文件</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> filename = res.<span class="hljs-property">headers</span>[<span class="hljs-string">"content-disposition"</span>];
+<span class="hljs-keyword">const</span> blob = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Blob</span>([res.<span class="hljs-property">data</span>]);
+<span class="hljs-keyword">var</span> downloadElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"a"</span>);
+<span class="hljs-keyword">var</span> href = <span class="hljs-variable language_">window</span>.<span class="hljs-property">URL</span>.<span class="hljs-title function_">createObjectURL</span>(blob);
+downloadElement.<span class="hljs-property">href</span> = href;
+downloadElement.<span class="hljs-property">download</span> = <span class="hljs-built_in">decodeURIComponent</span>(filename.<span class="hljs-title function_">split</span>(<span class="hljs-string">"filename="</span>)[<span class="hljs-number">1</span>]);
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(downloadElement);
+downloadElement.<span class="hljs-title function_">click</span>();
+<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeChild</span>(downloadElement);
+<span class="hljs-variable language_">window</span>.<span class="hljs-property">URL</span>.<span class="hljs-title function_">revokeObjectURL</span>(href);   
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","前端技术",{"className":"page-module__y-5DuW__cat-badge","children":"前端技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Vue使用axios下载文件的方法"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-15T21:00:57.000Z","children":"2022年9月15日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[152," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",1," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","vue",{"className":"page-module__y-5DuW__tag","children":"vue"}],["$","span","前端",{"className":"page-module__y-5DuW__tag","children":"前端"}],["$","span","html",{"className":"page-module__y-5DuW__tag","children":"html"}],["$","span","css",{"className":"page-module__y-5DuW__tag","children":"css"}],["$","span","javascript",{"className":"page-module__y-5DuW__tag","children":"javascript"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],false]}]}]],["$L6","$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$L9",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$La",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+8:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+d:null

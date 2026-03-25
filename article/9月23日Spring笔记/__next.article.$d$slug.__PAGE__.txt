@@ -1,0 +1,153 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T393c,<h2 id="springmvc文件上传"><a href="#springmvc文件上传">springmvc文件上传</a></h2>
+<h3 id="前端实现"><a href="#前端实现">前端实现</a></h3>
+<p>前端使用bootstrap</p>
+<p>file.html</p>
+<pre><code class="hljs language-html"><span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>上传<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>日志记录<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/jquery-2.1.0.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/bootstrap.min.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../js/docs.min.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">link</span> <span class="hljs-attr">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../css/bootstrap.min.css"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+        $(()=>{
+            $(<span class="hljs-string">"#import"</span>).<span class="hljs-title function_">click</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">let</span> files = $(<span class="hljs-string">'#csv_file'</span>).<span class="hljs-title function_">prop</span>(<span class="hljs-string">'files'</span>);
+                <span class="hljs-keyword">let</span> data = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormData</span>();
+                data.<span class="hljs-title function_">append</span>(<span class="hljs-string">'myFile'</span>, files[<span class="hljs-number">0</span>]);
+
+                $.<span class="hljs-title function_">ajax</span>({
+                    <span class="hljs-attr">type</span>: <span class="hljs-string">'POST'</span>,
+                    <span class="hljs-attr">url</span>: <span class="hljs-string">"myFile.action"</span>,
+                    <span class="hljs-attr">data</span>: data,
+                    <span class="hljs-attr">cache</span>: <span class="hljs-literal">false</span>,
+                    <span class="hljs-attr">processData</span>: <span class="hljs-literal">false</span>,
+                    <span class="hljs-attr">contentType</span>: <span class="hljs-literal">false</span>,
+                    <span class="hljs-attr">success</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">ret</span>) {
+                        <span class="hljs-title function_">alert</span>(ret);
+                    }
+                });
+            });
+        })
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"myFile.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">"multipart/form-data"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">label</span>></span>选择文件<span class="hljs-tag">&#x3C;/<span class="hljs-name">label</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"myFile"</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span>></span>上传<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">form</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">h3</span>></span>ajax上传文件<span class="hljs-tag">&#x3C;/<span class="hljs-name">h3</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">form</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"form"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"myFile.action"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">"multipart/form-data"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>选择文件<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"csv_file"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"myFile"</span>/></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"import"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>></span>上传<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">form</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>
+<h3 id="后端"><a href="#后端">后端</a></h3>
+<p><code>spring-mvc.xml</code>配置</p>
+<pre><code class="hljs language-xml"><span class="hljs-comment">&#x3C;!-- 此处必须有id属性 --></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"multipartResolver"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"org.springframework.web.multipart.commons.CommonsMultipartResolver"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"defaultEncoding"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"utf-8"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">property</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+</code></pre>
+<p>WorkController.java</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@GetMapping("/file.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">file</span><span class="hljs-params">()</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"file"</span>;
+    }
+
+    <span class="hljs-meta">@ResponseBody</span>
+    <span class="hljs-meta">@PostMapping("/myFile.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">myFile</span><span class="hljs-params">(MultipartFile myFile)</span>{
+        System.out.println(myFile);
+        <span class="hljs-keyword">return</span> myFile.getContentType();
+    }
+</code></pre>
+<h2 id="拦截器"><a href="#拦截器">拦截器</a></h2>
+<p>implements <code>HandlerInterceptor</code>接口</p>
+<p>preHandle: 前置拦截</p>
+<p>spring-mvc.xml</p>
+<pre><code class="hljs language-xml">    <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:interceptors</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:interceptor</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/**"</span>/></span>
+            <span class="hljs-comment">&#x3C;!-- 排除不适用拦截器的路径 --></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:exclude-mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/user/login.action"</span>/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">mvc:exclude-mapping</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/work/**"</span>/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"com.zr.interceptor.SessionInterceptor"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">bean</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">mvc:interceptor</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">mvc:interceptors</span>></span>
+</code></pre>
+<p>SessionInterceptor.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.interceptor;
+
+<span class="hljs-keyword">import</span> com.alibaba.fastjson.JSON;
+<span class="hljs-keyword">import</span> com.zr.utils.AjaxResult;
+<span class="hljs-keyword">import</span> com.zr.vo.User;
+<span class="hljs-keyword">import</span> org.springframework.util.StringUtils;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.HandlerInterceptor;
+
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+<span class="hljs-keyword">import</span> java.io.PrintWriter;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">HandlerInterceptor</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">preHandle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span> <span class="hljs-keyword">throws</span> Exception {
+<span class="hljs-comment">//        System.out.println(handler);</span>
+        <span class="hljs-comment">//判断是否为ajax请求，默认不是</span>
+        <span class="hljs-type">String</span> <span class="hljs-variable">header</span> <span class="hljs-operator">=</span> request.getHeader(<span class="hljs-string">"x-requested-with"</span>);
+
+
+        <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> (User)request.getSession().getAttribute(<span class="hljs-string">"user"</span>);
+        <span class="hljs-keyword">if</span>(user==<span class="hljs-literal">null</span>||user.getUserId()==<span class="hljs-literal">null</span>||user.getUserId().equals(<span class="hljs-string">""</span>)){
+            System.out.println(<span class="hljs-string">"未登录"</span>);
+            <span class="hljs-keyword">if</span>(StringUtils.hasLength(header) &#x26;&#x26; header.equals(<span class="hljs-string">"XMLHttpRequest"</span>)){
+                response.setContentType(<span class="hljs-string">"text/html;charset=utf-8"</span>);
+                response.setCharacterEncoding(<span class="hljs-string">"utf-8"</span>);
+                <span class="hljs-type">PrintWriter</span> <span class="hljs-variable">o</span> <span class="hljs-operator">=</span> response.getWriter();
+                o.write(JSON.toJSONString(AjaxResult.fail(<span class="hljs-number">200</span>, <span class="hljs-string">"用户未登录"</span>,<span class="hljs-literal">null</span>)));
+            }
+            <span class="hljs-keyword">else</span>{
+                response.sendRedirect(request.getContextPath()+<span class="hljs-string">"/user/login.action"</span>);
+            }
+
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+
+</code></pre>
+<p>web.xml :设置session失效时间</p>
+<pre><code class="hljs language-xml">  <span class="hljs-tag">&#x3C;<span class="hljs-name">session-config</span>></span>
+<span class="hljs-comment">&#x3C;!--    session失效时间：15分钟--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">session-timeout</span>></span>15<span class="hljs-tag">&#x3C;/<span class="hljs-name">session-timeout</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">session-config</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月23日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-24T08:25:28.000Z","children":"2022年9月24日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[302," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springMVC",{"className":"page-module__y-5DuW__tag","children":"springMVC"}],["$","span","文件上传",{"className":"page-module__y-5DuW__tag","children":"文件上传"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"springmvc文件上传","text":"springmvc文件上传"},{"level":3,"id":"前端实现","text":"前端实现"},{"level":3,"id":"后端","text":"后端"},{"level":2,"id":"拦截器","text":"拦截器"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,167 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+9:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T41c5,<p>计算器app如下：</p>
+<div style="margin: auto; width: 400px;"><iframe style="height: 600px; width: 400px;" src="/html/caculator.html" frameborder="0"></iframe></div>
+<p>学习了js和jquery，编写了一个计算器app。主要思路是将按键事件对应字符串存储，利用eval()方法进行执行。另外简单调整了一些CSS样式。</p>
+<p>源代码如下</p>
+<pre><code class="hljs language-html"><span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>计算器<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+        <span class="hljs-selector-id">#container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">margin</span>: auto;
+            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">30px</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+            <span class="hljs-attribute">background-color</span>: azure;
+        }
+
+        <span class="hljs-selector-id">#screen</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">280px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">90px</span>;
+            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">text-align</span>: right;
+            <span class="hljs-attribute">overflow</span>: auto;
+        }
+
+        <span class="hljs-selector-id">#formula</span>,
+        <span class="hljs-selector-id">#result</span> {
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">30px</span>;
+        }
+
+        <span class="hljs-selector-id">#keyarea</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">280px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">370px</span>;
+            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">margin</span>: auto;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+        }
+
+        <span class="hljs-selector-class">.key</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+            <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">float</span>: left;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> <span class="hljs-number">5px</span> <span class="hljs-number">19px</span>;
+            <span class="hljs-attribute">text-align</span>: center;
+            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+            <span class="hljs-attribute">color</span>: white;
+            <span class="hljs-attribute">background-color</span>: darkgrey;
+        }
+        <span class="hljs-selector-class">.key</span><span class="hljs-selector-pseudo">:hover</span>{
+            <span class="hljs-attribute">background-color</span>: burlywood;
+        }
+        <span class="hljs-selector-class">.key</span><span class="hljs-selector-pseudo">:active</span>{
+            <span class="hljs-attribute">background-color</span>: dodgerblue;
+        }
+        
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+        $(<span class="hljs-variable language_">document</span>).<span class="hljs-title function_">ready</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">var</span> key;
+            <span class="hljs-keyword">var</span> formula = <span class="hljs-string">""</span>;
+            <span class="hljs-keyword">var</span> displayF=<span class="hljs-string">""</span>;
+            $(<span class="hljs-string">".key"</span>).<span class="hljs-title function_">click</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
+                <span class="hljs-keyword">if</span>(formula==<span class="hljs-string">""</span>){
+                    $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-string">""</span>);
+                }
+                key = $(<span class="hljs-variable language_">this</span>).<span class="hljs-title function_">text</span>();
+                <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"="</span>) {
+                    <span class="hljs-comment">//判断是否为算式</span>
+                    <span class="hljs-keyword">try</span> {
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-built_in">eval</span>(formula));
+                        $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-built_in">eval</span>(formula));
+                        formula = <span class="hljs-string">""</span>;
+                        <span class="hljs-keyword">return</span>;
+                    } <span class="hljs-keyword">catch</span> (error) {
+                        formula = <span class="hljs-string">""</span>;
+                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"输入错误"</span>);
+                        $(<span class="hljs-string">"#result"</span>).<span class="hljs-title function_">text</span>(<span class="hljs-string">"输入错误"</span>);
+                    }
+
+                }
+                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((key >= <span class="hljs-number">0</span> &#x26;&#x26; key &#x3C;= <span class="hljs-number">9</span>)  key == <span class="hljs-string">"."</span>) {
+                    formula += key;
+                }
+                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"C"</span>) {
+                    formula=<span class="hljs-string">""</span>;
+                }
+                
+                <span class="hljs-keyword">else</span> {
+                    <span class="hljs-comment">//运算符号</span>
+                    <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"x"</span>) {
+                        formula += <span class="hljs-string">"*"</span>;
+                    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key == <span class="hljs-string">"÷"</span>) {
+                        formula += <span class="hljs-string">"/"</span>;
+                    } <span class="hljs-keyword">else</span> {
+                        formula += key;
+                    }
+                }
+                
+                displayF=formula.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\*/g</span>,<span class="hljs-string">"x"</span>);
+                displayF=displayF.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\//g</span>,<span class="hljs-string">"÷"</span>);
+                $(<span class="hljs-string">"#formula"</span>).<span class="hljs-title function_">text</span>(displayF);
+            });
+
+        });
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"screen"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"formula"</span>></span>计算器<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"result"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"keyarea"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n1"</span>></span>1<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n2"</span>></span>2<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n3"</span>></span>3<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n4"</span>></span>4<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n5"</span>></span>5<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n6"</span>></span>6<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n7"</span>></span>7<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n8"</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n9"</span>></span>9<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"n9"</span>></span>0<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>+<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>-<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>x<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>÷<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>=<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>(<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>)<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>.<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"key"</span>></span>C<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","编程学习",{"className":"page-module__y-5DuW__cat-badge","children":"编程学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Javascript编写简单的网页计算器"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-08-14T22:23:17.000Z","children":"2022年8月14日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[319," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","border",{"className":"page-module__y-5DuW__tag","children":"border"}],["$","span","height",{"className":"page-module__y-5DuW__tag","children":"height"}],["$","span","margin",{"className":"page-module__y-5DuW__tag","children":"margin"}],["$","span","px",{"className":"page-module__y-5DuW__tag","children":"px"}],["$","span","width",{"className":"page-module__y-5DuW__tag","children":"width"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],false]}]}]],["$L6","$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$L9",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$La",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+8:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+d:null

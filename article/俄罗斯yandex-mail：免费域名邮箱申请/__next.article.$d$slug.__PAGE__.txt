@@ -1,0 +1,121 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T2e57,<p>一直有人推荐说Yandex的域名邮箱服务不错，于是就想去注册个账号。Yandex是俄罗斯最大的互联网企业，旗下的搜索引擎地位相当于国内的百度。</p>
+<p>Yandex企业邮箱是目前为数不多的免费且质量不错的邮箱。Yandex邮箱的主要优势：支持SMTP POP3协议、一个域名支持1000用户，每个用户10 GB容量、送达率高不易进垃圾箱！所以说非常值得试试。</p>
+<h2 id="1准备"><a href="#1准备"><strong>1、准备</strong></a></h2>
+<p>准备一个域名，前阵子什么gandi，或者你有github学生包也可以免费撸到域名。如果这些你都没有，可以去freenom注册一个免费域名。</p>
+<h2 id="2注册yandex-mail帐户"><a href="#2注册yandex-mail帐户"><strong>2、注册Yandex Mail帐户</strong></a></h2>
+<h3 id="21-注册"><a href="#21-注册"><strong>2.1 注册</strong></a></h3>
+<p>官网：<a href="https://link.zhihu.com/?target=https%3A//mail.yandex.com/">https://mail.yandex.com</a></p>
+<p>打开官网，点击Creat an account创建帐号，填写信息完成注册并登录。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-dbb2afd09363d7439d1a1632cdb63e70_720w.jpg" alt=""></p>
+<h2 id="3登录yandex以及输入域名等"><a href="#3登录yandex以及输入域名等"><strong>3、登录Yandex以及输入域名等</strong></a></h2>
+<h3 id="31"><a href="#31"><strong>3.1</strong></a></h3>
+<p><strong>点击下面的网址进入域名邮箱注册页面选择免费的套餐：（如图）</strong></p>
+<p><strong>网址</strong>：<a href="https://link.zhihu.com/?target=https%3A//connect.yandex.com/pdd/">https://connect.yandex.com/pdd/</a></p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-3e35fec4ba4871d876aaf04703ba60a7_720w.jpg" alt=""></p>
+<p>之后，需要你登录，用你刚才注册的账号登录即可。之后，就需要输入你事先准备好的域名开始申请企业邮箱了。</p>
+<h3 id="32-填写你的域名"><a href="#32-填写你的域名"><strong>3.2 填写你的域名</strong></a></h3>
+<p>点击Sign up free继续，就会进入Yandex Connect的管理页并自动跳转到Organization profile-Domain选项卡。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-01fac99bf10cec1209335f2d223402a3_720w.jpg" alt=""></p>
+<h3 id="33-验证域名所有权"><a href="#33-验证域名所有权"><strong>3.3 验证域名所有权</strong></a></h3>
+<p>输入域名点击Accept之后，开始进入验证域名环境，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-d9dd666bd35e2534e3b67700eee401a3_720w.jpg" alt=""></p>
+<p><strong>验证方法主要有以下几种：</strong></p>
+<p>Meta Tag：在域名主页网站的标签内增加Yandex所提供的代码行</p>
+<p>HTML File：在网站根目录下创建yandex_*.html文件（图中划线部分）并将文本框中的代码复制进去。</p>
+<p>DNS Record：在域名管理页面将文本框中的内容添加为TXT Record记录。推荐使用！</p>
+<p>WHOIS：如今大部分域名应该都有WHOIS保护，个人不推荐使用。</p>
+<p>选择以上一种方法Start verification，配置完成后点击Check验证即可。大鸟这里用DNS Record方式来验证，看图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-50960f325e873d06ef6e1a4999c89bbc_720w.jpg" alt=""></p>
+<p>验证通过，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-9b717196a61365fc7d41be57c5cd122e_720w.jpg" alt=""></p>
+<h2 id="4邮箱配置mx记录"><a href="#4邮箱配置mx记录"><strong>4、邮箱配置MX记录</strong></a></h2>
+<p>验证完成后已经可以添加邮箱了，不过在此之前需要配置MX记录。</p>
+<ol>
+<li>在域名托管商的管理面板中添加如下MX记录：</li>
+<li>Value — mx.yandex.net.←-不要丢了最后的点，虽然某些托管商会将它去掉</li>
+<li>Priority — 10</li>
+<li>(Subdomain) Name — @←-不可以的话填写域名</li>
+<li>完成后最多需要72小时生效。</li>
+</ol>
+<p>看图吧。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-c59b9d5582d0291e3c9760de7372f2d3_720w.jpg" alt=""></p>
+<p>mx记录验证通过，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-e5d7be7f48e7fa737f5702b7d2899ef9_720w.jpg" alt=""></p>
+<h2 id="5设置spf记录与dkim"><a href="#5设置spf记录与dkim"><strong>5、设置SPF记录与DKIM</strong></a></h2>
+<p>为了提高邮件的收信率（而不是进垃圾箱），需要在域名托管商的管理面板设置SPF record与DKIM</p>
+<h3 id="51-设置dkim"><a href="#51-设置dkim"><strong>5.1 设置DKIM</strong></a></h3>
+<p>接着上面继续往下设置，添加一条TXT记录</p>
+<p>Name — mail._domainkey</p>
+<p>Value值需要从自己的管理页面Pricing plans and services — Email — DKIM signatures中获取，点击copy可以直接复制。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-a2ab5ab62cdb83c4a1bd412e1db7a6f7_720w.jpg" alt=""></p>
+<h3 id="52-设置spf"><a href="#52-设置spf"><strong>5.2 设置SPF</strong></a></h3>
+<p>添加一条TXT记录</p>
+<p>Value — v=spf1 redirect=<a href="https://link.zhihu.com/?target=http%3A//_spf.yandex.net">http://_spf.yandex.net</a></p>
+<p>Name — @←-不可以的话填写域名</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-0bbfa348f165d8b5fa188f98be39131b_720w.jpg" alt=""></p>
+<h2 id="6添加用户"><a href="#6添加用户"><strong>6、添加用户</strong></a></h2>
+<p>依然是在这个页面，（<a href="https://link.zhihu.com/?target=https%3A//admin.yandex.ru/">https://admin.yandex.ru/</a>）我们找到users，接着点击add users，开始增加用户。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-1e5017b45de6dd449e2ec97ec5b0cecd_720w.jpg" alt=""></p>
+<h2 id="7自定义域名访问"><a href="#7自定义域名访问"><strong>7、自定义域名访问</strong></a></h2>
+<p>如果我们想使用自己的域名访问邮箱，需要新增 CNAME 记录。比如 <a href="https://link.zhihu.com/?target=http%3A//mail.xxxx.com">http://mail.xxxx.com</a></p>
+<p><strong>主机名</strong> ：mail <strong>指向</strong>： <a href="https://link.zhihu.com/?target=http%3A//domain.mail.yandex.net">http://domain.mail.yandex.net</a> 看图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-e1368165b1e1cbf05d19819a013fdc66_720w.jpg" alt=""></p>
+<p>保存之后，你就可以用<a href="https://link.zhihu.com/?target=http%3A//mail.xxxx.com">http://mail.xxxx.com</a>的形式访问登录了。</p>
+<h2 id="8新增加用户首次登录确认协议"><a href="#8新增加用户首次登录确认协议"><strong>8、新增加用户首次登录确认协议</strong></a></h2>
+<p>必须的一个步骤：就是当所有配置完成后，新添加的用户需要去登录一次才能使用，因为首次登陆需要同意一个协议。</p>
+<p><strong>登录地址</strong>：<a href="https://link.zhihu.com/?target=https%3A//mail.yandex.com/">https://mail.yandex.com</a></p>
+<p>当然，如果你做好了别名解析，你用<a href="https://link.zhihu.com/?target=http%3A//mail.xxxx.com">http://mail.xxxx.com</a>去访问也是可以登录的。</p>
+<p>登录账号：就是你刚刚添加的账号（比如：<a href="mailto:admin@xxx.com">admin@xxx.com</a>）</p>
+<p>登录密码：就是你刚刚分配的密码</p>
+<p>登录之后，会跳出确认协议，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-ab2d3406e81b827cbbd00498aa2af5c5_720w.jpg" alt=""></p>
+<p>登录成功，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-738cc613280fcfaaccba4037157e1d9a_720w.jpg" alt=""></p>
+<p>完成上述步骤后就可以配置POP3/SMTP收发邮件了。</p>
+<ul>
+<li>POP3：<a href="https://link.zhihu.com/?target=http%3A//pop.yandex.com">http://pop.yandex.com</a> SSL端口：995</li>
+<li>SMTP：<a href="https://link.zhihu.com/?target=http%3A//smtp.yandex.com">http://smtp.yandex.com</a> SSL端口：465</li>
+<li>IMAP：<a href="https://link.zhihu.com/?target=http%3A//imap.yandex.com">http://imap.yandex.com</a> SSL端口：993</li>
+</ul>
+<h2 id="9设置邮箱白名单"><a href="#9设置邮箱白名单"><strong>9、设置邮箱白名单</strong></a></h2>
+<p>yandex mail打击垃圾邮件的力度非常大，如果你发送的内容很短，都会提示你无法投送，这是垃圾邮件。而且，如果邮箱没有事先加入白名单，也是无法投送。所以在使用之前，还是先设置下白名单。</p>
+<p>在邮箱登录状态，点击右上角的齿轮图标，接着点击Message filters，在右下方可以看到Whitelist和Blacklist。把你要投送的域名加入白名单。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-01672efde0b83e6258acb638475ee06c_720w.jpg" alt=""></p>
+<h2 id="10测试效果"><a href="#10测试效果"><strong>10、测试效果</strong></a></h2>
+<p>经过上面的一番倒腾，你现在已经可以发送邮件了，不过推荐用客户端发送，比如outlook等。</p>
+<h3 id="101-outlook添加yandx邮箱"><a href="#101-outlook添加yandx邮箱"><strong>10.1 outlook添加yandx邮箱</strong></a></h3>
+<p>先添加你的邮箱账户，之后添加密码，点击连接即可。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-f10681750806313182c4725c91875149_720w.jpg" alt=""></p>
+<p>连接成功，如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-6686e82e33f99bccb66888c602efbff4_720w.jpg" alt=""></p>
+<h3 id="102-邮件测试"><a href="#102-邮件测试"><strong>10.2 邮件测试</strong></a></h3>
+<p>实测，发送到QQ邮箱还是会进垃圾箱，发送163，和gmail邮件投送正常。其他邮箱没有测试。</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-19a84d9b4ec4ebca777b17c236f01800_720w.png" alt=""></p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-8cb880d003f32e5cd7d40a9f22fb142d_720w.jpg" alt=""></p>
+<h2 id="11spam错误"><a href="#11spam错误"><strong>11、SPAM错误</strong></a></h2>
+<p>发送邮件会遇到spam错误。如图：</p>
+<p><img src="https://timeshike.com/wp-content/uploads/2022/03/v2-d96a11a3e02adb2b28ba21f4c040b493_720w.jpg" alt=""></p>
+<p>这类问题，应该是邮箱没有导入白名单所致，可以根据上文的第九步，把邮箱加入白名单即可。</p>
+<p>或者TXT解析没有生效，打开邮箱管理网页：<a href="https://link.zhihu.com/?target=https%3A//connect.yandex.com/pdd/">https://connect.yandex.com/pdd/</a></p>
+<p>根据（<a href="https://link.zhihu.com/?target=https%3A//yandex.ru/support/business/dns/cname.html">https://yandex.ru/support/business/dns/cname.html</a>）里面的提示把该做的解析都做一遍。</p>
+<h2 id="12最后"><a href="#12最后"><strong>12、最后</strong></a></h2>
+<p>已经做了SPF与DKIM记录，投送到QQ邮箱还是会进垃圾箱，这个不知道咋解决。</p>
+<p>这家还有免费的Yandex Disk，每个域名邮箱都可以都可以直接登录 <a href="https://link.zhihu.com/?target=https%3A//disk.yandex.ru">https://disk.yandex.ru</a> ，免费拥有10G的网盘。不过广告巨多，没什么意思。</p>
+<p>支持导入用户&#x26;邮件：Import mailboxes from another server。这个功能不错。只需要填写账号，密码，POP3等信息即可导入。当然上限是 1000个用户。</p>
+<p>支持API：<a href="https://link.zhihu.com/?target=https%3A//tech.yandex.com/domain/doc/about-docpage/">https://tech.yandex.com/domain/doc/about-docpage/</a></p>
+<p>总的来说Yandex域名、企业邮局申请还是比较简单，唯独体验不好的就是官网速度比较慢，反人类的验证码设计。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","资源共享",{"className":"page-module__y-5DuW__cat-badge","children":"资源共享"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"俄罗斯Yandex Mail：免费域名邮箱申请"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-03-25T15:40:11.000Z","children":"2022年3月25日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1498," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","yandex",{"className":"page-module__y-5DuW__tag","children":"yandex"}],["$","span","域名",{"className":"page-module__y-5DuW__tag","children":"域名"}],["$","span","注册",{"className":"page-module__y-5DuW__tag","children":"注册"}],["$","span","邮箱",{"className":"page-module__y-5DuW__tag","children":"邮箱"}],["$","span","验证",{"className":"page-module__y-5DuW__tag","children":"验证"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1准备","text":"1、准备"},{"level":2,"id":"2注册yandex-mail帐户","text":"2、注册Yandex Mail帐户"},{"level":3,"id":"21-注册","text":"2.1 注册"},{"level":2,"id":"3登录yandex以及输入域名等","text":"3、登录Yandex以及输入域名等"},{"level":3,"id":"31","text":"3.1"},{"level":3,"id":"32-填写你的域名","text":"3.2 填写你的域名"},{"level":3,"id":"33-验证域名所有权","text":"3.3 验证域名所有权"},{"level":2,"id":"4邮箱配置mx记录","text":"4、邮箱配置MX记录"},{"level":2,"id":"5设置spf记录与dkim","text":"5、设置SPF记录与DKIM"},{"level":3,"id":"51-设置dkim","text":"5.1 设置DKIM"},{"level":3,"id":"52-设置spf","text":"5.2 设置SPF"},{"level":2,"id":"6添加用户","text":"6、添加用户"},{"level":2,"id":"7自定义域名访问","text":"7、自定义域名访问"},{"level":2,"id":"8新增加用户首次登录确认协议","text":"8、新增加用户首次登录确认协议"},{"level":2,"id":"9设置邮箱白名单","text":"9、设置邮箱白名单"},{"level":2,"id":"10测试效果","text":"10、测试效果"},{"level":3,"id":"101-outlook添加yandx邮箱","text":"10.1 outlook添加yandx邮箱"},{"level":3,"id":"102-邮件测试","text":"10.2 邮件测试"},{"level":2,"id":"11spam错误","text":"11、SPAM错误"},{"level":2,"id":"12最后","text":"12、最后"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

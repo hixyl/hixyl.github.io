@@ -1,0 +1,136 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T3674,<h2 id="mybatis-基础"><a href="#mybatis-基础">MyBatis 基础</a></h2>
+<h3 id="代码示例"><a href="#代码示例">代码示例</a></h3>
+<p>AppTest.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr;
+
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertTrue;
+
+<span class="hljs-keyword">import</span> com.zr.dao.UserDao;
+<span class="hljs-keyword">import</span> com.zr.vo.User;
+<span class="hljs-keyword">import</span> org.apache.ibatis.io.Resources;
+<span class="hljs-keyword">import</span> org.apache.ibatis.session.SqlSession;
+<span class="hljs-keyword">import</span> org.apache.ibatis.session.SqlSessionFactory;
+<span class="hljs-keyword">import</span> org.apache.ibatis.session.SqlSessionFactoryBuilder;
+<span class="hljs-keyword">import</span> org.junit.Test;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.io.Reader;
+
+<span class="hljs-comment">/**
+ * Unit test for simple App.
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppTest</span> 
+{
+    <span class="hljs-comment">/**
+     * Rigorous Test :-)
+     */</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test01</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        <span class="hljs-type">Reader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> Resources.getResourceAsReader(<span class="hljs-string">"mybatis-config.xml"</span>);
+        <span class="hljs-comment">//SqlSessionFactory对象封装了需要连接的数据源、表-vo-dao对应关系</span>
+        <span class="hljs-type">SqlSessionFactory</span> <span class="hljs-variable">factory</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SqlSessionFactoryBuilder</span>().build(reader);
+        <span class="hljs-comment">//相当于jdbc的connection对象, openSession(false)代表手动事务, openSession(true)代表自动事务, 默认为false</span>
+        <span class="hljs-type">SqlSession</span> <span class="hljs-variable">sqlSession</span> <span class="hljs-operator">=</span> factory.openSession(<span class="hljs-literal">false</span>);
+        <span class="hljs-comment">//获取dao接口的实现类，该实现类由mybatis动态(动态代理)生成</span>
+        <span class="hljs-type">UserDao</span> <span class="hljs-variable">userDao</span> <span class="hljs-operator">=</span> sqlSession.getMapper(UserDao.class);
+        <span class="hljs-comment">//调用实现类的方法，注意：接口方法必须和对应的映射.xml文件中标签的id值一致</span>
+        <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> userDao.selectByPrimaryKey(<span class="hljs-string">"admin"</span>);
+        <span class="hljs-comment">//提交事务 sqlSession.commit();</span>
+        <span class="hljs-comment">//回滚事务 sqlSession.rollback();</span>
+        System.out.println(user);
+        <span class="hljs-comment">//关闭连接</span>
+        sqlSession.close();
+        reader.close();
+    }
+}
+</code></pre>
+<p>关系映射文件 resources/com/zr/dao/UserDao.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?></span>
+<span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">mapper</span> <span class="hljs-keyword">PUBLIC</span> <span class="hljs-string">"-//mybatis.org//DTD Mapper 3.0//EN"</span> <span class="hljs-string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>></span>
+<span class="hljs-comment">&#x3C;!-- 定义映射关系 --></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">"com.zr.dao.UserDao"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">resultMap</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"BaseResultMap"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.zr.vo.User"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">id</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_id"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userId"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">id</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"user_name"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"userName"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"password"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"sex"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"tel"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"tel"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"status"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"img"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"create_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"createUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_time"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyTime"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">result</span> <span class="hljs-attr">column</span>=<span class="hljs-string">"modify_user"</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"modifyUser"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">result</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">resultMap</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"selectByPrimaryKey"</span> <span class="hljs-attr">resultMap</span>=<span class="hljs-string">"BaseResultMap"</span>></span>
+        select * from t_user where user_id = #{userId}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">select</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">mapper</span>></span>
+</code></pre>
+<p>配置文件 mybatis-config.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-meta">&#x3C;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span> ?></span>
+<span class="hljs-comment">&#x3C;!--描述文件--></span>
+<span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">configuration</span>
+<span class="hljs-keyword">PUBLIC</span> <span class="hljs-string">"-//mybatis.org//DTD Config 3.0//EN"</span>
+<span class="hljs-string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">configuration</span>></span>
+<span class="hljs-comment">&#x3C;!--	环境标签代表数据库，default代表默认连接的数据库id--></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">environments</span> <span class="hljs-attr">default</span>=<span class="hljs-string">"development"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">environment</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"development"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">transactionManager</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"JDBC"</span> /></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">dataSource</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"POOLED"</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"driver"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"com.mysql.jdbc.Driver"</span> /></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/test"</span> /></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"root"</span> /></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"mysql"</span> /></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">dataSource</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">environment</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">environments</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">mappers</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">mapper</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">"com/zr/dao/UserDao.xml"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">mapper</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">mappers</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">configuration</span>></span>
+
+</code></pre>
+<h2 id="ognl-表达式"><a href="#ognl-表达式">OGNL 表达式</a></h2>
+<p>OGNL(Object Graphic Navigation Language, 对象图导航语言)<br>
+<img src="/article/9月26日MyBatis笔记/9_26_01.PNG" alt="alt"></p>
+<ol>
+<li>方法参数是String 或基本数据类型(包装器类型)<br>
+<code>select(String userName)     #{userName}</code></li>
+<li>参数是JavaBean对象类型<br>
+<code>add(User user)     #{属性名} #{userId} #{password}</code></li>
+<li>参数是Map的时候<br>
+<code>add(Map&#x3C;String, Object>)     #{key} #{userId}</code></li>
+<li>多参数1<br>
+<code>queryList(@Param("a")String userId, @Param("b")String userName)     #{a} #{b}</code></li>
+<li>多参数2<br>
+<code>list(@Param("u") User user, @Param("d")String deptId)     #{u.userId} #{u.userName}    #{d}</code></li>
+</ol>
+<p><strong>注意</strong> 在xml中，如果参数是字符串类型，如<code>#{userName}===>'张三'</code> (自动加单引号), 写 <code>${userName}====>张三</code> 没有单引号</p>
+<h2 id="resultmap-和-resulttype的区别"><a href="#resultmap-和-resulttype的区别">resultMap 和 resultType的区别</a></h2>
+<p>二者不可共存</p>
+<p><code>resultType</code>: 方法返回值是具体的类型,数据库表的【列名】映射到返回值上，如果返回值是JavaBean, 那么返回值映射关系为：列名-->属性名<br>
+<code>resultMap</code>: 自定义的映射关系</p>
+<h2 id="显示sql语句和其他细节"><a href="#显示sql语句和其他细节">显示sql语句和其他细节</a></h2>
+<p>mybatis-config.xml</p>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">configuration</span>></span>
+	<span class="hljs-tag">&#x3C;<span class="hljs-name">settings</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">setting</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"logImpl"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"org.apache.ibatis.logging.stdout.StdOutImpl"</span>/></span>
+	<span class="hljs-tag">&#x3C;/<span class="hljs-name">settings</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月26日MyBatis笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-26T17:15:37.000Z","children":"2022年9月26日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[525," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",2," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","mybatis",{"className":"page-module__y-5DuW__tag","children":"mybatis"}],["$","span","mysql",{"className":"page-module__y-5DuW__tag","children":"mysql"}],["$","span","数据库",{"className":"page-module__y-5DuW__tag","children":"数据库"}],["$","span","select",{"className":"page-module__y-5DuW__tag","children":"select"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"mybatis-基础","text":"MyBatis 基础"},{"level":3,"id":"代码示例","text":"代码示例"},{"level":2,"id":"ognl-表达式","text":"OGNL 表达式"},{"level":2,"id":"resultmap-和-resulttype的区别","text":"resultMap 和 resultType的区别"},{"level":2,"id":"显示sql语句和其他细节","text":"显示sql语句和其他细节"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

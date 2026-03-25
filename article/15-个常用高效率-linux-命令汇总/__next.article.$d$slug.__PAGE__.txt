@@ -1,0 +1,209 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T26ac,<p>![15 个常用高效率 Linux 命令汇总]</p>
+<p>本文提供了 Linux 中最常用的 15 个命令的常用用法。</p>
+<p>这并不全面，但可以让你快速了解一些常见的 Linux 命令，从而一只脚跨入 Linux 的大门。</p>
+<p>如果你觉得还有其他常用的 Linux 命令，可以在评论区补充。</p>
+<h2 id="1-grep"><a href="#1-grep">1 grep</a></h2>
+<p><strong>在文件中搜索给定字符串</strong>：</p>
+<pre><code class="hljs language-text">$ grep -i -n -w -C 3 "the" filename
+</code></pre>
+<p>-i：不区分大小写</p>
+<p>-n：打印行号</p>
+<p>-w：只输出完整单词（比如只考虑 the，不考虑 they）</p>
+<p>-C：指定显示匹配项前后的行数</p>
+<p><strong>根据特定模式匹配，在一系列文件中搜索</strong>：</p>
+<pre><code class="hljs language-text">$ grep "this" demo_*
+demo_file:this line is the 1st lower case line in this file.
+demo_file1:Two lines above this line is empty.
+demo_file2:And this is the last line.
+</code></pre>
+<p>使用 <code>demo_*</code> 匹配到 <code>demo_file</code>, <code>demo_file1</code>, <code>demo_file2</code>三个文件。</p>
+<p><strong>匹配文件中的正则表达式</strong>：</p>
+<pre><code class="hljs language-text">$ grep "want.*go" demo_file
+They want to go shopping.
+I want to go swimming.
+</code></pre>
+<p>grep 还支持使用正则表达式来搜索字符串，比如上面的语句就表示搜索以 <code>want</code> 开头，以 <code>go</code> 结尾的模式。</p>
+<p>常用正则表达式可以查看这篇文章。</p>
+<p>[程序员阿德：超简单正则表达式入门教程29 赞同 · 2 评论文章![]</p>
+<p><strong>递归搜索所有文件</strong>：</p>
+<pre><code class="hljs language-text">$ grep -r "the" *
+</code></pre>
+<p><strong>反向匹配，即只显示没有匹配上的行</strong>：</p>
+<pre><code class="hljs language-text">$ grep -v "the" filename
+</code></pre>
+<h2 id="2-find"><a href="#2-find">2 find</a></h2>
+<p><strong>使用文件名查找文件</strong>：</p>
+<pre><code class="hljs language-text">$ find -name test.cpp
+</code></pre>
+<p><strong>使用文件名查找文件</strong>（不区分大小写）：</p>
+<pre><code class="hljs language-text">$ find -iname test.cpp
+</code></pre>
+<p><strong>指定查找路径</strong>：</p>
+<pre><code class="hljs language-text">$ find dirname/ -iname test.cpp
+</code></pre>
+<p><strong>反向匹配，即查找不是指定名称的文件和目录</strong>：</p>
+<pre><code class="hljs language-text">$ find -not -iname test.cpp
+</code></pre>
+<p><strong>根据文件类型查找文件</strong>：</p>
+<p>需要使用 <code>-type</code> 选项，只查找普通文件(f)，只查找所有目录(d)。</p>
+<pre><code class="hljs language-text">$ find . -type f
+</code></pre>
+<p><strong>查找最大的 5 个文件</strong>：</p>
+<pre><code class="hljs language-text">$ find . -type f -exec ls -s {} \;  sort -n -r  head -5
+</code></pre>
+<p>想查找最小的文件，将 <code>-r</code> 去掉即可。</p>
+<h2 id="3-ps"><a href="#3-ps">3 ps</a></h2>
+<p><strong>查看当前正在运行的进程信息</strong>：</p>
+<pre><code class="hljs language-text">$ ps -ef  more
+</code></pre>
+<p><strong>以树状结构查看当前正在运行的进程信息</strong>：</p>
+<pre><code class="hljs language-text">$ ps -efH  more
+</code></pre>
+<p><code>-H</code>：代表进程层次结构</p>
+<h2 id="4-free"><a href="#4-free">4 free</a></h2>
+<p>显示系统中空闲内存、已用内存、交换内存等内存信息。默认输出以 KB 为单位显示。</p>
+<pre><code class="hljs language-text">$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8208948     6610388     1369208       17720      229352     1464828
+Swap:      25165824     1199792    23966032
+</code></pre>
+<p>如果认为字节显示不方便，可以通过指定参数选择其他单位：-g 表示GB，-k 表示KB，-m 表示MB。</p>
+<p><strong>查看总内存（包括交换内存）</strong>：</p>
+<pre><code class="hljs language-text">$ free -t
+              total        used        free      shared  buff/cache   available
+Mem:        8208948     6425468     1554128       17720      229352     1649748
+Swap:      25165824     1202472    23963352
+Total:     33374772     7627940    25517480
+</code></pre>
+<h2 id="5-df"><a href="#5-df">5 df</a></h2>
+<p>显示文件系统磁盘空间使用情况，默认情况下 <code>df -k</code> 以字节为单位显示输出。</p>
+<pre><code class="hljs language-text">$ df -k
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda1             29530400   3233104  24797232  12% /
+/dev/sda2            120367992  50171596  64082060  44% /home
+</code></pre>
+<p><code>df -h</code> 以我们更方便阅读的形式显示输出，即大小将以 GB 显示。</p>
+<pre><code class="hljs language-text">$ df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              29G  3.1G   24G  12% /
+/dev/sda2             115G   48G   62G  44% /home
+</code></pre>
+<p>使用 -T 选项显示文件系统的类型。</p>
+<pre><code class="hljs language-text">$ df -T
+Filesystem    Type   1K-blocks      Used Available Use% Mounted on
+/dev/sda1     ext4    29530400   3233120  24797216  12% /
+/dev/sda2     ext4   120367992  50171596  64082060  44% /home
+</code></pre>
+<h2 id="6-tar"><a href="#6-tar">6 tar</a></h2>
+<p><strong>创建一个 tar 压缩包</strong>：</p>
+<pre><code class="hljs language-text">$ tar cvf archive_name.tar dirname/
+</code></pre>
+<p>-c：创建一个新的压缩包</p>
+<p>-v：压缩时详细列出文件名（可选）</p>
+<p>-f：指定压缩包名</p>
+<p><strong>从现有的 tar 压缩包中提取</strong>：</p>
+<pre><code class="hljs language-text">$ tar xvf archive_name.tar
+</code></pre>
+<p><strong>查看 tar 压缩包中的文件</strong>：</p>
+<pre><code class="hljs language-text">$ tar tvf archive_name.tar
+</code></pre>
+<h2 id="7-kill"><a href="#7-kill">7 kill</a></h2>
+<p>使用 kill 命令终止进程。首先使用 ps -ef 命令获取进程 id，然后使用 kill -9 杀死正在运行的 Linux 进程。</p>
+<pre><code class="hljs language-text">$ ps -ef  grep vim
+ramesh    7243  7222  9 22:43 pts/2    00:00:00 vim
+
+$ kill -9 7243
+</code></pre>
+<h2 id="8-rm"><a href="#8-rm">8 rm</a></h2>
+<pre><code class="hljs language-text">$ rm -i filename.txt
+</code></pre>
+<p>-i：在删除文件之前获得确认（非常有用的一个参数，防止误删）</p>
+<p>递归删除目录下的所有文件和目录：</p>
+<pre><code class="hljs language-text">$ rm -rf dirname/
+</code></pre>
+<p>-r：递归删除</p>
+<p>-f：强制删除</p>
+<h2 id="9-cp"><a href="#9-cp">9 cp</a></h2>
+<p>将 file1 复制到 file2，并保留模式、所有权和时间戳。</p>
+<pre><code class="hljs language-text">$ cp -p file1 file2
+</code></pre>
+<p>将 file1 复制到 file2，如果 file2 存在，则在覆盖前提示确认。</p>
+<pre><code class="hljs language-text">$ cp -i file1 file2
+</code></pre>
+<h2 id="10-mv"><a href="#10-mv">10 mv</a></h2>
+<p>移动文件到新路径：</p>
+<pre><code class="hljs language-text">$ mv -vi filename dirname/
+</code></pre>
+<p>将 file1 重命名为 file2，如果 file2 存在，则在覆盖前提示确认：</p>
+<pre><code class="hljs language-text">$ mv -vi file1 file2
+</code></pre>
+<p>-i：覆盖前提示确认</p>
+<p>-f：不提示直接覆盖</p>
+<p>-v：显示文件重命名过程</p>
+<pre><code class="hljs language-text">$ mv -v 1.txt 01/
+renamed '1.txt' -> '01/1.txt'
+</code></pre>
+<h2 id="11-cat"><a href="#11-cat">11 cat</a></h2>
+<p>你可以在不打开文件的情况下，查看文件内容，甚至可以同时查看多个文件内容：</p>
+<pre><code class="hljs language-text">$ cat file1 file2
+</code></pre>
+<p><strong>查看文件内容时，显示行号</strong>：</p>
+<pre><code class="hljs language-text">$ cat -n filename
+</code></pre>
+<p><strong>查看文件前两行</strong>：</p>
+<pre><code class="hljs language-text">cat -n filename  head -n 2
+</code></pre>
+<p><strong>查看文件后两行</strong>：</p>
+<pre><code class="hljs language-text">cat -n filename  tail -n 2
+</code></pre>
+<p><strong>三种方法显示文件10行到50行内容</strong>：</p>
+<pre><code class="hljs language-text">cat filename  head -n 50  tail -n +10
+cat filename  tail -n +10  head -n 41
+sed -n '100,500p' filename
+</code></pre>
+<h2 id="12-tail"><a href="#12-tail">12 tail</a></h2>
+<p>查看文件最后 n 行（默认 n 为 10）：</p>
+<pre><code class="hljs language-text">tail -n N filename
+</code></pre>
+<p>实时查看文件内容：</p>
+<pre><code class="hljs language-text">$ tail -f filename
+</code></pre>
+<p>这对于查看不断增长的日志文件很有用。可以使用 CTRL-C 终止该命令。</p>
+<h2 id="13-less"><a href="#13-less">13 less</a></h2>
+<p>less 在查看巨大的日志文件时非常高效，因为它不需要在打开时加载完整的文件。</p>
+<pre><code class="hljs language-text">less filename
+</code></pre>
+<h2 id="14-ifconfig"><a href="#14-ifconfig">14 ifconfig</a></h2>
+<p>使用 ifconfig 命令查看或配置 Linux 系统上的网络接口。</p>
+<p><strong>查看所有网络接口以及状态</strong>：</p>
+<pre><code class="hljs language-text">$ ifconfig -a
+</code></pre>
+<p><strong>启动或停止特定网络接口</strong>。</p>
+<pre><code class="hljs language-text">$ ifconfig eth0 up
+$ ifconfig eth0 down
+</code></pre>
+<h2 id="15-shutdown"><a href="#15-shutdown">15 shutdown</a></h2>
+<p><strong>关闭系统并立即关闭电源</strong>：</p>
+<pre><code class="hljs language-text">shutdown -h now
+</code></pre>
+<p><strong>10 分钟后关闭系统</strong>：</p>
+<pre><code class="hljs language-text">$ shutdown -h +10
+</code></pre>
+<p><strong>重启系统</strong>：</p>
+<pre><code class="hljs language-text">$ shutdown -r now
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","linux相关",{"className":"page-module__y-5DuW__cat-badge","children":"linux相关"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"15 个常用高效率 Linux 命令汇总"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-04-09T18:07:55.000Z","children":"2022年4月9日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1340," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","demo",{"className":"page-module__y-5DuW__tag","children":"demo"}],["$","span","find",{"className":"page-module__y-5DuW__tag","children":"find"}],["$","span","grep",{"className":"page-module__y-5DuW__tag","children":"grep"}],["$","span","linux",{"className":"page-module__y-5DuW__tag","children":"linux"}],["$","span","文件",{"className":"page-module__y-5DuW__tag","children":"文件"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1-grep","text":"1 grep"},{"level":2,"id":"2-find","text":"2 find"},{"level":2,"id":"3-ps","text":"3 ps"},{"level":2,"id":"4-free","text":"4 free"},{"level":2,"id":"5-df","text":"5 df"},{"level":2,"id":"6-tar","text":"6 tar"},{"level":2,"id":"7-kill","text":"7 kill"},{"level":2,"id":"8-rm","text":"8 rm"},{"level":2,"id":"9-cp","text":"9 cp"},{"level":2,"id":"10-mv","text":"10 mv"},{"level":2,"id":"11-cat","text":"11 cat"},{"level":2,"id":"12-tail","text":"12 tail"},{"level":2,"id":"13-less","text":"13 less"},{"level":2,"id":"14-ifconfig","text":"14 ifconfig"},{"level":2,"id":"15-shutdown","text":"15 shutdown"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

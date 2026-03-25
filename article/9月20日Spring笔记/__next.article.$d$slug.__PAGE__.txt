@@ -1,0 +1,225 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:T3ebe,<h2 id="springmvc处理器"><a href="#springmvc处理器">SpringMVC处理器</a></h2>
+<p>Controller控制器，是MVC中的部分C，是部分的原因是因为此处的控制器主要负责功能处理部分：<br>
+收集、验证请求参数并绑定到命令对象；<br>
+将命令对象交给业务对象，由业务对象处理并返回模型数据；<br>
+返回ModelAndView（Model部分是业务对象返回的模型数据，视图部分为逻辑视图名） ；<br>
+而DispatcherServlet主要负责整体的控制流程的调度部分：<br>
+负责将请求委托给控制器进行处理；<br>
+根据控制器返回的逻辑视图名选择具体的视图进行渲染（并把模型数据传入） ；<br>
+因此MVC中完整的C（包含控制逻辑+功能处理）由（DispatcherServlet + Controller）组成，此处的控制器也可以称为页面控制器、动作、处理器；</p>
+<h2 id="modelandview"><a href="#modelandview">ModelAndView</a></h2>
+<p>ModelAndView 配合 jsp 使用，如果前台是html, 则没有必要用 ModelAndView<br>
+jsp的本质是servlet, 执行时会编译成 java 文件</p>
+<h3 id="modelandview-和-jsp-传值示例"><a href="#modelandview-和-jsp-传值示例">ModelAndView 和 jsp 传值示例</a></h3>
+<p>UserController.java</p>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.controller;
+
+<span class="hljs-keyword">import</span> com.zr.service.UserService;
+<span class="hljs-keyword">import</span> com.zr.utils.Md5Util;
+<span class="hljs-keyword">import</span> com.zr.utils.ResultObj;
+<span class="hljs-keyword">import</span> com.zr.vo.User;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
+
+<span class="hljs-meta">@Controller</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+    <span class="hljs-meta">@RequestMapping("user/login.action")</span>
+    <span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password)</span>{
+        System.out.println(<span class="hljs-string">"userId:"</span>+userId+<span class="hljs-string">", password"</span>+password);
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-type">ModelAndView</span> <span class="hljs-variable">mav</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ModelAndView</span>();
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            mav.addObject(<span class="hljs-string">"userName"</span>, ((User)robj.getObject()).getUserName());
+            mav.setViewName(<span class="hljs-string">"main"</span>);
+        }
+        <span class="hljs-keyword">else</span>{
+            mav.setViewName(<span class="hljs-string">"failed"</span>);
+        }
+        <span class="hljs-keyword">return</span> mav;
+    }
+
+}
+</code></pre>
+<p>main.jsp</p>
+<pre><code class="hljs language-html">&#x3C;%--
+  Created by IntelliJ IDEA.
+  User: smile
+  Date: 2022/9/19
+  Time: 19:24
+  To change this template use File | Settings | File Templates.
+--%>
+&#x3C;%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>恭喜您登录成功<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>${userName}, 恭喜您登录成功<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>
+<p>上例将userName传入main.jsp</p>
+<h3 id="model和view"><a href="#model和view">model和view</a></h3>
+<p>UserController.java</p>
+<pre><code class="hljs language-java"><span class="hljs-meta">@RequestMapping("user/login.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password, Model model)</span>{
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            model.addAttribute(<span class="hljs-string">"user"</span>, ((User)robj.getObject()));
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+    }
+</code></pre>
+<p>上例中，单独将Model拆出，返回值String就是View</p>
+<p>其中，Model对象可以改为ModelMap对象或Map对象，底层都是Map<br>
+引入javaee包后，可以用<code>httpservletrequest</code>传参，如下示例</p>
+<pre><code class="hljs language-java"><span class="hljs-meta">@RequestMapping("user/login.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password, HttpServletRequest req, HttpServletResponse resp)</span>{
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            req.setAttribute(<span class="hljs-string">"user"</span>,((User)robj.getObject()));
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+    }
+</code></pre>
+<pre><code class="hljs language-java"><span class="hljs-keyword">package</span> com.zr.controller;
+
+<span class="hljs-keyword">import</span> com.zr.service.UserService;
+<span class="hljs-keyword">import</span> com.zr.utils.Md5Util;
+<span class="hljs-keyword">import</span> com.zr.utils.ResultObj;
+<span class="hljs-keyword">import</span> com.zr.vo.User;
+<span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.ui.Model;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.servlet.ModelAndView;
+
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-meta">@RequestMapping("/user")</span>
+<span class="hljs-comment">// 注解可以加在此处</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> {
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> UserService userService;
+<span class="hljs-meta">@RequestMapping("login.action")</span>
+<span class="hljs-comment">// 与类注解合并，最终为/user/login.action</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password, HttpServletRequest req, HttpServletResponse resp)</span>{
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            req.setAttribute(<span class="hljs-string">"user"</span>,((User)robj.getObject()));
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+    }
+}
+</code></pre>
+<p><code>@PostMapping</code>, <code>@GetMapping</code> 分别是<code>@RequestMapping</code>的子注解，可以区分请求是Post或Get，从而使同一url映射不同的方法</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@RequestMapping(value = "/login.action", method = RequestMethod.GET)</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">()</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"login"</span>;
+    }
+</code></pre>
+<p>上例使用<code>method</code>参数，效果等于<code>@GetMapping</code>注解</p>
+<h3 id="常见的get请求"><a href="#常见的get请求">常见的get请求</a></h3>
+<p><code>window.location.href=""</code><br>
+<code>&#x3C;a href="...">百度&#x3C;/a></code>
+输入网址<br>
+所有的src属性<br>
+<code>&#x3C;form></code>不写method属性默认为get</p>
+<p>http状态码 405-方法不允许<br>
+400-错误的请求（参数绑定错误）</p>
+<h3 id="postmapping注解的参数"><a href="#postmapping注解的参数">PostMapping注解的参数</a></h3>
+<p>示例</p>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@PostMapping(value = "/add.action", "/insert.action", params = {"userId!=admin","userName","!info"})</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">add</span><span class="hljs-params">(User u)</span>{
+        System.out.println(u);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+    }
+</code></pre>
+<p>限制userId不能等于admin, 必须有userName参数，不能有info参数</p>
+<h3 id="获取url传参"><a href="#获取url传参">获取url传参</a></h3>
+<pre><code class="hljs language-java">    <span class="hljs-meta">@RequestMapping("/{year}/print.action")</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">print</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable("year")</span> String year)</span>{
+        System.out.println(year);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+    }
+</code></pre>
+<p>上例，用注解<code>@PathVariable("传入的参数名")</code>接收url中传入的参数，url使用<code>{传入的参数名}</code>给后端传参</p>
+<h3 id="ant风格的url路径映射"><a href="#ant风格的url路径映射">Ant风格的URL路径映射</a></h3>
+<p><code>@RequestMapping(value="/users/**")</code>：<br>
+可以匹配“/users/abc/abc”，但“/users/123”将会被<code>[URI模板模式映射中的“/users/{userId}”模式优先映射到]</code>；<br>
+<code>@RequestMapping(value="/product?")</code>：<br>
+可匹配“/product1”或“/producta”，但不匹配“/product”或“/productaa”；<br>
+<code>@RequestMapping(value="/product*")</code>：<br>
+可匹配“/productabc”或“/product”，但不匹配“/productabc/abc”；<br>
+<code>@RequestMapping(value="/product/*")</code>：<br>
+可匹配“/product/abc”，但不匹配“/productabc”；<br>
+<code>@RequestMapping(value="/products/**/{productId}")</code>：<br>
+可匹配“/products/abc/abc/123”或“/products/123”，也就是Ant风格和URI模板变量风格可混用；</p>
+<h3 id="自定义请求头"><a href="#自定义请求头">自定义请求头</a></h3>
+<pre><code class="hljs language-java"><span class="hljs-meta">@PostMapping(value = "login.action", headers = {"info"})</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password, HttpServletRequest req, HttpServletResponse resp)</span>{
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            req.setAttribute(<span class="hljs-string">"user"</span>,((User)robj.getObject()));
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+    }
+</code></pre>
+<p>定义后，headers里面必须包含<code>info</code>后端才能执行<code>login()</code>方法, 否则返回404</p>
+<h3 id="对请求的content-type进行限制"><a href="#对请求的content-type进行限制">对请求的content-type进行限制</a></h3>
+<pre><code class="hljs language-java"><span class="hljs-meta">@PostMapping(value = "login.action", consumes = {"application/x-www-form-urlencoded"})</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">login</span><span class="hljs-params">(String userId, String password, HttpServletRequest req, HttpServletResponse resp)</span>{
+        <span class="hljs-type">User</span> <span class="hljs-variable">u</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>();
+        u.setUserId(userId);
+        u.setPassword(Md5Util.md5(password));
+        <span class="hljs-type">ResultObj</span> <span class="hljs-variable">robj</span> <span class="hljs-operator">=</span> userService.login(u);
+        <span class="hljs-keyword">if</span>(robj.isSuccess()){
+            req.setAttribute(<span class="hljs-string">"user"</span>,((User)robj.getObject()));
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"main"</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"user"</span>;
+    }
+</code></pre>
+<p>用<code>consumes</code>参数进行设置，上例表示必须为表单类型</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月20日Spring笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-20T17:18:59.000Z","children":"2022年9月20日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[933," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","java",{"className":"page-module__y-5DuW__tag","children":"java"}],["$","span","后端",{"className":"page-module__y-5DuW__tag","children":"后端"}],["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springMVC",{"className":"page-module__y-5DuW__tag","children":"springMVC"}],["$","span","RequestMapping",{"className":"page-module__y-5DuW__tag","children":"RequestMapping"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"springmvc处理器","text":"SpringMVC处理器"},{"level":2,"id":"modelandview","text":"ModelAndView"},{"level":3,"id":"modelandview-和-jsp-传值示例","text":"ModelAndView 和 jsp 传值示例"},{"level":3,"id":"model和view","text":"model和view"},{"level":3,"id":"常见的get请求","text":"常见的get请求"},{"level":3,"id":"postmapping注解的参数","text":"PostMapping注解的参数"},{"level":3,"id":"获取url传参","text":"获取url传参"},{"level":3,"id":"ant风格的url路径映射","text":"Ant风格的URL路径映射"},{"level":3,"id":"自定义请求头","text":"自定义请求头"},{"level":3,"id":"对请求的content-type进行限制","text":"对请求的content-type进行限制"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

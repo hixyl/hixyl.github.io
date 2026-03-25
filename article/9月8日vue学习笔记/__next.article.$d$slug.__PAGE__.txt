@@ -1,0 +1,523 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+a:I[34574,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+b:I[22016,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+c:I[55132,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/13sgweo0d.7_z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+3:Ta334,<h2 id="vuex状态管理"><a href="#vuex状态管理">vuex状态管理</a></h2>
+<p>当写vue项目时，当涉及到频繁的组件之间的数据通讯、一个组件需要多次派发事件时，我们的代码就会变得复杂、冗余、难以维护。</p>
+<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。我们可以把一些共享的数据保存至vuex中，方便各个组件修改或获取公共状态。</p>
+<p>vuex使用单一状态树state对象来作为“唯一数据源”，专门用于存放数据。<br>
+• 在组件中访问state下的数据，通过<code>this.$store.state</code>来访问<br>
+• 不能通过<code>this.$store.state</code>进行赋值，会造成显示与存储不统一。<br>
+• 一般建议当需要访问state的属性时，通过计算属性访问，避免对数据赋值。</p>
+<p>mutations组件：更新state中数据的核心机制，只有正确提交mutations，才能
+保证state中的数据在个组件中渲染与存储一致。</p>
+<h3 id="安装"><a href="#安装">安装</a></h3>
+<p>package.json</p>
+<pre><code class="hljs language-json">  <span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"axios"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^0.27.2"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vue"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^2.5.2"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vue-router"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^3.0.1"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vuex"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^3.6.2"</span> <span class="hljs-comment">//添加依赖</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+</code></pre>
+<p>运行 <code>npm install</code>，即可</p>
+<h3 id="使用"><a href="#使用">使用</a></h3>
+<p>新建<code>store/index.js</code>文件</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vuex</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vuex'</span>
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">Vuex</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vuex</span>.<span class="hljs-title class_">Store</span>({
+    <span class="hljs-attr">state</span>:{
+        <span class="hljs-attr">loginName</span>: <span class="hljs-string">''</span>
+    },
+    <span class="hljs-attr">mutations</span>:{
+        <span class="hljs-comment">// 给state中的loginName赋值</span>
+        <span class="hljs-title function_">loginName</span>(<span class="hljs-params">state, param</span>){
+            state.<span class="hljs-property">loginName</span> = param
+        }
+    }
+})
+</code></pre>
+<p>修改 <code>index.js</code> 文件</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+  <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+  router,
+  store,
+  <span class="hljs-attr">components</span>: { <span class="hljs-title class_">App</span> },
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&#x3C;App/>'</span>
+})
+</code></pre>
+<h3 id="vuex持久化工具"><a href="#vuex持久化工具">vuex持久化工具</a></h3>
+<p>package.json</p>
+<pre><code class="hljs language-json">  <span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"axios"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^0.27.2"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vue"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^2.5.2"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vue-router"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^3.0.1"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vuex"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^3.6.2"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">"vuex-persistedstate"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^4.1.0"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+</code></pre>
+<p>store/index.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vuex</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vuex'</span>
+<span class="hljs-keyword">import</span> createPersistedState <span class="hljs-keyword">from</span> <span class="hljs-string">'vuex-persistedstate'</span>
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">Vuex</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vuex</span>.<span class="hljs-title class_">Store</span>({
+    <span class="hljs-attr">state</span>:{
+        <span class="hljs-attr">loginName</span>: <span class="hljs-string">''</span>
+    },
+    <span class="hljs-attr">mutations</span>:{
+        <span class="hljs-title function_">loginName</span>(<span class="hljs-params">state, param</span>){
+            state.<span class="hljs-property">loginName</span> = param
+        }
+    },
+    <span class="hljs-attr">plugins</span>:[<span class="hljs-title function_">createPersistedState</span>()] <span class="hljs-comment">//持久化存储插件</span>
+    
+})
+</code></pre>
+<p>components/Login.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+ 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"user"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>账号:<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"form.userId"</span> ></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>密码:<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"form.password"</span> ></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"login"</span>></span>登录<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Login"</span>,
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">form</span>:{
+        <span class="hljs-attr">userId</span>:<span class="hljs-string">''</span>,
+        <span class="hljs-attr">password</span>: <span class="hljs-string">''</span>,
+      } <span class="hljs-comment">//引入form对象进行双向绑定，提交请求时只需提交form即可</span>
+
+    }
+  },
+  <span class="hljs-attr">methods</span>:{
+    <span class="hljs-title function_">login</span>(<span class="hljs-params"></span>){
+      <span class="hljs-variable language_">this</span>.$axios({
+        <span class="hljs-attr">url</span>:<span class="hljs-string">'api/user/login'</span>,
+        <span class="hljs-attr">method</span>:<span class="hljs-string">'post'</span>,
+        <span class="hljs-attr">data</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">form</span> <span class="hljs-comment">//提交form对象为json格式</span>
+      }).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">result</span>) =></span> {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">$store</span>.<span class="hljs-title function_">commit</span>(<span class="hljs-string">'loginName'</span>, result.<span class="hljs-property">data</span>.<span class="hljs-property">object</span>.<span class="hljs-property">userName</span>);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'Home'</span>);
+      }).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =></span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(err)
+      });
+
+    }
+  }
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-comment">/*scoped只在当前组件起作用，不影响父组件*/</span>
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+
+</code></pre>
+<p>components/Home.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    主页组件,{{userName}}
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    {{this.$route.query.userName2}}
+    {{this.$store.state.loginName}}
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">router-view</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">router-view</span>></span>
+    
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Home"</span>,
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">userName</span>:<span class="hljs-string">''</span>
+    }
+  },
+  <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">userName</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">$route</span>.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'User'</span>)
+  },
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<p>效果，登录成功后将username存储，并显示在home主页中。持久化存储的作用在于刷新后存储的值还在。</p>
+<p>使用computed :main.js</p>
+<pre><code class="hljs language-javascript">&#x3C;template>
+  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    主页组件,{{userName}}
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    {{this.$route.query.userName2}}
+    <span class="hljs-comment">&#x3C;!-- {{this.$store.state.loginName}} --></span>
+    {{loginName}}
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">router-view</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">router-view</span>></span>
+    
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Home"</span>,
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">userName</span>:<span class="hljs-string">''</span>
+    }
+  },
+  <span class="hljs-attr">computed</span>:{
+    <span class="hljs-title function_">loginName</span>(<span class="hljs-params"></span>){
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">$store</span>.<span class="hljs-property">state</span>.<span class="hljs-property">loginName</span>;
+    }
+  },
+  <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">userName</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">$route</span>.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'User'</span>)
+  },
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span>
+
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</span></code></pre>
+<h2 id="elementui"><a href="#elementui">ElementUI</a></h2>
+<h3 id="安装使用"><a href="#安装使用">安装使用</a></h3>
+<ol>
+<li>执行 <code>npm i element-ui -S</code></li>
+<li>修改 <code>main.js</code></li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">ElementUI</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'element-ui'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'element-ui/lib/theme-chalk/index.css'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>;
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">ElementUI</span>);
+
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+  <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+  <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-params">h</span> =></span> <span class="hljs-title function_">h</span>(<span class="hljs-title class_">App</span>)
+});
+</code></pre>
+<p>这种写法</p>
+<pre><code class="hljs language-html">{
+    render:h=>h(App)
+}
+</code></pre>
+<p>等价于</p>
+<pre><code class="hljs language-html">{
+    render:h=>{
+        return h(App);
+    }
+}
+</code></pre>
+<p>等价于</p>
+<pre><code class="hljs language-html">{
+    render:function(h){
+        return h(App);
+    }
+}
+</code></pre>
+<p>也就是</p>
+<pre><code class="hljs language-html">{
+    render:function(creatElement){
+        return creatElemnt(App);
+    }
+}
+</code></pre>
+<p><strong>render:h=>h(App)</strong> 这是：</p>
+<p>1、ES6的写法，表示Vue实例选项对象的render方法作为一个函数，接受传入的参数h函数，返回h(App)的函数调用结果</p>
+<p>2、Vue在创建Vue实例时，通过调用render方法来渲染实例的DOM树</p>
+<p>3、Vue在调用render方法时，会传入一个createElement函数作为参数，也就是这里的h的实参是createElement函数，然后createElement会以App为参数进行调用</p>
+<p>或者 main.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// The Vue build version to load with the `import` command</span>
+<span class="hljs-comment">// (runtime-only or standalone) has been set in webpack.base.conf with an alias.</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>
+<span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">'./router'</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">'axios'</span>
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">'./store'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">ElementUI</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'element-ui'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'element-ui/lib/theme-chalk/index.css'</span>;
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-property">config</span>.<span class="hljs-property">productionTip</span> = <span class="hljs-literal">false</span>
+<span class="hljs-comment">//设置axios为Vue的属性$axios</span>
+<span class="hljs-title class_">Vue</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">$axios</span> = axios 
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">ElementUI</span>);
+
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+  <span class="hljs-attr">el</span>: <span class="hljs-string">'#app'</span>,
+  router,
+  store,
+  <span class="hljs-attr">components</span>: { <span class="hljs-title class_">App</span> },
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&#x3C;App/>'</span>
+})
+</code></pre>
+<p>官方网站：<a href="https://element.eleme.cn/#/zh-CN">https://element.eleme.cn/#/zh-CN</a></p>
+<p>实例</p>
+<p>home.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">el-container</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">el-header</span>></span>{{loginName}}<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-header</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">el-container</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">el-aside</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"240px"</span>></span>
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu</span>
+            <span class="hljs-attr">default-active</span>=<span class="hljs-string">"User"</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">"el-menu-vertical-demo"</span>
+            <span class="hljs-attr">background-color</span>=<span class="hljs-string">"#545c64"</span>
+            <span class="hljs-attr">text-color</span>=<span class="hljs-string">"#fff"</span>
+            @<span class="hljs-attr">select</span>=<span class="hljs-string">"menu"</span>
+            <span class="hljs-attr">active-text-color</span>=<span class="hljs-string">"#ffd04b"</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">el-submenu</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"1"</span>></span>
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"title"</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"el-icon-s-tools"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">i</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">span</span>></span>系统设置<span class="hljs-tag">&#x3C;/<span class="hljs-name">span</span>></span>
+              <span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item-group</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"Usersetting"</span>></span>用户设置<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"Role"</span> ></span>角色设置<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item</span>></span>
+              <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item-group</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-submenu</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">el-submenu</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"2"</span>></span>
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"title"</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"el-icon-s-check"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">i</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">span</span>></span>业务办理<span class="hljs-tag">&#x3C;/<span class="hljs-name">span</span>></span>
+              <span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item-group</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"2-1"</span>></span>业务一<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">el-menu-item</span> <span class="hljs-attr">index</span>=<span class="hljs-string">"2-2"</span>></span>业务二<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item</span>></span>
+              <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu-item-group</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-submenu</span>></span>
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-menu</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-aside</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">el-main</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">router-view</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">router-view</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">el-main</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-container</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-container</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Home"</span>,
+  <span class="hljs-attr">computed</span>:{
+    <span class="hljs-title function_">loginName</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">$store</span>.<span class="hljs-property">state</span>.<span class="hljs-property">loginName</span>;
+    }
+  },
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">menu</span>(<span class="hljs-params">index</span>){
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>(index)
+    }
+  },
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-selector-class">.el-header</span>{
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">5vh</span>
+}
+<span class="hljs-selector-class">.el-aside</span>{
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">95vh</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#545c64</span>;
+}
+<span class="hljs-selector-class">.el-main</span>{
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">95vh</span>
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<p>Usersetting.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">el-form</span> <span class="hljs-attr">:inline</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">:model</span>=<span class="hljs-string">"queryForm"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"demo-form-inline"</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">el-form-item</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"账号"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">el-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"queryForm.userId"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"账号"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">el-input</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-form-item</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">el-form-item</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"姓名"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">el-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"queryForm.userName"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"姓名"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">el-input</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-form-item</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">el-form-item</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">el-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"getList"</span>></span>查询<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-button</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-form-item</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">el-form</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"UserSetting"</span>,
+  <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {},
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">queryForm</span>:{
+        <span class="hljs-attr">userId</span>:<span class="hljs-string">''</span>,
+        <span class="hljs-attr">userName</span>:<span class="hljs-string">''</span>
+      },
+    };
+  },
+  <span class="hljs-attr">props</span>: {},
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">getList</span>(<span class="hljs-params"></span>){}
+  },
+};
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+</code></pre>
+<p>login.vue</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"login"</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">el-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"输入账号"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"form.userId"</span> <span class="hljs-attr">clearable</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">el-input</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">el-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"请输入密码"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"form.password"</span> <span class="hljs-attr">show-password</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">el-input</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">el-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"login"</span> <span class="hljs-attr">:loading</span>=<span class="hljs-string">"loading"</span> <span class="hljs-attr">:disabled</span>=<span class="hljs-string">"disabled"</span>></span>登录<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-button</span>></span><span class="hljs-tag">&#x3C;<span class="hljs-name">br</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">el-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>></span>注册<span class="hljs-tag">&#x3C;/<span class="hljs-name">el-button</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+<span class="hljs-keyword">import</span> md5 <span class="hljs-keyword">from</span> <span class="hljs-string">'../../static/md5'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">"Login"</span>,
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">form</span>: {
+        <span class="hljs-attr">userId</span>: <span class="hljs-string">''</span>,
+        <span class="hljs-attr">password</span>: <span class="hljs-string">''</span>,
+      },
+      <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">disabled</span>: <span class="hljs-literal">false</span>,
+
+
+    }
+  },
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">login</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">loading</span> = <span class="hljs-literal">true</span>;
+      
+      <span class="hljs-variable language_">this</span>.$axios({
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'api/user/login'</span>,
+        <span class="hljs-attr">method</span>: <span class="hljs-string">'post'</span>,
+        <span class="hljs-attr">data</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">form</span>
+      }).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">result</span>) =></span> {
+        <span class="hljs-comment">// this.loading = false;</span>
+        <span class="hljs-comment">// this.disabled = true;</span>
+        <span class="hljs-variable language_">this</span>.$message({
+          <span class="hljs-attr">message</span>: <span class="hljs-string">'欢迎您'</span>+result.<span class="hljs-property">data</span>.<span class="hljs-property">object</span>.<span class="hljs-property">userName</span>+<span class="hljs-string">'，登录成功'</span>,
+          <span class="hljs-attr">type</span>: <span class="hljs-string">'success'</span>
+        });
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">$store</span>.<span class="hljs-title function_">commit</span>(<span class="hljs-string">'loginName'</span>, result.<span class="hljs-property">data</span>.<span class="hljs-property">object</span>.<span class="hljs-property">userName</span>);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">$router</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'Home'</span>);
+      }).<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =></span> {
+        <span class="hljs-comment">// setTimeout(() => {</span>
+          <span class="hljs-variable language_">this</span>.<span class="hljs-property">loading</span> = <span class="hljs-literal">false</span>;
+        <span class="hljs-comment">// }, 1000);</span>
+        <span class="hljs-comment">// </span>
+
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">$message</span>.<span class="hljs-title function_">error</span>(err);
+      });
+
+    }
+  }
+  <span class="hljs-comment">// methods: {</span>
+  <span class="hljs-comment">//   toHome() {</span>
+  <span class="hljs-comment">//     this.$router.push({ name: 'Home', params: { userName: '李雷' } })</span>
+  <span class="hljs-comment">//   }</span>
+  <span class="hljs-comment">// },</span>
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>></span><span class="css">
+<span class="hljs-comment">/*scoped只在当前组件起作用，不影响父组件*/</span>
+
+<span class="hljs-selector-class">.login</span>{
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">10%</span> auto;
+    <span class="hljs-attribute">text-align</span>: center;
+  }
+<span class="hljs-selector-class">.el-input</span>{
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+}
+<span class="hljs-selector-class">.el-button</span>{
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+
+</code></pre>
+<p>router/index.js</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Router</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue-router'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Login</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/Login'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Home</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/Home'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">User</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/sys/User'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Role</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/sys/Role'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">UserSetting</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'@/components/sys/UserSetting'</span>
+
+
+<span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">Router</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Router</span>({
+  <span class="hljs-comment">// mode: ,</span>
+  <span class="hljs-attr">routes</span>: [
+    {
+      <span class="hljs-attr">path</span>:<span class="hljs-string">'/'</span>,
+      <span class="hljs-attr">redirect</span>:<span class="hljs-string">'/Login'</span>
+    },
+    {
+      <span class="hljs-attr">path</span>:<span class="hljs-string">'/Login'</span>,
+      <span class="hljs-attr">name</span>:<span class="hljs-string">'Login'</span>,
+      <span class="hljs-attr">component</span>: <span class="hljs-title class_">Login</span>
+    },{
+      <span class="hljs-attr">path</span>:<span class="hljs-string">'/Home'</span>,
+      <span class="hljs-attr">name</span>:<span class="hljs-string">'Home'</span>,
+      <span class="hljs-attr">component</span>: <span class="hljs-title class_">Home</span>,
+      <span class="hljs-attr">children</span>: [
+        {
+          <span class="hljs-attr">path</span>:<span class="hljs-string">'/User'</span>,
+          <span class="hljs-attr">name</span>:<span class="hljs-string">'User'</span>,
+          <span class="hljs-attr">component</span>: <span class="hljs-title class_">User</span>
+        },{
+          <span class="hljs-attr">path</span>:<span class="hljs-string">'/Role'</span>,
+          <span class="hljs-attr">name</span>:<span class="hljs-string">'Role'</span>,
+          <span class="hljs-attr">component</span>: <span class="hljs-title class_">Role</span>
+        },{
+          <span class="hljs-attr">path</span>:<span class="hljs-string">'/UserSetting'</span>,
+          <span class="hljs-attr">name</span>:<span class="hljs-string">'UserSetting'</span>,
+          <span class="hljs-attr">component</span>: <span class="hljs-title class_">UserSetting</span>
+        }
+      ]
+    }
+  ]
+})
+</code></pre>
+<p>基本思路：把子页面放在children路由中，借助 <code>@select="menu"</code>，实现点击目录，右侧跳转子页面，具体参考以上代码</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","前端技术",{"className":"page-module__y-5DuW__cat-badge","children":"前端技术"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"9月8日vue学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-09-08T17:25:11.000Z","children":"2022年9月8日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1199," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","vue",{"className":"page-module__y-5DuW__tag","children":"vue"}],["$","span","前端",{"className":"page-module__y-5DuW__tag","children":"前端"}],["$","span","html",{"className":"page-module__y-5DuW__tag","children":"html"}],["$","span","css",{"className":"page-module__y-5DuW__tag","children":"css"}],["$","span","javascript",{"className":"page-module__y-5DuW__tag","children":"javascript"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zRMiDqPNvvxGAbwV66p6r"}
+4:["$","$La",null,{}]
+5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"vuex状态管理","text":"vuex状态管理"},{"level":3,"id":"安装","text":"安装"},{"level":3,"id":"使用","text":"使用"},{"level":3,"id":"vuex持久化工具","text":"vuex持久化工具"},{"level":2,"id":"elementui","text":"ElementUI"},{"level":3,"id":"安装使用","text":"安装使用"}]}]}]
+7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
