@@ -1,5 +1,5 @@
 :HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/chunks/07vo_-6mbuwor.css","style"]
+:HL["/_next/static/chunks/0i95npai~l8bl.css","style"]
 :HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"categories","param":null,"prefetchHints":0,"slots":{"children":{"name":"category","param":{"type":"d","key":"%25E6%2597%25B6%25E8%25AF%2584%25E6%259D%2582%25E8%25B0%2588","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"IMF9C1R5y-D_frCZNGCB_"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"categories","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"c","key":"%25E6%2597%25B6%25E8%25AF%2584%25E6%259D%2582%25E8%25B0%2588","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"ozBVcz1soOKExL08cmsFl"}

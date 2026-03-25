@@ -1,0 +1,155 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","Webpack%20plugins",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","Webpack%20plugins","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T1d5a,<p>插件（Plugin）构成了 Webpack 生态的骨架。如果我们把 Loader 看作是针对特定文件类型的“翻译官”，那么 Plugin 就是拥有全局视野的“调度员”。它们通过监听 Webpack 运行生命周期中的广播事件（Hooks），在特定的时机介入并改变构建结果。</p>
+<p>为了避免陷入纯粹的 API 罗列，我们可以从<strong>工程解决场景</strong>的角度，将这些纷繁复杂的 Plugin 进行解构。理解它们存在的原因和解决的痛点，比单纯记住名字更有价值。</p>
+<h3 id="一-产物与资源调度将代码从内存走向文件系统"><a href="#一-产物与资源调度将代码从内存走向文件系统">一、 产物与资源调度（将代码从内存走向文件系统）</a></h3>
+<p>这类插件主要负责处理最终输出文件的生成、注入和静态资源的流转。</p>
+<ul>
+<li>
+<p><strong><code>HtmlWebpackPlugin</code></strong></p>
+<ul>
+<li>
+<p><strong>核心驱动：</strong> 打包后的 JS/CSS 文件名通常带有内容哈希（contenthash）以破坏浏览器缓存。手动在 HTML 中引入这些不断变化的文件是不现实的。</p>
+</li>
+<li>
+<p><strong>机制：</strong> 它以一个 HTML 为模板，在 Webpack 输出阶段，自动将所有生成的 Bundle（JS/CSS）按正确的依赖顺序注入到 HTML 中。</p>
+</li>
+<li>
+<p><strong>边界与考量：</strong> 在构建多页应用（MPA）时，需要为每个页面实例化一次该插件。这在页面数量庞大时会带来显著的内存和构建时间开销。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>MiniCssExtractPlugin</code></strong></p>
+<ul>
+<li>
+<p><strong>核心驱动：</strong> 默认情况下，CSS 被打包进 JS 中（通过 <code>style-loader</code> 动态插入 <code>&#x3C;style></code> 标签）。这会导致 JS 文件臃肿，且 CSS 无法并行加载，极易引发页面的无样式内容闪烁（FOUC）。</p>
+</li>
+<li>
+<p><strong>机制：</strong> 它将 CSS 从 JS 中彻底剥离出来，生成单独的 <code>.css</code> 文件。</p>
+</li>
+<li>
+<p><strong>权衡：</strong> 这是一种典型的“牺牲局部构建速度换取全局加载性能”的策略。通常建议只在生产环境（Production）使用，而在开发环境依然使用 <code>style-loader</code> 以保证更快的 HMR（热更新）速度。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>CopyWebpackPlugin</code></strong></p>
+<ul>
+<li><strong>应用场景：</strong> 处理那些不需要经过 Webpack 编译的绝对静态资源（如网站的 <code>favicon.ico</code>、固定的第三方离线 SDK 等），将其直接从源码目录拷贝到输出目录。</li>
+</ul>
+</li>
+</ul>
+<h3 id="二-性能与体积压榨对每一-kb-进行极限优化"><a href="#二-性能与体积压榨对每一-kb-进行极限优化">二、 性能与体积压榨（对每一 KB 进行极限优化）</a></h3>
+<p>这一部分是前端性能优化的深水区。</p>
+<ul>
+<li>
+<p><strong><code>TerserWebpackPlugin</code></strong></p>
+<ul>
+<li>
+<p><strong>作用：</strong> 用于压缩和混淆 JavaScript 代码。Webpack 5 生产模式已内置并在底层默认调用，但当你需要自定义压缩规则（例如剔除 <code>console.log</code> 或提取版权注释）时，仍需要显式实例化它。</p>
+</li>
+<li>
+<p><strong>成本分析：</strong> 压缩 AST（抽象语法树）是 CPU 密集型操作，往往是打包耗时的大头。因此该插件默认开启多线程计算（<code>parallel: true</code>）以平衡时间成本。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>CssMinimizerWebpackPlugin</code></strong></p>
+<ul>
+<li><strong>作用：</strong> 寻找并合并 CSS 规则，去除空格和注释，压缩 CSS 体积。它通常与 <code>MiniCssExtractPlugin</code> 配合使用。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>WebpackBundleAnalyzer</code></strong></p>
+<ul>
+<li>
+<p><strong>核心价值：</strong> 它是性能优化的前置条件。没有数据度量，就无法进行有效的优化。</p>
+</li>
+<li>
+<p><strong>机制：</strong> 它会读取 Webpack 输出的 <code>stats.json</code>，启动一个本地服务，以可交互的树状图（Treemap）直观地展示所有模块的体积分布。你能一眼看出是哪个第三方库引入了冗余代码，从而进行针对性的代码分割（Code Splitting）或替换。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="三-环境工程化与上下文注入"><a href="#三-环境工程化与上下文注入">三、 环境工程化与上下文注入</a></h3>
+<ul>
+<li>
+<p><strong><code>DefinePlugin</code></strong></p>
+<ul>
+<li>
+<p><strong>核心驱动：</strong> 抹平开发环境与生产环境的代码差异，并提供一种编译时的死代码消除（Dead Code Elimination）机制。</p>
+</li>
+<li>
+<p><strong>机制：</strong> 允许在编译时创建全局常量（如 <code>process.env.NODE_ENV</code>）。</p>
+</li>
+<li>
+<p><strong>深层联动：</strong> 当你定义了一个常量，如果在代码中使用了 <code>if (false) { ... }</code> 这样的逻辑（经过 DefinePlugin 替换后），Terser 在后续压缩时会自动识别并彻底剔除这段永远不会执行的代码，这是 Tree Shaking 之外的另一种减包手段。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ESLintPlugin</code> / <code>StylelintPlugin</code></strong></p>
+<ul>
+<li><strong>作用：</strong> 将代码规范检查前置到构建流中。如果代码不符合规范，可以直接阻断编译（发出 Error 或 Warning），保证团队代码风格的绝对统一。</li>
+</ul>
+</li>
+</ul>
+<h3 id="四-架构突破打破单体应用边界"><a href="#四-架构突破打破单体应用边界">四、 架构突破（打破单体应用边界）</a></h3>
+<ul>
+<li>
+<p><strong><code>ModuleFederationPlugin</code> (模块联邦)</strong></p>
+<ul>
+<li>
+<p><strong>核心驱动：</strong> 传统的 NPM 共享代码方式需要经历“发布 -> 安装 -> 重新构建”的漫长链路，且会导致公共依赖在不同应用中被重复打包。</p>
+</li>
+<li>
+<p><strong>机制：</strong> Webpack 5 引入的革命性插件。它允许一个应用（Host）在运行时，通过网络直接动态加载并执行另一个应用（Remote）暴露出来的模块，且两者可以共享底层的依赖（如 React/Vue 实例）。这是目前微前端架构中最具统治力的底层基建技术。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="工具演进的启示被收编与淘汰的插件"><a href="#工具演进的启示被收编与淘汰的插件">工具演进的启示：被收编与淘汰的插件</a></h3>
+<p>在技术迭代中，观察哪些插件消失了，往往能看清工具进化的方向：</p>
+<ol>
+<li>
+<p><strong><code>CleanWebpackPlugin</code> (淘汰)：</strong> 过去用于在每次构建前清空 <code>dist</code> 目录。在 Webpack 5 中，仅需在 Output 配置中设置 <code>clean: true</code> 即可，这说明构建系统的文件 I/O 闭环更加完善。</p>
+</li>
+<li>
+<p><strong><code>DllPlugin</code> (边缘化)：</strong> 过去为了提升构建速度，开发者需要用 DLL 提前把第三方库打包好。而 Webpack 5 引入了原生的、极其强大的持久化缓存（<code>cache: { type: 'filesystem' }</code>），在性能上对 DLL 实现了降维打击，直接让这个高维护成本的插件退出了历史舞台。</p>
+</li>
+</ol>
+<p>梳理下来可以看出，配置 Plugin 并不是在玩积木，而是在做系统架构的权衡。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/工程化",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/","className":"$undefined","children":"前端开发 / 工程化"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Webpack plugins"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-28T00:00:00.000Z","children":"2026年2月28日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1388," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"一-产物与资源调度将代码从内存走向文件系统","text":"一、 产物与资源调度（将代码从内存走向文件系统）"},{"level":3,"id":"二-性能与体积压榨对每一-kb-进行极限优化","text":"二、 性能与体积压榨（对每一 KB 进行极限优化）"},{"level":3,"id":"三-环境工程化与上下文注入","text":"三、 环境工程化与上下文注入"},{"level":3,"id":"四-架构突破打破单体应用边界","text":"四、 架构突破（打破单体应用边界）"},{"level":3,"id":"工具演进的启示被收编与淘汰的插件","text":"工具演进的启示：被收编与淘汰的插件"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"Webpack plugins | 流年石刻"}],["$","meta","1",{"name":"description","content":"插件（Plugin）构成了 Webpack 生态的骨架。如果我们把 Loader 看作是针对特定文件类型的“翻译官”，那么 Plugin 就是拥有全局视野的“调度员”。它们通过监听 Webpack 运行生命周期中的广播事件（Hooks），在…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

@@ -1,0 +1,245 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+c:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","AntV%20G6%20%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%88%96%E6%9E%B6%E6%9E%84%E5%9B%BE",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","AntV%20G6%20%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%88%96%E6%9E%B6%E6%9E%84%E5%9B%BE","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":"$L8","templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L9",{},null,false,null]},null,false,"$@a"]},null,false,"$@a"]},null,false,null],"$Lb",false]],"m":"$undefined","G":["$c",["$Ld"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$L6",null,{}]
+9:["$","$1","c",{"children":["$Le",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}]
+12:[]
+a:"$W12"
+b:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+d:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T379e,<p>使用 G6 绘制<strong>流程图（Flowchart）或架构图（Architecture Diagram）</strong>，与绘制社交网络图（力导向图）的逻辑完全不同。</p>
+<p>社交网络图追求的是“节点不重叠，看着均匀”；而流程图和架构图追求的是**“层级分明、方向统一、模块嵌套”**。</p>
+<p>要实现这一点，你需要掌握三个核心概念的组合拳：<strong>Dagre 布局</strong> + <strong>Polyline 连线</strong> + <strong>Combo 分组</strong>。</p>
+<hr>
+<h3 id="1-核心思维模型"><a href="#1-核心思维模型">1. 核心思维模型</a></h3>
+<p>在 G6 中生成架构图，不是“画”出来的，而是“算”出来的。</p>
+<ul>
+<li>
+<p><strong>方向感：</strong> 使用 <strong>Dagre 层次布局算法</strong>。它可以自动把节点按 <code>上->下</code> 或 <code>左->右</code> 的依赖关系排列，不需要你手动指定 (x, y)。</p>
+</li>
+<li>
+<p><strong>规整感：</strong> 边（Edge）不能是直线，必须是 <strong>折线（Polyline）</strong>，且通常是正交的（直角拐弯），看起来才像工程图。</p>
+</li>
+<li>
+<p><strong>嵌套感：</strong> 架构图中常见的“VPC包含子网，子网包含服务器”，在 G6 中对应的概念叫 <strong>Combo</strong>。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-关键配置详解基于-g6-v5"><a href="#2-关键配置详解基于-g6-v5">2. 关键配置详解（基于 G6 v5）</a></h3>
+<h4 id="a-布局dagre-是唯一的真神"><a href="#a-布局dagre-是唯一的真神">A. 布局：Dagre 是唯一的真神</a></h4>
+<p>不要试图自己去算坐标，一定要用 Dagre。它是专门用于有向图（Directed Graph）分层布局的算法。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-ruby">const layout = {
+  <span class="hljs-symbol">type:</span> <span class="hljs-string">'dagre'</span>,
+  <span class="hljs-symbol">rankdir:</span> <span class="hljs-string">'TB'</span>, <span class="hljs-regexp">//</span> 布局方向：<span class="hljs-string">'TB'</span> (<span class="hljs-title class_">Top</span>-<span class="hljs-title class_">Bottom</span>) 自上而下，或 <span class="hljs-string">'LR'</span> (<span class="hljs-title class_">Left</span>-<span class="hljs-title class_">Right</span>) 从左到右
+  <span class="hljs-symbol">align:</span> <span class="hljs-string">'UL'</span>,   <span class="hljs-regexp">//</span> 对齐方式：<span class="hljs-string">'UL'</span> (<span class="hljs-title class_">Upper</span> <span class="hljs-title class_">Left</span>)
+  <span class="hljs-symbol">nodesep:</span> <span class="hljs-number">50</span>,   <span class="hljs-regexp">//</span> 同一层节点间的水平间距
+  <span class="hljs-symbol">ranksep:</span> <span class="hljs-number">70</span>,   <span class="hljs-regexp">//</span> 层与层之间的垂直间距
+  <span class="hljs-symbol">controlPoints:</span> <span class="hljs-literal">true</span>, <span class="hljs-regexp">//</span> 允许布局算法设置边的控制点（对折线很重要）
+};
+</code></pre>
+<h4 id="b-节点使用矩形与锚点"><a href="#b-节点使用矩形与锚点">B. 节点：使用矩形与锚点</a></h4>
+<p>架构图的节点通常是矩形（Rect），并且连线最好连接在节点的“上下左右”四个中点上，而不是圆心，这样更整洁。</p>
+<ul>
+<li>
+<p><strong>Shape:</strong> <code>rect</code></p>
+</li>
+<li>
+<p><strong>Ports (连接桩):</strong> 必须指定连接点，否则线会穿过矩形中心。</p>
+</li>
+</ul>
+<h4 id="c-边正交折线"><a href="#c-边正交折线">C. 边：正交折线</a></h4>
+<p>流程图的线必须拐直角。</p>
+<ul>
+<li>
+<p><strong>Type:</strong> <code>polyline</code> (折线)</p>
+</li>
+<li>
+<p><strong>Router:</strong> <code>orth</code> (正交路由)，让线自动寻找直角路径避开节点。</p>
+</li>
+</ul>
+<hr>
+<h3 id="3-实战代码自动生成微服务架构图"><a href="#3-实战代码自动生成微服务架构图">3. 实战代码：自动生成微服务架构图</a></h3>
+<p>假设我们要画一个经典的架构：<strong>网关 -> 业务服务集群 (含多个服务) -> 数据库</strong>。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-css">import { Graph } <span class="hljs-selector-tag">from</span> '<span class="hljs-keyword">@antv</span>/g6';
+
+// <span class="hljs-number">1</span>. 数据结构：必须包含 Combos 来表示“集群”或“分组”
+const data = {
+  nodes: [
+    { id: <span class="hljs-string">'gateway'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'API Gateway'</span>, type: <span class="hljs-string">'entry'</span> } },
+    { id: <span class="hljs-string">'service-a'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'Order Service'</span> }, combo: <span class="hljs-string">'k8s-cluster'</span> }, // 属于 combo
+    { id: <span class="hljs-string">'service-b'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'User Service'</span> }, combo: <span class="hljs-string">'k8s-cluster'</span> },
+    { id: <span class="hljs-string">'db-primary'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'MySQL Master'</span> }, combo: <span class="hljs-string">'db-cluster'</span> },
+    { id: <span class="hljs-string">'db-slave'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'MySQL Slave'</span> }, combo: <span class="hljs-string">'db-cluster'</span> },
+  ],
+  edges: [
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'gateway'</span>, target: <span class="hljs-string">'service-a'</span> },
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'gateway'</span>, target: <span class="hljs-string">'service-b'</span> },
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'service-a'</span>, target: <span class="hljs-string">'db-primary'</span> },
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'service-b'</span>, target: <span class="hljs-string">'db-primary'</span> },
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'db-primary'</span>, target: <span class="hljs-string">'db-slave'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'Sync'</span> } },
+  ],
+  // 定义分组（容器）
+  combos: [
+    { id: <span class="hljs-string">'k8s-cluster'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'K8s Cluster (App)'</span> } },
+    { id: <span class="hljs-string">'db-cluster'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'Database Zone'</span> } },
+  ],
+};
+
+// <span class="hljs-number">2</span>. 初始化图实例
+const graph = new Graph({
+  <span class="hljs-attribute">container</span>: <span class="hljs-string">'container'</span>,
+  width: <span class="hljs-number">1000</span>,
+  height: <span class="hljs-number">800</span>,
+  
+  // --- 关键配置开始 ---
+  
+  // 布局：使用 Dagre 实现流程化排列
+  layout: {
+    type: <span class="hljs-string">'dagre'</span>,
+    rankdir: <span class="hljs-string">'LR'</span>, // 从左到右流向
+    nodesep: <span class="hljs-number">30</span>,
+    ranksep: <span class="hljs-number">50</span>,
+    sortByCombo: true, // 关键：让布局算法感知 Combo，不要把分组打散
+  },
+  
+  // 节点通用样式
+  node: {
+    style: {
+      size: [<span class="hljs-number">120</span>, <span class="hljs-number">40</span>], // 矩形宽高
+      shape: <span class="hljs-string">'rect'</span>,   // 形状
+      radius: <span class="hljs-number">4</span>,       // 圆角
+      stroke: <span class="hljs-string">'#40a9ff'</span>,
+      fill: <span class="hljs-string">'#e6f7ff'</span>,
+      ports: [         // 定义四个连接点，保证连线规整
+        { placement: <span class="hljs-string">'top'</span> },
+        { placement: <span class="hljs-string">'right'</span> },
+        { placement: <span class="hljs-string">'bottom'</span> },
+        { placement: <span class="hljs-string">'left'</span> },
+      ],
+    },
+  },
+  
+  // 边通用样式
+  edge: {
+    type: <span class="hljs-string">'polyline'</span>, // 折线
+    style: {
+      router: {
+        type: <span class="hljs-string">'orth'</span>, // 正交路由：强迫线走直角
+      },
+      <span class="hljs-attribute">stroke</span>: <span class="hljs-string">'#a0c5e8'</span>,
+      lineWidth: <span class="hljs-number">2</span>,
+      endArrow: true, // 箭头
+      radius: <span class="hljs-number">10</span>,     // 拐角处的圆角，让折线不那么生硬
+    },
+  },
+  
+  // 分组通用样式
+  combo: {
+    type: <span class="hljs-string">'rect'</span>, // 分组也是矩形
+    style: {
+      <span class="hljs-attribute">fill</span>: <span class="hljs-string">'#f0f5ff'</span>,
+      stroke: <span class="hljs-string">'#adc6ff'</span>,
+      lineDash: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>], // 虚线边框，表示逻辑分组
+      radius: <span class="hljs-number">8</span>,
+      padding: [<span class="hljs-number">20</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>], // 这里的 padding 是为了给 Combo 的 Label 留位置
+    },
+  },
+  
+  // 交互：允许折叠分组
+  behaviors: [<span class="hljs-string">'drag-canvas'</span>, <span class="hljs-string">'zoom-canvas'</span>, <span class="hljs-string">'drag-element'</span>, <span class="hljs-string">'collapse-expand-combo'</span>],
+});
+
+graph<span class="hljs-selector-class">.setData</span>(data);
+graph<span class="hljs-selector-class">.render</span>();
+</code></pre>
+<hr>
+<h3 id="4-进阶技巧让图专业起来的细节"><a href="#4-进阶技巧让图专业起来的细节">4. 进阶技巧：让图“专业”起来的细节</a></h3>
+<p>如果只是上面的代码，画出来的图只能算“能看”。要达到专业架构图（类似 Visio 或 Draw.io 的效果），需要处理以下细节：</p>
+<h4 id="1-视觉区分mapper"><a href="#1-视觉区分mapper">1. 视觉区分（Mapper）</a></h4>
+<p>架构图中不同角色的节点样子应该不一样。比如数据库是圆柱体，网关是菱形或特殊颜色。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-comment">// 在 render 之前配置</span>
+graph.setOptions({
+  node: {
+    style: (d) => {
+      <span class="hljs-comment">// 针对不同类型做特殊处理</span>
+      <span class="hljs-keyword">if</span> (d.<span class="hljs-keyword">data</span>.type === <span class="hljs-string">'entry'</span>) {
+        <span class="hljs-keyword">return</span> { fill: <span class="hljs-string">'#722ed1'</span>, stroke: <span class="hljs-string">'#722ed1'</span>, labelFill: <span class="hljs-string">'#fff'</span> };
+      }
+      <span class="hljs-keyword">return</span> {}; <span class="hljs-comment">// 其他保持默认</span>
+    }
+  }
+});
+</code></pre>
+<h4 id="2-解决连线乱穿问题"><a href="#2-解决连线乱穿问题">2. 解决“连线乱穿”问题</a></h4>
+<p>Dagre 布局有时会导致连线穿过节点。</p>
+<ul>
+<li>
+<p><strong>方案：</strong> 增加 <code>layout</code> 中的 <code>ranksep</code>（层间距）。</p>
+</li>
+<li>
+<p><strong>高级方案：</strong> 如果 G6 的内置路由（orth）效果不好，可以尝试 G6 的插件或自定义 Edge，强制连线先从 Right 端口出来，再寻找路径。</p>
+</li>
+</ul>
+<h4 id="3-复杂的节点内容html-node"><a href="#3-复杂的节点内容html-node">3. 复杂的节点内容（HTML Node）</a></h4>
+<p>如果你的架构图节点需要显示：IP 地址、CPU 占用率进度条、报警图标。普通的 <code>rect</code> 形状很难画。</p>
+<ul>
+<li>
+<p>使用 React/HTML 节点：</p>
+<p>在 v5 中，你可以定义一个 React 组件作为节点。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">ReactNode</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@antv/g6-extension-react'</span>;
+
+<span class="hljs-comment">// 注册</span>
+<span class="hljs-title function_">register</span>(<span class="hljs-title class_">ReactNode</span>, <span class="hljs-string">'react-card'</span>);
+
+<span class="hljs-comment">// 使用</span>
+<span class="hljs-attr">node</span>: {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'react-card'</span>,
+    <span class="hljs-attr">style</span>: {
+        <span class="hljs-attr">component</span>: <span class="hljs-function">(<span class="hljs-params">data</span>) =></span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">MyServiceCard</span> <span class="hljs-attr">status</span>=<span class="hljs-string">{data.status}</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{data.label}</span> /></span></span>
+    }
+}
+</code></pre>
+<p><em>注意：HTML 节点性能比 Canvas 节点差，如果图中有上千个节点，慎用。但在架构图通常只有几十个节点，完全没问题。</em></p>
+</li>
+</ul>
+<hr>
+<h3 id="5-总结与建议"><a href="#5-总结与建议">5. 总结与建议</a></h3>
+<ul>
+<li>
+<p><strong>场景判断：</strong> 如果你的数据是从后端 API 拿回来的（例如：K8s 的拓扑、调用链追踪），<strong>G6 + Dagre + Combo</strong> 是完美解法，全自动生成。</p>
+</li>
+<li>
+<p><strong>反直觉提醒：</strong> 如果你是想做一个工具，<strong>让用户自己拖拽</strong>生成流程图，<strong>千万不要用 G6</strong>，请出门左转用 <strong>X6</strong>。X6 才是为此而生的（带有吸附对齐、手动连线路由等编辑特性）。</p>
+</li>
+</ul>
+<p>下一步行动：</p>
+<p>你想尝试生成一个简单的垂直（Top-Bottom）流程图，还是一个包含分组嵌套的复杂架构图？我可以给你写一个具体的 CodeSandbox 在线示例配置供你复制。</p>e:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","className":"$undefined","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"AntV G6 绘制流程图或架构图"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-11-20T00:00:00.000Z","children":"2025年11月20日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1377," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-核心思维模型","text":"1. 核心思维模型"},{"level":3,"id":"2-关键配置详解基于-g6-v5","text":"2. 关键配置详解（基于 G6 v5）"},{"level":4,"id":"a-布局dagre-是唯一的真神","text":"A. 布局：Dagre 是唯一的真神"},{"level":4,"id":"b-节点使用矩形与锚点","text":"B. 节点：使用矩形与锚点"},{"level":4,"id":"c-边正交折线","text":"C. 边：正交折线"},{"level":3,"id":"3-实战代码自动生成微服务架构图","text":"3. 实战代码：自动生成微服务架构图"},{"level":3,"id":"4-进阶技巧让图专业起来的细节","text":"4. 进阶技巧：让图“专业”起来的细节"},{"level":4,"id":"1-视觉区分mapper","text":"1. 视觉区分（Mapper）"},{"level":4,"id":"2-解决连线乱穿问题","text":"2. 解决“连线乱穿”问题"},{"level":4,"id":"3-复杂的节点内容html-node","text":"3. 复杂的节点内容（HTML Node）"},{"level":3,"id":"5-总结与建议","text":"5. 总结与建议"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"AntV G6 绘制流程图或架构图 | 流年石刻"}],["$","meta","1",{"name":"description","content":"使用 G6 绘制流程图（Flowchart）或架构图（Architecture Diagram），与绘制社交网络图（力导向图）的逻辑完全不同。 社交网络图追求的是“节点不重叠，看着均匀”；而流程图和架构图追求的是“层级分明、方向统一、模块嵌…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

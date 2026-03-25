@@ -1,0 +1,263 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T5143,<p>好的，我们来彻底讲明白 <code>async/await</code> 的底层原理。</p>
+<p>一句话概括：<strong><code>async/await</code> 是基于 <code>Promise</code> 和 <code>Generator</code> 函数实现的语法糖，它通过事件循环（Event Loop）机制，让我们能用看似同步的代码风格来处理异步操作，从而避免了回调地狱和冗长的 <code>.then()</code> 链。</strong></p>
+<p>为了彻底理解，我们需要从根源上拆解这个过程，分为以下几个核心部分：</p>
+<ol>
+<li>
+<p><strong>前置知识：异步的进化之路</strong></p>
+</li>
+<li>
+<p><strong>核心基石1：<code>Promise</code> - 异步操作的容器</strong></p>
+</li>
+<li>
+<p><strong>核心基石2：<code>Generator</code> - 函数执行的暂停与恢复</strong></p>
+</li>
+<li>
+<p><strong><code>async/await</code> 的实现：<code>Generator</code> + 自动执行器</strong></p>
+</li>
+<li>
+<p><strong>引擎的底层协作：事件循环（Event Loop）与微任务（Microtask）</strong></p>
+</li>
+<li>
+<p><strong>总结</strong></p>
+</li>
+</ol>
+<hr>
+<h3 id="1-前置知识异步的进化之路"><a href="#1-前置知识异步的进化之路">1. 前置知识：异步的进化之路</a></h3>
+<p>要理解 <code>async/await</code> 为何出现，就要看它解决了什么问题。</p>
+<ul>
+<li>
+<p><strong>Callback（回调函数）时代</strong>：最早的异步处理方式。当一个异步操作完成时，调用我们预先传入的函数。这很容易导致“回调地狱”（Callback Hell），代码横向发展，难以阅读和维护。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title function_">step1</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">value1</span>) {
+    <span class="hljs-title function_">step2</span>(value1, <span class="hljs-keyword">function</span> (<span class="hljs-params">value2</span>) {
+        <span class="hljs-title function_">step3</span>(value2, <span class="hljs-keyword">function</span> (<span class="hljs-params">value3</span>) {
+            <span class="hljs-comment">// ... and so on</span>
+        });
+    });
+});
+</code></pre>
+</li>
+<li>
+<p><strong><code>Promise</code> 时代</strong>：<code>Promise</code> 对象代表一个异步操作的最终完成（或失败）及其结果值。它将回调函数变成了链式调用 <code>.then()</code>，将代码从横向拉回了纵向，解决了回调地狱问题，但代码依然有些冗余。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title function_">step1</span>()
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value1</span> =></span> <span class="hljs-title function_">step2</span>(value1))
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value2</span> =></span> <span class="hljs-title function_">step3</span>(value2))
+    .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error));
+</code></pre>
+</li>
+</ul>
+<p><code>async/await</code> 的目标就是让上面 <code>Promise</code> 的代码写法变得更像我们习惯的同步代码。</p>
+<hr>
+<h3 id="2-核心基石1promise---异步操作的容器"><a href="#2-核心基石1promise---异步操作的容器">2. 核心基石1：<code>Promise</code> - 异步操作的容器</a></h3>
+<p><code>async/await</code> 是建立在 <code>Promise</code> 之上的，这是理解它的第一个关键点。</p>
+<ul>
+<li>
+<p><strong><code>async</code> 函数的返回值</strong>：一个 <code>async</code> 函数无论内部执行了什么，其<strong>返回值永远是一个 <code>Promise</code> 对象</strong>。</p>
+<ul>
+<li>
+<p>如果函数内部 <code>return</code> 了一个非 <code>Promise</code> 的值（如 <code>return 10;</code>），这个值会被自动包装成一个状态为 <code>fulfilled</code> 的 <code>Promise</code>，其值为 <code>10</code>。</p>
+</li>
+<li>
+<p>如果函数内部 <code>return</code> 了一个 <code>Promise</code>，那么该 <code>async</code> 函数的返回值就是这个 <code>Promise</code>。</p>
+</li>
+<li>
+<p>如果函数内部抛出异常，则相当于返回一个状态为 <code>rejected</code> 的 <code>Promise</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>await</code> 操作的对象</strong>：<code>await</code> 后面通常跟的是一个 <code>Promise</code> 对象。它会“等待”这个 <code>Promise</code> 的状态变为 <code>fulfilled</code>，然后返回其结果；或者等待其变为 <code>rejected</code>，然后将拒绝的原因作为异常抛出。如果 <code>await</code> 后面跟的不是 <code>Promise</code>，它会立即将其转换为一个已解决的 <code>Promise</code>。</p>
+</li>
+</ul>
+<p>所以，<code>Promise</code> 是 <code>async/await</code> 进行异步流程控制的“数据载体”和“状态机”。</p>
+<hr>
+<h3 id="3-核心基石2generator---函数执行的暂停与恢复"><a href="#3-核心基石2generator---函数执行的暂停与恢复">3. 核心基石2：<code>Generator</code> - 函数执行的暂停与恢复</a></h3>
+<p>这是揭示 <code>async/await</code> 底层魔法的<strong>最核心</strong>部分。<code>Generator</code> 函数是 ES6 引入的一种特殊的函数，它可以在执行过程中<strong>暂停</strong>和<strong>恢复</strong>。</p>
+<p>看一个 <code>Generator</code> 函数的例子：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">myGenerator</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'第一段'</span>);
+    <span class="hljs-keyword">const</span> value1 = <span class="hljs-keyword">yield</span> <span class="hljs-number">1</span>; <span class="hljs-comment">// 暂停点1</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'从暂停点1恢复，接收到的值:'</span>, value1);
+
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'第二段'</span>);
+    <span class="hljs-keyword">const</span> value2 = <span class="hljs-keyword">yield</span> <span class="hljs-number">2</span>; <span class="hljs-comment">// 暂停点2</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'从暂停点2恢复，接收到的值:'</span>, value2);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'执行完毕'</span>;
+}
+
+<span class="hljs-comment">// 调用 Generator 函数并不会立即执行，而是返回一个迭代器对象</span>
+<span class="hljs-keyword">const</span> gen = <span class="hljs-title function_">myGenerator</span>();
+
+<span class="hljs-comment">// 手动控制执行</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">// 输出 "第一段", 然后在 yield 1 处暂停。返回 { value: 1, done: false }</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen.<span class="hljs-title function_">next</span>(<span class="hljs-string">'你好'</span>)); <span class="hljs-comment">// 从暂停点1恢复，将'你好'作为 yield 1 的返回值赋给 value1。然后在 yield 2 处暂停。返回 { value: 2, done: false }</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(gen.<span class="hljs-title function_">next</span>(<span class="hljs-string">'世界'</span>)); <span class="hljs-comment">// 从暂停点2恢复，将'世界'作为 yield 2 的返回值赋给 value2。函数执行完毕。返回 { value: '执行完毕', done: true }</span>
+</code></pre>
+<p>关键点：</p>
+<ul>
+<li>
+<p><code>function*</code> 定义了一个 <code>Generator</code> 函数。</p>
+</li>
+<li>
+<p><code>yield</code> 关键字是暂停点，它会产出一个值，并暂停函数的执行。</p>
+</li>
+<li>
+<p><code>gen.next()</code> 方法用于从暂停点恢复执行。<code>next()</code> 的参数会成为上一个 <code>yield</code> 表达式的返回值。</p>
+</li>
+</ul>
+<p><strong><code>async/await</code> 正是利用了 <code>Generator</code> 的这个“暂停/恢复”能力，实现了对异步代码的“挂起”和“继续”。</strong></p>
+<hr>
+<h3 id="4-asyncawait-的实现generator--自动执行器"><a href="#4-asyncawait-的实现generator--自动执行器">4. <code>async/await</code> 的实现：<code>Generator</code> + 自动执行器</a></h3>
+<p><code>async/await</code> 本质上可以看作是一个<strong>自动执行的 <code>Generator</code> 函数</strong>。我们不需要手动调用 <code>.next()</code>，一个“执行器”（Runner）会帮我们自动完成。</p>
+<p>让我们来模拟一下这个过程。假设我们有这样的 <code>async</code> 函数：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 这是我们的目标 async 函数</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'开始请求数据...'</span>);
+    <span class="hljs-keyword">const</span> result1 = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(<span class="hljs-string">'api/data1'</span>); <span class="hljs-comment">// 假设 request 返回一个Promise</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'拿到数据1:'</span>, result1);
+    <span class="hljs-keyword">const</span> result2 = <span class="hljs-keyword">await</span> <span class="hljs-title function_">request</span>(<span class="hljs-string">'api/data2'</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'拿到数据2:'</span>, result2);
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'全部完成'</span>;
+}
+</code></pre>
+<p>上面的代码，在底层可以被理解为（这正是 Babel 等转译器所做的事情）：</p>
+<p><strong>第一步：Generator 化</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">fetchDataGenerator</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'开始请求数据...'</span>);
+    <span class="hljs-keyword">const</span> result1 = <span class="hljs-keyword">yield</span> <span class="hljs-title function_">request</span>(<span class="hljs-string">'api/data1'</span>); <span class="hljs-comment">// yield 后面是一个 Promise</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'拿到数据1:'</span>, result1);
+    <span class="hljs-keyword">const</span> result2 = <span class="hljs-keyword">yield</span> <span class="hljs-title function_">request</span>(<span class="hljs-string">'api/data2'</span>); <span class="hljs-comment">// yield 后面是另一个 Promise</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'拿到数据2:'</span>, result2);
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'全部完成'</span>;
+}
+</code></pre>
+<p><strong>第二步：自动执行器（Runner）</strong></p>
+<p>我们需要一个函数来自动执行这个 <code>Generator</code>。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">run</span>(<span class="hljs-params">genFunc</span>) {
+    <span class="hljs-keyword">const</span> gen = <span class="hljs-title function_">genFunc</span>(); <span class="hljs-comment">// 得到迭代器</span>
+
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">next</span>(<span class="hljs-params">data</span>) {
+        <span class="hljs-keyword">const</span> result = gen.<span class="hljs-title function_">next</span>(data); <span class="hljs-comment">// 执行下一步，并传入上次Promise的结果</span>
+
+        <span class="hljs-keyword">if</span> (result.<span class="hljs-property">done</span>) {
+            <span class="hljs-comment">// 如果 Generator 执行完毕，就将最终结果 resolve 出去</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(result.<span class="hljs-property">value</span>);
+        }
+
+        <span class="hljs-comment">// 如果还没完，result.value 是一个 Promise</span>
+        <span class="hljs-comment">// 我们等待这个 Promise 完成，然后用它的结果递归调用 next</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(result.<span class="hljs-property">value</span>).<span class="hljs-title function_">then</span>(
+            <span class="hljs-function"><span class="hljs-params">resolvedData</span> =></span> <span class="hljs-title function_">next</span>(resolvedData), <span class="hljs-comment">// 成功时，将结果传给下一次 next</span>
+            <span class="hljs-function"><span class="hljs-params">error</span> =></span> gen.<span class="hljs-keyword">throw</span>(error) <span class="hljs-comment">// 失败时，将错误抛入 Generator</span>
+        );
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">next</span>(); <span class="hljs-comment">// 启动执行器</span>
+}
+
+<span class="hljs-comment">// 使用自动执行器</span>
+<span class="hljs-title function_">run</span>(fetchDataGenerator).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">finalResult</span> =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(finalResult); <span class="hljs-comment">// 输出 "全部完成"</span>
+});
+</code></pre>
+<p>这个 <code>run</code> 函数就是 <code>async/await</code> 的核心原理：</p>
+<ol>
+<li>
+<p>启动 <code>Generator</code>。</p>
+</li>
+<li>
+<p>遇到 <code>yield</code>（相当于 <code>await</code>），它后面跟的是一个 <code>Promise</code>。</p>
+</li>
+<li>
+<p><code>run</code> 函数拿到这个 <code>Promise</code>，然后注册 <code>.then()</code> 回调。</p>
+</li>
+<li>
+<p>在 <code>.then()</code> 回调中，当 <code>Promise</code> 完成后，将其结果作为参数，调用 <code>gen.next()</code>，将结果注入 <code>Generator</code> 函数内部，并使其从上次暂停的位置继续执行。</p>
+</li>
+<li>
+<p>这个过程循环往复，直到 <code>Generator</code> 执行完毕 (<code>result.done</code> 为 <code>true</code>)。</p>
+</li>
+</ol>
+<p><strong>所以，<code>await</code> 关键字的作用就是 <code>yield</code> 一个 <code>Promise</code> 并把控制权交给了这个自动执行器。</strong></p>
+<hr>
+<h3 id="5-引擎的底层协作事件循环event-loop与微任务microtask"><a href="#5-引擎的底层协作事件循环event-loop与微任务microtask">5. 引擎的底层协作：事件循环（Event Loop）与微任务（Microtask）</a></h3>
+<p>现在我们知道函数是如何“暂停”和“恢复”的了，但还有一个关键问题：<strong>在 <code>await</code> 等待 <code>Promise</code> 结果的期间，JavaScript 引擎在做什么？为什么它没有阻塞整个程序的运行？</strong></p>
+<p>答案是<strong>事件循环（Event Loop）和微任务队列（Microtask Queue）</strong>。</p>
+<p>执行 <code>async</code> 函数的完整流程如下：</p>
+<ol>
+<li>
+<p><strong>进入 <code>async</code> 函数</strong>：<code>fetchData()</code> 函数被调用，它的代码开始同步执行。</p>
+</li>
+<li>
+<p><strong>遇到 <code>await</code></strong>：执行到 <code>await request('api/data1')</code>。</p>
+<ul>
+<li>
+<p><code>request('api/data1')</code> 被立即执行，它发起一个网络请求（这是一个异步的 Web API），并返回一个 <code>Promise</code> 对象。</p>
+</li>
+<li>
+<p><code>await</code> 关键字会“暂停”<code>fetchData</code> 函数的<strong>执行</strong>。<strong>重要的是，它只是暂停了 <code>fetchData</code> 函数本身，并没有阻塞 JavaScript 的主线程</strong>。<code>fetchData</code> 函数的执行上下文（Execution Context）会暂时被移出调用栈（Call Stack）。</p>
+</li>
+<li>
+<p>JavaScript 引擎会继续执行 <code>fetchData</code> 函数之后的同步代码（如果<code>fetchData</code>是被另一个函数调用的）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Promise 状态改变</strong>：一段时间后，网络请求完成，<code>request</code> 返回的那个 <code>Promise</code> 的状态从 <code>pending</code> 变为 <code>fulfilled</code>（或 <code>rejected</code>）。</p>
+</li>
+<li>
+<p><strong>注册微任务</strong>：当 <code>Promise</code> 状态改变时，它的 <code>.then()</code> 回调（也就是我们模拟的 <code>run</code> 函数中用于调用 <code>next()</code> 的那部分逻辑）会被放入<strong>微任务队列（Microtask Queue）</strong>。</p>
+</li>
+<li>
+<p><strong>事件循环检查</strong>：事件循环在当前宏任务（Macrotask）执行完毕，且调用栈为空时，会立即检查微任务队列。</p>
+</li>
+<li>
+<p><strong>恢复执行</strong>：事件循环从微任务队列中取出回调函数并执行。这个回调函数会调用 <code>gen.next()</code>，将 <code>Promise</code> 的结果传入，并将 <code>fetchData</code> 函数的执行上下文重新推入调用栈，从上次 <code>await</code> 的地方继续执行，直到遇到下一个 <code>await</code> 或函数结束。</p>
+</li>
+</ol>
+<p>这个机制确保了在等待异步操作（如 I/O、网络请求）时，主线程可以继续处理其他任务（如用户交互、渲染等），从而实现了非阻塞的异步执行。</p>
+<hr>
+<h3 id="6-总结"><a href="#6-总结">6. 总结</a></h3>
+<p>让我们把所有知识点串起来，形成一个完整的图像：</p>
+<ol>
+<li>
+<p><strong><code>async</code> 关键字</strong>：声明一个函数是异步的，它的返回值必然是一个 <code>Promise</code>。</p>
+</li>
+<li>
+<p><strong><code>await</code> 关键字</strong>：只能在 <code>async</code> 函数内部使用。它实际上是 <code>Generator</code> 的 <code>yield</code> 和 <code>Promise</code> 的 <code>.then()</code> 的组合。</p>
+</li>
+<li>
+<p><strong><code>Generator</code> 函数</strong>：是 <code>async/await</code> 实现函数“暂停”和“恢复”的底层机制。<code>async</code> 函数就是一个特殊的 <code>Generator</code> 函数。</p>
+</li>
+<li>
+<p><strong>自动执行器</strong>：<code>async/await</code> 内置了一个 <code>Generator</code> 的自动执行器，它负责在 <code>Promise</code> 完成后自动调用 <code>.next()</code>，将异步流程串联起来。</p>
+</li>
+<li>
+<p><strong><code>Promise</code> 对象</strong>：是 <code>async/await</code> 异步流程中传递状态和数据的载体。</p>
+</li>
+<li>
+<p><strong>事件循环与微任务</strong>：是 <code>async/await</code> 实现非阻塞等待的底层保障。<code>await</code> 暂停函数执行后，会将恢复操作作为微任务放入队列，等待主线程空闲时执行。</p>
+</li>
+</ol>
+<p>最终，<code>async/await</code> 就是 JavaScript 引擎为我们精心打造的一个高级抽象。它巧妙地将 <code>Generator</code> 的执行控制能力和 <code>Promise</code> 的状态管理能力结合在一起，再通过事件循环机制进行调度，最终呈现给我们一种极其简洁、易于理解和维护的同步化编程体验。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"async await 原理"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-08-18T00:00:00.000Z","children":"2025年8月18日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2332," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-前置知识异步的进化之路","text":"1. 前置知识：异步的进化之路"},{"level":3,"id":"2-核心基石1promise---异步操作的容器","text":"2. 核心基石1：Promise - 异步操作的容器"},{"level":3,"id":"3-核心基石2generator---函数执行的暂停与恢复","text":"3. 核心基石2：Generator - 函数执行的暂停与恢复"},{"level":3,"id":"4-asyncawait-的实现generator--自动执行器","text":"4. async/await 的实现：Generator + 自动执行器"},{"level":3,"id":"5-引擎的底层协作事件循环event-loop与微任务microtask","text":"5. 引擎的底层协作：事件循环（Event Loop）与微任务（Microtask）"},{"level":3,"id":"6-总结","text":"6. 总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,719 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","ts%E9%97%AE%E9%A2%98%E7%BB%BC%E8%BF%B0",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","ts%E9%97%AE%E9%A2%98%E7%BB%BC%E8%BF%B0","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:Tb627,<p>好的，我们来系统性、深入地梳理 TypeScript 在面试中可能遇到的所有核心考点。</p>
+<p>这不仅仅是一份“题库”，而是一套从“是什么”到“为什么”再到“怎么用”的完整知识体系。我会遵循第一性原理，从 TypeScript 要解决的根本问题出发，层层递进，并针对关键问题给出我的最优实践建议。</p>
+<hr>
+<h3 id="面试官想考察什么"><a href="#面试官想考察什么">面试官想考察什么？</a></h3>
+<p>首先要明白，面试官通过 TypeScript 问题，希望看到的不仅仅是你是否会写 <code>interface</code> 或 <code>type</code>。他们真正想考察的是：</p>
+<ol>
+<li>
+<p><strong>工程化能力</strong>：你是否理解类型系统对于大型、长期项目的价值（可维护性、可读性、健壮性）。</p>
+</li>
+<li>
+<p><strong>代码设计能力</strong>：你是否能利用 TypeScript 的特性（如泛型、高级类型）设计出更灵活、更可靠的组件和抽象。</p>
+</li>
+<li>
+<p><strong>解决问题的严谨性</strong>：你处理边界情况（如 <code>null</code>、<code>undefined</code>）的思维是否缜密。</p>
+</li>
+<li>
+<p><strong>对工具的深度理解</strong>：你是否只是“会用”，还是真正理解其背后的工作原理（如类型推断、结构化类型系统）。</p>
+</li>
+</ol>
+<p>下面，我们将考点分为四个层次，由浅入深：<strong>基础核心 -> 进阶应用 -> 高级/理论 -> 工程实践</strong>。</p>
+<hr>
+<h3 id="第一层基础核心-the-what"><a href="#第一层基础核心-the-what">第一层：基础核心 (The What)</a></h3>
+<p>这一层是基础，答不上来基本就没戏了。你需要做到不仅知道是什么，还要知道它们之间的细微差别。</p>
+<h4 id="1-typescript-相比-javascript-的核心优势是什么"><a href="#1-typescript-相比-javascript-的核心优势是什么">1. TypeScript 相比 JavaScript 的核心优势是什么？</a></h4>
+<p>这是一个开场问题，考察你对 TypeScript 价值的理解。</p>
+<p><strong>解答思路：</strong></p>
+<p>不要只说“类型安全”。要从开发者、团队和项目的角度出发。</p>
+<ol>
+<li>
+<p><strong>静态类型检查 (Static Type Checking)</strong>：这是最核心的优势。它将大量在运行时（Runtime）才会暴露的错误（如 <code>TypeError: cannot read property 'x' of undefined</code>）提前到了编译时（Compile-time）。这极大地减少了线上 Bug，提升了代码质量。</p>
+</li>
+<li>
+<p><strong>代码的可读性和可维护性</strong>：类型本身就是一种“文档”。当看到一个函数签名 <code>function getUser(id: string): Promise&#x3C;User></code> 时，我们立刻就能明白它的输入和输出，无需去读完整的函数实现。这在团队协作和长期维护中至关重要。</p>
+</li>
+<li>
+<p><strong>更好的开发体验和工具支持</strong>：IDE（如 VS Code）可以基于类型信息提供极其强大的功能，如智能代码补全、方法提示、自动重构、定义跳转等。这本质上是把静态分析的能力赋能给了开发者，极大地提升了开发效率。</p>
+</li>
+<li>
+<p><strong>促进更严谨的代码设计</strong>：在编写 TypeScript 代码时，你会被“迫使”去思考数据的结构、函数的输入输出契约。这是一种心智模型的转变，会让你在设计之初就规避掉很多模糊和不确定的地方。</p>
+</li>
+</ol>
+<h4 id="2-interface-和-type-的区别是什么我应该用哪个"><a href="#2-interface-和-type-的区别是什么我应该用哪个">2. <code>interface</code> 和 <code>type</code> 的区别是什么？我应该用哪个？</a></h4>
+<p>这是 TypeScript 面试中出现频率最高的问题，没有之一。</p>
+<p><strong>解答思路：</strong></p>
+<p>先清晰地列出异同点，然后给出明确的、有主见的选型建议。</p>
+<p><strong>相同点：</strong></p>
+<ul>
+<li>
+<p>都可以用来描述对象或函数的形状。</p>
+</li>
+<li>
+<p>都支持扩展（<code>extends</code> 和 <code>&#x26;</code>）。</p>
+</li>
+</ul>
+<p><strong>不同点：</strong></p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>interface</code></th>
+<th><code>type</code> (类型别名)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>声明合并</strong></td>
+<td><strong>支持</strong>。多个同名 <code>interface</code> 会自动合并。</td>
+<td><strong>不支持</strong>。多个同名 <code>type</code> 会直接报错。</td>
+</tr>
+<tr>
+<td><strong>扩展方式</strong></td>
+<td>使用 <code>extends</code> 关键字。</td>
+<td>使用 <code>&#x26;</code> (交叉类型) 操作符。</td>
+</tr>
+<tr>
+<td><strong>实现 (Implements)</strong></td>
+<td>类可以 <code>implements</code> 一个或多个 <code>interface</code>。</td>
+<td>类不能 <code>implements</code> 一个由 <code>type</code> 定义的联合类型或复杂类型。</td>
+</tr>
+<tr>
+<td><strong>适用范围</strong></td>
+<td>主要用于定义对象和类的结构（契约）。</td>
+<td>更通用，可以为任何类型创建别名，如联合类型、交叉类型、元组、原始类型等。</td>
+</tr>
+<tr>
+<td><strong>示例</strong></td>
+<td><code>interface User { id: number; }</code></td>
+<td><code>type UserID = string | number;</code> <br> <code>type Point = { x: number; y: number; };</code></td>
+</tr>
+<tr>
+<td><strong>Computed Properties</strong></td>
+<td>不太直接支持复杂计算属性名。</td>
+<td>可以。例如 `type Keys = "name"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>我的选择建议：</strong></p>
+<p>这是一个有明确最佳实践的场景。</p>
+<ol>
+<li>
+<p><strong>优先使用 <code>interface</code> 定义对象/类的结构</strong>：当你定义一个公共的 API 契约，比如一个对象的形状或一个类的结构时，优先使用 <code>interface</code>。它的“声明合并”特性对于扩展第三方库的类型或在大型项目中分模块定义类型非常有用。它也更符合面向对象编程中“契约”的语义。</p>
+</li>
+<li>
+<p><strong>使用 <code>type</code> 定义非对象类型和复杂类型</strong>：当你需要定义联合类型 (<code>string | number</code>)、交叉类型、元组、或为一个复杂的类型组合（如 <code>Partial&#x3C;User> &#x26; { token: string }</code>）起一个别名时，必须使用 <code>type</code>。</p>
+</li>
+</ol>
+<p><strong>总结一句话：<code>interface</code> for contracts, <code>type</code> for aliases and complex types.</strong></p>
+<h4 id="3-any-unknown-never-void-的区别"><a href="#3-any-unknown-never-void-的区别">3. <code>any</code>, <code>unknown</code>, <code>never</code>, <code>void</code> 的区别？</a></h4>
+<p>这组类型的辨析，能很好地考察你对 TypeScript 类型系统严谨性的理解。</p>
+<ul>
+<li>
+<p><strong><code>any</code></strong>: <strong>类型系统的“放弃”</strong>。</p>
+<ul>
+<li>
+<p><strong>是什么</strong>：表示任何类型。TypeScript 编译器会完全跳过对 <code>any</code> 类型的检查。</p>
+</li>
+<li>
+<p><strong>为什么用</strong>：用于在旧的 JavaScript 代码迁移过程中做临时兼容，或者处理一些实在无法确定类型的第三方库返回值。</p>
+</li>
+<li>
+<p><strong>风险</strong>：它会“污染”代码。任何与 <code>any</code> 类型交互的值都会失去类型保护，这违背了使用 TypeScript 的初衷。应该在 <code>tsconfig.json</code> 中开启 <code>noImplicitAny</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>unknown</code></strong>: <strong>类型系统的“安全阀”</strong>。</p>
+<ul>
+<li>
+<p><strong>是什么</strong>：表示一个未知的类型。它和 <code>any</code> 一样，可以接收任何类型的值。</p>
+</li>
+<li>
+<p><strong>关键区别</strong>：<code>unknown</code> 类型的值不能直接赋值给除了 <code>any</code> 和 <code>unknown</code> 之外的任何其他类型，也不能对它进行任何操作（如调用方法、读取属性）。</p>
+</li>
+<li>
+<p><strong>如何使用</strong>：必须通过<strong>类型收窄</strong> (Type Narrowing) 来明确其类型后才能使用。例如使用 <code>typeof</code>、<code>instanceof</code> 或自定义的类型守卫 (Type Guards)。</p>
+</li>
+<li>
+<p><strong>最佳实践</strong>：在不确定类型时，<strong>永远优先使用 <code>unknown</code> 而不是 <code>any</code></strong>。它强制你对不确定的类型进行校验，是更安全的选择。</p>
+</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">function</span> <span class="hljs-title function_">processValue</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">unknown</span></span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'string'</span>) {
+    <span class="hljs-comment">// 在这个代码块内，value 的类型被收窄为 string</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value.<span class="hljs-title function_">toUpperCase</span>());
+  }
+  <span class="hljs-comment">// console.log(value.toUpperCase()); // 报错：'value' is of type 'unknown'.</span>
+}
+</code></pre>
+</li>
+<li>
+<p><strong><code>void</code></strong>: <strong>函数的“无返回值”</strong>。</p>
+<ul>
+<li>
+<p><strong>是什么</strong>：通常用于表示一个函数没有显式的返回值。</p>
+</li>
+<li>
+<p><strong>注意</strong>：在 JavaScript 中，没有返回值的函数实际返回的是 <code>undefined</code>。TypeScript 的 <code>void</code> 类型允许你将 <code>undefined</code> 赋值给它，但其核心语义是“不关心返回值”。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>never</code></strong>: <strong>“永不存在”的值的类型</strong>。</p>
+<ul>
+<li>
+<p><strong>是什么</strong>：表示那些永远不会出现的值的类型。</p>
+</li>
+<li>
+<p><strong>主要场景</strong>：</p>
+<ol>
+<li>
+<p><strong>抛出异常的函数</strong>：一个函数如果总是抛出异常，那么它就永远不会有返回值。<code>function fail(message: string): never { throw new Error(message); }</code></p>
+</li>
+<li>
+<p><strong>无限循环的函数</strong>：<code>function infiniteLoop(): never { while(true) {} }</code></p>
+</li>
+<li>
+<p><strong>类型收窄后的空集</strong>：在进行详尽性检查（Exhaustive Checks）时特别有用，可以保证 <code>switch</code> 或 <code>if/else</code> 语句覆盖了所有可能的情况。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">type</span> <span class="hljs-title class_">Shape</span> = <span class="hljs-string">"circle"</span> | <span class="hljs-string">"square"</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getArea</span>(<span class="hljs-params"><span class="hljs-attr">shape</span>: <span class="hljs-title class_">Shape</span></span>): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">switch</span> (shape) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"circle"</span>: <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"square"</span>: <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-comment">// 如果未来有人给 Shape 添加了新的类型，比如 "triangle"</span>
+      <span class="hljs-comment">// 但忘记在这里更新，编译器就会在这里报错</span>
+      <span class="hljs-comment">// 因为 aNever 是 never 类型，但 shape 此时是 "triangle" 类型</span>
+      <span class="hljs-keyword">const</span> <span class="hljs-attr">aNever</span>: <span class="hljs-built_in">never</span> = shape;
+      <span class="hljs-keyword">return</span> aNever;
+  }
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="第二层进阶应用-the-how"><a href="#第二层进阶应用-the-how">第二层：进阶应用 (The How)</a></h3>
+<p>这一层考察你是否能熟练运用 TypeScript 的核心特性来解决实际问题，编写出高质量、可复用的代码。</p>
+<h4 id="4-什么是泛型-generics请举一个实际应用场景"><a href="#4-什么是泛型-generics请举一个实际应用场景">4. 什么是泛型 (Generics)？请举一个实际应用场景。</a></h4>
+<p>泛型是 TypeScript 的精髓之一，考察的是你的抽象能力和代码复用能力。</p>
+<p><strong>解答思路：</strong></p>
+<ol>
+<li>
+<p><strong>解释核心思想</strong>：泛型允许我们在定义函数、类或接口时不预先指定具体的类型，而是在使用的时候再指定类型。它就像一个类型的“占位符”或“参数”。目的是为了编写一份代码，可以安全地操作多种类型，而不是为每种类型都写一份重复的代码。</p>
+</li>
+<li>
+<p><strong>举一个简单的例子</strong>：经典的 <code>identity</code> 函数。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// 没有泛型，我们需要为不同类型写多个函数，或者使用 any 丢失类型信息</span>
+<span class="hljs-comment">// function identity(value: any): any { return value; }</span>
+
+<span class="hljs-comment">// 使用泛型</span>
+<span class="hljs-keyword">function</span> identity&#x3C;T>(<span class="hljs-attr">value</span>: T): T {
+    <span class="hljs-keyword">return</span> value;
+}
+
+<span class="hljs-keyword">let</span> num = identity&#x3C;<span class="hljs-built_in">number</span>>(<span class="hljs-number">10</span>); <span class="hljs-comment">// num 的类型是 number</span>
+<span class="hljs-keyword">let</span> str = <span class="hljs-title function_">identity</span>(<span class="hljs-string">"hello"</span>);     <span class="hljs-comment">// TS 可以类型推断，str 的类型是 "hello"</span>
+</code></pre>
+</li>
+<li>
+<p><strong>举一个更实际的、有说服力的场景</strong>：封装一个通用的数据请求函数 <code>fetchData</code>。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">ApiResponse</span>&#x3C;T> {
+  <span class="hljs-attr">code</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">data</span>: T;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Product</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">price</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> fetchData&#x3C;T>(<span class="hljs-attr">url</span>: <span class="hljs-built_in">string</span>): <span class="hljs-title class_">Promise</span>&#x3C;<span class="hljs-title class_">ApiResponse</span>&#x3C;T>> {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url);
+  <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+}
+
+<span class="hljs-comment">// 使用时，我们可以明确地告诉 fetchData 我们期望 data 部分是什么类型</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUser</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> userResponse = <span class="hljs-keyword">await</span> fetchData&#x3C;<span class="hljs-title class_">User</span>>(<span class="hljs-string">'/api/user/1'</span>);
+  <span class="hljs-comment">// 此时 userResponse.data 就拥有了 User 类型的所有属性提示和检查</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(userResponse.<span class="hljs-property">data</span>.<span class="hljs-property">name</span>);
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getProduct</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> productResponse = <span class="hljs-keyword">await</span> fetchData&#x3C;<span class="hljs-title class_">Product</span>>(<span class="hljs-string">'/api/product/xyz'</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(productResponse.<span class="hljs-property">data</span>.<span class="hljs-property">price</span>);
+}
+</code></pre>
+<p>这个例子完美地展示了泛型如何让我们在保持类型安全的前提下，编写出高度可复用和灵活的代码。</p>
+</li>
+</ol>
+<h4 id="5-typescript-的工具类型-utility-types-有哪些请举例说明-partial-pick-omit-record-的用法"><a href="#5-typescript-的工具类型-utility-types-有哪些请举例说明-partial-pick-omit-record-的用法">5. TypeScript 的工具类型 (Utility Types) 有哪些？请举例说明 <code>Partial</code>, <code>Pick</code>, <code>Omit</code>, <code>Record</code> 的用法。</a></h4>
+<p>工具类型是 TypeScript 内置的一些泛型接口，能帮助我们方便地对现有类型进行转换和操作。熟练使用它们是提升开发效率的关键。</p>
+<ul>
+<li>
+<p><strong><code>Partial&#x3C;T></code></strong>: 将类型 <code>T</code> 的所有属性变为<strong>可选</strong>的。</p>
+<ul>
+<li><strong>场景</strong>：更新操作。比如一个更新用户的函数，可能只传入了部分字段。</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">updateUser</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">fieldsToUpdate</span>: <span class="hljs-title class_">Partial</span>&#x3C;<span class="hljs-title class_">User</span>></span>) {
+  <span class="hljs-comment">// ... update logic</span>
+}
+
+<span class="hljs-title function_">updateUser</span>(<span class="hljs-number">1</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">"New Name"</span> }); <span class="hljs-comment">// OK</span>
+<span class="hljs-title function_">updateUser</span>(<span class="hljs-number">2</span>, { <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> }); <span class="hljs-comment">// OK</span>
+</code></pre>
+</li>
+<li>
+<p><strong><code>Pick&#x3C;T, K></code></strong>: 从类型 <code>T</code> 中挑选出一些属性 <code>K</code> 来创建一个新的类型。</p>
+<ul>
+<li><strong>场景</strong>：当你只需要一个大对象中的几个属性时，可以创建一个更小的、更专注的类型。</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserPreview</span> = <span class="hljs-title class_">Pick</span>&#x3C;<span class="hljs-title class_">User</span>, <span class="hljs-string">"id"</span> | <span class="hljs-string">"name"</span>>;
+<span class="hljs-comment">// UserPreview 等价于 { id: number; name: string; }</span>
+</code></pre>
+</li>
+<li>
+<p><strong><code>Omit&#x3C;T, K></code></strong>: 从类型 <code>T</code> 中排除掉一些属性 <code>K</code>，然后返回剩下的属性构成的新类型。</p>
+<ul>
+<li><strong>场景</strong>：当你需要一个对象的“几乎所有”属性，除了少数几个时。</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">passwordHash</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-comment">// 在返回给前端用户信息时，我们通常不希望包含密码</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PublicUser</span> = <span class="hljs-title class_">Omit</span>&#x3C;<span class="hljs-title class_">User</span>, <span class="hljs-string">"passwordHash"</span>>;
+<span class="hljs-comment">// PublicUser 等价于 { id: number; name: string; email: string; }</span>
+</code></pre>
+</li>
+<li>
+<p><strong><code>Record&#x3C;K, T></code></strong>: 创建一个对象类型，其属性键为 <code>K</code> 类型，属性值为 <code>T</code> 类型。</p>
+<ul>
+<li><strong>场景</strong>：当你需要定义一个具有动态但类型统一的键的对象时，比如配置、字典、缓存等。</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">type</span> <span class="hljs-title class_">Page</span> = <span class="hljs-string">"home"</span> | <span class="hljs-string">"about"</span> | <span class="hljs-string">"contact"</span>;
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">PageInfo</span> {
+  <span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">path</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">pageConfig</span>: <span class="hljs-title class_">Record</span>&#x3C;<span class="hljs-title class_">Page</span>, <span class="hljs-title class_">PageInfo</span>> = {
+  <span class="hljs-attr">home</span>: { <span class="hljs-attr">title</span>: <span class="hljs-string">"Home"</span>, <span class="hljs-attr">path</span>: <span class="hljs-string">"/"</span> },
+  <span class="hljs-attr">about</span>: { <span class="hljs-attr">title</span>: <span class="hljs-string">"About Us"</span>, <span class="hljs-attr">path</span>: <span class="hljs-string">"/about"</span> },
+  <span class="hljs-attr">contact</span>: { <span class="hljs-attr">title</span>: <span class="hljs-string">"Contact"</span>, <span class="hljs-attr">path</span>: <span class="hljs-string">"/contact"</span> },
+};
+</code></pre>
+</li>
+</ul>
+<h4 id="6-什么是枚举-enum你推荐使用它吗"><a href="#6-什么是枚举-enum你推荐使用它吗">6. 什么是枚举 (Enum)？你推荐使用它吗？</a></h4>
+<p>这个问题考察你是否对 TypeScript 的一些特性有批判性思考。</p>
+<p><strong>解答思路：</strong></p>
+<ol>
+<li>
+<p><strong>是什么</strong>：枚举是 TypeScript 提供的一种功能，用于定义一组命名的常量集合。它可以是数字或字符串。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">enum</span> <span class="hljs-title class_">Direction</span> {
+  <span class="hljs-title class_">Up</span>,    <span class="hljs-comment">// 0</span>
+  <span class="hljs-title class_">Down</span>,  <span class="hljs-comment">// 1</span>
+  <span class="hljs-title class_">Left</span>,  <span class="hljs-comment">// 2</span>
+  <span class="hljs-title class_">Right</span>, <span class="hljs-comment">// 3</span>
+}
+
+<span class="hljs-keyword">enum</span> <span class="hljs-title class_">LogLevel</span> {
+  <span class="hljs-title class_">Info</span> = <span class="hljs-string">"INFO"</span>,
+  <span class="hljs-title class_">Warn</span> = <span class="hljs-string">"WARN"</span>,
+  <span class="hljs-title class_">Error</span> = <span class="hljs-string">"ERROR"</span>,
+}
+</code></pre>
+</li>
+<li>
+<p><strong>它有什么问题（为什么不推荐）</strong>：</p>
+<ul>
+<li>
+<p><strong>侵入性</strong>：枚举是 TypeScript 中少有的在编译后会真实存在于 JavaScript 运行时代码中的特性。它会编译成一个对象。这增加了打包体积，并且它不是 JavaScript 的标准。</p>
+</li>
+<li>
+<p><strong>类型不安全</strong>：数字枚举存在反向映射，并且可以被赋值为任何数字，这在某些情况下会破坏类型安全。<code>Direction[0]</code> 是 <code>"Up"</code>，但 <code>Direction[5]</code> 却是 <code>undefined</code>，这在编译时不会报错。</p>
+</li>
+<li>
+<p><strong>行为不一致</strong>：字符串枚举和数字枚举的行为有诸多细微差别，容易造成困惑。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>替代方案是什么（我的推荐）</strong>：</p>
+<p><strong>使用字面量联合类型 (Union of String Literals) + <code>as const</code></strong>。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// 替代方案</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title class_">LogLevel</span> = {
+  <span class="hljs-title class_">Info</span>: <span class="hljs-string">"INFO"</span>,
+  <span class="hljs-title class_">Warn</span>: <span class="hljs-string">"WARN"</span>,
+  <span class="hljs-title class_">Error</span>: <span class="hljs-string">"ERROR"</span>,
+} <span class="hljs-keyword">as</span> <span class="hljs-keyword">const</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">type</span> <span class="hljs-title class_">LogLevel</span> = <span class="hljs-keyword">typeof</span> <span class="hljs-title class_">LogLevel</span>[keyof <span class="hljs-keyword">typeof</span> <span class="hljs-title class_">LogLevel</span>];
+
+<span class="hljs-comment">// 使用</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"><span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">level</span>: <span class="hljs-title class_">LogLevel</span></span>) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-title function_">log</span>(<span class="hljs-string">"An error occurred"</span>, <span class="hljs-title class_">LogLevel</span>.<span class="hljs-property">Error</span>);
+<span class="hljs-comment">// log("Another log", "DEBUG"); // 编译时报错，类型安全！</span>
+</code></pre>
+<p><strong>这种方式的好处：</strong></p>
+<ul>
+<li>
+<p><strong>纯净</strong>：它就是普通的 JavaScript 对象，零运行时侵入，符合 JS 生态。</p>
+</li>
+<li>
+<p><strong>类型安全</strong>：<code>as const</code> 将对象变为只读，并且其属性值被推断为字面量类型（如 <code>"INFO"</code> 而不是 <code>string</code>）。</p>
+</li>
+<li>
+<p><strong>代码清晰</strong>：无论是对象本身还是派生出的类型，语义都非常清晰。</p>
+</li>
+</ul>
+<p><strong>结论</strong>：在绝大多数场景下，我<strong>不推荐</strong>使用 <code>enum</code>。字面量联合类型是更现代、更安全、更符合 JavaScript 生态的替代方案。</p>
+</li>
+</ol>
+<hr>
+<h3 id="第三层高级理论-the-why"><a href="#第三层高级理论-the-why">第三层：高级/理论 (The Why)</a></h3>
+<p>这一层的问题，用于区分中级和高级开发者。它考察你对 TypeScript 类型系统设计哲学和底层原理的理解。</p>
+<h4 id="7-什么是结构化类型系统-structural-typing它和名义化类型系统-nominal-typing-有什么区别"><a href="#7-什么是结构化类型系统-structural-typing它和名义化类型系统-nominal-typing-有什么区别">7. 什么是结构化类型系统 (Structural Typing)？它和名义化类型系统 (Nominal Typing) 有什么区别？</a></h4>
+<p>这是理解 TypeScript 类型兼容性规则的核心。</p>
+<p><strong>解答思路：</strong></p>
+<ol>
+<li>
+<p><strong>定义</strong>：</p>
+<ul>
+<li>
+<p><strong>结构化类型系统 (Structural Typing)</strong>：也叫“鸭子类型 (Duck Typing)”。一个对象是否符合某个类型，只取决于它是否拥有该类型所要求的所有属性和方法，而<strong>不关心</strong>这个对象的具体“名称”或它是由哪个 <code>class</code> 或 <code>interface</code> 定义的。</p>
+</li>
+<li>
+<p><strong>名义化类型系统 (Nominal Typing)</strong>：这是像 Java、C# 等语言采用的系统。类型兼容性是基于明确的声明和名称。即使两个类有完全相同的结构，但如果它们名称不同，且没有明确的继承关系，它们就是不兼容的。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>用一个例子说明</strong>：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">Animal</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-title function_">makeSound</span>(): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span></span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name; }
+  <span class="hljs-title function_">makeSound</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"woof"</span>); }
+  <span class="hljs-title function_">wagTail</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"wagging tail..."</span>); }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span></span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name; }
+  <span class="hljs-title function_">makeSound</span>(<span class="hljs-params"></span>) { <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"vroom"</span>); }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">playWith</span>(<span class="hljs-params"><span class="hljs-attr">animal</span>: <span class="hljs-title class_">Animal</span></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Playing with <span class="hljs-subst">${animal.name}</span>`</span>);
+  animal.<span class="hljs-title function_">makeSound</span>();
+}
+
+<span class="hljs-keyword">let</span> myDog = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Dog</span>(<span class="hljs-string">"Buddy"</span>);
+<span class="hljs-keyword">let</span> myCar = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>(<span class="hljs-string">"Tesla"</span>);
+
+<span class="hljs-title function_">playWith</span>(myDog); <span class="hljs-comment">// OK! Dog 有 name 属性和 makeSound 方法，结构上兼容 Animal</span>
+<span class="hljs-comment">// playWith(myCar); // 尽管 Car 也有 name 和 makeSound, 也能正常工作，但这里为了演示，假设 playWith 需要 Animal 的其他特性，这里简化了。</span>
+<span class="hljs-comment">// 在这个例子里，myCar 也是可以的，因为它的结构也满足 Animal。</span>
+<span class="hljs-comment">// 这就是结构化类型系统的核心：只看结构，不看出身。</span>
+</code></pre>
+<p>在名义化类型系统中，<code>playWith(myDog)</code> 会直接报错，因为 <code>Dog</code> 类没有明确声明 <code>implements Animal</code>。</p>
+</li>
+<li>
+<p><strong>优缺点</strong>：</p>
+<ul>
+<li>
+<p><strong>结构化类型的优点</strong>：更灵活，更容易与现有的 JavaScript 代码（尤其是第三方库）集成，因为你不需要修改源码去 <code>implements</code> 你的接口，只需要你的结构兼容即可。</p>
+</li>
+<li>
+<p><strong>结构化类型的缺点</strong>：在某些需要强区分的场景下，可能会导致意外的类型兼容。例如，一个 <code>Vector2D { x: number; y: number; }</code> 和一个 <code>Point2D { x: number; y: number; }</code> 在结构上是兼容的，但它们在业务逻辑上可能完全不应混用。此时可以通过“品牌化 (Branding)”等技巧来模拟名义化类型。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="8-谈谈对-keyof-typeof-in-和索引访问类型-indexed-access-types-的理解"><a href="#8-谈谈对-keyof-typeof-in-和索引访问类型-indexed-access-types-的理解">8. 谈谈对 <code>keyof</code>, <code>typeof</code>, <code>in</code> 和索引访问类型 (Indexed Access Types) 的理解。</a></h4>
+<p>这些是 TypeScript 进行类型编程和元编程的基石。</p>
+<ul>
+<li>
+<p><strong><code>typeof</code></strong>:</p>
+<ul>
+<li>
+<p><strong>作用</strong>：在<strong>类型上下文</strong>中，<code>typeof</code> 可以获取一个<strong>变量</strong>或<strong>属性</strong>的类型。</p>
+</li>
+<li>
+<p><strong>注意</strong>：和 JavaScript 运行时的 <code>typeof</code> 操作符不同。TS 的 <code>typeof</code> 是在编译时作用的。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> person = { <span class="hljs-attr">name</span>: <span class="hljs-string">"Alice"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> };
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Person</span> = <span class="hljs-keyword">typeof</span> person; <span class="hljs-comment">// Person is { name: string; age: number; }</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>keyof</code></strong>:</p>
+<ul>
+<li>
+<p><strong>作用</strong>：获取一个类型的所有<strong>公共属性名</strong>，并组成一个<strong>字符串字面量联合类型</strong>。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+}
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserKeys</span> = keyof <span class="hljs-title class_">User</span>; <span class="hljs-comment">// UserKeys is "id" | "name"</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>索引访问类型 (T[K])</strong>:</p>
+<ul>
+<li>
+<p><strong>作用</strong>：用于访问一个类型 <code>T</code> 上某个属性 <code>K</code> 的类型。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">address</span>: { <span class="hljs-attr">street</span>: <span class="hljs-built_in">string</span>; <span class="hljs-attr">city</span>: <span class="hljs-built_in">string</span>; };
+}
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserIdType</span> = <span class="hljs-title class_">User</span>[<span class="hljs-string">"id"</span>];       <span class="hljs-comment">// number</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserNameType</span> = <span class="hljs-title class_">User</span>[<span class="hljs-string">"name"</span>];   <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">AddressType</span> = <span class="hljs-title class_">User</span>[<span class="hljs-string">"address"</span>]; <span class="hljs-comment">// { street: string; city: string; }</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>in</code></strong>:</p>
+<ul>
+<li>
+<p><strong>作用</strong>：主要用于<strong>映射类型 (Mapped Types)</strong>，用来遍历联合类型中的每一个成员。</p>
+</li>
+<li>
+<p><strong>示例</strong>：创建一个将所有属性变为只读的 <code>MyReadonly</code> 工具类型。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">type</span> <span class="hljs-title class_">MyReadonly</span>&#x3C;T> = {
+  <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">readonlyUser</span>: <span class="hljs-title class_">MyReadonly</span>&#x3C;<span class="hljs-title class_">User</span>> = { <span class="hljs-attr">name</span>: <span class="hljs-string">"Bob"</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">40</span> };
+<span class="hljs-comment">// readonlyUser.name = "Charlie"; // Error: Cannot assign to 'name' because it is a read-only property.</span>
+</code></pre>
+</li>
+</ul>
+<p>这四个操作符组合起来，构成了 TypeScript 类型操作的核心，使得我们可以基于已有类型创建出新的、有关联的类型，实现强大的类型推导和转换。</p>
+</li>
+</ul>
+<hr>
+<h3 id="第四层工程实践-the-real-world"><a href="#第四层工程实践-the-real-world">第四层：工程实践 (The Real World)</a></h3>
+<p>这一层的问题，考察你是否在真实项目中用过 TypeScript，并思考过工程化的问题。</p>
+<h4 id="9-tsconfigjson-文件中哪些配置项最重要"><a href="#9-tsconfigjson-文件中哪些配置项最重要">9. <code>tsconfig.json</code> 文件中哪些配置项最重要？</a></h4>
+<p><code>tsconfig.json</code> 是 TypeScript 项目的“大脑”，其配置直接决定了项目的类型检查严格程度和编译行为。</p>
+<p><strong>解答思路：</strong></p>
+<p>不要罗列所有配置。挑出那些对代码质量和开发流程影响最大的配置项进行说明。</p>
+<ol>
+<li>
+<p><strong><code>"strict": true</code></strong>: <strong>最重要的一个选项</strong>。我会在任何新项目中<strong>无条件开启</strong>它。它不是一个单一选项，而是一个配置包，会同时开启以下所有对代码质量至关重要的严格检查选项：</p>
+<ul>
+<li>
+<p><code>"noImplicitAny"</code>: 禁止隐式的 <code>any</code> 类型。</p>
+</li>
+<li>
+<p><code>"strictNullChecks"</code>: 严格的 <code>null</code> 和 <code>undefined</code> 检查，所有类型默认都是非空的，能消灭 80% 的运行时 <code>null</code> 引用错误。</p>
+</li>
+<li>
+<p><code>"strictFunctionTypes"</code>: 严格的函数类型检查（主要关于协变和逆变）。</p>
+</li>
+<li>
+<p><code>"strictPropertyInitialization"</code>: 强制类的属性在构造函数中被初始化。</p>
+</li>
+<li>
+<p>...等等。开启 <code>strict</code> 是拥抱 TypeScript 价值的第一步。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>"target"</code></strong>: 指定编译后的 JavaScript 版本。例如 <code>"ES2020"</code> 或 <code>"ESNext"</code>。这个选项需要根据你的项目最终运行的环境来决定（比如 Node.js 版本、浏览器兼容性要求）。</p>
+</li>
+<li>
+<p><strong><code>"module"</code></strong>: 指定模块系统。例如 <code>"CommonJS"</code> (用于 Node.js)、<code>"ESNext"</code> (用于支持 ES Modules 的现代浏览器或打包工具)。这个选项需要和你的打包工具（如 Webpack, Vite）或运行环境相匹配。</p>
+</li>
+<li>
+<p><strong><code>"lib"</code></strong>: 指定项目中可以使用的内置 API 声明。例如，如果你的代码运行在浏览器中，需要包含 <code>"DOM"</code>；如果使用了 ES2020 的新特性，需要包含 <code>"ES2020"</code>。通常不需要手动配置，TS 会根据 <code>target</code> 自动推断。</p>
+</li>
+<li>
+<p><strong><code>"paths"</code> 和 <code>"baseUrl"</code></strong>: 用于配置模块解析的路径别名，这在大型项目中非常有用，可以避免出现深层次的相对路径引用（如 <code>../../../components</code>），代之以 <code>@/components</code> 这样的清晰路径。</p>
+</li>
+</ol>
+<h4 id="10-如何为一个没有-typescript-类型定义的第三方-javascript-库添加类型"><a href="#10-如何为一个没有-typescript-类型定义的第三方-javascript-库添加类型">10. 如何为一个没有 TypeScript 类型定义的第三方 JavaScript 库添加类型？</a></h4>
+<p>这是非常常见的工程问题。</p>
+<p><strong>解答思路：</strong></p>
+<ol>
+<li>
+<p><strong>首选方案：社区的声明文件</strong>。</p>
+<ul>
+<li>
+<p>首先，尝试安装社区维护的类型声明包。这些包通常在 <code>@types</code> 命名空间下。例如，对于 <code>lodash</code> 库，你可以运行 <code>npm install --save-dev @types/lodash</code>。</p>
+</li>
+<li>
+<p>这是最简单、最推荐的方式，因为这些类型定义通常由社区维护，质量较高。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>备选方案：自己编写声明文件 (<code>.d.ts</code>)</strong>。</p>
+<ul>
+<li>
+<p>如果 <code>@types</code> 包不存在，或者其类型定义有误/不完整，你就需要自己动手。</p>
+</li>
+<li>
+<p>创建一个 <code>.d.ts</code>（declaration file）文件，例如 <code>my-library.d.ts</code>。</p>
+</li>
+<li>
+<p>使用 <code>declare module 'module-name' { ... }</code> 来为这个模块声明类型。</p>
+</li>
+<li>
+<p>在模块内部，你可以使用 <code>declare function</code>, <code>declare const</code>, <code>interface</code> 等来定义这个库暴露出的 API。</p>
+</li>
+</ul>
+<p><strong>示例</strong>：假设有一个叫 <code>str-util</code> 的库，它有一个 <code>capitalize</code> 函数。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// a.d.ts</span>
+<span class="hljs-comment">// 在你的项目根目录或 types 目录下创建一个 str-util.d.ts 文件</span>
+
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">'str-util'</span> {
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">capitalize</span>(<span class="hljs-params"><span class="hljs-attr">s</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">string</span>;
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-attr">version</span>: <span class="hljs-built_in">string</span>;
+}
+</code></pre>
+<ul>
+<li><strong>确保 TS 编译器能找到你的声明文件</strong>：你需要在 <code>tsconfig.json</code> 的 <code>include</code> 数组中包含这个 <code>.d.ts</code> 文件所在的路径。</li>
+</ul>
+</li>
+<li>
+<p><strong>快速但临时的方案：声明一个 any 模块</strong>。</p>
+<ul>
+<li>如果你只是想让编译通过，而暂时不想为其编写详细的类型，可以声明一个模块并将其类型标注为 <code>any</code>。</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// a.d.ts</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">module</span> <span class="hljs-string">'my-untyped-library'</span>; <span class="hljs-comment">// 将整个模块视为 any</span>
+</code></pre>
+<p>这只是权宜之计，应该尽快用详细的类型声明来替换它。</p>
+</li>
+</ol>
+<hr>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p>一个优秀的 TypeScript 开发者，应该具备以下画像：</p>
+<ul>
+<li>
+<p><strong>基础扎实</strong>：对 <code>interface</code> vs <code>type</code>、<code>unknown</code> vs <code>any</code> 等基础概念了然于胸。</p>
+</li>
+<li>
+<p><strong>善用工具</strong>：熟练使用泛型和工具类型来编写高质量、可复用的代码。</p>
+</li>
+<li>
+<p><strong>思维严谨</strong>：有批判性思维，知道 <code>enum</code> 等特性的弊端并选择更优的替代方案。</p>
+</li>
+<li>
+<p><strong>理解原理</strong>：明白结构化类型系统等核心设计哲学，能解释清楚类型兼容性的规则。</p>
+</li>
+<li>
+<p><strong>工程经验丰富</strong>：懂得如何配置 <code>tsconfig.json</code>，并能解决实际项目中与第三方库的类型集成问题。</p>
+</li>
+</ul>
+<p>在面试中，围绕这四个层次，结合具体的代码示例和项目经验进行阐述，就能充分展示你对 TypeScript 的深度理解和掌控能力。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/typescript",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/typescript/","className":"$undefined","children":"前端开发 / typescript"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"ts问题综述"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-08-27T00:00:00.000Z","children":"2025年8月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[5184," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",18," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"面试官想考察什么","text":"面试官想考察什么？"},{"level":3,"id":"第一层基础核心-the-what","text":"第一层：基础核心 (The What)"},{"level":4,"id":"1-typescript-相比-javascript-的核心优势是什么","text":"1. TypeScript 相比 JavaScript 的核心优势是什么？"},{"level":4,"id":"2-interface-和-type-的区别是什么我应该用哪个","text":"2. interface 和 type 的区别是什么？我应该用哪个？"},{"level":4,"id":"3-any-unknown-never-void-的区别","text":"3. any, unknown, never, void 的区别？"},{"level":3,"id":"第二层进阶应用-the-how","text":"第二层：进阶应用 (The How)"},{"level":4,"id":"4-什么是泛型-generics请举一个实际应用场景","text":"4. 什么是泛型 (Generics)？请举一个实际应用场景。"},{"level":4,"id":"5-typescript-的工具类型-utility-types-有哪些请举例说明-partial-pick-omit-record-的用法","text":"5. TypeScript 的工具类型 (Utility Types) 有哪些？请举例说明 Partial, Pick, Omit, Record 的用法。"},{"level":4,"id":"6-什么是枚举-enum你推荐使用它吗","text":"6. 什么是枚举 (Enum)？你推荐使用它吗？"},{"level":3,"id":"第三层高级理论-the-why","text":"第三层：高级/理论 (The Why)"},{"level":4,"id":"7-什么是结构化类型系统-structural-typing它和名义化类型系统-nominal-typing-有什么区别","text":"7. 什么是结构化类型系统 (Structural Typing)？它和名义化类型系统 (Nominal Typing) 有什么区别？"},{"level":4,"id":"8-谈谈对-keyof-typeof-in-和索引访问类型-indexed-access-types-的理解","text":"8. 谈谈对 keyof, typeof, in 和索引访问类型 (Indexed Access Types) 的理解。"},{"level":3,"id":"第四层工程实践-the-real-world","text":"第四层：工程实践 (The Real World)"},{"level":4,"id":"9-tsconfigjson-文件中哪些配置项最重要","text":"9. tsconfig.json 文件中哪些配置项最重要？"},{"level":4,"id":"10-如何为一个没有-typescript-类型定义的第三方-javascript-库添加类型","text":"10. 如何为一个没有 TypeScript 类型定义的第三方 JavaScript 库添加类型？"},{"level":3,"id":"总结","text":"总结"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"ts问题综述 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来系统性、深入地梳理 TypeScript 在面试中可能遇到的所有核心考点。 这不仅仅是一份“题库”，而是一套从“是什么”到“为什么”再到“怎么用”的完整知识体系。我会遵循第一性原理，从 TypeScript 要解决的根本问题出发…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

@@ -1,0 +1,196 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","cdn%E9%85%8D%E7%BD%AE",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","cdn%E9%85%8D%E7%BD%AE","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T2e6e,<p>配置 CDN 以缓存 JavaScript (JS) 和 CSS 文件是前端性能优化的核心环节。这件事的本质，是通过全球分布的节点服务器，让用户从物理距离最近的地方加载这些静态资源，从而显著降低延迟、提高网站速度和可用性。</p>
+<p>我将从基本原理出发，为你提供一个完整的配置思路、具体步骤和最佳实践。</p>
+<h3 id="核心原理两层缓存与更新机制"><a href="#核心原理两层缓存与更新机制">核心原理：两层缓存与更新机制</a></h3>
+<p>要理解 CDN 配置，首先要明白缓存发生在两个层面：</p>
+<ol>
+<li>
+<p><strong>源站 (Origin) -> CDN 边缘节点 (Edge Server)</strong>：当一个地区的首位用户请求某个 JS/CSS 文件时，CDN 边缘节点会回到你的服务器（源站）获取文件，并根据你设定的规则将文件存储在自己的缓存中。之后该地区的其他用户请求同一个文件，CDN 会直接返回缓存副本，不再访问你的源站。</p>
+</li>
+<li>
+<p><strong>CDN 边缘节点 -> 用户浏览器 (Browser Cache)</strong>：CDN 将文件发送给用户浏览器时，会附带 HTTP 头信息，告诉浏览器可以将这个文件在用户本地缓存多久。</p>
+</li>
+</ol>
+<p>配置的关键在于<strong>控制这两层缓存的有效期</strong>，以及在文件内容更新后，<strong>如何让用户和 CDN 都获取到最新的版本</strong>。</p>
+<hr>
+<h3 id="配置步骤详解"><a href="#配置步骤详解">配置步骤详解</a></h3>
+<p>绝大多数 CDN 服务商（如 AWS CloudFront, Cloudflare, Akamai, 腾讯云 CDN, 阿里云 CDN 等）的配置流程都遵循以下逻辑。</p>
+<h4 id="第-1-步选择并设置-cdn-服务"><a href="#第-1-步选择并设置-cdn-服务">第 1 步：选择并设置 CDN 服务</a></h4>
+<p>首先，你需要一个 CDN 服务商。在控制台中，通常需要创建一个“分发”或“加速域名”。</p>
+<ol>
+<li>
+<p><strong>加速域名 (CDN Domain)</strong>：你需要提供一个用于访问 CDN 资源的域名，例如 <code>cdn.yourdomain.com</code>。</p>
+</li>
+<li>
+<p><strong>源站信息 (Origin Server)</strong>：你需要告诉 CDN 去哪里获取你的文件。这通常是你自己服务器的 IP 地址或域名，例如 <code>origin.yourdomain.com</code>。</p>
+</li>
+</ol>
+<p>配置完成后，CDN 服务商会给你一个 CNAME 记录，例如 <code>xyz.cdn-provider.net</code>。你需要到你的 DNS 服务商那里，将 <code>cdn.yourdomain.com</code> 的 CNAME 记录指向 <code>xyz.cdn-provider.net</code>。</p>
+<h4 id="第-2-步配置缓存规则核心"><a href="#第-2-步配置缓存规则核心">第 2 步：配置缓存规则（核心）</a></h4>
+<p>这是最关键的一步，直接决定了 JS 和 CSS 的缓存效果。在 CDN 控制台的“缓存配置”或类似板块，你需要设定规则。</p>
+<p><strong>理想的缓存策略是：将文件名本身作为版本标识，然后设置一个“永久”缓存时间。</strong></p>
+<p>具体做法是：</p>
+<ol>
+<li>
+<p><strong>设置一个超长的缓存时间 (TTL - Time To Live)</strong>：</p>
+<ul>
+<li>
+<p><strong>节点缓存过期时间</strong>：在 CDN 的配置中，找到针对 JS 和 CSS 文件类型的缓存规则（通常可以按文件后缀 <code>.js</code>, <code>.css</code> 或目录来匹配）。</p>
+</li>
+<li>
+<p>将其缓存时间设置为尽可能长，比如 <code>31536000</code> 秒（1年）。</p>
+</li>
+<li>
+<p><strong>浏览器缓存过期时间</strong>：同样，CDN 会有“回源 HTTP 头”或“浏览器缓存过期时间”的设置。也将其设置为 1 年。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>让 CDN 遵循源站的缓存头 (Cache-Control)：</p>
+<p>这是一个更专业、更灵活的方案。CDN 不自己决定缓存多久，而是完全听从你源站服务器返回的 HTTP Cache-Control 头部信息。</p>
+<ul>
+<li>
+<p>在 CDN 配置中，选择“继承源站”或“遵循源站的 Cache-Control”。</p>
+</li>
+<li>
+<p>然后，在你的源站服务器（如 Nginx, Apache）上，为 JS 和 CSS 文件配置 <code>Cache-Control</code> 响应头。</p>
+</li>
+</ul>
+<p><strong>Nginx 配置示例:</strong></p>
+<p>Nginx</p>
+<pre><code class="hljs language-bash">location ~* \.(css|js)$ {
+    <span class="hljs-comment"># 对所有匹配 .css 和 .js 的文件</span>
+    <span class="hljs-comment"># 设置 Cache-Control 头</span>
+    <span class="hljs-comment"># public: 表示任何缓存（包括CDN和浏览器）都可以缓存</span>
+    <span class="hljs-comment"># max-age: 缓存有效期，单位秒。31536000 = 1年</span>
+    <span class="hljs-comment"># immutable: (可选，但推荐) 告诉现代浏览器，这个文件内容绝对不会改变，不要为了检查更新而重新发起请求</span>
+    add_header Cache-Control <span class="hljs-string">"public, max-age=31536000, immutable"</span>;
+
+    <span class="hljs-comment"># 同样需要配置 CORS，允许跨域访问</span>
+    add_header <span class="hljs-string">'Access-Control-Allow-Origin'</span> <span class="hljs-string">'*'</span> always;
+}
+</code></pre>
+<p><strong>为什么设置为 1 年这么久？</strong> 因为我们不打算通过“等待缓存过期”来更新文件。我们将通过下面的“缓存刷新”机制来强制更新。</p>
+</li>
+</ol>
+<h4 id="第-3-步实现缓存刷新cache-busting"><a href="#第-3-步实现缓存刷新cache-busting">第 3 步：实现缓存刷新（Cache Busting）</a></h4>
+<p>如果你修改了 <code>style.css</code> 文件，但文件名不变，那么 CDN 和用户的浏览器都会因为长达一年的缓存而继续使用旧版本。这是最常见的问题。</p>
+<p>解决方案是：<strong>文件内容改变时，文件名也必须改变</strong>。这被称为“缓存刷新”或“缓存破坏”(Cache Busting)。</p>
+<p><strong>最佳实践：文件名哈希 (File Hashing)</strong></p>
+<p>这是目前业界公认最好的方案。利用现代前端构建工具（如 Vite, Webpack, Parcel），在每次打包时，根据文件内容生成一个唯一的哈ッシュ值，并将其嵌入文件名中。</p>
+<ul>
+<li>
+<p>原始文件名：<code>main.js</code></p>
+</li>
+<li>
+<p>打包后文件名：<code>main.a1b2c3d4.js</code></p>
+</li>
+</ul>
+<p>当你的代码有任何改动，哪怕只是一个分号，生成的文件哈希值就会改变，得到一个全新的文件名（例如 <code>main.e5f6g7h8.js</code>）。</p>
+<p>因为这是一个全新的 URL，所以 CDN 和浏览器都会将其视为一个新文件，从而主动去源站获取，自然就避免了缓存问题。</p>
+<p>如何实现：</p>
+<p>几乎所有的现代前端框架和构建工具都内置了此功能，通常在生产环境构建时自动启用。</p>
+<ul>
+<li>
+<p><strong>Vite</strong>: <code>npx vite build</code> 默认就会生成带哈希值的文件。</p>
+</li>
+<li>
+<p><strong>Webpack</strong>: 通过配置 <code>output.filename</code> 为 <code>[name].[contenthash].js</code> 来实现。</p>
+</li>
+</ul>
+<h4 id="第-4-步在-html-中引用-cdn-资源"><a href="#第-4-步在-html-中引用-cdn-资源">第 4 步：在 HTML 中引用 CDN 资源</a></h4>
+<p>最后一步，你需要修改你网站的 HTML 代码，将原来指向本地资源的 <code>src</code> 和 <code>href</code> 路径，替换为指向你的 CDN 域名。</p>
+<p><strong>修改前：</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-ini">&#x3C;link <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"/assets/css/style.css"</span>>
+&#x3C;script <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/js/app.js"</span>>&#x3C;/script>
+</code></pre>
+<p><strong>修改后（结合了文件名哈希）：</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-ini">&#x3C;link <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"https://cdn.yourdomain.com/assets/css/style.a1b2c3d4.css"</span>>
+&#x3C;script <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.yourdomain.com/assets/js/app.b5c6d7e8.js"</span>>&#x3C;/script>
+</code></pre>
+<p>这个替换过程也应该由你的构建工具或后端模板引擎自动完成。</p>
+<hr>
+<h3 id="其他关键配置与最佳实践"><a href="#其他关键配置与最佳实践">其他关键配置与最佳实践</a></h3>
+<ul>
+<li>
+<p><strong>压缩 (Gzip / Brotli)</strong>：确保在 CDN 设置中开启 Gzip 或 Brotli 压缩。这能将 JS/CSS 文件体积减小约 70%-80%。优秀的 CDN 会自动处理，但最好检查一下该功能是否开启。</p>
+</li>
+<li>
+<p><strong>HTTP/2 或 HTTP/3</strong>：确保你的 CDN 服务支持并开启了 HTTP/2 或 HTTP/3。这些新协议通过多路复用等技术，可以更高效地并行加载多个 JS/CSS 文件。</p>
+</li>
+<li>
+<p><strong>跨域资源共享 (CORS)</strong>：由于你的资源（如 <code>cdn.yourdomain.com</code>）与你的主站（<code>www.yourdomain.com</code>）不在同一个域下，浏览器会实行同源策略。对于字体文件或通过 JS 发起的某些请求，必须在<strong>源站</strong>配置 <code>Access-Control-Allow-Origin</code> 头，允许来自 CDN 域名的访问（如上 Nginx 示例所示）。</p>
+</li>
+<li>
+<p><strong>预热 (Pre-warming)</strong>：如果你预计有大的流量到来（例如产品发布），可以使用 CDN 提供的“预热”功能，主动将指定的 JS/CSS 文件推送到全球的边缘节点，这样即便是全球各地的第一个用户也能享受到缓存加速。</p>
+</li>
+</ul>
+<h3 id="方案对比与最终建议"><a href="#方案对比与最终建议">方案对比与最终建议</a></h3>
+<p>虽然有多种配置方式，例如通过查询字符串 (<code>style.css?v=1.1</code>) 来做缓存刷新，但我<strong>不推荐</strong>这种方式。一些旧的代理服务器或 CDN 节点可能会忽略查询字符串而只缓存 <code>style.css</code> 本身，导致更新失败。</p>
+<p><strong>最终建议的最佳方案组合：</strong></p>
+<ol>
+<li>
+<p><strong>CDN 选择</strong>：</p>
+<ul>
+<li>
+<p><strong>对于大多数项目和个人开发者</strong>：<strong>Cloudflare</strong> 是最好的选择。它的免费套餐非常慷慨，包含了 CDN、DDoS 防护、免费 SSL 等，并且配置极其简单，通常是“一键式”的，因为它通过作为你整个网站的反向代理来工作，自动缓存静态资源。</p>
+</li>
+<li>
+<p><strong>对于需要高度定制化、与云服务（如 AWS S3）深度集成的项目</strong>：<strong>AWS CloudFront</strong> 是更强大和灵活的选择，但配置也相对复杂。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>配置策略</strong>：</p>
+<ul>
+<li>
+<p><strong>缓存刷新机制</strong>：<strong>必须使用文件名哈希</strong>。让构建工具（Vite/Webpack）在生产构建时自动生成如 <code>app.a1b2c3d4.js</code> 的文件名。</p>
+</li>
+<li>
+<p><strong>缓存时间 (TTL)</strong>：在源站服务器（Nginx/Apache）或 CDN 控制台，为 <code>*.js</code> 和 <code>*.css</code> 文件设置一个<strong>长达一年的 <code>Cache-Control: public, max-age=31536000, immutable</code></strong> 响应头。</p>
+</li>
+<li>
+<p><strong>辅助功能</strong>：确保开启 <strong>Gzip/Brotli</strong> 压缩和 <strong>HTTP/2</strong> 或 <strong>HTTP/3</strong>。</p>
+</li>
+<li>
+<p><strong>CORS</strong>：在源站为静态资源正确配置 <code>Access-Control-Allow-Origin</code>。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>遵循这套方案，你可以构建一个极其高效且稳健的静态资源分发系统：文件一旦发布便可永久缓存，而任何更新都会因为文件名的改变而即时生效，完美平衡了缓存效率和更新的即时性。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/部署",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/","className":"$undefined","children":"前端开发 / 部署"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"cdn配置"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-24T00:00:00.000Z","children":"2025年7月24日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2113," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"核心原理两层缓存与更新机制","text":"核心原理：两层缓存与更新机制"},{"level":3,"id":"配置步骤详解","text":"配置步骤详解"},{"level":4,"id":"第-1-步选择并设置-cdn-服务","text":"第 1 步：选择并设置 CDN 服务"},{"level":4,"id":"第-2-步配置缓存规则核心","text":"第 2 步：配置缓存规则（核心）"},{"level":4,"id":"第-3-步实现缓存刷新cache-busting","text":"第 3 步：实现缓存刷新（Cache Busting）"},{"level":4,"id":"第-4-步在-html-中引用-cdn-资源","text":"第 4 步：在 HTML 中引用 CDN 资源"},{"level":3,"id":"其他关键配置与最佳实践","text":"其他关键配置与最佳实践"},{"level":3,"id":"方案对比与最终建议","text":"方案对比与最终建议"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"cdn配置 | 流年石刻"}],["$","meta","1",{"name":"description","content":"配置 CDN 以缓存 JavaScript JS 和 CSS 文件是前端性能优化的核心环节。这件事的本质，是通过全球分布的节点服务器，让用户从物理距离最近的地方加载这些静态资源，从而显著降低延迟、提高网站速度和可用性。 我将从基本原理出发，…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

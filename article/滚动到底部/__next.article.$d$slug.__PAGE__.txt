@@ -1,0 +1,106 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T1737,<p>要理解 <code>targetNode.scrollTop = targetNode.scrollHeight</code> 为什么能实现“滚动到底部”，我们需要先把 DOM 元素的几个“高度”属性拆解清楚。</p>
+<p>简单来说，这行代码的逻辑是：<strong>将该容器可见区域的顶部，推到整个内容最底端的位置。</strong></p>
+<hr>
+<h2 id="1-核心原理拆解"><a href="#1-核心原理拆解">1. 核心原理拆解</a></h2>
+<h3 id="scrollheight内容总高度"><a href="#scrollheight内容总高度"><code>scrollHeight</code>（内容总高度）</a></h3>
+<p>这是一个只读属性。它代表元素内容的<strong>总高度</strong>，包括由于溢出而在屏幕上不可见的部分。想象一张很长的卷轴，<code>scrollHeight</code> 就是这张卷轴从头到尾的总长度。</p>
+<h3 id="scrolltop已滚动高度"><a href="#scrolltop已滚动高度"><code>scrollTop</code>（已滚动高度）</a></h3>
+<p>这是一个可读写的属性。它代表元素内容顶部距离其视口（Visible Area）顶部的距离。</p>
+<ul>
+<li>
+<p>当 <code>scrollTop = 0</code> 时，说明滚动条在最上方。</p>
+</li>
+<li>
+<p>当你增加 <code>scrollTop</code> 的值，内容就会向上移动，滚动条向下移动。</p>
+</li>
+</ul>
+<h3 id="为什么赋值就能置底"><a href="#为什么赋值就能置底">为什么赋值就能置底？</a></h3>
+<p>虽然滚动条能滚动的<strong>最大距离</strong>其实是 <code>scrollHeight - clientHeight</code>（总高度减去可见高度），但浏览器非常聪明：<strong>当你给 <code>scrollTop</code> 赋一个超过最大滚动范围的值（比如直接给它总高度 <code>scrollHeight</code>）时，它会自动取最大允许值。</strong> 这样就保证了内容一定停留在最底部。</p>
+<hr>
+<h2 id="2-必须掌握的相关参数全家桶"><a href="#2-必须掌握的相关参数全家桶">2. 必须掌握的相关参数（全家桶）</a></h2>
+<p>为了精准控制滚动，你通常需要配合以下几个参数：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>包含范围</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>clientHeight</code></strong></td>
+<td>可见区域高度</td>
+<td>内容 + 内边距 (Padding)</td>
+<td>不包含边框、滚动条和外边距。</td>
+</tr>
+<tr>
+<td><strong><code>offsetHeight</code></strong></td>
+<td>元素占据的高度</td>
+<td>内容 + Padding + 边框 + 滚动条</td>
+<td>物理空间上的高度。</td>
+</tr>
+<tr>
+<td><strong><code>scrollHeight</code></strong></td>
+<td>内容完整高度</td>
+<td>完整内容（含隐藏部分） + Padding</td>
+<td>只要内容增加，这个值就会变大。</td>
+</tr>
+<tr>
+<td><strong><code>offsetTop</code></strong></td>
+<td>相对偏移</td>
+<td>当前元素顶部距离父元素顶部的距离</td>
+<td>常用于计算某个特定元素在列表中的位置。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-进阶写法让滚动更丝滑"><a href="#3-进阶写法让滚动更丝滑">3. 进阶写法：让滚动更丝滑</a></h2>
+<p>直接赋值 <code>scrollTop</code> 会导致页面“瞬间跳动”，用户体验较硬。在现代开发中，我们通常有更好的选择：</p>
+<h3 id="方式-a使用-scrollto-推荐"><a href="#方式-a使用-scrollto-推荐">方式 A：使用 <code>scrollTo</code> (推荐)</a></h3>
+<p>可以设置平滑滚动效果，让用户看到滚动的过程。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js">targetNode.<span class="hljs-title function_">scrollTo</span>({
+  <span class="hljs-attr">top</span>: targetNode.<span class="hljs-property">scrollHeight</span>,
+  <span class="hljs-attr">behavior</span>: <span class="hljs-string">'smooth'</span> <span class="hljs-comment">// 平滑滚动</span>
+});
+</code></pre>
+<h3 id="方式-b使用-scrollintoview"><a href="#方式-b使用-scrollintoview">方式 B：使用 <code>scrollIntoView</code></a></h3>
+<p>如果你想让某个具体的子元素（比如刚发出的那条消息）出现在视野里，这个方法最简便：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> lastMessage = targetNode.<span class="hljs-property">lastElementChild</span>;
+<span class="hljs-keyword">if</span> (lastMessage) {
+  lastMessage.<span class="hljs-title function_">scrollIntoView</span>({ <span class="hljs-attr">behavior</span>: <span class="hljs-string">'smooth'</span>, <span class="hljs-attr">block</span>: <span class="hljs-string">'end'</span> });
+}
+</code></pre>
+<hr>
+<h2 id="4-避坑为什么有时候赋值失效了"><a href="#4-避坑为什么有时候赋值失效了">4. 避坑：为什么有时候赋值“失效”了？</a></h2>
+<p>在实际开发（尤其是使用 Vue 或 React）时，你可能会发现赋值了但没滚动。这通常是因为：<strong>DOM 还没渲染完。</strong></p>
+<p>当你向数组 push 了一条新数据，立刻执行滚动代码时，DOM 节点可能还没真正挂载，此时 <code>scrollHeight</code> 还是旧的高度。</p>
+<ul>
+<li><strong>解决方法</strong>：使用 <code>requestAnimationFrame</code> 或 <code>setTimeout(..., 0)</code>，或者框架提供的 <code>nextTick</code>，确保在 DOM 更新后再执行滚动逻辑。</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 伪代码示例</span>
+<span class="hljs-title function_">addNewMessage</span>(); 
+<span class="hljs-title function_">requestAnimationFrame</span>(<span class="hljs-function">() =></span> {
+    targetNode.<span class="hljs-property">scrollTop</span> = targetNode.<span class="hljs-property">scrollHeight</span>;
+});
+</code></pre>
+<p>了解了这些属性后，你是想尝试实现一个“只有当用户处于底部时才自动滚动，若用户手动往上翻则停止自动滚动”的聊天室逻辑吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"滚动到底部"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-25T00:00:00.000Z","children":"2026年2月25日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[800," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1-核心原理拆解","text":"1. 核心原理拆解"},{"level":3,"id":"scrollheight内容总高度","text":"scrollHeight（内容总高度）"},{"level":3,"id":"scrolltop已滚动高度","text":"scrollTop（已滚动高度）"},{"level":3,"id":"为什么赋值就能置底","text":"为什么赋值就能置底？"},{"level":2,"id":"2-必须掌握的相关参数全家桶","text":"2. 必须掌握的相关参数（全家桶）"},{"level":2,"id":"3-进阶写法让滚动更丝滑","text":"3. 进阶写法：让滚动更丝滑"},{"level":3,"id":"方式-a使用-scrollto-推荐","text":"方式 A：使用 scrollTo (推荐)"},{"level":3,"id":"方式-b使用-scrollintoview","text":"方式 B：使用 scrollIntoView"},{"level":2,"id":"4-避坑为什么有时候赋值失效了","text":"4. 避坑：为什么有时候赋值“失效”了？"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

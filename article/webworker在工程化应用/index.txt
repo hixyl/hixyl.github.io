@@ -1,0 +1,138 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+b:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","webworker%E5%9C%A8%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%BA%94%E7%94%A8",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","webworker%E5%9C%A8%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%BA%94%E7%94%A8","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null],"$La",false]],"m":"$undefined","G":["$b",["$Lc"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+e:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+9:"$W11"
+a:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+17:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+18:T1ece,<p>在现代前端工程化项目中，Web Worker 不再是那种“需要手写原生路径”的边缘技术，而是作为解决 JavaScript 单线程性能瓶颈的核心工具。</p>
+<p>要将其优雅地集成到项目中，主要涉及<strong>工程化接入</strong>、<strong>通信架构设计</strong>以及<strong>适用场景识别</strong>三个维度。</p>
+<hr>
+<h2 id="1-工程化接入打包与加载"><a href="#1-工程化接入打包与加载">1. 工程化接入：打包与加载</a></h2>
+<p>在 Vite 或 Webpack 5 之前，处理 Worker 极其麻烦（需要专门的 loader）。现在，主流工具链已经内置了对 Worker 的支持。</p>
+<h3 id="vite-中的接入"><a href="#vite-中的接入">Vite 中的接入</a></h3>
+<p>Vite 使用 <code>?worker</code> 后缀或 <code>new URL()</code> 语法：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// 1. 声明式引入</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">MyWorker</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./worker.ts?worker'</span>;
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MyWorker</span>();
+
+<span class="hljs-comment">// 2. 标准 ESM 引入（推荐，兼容性更好）</span>
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(
+  <span class="hljs-keyword">new</span> <span class="hljs-title function_">URL</span>(<span class="hljs-string">'./worker.ts'</span>, <span class="hljs-keyword">import</span>.<span class="hljs-property">meta</span>.<span class="hljs-property">url</span>),
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'module'</span> }
+);
+</code></pre>
+<h3 id="webpack-5-中的接入"><a href="#webpack-5-中的接入">Webpack 5 中的接入</a></h3>
+<p>Webpack 5 能够自动识别 <code>new Worker</code> 语法并生成独立的 chunk：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-type">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Worker</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">URL</span>(<span class="hljs-string">'./worker.js'</span>, <span class="hljs-keyword">import</span>.meta.url));
+</code></pre>
+<hr>
+<h2 id="2-通信架构设计从-postmessage-到-rpc"><a href="#2-通信架构设计从-postmessage-到-rpc">2. 通信架构设计：从 postMessage 到 RPC</a></h2>
+<p>原生 <code>postMessage</code> 的问题在于它是基于<strong>监听/响应</strong>模式的，代码逻辑很容易变得支离破碎（像早期的 Ajax）。在工程化项目中，推荐使用 <strong>RPC（远程过程调用）</strong> 模式。</p>
+<h3 id="推荐工具comlink"><a href="#推荐工具comlink">推荐工具：Comlink</a></h3>
+<p>Google 团队开发的 <a href="https://github.com/GoogleChromeLabs/comlink">Comlink</a> 是目前的工业标准。它将复杂的 <code>postMessage</code> 封装成了类似异步函数调用的形式。</p>
+<p><strong>Worker 侧 (<code>worker.ts</code>):</strong></p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="hljs-title class_">Comlink</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'comlink'</span>;
+
+<span class="hljs-keyword">const</span> api = {
+  <span class="hljs-title function_">calculateBigData</span>(<span class="hljs-params"><span class="hljs-attr">data</span>: <span class="hljs-built_in">any</span>[]</span>) {
+    <span class="hljs-comment">// 耗时计算</span>
+    <span class="hljs-keyword">return</span> data.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">acc, val</span>) =></span> acc + val, <span class="hljs-number">0</span>);
+  }
+};
+
+<span class="hljs-title class_">Comlink</span>.<span class="hljs-title function_">expose</span>(api);
+</code></pre>
+<p><strong>主线程侧 (<code>main.ts</code>):</strong></p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="hljs-title class_">Comlink</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'comlink'</span>;
+
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-keyword">new</span> <span class="hljs-title function_">URL</span>(<span class="hljs-string">'./worker.ts'</span>, <span class="hljs-keyword">import</span>.<span class="hljs-property">meta</span>.<span class="hljs-property">url</span>));
+<span class="hljs-keyword">const</span> api = <span class="hljs-title class_">Comlink</span>.<span class="hljs-title function_">wrap</span>(worker);
+
+<span class="hljs-comment">// 像调用本地异步函数一样使用</span>
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">calculateBigData</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]);
+</code></pre>
+<hr>
+<h2 id="3-典型应用场景"><a href="#3-典型应用场景">3. 典型应用场景</a></h2>
+<p>在工程化项目中，不应为了用而用，而应针对以下“重负载”任务进行解耦：</p>
+<table>
+<thead>
+<tr>
+<th><strong>场景</strong></th>
+<th><strong>具体任务</strong></th>
+<th><strong>收益</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大规模数据处理</strong></td>
+<td>数万条 JSON 数据的过滤、排序、统计。</td>
+<td>避免长任务（Long Task）导致页面卡顿。</td>
+</tr>
+<tr>
+<td><strong>图像/视频处理</strong></td>
+<td>Canvas 像素计算、图片压缩、滤镜生成。</td>
+<td>保持动画流畅（OffscreenCanvas）。</td>
+</tr>
+<tr>
+<td><strong>复杂算法</strong></td>
+<td>加解密（RSA/AES）、Excel 导出生成、PDF 解析。</td>
+<td>确保 UI 响应不受 CPU 密集任务影响。</td>
+</tr>
+<tr>
+<td><strong>实时通信</strong></td>
+<td>WebSocket 的长连接维护与心跳包解析。</td>
+<td>减少主线程的消息处理压力。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-工程化实践中的注意事项"><a href="#4-工程化实践中的注意事项">4. 工程化实践中的注意事项</a></h2>
+<ul>
+<li>
+<p><strong>DOM 限制：</strong> Worker 线程无法直接操作 DOM，也无法使用 <code>window</code>。如果需要操作 UI，必须将数据传回主线程。</p>
+</li>
+<li>
+<p><strong>Transferable Objects（可转移对象）：</strong> 在传输超大数据（如 <code>ArrayBuffer</code>）时，使用 <code>postMessage(data, [data])</code>。这样可以“转移”内存所有权而非复制内存，性能提升极大。</p>
+</li>
+<li>
+<p><strong>资源释放：</strong> Worker 不是免费的，每个 Worker 都会消耗一定的系统资源。对于一次性任务，完成后务必调用 <code>worker.terminate()</code>。</p>
+</li>
+<li>
+<p><strong>兼容性降级：</strong> 尽管目前支持率极高，但在极端环境下，可以通过判断 <code>window.Worker</code> 是否存在来决定是否降级到主线程同步执行。</p>
+</li>
+</ul>
+<hr>
+<p><strong>下一步建议：</strong></p>
+<p>如果你现在的项目中有超过 100ms 的 CPU 耗时任务（可以通过 Chrome DevTools 的 Performance 面板观测到长红条），你可以尝试<strong>将最重的那部分计算函数提取到一个独立的 <code>.worker.ts</code> 文件中</strong>，并使用 Comlink 进行封装。</p>
+<p>你想针对具体的业务逻辑（比如数据导出或图表计算）看看如何拆分代码吗？</p>d:[["$","$L16",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L17","前端开发/工程化",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/","className":"$undefined","children":"前端开发 / 工程化"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"webworker在工程化应用"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[831," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$18"}}],"$L19","$L1a"]}],"$L1b"]}]}]]
+1c:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1d:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:["$","$L1c",null,{}]
+1a:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L17",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1b:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1d",null,{"headings":[{"level":2,"id":"1-工程化接入打包与加载","text":"1. 工程化接入：打包与加载"},{"level":3,"id":"vite-中的接入","text":"Vite 中的接入"},{"level":3,"id":"webpack-5-中的接入","text":"Webpack 5 中的接入"},{"level":2,"id":"2-通信架构设计从-postmessage-到-rpc","text":"2. 通信架构设计：从 postMessage 到 RPC"},{"level":3,"id":"推荐工具comlink","text":"推荐工具：Comlink"},{"level":2,"id":"3-典型应用场景","text":"3. 典型应用场景"},{"level":2,"id":"4-工程化实践中的注意事项","text":"4. 工程化实践中的注意事项"}]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1e:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"webworker在工程化应用 | 流年石刻"}],["$","meta","1",{"name":"description","content":"在现代前端工程化项目中，Web Worker 不再是那种“需要手写原生路径”的边缘技术，而是作为解决 JavaScript 单线程性能瓶颈的核心工具。 要将其优雅地集成到项目中，主要涉及工程化接入、通信架构设计以及适用场景识别三个维度。  …"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1e","4",{}]]

@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T14ab,<p>在 Vue（或其他类似框架）的开发中，<code>nextTick</code> 是一个非常关键的概念。简单来说，它是 <strong>“在下一次 DOM 更新循环结束之后执行延迟回调”</strong> 的工具。</p>
+<p>为了让你更直观地理解它，我们可以从为什么要用它、它是如何工作的，以及在什么场景下用它这三个维度来拆解。</p>
+<h3 id="为什么需要-nexttick"><a href="#为什么需要-nexttick">为什么需要 nextTick？</a></h3>
+<p>这涉及到一个性能优化的核心逻辑：<strong>异步更新队列</strong>。</p>
+<p>当你修改 Vue 中的响应式数据时，Vue 并不是立刻去修改真实的 DOM。如果每改一个变量就刷一次 DOM，页面的性能会非常糟糕。相反，Vue 会开启一个队列，并缓冲在同一事件循环中发生的所有数据改变。</p>
+<p>如果你在一段代码里连续改了 10 次数据，Vue 只会产生一个“任务”去更新 DOM。这种“批量处理”的方式极大提高了效率，但也带来了一个副作用：<strong>在数据变化后的那一刻，DOM 还没有更新。</strong></p>
+<p>如果你此时尝试通过 <code>document.querySelector</code> 去获取某个元素的宽度或高度，你拿到的依然是<strong>旧的数据</strong>。</p>
+<hr>
+<h3 id="nexttick-的核心逻辑"><a href="#nexttick-的核心逻辑">nextTick 的核心逻辑</a></h3>
+<p><code>nextTick</code> 的本质是利用了 JavaScript 的 <strong>事件循环（Event Loop）</strong> 机制。它会尝试使用原生的 <code>Promise.then</code>、<code>MutationObserver</code> 和 <code>setImmediate</code>，如果这些都不支持，就会退回到 <code>setTimeout(fn, 0)</code>。</p>
+<p>它的逻辑就像是给 Vue 留了一张“便条”：</p>
+<blockquote>
+<p>“嘿，等由于刚才数据变化引起的 DOM 渲染任务全部完成后，请立刻执行我这张便条上的代码。”</p>
+</blockquote>
+<hr>
+<h3 id="常见的应用场景"><a href="#常见的应用场景">常见的应用场景</a></h3>
+<p>通常在以下几种情况，你会发现离不开 <code>nextTick</code>：</p>
+<ol>
+<li>
+<p><strong>获取更新后的 DOM 状态</strong>：</p>
+<p>比如你动态增加了一组列表项，并希望在增加后立刻滚动到列表底部。如果不使用 <code>nextTick</code>，你的滚动代码执行时，新的列表项还没渲染出来，滚动高度就是错的。</p>
+</li>
+<li>
+<p><strong>在 <code>created</code> 生命周期中操作 DOM</strong>：</p>
+<p>在 <code>created</code> 钩子函数执行时，DOM 其实还没有挂载。如果你非要在这里操作 DOM，必须包在 <code>nextTick</code> 里。</p>
+</li>
+<li>
+<p><strong>配合第三方插件使用</strong>：</p>
+<p>很多不基于 Vue 的库（如 ECharts、Swiper）需要依赖真实的 DOM 节点。当你根据数据变化要重新初始化这些插件时，必须等待 Vue 把 DOM 渲染好。</p>
+</li>
+</ol>
+<hr>
+<h3 id="代码示例"><a href="#代码示例">代码示例</a></h3>
+<p>在 Vue 3 的 Composition API 中，它的用法非常简洁：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { ref, nextTick } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+
+<span class="hljs-keyword">const</span> message = <span class="hljs-title function_">ref</span>(<span class="hljs-string">'旧消息'</span>)
+<span class="hljs-keyword">const</span> container = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>)
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">updateMessage</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {
+  message.<span class="hljs-property">value</span> = <span class="hljs-string">'新消息！'</span>
+  
+  <span class="hljs-comment">// 此时立刻访问 DOM，拿到的还是“旧消息”</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(container.<span class="hljs-property">value</span>.<span class="hljs-property">textContent</span>) <span class="hljs-comment">// 输出：旧消息</span>
+  
+  <span class="hljs-keyword">await</span> <span class="hljs-title function_">nextTick</span>()
+  
+  <span class="hljs-comment">// 现在 DOM 已经更新了</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(container.<span class="hljs-property">value</span>.<span class="hljs-property">textContent</span>) <span class="hljs-comment">// 输出：新消息！</span>
+}
+</code></pre>
+<h3 id="深度思考"><a href="#深度思考">深度思考</a></h3>
+<p>从某种程度上说，<code>nextTick</code> 是框架为了性能而不得不向开发者暴露的一点“复杂性”。它提醒我们：<strong>数据的流动是同步的，但视觉的呈现往往是异步的。</strong> 理解这一点，能帮你避开前端开发中 80% 的“明明数据变了，为什么页面没反应”的坑。</p>
+<p>如果你正在调试某个关于 DOM 获取不到位的问题，或者想了解如何手动控制复杂的渲染顺序，我可以帮你分析具体的业务代码。你想看看具体的场景案例吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"nextTick"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[842," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"为什么需要-nexttick","text":"为什么需要 nextTick？"},{"level":3,"id":"nexttick-的核心逻辑","text":"nextTick 的核心逻辑"},{"level":3,"id":"常见的应用场景","text":"常见的应用场景"},{"level":3,"id":"代码示例","text":"代码示例"},{"level":3,"id":"深度思考","text":"深度思考"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

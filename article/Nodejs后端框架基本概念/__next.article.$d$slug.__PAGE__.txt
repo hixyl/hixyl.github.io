@@ -1,0 +1,325 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T63c9,<p>要将 Node.js 及其后端框架彻底讲清楚，我们需要剥离掉对它“能做什么”的表层认知，直接进入其底层运行机制和工程化实践。</p>
+<p>以下是为你系统梳理的 Node.js 核心逻辑、工程化实战项目以及高频面试题解析。</p>
+<hr>
+<h3 id="一-核心概念什么是-nodejs-与后端框架"><a href="#一-核心概念什么是-nodejs-与后端框架">一、 核心概念：什么是 Node.js 与后端框架？</a></h3>
+<h4 id="1-nodejs-的本质"><a href="#1-nodejs-的本质">1. Node.js 的本质</a></h4>
+<p>Node.js 不是一门语言，也不是一个框架，而是一个 <strong>JavaScript 运行时环境 (Runtime)</strong>。它让 JavaScript 脱离了浏览器，能够在服务器端运行。</p>
+<p>从底层架构来看，Node.js 主要由两部分组成：</p>
+<ul>
+<li>
+<p><strong>V8 引擎：</strong> Google 开发的 JavaScript 引擎，负责将 JS 代码编译成机器码并执行。</p>
+</li>
+<li>
+<p><strong>libuv 库：</strong> 一个多平台支持的 C 库，负责提供<strong>异步 I/O</strong> 的能力和<strong>事件循环 (Event Loop)</strong> 机制。</p>
+</li>
+</ul>
+<p><strong>核心工作流：</strong> 你的 JS 代码是单线程执行的。当遇到 I/O 操作（如读写文件、网络请求、数据库查询）时，Node.js 会将这些耗时任务交给操作系统的底层线程池（通过 libuv）去处理，主线程继续向下执行。当底层任务完成后，将回调函数推入事件队列，主线程在空闲时取出并执行。这就是<strong>单线程、非阻塞 I/O、事件驱动</strong>的本质。</p>
+<h4 id="2-为什么需要后端框架"><a href="#2-为什么需要后端框架">2. 为什么需要后端框架？</a></h4>
+<p>Node.js 提供了底层的 <code>http</code> 模块来搭建服务器，但原生的 API 非常底层，处理路由解析、参数提取、请求头处理等繁琐且易错。</p>
+<p>后端框架（如 Express、Koa、NestJS）的作用是封装这些底层 API，提供标准化的处理流程。</p>
+<p><strong>最常用的框架：Express.js</strong></p>
+<p>对于初中级工程师以及中小型项目，Express 是最基础且工业界使用最广泛的框架。它的核心思想只有两个：</p>
+<ol>
+<li>
+<p><strong>路由 (Routing)：</strong> 将特定的 HTTP 方法 (GET/POST) 和 URL 路径映射到对应的处理函数。</p>
+</li>
+<li>
+<p><strong>中间件 (Middleware)：</strong> 一个流水线模式。请求进入后，按照定义顺序依次经过一系列函数（处理身份验证、日志、解析 Body 等），最终到达路由处理函数并返回响应。</p>
+</li>
+</ol>
+<hr>
+<h3 id="二-实战项目任务管理系统-task-manager"><a href="#二-实战项目任务管理系统-task-manager">二、 实战项目：任务管理系统 (Task Manager)</a></h3>
+<p>这是一个“麻雀虽小，五脏俱全”的 Express 工程化项目。我们不将所有代码塞进一个文件，而是严格按照工业界的<strong>三层架构</strong>（路由层、控制层、服务层）进行拆分。</p>
+<p><strong>需求描述：</strong></p>
+<ul>
+<li>
+<p>实现任务的增删改查 (CRUD)。</p>
+</li>
+<li>
+<p><strong>业务逻辑：</strong> 任务标题不能重复；不能删除已经标记为“完成”的任务。</p>
+</li>
+<li>
+<p>使用内存数组模拟数据库交互，以便你可以直接复制运行。</p>
+</li>
+</ul>
+<h4 id="1-目录结构"><a href="#1-目录结构">1. 目录结构</a></h4>
+<p>Plaintext</p>
+<pre><code class="hljs language-bash">project/
+├── package.json
+├── server.js               <span class="hljs-comment"># 服务启动入口</span>
+├── src/
+│   ├── app.js              <span class="hljs-comment"># Express 实例配置与中间件注册</span>
+│   ├── routes/             <span class="hljs-comment"># 路由层：定义 API 路径</span>
+│   │   └── task.routes.js
+│   ├── controllers/        <span class="hljs-comment"># 控制层：处理请求与响应，参数校验</span>
+│   │   └── task.controller.js
+│   ├── services/           <span class="hljs-comment"># 服务层：处理核心业务逻辑</span>
+│   │   └── task.service.js
+│   ├── models/             <span class="hljs-comment"># 数据层：与数据库交互（本例用数组模拟）</span>
+│   │   └── task.model.js
+│   └── middlewares/        <span class="hljs-comment"># 中间件：全局错误处理等</span>
+│       └── errorHandler.js
+</code></pre>
+<h4 id="2-核心代码实现"><a href="#2-核心代码实现">2. 核心代码实现</a></h4>
+<p><strong>初始化项目:</strong></p>
+<p>Bash</p>
+<pre><code class="hljs language-bash">npm init -y
+npm install express
+</code></pre>
+<p><strong><code>src/models/task.model.js</code> (数据层)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 模拟数据库</span>
+<span class="hljs-keyword">let</span> tasks = [
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">'学习 Node.js'</span>, <span class="hljs-attr">completed</span>: <span class="hljs-literal">false</span> },
+];
+<span class="hljs-keyword">let</span> currentId = <span class="hljs-number">2</span>;
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  <span class="hljs-attr">findAll</span>: <span class="hljs-title function_">async</span> () => tasks,
+  <span class="hljs-attr">findById</span>: <span class="hljs-title function_">async</span> (id) => tasks.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">t</span> =></span> t.<span class="hljs-property">id</span> === <span class="hljs-title class_">Number</span>(id)),
+  <span class="hljs-attr">findByTitle</span>: <span class="hljs-title function_">async</span> (title) => tasks.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">t</span> =></span> t.<span class="hljs-property">title</span> === title),
+  <span class="hljs-attr">create</span>: <span class="hljs-title function_">async</span> (taskData) => {
+    <span class="hljs-keyword">const</span> newTask = { <span class="hljs-attr">id</span>: currentId++, ...taskData, <span class="hljs-attr">completed</span>: <span class="hljs-literal">false</span> };
+    tasks.<span class="hljs-title function_">push</span>(newTask);
+    <span class="hljs-keyword">return</span> newTask;
+  },
+  <span class="hljs-attr">update</span>: <span class="hljs-title function_">async</span> (id, updateData) => {
+    <span class="hljs-keyword">const</span> index = tasks.<span class="hljs-title function_">findIndex</span>(<span class="hljs-function"><span class="hljs-params">t</span> =></span> t.<span class="hljs-property">id</span> === <span class="hljs-title class_">Number</span>(id));
+    <span class="hljs-keyword">if</span> (index === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    tasks[index] = { ...tasks[index], ...updateData };
+    <span class="hljs-keyword">return</span> tasks[index];
+  },
+  <span class="hljs-attr">delete</span>: <span class="hljs-title function_">async</span> (id) => {
+    <span class="hljs-keyword">const</span> initialLength = tasks.<span class="hljs-property">length</span>;
+    tasks = tasks.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">t</span> =></span> t.<span class="hljs-property">id</span> !== <span class="hljs-title class_">Number</span>(id));
+    <span class="hljs-keyword">return</span> tasks.<span class="hljs-property">length</span> !== initialLength;
+  }
+};
+</code></pre>
+<p><strong><code>src/services/task.service.js</code> (服务层：承载业务逻辑)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskModel</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../models/task.model'</span>);
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskService</span> {
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">getAllTasks</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskModel</span>.<span class="hljs-title function_">findAll</span>();
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">createTask</span>(<span class="hljs-params">title</span>) {
+    <span class="hljs-keyword">if</span> (!title) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'任务标题不能为空'</span>);
+    <span class="hljs-comment">// 业务逻辑：标题不能重复</span>
+    <span class="hljs-keyword">const</span> existingTask = <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskModel</span>.<span class="hljs-title function_">findByTitle</span>(title);
+    <span class="hljs-keyword">if</span> (existingTask) {
+      <span class="hljs-keyword">const</span> error = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'任务标题已存在'</span>);
+      error.<span class="hljs-property">statusCode</span> = <span class="hljs-number">400</span>; <span class="hljs-comment">// 挂载状态码供中间件使用</span>
+      <span class="hljs-keyword">throw</span> error;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskModel</span>.<span class="hljs-title function_">create</span>({ title });
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">deleteTask</span>(<span class="hljs-params">id</span>) {
+    <span class="hljs-keyword">const</span> task = <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskModel</span>.<span class="hljs-title function_">findById</span>(id);
+    <span class="hljs-keyword">if</span> (!task) {
+      <span class="hljs-keyword">const</span> error = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'任务不存在'</span>);
+      error.<span class="hljs-property">statusCode</span> = <span class="hljs-number">404</span>;
+      <span class="hljs-keyword">throw</span> error;
+    }
+    <span class="hljs-comment">// 业务逻辑：不能删除已完成的任务</span>
+    <span class="hljs-keyword">if</span> (task.<span class="hljs-property">completed</span>) {
+      <span class="hljs-keyword">const</span> error = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'不能删除已完成的任务'</span>);
+      error.<span class="hljs-property">statusCode</span> = <span class="hljs-number">403</span>;
+      <span class="hljs-keyword">throw</span> error;
+    }
+    <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskModel</span>.<span class="hljs-title function_">delete</span>(id);
+  }
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskService</span>();
+</code></pre>
+<p><strong><code>src/controllers/task.controller.js</code> (控制层：解析请求，调用服务，返回响应)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskService</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../services/task.service'</span>);
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskController</span> {
+  <span class="hljs-comment">// 注意：在路由中调用时可能丢失 this 绑定，使用箭头函数可避免此问题</span>
+  getAllTasks = <span class="hljs-title function_">async</span> (req, res, next) => {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> tasks = <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskService</span>.<span class="hljs-title function_">getAllTasks</span>();
+      res.<span class="hljs-title function_">status</span>(<span class="hljs-number">200</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: tasks });
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-title function_">next</span>(error); <span class="hljs-comment">// 传递给全局错误处理中间件</span>
+    }
+  };
+
+  createTask = <span class="hljs-title function_">async</span> (req, res, next) => {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> { title } = req.<span class="hljs-property">body</span>;
+      <span class="hljs-keyword">const</span> newTask = <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskService</span>.<span class="hljs-title function_">createTask</span>(title);
+      res.<span class="hljs-title function_">status</span>(<span class="hljs-number">201</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: newTask });
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-title function_">next</span>(error);
+    }
+  };
+
+  deleteTask = <span class="hljs-title function_">async</span> (req, res, next) => {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> { id } = req.<span class="hljs-property">params</span>;
+      <span class="hljs-keyword">await</span> <span class="hljs-title class_">TaskService</span>.<span class="hljs-title function_">deleteTask</span>(id);
+      res.<span class="hljs-title function_">status</span>(<span class="hljs-number">200</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'任务删除成功'</span> });
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-title function_">next</span>(error);
+    }
+  };
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskController</span>();
+</code></pre>
+<p><strong><code>src/routes/task.routes.js</code> (路由层：连接 URL 和控制器)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> router = express.<span class="hljs-title class_">Router</span>();
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskController</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../controllers/task.controller'</span>);
+
+router.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-title class_">TaskController</span>.<span class="hljs-property">getAllTasks</span>);
+router.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/'</span>, <span class="hljs-title class_">TaskController</span>.<span class="hljs-property">createTask</span>);
+router.<span class="hljs-title function_">delete</span>(<span class="hljs-string">'/:id'</span>, <span class="hljs-title class_">TaskController</span>.<span class="hljs-property">deleteTask</span>);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = router;
+</code></pre>
+<p><strong><code>src/middlewares/errorHandler.js</code> (全局错误处理)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">errorHandler</span> = (<span class="hljs-params">err, req, res, next</span>) => {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'[Error]:'</span>, err.<span class="hljs-property">message</span>);
+  
+  <span class="hljs-keyword">const</span> statusCode = err.<span class="hljs-property">statusCode</span> || <span class="hljs-number">500</span>;
+  res.<span class="hljs-title function_">status</span>(statusCode).<span class="hljs-title function_">json</span>({
+    <span class="hljs-attr">success</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">message</span>: err.<span class="hljs-property">message</span> || <span class="hljs-string">'服务器内部错误'</span>
+  });
+};
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = errorHandler;
+</code></pre>
+<p><strong><code>src/app.js</code> (组装应用)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> taskRoutes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/task.routes'</span>);
+<span class="hljs-keyword">const</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./middlewares/errorHandler'</span>);
+
+<span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+
+<span class="hljs-comment">// 1. 全局中间件：解析 JSON 格式的请求体</span>
+app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">json</span>());
+
+<span class="hljs-comment">// 2. 挂载路由模块</span>
+app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/tasks'</span>, taskRoutes);
+
+<span class="hljs-comment">// 3. 挂载全局错误处理中间件 (必须放在最后)</span>
+app.<span class="hljs-title function_">use</span>(errorHandler);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = app;
+</code></pre>
+<p><strong><code>server.js</code> (启动入口)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./src/app'</span>);
+
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PORT</span> = process.<span class="hljs-property">env</span>.<span class="hljs-property">PORT</span> || <span class="hljs-number">3000</span>;
+
+app.<span class="hljs-title function_">listen</span>(<span class="hljs-variable constant_">PORT</span>, <span class="hljs-function">() =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Server is running on http://localhost:<span class="hljs-subst">${PORT}</span>`</span>);
+});
+</code></pre>
+<hr>
+<h3 id="三-nodejs-面试核心考点系统梳理"><a href="#三-nodejs-面试核心考点系统梳理">三、 Node.js 面试核心考点系统梳理</a></h3>
+<p>针对初中级工程师，面试官考察的核心是你是否真正理解了 Node.js 的运行机制，而不仅仅是会调用 API。</p>
+<h4 id="1-解释-nodejs-的事件循环-event-loop它与浏览器的事件循环有什么区别"><a href="#1-解释-nodejs-的事件循环-event-loop它与浏览器的事件循环有什么区别">1. 解释 Node.js 的事件循环 (Event Loop)？它与浏览器的事件循环有什么区别？</a></h4>
+<ul>
+<li>
+<p><strong>解答：</strong></p>
+<p>Node.js 的事件循环是由 libuv 实现的，它包含多个阶段（Phases），按照顺序反复执行：</p>
+<ol>
+<li>
+<p><strong>Timers (定时器阶段):</strong> 执行 <code>setTimeout</code> 和 <code>setInterval</code> 的回调。</p>
+</li>
+<li>
+<p><strong>Pending Callbacks:</strong> 执行一些系统级别的回调（如 TCP 错误）。</p>
+</li>
+<li>
+<p><strong>Idle, Prepare:</strong> 仅系统内部使用。</p>
+</li>
+<li>
+<p><strong>Poll (轮询阶段):</strong> <strong>核心阶段</strong>。获取新的 I/O 事件，执行 I/O 相关的回调（如文件读写完成、网络请求到达）。如果当前队列为空，且没有设置 setImmediate，Node.js 会在这个阶段阻塞等待新的事件到来。</p>
+</li>
+<li>
+<p><strong>Check (检查阶段):</strong> 执行 <code>setImmediate</code> 的回调。</p>
+</li>
+<li>
+<p><strong>Close Callbacks:</strong> 执行关闭事件的回调（如 <code>socket.on('close', ...)</code>）。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>微任务 (Microtasks)：</strong> <code>Promise.then</code> 和 <code>process.nextTick</code>。它们不在上述六个阶段内，而是在<strong>每个阶段切换的间隙</strong>（或者每个宏任务执行后）被立即清空执行。<code>process.nextTick</code> 的优先级高于 Promise。</p>
+</li>
+<li>
+<p><strong>与浏览器的区别：</strong> 浏览器的事件循环相对简单，主要是宏任务队列和微任务队列的交替执行。Node.js 引入了多个阶段的概念，对不同类型的异步操作进行了更细粒度的分类和优先级划分。</p>
+</li>
+</ul>
+<h4 id="2-nodejs-是单线程的为什么能处理高并发"><a href="#2-nodejs-是单线程的为什么能处理高并发">2. Node.js 是单线程的，为什么能处理高并发？</a></h4>
+<ul>
+<li>
+<p><strong>解答：</strong></p>
+<p>这里的“单线程”仅仅指 <strong>JavaScript 代码的执行主线程</strong>是单线程的。</p>
+<p>Node.js 处理高并发的逻辑是：当主线程遇到 I/O 操作（如查数据库）时，不会停下来等待结果（非阻塞），而是将任务交给底层的 <strong>libuv 线程池</strong>（默认 4 个线程，可配置）或操作系统的异步接口。主线程立刻去处理下一个网络请求。当 I/O 任务完成后，带着结果回到事件队列中排队，主线程空闲时再执行后续的回调逻辑。</p>
+<p><strong>结论：</strong> Node.js 依靠“单线程的主逻辑调度 + 底层多线程/异步 I/O 的任务执行 + 事件循环的回收机制”，以极低的内存消耗实现了高并发的网络请求处理。</p>
+</li>
+</ul>
+<h4 id="3-什么是内存泄漏在-nodejs-中通常是怎么引起的如何排查"><a href="#3-什么是内存泄漏在-nodejs-中通常是怎么引起的如何排查">3. 什么是内存泄漏？在 Node.js 中通常是怎么引起的？如何排查？</a></h4>
+<ul>
+<li>
+<p><strong>解答：</strong></p>
+<p>内存泄漏是指程序中已动态分配的堆内存由于某种原因未释放或无法释放，导致系统内存持续消耗最终崩溃（OOM - Out of Memory）。</p>
+<p><strong>常见原因：</strong></p>
+<ol>
+<li>
+<p><strong>全局变量滥用：</strong> 挂载在 <code>global</code> 上的大对象一直不被清理。</p>
+</li>
+<li>
+<p><strong>闭包：</strong> 闭包作用域内保持了对外部庞大对象的引用，导致垃圾回收器 (GC) 无法回收。</p>
+</li>
+<li>
+<p><strong>事件监听器未清理：</strong> 使用 <code>EventEmitter</code> 注册了大量事件但未调用 <code>removeListener</code>。</p>
+</li>
+<li>
+<p><strong>缓存无上限：</strong> 在内存中实现缓存（如普通 Object 或 Map），但没有设置过期时间或最大容量。</p>
+<p><strong>排查思路：</strong></p>
+<p>使用工具（如 Node.js 内置的 <code>--inspect</code> 配合 Chrome DevTools，或者 <code>heapdump</code> 库）在内存占用正常和偏高时分别抓取 Heap Snapshot（堆快照），通过对比两次快照中新增的对象，找出没有被释放的变量持有者。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="4-express-中间件的-next-有什么作用如果不调用会怎样"><a href="#4-express-中间件的-next-有什么作用如果不调用会怎样">4. Express 中间件的 <code>next()</code> 有什么作用？如果不调用会怎样？</a></h4>
+<ul>
+<li>
+<p><strong>解答：</strong></p>
+<p>在 Express 中，一个请求可能需要经过验证身份、解析数据、写入日志等多个步骤，每个步骤就是一个中间件。<code>next()</code> 是一个函数，调用它意味着将控制权移交给<strong>流水线上的下一个中间件或路由处理函数</strong>。</p>
+<p>如果在一个中间件中<strong>既没有调用 <code>next()</code>，也没有结束请求</strong>（如使用 <code>res.send()</code> 或 <code>res.json()</code> 返回响应），该请求将被<strong>挂起 (Pending)</strong>，客户端会一直处于等待状态直到超时。如果给 <code>next</code> 传递了参数，如 <code>next(new Error())</code>，Express 会跳过后续的常规中间件，直接将请求交给全局错误处理中间件。</p>
+</li>
+</ul>
+<hr>
+<p>通过理解上述架构逻辑和工程分层，你在面对复杂的后端业务时，就能做到逻辑清晰、代码可维护。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/node服务",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/node%E6%9C%8D%E5%8A%A1/","children":"前端开发 / node服务"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Nodejs后端框架基本概念"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2373," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-核心概念什么是-nodejs-与后端框架","text":"一、 核心概念：什么是 Node.js 与后端框架？"},{"level":4,"id":"1-nodejs-的本质","text":"1. Node.js 的本质"},{"level":4,"id":"2-为什么需要后端框架","text":"2. 为什么需要后端框架？"},{"level":3,"id":"二-实战项目任务管理系统-task-manager","text":"二、 实战项目：任务管理系统 (Task Manager)"},{"level":4,"id":"1-目录结构","text":"1. 目录结构"},{"level":4,"id":"2-核心代码实现","text":"2. 核心代码实现"},{"level":3,"id":"三-nodejs-面试核心考点系统梳理","text":"三、 Node.js 面试核心考点系统梳理"},{"level":4,"id":"1-解释-nodejs-的事件循环-event-loop它与浏览器的事件循环有什么区别","text":"1. 解释 Node.js 的事件循环 (Event Loop)？它与浏览器的事件循环有什么区别？"},{"level":4,"id":"2-nodejs-是单线程的为什么能处理高并发","text":"2. Node.js 是单线程的，为什么能处理高并发？"},{"level":4,"id":"3-什么是内存泄漏在-nodejs-中通常是怎么引起的如何排查","text":"3. 什么是内存泄漏？在 Node.js 中通常是怎么引起的？如何排查？"},{"level":4,"id":"4-express-中间件的-next-有什么作用如果不调用会怎样","text":"4. Express 中间件的 next() 有什么作用？如果不调用会怎样？"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

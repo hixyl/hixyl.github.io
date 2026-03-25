@@ -1,0 +1,398 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T593e,<p>好的，我们来彻底讲清楚 JavaScript 的事件循环（Event Loop）。这不仅仅是一个面试高频题，更是理解 JavaScript 异步编程、性能优化乃至整个语言运行机制的基石。</p>
+<p>我会从“为什么需要它”这个第一性问题出发，逐步拆解它的组成部分、运行流程，并用实例来巩固理解。</p>
+<h3 id="1-问题的根源为什么-javascript-需要事件循环"><a href="#1-问题的根源为什么-javascript-需要事件循环">1. 问题的根源：为什么 JavaScript 需要事件循环？</a></h3>
+<p>核心原因有两个：</p>
+<ol>
+<li>
+<p><strong>JavaScript 是单线程的</strong>：这意味着在任意一个时间点，JavaScript 引擎只能执行一件任务。如果一个任务耗时很长（比如一个复杂的计算或者一个网络请求），那么后续的所有任务都必须排队等待，这会导致浏览器页面卡顿、失去响应，用户体验极差。</p>
+</li>
+<li>
+<p><strong>我们需要处理耗时操作</strong>：然而，现实世界充满了耗时操作，如网络请求（AJAX, Fetch）、用户的点击、鼠标移动、定时器（<code>setTimeout</code>）等。我们不能因为等待一个网络请求返回数据，就让整个页面冻结。</p>
+</li>
+</ol>
+<p>为了解决“单线程”与“耗时操作”之间的矛盾，JavaScript 的设计者引入了一套机制，使得它能够在不阻塞主线程的情况下，发起这些耗时任务，并在任务完成后回来处理结果。这套机制的核心，就是 <strong>事件循环 (Event Loop)</strong>。</p>
+<p><strong>一句话概括：事件循环是 JavaScript 用来协调各种事件、用户交互、脚本执行、UI 渲染和网络请求等任务的机制，它使得单线程的 JavaScript 能够实现非阻塞的并发效果。</strong></p>
+<hr>
+<h3 id="2-核心组成部分事件循环的玩家们"><a href="#2-核心组成部分事件循环的玩家们">2. 核心组成部分：事件循环的“玩家”们</a></h3>
+<p>想象一个高效的餐厅厨房，即使只有一个主厨（JS 主线程），也能有条不紊地处理大量订单。这个厨房需要几个关键的“角色”和“区域”：</p>
+<ol>
+<li>
+<p><strong>调用栈 (Call Stack)</strong>：</p>
+<ul>
+<li>
+<p><strong>作用</strong>：这是一个后进先出（LIFO）的数据结构，用来追踪哪个函数正在被执行。当一个函数被调用时，它会被推入（push）栈顶；当函数执行完毕返回时，它会被弹出（pop）。</p>
+</li>
+<li>
+<p><strong>类比</strong>：主厨当前正在处理的菜品清单。一次只能专心做一道菜。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Web APIs / Node.js APIs</strong>：</p>
+<ul>
+<li>
+<p><strong>作用</strong>：这些不是 JavaScript 引擎的一部分，而是由运行环境（浏览器或 Node.js）提供的。像 <code>setTimeout</code>, <code>DOM 事件</code>, <code>fetch()</code> 这些异步操作，当在代码中被调用时，JavaScript 引擎会把它们移交给这些 API 去处理。</p>
+</li>
+<li>
+<p><strong>类比</strong>：厨房里的各种自动化设备，比如烤箱、咖啡机。主厨只需要设置好时间（调用 <code>setTimeout</code>），然后就可以离开去做别的菜，烤箱会在指定时间后“叮”一声。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>任务队列 (Task Queue / Macrotask Queue)</strong>：</p>
+<ul>
+<li>
+<p><strong>作用</strong>：这是一个先进先出（FIFO）的队列。当 Web API 完成了它的工作（比如定时器到期、网络请求成功），它不会直接把结果给 JavaScript 引擎，而是将准备好的<strong>回调函数</strong>（Callback Function）放入这个队列中排队。</p>
+</li>
+<li>
+<p><strong>类比</strong>：烤箱“叮”了之后，做好的菜被放在“待上菜”的传送带上，等待主厨有空来取。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>微任务队列 (Microtask Queue)</strong>：</p>
+<ul>
+<li>
+<p><strong>作用</strong>：这是另一个先进先出（FIFO）的队列，但它的<strong>优先级更高</strong>。专门用来存放特定类型的任务，最常见的就是 <code>Promise</code> 的 <code>.then()</code>, <code>.catch()</code>, <code>.finally()</code> 的回调，以及 <code>async/await</code> 中的 <code>await</code> 后面的代码。</p>
+</li>
+<li>
+<p><strong>类比</strong>：“加急/VIP”传送带。只要主厨一有空，他会优先处理这个传送带上的所有菜品，然后再去看普通的传送带。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>事件循环 (Event Loop)</strong>：</p>
+<ul>
+<li>
+<p><strong>作用</strong>：这是整个机制的“调度员”。它是一个持续运行的进程，不断地检查<strong>调用栈</strong>是否为空。</p>
+</li>
+<li>
+<p><strong>类比</strong>：厨房的经理。他不断地盯着主厨（调用栈），一旦发现主厨手头没事了（调用栈空了），他就会立刻去检查“VIP传送带”（微任务队列），把上面的所有东西都交给主厨。处理完所有VIP任务后，再从“普通传送带”（宏任务队列）上取一个任务交给主厨。</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="3-运行流程大循环如何运转"><a href="#3-运行流程大循环如何运转">3. 运行流程：大循环如何运转</a></h3>
+<p>现在，我们将这些“玩家”串联起来，看看完整的流程：</p>
+<ol>
+<li>
+<p><strong>同步代码执行</strong>：首先，整个 <code>&#x3C;script></code> 标签里的代码作为第一个<strong>宏任务 (Macrotask)</strong> 开始执行。同步代码会依次被压入调用栈并执行。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'脚本开始'</span>); <span class="hljs-comment">// 1. 入栈，打印，出栈</span>
+</code></pre>
+</li>
+<li>
+<p><strong>遇到异步API</strong>：当遇到像 <code>setTimeout</code>, <code>fetch</code> 这样的异步 API 时，主线程不会等待它。它会将这个任务移交给对应的 <strong>Web API</strong>，并继续执行后面的同步代码。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">timeoutCallback</span>(<span class="hljs-params"></span>) { <span class="hljs-comment">// 2. 移交给 Web API 计时</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'setTimeout 回调'</span>);
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+</li>
+<li>
+<p><strong>同步代码执行完毕</strong>：主线程继续执行，直到所有同步代码执行完毕。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'脚本结束'</span>); <span class="hljs-comment">// 3. 入栈，打印，出栈</span>
+</code></pre>
+<p>此时，调用栈变为空。</p>
+</li>
+<li>
+<p><strong>事件循环开始工作</strong>：事件循环发现调用栈为空，开始检查任务队列。</p>
+</li>
+<li>
+<p><strong>微任务优先</strong>：事件循环会<strong>首先</strong>检查<strong>微任务队列</strong>。如果微任务队列中有任务，它会把队列中的<strong>所有</strong>微任务逐个取出，压入调用栈执行，直到微任务队列清空。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 假设在之前的代码里有 Promise</span>
+<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">promiseCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise 回调'</span>);
+});
+<span class="hljs-comment">// 这个 promiseCallback 会在脚本结束后，立即被放入微任务队列，并优先于 setTimeout 执行</span>
+</code></pre>
+</li>
+<li>
+<p><strong>宏任务登场</strong>：当且仅当微任务队列被清空后，事件循环才会去<strong>宏任务队列</strong>中取<strong>一个</strong>任务，压入调用栈执行。</p>
+<ul>
+<li>在这个例子中，1秒钟后，Web API 会将 <code>timeoutCallback</code> 函数放入宏任务队列。当事件循环处理完所有微任务后，就会来取这个 <code>timeoutCallback</code> 执行。</li>
+</ul>
+</li>
+<li>
+<p><strong>循环往复</strong>：执行完这个宏任务后，调用栈再次变空。事件循环会再次重复第 5 步：检查并清空所有微任务 -> 取一个宏任务执行 -> 检查并清空所有微任务 -> 取下一个宏任务... 这个过程不断重复，就形成了事件循环。</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>关键规则总结</strong>：</p>
+<ul>
+<li>
+<p>一次事件循环的周期，通常可以理解为：<strong>执行一个宏任务 -> 执行所有待处理的微任务 -> （可选）进行UI渲染 -> 准备下一个宏任务</strong>。</p>
+</li>
+<li>
+<p>微任务拥有绝对的优先插队权。</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="4-实例分析让概念落地"><a href="#4-实例分析让概念落地">4. 实例分析：让概念落地</a></h3>
+<p>这是一个经典的面试题，我们来用刚才的知识彻底拆解它。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1. 同步代码'</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2. setTimeout'</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3. Promise.then 1'</span>);
+}).<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'4. Promise.then 2'</span>);
+});
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">main</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'5. async function start'</span>);
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(); <span class="hljs-comment">// await 会让出线程</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'6. async function end'</span>);
+}
+<span class="hljs-title function_">main</span>();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'7. 同步代码'</span>);
+</code></pre>
+<p><strong>预测一下输出顺序，然后我们来分析：</strong></p>
+<hr>
+<p><strong>逐步分析：</strong></p>
+<ol>
+<li>
+<p><strong>第一轮宏任务（主脚本执行）：</strong></p>
+<ul>
+<li>
+<p><code>console.log('1. 同步代码')</code>：入栈执行，打印 <strong><code>1. 同步代码</code></strong>。</p>
+</li>
+<li>
+<p><code>setTimeout(...)</code>：遇到 <code>setTimeout</code>，将其回调函数 <code>() => console.log('2. setTimeout')</code> 移交给 Web API 计时 (即使是0ms，也需要先移交再排队)。Web API 在大约0ms后，将该回调放入<strong>宏任务队列</strong>。</p>
+</li>
+<li>
+<p><code>Promise.resolve().then(...)</code>：遇到 <code>.then</code>，将第一个回调 <code>() => console.log('3. Promise.then 1')</code> 放入<strong>微任务队列</strong>。</p>
+</li>
+<li>
+<p><code>main()</code> 函数调用：</p>
+<ul>
+<li>
+<p><code>console.log('5. async function start')</code>：入栈执行，打印 <strong><code>5. async function start</code></strong>。</p>
+</li>
+<li>
+<p><code>await Promise.resolve()</code>: <code>await</code> 是关键。它会暂停 <code>async</code> 函数的执行，并等待后面的 Promise 完成。<strong>重要的是，<code>await</code> 后面的代码 <code>console.log('6. async function end')</code> 会被包装成一个微任务</strong>，并放入<strong>微任务队列</strong>。然后，<code>async</code> 函数的执行权交还给主线程。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>console.log('7. 同步代码')</code>：主线程继续执行，打印 <strong><code>7. 同步代码</code></strong>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>同步代码执行完毕，调用栈为空。</strong> 此时：</p>
+<ul>
+<li>
+<p><strong>宏任务队列</strong>: <code>[setTimeout的回调]</code></p>
+</li>
+<li>
+<p><strong>微任务队列</strong>: <code>[Promise.then 1 的回调, async function end 的回调]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>执行所有微任务：</strong></p>
+<ul>
+<li>
+<p>事件循环检查微任务队列，发现不为空。</p>
+</li>
+<li>
+<p>取出第一个微任务 <code>() => console.log('3. Promise.then 1')</code>，入栈执行，打印 <strong><code>3. Promise.then 1</code></strong>。这个 <code>.then</code> 执行后返回 <code>undefined</code>，但它后面链接了另一个 <code>.then</code>，所以 <code>() => console.log('4. Promise.then 2')</code> 这个新的回调被放入<strong>微任务队列的末尾</strong>。</p>
+</li>
+<li>
+<p>此时微任务队列是：<code>[async function end 的回调, Promise.then 2 的回调]</code>。</p>
+</li>
+<li>
+<p>继续执行微任务。取出 <code>() => console.log('6. async function end')</code>，入栈执行，打印 <strong><code>6. async function end</code></strong>。</p>
+</li>
+<li>
+<p>继续执行微任务。取出 <code>() => console.log('4. Promise.then 2')</code>，入栈执行，打印 <strong><code>4. Promise.then 2</code></strong>。</p>
+</li>
+<li>
+<p>微任务队列现在为空。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>执行一个宏任务：</strong></p>
+<ul>
+<li>
+<p>事件循环检查宏任务队列，发现不为空。</p>
+</li>
+<li>
+<p>取出 <code>setTimeout</code> 的回调 <code>() => console.log('2. setTimeout')</code>，入栈执行，打印 <strong><code>2. setTimeout</code></strong>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>结束：</strong></p>
+<ul>
+<li>调用栈、微任务队列、宏任务队列都为空，脚本执行完毕。</li>
+</ul>
+</li>
+</ol>
+<p><strong>最终的正确输出顺序：</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-number">1.</span> 同步代码
+<span class="hljs-number">2.</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> start
+<span class="hljs-number">3.</span> 同步代码
+<span class="hljs-number">4.</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-property">then</span> <span class="hljs-number">1</span>
+<span class="hljs-number">5.</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> end
+<span class="hljs-number">6.</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-property">then</span> <span class="hljs-number">2</span>
+<span class="hljs-number">7.</span> <span class="hljs-built_in">setTimeout</span>
+</code></pre>
+<h3 id="总结与最佳实践"><a href="#总结与最佳实践">总结与最佳实践</a></h3>
+<ul>
+<li>
+<p><strong>永远不要阻塞主线程</strong>：耗时长的计算应该考虑使用 Web Workers，I/O 操作（网络/文件）要使用异步 API。</p>
+</li>
+<li>
+<p><strong>理解 <code>setTimeout(fn, 0)</code></strong>：它并不是立即执行，而是将 <code>fn</code> 放入宏任务队列的队首，等待下一个事件循环周期（即所有同步代码和所有现有微任务完成后）才执行。这常用于“让出”主线程，让浏览器有机会处理其他事情（如渲染）。</p>
+</li>
+<li>
+<p><strong>Promise 和 <code>async/await</code> 是微任务</strong>：它们的回调会比 <code>setTimeout</code> 等宏任务更早执行，这对于需要尽快响应的逻辑非常重要。</p>
+</li>
+<li>
+<p><strong>警惕微任务陷阱</strong>：如果一个微任务不断地向微任务队列中添加新的微任务（例如，在一个 <code>.then</code> 中再次调用一个立即 resolve 的 <code>Promise.then</code>），可能会导致宏任务（包括 UI 渲染和用户交互）永远得不到执行，造成页面假死。</p>
+</li>
+</ul>
+<p>彻底理解了事件循环，你就能准确预测代码的执行顺序，编写出更健壮、性能更好的 JavaScript 应用程序，并能自如地驾驭各种复杂的异步场景。</p>
+<p>在 JavaScript 的异步模型中，事件循环（Event Loop）将任务分成了<strong>宏任务（Macrotask）和微任务（Microtask）</strong>。理解它们的区别，关键在于掌握它们在执行栈中的“优先级”和“触发时机”。</p>
+<hr>
+<h2 id="1-常见的任务分类"><a href="#1-常见的任务分类">1. 常见的任务分类</a></h2>
+<h3 id="宏任务-macrotasks"><a href="#宏任务-macrotasks"><strong>宏任务 (Macrotasks)</strong></a></h3>
+<p>宏任务是由宿主环境（浏览器或 Node.js）发起的任务。它们通常涉及比较复杂的操作，执行耗时相对较长。</p>
+<ul>
+<li>
+<p><strong>script (整体代码)</strong>：第一遍解析的同步代码。</p>
+</li>
+<li>
+<p><strong>setTimeout / setInterval</strong>：定时器回调。</p>
+</li>
+<li>
+<p><strong>setImmediate</strong> (Node.js 独有)。</p>
+</li>
+<li>
+<p><strong>I/O 操作</strong>：网络请求完成、文件读写。</p>
+</li>
+<li>
+<p><strong>UI 渲染</strong> (浏览器独有)：在宏任务执行完后的特定时机进行。</p>
+</li>
+</ul>
+<h3 id="微任务-microtasks"><a href="#微任务-microtasks"><strong>微任务 (Microtasks)</strong></a></h3>
+<p>微任务是由 JavaScript 引擎自身发起的任务。它们的特点是“插队”执行，必须在当前宏任务结束之前清空。</p>
+<ul>
+<li>
+<p><strong>Promise.then / catch / finally</strong>：Promise 的状态改变后的回调。</p>
+</li>
+<li>
+<p><strong>MutaionObserver</strong>：监听 DOM 变化的 API。</p>
+</li>
+<li>
+<p><strong>process.nextTick</strong> (Node.js 独有)：优先级最高的微任务。</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-执行顺序核心逻辑"><a href="#2-执行顺序核心逻辑">2. 执行顺序（核心逻辑）</a></h2>
+<p>JavaScript 是单线程的，它像一个永不停歇的机器，按照以下逻辑循环：</p>
+<ol>
+<li>
+<p><strong>执行一个宏任务</strong>（最初是整体 script 代码）。</p>
+</li>
+<li>
+<p><strong>清空微任务队列</strong>：宏任务执行完后，立即检查微任务队列。如果有任务，就依次执行，<strong>直到队列清空为止</strong>（如果在执行微任务期间又产生了新的微任务，也会在当前周期内执行完）。</p>
+</li>
+<li>
+<p><strong>渲染更新</strong>：如果需要，浏览器会进行 UI 渲染。</p>
+</li>
+<li>
+<p><strong>开始下一个宏任务</strong>：从任务队列中取出一个新的宏任务，重复上述步骤。</p>
+</li>
+</ol>
+<hr>
+<h2 id="3-为什么这样设计"><a href="#3-为什么这样设计">3. 为什么这样设计？</a></h2>
+<p>这种设计的本质是为了<strong>平衡“实时性”和“性能”</strong>。</p>
+<ul>
+<li>
+<p><strong>宏任务</strong>适合处理那些不需要立即响应的大动作（如定时器）。</p>
+</li>
+<li>
+<p><strong>微任务</strong>则给了开发者一个在“当前任务执行完”和“下一个任务开始前”立即介入的机会。这对于需要保证逻辑连续性、更新状态而不触发不必要渲染的场景至关重要。</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>举个例子：</strong></p>
+<p>如果你在一个循环里不断产生<strong>宏任务</strong>（如 <code>setTimeout</code>），页面虽然会变慢，但不会卡死，因为浏览器有机会在宏任务之间插入渲染。</p>
+<p>但如果你在循环里不断产生<strong>微任务</strong>（如递归调用 <code>Promise.resolve().then(...)</code>），页面会直接<strong>卡死</strong>，因为微任务队列永远清不空，浏览器没机会去处理渲染或用户交互。</p>
+</blockquote>
+<hr>
+<h2 id="4-简单代码演练"><a href="#4-简单代码演练">4. 简单代码演练</a></h2>
+<p>你可以试着推导下面代码的输出顺序：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1'</span>);
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2'</span>);
+}, <span class="hljs-number">0</span>);
+
+<span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3'</span>);
+});
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'4'</span>);
+</code></pre>
+<p><strong>输出结果：</strong> <code>1 -> 4 -> 3 -> 2</code></p>
+<ul>
+<li>
+<p><strong>1 &#x26; 4</strong>：同步执行（属于第一个宏任务）。</p>
+</li>
+<li>
+<p><strong>3</strong>：微任务，在第一个宏任务结束时立即执行。</p>
+</li>
+<li>
+<p><strong>2</strong>：第二个宏任务，排在下一轮循环。</p>
+</li>
+</ul>
+<p>如果你有具体的异步场景（比如复杂的 <code>async/await</code> 嵌套）需要拆解分析，我们可以深入探讨一下它的底层堆栈变化。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"事件循环"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[3259," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",11," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-问题的根源为什么-javascript-需要事件循环","text":"1. 问题的根源：为什么 JavaScript 需要事件循环？"},{"level":3,"id":"2-核心组成部分事件循环的玩家们","text":"2. 核心组成部分：事件循环的“玩家”们"},{"level":3,"id":"3-运行流程大循环如何运转","text":"3. 运行流程：大循环如何运转"},{"level":3,"id":"4-实例分析让概念落地","text":"4. 实例分析：让概念落地"},{"level":3,"id":"总结与最佳实践","text":"总结与最佳实践"},{"level":2,"id":"1-常见的任务分类","text":"1. 常见的任务分类"},{"level":3,"id":"宏任务-macrotasks","text":"宏任务 (Macrotasks)"},{"level":3,"id":"微任务-microtasks","text":"微任务 (Microtasks)"},{"level":2,"id":"2-执行顺序核心逻辑","text":"2. 执行顺序（核心逻辑）"},{"level":2,"id":"3-为什么这样设计","text":"3. 为什么这样设计？"},{"level":2,"id":"4-简单代码演练","text":"4. 简单代码演练"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"事件循环 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来彻底讲清楚 JavaScript 的事件循环（Event Loop）。这不仅仅是一个面试高频题，更是理解 JavaScript 异步编程、性能优化乃至整个语言运行机制的基石。 我会从“为什么需要它”这个第一性问题出发，逐步拆解它…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

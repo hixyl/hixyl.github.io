@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="/favicon.svg"/><link rel="stylesheet" href="/_next/static/chunks/0g~zs8c5~_~uf.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/02f1pwhv5qrki.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/0bmby6ta573to.js"/><script src="/_next/static/chunks/0_z.jfmr09pj2.js" async=""></script><script src="/_next/static/chunks/0i3-0s_7226ci.js" async=""></script><script src="/_next/static/chunks/110q6k5sdl4es.js" async=""></script><script src="/_next/static/chunks/07uz2g0_38qia.js" async=""></script><script src="/_next/static/chunks/turbopack-0wksw0vhbvo4p.js" async=""></script><script src="/_next/static/chunks/0j8g4_qst9ksd.js" async=""></script><script src="/_next/static/chunks/0d3shmwh5_nmn.js" async=""></script><script src="/_next/static/chunks/0m-fjq7yr4k5u.js" async=""></script><script src="/_next/static/chunks/14787qi7nx.7q.js" async=""></script><script src="/_next/static/chunks/0eqp1b9heft3y.js" async=""></script><link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" as="style"/><link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2" as="script"/><meta name="next-size-adjust" content=""/><title>深入剖析 qiankun 和 micro-app 微前端框架 | 流年石刻</title><meta name="description" content="我们来系统且深入地剖析 qiankun 和 microapp 这两个主流的微前端框架。 微前端的核心目标是将一个庞大的单体前端应用（Monolith）拆分成多个更小、更独立、可自主开发和部署的子应用（Micro App），最后再将它们“无感…"/><link rel="icon" href="/favicon.ico?favicon.0x3dzn~oxb6tn.ico" sizes="256x256" type="image/x-icon"/><link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"/><script>
+              (function() {
+                var t = localStorage.getItem('theme');
+                if (t) { document.documentElement.setAttribute('data-theme', t); }
+                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                }
+              })();
+            </script><script src="/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body class="inter_5901b7c6-module__ec5Qua__variable"><div hidden=""><!--$--><!--/$--></div><canvas style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999"></canvas><header class="jsx-c06749dc0426c6ed site-header"><div class="jsx-c06749dc0426c6ed header-inner"><a class="logo" href="/"><img src="/favicon.svg" alt="Logo" width="24" height="24" class="jsx-c06749dc0426c6ed logo-icon"/><span class="jsx-c06749dc0426c6ed logo-text">流年石刻</span></a><nav class="jsx-c06749dc0426c6ed nav-links "><a class="nav-link " href="/">首页</a><a class="nav-link " href="/categories/">分类</a><a class="nav-link " href="/articles/">文章</a><a class="nav-link " href="/timeline/">时间轴</a><a class="nav-link " href="/editor/">编辑器</a><a class="nav-link " href="/about/">关于</a></nav><div class="jsx-c06749dc0426c6ed header-actions"><a class="search-btn" aria-label="搜索" href="/search/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="jsx-c06749dc0426c6ed"><circle cx="11" cy="11" r="8" class="jsx-c06749dc0426c6ed"></circle><path d="m21 21-4.35-4.35" class="jsx-c06749dc0426c6ed"></path></svg></a><button aria-label="菜单" class="jsx-c06749dc0426c6ed mobile-menu-btn"><span class="jsx-c06749dc0426c6ed hamburger "><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span></span></button></div></div></header><main style="position:relative;z-index:1;min-height:calc(100vh - 200px)"><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><!--/$--><div style="opacity:0;transform:translateY(12px)"><div style="width:0%" class="jsx-b5e5479b599c7115 reading-progress"></div><article class="container page-module__y-5DuW__article-page"><div class="page-module__y-5DuW__article-layout"><div class="page-module__y-5DuW__article-main"><header class="page-module__y-5DuW__article-header"><div><span>📂</span><a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端开发 / 工程化</a></div><h1 class="page-module__y-5DuW__article-title">深入剖析 qiankun 和 micro-app 微前端框架</h1><div class="page-module__y-5DuW__article-meta"><time dateTime="2025-07-29T00:00:00.000Z">2025年7月29日</time><span class="page-module__y-5DuW__sep">·</span><span>2939<!-- --> 字</span><span class="page-module__y-5DuW__sep">·</span><span>约 <!-- -->10<!-- --> 分钟</span></div><div class="page-module__y-5DuW__article-tags"><span class="page-module__y-5DuW__tag">Obsidian</span></div></header><div class="prose page-module__y-5DuW__article-content"><p>我们来系统且深入地剖析 qiankun 和 micro-app 这两个主流的微前端框架。</p>
+<p>微前端的核心目标是将一个庞大的单体前端应用（Monolith）拆分成多个更小、更独立、可自主开发和部署的子应用（Micro App），最后再将它们“无感”地聚合到一个主应用（Main App）框架中。qiankun 和 micro-app 都是为了实现这个目标，但它们选择了两条截然不同的技术路线。</p>
+<hr>
+<h3 id="一核心思想与底层原理代理与组件的路线之争"><a href="#一核心思想与底层原理代理与组件的路线之争">一、核心思想与底层原理：代理与组件的路线之争</a></h3>
+<p>理解二者最根本的区别，就要理解它们各自的实现哲学。</p>
+<h4 id="1-qiankun基于-single-spa-的代理监听模式"><a href="#1-qiankun基于-single-spa-的代理监听模式">1. qiankun：基于 single-spa 的代理监听模式</a></h4>
+<p>Qiankun 由蚂蚁集团开源，它没有从零开始，而是构建在 <code>single-spa</code> 这个“微前端路由器”之上。<code>single-spa</code> 解决了应用的注册、加载和生命周期管理问题，而 qiankun 则在此基础上，着重解决了微前端最棘手的两个问题：<strong>JS沙箱</strong> 和 <strong>CSS隔离</strong>。</p>
+<p><strong>底层原理剖析：</strong></p>
+<ul>
+<li>
+<p><strong>入口机制 (HTML Entry)：</strong> 这是 qiankun 的一个创举。传统的 <code>single-spa</code> 需要子应用打包成一个 JS 文件（UMD 格式），主应用去加载这个 JS。Qiankun 则直接加载子应用的 <code>index.html</code>。它会用 <code>fetch</code> 获取这个 HTML，然后通过正则等方式解析出其中的 <code>&#x3C;script></code> 和 <code>&#x3C;style></code> 等静态资源。</p>
+<ul>
+<li>
+<p><strong>优点：</strong> 子应用的接入方式几乎和独立开发部署时一样，开发者心智负担小。</p>
+</li>
+<li>
+<p><strong>过程：</strong></p>
+<ol>
+<li>
+<p>主应用通过 <code>fetch</code> 请求子应用的 <code>index.html</code>。</p>
+</li>
+<li>
+<p>解析 HTML 字符串，找到所有的 <code>script</code>、<code>style</code>、<code>link</code> 标签。</p>
+</li>
+<li>
+<p>处理静态资源 URL，拼接上子应用的域名，确保能正确加载。</p>
+</li>
+<li>
+<p>加载并执行脚本。关键在于，脚本的执行是在 qiankun 创建的沙箱环境中。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>JS 沙箱 (Sandbox)：</strong> 防止不同子应用之间的全局变量污染。</p>
+<ul>
+<li>
+<p><strong><code>snapshot</code> (快照沙箱 - 已较少使用):</strong> 在子应用挂载前，拍下 <code>window</code> 对象的一个快照。卸载时，通过比对快照和当前的 <code>window</code> 对象，将 <code>window</code> 恢复到挂载前的状态。性能开销大，且无法支持多个子应用同时运行。</p>
+</li>
+<li>
+<p><strong><code>Proxy</code> (代理沙箱 - 主流方式):</strong> 利用 ES6 的 <code>Proxy</code> API，为每个子应用创建一个“假的” <code>window</code> 对象。当子应用试图访问或修改 <code>window</code> 上的属性时（如 <code>window.name = 'app1'</code>），<code>Proxy</code> 会拦截这个操作，使其落到这个假的 <code>window</code> 对象上，而不会影响真实的 <code>window</code>。当子应用被卸载时，这个代理对象直接被丢弃即可。这是目前最优雅和高效的沙箱方案。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CSS 隔离：</strong> 防止不同子应用的样式互相覆盖。</p>
+<ul>
+<li>
+<p><strong>严格样式隔离 (Strictly Style Isolation):</strong> 通过 <code>Shadow DOM</code> 实现。但 <code>Shadow DOM</code> 会带来一些其他问题（如弹窗挂载位置、事件冒泡等），所以默认不开启。</p>
+</li>
+<li>
+<p><strong>实验性样式隔离 (Scoped CSS):</strong> 这是 qiankun 的默认方案。它通过运行时修改子应用的 <code>&#x3C;style></code> 标签，为所有 CSS 规则动态添加一个特殊的属性选择器，如 <code>div[data-qiankun="app-name"] { color: red; }</code>。同时，它会标记所有由当前子应用创建的 DOM 元素，给它们加上 <code>data-qiankun="app-name"</code> 这个属性，从而实现样式的“作用域”隔离。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-micro-app基于-web-component-的原生组件化封装"><a href="#2-micro-app基于-web-component-的原生组件化封装">2. micro-app：基于 Web Component 的原生组件化封装</a></h4>
+<p>Micro-app 由京东零售团队开源，它选择了一条更贴近浏览器原生规范的路线：<strong>Web Component</strong>。它巧妙地将整个子应用视为一个“组件”，用一个自定义 HTML 标签（如 <code>&#x3C;micro-app></code>）来承载。</p>
+<p><strong>底层原理剖析：</strong></p>
+<ul>
+<li>
+<p><strong>入口机制 (Custom Element)：</strong> micro-app 的核心是一个名为 <code>micro-app</code> 的自定义 HTML 元素。当浏览器解析到这个标签时，它的生命周期回调函数（如 <code>connectedCallback</code>）会被触发。</p>
+<ul>
+<li>
+<p><strong>过程：</strong></p>
+<ol>
+<li>
+<p>在 <code>connectedCallback</code> 中，它会根据 <code>url</code> 属性 <code>fetch</code> 回子应用的 <code>index.html</code>。</p>
+</li>
+<li>
+<p>它不会像 qiankun 一样去解析 <code>&#x3C;script></code>，而是创建一个 <code>Shadow DOM</code>（默认开启）作为子应用的“容器”。</p>
+</li>
+<li>
+<p>它将 <code>fetch</code> 到的 HTML 内容（主要是 <code>&#x3C;body></code> 内的）直接塞入 <code>Shadow DOM</code> 中。</p>
+</li>
+<li>
+<p>它会劫持和处理后续由子应用动态创建的 <code>script</code>、<code>style</code> 等元素，确保它们在正确的环境中执行和渲染。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>JS 沙箱 (<code>Proxy</code> with <code>with</code>):</strong> micro-app 同样使用 <code>Proxy</code> 实现 JS 沙箱，但它的实现思路与 qiankun 有所不同。</p>
+<ul>
+<li>
+<p>它为每个 <code>&#x3C;micro-app></code> 元素创建一个独立的沙箱。</p>
+</li>
+<li>
+<p>它通过 <code>Proxy</code> 代理 <code>window</code> 对象，并将子应用的代码包裹在 <code>with(windowProxy) { ... }</code> 中执行。这样，子应用内部对全局变量的访问和修改都会被 <code>Proxy</code> 捕获，并重定向到沙箱内部的伪 <code>window</code> 对象上。这是一种非常巧妙地将代码执行作用域限制在特定上下文中的方法。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CSS 隔离 (Shadow DOM)：</strong> 这是 micro-app 的一大优势。</p>
+<ul>
+<li>
+<p>默认情况下，每个 <code>&#x3C;micro-app></code> 元素都会创建一个 <code>Shadow DOM</code>。这是浏览器原生的隔离技术，可以完美地将内部的样式和外部的 DOM 结构隔离开来。内部的样式无法影响外部，外部的样式也无法穿透到内部（除非使用特殊的 CSS 选择器如 <code>::part</code>）。</p>
+</li>
+<li>
+<p>这种原生隔离比 qiankun 的动态添加属性选择器的方式更彻底、性能更好，也更符合未来的技术趋势。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="二主要不同点总结"><a href="#二主要不同点总结">二、主要不同点总结</a></h3>
+<table>
+<thead>
+<tr>
+<th>特性维度</th>
+<th>qiankun</th>
+<th>micro-app</th>
+<th>对比分析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心原理</strong></td>
+<td>基于 <code>single-spa</code> 的 <strong>应用代理</strong> 模式</td>
+<td>基于 <strong>Web Component</strong> 的原生组件封装</td>
+<td><strong>根本性区别</strong>。qiankun 更像一个“调度器”，而 micro-app 更像一个“容器”。</td>
+</tr>
+<tr>
+<td><strong>JS 沙箱</strong></td>
+<td><code>Proxy</code> 代理整个 <code>window</code></td>
+<td><code>Proxy</code> 结合 <code>with</code> 语句，为每个组件创建独立作用域</td>
+<td>两者都依赖 <code>Proxy</code>，但 micro-app 的沙箱与组件实例绑定，概念上更清晰。</td>
+</tr>
+<tr>
+<td><strong>CSS 隔离</strong></td>
+<td><strong>动态修改 CSS 规则</strong>（添加属性选择器）为主，<code>Shadow DOM</code> 为辅</td>
+<td><strong>默认使用 <code>Shadow DOM</code></strong></td>
+<td><strong>micro-app 优势区</strong>。原生 <code>Shadow DOM</code> 隔离更彻底、无副作用、性能更好。</td>
+</tr>
+<tr>
+<td><strong>使用方式</strong></td>
+<td>JS API 调用，<code>registerMicroApps</code>，<code>start</code></td>
+<td><strong>类 HTML 标签</strong>，<code>&#x3C;micro-app name='xx' url='yy'></code></td>
+<td><strong>micro-app 优势区</strong>。组件化的使用方式对开发者极其友好，心智负担最低。</td>
+</tr>
+<tr>
+<td><strong>侵入性</strong></td>
+<td>子应用需要修改入口文件，导出 <code>bootstrap/mount/unmount</code> 生命周期</td>
+<td><strong>几乎零侵入</strong>。现有项目几乎无需修改即可接入</td>
+<td><strong>micro-app 巨大优势</strong>。对于存量项目的改造，成本极低。</td>
+</tr>
+<tr>
+<td><strong>通信</strong></td>
+<td><code>props</code> + <code>initGlobalState</code> (基于发布订阅)</td>
+<td><code>data</code> 属性 + <code>dispatch</code> 事件 + 全局数据</td>
+<td>micro-app 的方式更贴近现代前端组件通信的习惯。</td>
+</tr>
+<tr>
+<td><strong>Vite 结合</strong></td>
+<td>相对复杂，需要 <code>vite-plugin-qiankun</code> 做特殊处理</td>
+<td><strong>非常顺畅</strong>，官方提供 <code>vite-plugin-micro-app</code> 完美支持</td>
+<td><strong>micro-app 优势区</strong>。由于其设计更现代，与 Vite 的 ESM 机制结合得更好。</td>
+</tr>
+<tr>
+<td><strong>成熟度与生态</strong></td>
+<td>更早开源，社区更大，文档和踩坑经验更丰富</td>
+<td>相对较新，但发展迅速，由大厂维护，质量有保障</td>
+<td>qiankun 胜在时间和用户基数，但 micro-app 正在快速追赶。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="三与-vite-应用的结合"><a href="#三与-vite-应用的结合">三、与 Vite 应用的结合</a></h3>
+<p>这是当下一个非常重要且普遍的痛点。Vite 在开发环境（dev server）是基于浏览器原生 ESM（ES Module）来提供服务的，这和传统打包工具（如 Webpack）的产物（如 UMD, SystemJS）有很大不同，导致了集成困难。</p>
+<h4 id="qiankun--vite"><a href="#qiankun--vite">qiankun + Vite</a></h4>
+<p><strong>挑战：</strong> qiankun 的 HTML Entry 机制在解析和执行脚本时，难以处理 Vite Dev Server 输出的 <code>&#x3C;script type="module"></code> 以及模块内的 <code>import</code> 依赖。沙箱环境也需要正确处理模块的加载和缓存。</p>
+<p>解决方案：</p>
+<p>使用社区提供的 vite-plugin-qiankun 插件。</p>
+<ul>
+<li>
+<p><strong>对子应用：</strong> 这个插件会在 Vite 的开发和构建流程中注入代码，将 Vite 应用包装成 qiankun 需要的格式。</p>
+<ul>
+<li>
+<p>在开发环境，它会处理模块的导出，使其符合 qiankun 的生命周期要求。</p>
+</li>
+<li>
+<p>在生产环境，它会帮助你将应用打包成 UMD 格式，方便 qiankun 加载。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>配置：</strong> 相对于 Webpack 应用，需要更多的配置来确保 public path、模块加载等正常工作。虽然可行，但过程相对繁琐。</p>
+</li>
+</ul>
+<h4 id="micro-app--vite"><a href="#micro-app--vite">micro-app + Vite</a></h4>
+<p><strong>挑战：</strong> micro-app 也需要处理 Vite 的 ESM 模块。</p>
+<p>解决方案：</p>
+<p>使用官方提供的 @micro-zoe/vite-plugin-micro-app 插件。</p>
+<ul>
+<li>
+<p><strong>工作原理：</strong> 这个插件非常巧妙，它会<strong>劫持 Vite 的开发服务器</strong>。当子应用（Vite）的脚本被加载时，插件会对其进行转换，将 ESM 语法转换为 <code>micro-app</code> 沙箱可以理解和执行的代码。它在底层处理了模块依赖、环境变量等复杂问题。</p>
+</li>
+<li>
+<p><strong>优势：</strong></p>
+<ol>
+<li>
+<p><strong>配置极其简单</strong>：通常只需要在 <code>vite.config.js</code> 中引入插件即可。</p>
+</li>
+<li>
+<p><strong>体验顺滑</strong>：无论是开发还是生产环境，接入过程都非常流畅，开发者几乎无感知。</p>
+</li>
+<li>
+<p><strong>零侵入</strong>：子应用（Vite）的代码几乎不需要做任何修改。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p><strong>结论</strong>：在与 Vite 结合方面，<strong>micro-app 拥有压倒性的优势</strong>。它的设计使其能更自然、更低成本地兼容 Vite 的开发模式。</p>
+<hr>
+<h3 id="四如何使用简化版示例"><a href="#四如何使用简化版示例">四、如何使用（简化版示例）</a></h3>
+<h4 id="1-使用-qiankun"><a href="#1-使用-qiankun">1. 使用 qiankun</a></h4>
+<p><strong>主应用 (main-app):</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> { registerMicroApps, start } <span class="hljs-keyword">from</span> <span class="hljs-string">'qiankun'</span>;
+
+<span class="hljs-title function_">registerMicroApps</span>([
+  {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vue-app'</span>, <span class="hljs-comment">// 子应用名称，需唯一</span>
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">'//localhost:8081'</span>, <span class="hljs-comment">// 子应用地址</span>
+    <span class="hljs-attr">container</span>: <span class="hljs-string">'#subapp-container'</span>, <span class="hljs-comment">// 挂载容器的选择器</span>
+    <span class="hljs-attr">activeRule</span>: <span class="hljs-string">'/app-vue'</span>, <span class="hljs-comment">// 激活规则，匹配路由时加载</span>
+  },
+]);
+
+<span class="hljs-title function_">start</span>();
+</code></pre>
+<p>HTML</p>
+<pre><code class="hljs language-bash">&#x3C;div <span class="hljs-built_in">id</span>=<span class="hljs-string">"subapp-container"</span>>&#x3C;/div>
+</code></pre>
+<p><strong>子应用 (vue-app, port 8081):</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>;
+
+<span class="hljs-keyword">let</span> instance = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params">props = {}</span>) {
+  <span class="hljs-keyword">const</span> { container } = props;
+  instance = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Vue</span>({
+    <span class="hljs-attr">render</span>: <span class="hljs-function"><span class="hljs-params">h</span> =></span> <span class="hljs-title function_">h</span>(<span class="hljs-title class_">App</span>),
+  }).$mount(container ? container.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'#app'</span>) : <span class="hljs-string">'#app'</span>);
+}
+
+<span class="hljs-comment">// 适配 qiankun 的生命周期</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">bootstrap</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'vue app bootstraped'</span>);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">mount</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-title function_">render</span>(props);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">unmount</span>(<span class="hljs-params"></span>) {
+  instance.$destroy();
+  instance = <span class="hljs-literal">null</span>;
+}
+
+<span class="hljs-comment">// 如果是独立运行</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">window</span>.<span class="hljs-property">__POWERED_BY_QIANKUN__</span>) {
+  <span class="hljs-title function_">render</span>();
+}
+</code></pre>
+<h4 id="2-使用-micro-app"><a href="#2-使用-micro-app">2. 使用 micro-app</a></h4>
+<p><strong>主应用 (main-app):</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> microApp <span class="hljs-keyword">from</span> <span class="hljs-string">'@micro-zoe/micro-app'</span>;
+microApp.<span class="hljs-title function_">start</span>();
+</code></pre>
+<p>HTML</p>
+<pre><code class="hljs language-php-template"><span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>主应用<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">micro-app</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'vue-app'</span> <span class="hljs-attr">url</span>=<span class="hljs-string">'http://localhost:8081/'</span> <span class="hljs-attr">baseroute</span>=<span class="hljs-string">'/app-vue'</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">micro-app</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+</span></code></pre>
+<p>子应用 (vue-app, port 8081):</p>
+<p>通常情况下，main.js 和其他业务代码完全不需要修改！</p>
+<p>你只需要确保设置了正确的跨域头（CORS），以及在路由配置中可能需要适配 <code>baseroute</code>（micro-app 会通过 <code>window.__MICRO_APP_BASE_ROUTE__</code> 注入）。</p>
+<hr>
+<h3 id="五总结与选择建议"><a href="#五总结与选择建议">五、总结与选择建议</a></h3>
+<ul>
+<li>
+<p><strong>qiankun</strong> 是一个<strong>功能强大、生态成熟、经过大规模生产环境验证</strong>的框架。它的优势在于稳定性和丰富的社区支持。如果你在维护一个庞大的、基于 Webpack 的旧系统，或者团队对 <code>single-spa</code> 体系非常熟悉，qiankun 仍然是一个非常可靠的选择。它的配置虽然相对复杂，但也提供了更强的定制能力。</p>
+</li>
+<li>
+<p><strong>micro-app</strong> 代表了<strong>更现代、更简洁</strong>的微前端实现思路。它的核心优势在于<strong>极低的使用门槛、优雅的组件化API、以及与 Vite 天衣无缝的集成</strong>。<code>Web Component</code> 和 <code>Shadow DOM</code> 的原生方案也让它在隔离性和性能上更具前瞻性。</p>
+</li>
+</ul>
+<h4 id="我的最终建议"><a href="#我的最终建议">我的最终建议</a></h4>
+<p>对于绝大多数<strong>新项目</strong>，或者当你的技术栈全面拥抱 <strong>Vite</strong> 时，我<strong>更倾向于推荐 micro-app</strong>。</p>
+<p>理由如下：</p>
+<ol>
+<li>
+<p><strong>开发体验最优</strong>：它的侵入性最低，接入成本最小，组件化的使用方式极大地降低了开发者的心智负担，可以更专注于业务逻辑本身。</p>
+</li>
+<li>
+<p><strong>技术方向更现代</strong>：基于 Web Component 的路线更符合 Web 标准的演进方向，具有更好的长期潜力。</p>
+</li>
+<li>
+<p><strong>Vite 集成是杀手锏</strong>：在 Vite 已经成为前端工程化事实标准的今天，与 Vite 的无缝集成能力是一个决定性的优势。</p>
+</li>
+</ol>
+<p>当然，技术选型没有绝对的银弹。如果你的项目对浏览器的兼容性有极其苛刻的要求（需要兼容不支持 <code>Proxy</code> 和 <code>Web Component</code> 的远古浏览器），那么 qiankun 提供的降级方案可能会更完善。但在 2025 年的今天，这已不是大多数项目需要考虑的主要矛盾。</p></div><div class="page-module__y-5DuW__article-footer"><a class="page-module__y-5DuW__back-link" href="/articles/">← 返回文章列表</a></div></div><aside class="page-module__y-5DuW__article-sidebar"><nav aria-label="文章目录" class="jsx-f4963e7009facef toc"><h4 class="jsx-f4963e7009facef toc-title">目录</h4><ul class="jsx-f4963e7009facef toc-list"><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#一核心思想与底层原理代理与组件的路线之争" class="jsx-f4963e7009facef toc-link ">一、核心思想与底层原理：代理与组件的路线之争</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#1-qiankun基于-single-spa-的代理监听模式" class="jsx-f4963e7009facef toc-link ">1. qiankun：基于 single-spa 的代理监听模式</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#2-micro-app基于-web-component-的原生组件化封装" class="jsx-f4963e7009facef toc-link ">2. micro-app：基于 Web Component 的原生组件化封装</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#二主要不同点总结" class="jsx-f4963e7009facef toc-link ">二、主要不同点总结</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#三与-vite-应用的结合" class="jsx-f4963e7009facef toc-link ">三、与 Vite 应用的结合</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#qiankun--vite" class="jsx-f4963e7009facef toc-link ">qiankun + Vite</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#micro-app--vite" class="jsx-f4963e7009facef toc-link ">micro-app + Vite</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#四如何使用简化版示例" class="jsx-f4963e7009facef toc-link ">四、如何使用（简化版示例）</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#1-使用-qiankun" class="jsx-f4963e7009facef toc-link ">1. 使用 qiankun</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#2-使用-micro-app" class="jsx-f4963e7009facef toc-link ">2. 使用 micro-app</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#五总结与选择建议" class="jsx-f4963e7009facef toc-link ">五、总结与选择建议</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#我的最终建议" class="jsx-f4963e7009facef toc-link ">我的最终建议</a></li></ul></nav></aside></div></article><!--$--><!--/$--></div></main><footer class="Footer-module__EZoWya__site-footer"><div class="Footer-module__EZoWya__footer-inner"><div class="Footer-module__EZoWya__footer-poetry">闲云潭影日悠悠，物换星移几度秋</div><div class="Footer-module__EZoWya__footer-meta"><span>© <!-- -->2026<!-- --> <!-- -->流年石刻</span><span class="Footer-module__EZoWya__dot">·</span><span>流年似水，石刻永恒</span></div></div></footer><script src="/_next/static/chunks/0bmby6ta573to.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[94277,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n3:I[70119,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n4:I[39756,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n5:I[98168,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"/_next/static/chunks/14787qi7nx.7q.js\"],\"default\"]\n6:I[37457,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n7:I[79520,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"\"]\nc:I[68027,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"style\"]\n:HL[\"/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/chunks/02f1pwhv5qrki.css\",\"style\"]\n:HL[\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"article\",\"%E6%B7%B1%E5%85%A5%E5%89%96%E6%9E%90%20qiankun%20%E5%92%8C%20micro-app%20%E5%BE%AE%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"article\",{\"children\":[[\"slug\",\"%E6%B7%B1%E5%85%A5%E5%89%96%E6%9E%90%20qiankun%20%E5%92%8C%20micro-app%20%E5%BE%AE%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\"}],[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              (function() {\\n                var t = localStorage.getItem('theme');\\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\\n                  document.documentElement.setAttribute('data-theme', 'dark');\\n                }\\n              })();\\n            \"}}]]}],[\"$\",\"body\",null,{\"className\":\"inter_5901b7c6-module__ec5Qua__variable\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{}],[\"$\",\"main\",null,{\"style\":{\"position\":\"relative\",\"zIndex\":1,\"minHeight\":\"calc(100vh - 200px)\"},\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L6\",null,{}]}],\"templateStyles\":[],\"templateScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"async\":true}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14787qi7nx.7q.js\",\"async\":true}]],\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"Footer-module__EZoWya__site-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-poetry\",\"children\":\"闲云潭影日悠悠，物换星移几度秋\"}],[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-meta\",\"children\":[[\"$\",\"span\",null,{\"children\":[\"© \",2026,\" \",\"流年石刻\"]}],[\"$\",\"span\",null,{\"className\":\"Footer-module__EZoWya__dot\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":\"流年似水，石刻永恒\"}]]}]]}]}],[[\"$\",\"$L7\",null,{\"src\":\"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2\"}],[\"$\",\"$L7\",null,{\"id\":\"google-analytics\",\"children\":\"window.dataLayer = window.dataLayer || [];\\n                function gtag(){dataLayer.push(arguments);}\\n                gtag('js', new Date());\\n                gtag('config', 'G-N3DJ3JTVT2');\"}]]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":\"$L8\",\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"$L9\",{},null,false,null]},null,false,\"$@a\"]},null,false,\"$@a\"]},null,false,null],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[\"$Ld\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"ozBVcz1soOKExL08cmsFl\"}\n"])</script><script>self.__next_f.push([1,"f:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"OutletBoundary\"]\n10:\"$Sreact.suspense\"\n13:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"ViewportBoundary\"]\n15:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"MetadataBoundary\"]\n8:[\"$\",\"$L6\",null,{}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[\"$Le\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/02f1pwhv5qrki.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0eqp1b9heft3y.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$Lf\",null,{\"children\":[\"$\",\"$10\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@11\"}]}]]}]\n12:[]\na:\"$W12\"\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L13\",null,{\"children\":\"$L14\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L15\",null,{\"children\":[\"$\",\"$10\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L16\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\nd:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script><script>self.__next_f.push([1,"17:I[23422,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n18:I[22016,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"\"]\n19:T5066,"])</script><script>self.__next_f.push([1,"\u003cp\u003e我们来系统且深入地剖析 qiankun 和 micro-app 这两个主流的微前端框架。\u003c/p\u003e\n\u003cp\u003e微前端的核心目标是将一个庞大的单体前端应用（Monolith）拆分成多个更小、更独立、可自主开发和部署的子应用（Micro App），最后再将它们“无感”地聚合到一个主应用（Main App）框架中。qiankun 和 micro-app 都是为了实现这个目标，但它们选择了两条截然不同的技术路线。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"一核心思想与底层原理代理与组件的路线之争\"\u003e\u003ca href=\"#一核心思想与底层原理代理与组件的路线之争\"\u003e一、核心思想与底层原理：代理与组件的路线之争\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e理解二者最根本的区别，就要理解它们各自的实现哲学。\u003c/p\u003e\n\u003ch4 id=\"1-qiankun基于-single-spa-的代理监听模式\"\u003e\u003ca href=\"#1-qiankun基于-single-spa-的代理监听模式\"\u003e1. qiankun：基于 single-spa 的代理监听模式\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eQiankun 由蚂蚁集团开源，它没有从零开始，而是构建在 \u003ccode\u003esingle-spa\u003c/code\u003e 这个“微前端路由器”之上。\u003ccode\u003esingle-spa\u003c/code\u003e 解决了应用的注册、加载和生命周期管理问题，而 qiankun 则在此基础上，着重解决了微前端最棘手的两个问题：\u003cstrong\u003eJS沙箱\u003c/strong\u003e 和 \u003cstrong\u003eCSS隔离\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e底层原理剖析：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e入口机制 (HTML Entry)：\u003c/strong\u003e 这是 qiankun 的一个创举。传统的 \u003ccode\u003esingle-spa\u003c/code\u003e 需要子应用打包成一个 JS 文件（UMD 格式），主应用去加载这个 JS。Qiankun 则直接加载子应用的 \u003ccode\u003eindex.html\u003c/code\u003e。它会用 \u003ccode\u003efetch\u003c/code\u003e 获取这个 HTML，然后通过正则等方式解析出其中的 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 和 \u003ccode\u003e\u0026#x3C;style\u003e\u003c/code\u003e 等静态资源。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e优点：\u003c/strong\u003e 子应用的接入方式几乎和独立开发部署时一样，开发者心智负担小。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e过程：\u003c/strong\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e主应用通过 \u003ccode\u003efetch\u003c/code\u003e 请求子应用的 \u003ccode\u003eindex.html\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e解析 HTML 字符串，找到所有的 \u003ccode\u003escript\u003c/code\u003e、\u003ccode\u003estyle\u003c/code\u003e、\u003ccode\u003elink\u003c/code\u003e 标签。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e处理静态资源 URL，拼接上子应用的域名，确保能正确加载。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e加载并执行脚本。关键在于，脚本的执行是在 qiankun 创建的沙箱环境中。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eJS 沙箱 (Sandbox)：\u003c/strong\u003e 防止不同子应用之间的全局变量污染。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003esnapshot\u003c/code\u003e (快照沙箱 - 已较少使用):\u003c/strong\u003e 在子应用挂载前，拍下 \u003ccode\u003ewindow\u003c/code\u003e 对象的一个快照。卸载时，通过比对快照和当前的 \u003ccode\u003ewindow\u003c/code\u003e 对象，将 \u003ccode\u003ewindow\u003c/code\u003e 恢复到挂载前的状态。性能开销大，且无法支持多个子应用同时运行。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eProxy\u003c/code\u003e (代理沙箱 - 主流方式):\u003c/strong\u003e 利用 ES6 的 \u003ccode\u003eProxy\u003c/code\u003e API，为每个子应用创建一个“假的” \u003ccode\u003ewindow\u003c/code\u003e 对象。当子应用试图访问或修改 \u003ccode\u003ewindow\u003c/code\u003e 上的属性时（如 \u003ccode\u003ewindow.name = 'app1'\u003c/code\u003e），\u003ccode\u003eProxy\u003c/code\u003e 会拦截这个操作，使其落到这个假的 \u003ccode\u003ewindow\u003c/code\u003e 对象上，而不会影响真实的 \u003ccode\u003ewindow\u003c/code\u003e。当子应用被卸载时，这个代理对象直接被丢弃即可。这是目前最优雅和高效的沙箱方案。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCSS 隔离：\u003c/strong\u003e 防止不同子应用的样式互相覆盖。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e严格样式隔离 (Strictly Style Isolation):\u003c/strong\u003e 通过 \u003ccode\u003eShadow DOM\u003c/code\u003e 实现。但 \u003ccode\u003eShadow DOM\u003c/code\u003e 会带来一些其他问题（如弹窗挂载位置、事件冒泡等），所以默认不开启。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e实验性样式隔离 (Scoped CSS):\u003c/strong\u003e 这是 qiankun 的默认方案。它通过运行时修改子应用的 \u003ccode\u003e\u0026#x3C;style\u003e\u003c/code\u003e 标签，为所有 CSS 规则动态添加一个特殊的属性选择器，如 \u003ccode\u003ediv[data-qiankun=\"app-name\"] { color: red; }\u003c/code\u003e。同时，它会标记所有由当前子应用创建的 DOM 元素，给它们加上 \u003ccode\u003edata-qiankun=\"app-name\"\u003c/code\u003e 这个属性，从而实现样式的“作用域”隔离。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"2-micro-app基于-web-component-的原生组件化封装\"\u003e\u003ca href=\"#2-micro-app基于-web-component-的原生组件化封装\"\u003e2. micro-app：基于 Web Component 的原生组件化封装\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eMicro-app 由京东零售团队开源，它选择了一条更贴近浏览器原生规范的路线：\u003cstrong\u003eWeb Component\u003c/strong\u003e。它巧妙地将整个子应用视为一个“组件”，用一个自定义 HTML 标签（如 \u003ccode\u003e\u0026#x3C;micro-app\u003e\u003c/code\u003e）来承载。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e底层原理剖析：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e入口机制 (Custom Element)：\u003c/strong\u003e micro-app 的核心是一个名为 \u003ccode\u003emicro-app\u003c/code\u003e 的自定义 HTML 元素。当浏览器解析到这个标签时，它的生命周期回调函数（如 \u003ccode\u003econnectedCallback\u003c/code\u003e）会被触发。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e过程：\u003c/strong\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e在 \u003ccode\u003econnectedCallback\u003c/code\u003e 中，它会根据 \u003ccode\u003eurl\u003c/code\u003e 属性 \u003ccode\u003efetch\u003c/code\u003e 回子应用的 \u003ccode\u003eindex.html\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e它不会像 qiankun 一样去解析 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e，而是创建一个 \u003ccode\u003eShadow DOM\u003c/code\u003e（默认开启）作为子应用的“容器”。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e它将 \u003ccode\u003efetch\u003c/code\u003e 到的 HTML 内容（主要是 \u003ccode\u003e\u0026#x3C;body\u003e\u003c/code\u003e 内的）直接塞入 \u003ccode\u003eShadow DOM\u003c/code\u003e 中。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e它会劫持和处理后续由子应用动态创建的 \u003ccode\u003escript\u003c/code\u003e、\u003ccode\u003estyle\u003c/code\u003e 等元素，确保它们在正确的环境中执行和渲染。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eJS 沙箱 (\u003ccode\u003eProxy\u003c/code\u003e with \u003ccode\u003ewith\u003c/code\u003e):\u003c/strong\u003e micro-app 同样使用 \u003ccode\u003eProxy\u003c/code\u003e 实现 JS 沙箱，但它的实现思路与 qiankun 有所不同。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e它为每个 \u003ccode\u003e\u0026#x3C;micro-app\u003e\u003c/code\u003e 元素创建一个独立的沙箱。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e它通过 \u003ccode\u003eProxy\u003c/code\u003e 代理 \u003ccode\u003ewindow\u003c/code\u003e 对象，并将子应用的代码包裹在 \u003ccode\u003ewith(windowProxy) { ... }\u003c/code\u003e 中执行。这样，子应用内部对全局变量的访问和修改都会被 \u003ccode\u003eProxy\u003c/code\u003e 捕获，并重定向到沙箱内部的伪 \u003ccode\u003ewindow\u003c/code\u003e 对象上。这是一种非常巧妙地将代码执行作用域限制在特定上下文中的方法。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCSS 隔离 (Shadow DOM)：\u003c/strong\u003e 这是 micro-app 的一大优势。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e默认情况下，每个 \u003ccode\u003e\u0026#x3C;micro-app\u003e\u003c/code\u003e 元素都会创建一个 \u003ccode\u003eShadow DOM\u003c/code\u003e。这是浏览器原生的隔离技术，可以完美地将内部的样式和外部的 DOM 结构隔离开来。内部的样式无法影响外部，外部的样式也无法穿透到内部（除非使用特殊的 CSS 选择器如 \u003ccode\u003e::part\u003c/code\u003e）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e这种原生隔离比 qiankun 的动态添加属性选择器的方式更彻底、性能更好，也更符合未来的技术趋势。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"二主要不同点总结\"\u003e\u003ca href=\"#二主要不同点总结\"\u003e二、主要不同点总结\u003c/a\u003e\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e特性维度\u003c/th\u003e\n\u003cth\u003eqiankun\u003c/th\u003e\n\u003cth\u003emicro-app\u003c/th\u003e\n\u003cth\u003e对比分析\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e核心原理\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e基于 \u003ccode\u003esingle-spa\u003c/code\u003e 的 \u003cstrong\u003e应用代理\u003c/strong\u003e 模式\u003c/td\u003e\n\u003ctd\u003e基于 \u003cstrong\u003eWeb Component\u003c/strong\u003e 的原生组件封装\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e根本性区别\u003c/strong\u003e。qiankun 更像一个“调度器”，而 micro-app 更像一个“容器”。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eJS 沙箱\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eProxy\u003c/code\u003e 代理整个 \u003ccode\u003ewindow\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eProxy\u003c/code\u003e 结合 \u003ccode\u003ewith\u003c/code\u003e 语句，为每个组件创建独立作用域\u003c/td\u003e\n\u003ctd\u003e两者都依赖 \u003ccode\u003eProxy\u003c/code\u003e，但 micro-app 的沙箱与组件实例绑定，概念上更清晰。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eCSS 隔离\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e动态修改 CSS 规则\u003c/strong\u003e（添加属性选择器）为主，\u003ccode\u003eShadow DOM\u003c/code\u003e 为辅\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e默认使用 \u003ccode\u003eShadow DOM\u003c/code\u003e\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003emicro-app 优势区\u003c/strong\u003e。原生 \u003ccode\u003eShadow DOM\u003c/code\u003e 隔离更彻底、无副作用、性能更好。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e使用方式\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eJS API 调用，\u003ccode\u003eregisterMicroApps\u003c/code\u003e，\u003ccode\u003estart\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e类 HTML 标签\u003c/strong\u003e，\u003ccode\u003e\u0026#x3C;micro-app name='xx' url='yy'\u003e\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003emicro-app 优势区\u003c/strong\u003e。组件化的使用方式对开发者极其友好，心智负担最低。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e侵入性\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e子应用需要修改入口文件，导出 \u003ccode\u003ebootstrap/mount/unmount\u003c/code\u003e 生命周期\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e几乎零侵入\u003c/strong\u003e。现有项目几乎无需修改即可接入\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003emicro-app 巨大优势\u003c/strong\u003e。对于存量项目的改造，成本极低。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e通信\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eprops\u003c/code\u003e + \u003ccode\u003einitGlobalState\u003c/code\u003e (基于发布订阅)\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003edata\u003c/code\u003e 属性 + \u003ccode\u003edispatch\u003c/code\u003e 事件 + 全局数据\u003c/td\u003e\n\u003ctd\u003emicro-app 的方式更贴近现代前端组件通信的习惯。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eVite 结合\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e相对复杂，需要 \u003ccode\u003evite-plugin-qiankun\u003c/code\u003e 做特殊处理\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e非常顺畅\u003c/strong\u003e，官方提供 \u003ccode\u003evite-plugin-micro-app\u003c/code\u003e 完美支持\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003emicro-app 优势区\u003c/strong\u003e。由于其设计更现代，与 Vite 的 ESM 机制结合得更好。\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e成熟度与生态\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e更早开源，社区更大，文档和踩坑经验更丰富\u003c/td\u003e\n\u003ctd\u003e相对较新，但发展迅速，由大厂维护，质量有保障\u003c/td\u003e\n\u003ctd\u003eqiankun 胜在时间和用户基数，但 micro-app 正在快速追赶。\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003chr\u003e\n\u003ch3 id=\"三与-vite-应用的结合\"\u003e\u003ca href=\"#三与-vite-应用的结合\"\u003e三、与 Vite 应用的结合\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e这是当下一个非常重要且普遍的痛点。Vite 在开发环境（dev server）是基于浏览器原生 ESM（ES Module）来提供服务的，这和传统打包工具（如 Webpack）的产物（如 UMD, SystemJS）有很大不同，导致了集成困难。\u003c/p\u003e\n\u003ch4 id=\"qiankun--vite\"\u003e\u003ca href=\"#qiankun--vite\"\u003eqiankun + Vite\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cstrong\u003e挑战：\u003c/strong\u003e qiankun 的 HTML Entry 机制在解析和执行脚本时，难以处理 Vite Dev Server 输出的 \u003ccode\u003e\u0026#x3C;script type=\"module\"\u003e\u003c/code\u003e 以及模块内的 \u003ccode\u003eimport\u003c/code\u003e 依赖。沙箱环境也需要正确处理模块的加载和缓存。\u003c/p\u003e\n\u003cp\u003e解决方案：\u003c/p\u003e\n\u003cp\u003e使用社区提供的 vite-plugin-qiankun 插件。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e对子应用：\u003c/strong\u003e 这个插件会在 Vite 的开发和构建流程中注入代码，将 Vite 应用包装成 qiankun 需要的格式。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e在开发环境，它会处理模块的导出，使其符合 qiankun 的生命周期要求。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e在生产环境，它会帮助你将应用打包成 UMD 格式，方便 qiankun 加载。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e配置：\u003c/strong\u003e 相对于 Webpack 应用，需要更多的配置来确保 public path、模块加载等正常工作。虽然可行，但过程相对繁琐。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"micro-app--vite\"\u003e\u003ca href=\"#micro-app--vite\"\u003emicro-app + Vite\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cstrong\u003e挑战：\u003c/strong\u003e micro-app 也需要处理 Vite 的 ESM 模块。\u003c/p\u003e\n\u003cp\u003e解决方案：\u003c/p\u003e\n\u003cp\u003e使用官方提供的 @micro-zoe/vite-plugin-micro-app 插件。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e工作原理：\u003c/strong\u003e 这个插件非常巧妙，它会\u003cstrong\u003e劫持 Vite 的开发服务器\u003c/strong\u003e。当子应用（Vite）的脚本被加载时，插件会对其进行转换，将 ESM 语法转换为 \u003ccode\u003emicro-app\u003c/code\u003e 沙箱可以理解和执行的代码。它在底层处理了模块依赖、环境变量等复杂问题。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e优势：\u003c/strong\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e配置极其简单\u003c/strong\u003e：通常只需要在 \u003ccode\u003evite.config.js\u003c/code\u003e 中引入插件即可。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e体验顺滑\u003c/strong\u003e：无论是开发还是生产环境，接入过程都非常流畅，开发者几乎无感知。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e零侵入\u003c/strong\u003e：子应用（Vite）的代码几乎不需要做任何修改。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e结论\u003c/strong\u003e：在与 Vite 结合方面，\u003cstrong\u003emicro-app 拥有压倒性的优势\u003c/strong\u003e。它的设计使其能更自然、更低成本地兼容 Vite 的开发模式。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"四如何使用简化版示例\"\u003e\u003ca href=\"#四如何使用简化版示例\"\u003e四、如何使用（简化版示例）\u003c/a\u003e\u003c/h3\u003e\n\u003ch4 id=\"1-使用-qiankun\"\u003e\u003ca href=\"#1-使用-qiankun\"\u003e1. 使用 qiankun\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cstrong\u003e主应用 (main-app):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { registerMicroApps, start } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'qiankun'\u003c/span\u003e;\n\n\u003cspan class=\"hljs-title function_\"\u003eregisterMicroApps\u003c/span\u003e([\n  {\n    \u003cspan class=\"hljs-attr\"\u003ename\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'vue-app'\u003c/span\u003e, \u003cspan class=\"hljs-comment\"\u003e// 子应用名称，需唯一\u003c/span\u003e\n    \u003cspan class=\"hljs-attr\"\u003eentry\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'//localhost:8081'\u003c/span\u003e, \u003cspan class=\"hljs-comment\"\u003e// 子应用地址\u003c/span\u003e\n    \u003cspan class=\"hljs-attr\"\u003econtainer\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'#subapp-container'\u003c/span\u003e, \u003cspan class=\"hljs-comment\"\u003e// 挂载容器的选择器\u003c/span\u003e\n    \u003cspan class=\"hljs-attr\"\u003eactiveRule\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'/app-vue'\u003c/span\u003e, \u003cspan class=\"hljs-comment\"\u003e// 激活规则，匹配路由时加载\u003c/span\u003e\n  },\n]);\n\n\u003cspan class=\"hljs-title function_\"\u003estart\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHTML\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-bash\"\u003e\u0026#x3C;div \u003cspan class=\"hljs-built_in\"\u003eid\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"subapp-container\"\u003c/span\u003e\u003e\u0026#x3C;/div\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e子应用 (vue-app, port 8081):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eVue\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'vue'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eApp\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./App.vue'\u003c/span\u003e;\n\n\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e instance = \u003cspan class=\"hljs-literal\"\u003enull\u003c/span\u003e;\n\n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003erender\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eprops = {}\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e { container } = props;\n  instance = \u003cspan class=\"hljs-keyword\"\u003enew\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eVue\u003c/span\u003e({\n    \u003cspan class=\"hljs-attr\"\u003erender\u003c/span\u003e: \u003cspan class=\"hljs-function\"\u003e\u003cspan class=\"hljs-params\"\u003eh\u003c/span\u003e =\u003e\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eh\u003c/span\u003e(\u003cspan class=\"hljs-title class_\"\u003eApp\u003c/span\u003e),\n  }).$mount(container ? container.\u003cspan class=\"hljs-title function_\"\u003equerySelector\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'#app'\u003c/span\u003e) : \u003cspan class=\"hljs-string\"\u003e'#app'\u003c/span\u003e);\n}\n\n\u003cspan class=\"hljs-comment\"\u003e// 适配 qiankun 的生命周期\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ebootstrap\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'vue app bootstraped'\u003c/span\u003e);\n}\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003emount\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003eprops\u003c/span\u003e) {\n  \u003cspan class=\"hljs-title function_\"\u003erender\u003c/span\u003e(props);\n}\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003easync\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eunmount\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  instance.$destroy();\n  instance = \u003cspan class=\"hljs-literal\"\u003enull\u003c/span\u003e;\n}\n\n\u003cspan class=\"hljs-comment\"\u003e// 如果是独立运行\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (!\u003cspan class=\"hljs-variable language_\"\u003ewindow\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003e__POWERED_BY_QIANKUN__\u003c/span\u003e) {\n  \u003cspan class=\"hljs-title function_\"\u003erender\u003c/span\u003e();\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch4 id=\"2-使用-micro-app\"\u003e\u003ca href=\"#2-使用-micro-app\"\u003e2. 使用 micro-app\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cstrong\u003e主应用 (main-app):\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e microApp \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'@micro-zoe/micro-app'\u003c/span\u003e;\nmicroApp.\u003cspan class=\"hljs-title function_\"\u003estart\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHTML\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-php-template\"\u003e\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\n  \u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003eh1\u003c/span\u003e\u003e\u003c/span\u003e主应用\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003eh1\u003c/span\u003e\u003e\u003c/span\u003e\n  \u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003emicro-app\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003ename\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e'vue-app'\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eurl\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e'http://localhost:8081/'\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003ebaseroute\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e'/app-vue'\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003emicro-app\u003c/span\u003e\u003e\u003c/span\u003e\n\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\n\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e子应用 (vue-app, port 8081):\u003c/p\u003e\n\u003cp\u003e通常情况下，main.js 和其他业务代码完全不需要修改！\u003c/p\u003e\n\u003cp\u003e你只需要确保设置了正确的跨域头（CORS），以及在路由配置中可能需要适配 \u003ccode\u003ebaseroute\u003c/code\u003e（micro-app 会通过 \u003ccode\u003ewindow.__MICRO_APP_BASE_ROUTE__\u003c/code\u003e 注入）。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"五总结与选择建议\"\u003e\u003ca href=\"#五总结与选择建议\"\u003e五、总结与选择建议\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eqiankun\u003c/strong\u003e 是一个\u003cstrong\u003e功能强大、生态成熟、经过大规模生产环境验证\u003c/strong\u003e的框架。它的优势在于稳定性和丰富的社区支持。如果你在维护一个庞大的、基于 Webpack 的旧系统，或者团队对 \u003ccode\u003esingle-spa\u003c/code\u003e 体系非常熟悉，qiankun 仍然是一个非常可靠的选择。它的配置虽然相对复杂，但也提供了更强的定制能力。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003emicro-app\u003c/strong\u003e 代表了\u003cstrong\u003e更现代、更简洁\u003c/strong\u003e的微前端实现思路。它的核心优势在于\u003cstrong\u003e极低的使用门槛、优雅的组件化API、以及与 Vite 天衣无缝的集成\u003c/strong\u003e。\u003ccode\u003eWeb Component\u003c/code\u003e 和 \u003ccode\u003eShadow DOM\u003c/code\u003e 的原生方案也让它在隔离性和性能上更具前瞻性。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"我的最终建议\"\u003e\u003ca href=\"#我的最终建议\"\u003e我的最终建议\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e对于绝大多数\u003cstrong\u003e新项目\u003c/strong\u003e，或者当你的技术栈全面拥抱 \u003cstrong\u003eVite\u003c/strong\u003e 时，我\u003cstrong\u003e更倾向于推荐 micro-app\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e理由如下：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e开发体验最优\u003c/strong\u003e：它的侵入性最低，接入成本最小，组件化的使用方式极大地降低了开发者的心智负担，可以更专注于业务逻辑本身。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e技术方向更现代\u003c/strong\u003e：基于 Web Component 的路线更符合 Web 标准的演进方向，具有更好的长期潜力。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eVite 集成是杀手锏\u003c/strong\u003e：在 Vite 已经成为前端工程化事实标准的今天，与 Vite 的无缝集成能力是一个决定性的优势。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e当然，技术选型没有绝对的银弹。如果你的项目对浏览器的兼容性有极其苛刻的要求（需要兼容不支持 \u003ccode\u003eProxy\u003c/code\u003e 和 \u003ccode\u003eWeb Component\u003c/code\u003e 的远古浏览器），那么 qiankun 提供的降级方案可能会更完善。但在 2025 年的今天，这已不是大多数项目需要考虑的主要矛盾。\u003c/p\u003e"])</script><script>self.__next_f.push([1,"e:[[\"$\",\"$L17\",null,{}],[\"$\",\"article\",null,{\"className\":\"container page-module__y-5DuW__article-page\",\"children\":[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-layout\",\"children\":[[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-main\",\"children\":[[\"$\",\"header\",null,{\"className\":\"page-module__y-5DuW__article-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"$undefined\",\"children\":[[\"$\",\"span\",null,{\"className\":\"$undefined\",\"children\":\"📂\"}],[[\"$\",\"$L18\",\"前端开发/工程化\",{\"href\":\"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/\",\"className\":\"$undefined\",\"children\":\"前端开发 / 工程化\"}]]]}],[\"$\",\"h1\",null,{\"className\":\"page-module__y-5DuW__article-title\",\"children\":\"深入剖析 qiankun 和 micro-app 微前端框架\"}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-meta\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"2025-07-29T00:00:00.000Z\",\"children\":\"2025年7月29日\"}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[2939,\" 字\"]}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[\"约 \",10,\" 分钟\"]}]]}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-tags\",\"children\":[[\"$\",\"span\",\"Obsidian\",{\"className\":\"page-module__y-5DuW__tag\",\"children\":\"Obsidian\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose page-module__y-5DuW__article-content\",\"dangerouslySetInnerHTML\":{\"__html\":\"$19\"}}],\"$L1a\",\"$L1b\"]}],\"$L1c\"]}]}]]\n"])</script><script>self.__next_f.push([1,"1d:I[34574,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n1e:I[55132,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n1a:[\"$\",\"$L1d\",null,{}]\n1b:[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-footer\",\"children\":[\"$\",\"$L18\",null,{\"href\":\"/articles/\",\"className\":\"page-module__y-5DuW__back-link\",\"children\":\"← 返回文章列表\"}]}]\n1c:[\"$\",\"aside\",null,{\"className\":\"page-module__y-5DuW__article-sidebar\",\"children\":[\"$\",\"$L1e\",null,{\"headings\":[{\"level\":3,\"id\":\"一核心思想与底层原理代理与组件的路线之争\",\"text\":\"一、核心思想与底层原理：代理与组件的路线之争\"},{\"level\":4,\"id\":\"1-qiankun基于-single-spa-的代理监听模式\",\"text\":\"1. qiankun：基于 single-spa 的代理监听模式\"},{\"level\":4,\"id\":\"2-micro-app基于-web-component-的原生组件化封装\",\"text\":\"2. micro-app：基于 Web Component 的原生组件化封装\"},{\"level\":3,\"id\":\"二主要不同点总结\",\"text\":\"二、主要不同点总结\"},{\"level\":3,\"id\":\"三与-vite-应用的结合\",\"text\":\"三、与 Vite 应用的结合\"},{\"level\":4,\"id\":\"qiankun--vite\",\"text\":\"qiankun + Vite\"},{\"level\":4,\"id\":\"micro-app--vite\",\"text\":\"micro-app + Vite\"},{\"level\":3,\"id\":\"四如何使用简化版示例\",\"text\":\"四、如何使用（简化版示例）\"},{\"level\":4,\"id\":\"1-使用-qiankun\",\"text\":\"1. 使用 qiankun\"},{\"level\":4,\"id\":\"2-使用-micro-app\",\"text\":\"2. 使用 micro-app\"},{\"level\":3,\"id\":\"五总结与选择建议\",\"text\":\"五、总结与选择建议\"},{\"level\":4,\"id\":\"我的最终建议\",\"text\":\"我的最终建议\"}]}]}]\n"])</script><script>self.__next_f.push([1,"14:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"1f:I[27201,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"IconMark\"]\n11:null\n16:[[\"$\",\"title\",\"0\",{\"children\":\"深入剖析 qiankun 和 micro-app 微前端框架 | 流年石刻\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"我们来系统且深入地剖析 qiankun 和 microapp 这两个主流的微前端框架。 微前端的核心目标是将一个庞大的单体前端应用（Monolith）拆分成多个更小、更独立、可自主开发和部署的子应用（Micro App），最后再将它们“无感…\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"$L1f\",\"4\",{}]]\n"])</script></body></html>

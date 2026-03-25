@@ -1,0 +1,292 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T4e29,<p>我们来系统且深入地剖析动态规划（Dynamic Programming, DP）。我会遵循第一性原理，从它最核心的思想出发，逐步构建起完整的知识体系，并最终用 JavaScript 代码来实践。</p>
+<h3 id="什么是动态规划从本质说起"><a href="#什么是动态规划从本质说起">什么是动态规划？从本质说起</a></h3>
+<p>想象一下你每天上学，从家到学校有很多条路。第一天你随机走了一条，花了30分钟。第二天，你可能会想：“昨天那条路在某个路口好像堵车了，今天我走到那个路口时，换一条小巷试试看会不会更快？”</p>
+<p>这个思考过程，就是动态规划的萌芽。你没有把“从家到学校”看成一个无法分割的整体，而是<strong>将一个大问题，拆解成了一系列更小的、相互关联的阶段性决策</strong>。你相信，在每个路口做出的“最优选择”（走哪条小路），最终会引导你找到全局的“最优解”（最快的路线）。</p>
+<p>更重要的是，如果你发现从 A 路口到 B 路口最快需要5分钟，你会把这个“知识”记住。以后任何需要从 A 前往 B 的路线规划，你都会直接使用这个“5分钟”的结论，而不需要重新再走一遍、再计算一次。</p>
+<p>把这个过程抽象出来，我们就得到了动态规划的两个核心特征：</p>
+<ol>
+<li>
+<p>最优子结构 (Optimal Substructure)</p>
+<p>一个大问题的最优解，可以由其子问题的最优解有效地构造出来。就像“从家到学校的最快路线”，必然包含了“从家到某个中间路口的最快路线”。</p>
+</li>
+<li>
+<p>重叠子问题 (Overlapping Subproblems)</p>
+<p>在解决大问题的过程中，许多相同的子问题会被反复计算。就像计算斐波那契数列 fib(5) 需要计算 fib(4) 和 fib(3)，而计算 fib(4) 又需要计算 fib(3) 和 fib(2)，这里的 fib(3) 就是一个被重复计算的子问题。动态规划的威力，就体现在它能通过“记住”子问题的解来避免这种重复计算。</p>
+</li>
+</ol>
+<p>因此，动态规划的本质是：<strong>通过拆分问题、定义问题状态与状态之间的关系，并将小问题的解储存起来，自底向上地推导出大问题的解。</strong> 它是一种用空间换时间的思想。</p>
+<hr>
+<h3 id="解决动态规划问题的四步法"><a href="#解决动态规划问题的四步法">解决动态规划问题的“四步法”</a></h3>
+<p>当你遇到一个问题，怀疑它可能用动态规划解决时，可以尝试遵循以下四个步骤。这套框架能帮助你理清思路，构建出正确的模型。</p>
+<p><strong>第一步：判断问题是否具有动态规划的特征</strong></p>
+<ul>
+<li>
+<p>它是否能被拆分成子问题？</p>
+</li>
+<li>
+<p>子问题的最优解能否推导出原问题的最优解？（最优子结构）</p>
+</li>
+<li>
+<p>求解过程中是否存在重复的子问题计算？（重叠子问题）</p>
+</li>
+<li>
+<p>常见题型：求最大/最小值、求可行性、求方案总数等。</p>
+</li>
+</ul>
+<p>第二步：定义状态 (State)</p>
+<p>这是最核心也是最困难的一步。你需要定义一个数组（通常是 dp 数组），并明确 dp[i] 或 dp[i][j] 代表什么。这个定义必须是清晰、无歧义的，并且能够覆盖所有子问题。</p>
+<ul>
+<li>例如，<code>dp[i]</code> 可以表示“爬到第 <code>i</code> 级台阶的总方法数”，或者“凑成金额 <code>i</code> 所需的最少硬币数”。</li>
+</ul>
+<p>第三步：推导状态转移方程 (State Transition Equation)</p>
+<p>这是算法的核心。你需要找到 dp[i] 和 dp[i-1], dp[i-2], ... 等历史状态之间的数学关系。这个方程描述了如何从一个或多个已知的子问题解，计算出当前问题的解。</p>
+<ul>
+<li>例如，爬楼梯问题中，想到达第 <code>i</code> 级，要么从 <code>i-1</code> 级爬上来，要么从 <code>i-2</code> 级爬上来，所以 <code>dp[i] = dp[i-1] + dp[i-2]</code>。</li>
+</ul>
+<p>第四步：确定初始状态 (Base Cases)</p>
+<p>算法总需要一个起点。初始状态是 dp 数组中不需要通过状态转移方程就能直接确定的值。它们是推导的基石。</p>
+<ul>
+<li>例如，<code>dp[0] = 0</code> 或 <code>dp[1] = 1</code>。</li>
+</ul>
+<hr>
+<h3 id="实现方式记忆化搜索-vs-递推"><a href="#实现方式记忆化搜索-vs-递推">实现方式：记忆化搜索 vs. 递推</a></h3>
+<p>动态规划有两种经典的实现范式，它们思路不同，但殊途同归。</p>
+<ol>
+<li>
+<p><strong>自顶向下 (Top-Down) 与记忆化搜索 (Memoization)</strong></p>
+<ul>
+<li>
+<p><strong>思路</strong>：从大问题出发，使用递归函数求解。如果一个子问题之前没算过，就计算它，并把结果存起来（例如存在一个 <code>Map</code> 或对象里）；如果算过了，就直接从存储中取出结果。</p>
+</li>
+<li>
+<p><strong>优点</strong>：写法更符合直觉，接近人类的递归思考方式。只计算被真正需要的子问题。</p>
+</li>
+<li>
+<p><strong>缺点</strong>：递归有函数调用开销，当递归深度过大时，可能导致栈溢出。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>自底向上 (Bottom-Up) 与递推/制表 (Tabulation)</strong></p>
+<ul>
+<li>
+<p><strong>思路</strong>：不使用递归。根据我们定义的状态，创建一个 <code>dp</code> 数组（或表格），根据初始状态和状态转移方程，从 <code>dp[0]</code> 开始，按顺序一步步地计算出所有状态的值，直到我们需要的最终解。</p>
+</li>
+<li>
+<p><strong>优点</strong>：没有递归开销，效率通常更高。代码是迭代式的（用循环），没有栈溢出风险。</p>
+</li>
+<li>
+<p><strong>缺点</strong>：可能会计算一些最终答案并不需要的子问题。思考过程有时不如递归直观。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>哪个更好？</p>
+<p>在面试和算法竞赛中，自底向上的递推法（Tabulation）通常是更受青睐的选择。因为它避免了递归的潜在风险，并且在性能上往往略胜一筹。不过，当你面对一个新问题，用自顶向下的记忆化搜索来理清递归关系，再将其改写为递推形式，也是一个非常有效的策略。</p>
+<hr>
+<h3 id="代码实战从简单到复杂"><a href="#代码实战从简单到复杂">代码实战：从简单到复杂</a></h3>
+<h4 id="示例-1斐波那契数列dp入门经典"><a href="#示例-1斐波那契数列dp入门经典">示例 1：斐波那契数列（DP入门经典）</a></h4>
+<p>问题：计算斐波那契数列的第 <code>n</code> 项。<code>f(0)=0, f(1)=1, f(n) = f(n-1) + f(n-2)</code>。</p>
+<ol>
+<li>朴素递归（反例）</li>
+</ol>
+<p>首先看一个没有使用动态规划的递归，它会因为大量重复计算而非常低效。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">fib_naive</span>(<span class="hljs-params">n</span>) {
+    <span class="hljs-keyword">if</span> (n &#x3C;= <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> n;
+    }
+    <span class="hljs-comment">// 大量重复计算，例如 fib(5) 会多次计算 fib(3)</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">fib_naive</span>(n - <span class="hljs-number">1</span>) + <span class="hljs-title function_">fib_naive</span>(n - <span class="hljs-number">2</span>);
+}
+<span class="hljs-comment">// console.log(fib_naive(45)); // 会花费很长时间</span>
+</code></pre>
+<p><strong>2. 记忆化搜索 (Top-Down)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">fib_memo</span>(<span class="hljs-params">n, memo = {}</span>) {
+    <span class="hljs-comment">// 如果已经在缓存中，直接返回</span>
+    <span class="hljs-keyword">if</span> (n <span class="hljs-keyword">in</span> memo) {
+        <span class="hljs-keyword">return</span> memo[n];
+    }
+    <span class="hljs-comment">// Base Case</span>
+    <span class="hljs-keyword">if</span> (n &#x3C;= <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> n;
+    }
+    <span class="hljs-comment">// 计算、存入缓存、然后返回</span>
+    memo[n] = <span class="hljs-title function_">fib_memo</span>(n - <span class="hljs-number">1</span>, memo) + <span class="hljs-title function_">fib_memo</span>(n - <span class="hljs-number">2</span>, memo);
+    <span class="hljs-keyword">return</span> memo[n];
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`记忆化搜索: fib(10) = <span class="hljs-subst">${fib_memo(<span class="hljs-number">10</span>)}</span>`</span>); <span class="hljs-comment">// 记忆化搜索: fib(10) = 55</span>
+</code></pre>
+<p>在这里，<code>memo</code> 对象就像我们的大脑记忆，避免了做无用功。</p>
+<p><strong>3. 递推 (Bottom-Up)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">fib_tab</span>(<span class="hljs-params">n</span>) {
+    <span class="hljs-keyword">if</span> (n &#x3C;= <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> n;
+    }
+    <span class="hljs-comment">// 1. 定义状态: dp[i] 代表斐波那契数列第 i 项的值</span>
+    <span class="hljs-keyword">const</span> dp = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(n + <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// 2. 确定初始状态</span>
+    dp[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+    dp[<span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;
+
+    <span class="hljs-comment">// 3. 状态转移方程: dp[i] = dp[i-1] + dp[i-2]</span>
+    <span class="hljs-comment">// 从下往上计算</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &#x3C;= n; i++) {
+        dp[i] = dp[i - <span class="hljs-number">1</span>] + dp[i - <span class="hljs-number">2</span>];
+    }
+
+    <span class="hljs-keyword">return</span> dp[n];
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`递推法: fib(10) = <span class="hljs-subst">${fib_tab(<span class="hljs-number">10</span>)}</span>`</span>); <span class="hljs-comment">// 递推法: fib(10) = 55</span>
+</code></pre>
+<p>空间优化</p>
+<p>我们注意到，计算 dp[i] 其实只需要 dp[i-1] 和 dp[i-2] 这两个状态。没必要保存整个数组。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">fib_optimized</span>(<span class="hljs-params">n</span>) {
+    <span class="hljs-keyword">if</span> (n &#x3C;= <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> n;
+    }
+    <span class="hljs-keyword">let</span> prev2 = <span class="hljs-number">0</span>; <span class="hljs-comment">// 代表 dp[i-2]</span>
+    <span class="hljs-keyword">let</span> prev1 = <span class="hljs-number">1</span>; <span class="hljs-comment">// 代表 dp[i-1]</span>
+    <span class="hljs-keyword">let</span> current;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &#x3C;= n; i++) {
+        current = prev1 + prev2;
+        prev2 = prev1;
+        prev1 = current;
+    }
+
+    <span class="hljs-keyword">return</span> current;
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`空间优化: fib(10) = <span class="hljs-subst">${fib_optimized(<span class="hljs-number">10</span>)}</span>`</span>); <span class="hljs-comment">// 空间优化: fib(10) = 55</span>
+</code></pre>
+<hr>
+<h4 id="示例-2零钱兑换更典型更复杂的dp问题"><a href="#示例-2零钱兑换更典型更复杂的dp问题">示例 2：零钱兑换（更典型、更复杂的DP问题）</a></h4>
+<p>问题：给你一个整数数组 <code>coins</code> 表示不同面额的硬币，以及一个整数 <code>amount</code> 表示总金额。计算并返回可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 <code>-1</code>。</p>
+<p>我们来套用“四步法”：</p>
+<p><strong>第一步：判断问题特征</strong></p>
+<ul>
+<li>
+<p>求最值（最少个数）。</p>
+</li>
+<li>
+<p>凑成 <code>amount</code> 的最优解，依赖于凑成 <code>amount - coin</code> 的最优解。例如，凑11元的最优解，可能是凑10元最优解+1个1元硬币，或凑9元最优解+1个2元硬币，或凑6元最优解+1个5元硬币中的最小值。这符合<strong>最优子结构</strong>。</p>
+</li>
+<li>
+<p>在计算过程中，凑齐某个金额（如5元）的方法，会被多次用到。这符合<strong>重叠子问题</strong>。</p>
+</li>
+<li>
+<p>结论：这是一个典型的动态规划问题。</p>
+</li>
+</ul>
+<p><strong>第二步：定义状态</strong></p>
+<ul>
+<li>我们创建一个数组 <code>dp</code>，<code>dp[i]</code> 的含义是：<strong>凑成金额 <code>i</code> 所需要的最少硬币数量</strong>。我们的目标就是求 <code>dp[amount]</code>。</li>
+</ul>
+<p><strong>第三步：推导状态转移方程</strong></p>
+<ul>
+<li>
+<p>对于任意金额 <code>i</code>，我们要如何得到 <code>dp[i]</code> 呢？</p>
+</li>
+<li>
+<p>我们可以尝试使用每一枚硬币 <code>coin</code>。如果我们决定使用一枚面值为 <code>coin</code> 的硬币，那么问题就变成了：凑成金额 <code>i - coin</code> 需要多少硬币？答案是 <code>dp[i - coin]</code>。</p>
+</li>
+<li>
+<p>所以，如果我们使用这枚硬币 <code>coin</code>，总硬币数就是 <code>1 + dp[i - coin]</code>。</p>
+</li>
+<li>
+<p>我们需要遍历所有可用的硬币 <code>c</code> in <code>coins</code>，找出能使 <code>1 + dp[i - c]</code> 最小的那个值。</p>
+</li>
+<li>
+<p>因此，状态转移方程是：dp[i]=min_cintextcoins,igec1+dp[i−c]</p>
+</li>
+</ul>
+<p><strong>第四步：确定初始状态</strong></p>
+<ul>
+<li>
+<p><code>dp[0] = 0</code>：凑成金额 0 需要 0 个硬币。这是最基础的解。</p>
+</li>
+<li>
+<p>对于其他 <code>dp[i]</code>（当 <code>i > 0</code> 时），我们可以将它们初始化为一个“不可能”的大数，比如 <code>Infinity</code>。这表示这些金额初始时是无法凑成的。在后续计算中，如果 <code>dp[i]</code> 能被更新，它就会变成一个有限的数；如果循环结束后它仍然是 <code>Infinity</code>，就说明这个金额无法凑成。</p>
+</li>
+</ul>
+<p><strong>代码实现 (Bottom-Up)</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number[]</span>} <span class="hljs-variable">coins</span>
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">amount</span>
+ * <span class="hljs-doctag">@return</span> {<span class="hljs-type">number</span>}
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">coinChange</span>(<span class="hljs-params">coins, amount</span>) {
+    <span class="hljs-comment">// 1. 定义状态: dp[i] 表示凑成金额 i 所需的最少硬币数</span>
+    <span class="hljs-comment">// 初始化为一个大数，表示“不可达”</span>
+    <span class="hljs-keyword">const</span> dp = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(amount + <span class="hljs-number">1</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-title class_">Infinity</span>);
+
+    <span class="hljs-comment">// 2. 初始状态</span>
+    dp[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// 3. 状态转移: 从金额 1 遍历到 amount</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &#x3C;= amount; i++) {
+        <span class="hljs-comment">// 对于每个金额 i，尝试使用每一种硬币</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> coin <span class="hljs-keyword">of</span> coins) {
+            <span class="hljs-comment">// 如果当前金额 i 可以由 coin 凑成</span>
+            <span class="hljs-keyword">if</span> (i - coin >= <span class="hljs-number">0</span>) {
+                <span class="hljs-comment">// dp[i-coin] 必须是一个可达状态（不是Infinity）</span>
+                <span class="hljs-keyword">if</span> (dp[i - coin] !== <span class="hljs-title class_">Infinity</span>) {
+                    <span class="hljs-comment">// 状态转移方程</span>
+                    dp[i] = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(dp[i], <span class="hljs-number">1</span> + dp[i - coin]);
+                }
+            }
+        }
+    }
+    
+    <span class="hljs-comment">// 4. 返回结果</span>
+    <span class="hljs-comment">// 如果 dp[amount] 还是初始的 Infinity，说明无解</span>
+    <span class="hljs-keyword">return</span> dp[amount] === <span class="hljs-title class_">Infinity</span> ? -<span class="hljs-number">1</span> : dp[amount];
+}
+
+<span class="hljs-comment">// 测试</span>
+<span class="hljs-keyword">const</span> coins = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>];
+<span class="hljs-keyword">const</span> amount = <span class="hljs-number">11</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`零钱兑换: 凑成<span class="hljs-subst">${amount}</span>元最少需要 <span class="hljs-subst">${coinChange(coins, amount)}</span> 个硬币。`</span>); <span class="hljs-comment">// 输出 3 (5+5+1)</span>
+
+<span class="hljs-keyword">const</span> coins2 = [<span class="hljs-number">2</span>];
+<span class="hljs-keyword">const</span> amount2 = <span class="hljs-number">3</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`零钱兑换: 凑成<span class="hljs-subst">${amount2}</span>元最少需要 <span class="hljs-subst">${coinChange(coins2, amount2)}</span> 个硬币。`</span>); <span class="hljs-comment">// 输出 -1</span>
+</code></pre>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p>动态规划并非某种具体的算法，而是一种解决问题的<strong>思想范式</strong>。它的强大之处在于能将指数级复杂度的暴力搜索问题，优化到多项式复杂度。</p>
+<p>掌握它的关键在于：</p>
+<ol>
+<li>
+<p><strong>识别模式</strong>：通过练习，培养出对“最优子结构”和“重叠子问题”的嗅觉。</p>
+</li>
+<li>
+<p><strong>精确定义</strong>：花最多的时间去思考<code>dp[i]</code>的准确含义。定义对了，问题就解决了一半。</p>
+</li>
+<li>
+<p><strong>推导关系</strong>：找到状态之间的递推关系，这是连接子问题和原问题的桥梁。</p>
+</li>
+<li>
+<p><strong>实践出真知</strong>：动态规划的技巧和模式非常多（如背包问题、最长公共子序列、区间DP等），只有通过大量练习，才能真正内化这种思想，并灵活运用于未知问题。</p>
+</li>
+</ol>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/算法",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%AE%97%E6%B3%95/","children":"前端开发 / 算法"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"动态规划"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2778," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"什么是动态规划从本质说起","text":"什么是动态规划？从本质说起"},{"level":3,"id":"解决动态规划问题的四步法","text":"解决动态规划问题的“四步法”"},{"level":3,"id":"实现方式记忆化搜索-vs-递推","text":"实现方式：记忆化搜索 vs. 递推"},{"level":3,"id":"代码实战从简单到复杂","text":"代码实战：从简单到复杂"},{"level":4,"id":"示例-1斐波那契数列dp入门经典","text":"示例 1：斐波那契数列（DP入门经典）"},{"level":4,"id":"示例-2零钱兑换更典型更复杂的dp问题","text":"示例 2：零钱兑换（更典型、更复杂的DP问题）"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

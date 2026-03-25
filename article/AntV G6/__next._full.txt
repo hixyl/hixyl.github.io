@@ -1,0 +1,278 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","AntV%20G6",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","AntV%20G6","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T384d,<p>要彻底搞懂 AntV G6，不能只看 API 文档（因为它的文档在 v4 和 v5 之间有巨大的断层，容易让人迷失），而必须建立起一套**“图可视化引擎”的底层思维模型**。</p>
+<p>G6 的本质不是“画图工具”，而是一个<strong>关系数据的渲染与交互引擎</strong>。它的核心任务只有一个：<strong>将抽象的节点（Node）和边（Edge）数据，转化为屏幕上的像素，并响应用户的操作。</strong></p>
+<p>以下是从底层逻辑到实战应用的系统化解析。</p>
+<hr>
+<h3 id="1-核心定位g6-到底是什么"><a href="#1-核心定位g6-到底是什么">1. 核心定位：G6 到底是什么？</a></h3>
+<p>在阿里的 AntV 体系中，很多人分不清 G6 和 X6。这是第一步要明确的：</p>
+<ul>
+<li>
+<p><strong>G6 (Graph Analysis):</strong> 侧重<strong>自动布局</strong>和<strong>海量数据分析</strong>。如果你有一堆数据（如社交网络、资金流向），不知道它们长什么样，需要 G6 帮你算位置、画出来。</p>
+</li>
+<li>
+<p><strong>X6 (Diagram Editing):</strong> 侧重<strong>手动编辑</strong>和<strong>流程图</strong>。如果你需要做一个类似 Visio 的画板，让用户拖拽节点连线，选 X6。</p>
+</li>
+</ul>
+<p><strong>结论：</strong> G6 的强项在于“根据数据算图形”，而不是“提供画板让人画”。</p>
+<hr>
+<h3 id="2-架构解构g6-的第一性原理"><a href="#2-架构解构g6-的第一性原理">2. 架构解构：G6 的“第一性原理”</a></h3>
+<p>G6 的运行机制可以拆解为四个步骤：</p>
+<p>数据 (Data) -> 布局 (Layout) -> 元素 (Element) -> 渲染与交互 (Rendering &#x26; Behavior)</p>
+<h4 id="a-数据data一切的起点"><a href="#a-数据data一切的起点">A. 数据（Data）：一切的起点</a></h4>
+<p>G6 的数据结构非常标准，必须包含两个核心数组：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-css">const data = {
+  nodes: [
+    { id: <span class="hljs-string">'n1'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'用户A'</span>, value: <span class="hljs-number">100</span> } }, // id 是唯一索引
+    { id: <span class="hljs-string">'n2'</span>, data: { <span class="hljs-selector-tag">label</span>: <span class="hljs-string">'用户B'</span>, value: <span class="hljs-number">200</span> } }
+  ],
+  edges: [
+    { <span class="hljs-selector-tag">source</span>: <span class="hljs-string">'n1'</span>, target: <span class="hljs-string">'n2'</span>, data: { weight: <span class="hljs-number">1</span> } } // 描述关系
+  ],
+  // 可选：combos（节点分组）
+};
+</code></pre>
+<ul>
+<li><strong>注意：</strong> 在 G6 v5 中，推荐将业务数据放在 <code>data</code> 字段下，与图形配置（如 <code>style</code>, <code>x</code>, <code>y</code>）分离。</li>
+</ul>
+<h4 id="b-布局layout决定在哪画"><a href="#b-布局layout决定在哪画">B. 布局（Layout）：决定“在哪画”</a></h4>
+<p>这是 G6 最核心的能力。计算机不知道节点该放在屏幕哪个位置，<strong>布局算法</strong>负责计算每个节点的 <code>(x, y)</code> 坐标。</p>
+<ul>
+<li>
+<p><strong>力导向 (Force):</strong> 模拟物理引力和斥力，适合无规律的复杂网络（如黑产团伙挖掘）。</p>
+</li>
+<li>
+<p><strong>树图 (Tree):</strong> 脑图、组织架构图。</p>
+</li>
+<li>
+<p><strong>圆形/网格 (Circular/Grid):</strong> 适合展示分类或资源分配。</p>
+</li>
+<li>
+<p><strong>Dagre:</strong> 层次布局，适合有方向的依赖关系（如任务流）。</p>
+</li>
+</ul>
+<p><strong>关键点：</strong> 布局是耗时的。对于几千个节点，Layout 计算可能阻塞主线程，通常需要使用 Web Worker 或 GPU 加速布局（G6 支持）。</p>
+<h4 id="c-元素element决定画什么"><a href="#c-元素element决定画什么">C. 元素（Element）：决定“画什么”</a></h4>
+<p>G6 将图元素分为三类：</p>
+<ol>
+<li>
+<p><strong>Node (节点):</strong> 圆、矩形、图片等。</p>
+</li>
+<li>
+<p><strong>Edge (边):</strong> 直线、曲线、贝塞尔曲线。</p>
+</li>
+<li>
+<p><strong>Combo (分组):</strong> 包裹一组节点的容器（可收起/展开）。</p>
+</li>
+</ol>
+<p>自定义能力的边界：</p>
+<p>这是新手最容易卡住的地方。虽然 G6 内置了很多形状，但实际业务中（例如：要在节点里画一个饼图，旁边加个状态灯，右上角挂个 Badge），内置形状通常不够用。</p>
+<ul>
+<li>
+<p><strong>React/Vue 节点：</strong> G6 支持用 HTML/React 组件渲染节点（性能较差，适合节点少的情况）。</p>
+</li>
+<li>
+<p><strong>Canvas 图形节点：</strong> 性能最好。你需要基于 G 渲染引擎（AntV 底层的 Canvas 库）组合 <code>Circle</code>, <code>Rect</code>, <code>Text</code> 来绘制。这是高阶使用的必经之路。</p>
+</li>
+</ul>
+<h4 id="d-交互behavior决定怎么动"><a href="#d-交互behavior决定怎么动">D. 交互（Behavior）：决定“怎么动”</a></h4>
+<p>G6 将交互逻辑封装为 <strong>Behaviors（行为）</strong>。</p>
+<ul>
+<li>
+<p>不要自己去监听 <code>canvas.on('mousedown')</code> 来实现拖拽。</p>
+</li>
+<li>
+<p><strong>配置式交互：</strong> 直接在配置里加 <code>drag-canvas</code> (拖拽画布), <code>zoom-canvas</code> (缩放), <code>drag-node</code> (拖拽节点)。</p>
+</li>
+<li>
+<p><strong>交互模式 (Modes):</strong> G6 允许定义不同的模式。例如 <code>default</code> 模式下可以点击查看详情，<code>edit</code> 模式下可以连线。通过 <code>graph.setMode('edit')</code> 瞬间切换整套交互逻辑。</p>
+</li>
+</ul>
+<hr>
+<h3 id="3-关键版本差异v4-vs-v5"><a href="#3-关键版本差异v4-vs-v5">3. 关键版本差异：v4 vs v5</a></h3>
+<p>这是一个必须要诚实面对的现状：<strong>G6 目前处于 v4 到 v5 的过渡期，这是一个巨大的坑。</strong></p>
+<ul>
+<li>
+<p><strong>G6 v4:</strong> 也就是目前的稳定版（3.x/4.x），文档全，社区插件多，但在处理 10万+ 节点时性能有瓶颈，API 设计比较面向对象（Class-based）。</p>
+</li>
+<li>
+<p><strong>G6 v5 (G6 5.0):</strong> 全新重构。底层换了渲染引擎，性能极强（支持 WebGL），API 变成了更加声明式的配置（Specification-based）。</p>
+</li>
+</ul>
+<p><strong>建议：</strong> 如果你现在开始新项目，且追求长期维护，<strong>建议直接学习 v5</strong>，虽然文档可能还在完善中，但它是未来。下面的代码示例将基于<strong>v5 的思维</strong>（配置化）。</p>
+<hr>
+<h3 id="4-实战系统化流程"><a href="#4-实战系统化流程">4. 实战系统化流程</a></h3>
+<h4 id="第一阶段初始化与渲染"><a href="#第一阶段初始化与渲染">第一阶段：初始化与渲染</a></h4>
+<p>不要把配置写死在一坨代码里，要分层。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-keyword">import</span> { Graph } from <span class="hljs-string">'@antv/g6'</span>;
+
+<span class="hljs-comment">// 1. 实例化</span>
+<span class="hljs-type">const</span> graph = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Graph</span>({
+  container: <span class="hljs-string">'container'</span>, <span class="hljs-comment">// DOM 容器</span>
+  width: <span class="hljs-number">800</span>,
+  height: <span class="hljs-number">600</span>,
+  <span class="hljs-comment">// 2. 全局配置 (样式映射)</span>
+  node: {
+    style: {
+      fill: <span class="hljs-string">'#F6BD16'</span>, <span class="hljs-comment">// 默认填充色</span>
+      size: <span class="hljs-number">20</span>,
+    },
+    <span class="hljs-comment">// 状态样式 (比如 hover 变红)</span>
+    state: {
+      hover: {
+        fill: <span class="hljs-string">'red'</span>,
+      },
+    },
+  },
+  edge: {
+    style: {
+      stroke: <span class="hljs-string">'#e2e2e2'</span>,
+      endArrow: <span class="hljs-literal">true</span>,
+    },
+  },
+  <span class="hljs-comment">// 3. 布局配置</span>
+  layout: {
+    type: <span class="hljs-string">'force'</span>, <span class="hljs-comment">// 力导向布局</span>
+    preventOverlap: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 防止重叠</span>
+  },
+  <span class="hljs-comment">// 4. 交互行为</span>
+  behaviors: [<span class="hljs-string">'drag-canvas'</span>, <span class="hljs-string">'zoom-canvas'</span>, <span class="hljs-string">'drag-element'</span>, <span class="hljs-string">'click-select'</span>],
+});
+
+<span class="hljs-comment">// 5. 加载数据并渲染</span>
+graph.<span class="hljs-built_in">setData</span>(data);
+graph.<span class="hljs-built_in">render</span>();
+</code></pre>
+<h4 id="第二阶段业务逻辑映射mapper"><a href="#第二阶段业务逻辑映射mapper">第二阶段：业务逻辑映射（Mapper）</a></h4>
+<p>这是让图表“活”起来的关键。不要在数据里硬编码颜色。使用 G6 的 Mapper 机制。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-scss"><span class="hljs-comment">// 这里的逻辑是：节点大小取决于 value 字段，颜色取决于 type 字段</span>
+graph<span class="hljs-selector-class">.setOptions</span>({
+  node: {
+    style: (d) => ({
+        size: Math.sqrt(d.data.value) * <span class="hljs-number">5</span>, 
+        <span class="hljs-attribute">fill</span>: d.data.type === <span class="hljs-string">'risky'</span> ? <span class="hljs-string">'red'</span> : <span class="hljs-string">'green'</span>,
+    })
+  }
+});
+graph<span class="hljs-selector-class">.render</span>();
+</code></pre>
+<h4 id="第三阶段事件系统"><a href="#第三阶段事件系统">第三阶段：事件系统</a></h4>
+<p>G6 的事件系统非常精细。</p>
+<ul>
+<li>
+<p><code>node:click</code>: 点击节点</p>
+</li>
+<li>
+<p><code>edge:mouseenter</code>: 鼠标移入边</p>
+</li>
+<li>
+<p><code>canvas:click</code>: 点击空白处</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript">graph.<span class="hljs-title function_">on</span>(<span class="hljs-string">'node:click'</span>, <span class="hljs-function">(<span class="hljs-params">e</span>) =></span> {
+  <span class="hljs-keyword">const</span> { id } = e.<span class="hljs-property">target</span>.<span class="hljs-property">id</span>;
+  <span class="hljs-comment">// 业务逻辑：比如右侧弹出详情抽屉</span>
+  <span class="hljs-title function_">showDetailDrawer</span>(id);
+  
+  <span class="hljs-comment">// 视觉反馈：高亮该节点及其邻居</span>
+  graph.<span class="hljs-title function_">setItemState</span>(id, <span class="hljs-string">'selected'</span>, <span class="hljs-literal">true</span>);
+});
+</code></pre>
+<hr>
+<h3 id="5-进阶难点如何处理复杂场景"><a href="#5-进阶难点如何处理复杂场景">5. 进阶难点：如何处理复杂场景？</a></h3>
+<h4 id="场景一海量数据性能优化lod---level-of-detail"><a href="#场景一海量数据性能优化lod---level-of-detail">场景一：海量数据性能优化（LOD - Level of Detail）</a></h4>
+<p>当图上有 10,000 个节点时，浏览器会卡死。</p>
+<ul>
+<li>
+<p><strong>策略 1：</strong> 使用 G6 的 WebGL 渲染模式（v5 支持更好）。</p>
+</li>
+<li>
+<p><strong>策略 2：</strong> 缩放聚合。当缩小（Zoom out）时，隐藏 Label 和细节，只画点；当放大（Zoom in）时，再显示文字。这可以通过监听 <code>viewportchange</code> 事件动态更新样式实现。</p>
+</li>
+</ul>
+<h4 id="场景二复杂的自定义节点"><a href="#场景二复杂的自定义节点">场景二：复杂的自定义节点</a></h4>
+<p>如果设计稿要求节点长得像个“服务器面板”，包含 IP、状态灯、CPU 进度条。</p>
+<ul>
+<li>
+<p><strong>做法：</strong> 注册自定义节点 (Register Node)。利用 G (AntV 的绘图库) 的 Group 概念，像搭积木一样把 Shape 组合起来。</p>
+</li>
+<li>
+<p><strong>布局技巧：</strong> 不要写死像素值，尽量相对定位，否则文字一长就坏了。</p>
+</li>
+</ul>
+<h4 id="场景三动态更新"><a href="#场景三动态更新">场景三：动态更新</a></h4>
+<p>实时数据流进来，图需要动。</p>
+<ul>
+<li>
+<p>不要每次都 <code>graph.read(newData)</code> 重绘，这会让图闪烁且布局重算。</p>
+</li>
+<li>
+<p>使用 <code>graph.updateData</code> 和 <code>graph.changeData</code>，配合 <code>layout.tick()</code> (如果是力导向图) 来平滑过渡。</p>
+</li>
+</ul>
+<hr>
+<h3 id="6-避坑指南基于事实的评估"><a href="#6-避坑指南基于事实的评估">6. 避坑指南（基于事实的评估）</a></h3>
+<ol>
+<li>
+<p><strong>文档陷阱：</strong> 搜索 G6 问题时，务必看清是 3.x, 4.x 还是 5.x。很多旧代码在 v5 里完全跑不通（例如 v4 的 <code>cfg</code> 参数在 v5 变成了 <code>style</code> 属性）。</p>
+</li>
+<li>
+<p><strong>布局抖动：</strong> 力导向布局虽然酷，但用户不喜欢每次刷新图都在变。</p>
+<ul>
+<li><em>解决：</em> 布局计算完成后，保存每个节点的 <code>(x, y)</code> 到数据库。下次加载时，直接读取坐标，设为 <code>preset</code> 布局，图就是静止的。</li>
+</ul>
+</li>
+<li>
+<p><strong>React/Vue 封装：</strong> 官方提供了一些 React 组件，但通常很难用且不灵活。<strong>最佳实践是自己写一个 <code>useEffect</code> (React) 或 <code>onMounted</code> (Vue) 钩子来管理 G6 实例的生命周期</strong>，不要过度依赖第三方封装的 G6 组件库。</p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p>G6 是一个<strong>重配置、轻绘图</strong>的引擎。</p>
+<ul>
+<li>
+<p>入门：掌握 <code>data</code> -> <code>layout</code> -> <code>render</code> 的流。</p>
+</li>
+<li>
+<p>进阶：掌握 <code>style mapper</code> (样式映射) 和 <code>behavior</code> (交互)。</p>
+</li>
+<li>
+<p>精通：掌握 <code>Custom Node</code> (底层绘图) 和 <code>Algorithm</code> (图算法分析)。</p>
+</li>
+</ul>
+<p>你目前具体的应用场景是什么？（是做知识图谱、风控链路、还是简单的拓扑图？）告诉我场景，我可以针对性地给出那个场景下的配置模板。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","className":"$undefined","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"AntV G6"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-11-20T00:00:00.000Z","children":"2025年11月20日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1934," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-核心定位g6-到底是什么","text":"1. 核心定位：G6 到底是什么？"},{"level":3,"id":"2-架构解构g6-的第一性原理","text":"2. 架构解构：G6 的“第一性原理”"},{"level":4,"id":"a-数据data一切的起点","text":"A. 数据（Data）：一切的起点"},{"level":4,"id":"b-布局layout决定在哪画","text":"B. 布局（Layout）：决定“在哪画”"},{"level":4,"id":"c-元素element决定画什么","text":"C. 元素（Element）：决定“画什么”"},{"level":4,"id":"d-交互behavior决定怎么动","text":"D. 交互（Behavior）：决定“怎么动”"},{"level":3,"id":"3-关键版本差异v4-vs-v5","text":"3. 关键版本差异：v4 vs v5"},{"level":3,"id":"4-实战系统化流程","text":"4. 实战系统化流程"},{"level":4,"id":"第一阶段初始化与渲染","text":"第一阶段：初始化与渲染"},{"level":4,"id":"第二阶段业务逻辑映射mapper","text":"第二阶段：业务逻辑映射（Mapper）"},{"level":4,"id":"第三阶段事件系统","text":"第三阶段：事件系统"},{"level":3,"id":"5-进阶难点如何处理复杂场景","text":"5. 进阶难点：如何处理复杂场景？"},{"level":4,"id":"场景一海量数据性能优化lod---level-of-detail","text":"场景一：海量数据性能优化（LOD - Level of Detail）"},{"level":4,"id":"场景二复杂的自定义节点","text":"场景二：复杂的自定义节点"},{"level":4,"id":"场景三动态更新","text":"场景三：动态更新"},{"level":3,"id":"6-避坑指南基于事实的评估","text":"6. 避坑指南（基于事实的评估）"},{"level":3,"id":"总结","text":"总结"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"AntV G6 | 流年石刻"}],["$","meta","1",{"name":"description","content":"要彻底搞懂 AntV G6，不能只看 API 文档（因为它的文档在 v4 和 v5 之间有巨大的断层，容易让人迷失），而必须建立起一套“图可视化引擎”的底层思维模型。 G6 的本质不是“画图工具”，而是一个关系数据的渲染与交互引擎。它的核心…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

@@ -1,0 +1,238 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T2f49,<p>将一个URL（例如 <code>https://www.google.com</code>）输入浏览器地址栏，到最终页面完整渲染出来的过程，是一个涉及计算机网络、操作系统、浏览器内核等多个领域的复杂但高度优化的协同工作。</p>
+<p>我们可以将其拆解为以下几个核心阶段：</p>
+<ol>
+<li>
+<p><strong>解析与预处理 (Browser-side)</strong></p>
+</li>
+<li>
+<p><strong>网络请求 (Networking)</strong></p>
+</li>
+<li>
+<p><strong>服务器响应 (Server-side)</strong></p>
+</li>
+<li>
+<p><strong>浏览器渲染 (Rendering)</strong></p>
+</li>
+</ol>
+<p>下面我将详细拆解每一步。</p>
+<hr>
+<h3 id="阶段一解析与预处理"><a href="#阶段一解析与预处理">阶段一：解析与预处理</a></h3>
+<p>当你输入 <code>google.com</code> 并按下回车键时，浏览器内部首先会进行一系列“准备工作”，而不是立刻发起网络请求。</p>
+<ol>
+<li>
+<p><strong>输入解析</strong>：浏览器首先会判断你输入的是一个搜索关键词还是一个URL。现代浏览器地址栏集成了搜索功能。如果输入的是 "how to bake a cake"，它会使用默认的搜索引擎进行搜索。如果输入的是 <code>google.com</code> 或 <code>https://google.com</code>，它会识别为URL。</p>
+</li>
+<li>
+<p><strong>URL标准化</strong>：如果你只输入了 <code>google.com</code>，浏览器会自动为你补全协议，根据当前主流的安全标准，它会优先尝试 <code>https</code>，构成完整的URL：<code>https://www.google.com</code>。</p>
+</li>
+<li>
+<p><strong>检查缓存</strong>：在发起任何网络请求之前，效率至上的浏览器会检查其内部缓存，这是一个至关重要的性能优化步骤。检查顺序通常是：</p>
+<ul>
+<li>
+<p><strong>Service Worker 缓存</strong>：Service Worker是一种可以拦截和处理网络请求的脚本。如果当前页面注册了Service Worker，它会首先检查是否有缓存的响应可用。这使得Web应用可以离线工作。</p>
+</li>
+<li>
+<p><strong>内存缓存 (Memory Cache)</strong>：速度最快，但生命周期与当前标签页绑定，关闭即失效。浏览器会检查当前会话中是否已有该资源的缓存。</p>
+</li>
+<li>
+<p><strong>硬盘缓存 (Disk Cache)</strong>：速度慢于内存缓存，但持久化存储，关闭浏览器后依然存在。浏览器会检查硬盘上是否有该资源的缓存。</p>
+</li>
+<li>
+<p><strong>如果命中强缓存</strong>：如果缓存有效（根据 <code>Expires</code> 或 <code>Cache-Control</code> 头部信息判断），浏览器会直接从缓存中读取资源，跳过所有网络步骤，直接进入渲染阶段。这是最快的加载方式。</p>
+</li>
+<li>
+<p><strong>如果命中协商缓存</strong>：如果缓存已过期，浏览器会准备一个特殊的HTTP请求，带上如 <code>If-None-Match</code> 或 <code>If-Modified-Since</code> 这样的头部信息。服务器收到后会判断资源是否有更新。如果没有，返回 <code>304 Not Modified</code> 状态码，浏览器便可安全地使用本地缓存；如果有更新，则返回 <code>200</code> 和新的资源。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="阶段二网络请求"><a href="#阶段二网络请求">阶段二：网络请求</a></h3>
+<p>如果缓存未命中或需要验证，浏览器就必须通过网络从服务器获取资源。</p>
+<ol>
+<li>
+<p><strong>DNS解析 (域名到IP地址的转换)</strong>：计算机在网络中通信依赖的是IP地址（如 <code>172.217.160.78</code>），而不是域名（<code>www.google.com</code>）。DNS (Domain Name System) 就像是互联网的“电话簿”，负责将域名翻译成IP地址。</p>
+<ul>
+<li>
+<p><strong>浏览器DNS缓存</strong>：检查浏览器自身的DNS缓存。</p>
+</li>
+<li>
+<p><strong>操作系统DNS缓存</strong>：检查操作系统的DNS缓存。</p>
+</li>
+<li>
+<p>路由器DNS缓存：检查家庭或公司路由器的DNS缓存。</p>
+<p>. ISP DNS服务器：向你的互联网服务提供商（ISP）的DNS服务器发起查询。</p>
+</li>
+<li>
+<p><strong>根域名服务器查询</strong>：如果以上缓存都没有，ISP的DNS服务器会从根域名服务器开始，进行迭代查询，依次访问顶级域（TLD）服务器（<code>.com</code>）和权威名称服务器（Google自己的DNS服务器），最终获得目标IP地址。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>建立TCP连接</strong>：获得了服务器的IP地址后，浏览器需要与服务器建立一个可靠的连接来传输数据。HTTP协议通常基于TCP协议，因为它能保证数据包的顺序和完整性。这个过程就是著名的“<strong>三次握手</strong>”：</p>
+<ul>
+<li>
+<p><strong>客户端 -> 服务器</strong>：发送 <code>SYN</code> 包，请求建立连接。</p>
+</li>
+<li>
+<p><strong>服务器 -> 客户端</strong>：回复 <code>SYN-ACK</code> 包，表示“我收到了你的请求，并同意建立连接”。</p>
+</li>
+<li>
+<p><strong>客户端 -> 服务器</strong>：发送 <code>ACK</code> 包，表示“好的，连接已建立”。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>TLS/SSL握手 (加密通信)</strong>：对于 <code>https://</code> 协议的网站，在TCP连接建立之后，还需要进行TLS (Transport Layer Security) 握手来建立一个加密通道，确保后续通信内容（如你的密码、浏览记录）不被窃听或篡改。</p>
+<ul>
+<li>
+<p>客户端发送支持的加密套件列表。</p>
+</li>
+<li>
+<p>服务器选择一个套件，并将其数字证书（包含公钥）发给客户端。</p>
+</li>
+<li>
+<p>客户端验证证书的有效性（由受信任的证书颁发机构CA签发）。</p>
+</li>
+<li>
+<p>验证通过后，双方协商生成一个对称的“会话密钥”，用于加密后续的所有HTTP通信。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>发送HTTP请求</strong>：一个安全可靠的通道建立完毕后，浏览器正式向服务器发送HTTP请求。请求报文包含：</p>
+<ul>
+<li>
+<p><strong>请求行</strong>: <code>GET / HTTP/1.1</code> (方法, 路径, 协议版本)</p>
+</li>
+<li>
+<p><strong>请求头 (Headers)</strong>: <code>Host: www.google.com</code>, <code>User-Agent: ...</code>, <code>Accept: text/html</code>, <code>Cookie: ...</code> 等。</p>
+</li>
+<li>
+<p><strong>请求体 (Body)</strong>: 对于<code>GET</code>请求，请求体为空。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="阶段三服务器响应"><a href="#阶段三服务器响应">阶段三：服务器响应</a></h3>
+<p>服务器（如Nginx、Apache）接收到HTTP请求后，进行处理并返回响应。</p>
+<ol>
+<li>
+<p><strong>处理请求</strong>：服务器根据请求路径和参数，可能需要查询数据库、调用后端应用逻辑（如PHP, Java, Python）来动态生成HTML页面。</p>
+</li>
+<li>
+<p><strong>发送HTTP响应</strong>：服务器将生成的响应打包成HTTP响应报文发回给浏览器。响应报文包含：</p>
+<ul>
+<li>
+<p><strong>状态行</strong>: <code>HTTP/1.1 200 OK</code> (协议版本, 状态码, 状态描述)</p>
+</li>
+<li>
+<p><strong>响应头 (Headers)</strong>: <code>Content-Type: text/html</code>, <code>Content-Length: ...</code>, <code>Set-Cookie: ...</code> 等。</p>
+</li>
+<li>
+<p><strong>响应体 (Body)</strong>: 实际的HTML文档内容。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="阶段四浏览器渲染"><a href="#阶段四浏览器渲染">阶段四：浏览器渲染</a></h3>
+<p>浏览器接收到HTML响应后，开始将其解析并“画”在屏幕上。这是整个流程中最复杂、也是用户能直接感知到的部分。浏览器的渲染引擎是这里的核心。</p>
+<ol>
+<li>
+<p><strong>解析HTML，构建DOM树 (DOM Tree)</strong>：</p>
+<ul>
+<li>
+<p>浏览器从上到下逐行读取HTML代码，将其解析成一个个“节点”（Node），如<code>&#x3C;html></code>节点、<code>&#x3C;body></code>节点、<code>&#x3C;div></code>节点等。</p>
+</li>
+<li>
+<p>这些节点按照其嵌套关系，被组织成一个树形结构，即<strong>文档对象模型 (Document Object Model, DOM)</strong>。DOM是HTML文档在内存中的对象表示，JavaScript可以通过操作DOM来动态修改页面内容。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>解析CSS，构建CSSOM树 (CSSOM Tree)</strong>：</p>
+<ul>
+<li>
+<p>在解析HTML的过程中，如果遇到<code>&#x3C;link rel="stylesheet"></code>或<code>&#x3C;style></code>标签，浏览器会<strong>并行</strong>下载并解析CSS代码。</p>
+</li>
+<li>
+<p>CSS代码被解析成另一棵树形结构，即<strong>CSS对象模型 (CSS Object Model, CSSOM)</strong>。CSSOM包含了每个DOM节点应该应用的样式信息。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>执行JavaScript</strong>：</p>
+<ul>
+<li>
+<p>如果解析时遇到<code>&#x3C;script></code>标签（且没有<code>async</code>或<code>defer</code>属性），HTML的解析会<strong>暂停</strong>。</p>
+</li>
+<li>
+<p>浏览器会立即下载、解析并执行该JavaScript代码。</p>
+</li>
+<li>
+<p><strong>为什么会暂停？</strong> 因为JavaScript可能会修改DOM结构（例如使用<code>document.write()</code>），所以浏览器必须先执行完脚本，才能确定后续的DOM结构并继续解析。这是导致页面加载慢的一个常见原因，因此推荐将<code>&#x3C;script></code>标签放在<code>&#x3C;/body></code>前或使用<code>defer</code>属性。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>构建渲染树 (Render Tree)</strong>：</p>
+<ul>
+<li>
+<p>有了DOM树（结构）和CSSOM树（样式）后，浏览器将两者结合起来，生成<strong>渲染树</strong>。</p>
+</li>
+<li>
+<p>渲染树只包含需要被显示的节点。例如，<code>display: none;</code>的节点会存在于DOM树中，但不会进入渲染树。<code>&#x3C;head></code>标签等不可见元素也不会进入。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>布局 (Layout / Reflow)</strong>：</p>
+<ul>
+<li>
+<p>浏览器遍历渲染树，计算出每个节点在屏幕上的<strong>确切位置和大小</strong>（几何信息）。这个过程也称为“回流”(Reflow)。</p>
+</li>
+<li>
+<p>输出的结果是一个“盒模型”，精确地捕获了每个元素在视口内的位置和尺寸。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>绘制 (Paint / Rasterization)</strong>：</p>
+<ul>
+<li>
+<p>布局阶段完成后，浏览器知道了每个元素的样子和位置，接下来就是将它们实际“画”出来。</p>
+</li>
+<li>
+<p>浏览器遍历渲染树，调用图形库（GPU加速）将每个节点转换成屏幕上的实际像素。这个过程会考虑文本、颜色、边框、阴影等所有视觉样式。</p>
+</li>
+<li>
+<p>为了优化，浏览器可能会将页面内容分到不同的“图层”(Layers)上进行绘制。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>合成 (Compositing)</strong>：</p>
+<ul>
+<li>最后一步，浏览器将所有绘制好的图层按照正确的顺序（例如<code>z-index</code>）合并在一起，最终显示在屏幕上。</li>
+</ul>
+</li>
+</ol>
+<p>至此，一个完整的页面就呈现在你眼前了。这个过程结束后，浏览器还会持续监听用户的交互事件（如点击、滚动），并可能因为JavaScript的操作而触发<strong>重排(Reflow)<strong>和</strong>重绘(Repaint)</strong>，动态更新页面。</p>
+<hr>
+<p><strong>最佳答案的总结</strong></p>
+<p>尽管上述每一步都至关重要，但如果必须选出一个核心，我认为<strong>阶段四：浏览器渲染</strong>是整个过程中最能体现现代浏览器技术复杂性和智能性的部分。它直接决定了用户感知的性能。</p>
+<p>这个过程可以概括为：<strong>浏览器将收到的文本代码（HTML/CSS）转化为两个核心的内存数据结构（DOM和CSSOM），然后将它们合并成一个包含几何信息的可视化结构（渲染树），最后将这个结构分层、绘制并合成为用户最终看到的屏幕像素。</strong> 对这个过程的理解和优化，是所有前端性能优化的基础。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/浏览器",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%B5%8F%E8%A7%88%E5%99%A8/","children":"前端开发 / 浏览器"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"网页打开过程详解"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2366," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"阶段一解析与预处理","text":"阶段一：解析与预处理"},{"level":3,"id":"阶段二网络请求","text":"阶段二：网络请求"},{"level":3,"id":"阶段三服务器响应","text":"阶段三：服务器响应"},{"level":3,"id":"阶段四浏览器渲染","text":"阶段四：浏览器渲染"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

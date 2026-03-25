@@ -1,0 +1,162 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+b:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","Promise%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E7%B2%BE%E7%AE%80%E5%AE%9E%E7%8E%B0",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","Promise%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E7%B2%BE%E7%AE%80%E5%AE%9E%E7%8E%B0","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null],"$La",false]],"m":"$undefined","G":["$b",["$Lc"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+e:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+9:"$W11"
+a:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+17:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+18:T2a39,<p>理解 Promise 的核心在于理解它是一个<strong>状态机</strong>和<strong>回调队列</strong>的集合。为了达到“去粗取精”的效果，我们不需要实现完整的 Promises/A+ 规范（那过于冗长），而是抓住其并发控制和状态流转的本质逻辑。</p>
+<p>以下是 Promise 最核心的几个静态方法及构造逻辑的精简实现：</p>
+<hr>
+<h2 id="1-核心机制promiseall"><a href="#1-核心机制promiseall">1. 核心机制：Promise.all</a></h2>
+<p>这是面试和实战中最常见的逻辑。它的精髓在于：<strong>并行执行，串行等待，一错全错</strong>。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-property">myAll</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    <span class="hljs-keyword">const</span> results = [];
+    <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">const</span> len = promises.<span class="hljs-property">length</span>;
+
+    <span class="hljs-keyword">if</span> (len === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-title function_">resolve</span>([]);
+
+    promises.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">p, i</span>) =></span> {
+      <span class="hljs-comment">// 包装成 Promise 以处理非 Promise 值</span>
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(p).<span class="hljs-title function_">then</span>(
+        <span class="hljs-function"><span class="hljs-params">res</span> =></span> {
+          results[i] = res; <span class="hljs-comment">// 保证结果顺序</span>
+          count++;
+          <span class="hljs-keyword">if</span> (count === len) <span class="hljs-title function_">resolve</span>(results);
+        },
+        <span class="hljs-function"><span class="hljs-params">err</span> =></span> <span class="hljs-title function_">reject</span>(err) <span class="hljs-comment">// 只要有一个失败，整体立即失败</span>
+      );
+    });
+  });
+};
+</code></pre>
+<hr>
+<h2 id="2-竞速机制promiserace"><a href="#2-竞速机制promiserace">2. 竞速机制：Promise.race</a></h2>
+<p>它的逻辑最纯粹：<strong>谁先完成（无论成功失败），就用谁的结果</strong>。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-property">myRace</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    promises.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">p</span> =></span> {
+      <span class="hljs-comment">// 第一个改变状态的 Promise 会直接触发外层 Promise 的 resolve/reject</span>
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(p).<span class="hljs-title function_">then</span>(resolve, reject);
+    });
+  });
+};
+</code></pre>
+<hr>
+<h2 id="3-容错机制promiseallsettled"><a href="#3-容错机制promiseallsettled">3. 容错机制：Promise.allSettled</a></h2>
+<p>与 <code>all</code> 不同，它不关心胜负，只关心“是否结束”。这在需要获取所有异步结果（无论好坏）时非常有用。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-property">myAllSettled</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(
+    promises.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">p</span> =></span> 
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(p).<span class="hljs-title function_">then</span>(
+        <span class="hljs-function"><span class="hljs-params">value</span> =></span> ({ <span class="hljs-attr">status</span>: <span class="hljs-string">'fulfilled'</span>, value }),
+        <span class="hljs-function"><span class="hljs-params">reason</span> =></span> ({ <span class="hljs-attr">status</span>: <span class="hljs-string">'rejected'</span>, reason })
+      )
+    )
+  );
+};
+</code></pre>
+<hr>
+<h2 id="4-健壮性promiseany"><a href="#4-健壮性promiseany">4. 健壮性：Promise.any</a></h2>
+<p>这是“全败才败，一胜即胜”的逻辑。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Promise</span>.<span class="hljs-property">myAny</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">const</span> errors = [];
+    <span class="hljs-keyword">const</span> len = promises.<span class="hljs-property">length</span>;
+
+    <span class="hljs-keyword">if</span> (len === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">AggregateError</span>(<span class="hljs-string">'All promises were rejected'</span>));
+
+    promises.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">p, i</span>) =></span> {
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(p).<span class="hljs-title function_">then</span>(
+        <span class="hljs-function"><span class="hljs-params">res</span> =></span> <span class="hljs-title function_">resolve</span>(res), <span class="hljs-comment">// 只要有一个成功，直接返回</span>
+        <span class="hljs-function"><span class="hljs-params">err</span> =></span> {
+          errors[i] = err;
+          count++;
+          <span class="hljs-keyword">if</span> (count === len) <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">AggregateError</span>(errors));
+        }
+      );
+    });
+  });
+};
+</code></pre>
+<hr>
+<h2 id="5-状态机本质简易构造器"><a href="#5-状态机本质简易构造器">5. 状态机本质：简易构造器</a></h2>
+<p>如果要理解 Promise 内部是如何工作的，看这段极简的构造逻辑即可：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">MyPromise</span>(<span class="hljs-params">executor</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = <span class="hljs-string">'pending'</span>;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = <span class="hljs-literal">null</span>;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">callbacks</span> = []; <span class="hljs-comment">// 存储 then 里的回调</span>
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">resolve</span> = (<span class="hljs-params">val</span>) => {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> !== <span class="hljs-string">'pending'</span>) <span class="hljs-keyword">return</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = <span class="hljs-string">'fulfilled'</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = val;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">callbacks</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">cb</span> =></span> cb.<span class="hljs-title function_">onFulfilled</span>(val));
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">reject</span> = (<span class="hljs-params">reason</span>) => {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> !== <span class="hljs-string">'pending'</span>) <span class="hljs-keyword">return</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = <span class="hljs-string">'rejected'</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = reason;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">callbacks</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">cb</span> =></span> cb.<span class="hljs-title function_">onRejected</span>(reason));
+  };
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-title function_">executor</span>(resolve, reject);
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-title function_">reject</span>(e);
+  }
+}
+</code></pre>
+<hr>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<ul>
+<li>
+<p><strong>all</strong>: 所有人必须成功，一个失败就完蛋。</p>
+</li>
+<li>
+<p><strong>race</strong>: 只看第一名，不问对错。</p>
+</li>
+<li>
+<p><strong>allSettled</strong>: 所有人报个平安（无论死活）。</p>
+</li>
+<li>
+<p><strong>any</strong>: 只要有一个活着的就行，全死了才放弃。</p>
+</li>
+</ul>
+<p>这些逻辑的共性在于通过<strong>闭包</strong>维护计数器（Counter）或者直接竞争<strong>状态槽</strong>。掌握了这几个，就掌握了异步流控制的本质。</p>
+<p>如果你对某个特定的并发控制（比如带并发限制的 Promise 调度器）感兴趣，我可以继续为你解构。你想了解如何控制异步任务的并发频率吗？</p>d:[["$","$L16",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L17","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Promise相关函数精简实现"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[618," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$18"}}],"$L19","$L1a"]}],"$L1b"]}]}]]
+1c:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1d:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:["$","$L1c",null,{}]
+1a:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L17",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1b:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1d",null,{"headings":[{"level":2,"id":"1-核心机制promiseall","text":"1. 核心机制：Promise.all"},{"level":2,"id":"2-竞速机制promiserace","text":"2. 竞速机制：Promise.race"},{"level":2,"id":"3-容错机制promiseallsettled","text":"3. 容错机制：Promise.allSettled"},{"level":2,"id":"4-健壮性promiseany","text":"4. 健壮性：Promise.any"},{"level":2,"id":"5-状态机本质简易构造器","text":"5. 状态机本质：简易构造器"},{"level":3,"id":"总结","text":"总结"}]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1e:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"Promise相关函数精简实现 | 流年石刻"}],["$","meta","1",{"name":"description","content":"理解 Promise 的核心在于理解它是一个状态机和回调队列的集合。为了达到“去粗取精”的效果，我们不需要实现完整的 Promises/A+ 规范（那过于冗长），而是抓住其并发控制和状态流转的本质逻辑。 以下是 Promise 最核心的几个…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1e","4",{}]]

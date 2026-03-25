@@ -1,0 +1,389 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+b:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","call%2C%20apply%2C%20bind%20%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","call%2C%20apply%2C%20bind%20%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null],"$La",false]],"m":"$undefined","G":["$b",["$Lc"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+e:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+9:"$W11"
+a:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+17:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+18:T642b,<p>好的，我们来深入地探讨和实现 JavaScript 中的 <code>call</code>, <code>apply</code>, 和 <code>bind</code>。</p>
+<p>这三者是 JavaScript 中非常重要的函数方法，核心作用都是<strong>改变函数执行时的 <code>this</code> 上下文</strong>。理解它们是掌握 JavaScript 语言精髓的关键一步。</p>
+<h3 id="核心前提理解-this"><a href="#核心前提理解-this">核心前提：理解 <code>this</code></a></h3>
+<p>在解释这三兄弟之前，必须先明白 <code>this</code> 是什么。JavaScript 中的 <code>this</code> 是一个动态的关键字，它在函数被调用时确定，其值取决于函数是如何被调用的。</p>
+<ul>
+<li>
+<p><strong>全局调用</strong>: <code>func()</code>，在非严格模式下 <code>this</code> 指向全局对象 (<code>window</code> 或 <code>global</code>)，严格模式下是 <code>undefined</code>。</p>
+</li>
+<li>
+<p><strong>作为对象方法调用</strong>: <code>obj.func()</code>，<code>this</code> 指向 <code>obj</code>。</p>
+</li>
+<li>
+<p><strong>作为构造函数调用</strong>: <code>new Func()</code>，<code>this</code> 指向新创建的实例。</p>
+</li>
+<li>
+<p><strong>箭头函数</strong>: 箭头函数没有自己的 <code>this</code>，它会捕获其所在词法作用域的 <code>this</code> 值。</p>
+</li>
+</ul>
+<p><code>call</code>, <code>apply</code>, <code>bind</code> 的出现，就是为了让我们能够手动、精确地控制这个动态的 <code>this</code>，让它指向我们想要的对象。</p>
+<hr>
+<h3 id="一讲解call-apply-bind-的区别与联系"><a href="#一讲解call-apply-bind-的区别与联系">一、讲解：<code>call</code>, <code>apply</code>, <code>bind</code> 的区别与联系</a></h3>
+<h4 id="1-functionprototypecall"><a href="#1-functionprototypecall">1. <code>Function.prototype.call()</code></a></h4>
+<p><code>call</code> 方法会立即调用一个函数，并将该函数的 <code>this</code> 值设置为给定的第一个参数。后续的参数会作为独立参数传递给该函数。</p>
+<ul>
+<li>
+<p><strong>语法</strong>: <code>function.call(thisArg, arg1, arg2, ...)</code></p>
+</li>
+<li>
+<p><strong>特点</strong>:</p>
+<ul>
+<li>
+<p><strong>立即执行</strong>函数。</p>
+</li>
+<li>
+<p>第一个参数是 <code>this</code> 的指向。</p>
+</li>
+<li>
+<p>后续参数以<strong>逗号分隔</strong>的形式，逐一传入函数。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>你可以这样记：<strong>C</strong>all 的 <strong>C</strong> 代表 <strong>C</strong>omma (逗号)。</p>
+<p><strong>示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> person = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'张三'</span>
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params">greeting, punctuation</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${greeting}</span>, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span><span class="hljs-subst">${punctuation}</span>`</span>);
+}
+
+<span class="hljs-title function_">greet</span>(<span class="hljs-string">'Hello'</span>, <span class="hljs-string">'!'</span>); <span class="hljs-comment">// 在浏览器非严格模式下，this.name 是 undefined，输出 "Hello, my name is !"</span>
+greet.<span class="hljs-title function_">call</span>(person, <span class="hljs-string">'Hi'</span>, <span class="hljs-string">'.'</span>); <span class="hljs-comment">// 输出 "Hi, my name is 张三."</span>
+</code></pre>
+<h4 id="2-functionprototypeapply"><a href="#2-functionprototypeapply">2. <code>Function.prototype.apply()</code></a></h4>
+<p><code>apply</code> 方法与 <code>call</code> 非常相似，它也会立即调用函数并指定 <code>this</code> 值。唯一的区别在于它接收参数的方式。</p>
+<ul>
+<li>
+<p><strong>语法</strong>: <code>function.apply(thisArg, [argsArray])</code></p>
+</li>
+<li>
+<p><strong>特点</strong>:</p>
+<ul>
+<li>
+<p><strong>立即执行</strong>函数。</p>
+</li>
+<li>
+<p>第一个参数是 <code>this</code> 的指向。</p>
+</li>
+<li>
+<p>第二个参数是一个<strong>数组</strong>（或类数组对象），数组中的元素会作为参数传递给函数。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>你可以这样记：<strong>A</strong>pply 的 <strong>A</strong> 代表 <strong>A</strong>rray (数组)。</p>
+<p><strong>示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> person = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'李四'</span>
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params">greeting, punctuation</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${greeting}</span>, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span><span class="hljs-subst">${punctuation}</span>`</span>);
+}
+
+greet.<span class="hljs-title function_">apply</span>(person, [<span class="hljs-string">'Hey'</span>, <span class="hljs-string">'!!!'</span>]); <span class="hljs-comment">// 输出 "Hey, my name is 李四!!!"</span>
+
+<span class="hljs-comment">// 一个经典应用：使用 Math.max 找出数组最大值</span>
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>];
+<span class="hljs-keyword">const</span> max = <span class="hljs-title class_">Math</span>.<span class="hljs-property">max</span>.<span class="hljs-title function_">apply</span>(<span class="hljs-literal">null</span>, numbers); <span class="hljs-comment">// 等同于 Math.max(5, 6, 2, 3, 7)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(max); <span class="hljs-comment">// 7</span>
+<span class="hljs-comment">// 使用ES6的扩展运算符更简单: Math.max(...numbers)</span>
+</code></pre>
+<h4 id="3-functionprototypebind"><a href="#3-functionprototypebind">3. <code>Function.prototype.bind()</code></a></h4>
+<p><code>bind</code> 是三者中最特别的一个。它<strong>不会立即执行</strong>函数，而是会<strong>创建一个新的函数</strong>。这个新函数的 <code>this</code> 被永久地绑定到了 <code>bind</code> 的第一个参数。</p>
+<ul>
+<li>
+<p><strong>语法</strong>: <code>function.bind(thisArg[, arg1[, arg2[, ...]]])</code></p>
+</li>
+<li>
+<p><strong>特点</strong>:</p>
+<ul>
+<li>
+<p><strong>不立即执行</strong>，而是<strong>返回</strong>一个新的、绑定好 <code>this</code> 的函数。</p>
+</li>
+<li>
+<p>可以预先设置部分参数（这个特性被称为<strong>柯里化 (Currying)</strong>）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>示例：</strong></p>
+<p><code>bind</code> 最常见的应用场景是在异步操作（如 <code>setTimeout</code>）或事件处理中，<code>this</code> 指向会发生改变。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> <span class="hljs-variable language_">module</span> = {
+  <span class="hljs-attr">x</span>: <span class="hljs-number">42</span>,
+  <span class="hljs-attr">getX</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span>;
+  }
+};
+
+<span class="hljs-keyword">const</span> unboundGetX = <span class="hljs-variable language_">module</span>.<span class="hljs-property">getX</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">unboundGetX</span>()); <span class="hljs-comment">// undefined，因为此时 this 指向全局对象</span>
+
+<span class="hljs-keyword">const</span> boundGetX = unboundGetX.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">module</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">boundGetX</span>()); <span class="hljs-comment">// 42，因为 this 被永久绑定到了 module</span>
+
+<span class="hljs-comment">// 柯里化示例</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>) {
+  <span class="hljs-keyword">return</span> a + b;
+}
+<span class="hljs-keyword">const</span> add5 = add.<span class="hljs-title function_">bind</span>(<span class="hljs-literal">null</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// this 无所谓，所以是 null。预先设置第一个参数 a 为 5</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">add5</span>(<span class="hljs-number">10</span>)); <span class="hljs-comment">// 15, 相当于调用 add(5, 10)</span>
+</code></pre>
+<h4 id="总结对比"><a href="#总结对比">总结对比</a></h4>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>call</code></th>
+<th><code>apply</code></th>
+<th><code>bind</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>执行时机</strong></td>
+<td>立即执行</td>
+<td>立即执行</td>
+<td>不执行，返回新函数</td>
+</tr>
+<tr>
+<td><strong><code>this</code> 指向</strong></td>
+<td>第一个参数指定</td>
+<td>第一个参数指定</td>
+<td>第一个参数指定</td>
+</tr>
+<tr>
+<td><strong>参数传递</strong></td>
+<td>逐个传递 (逗号分隔)</td>
+<td>数组形式传递</td>
+<td>部分预设，剩余后传</td>
+</tr>
+<tr>
+<td><strong>返回值</strong></td>
+<td>原函数的返回值</td>
+<td>原函数的返回值</td>
+<td>绑定后的新函数</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="二实现手写-call-apply-bind"><a href="#二实现手写-call-apply-bind">二、实现：手写 <code>call</code>, <code>apply</code>, <code>bind</code></a></h3>
+<p>要实现这三个方法，核心思路是：<strong>将要执行的函数，挂载到目标 <code>this</code> 对象上作为一个临时方法来调用，调用结束后再删除它。</strong></p>
+<h4 id="1-实现-mycall"><a href="#1-实现-mycall">1. 实现 <code>myCall</code></a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Function</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">myCall</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">context, ...args</span>) {
+  <span class="hljs-comment">// 1. 处理 context，如果为 null 或 undefined，则指向全局对象</span>
+  <span class="hljs-comment">//    使用 Object() 包装，确保 context 是一个对象，从而可以挂载属性</span>
+  context = context === <span class="hljs-literal">null</span> || context === <span class="hljs-literal">undefined</span> ? <span class="hljs-variable language_">window</span> : <span class="hljs-title class_">Object</span>(context);
+
+  <span class="hljs-comment">// 2. 创建一个唯一的 key，避免与 context 上的原有属性冲突</span>
+  <span class="hljs-keyword">const</span> uniqueKey = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">'fn'</span>);
+
+  <span class="hljs-comment">// 3. 将当前函数 (this) 挂载到 context 上</span>
+  <span class="hljs-comment">//    这里的 this 就是调用 myCall 的函数，例如前面的 greet 函数</span>
+  context[uniqueKey] = <span class="hljs-variable language_">this</span>;
+
+  <span class="hljs-comment">// 4. 调用函数，并通过 ...args 展开参数</span>
+  <span class="hljs-keyword">const</span> result = context[uniqueKey](...args);
+
+  <span class="hljs-comment">// 5. 删除临时挂载的函数，保持 context 干净</span>
+  <span class="hljs-keyword">delete</span> context[uniqueKey];
+
+  <span class="hljs-comment">// 6. 返回函数的执行结果</span>
+  <span class="hljs-keyword">return</span> result;
+}
+
+<span class="hljs-comment">// ---- 测试 ----</span>
+<span class="hljs-keyword">const</span> person = { <span class="hljs-attr">name</span>: <span class="hljs-string">'王五'</span> };
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">introduce</span>(<span class="hljs-params">job, age</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`我叫 <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>, 我的工作是 <span class="hljs-subst">${job}</span>, 今年 <span class="hljs-subst">${age}</span> 岁`</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>;
+}
+
+<span class="hljs-keyword">const</span> name = introduce.<span class="hljs-title function_">myCall</span>(person, <span class="hljs-string">'工程师'</span>, <span class="hljs-number">28</span>);
+<span class="hljs-comment">// 输出: 我叫 王五, 我的工作是 工程师, 今年 28 岁</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'返回值:'</span>, name); <span class="hljs-comment">// 输出: 返回值: 王五</span>
+</code></pre>
+<h4 id="2-实现-myapply"><a href="#2-实现-myapply">2. 实现 <code>myApply</code></a></h4>
+<p><code>myApply</code> 的实现与 <code>myCall</code> 几乎完全一样，只是参数处理方式不同。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Function</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">myApply</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">context, argsArray</span>) {
+  <span class="hljs-comment">// 1. 处理 context</span>
+  context = context === <span class="hljs-literal">null</span> || context === <span class="hljs-literal">undefined</span> ? <span class="hljs-variable language_">window</span> : <span class="hljs-title class_">Object</span>(context);
+
+  <span class="hljs-comment">// 2. 创建唯一 key</span>
+  <span class="hljs-keyword">const</span> uniqueKey = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">'fn'</span>);
+
+  <span class="hljs-comment">// 3. 挂载函数</span>
+  context[uniqueKey] = <span class="hljs-variable language_">this</span>;
+
+  <span class="hljs-keyword">let</span> result;
+  <span class="hljs-comment">// 4. 调用函数，处理参数数组</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(argsArray)) {
+    result = context[uniqueKey](...argsArray);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 如果不传 argsArray 或者传的不是数组，则不带参数执行</span>
+    result = context[uniqueKey]();
+  }
+
+  <span class="hljs-comment">// 5. 删除临时函数</span>
+  <span class="hljs-keyword">delete</span> context[uniqueKey];
+
+  <span class="hljs-comment">// 6. 返回结果</span>
+  <span class="hljs-keyword">return</span> result;
+}
+
+<span class="hljs-comment">// ---- 测试 ----</span>
+<span class="hljs-keyword">const</span> person2 = { <span class="hljs-attr">name</span>: <span class="hljs-string">'赵六'</span> };
+introduce.<span class="hljs-title function_">myApply</span>(person2, [<span class="hljs-string">'产品经理'</span>, <span class="hljs-number">30</span>]);
+<span class="hljs-comment">// 输出: 我叫 赵六, 我的工作是 产品经理, 今年 30 岁</span>
+</code></pre>
+<h4 id="3-实现-mybind"><a href="#3-实现-mybind">3. 实现 <code>myBind</code></a></h4>
+<p><code>myBind</code> 的实现要复杂一些，因为它返回一个新函数，并且需要处理 <code>new</code> 调用的情况（这是一个高级实现点，但很重要）。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Function</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">myBind</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">context, ...bindArgs</span>) {
+  <span class="hljs-comment">// 1. 保存原始函数 (调用 myBind 的函数)</span>
+  <span class="hljs-keyword">const</span> self = <span class="hljs-variable language_">this</span>;
+
+  <span class="hljs-comment">// 2. 返回一个新函数</span>
+  <span class="hljs-keyword">const</span> boundFunction = <span class="hljs-keyword">function</span>(<span class="hljs-params">...callArgs</span>) {
+    <span class="hljs-comment">// 3. 合并两次传递的参数</span>
+    <span class="hljs-keyword">const</span> finalArgs = [...bindArgs, ...callArgs];
+
+    <span class="hljs-comment">// 4. 处理 new 操作符调用的情况</span>
+    <span class="hljs-comment">//    当 boundFunction 被 new 调用时, `this` 是 new 创建的新实例，</span>
+    <span class="hljs-comment">//    并且 this.__proto__ === boundFunction.prototype</span>
+    <span class="hljs-comment">//    即 this instanceof boundFunction 为 true</span>
+    <span class="hljs-comment">//    此时，原始函数的 this 应该指向这个新实例，而不是我们绑定的 context</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span> <span class="hljs-keyword">instanceof</span> boundFunction) {
+      <span class="hljs-comment">// this 指向 new 创建的实例</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title function_">self</span>(...finalArgs);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// 普通调用，this 指向绑定的 context</span>
+      <span class="hljs-keyword">return</span> self.<span class="hljs-title function_">apply</span>(context, finalArgs);
+    }
+  };
+
+  <span class="hljs-comment">// 5. 维护原型链：让 boundFunction 的实例能够继承原始函数的原型</span>
+  <span class="hljs-comment">//    这样 new boundFunction() 出来的实例才能访问到原始构造函数原型上的属性</span>
+  <span class="hljs-keyword">if</span> (self.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>) {
+      boundFunction.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(self.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>);
+  }
+
+  <span class="hljs-keyword">return</span> boundFunction;
+}
+
+
+<span class="hljs-comment">// ---- 测试 ----</span>
+<span class="hljs-keyword">const</span> car = {
+  <span class="hljs-attr">brand</span>: <span class="hljs-string">'Tesla'</span>,
+  <span class="hljs-title function_">showBrand</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`This is a <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.brand}</span>`</span>);
+  }
+};
+
+<span class="hljs-keyword">const</span> myCarShow = car.<span class="hljs-property">showBrand</span>;
+<span class="hljs-comment">// myCarShow(); // 报错或 undefined，因为 this 不指向 car</span>
+
+<span class="hljs-keyword">const</span> boundShowBrand = myCarShow.<span class="hljs-title function_">myBind</span>(car);
+<span class="hljs-title function_">boundShowBrand</span>(); <span class="hljs-comment">// 输出: This is a Tesla</span>
+
+<span class="hljs-comment">// ---- 测试 new ----</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Dog</span>(<span class="hljs-params">name, age</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Dog constructor called'</span>);
+}
+<span class="hljs-title class_">Dog</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">bark</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span> says woof!`</span>);
+}
+
+<span class="hljs-comment">// 预设 this 和 name 参数</span>
+<span class="hljs-keyword">const</span> aDogConstructor = <span class="hljs-title class_">Dog</span>.<span class="hljs-title function_">myBind</span>(<span class="hljs-literal">null</span>, <span class="hljs-string">'旺财'</span>);
+
+<span class="hljs-comment">// 使用 new 调用 bind 返回的函数</span>
+<span class="hljs-keyword">const</span> wangcai = <span class="hljs-keyword">new</span> <span class="hljs-title function_">aDogConstructor</span>(<span class="hljs-number">3</span>); <span class="hljs-comment">// age = 3</span>
+<span class="hljs-comment">// 输出: Dog constructor called</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(wangcai.<span class="hljs-property">name</span>, wangcai.<span class="hljs-property">age</span>); <span class="hljs-comment">// 输出: 旺财 3</span>
+wangcai.<span class="hljs-title function_">bark</span>(); <span class="hljs-comment">// 输出: 旺财 says woof!</span>
+</code></pre>
+<h3 id="三如何选择"><a href="#三如何选择">三、如何选择？</a></h3>
+<p>在现代 JavaScript (ES6+) 开发中，选择哪一个通常很清晰：</p>
+<ol>
+<li>
+<p>如果你需要改变 this 指向并立即执行函数，同时参数是分散的：用 call。</p>
+<p>doSomething.call(context, 'arg1', 'arg2');</p>
+</li>
+<li>
+<p>如果你需要改变 this 指向并立即执行函数，同时参数已经在一个数组里：用 apply。</p>
+<p>doSomething.apply(context, ['arg1', 'arg2']);</p>
+<p>(在 ES6 扩展运算符普及后，apply 的这个优势不再明显，因为你可以写 doSomething.call(context, ...argsArray)，所以 call 的使用频率相对更高了)</p>
+</li>
+<li>
+<p><strong>如果你需要创建一个新函数，这个函数的 <code>this</code> 永久绑定到某个对象，并可能在未来某个时候执行（例如作为回调函数或事件监听器）</strong>：用 <code>bind</code>。这是三者中唯一不立即执行的，用途也最独特。</p>
+</li>
+</ol>
+<p><strong>最终建议：</strong></p>
+<ul>
+<li>
+<p><strong>日常开发中，当你需要手动绑定 <code>this</code> 时，首先思考 <code>bind</code></strong>，因为它在处理回调和事件时最直接、最安全。</p>
+</li>
+<li>
+<p><code>call</code> 和 <code>apply</code> 更多用于需要立即执行的场景，或者在一些需要巧妙调用函数的库代码和“炫技”场合。在 ES6 之后，<code>call</code> 因为扩展运算符的存在，比 <code>apply</code> 更常用。</p>
+</li>
+<li>
+<p>在 React 类组件中，为了保证方法中的 <code>this</code> 指向组件实例，在构造函数中使用 <code>this.handleClick = this.handleClick.bind(this)</code> 曾是标准做法。</p>
+</li>
+</ul>
+<p><strong>然而，箭头函数的出现极大地简化了 <code>this</code> 的处理。</strong> 在很多原本需要 <code>bind</code> 的场景，现在一个箭头函数就能搞定，因为它不创建自己的 <code>this</code> 上下文。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 旧方法: bind</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span>);
+}.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">module</span>), <span class="hljs-number">1000</span>);
+
+<span class="hljs-comment">// 新方法: 箭头函数</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">x</span>); <span class="hljs-comment">// this 继承自外层作用域</span>
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<p>尽管如此，深入理解 <code>call</code>, <code>apply</code>, <code>bind</code> 的原理和实现，对于理解 JavaScript 的核心运行机制、作用域以及 <code>this</code> 的本质，仍然具有不可替代的价值。</p>d:[["$","$L16",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L17","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"call, apply, bind 原理及实现"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-08-11T00:00:00.000Z","children":"2025年8月11日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2124," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$18"}}],"$L19","$L1a"]}],"$L1b"]}]}]]
+1c:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1d:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:["$","$L1c",null,{}]
+1a:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L17",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1b:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1d",null,{"headings":[{"level":3,"id":"核心前提理解-this","text":"核心前提：理解 this"},{"level":3,"id":"一讲解call-apply-bind-的区别与联系","text":"一、讲解：call, apply, bind 的区别与联系"},{"level":4,"id":"1-functionprototypecall","text":"1. Function.prototype.call()"},{"level":4,"id":"2-functionprototypeapply","text":"2. Function.prototype.apply()"},{"level":4,"id":"3-functionprototypebind","text":"3. Function.prototype.bind()"},{"level":4,"id":"总结对比","text":"总结对比"},{"level":3,"id":"二实现手写-call-apply-bind","text":"二、实现：手写 call, apply, bind"},{"level":4,"id":"1-实现-mycall","text":"1. 实现 myCall"},{"level":4,"id":"2-实现-myapply","text":"2. 实现 myApply"},{"level":4,"id":"3-实现-mybind","text":"3. 实现 myBind"},{"level":3,"id":"三如何选择","text":"三、如何选择？"}]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1e:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"call, apply, bind 原理及实现 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来深入地探讨和实现 JavaScript 中的 call, apply, 和 bind。 这三者是 JavaScript 中非常重要的函数方法，核心作用都是改变函数执行时的 this 上下文。理解它们是掌握 JavaScript …"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1e","4",{}]]

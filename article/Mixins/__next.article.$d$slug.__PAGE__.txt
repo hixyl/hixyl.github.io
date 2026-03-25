@@ -1,0 +1,196 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3262,<p>在 Vue 2 的体系中，<strong>Mixins（混入）</strong> 是一种分发 Vue 组件中可复用功能的灵活方式。如果把一个 Vue 组件比作一个“人”，那么 Mixin 就像是一份“外挂技能书”或者“插件”，一旦导入，这份技能书里的所有属性和方法都会被“缝合”到这个人身上。</p>
+<p>要彻底理解 Mixin，我们需要从<strong>合并策略</strong>、<strong>使用场景</strong>以及<strong>它为什么最终被 Composition API 取代</strong>这三个维度来拆解。</p>
+<hr>
+<h2 id="1-mixin-的核心逻辑如何缝合"><a href="#1-mixin-的核心逻辑如何缝合">1. Mixin 的核心逻辑：如何“缝合”？</a></h2>
+<p>当一个组件使用 Mixin 时，Vue 会将 Mixin 里的选项（data, methods, hooks 等）与组件自身的选项进行合并。合并时并不是简单的覆盖，而是有一套特定的优先级规则：</p>
+<h3 id="数据对象-data"><a href="#数据对象-data">数据对象 (<code>data</code>)</a></h3>
+<p>如果 Mixin 和组件定义了同名的变量，<strong>以组件自身的变量为准</strong>。这保证了组件拥有最终的决策权。</p>
+<h3 id="钩子函数-created-mounted-等"><a href="#钩子函数-created-mounted-等">钩子函数 (<code>created</code>, <code>mounted</code> 等)</a></h3>
+<p>这是 Mixin 最特殊的地方：<strong>同名的钩子函数会被合并为一个数组，且都会被执行</strong>。</p>
+<ul>
+<li>
+<p><strong>执行顺序</strong>：Mixin 的钩子先执行，组件自身的钩子后执行。</p>
+</li>
+<li>
+<p>这非常适合做一些通用的埋点统计、性能监控或者全局的初始化逻辑。</p>
+</li>
+</ul>
+<h3 id="值为对象的选项-methods-components-directives"><a href="#值为对象的选项-methods-components-directives">值为对象的选项 (<code>methods</code>, <code>components</code>, <code>directives</code>)</a></h3>
+<p>如果键名冲突，<strong>组件选项优先</strong>。Mixin 中冲突的方法会被直接忽略。</p>
+<hr>
+<h2 id="2-基础示例"><a href="#2-基础示例">2. 基础示例</a></h2>
+<p>假设我们有很多页面都需要“点击统计”和“窗口缩放监听”的功能，我们可以抽离出一个 Mixin：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// myMixin.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> myMixin = {
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>
+    }
+  },
+  <span class="hljs-title function_">created</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Mixin 钩子触发：初始化监听'</span>);
+  },
+  <span class="hljs-attr">methods</span>: {
+    <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">count</span>++;
+    }
+  }
+}
+</code></pre>
+<p>在组件中使用：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { myMixin } <span class="hljs-keyword">from</span> <span class="hljs-string">'./myMixin'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">mixins</span>: [myMixin], <span class="hljs-comment">// 引入混入</span>
+  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">title</span>: <span class="hljs-string">'我的页面'</span>
+      <span class="hljs-comment">// 如果这里写了 count: 10，会覆盖 Mixin 里的 0</span>
+    }
+  },
+  <span class="hljs-title function_">mounted</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">increment</span>(); <span class="hljs-comment">// 直接调用 Mixin 里的方法，就像在自己组件里写的一样</span>
+  }
+}
+</code></pre>
+<hr>
+<h2 id="3-全局混入-global-mixin"><a href="#3-全局混入-global-mixin">3. 全局混入 (Global Mixin)</a></h2>
+<p>你也可以通过 <code>Vue.mixin({...})</code> 注册全局混入。<strong>请务必小心使用</strong>，因为它会影响到之后创建的<strong>每一个</strong> Vue 实例（包括第三方组件库的组件）。</p>
+<blockquote>
+<p><strong>警告</strong>：全局混入通常只应在自定义选项的预处理或插件开发中使用。如果在业务逻辑中滥用，会导致维护灾难。</p>
+</blockquote>
+<hr>
+<h2 id="4-mixin-的原罪为什么现在不推荐了"><a href="#4-mixin-的原罪为什么现在不推荐了">4. Mixin 的“原罪”：为什么现在不推荐了？</a></h2>
+<p>虽然 Mixin 解决了代码复用的问题，但在大型项目中，它带来了几个极其头疼的副作用，这也是 Vue 3 推出 Composition API 的根本原因：</p>
+<ol>
+<li>
+<p><strong>命名冲突 (Naming Collisions)</strong>：</p>
+<p>如果你引入了 3 个 Mixin，它们都定义了一个 <code>loadData</code> 方法，或者都定义了一个 <code>isVisible</code> 变量，那么就会发生覆盖。你很难在不查看所有 Mixin 源码的情况下避开这些坑。</p>
+</li>
+<li>
+<p><strong>来源不明 (Implicit Dependencies)</strong>：</p>
+<p>在组件模板里看到一个变量 <code>userStatus</code>，你翻遍当前组件的 <code>data</code> 却找不到。你得去查 <code>mixins: [a, b, c, d]</code>，甚至这些 Mixin 内部还嵌套了其他 Mixin。这种“隐式来源”让代码变得极难阅读和调试。</p>
+</li>
+<li>
+<p><strong>不灵活的逻辑抽象</strong>：</p>
+<p>Mixin 很难接收参数来改变内部行为。如果你想让 Mixin 里的某个方法根据不同参数执行，通常只能通过在组件里定义特定的变量供 Mixin 读取，这又造成了强耦合。</p>
+</li>
+</ol>
+<hr>
+<h2 id="总结与建议"><a href="#总结与建议">总结与建议</a></h2>
+<ul>
+<li>
+<p><strong>什么时候用？</strong> 如果你还在维护老旧的 Vue 2 项目，且需要在多个组件间共享简单的状态或生命周期逻辑，Mixin 是最直接的选择。</p>
+</li>
+<li>
+<p><strong>如何规避风险？</strong> 建议在 Mixin 的变量或方法前加特定的前缀（如 <code>$_authMixin_login</code>），以减少命名冲突的可能性。</p>
+</li>
+</ul>
+<p><strong>如果你正准备开发新项目，或者正在向 Vue 3 迁移：</strong></p>
+<p>请彻底忘掉 Mixin，拥抱 <strong>Composition API (Hooks)</strong>。Hooks 通过显式的函数导入和解构，完美解决了来源不明和命名冲突的问题。</p>
+<hr>
+<p>Vue 3 引入 <strong>Composition API（组合式 API）</strong> 的初衷，就是为了彻底解决 Vue 2 中 Mixins 带来的那一套“黑盒”逻辑。如果说 Mixin 是将逻辑“揉进”组件，那么 Composition API 就是将逻辑“抽离”并“显式注入”。</p>
+<p>以下是 Vue 3 解决问题的核心手段：</p>
+<hr>
+<h2 id="1-解决命名冲突显式重命名"><a href="#1-解决命名冲突显式重命名">1. 解决“命名冲突”：显式重命名</a></h2>
+<p>在 Mixins 中，如果两个 Mixin 都有 <code>count</code> 变量，后引入的会悄无声息地覆盖前者。</p>
+<p>在 Vue 3 中，逻辑被封装在函数（自定义 Hooks/Composables）中。当你调用函数并拿到返回值时，你可以通过 <strong>解构赋值</strong> 轻松重命名。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 使用 Composable</span>
+<span class="hljs-keyword">const</span> { <span class="hljs-attr">count</span>: userCount, <span class="hljs-attr">increment</span>: incrementUser } = <span class="hljs-title function_">useUser</span>();
+<span class="hljs-keyword">const</span> { <span class="hljs-attr">count</span>: postCount, <span class="hljs-attr">increment</span>: incrementPost } = <span class="hljs-title function_">usePost</span>();
+
+<span class="hljs-comment">// 这里的变量名完全由你控制，不存在冲突风险</span>
+</code></pre>
+<hr>
+<h2 id="2-解决隐式依赖清晰的来源追踪"><a href="#2-解决隐式依赖清晰的来源追踪">2. 解决“隐式依赖”：清晰的来源追踪</a></h2>
+<p>这是 Mixin 最让人头疼的地方：你在模板中看到一个 <code>this.isShared</code>，却不知道它来自哪个 Mixin。</p>
+<p>在 Vue 3 中，每一个变量都必须经过<strong>显式导入和定义</strong>：</p>
+<ol>
+<li>
+<p><strong>代码层面</strong>：你需要先调用 <code>useMouse()</code> 才能拿到 <code>x</code> 和 <code>y</code>。</p>
+</li>
+<li>
+<p><strong>感知层面</strong>：当你在代码中搜 <code>x</code> 时，能一眼看到它是从 <code>useMouse</code> 函数里吐出来的。</p>
+</li>
+</ol>
+<p>这种从“被动接收”到“主动索取”的转变，让维护成本大幅度降低。</p>
+<hr>
+<h2 id="3-解决逻辑碎片化关注点统一"><a href="#3-解决逻辑碎片化关注点统一">3. 解决“逻辑碎片化”：关注点统一</a></h2>
+<p>在 Vue 2 的 Options API 中，同一个功能的逻辑被强制拆散在 <code>data</code>、<code>methods</code>、<code>computed</code>、<code>mounted</code> 不同的盒子里。</p>
+<p>Vue 3 允许你将<strong>同一个功能的所有代码</strong>（变量、方法、生命周期）写在一起，甚至提取到一个独立的 <code>.js</code> 或 <code>.ts</code> 文件中。这种方式被称为“按功能组织代码”。</p>
+<hr>
+<h2 id="4-解决灵活性差函数传参"><a href="#4-解决灵活性差函数传参">4. 解决“灵活性差”：函数传参</a></h2>
+<p>Mixin 本质上是一个静态对象，很难根据组件的需求动态调整行为。而 Vue 3 的 Composable 是<strong>函数</strong>，这意味着它可以接收参数。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// Vue 3 的灵活性：可以传参</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useFetch</span>(<span class="hljs-params">url</span>) {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-title function_">ref</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-comment">// 根据传入的 url 执行不同的逻辑...</span>
+  <span class="hljs-keyword">return</span> { data };
+}
+
+<span class="hljs-comment">// 在组件中使用</span>
+<span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: userData } = <span class="hljs-title function_">useFetch</span>(<span class="hljs-string">'/api/user'</span>);
+<span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: postData } = <span class="hljs-title function_">useFetch</span>(<span class="hljs-string">'/api/posts'</span>);
+</code></pre>
+<hr>
+<h2 id="5-核心对比总结"><a href="#5-核心对比总结">5. 核心对比总结</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>Vue 2 Mixins</strong></th>
+<th><strong>Vue 3 Composition API (Hooks)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>逻辑来源</strong></td>
+<td>隐式（不知道变量哪来的）</td>
+<td><strong>显式</strong>（明确知晓来源）</td>
+</tr>
+<tr>
+<td><strong>命名冲突</strong></td>
+<td>容易冲突，且难以排查</td>
+<td><strong>无冲突</strong>（利用解构重命名）</td>
+</tr>
+<tr>
+<td><strong>代码组织</strong></td>
+<td>按类型（data, methods...）</td>
+<td><strong>按功能</strong>（逻辑高度聚合）</td>
+</tr>
+<tr>
+<td><strong>类型推导</strong></td>
+<td>对 TypeScript 支持极差</td>
+<td><strong>完美支持 TS</strong></td>
+</tr>
+<tr>
+<td><strong>复用门槛</strong></td>
+<td>容易造成“面条代码”</td>
+<td>逻辑解耦，像搭积木一样简单</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="进阶思考逻辑复用的第一性原理"><a href="#进阶思考逻辑复用的第一性原理">进阶思考：逻辑复用的第一性原理</a></h3>
+<p>从本质上看，Mixin 是通过**“属性注入”<strong>实现的，它改变了组件的实例（<code>this</code>）；而 Composition API 是通过</strong>“函数返回值”**实现的，它不破坏组件的结构，只是向组件提供可用的工具。</p>
+<p>这种从“修改对象”到“函数合成”的思维转变，正是 Vue 3 能够承载超大型项目开发的关键所在。</p>
+<p><strong>你想看一个具体的案例，尝试把一个复杂的 Vue 2 Mixin 重构成 Vue 3 的 Composable 吗？</strong></p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Mixins"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1780," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1-mixin-的核心逻辑如何缝合","text":"1. Mixin 的核心逻辑：如何“缝合”？"},{"level":3,"id":"数据对象-data","text":"数据对象 (data)"},{"level":3,"id":"钩子函数-created-mounted-等","text":"钩子函数 (created, mounted 等)"},{"level":3,"id":"值为对象的选项-methods-components-directives","text":"值为对象的选项 (methods, components, directives)"},{"level":2,"id":"2-基础示例","text":"2. 基础示例"},{"level":2,"id":"3-全局混入-global-mixin","text":"3. 全局混入 (Global Mixin)"},{"level":2,"id":"4-mixin-的原罪为什么现在不推荐了","text":"4. Mixin 的“原罪”：为什么现在不推荐了？"},{"level":2,"id":"总结与建议","text":"总结与建议"},{"level":2,"id":"1-解决命名冲突显式重命名","text":"1. 解决“命名冲突”：显式重命名"},{"level":2,"id":"2-解决隐式依赖清晰的来源追踪","text":"2. 解决“隐式依赖”：清晰的来源追踪"},{"level":2,"id":"3-解决逻辑碎片化关注点统一","text":"3. 解决“逻辑碎片化”：关注点统一"},{"level":2,"id":"4-解决灵活性差函数传参","text":"4. 解决“灵活性差”：函数传参"},{"level":2,"id":"5-核心对比总结","text":"5. 核心对比总结"},{"level":3,"id":"进阶思考逻辑复用的第一性原理","text":"进阶思考：逻辑复用的第一性原理"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

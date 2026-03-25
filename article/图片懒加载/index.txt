@@ -1,0 +1,211 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T2f83,<p>好的，关于 Web 前端常见的图片懒加载（Lazy Loading）实现方式，可以从“原生支持”和“手动实现”两个大的维度来理解。我会为你梳理几种主流的方法，并分析各自的优缺点，最后给出一个当前最佳实践的建议。</p>
+<h3 id="主流的图片懒加载方式"><a href="#主流的图片懒加载方式">主流的图片懒加载方式</a></h3>
+<p>图片懒加载的核心思想是：<strong>仅在图片进入浏览器可视区域（Viewport）时，才去加载它</strong>。这极大地提升了页面的初始加载速度和用户体验，特别是对于图片密集型的网站。</p>
+<p>以下是几种常见的方式：</p>
+<hr>
+<h4 id="1-html-原生懒加载-loadinglazy"><a href="#1-html-原生懒加载-loadinglazy">1. HTML 原生懒加载 (<code>loading="lazy"</code>)</a></h4>
+<p>这是目前最简单、也是最推荐的方式。通过为 <code>&#x3C;img></code> 或 <code>&#x3C;iframe></code> 标签添加 <code>loading="lazy"</code> 属性，浏览器会自动处理懒加载逻辑，无需任何 JavaScript 代码。</p>
+<p><strong>实现方式：</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"image.jpg"</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"描述文字"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"200"</span>></span>
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>极致简单</strong>：只需添加一个属性，零 JavaScript 成本。</p>
+</li>
+<li>
+<p><strong>性能优秀</strong>：由浏览器原生实现，比 JavaScript 的解决方案性能更好，更省电。浏览器能够更智能地决定加载时机，比如会在用户即将滚动到图片前提前加载，体验更平滑。</p>
+</li>
+<li>
+<p><strong>兼容性好</strong>：目前主流的现代浏览器（Chrome, Firefox, Edge, Safari）均已支持。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>可控性弱</strong>：无法精确控制加载时机（比如提前多少像素加载），也无法添加自定义的加载动画（如淡入效果），一切由浏览器决定。</p>
+</li>
+<li>
+<p><strong>对旧浏览器不兼容</strong>：在不支持此属性的浏览器（如 IE11）上，图片会立即加载，相当于没有懒加载效果。但它会优雅降级，不会导致功能异常。</p>
+</li>
+</ul>
+<hr>
+<h4 id="2-intersection-observer-api-交叉观察器"><a href="#2-intersection-observer-api-交叉观察器">2. Intersection Observer API (交叉观察器)</a></h4>
+<p>这是目前最现代、最高效的 JavaScript 实现方式。它提供了一种异步观察目标元素与其祖先元素或顶级文档视窗（viewport）交叉状态变化的方法。简单来说，就是能告诉你一个元素是否进入了可视区域。</p>
+<p><strong>实现原理：</strong></p>
+<ol>
+<li>
+<p>初始时，<code>&#x3C;img></code> 标签的 <code>src</code> 属性不放真实的图片地址，而是放在一个自定义属性中，例如 <code>data-src</code>。<code>src</code> 可以留空或指向一个极小的占位图（placeholder）。</p>
+</li>
+<li>
+<p>创建一个 <code>IntersectionObserver</code> 实例，并让它观察所有需要懒加载的图片元素。</p>
+</li>
+<li>
+<p>当 <code>IntersectionObserver</code> 的回调函数触发，判断图片元素是否进入可视区域（<code>isIntersecting</code> 为 <code>true</code>）。</p>
+</li>
+<li>
+<p>如果是，则将 <code>data-src</code> 的值赋给 <code>src</code> 属性，开始加载真实图片。</p>
+</li>
+<li>
+<p>图片加载完成后，停止对该元素的观察，以释放资源。</p>
+</li>
+</ol>
+<p><strong>示例代码：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> lazyImages = [].<span class="hljs-property">slice</span>.<span class="hljs-title function_">call</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">"img.lazy"</span>));
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-string">"IntersectionObserver"</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">window</span>) {
+        <span class="hljs-keyword">let</span> lazyImageObserver = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">entries, observer</span>) {
+            entries.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">entry</span>) {
+                <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
+                    <span class="hljs-keyword">let</span> lazyImage = entry.<span class="hljs-property">target</span>;
+                    lazyImage.<span class="hljs-property">src</span> = lazyImage.<span class="hljs-property">dataset</span>.<span class="hljs-property">src</span>;
+                    lazyImage.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">"lazy"</span>);
+                    lazyImageObserver.<span class="hljs-title function_">unobserve</span>(lazyImage); <span class="hljs-comment">// 停止观察</span>
+                }
+            });
+        });
+
+        lazyImages.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">lazyImage</span>) {
+            lazyImageObserver.<span class="hljs-title function_">observe</span>(lazyImage);
+        });
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// Fallback for older browsers</span>
+        <span class="hljs-comment">// 可以选择在这里实现下面的传统事件监听方式</span>
+    }
+});
+</code></pre>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">img</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">"real-image.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"描述"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"200"</span>></span>
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>性能好</strong>：相比传统的事件监听方式，<code>IntersectionObserver</code> 不会因频繁触发 <code>scroll</code> 事件而导致性能问题。它的回调是异步触发的，不阻塞主线程。</p>
+</li>
+<li>
+<p><strong>功能强大</strong>：API 提供了丰富的配置项，比如可以设置 <code>rootMargin</code> 来提前或延迟加载（例如，当图片距离视窗底部还有 <code>200px</code> 时就开始加载），还可以通过 <code>threshold</code> 控制元素可见度达到多少比例时触发。</p>
+</li>
+<li>
+<p><strong>代码优雅</strong>：逻辑清晰，易于维护。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>存在兼容性问题</strong>：不兼容 IE 等非常陈旧的浏览器。但可以通过引入 Polyfill 来解决。</li>
+</ul>
+<hr>
+<h4 id="3-传统事件监听-scroll-resize-orientationchange"><a href="#3-传统事件监听-scroll-resize-orientationchange">3. 传统事件监听 (<code>scroll</code>, <code>resize</code>, <code>orientationchange</code>)</a></h4>
+<p>在 <code>IntersectionObserver</code> 出现之前，这是最主流的实现方式。通过监听页面的滚动和尺寸变化事件，来判断元素是否进入可视区域。</p>
+<p><strong>实现原理：</strong></p>
+<ol>
+<li>
+<p>与 <code>IntersectionObserver</code> 类似，将真实图片地址存放在 <code>data-src</code> 中。</p>
+</li>
+<li>
+<p>监听 <code>window</code> 的 <code>scroll</code>、<code>resize</code> 等事件。</p>
+</li>
+<li>
+<p>在事件处理函数中，获取所有待加载图片的位置信息（使用 <code>getBoundingClientRect()</code>）。</p>
+</li>
+<li>
+<p>遍历图片，计算其顶部是否小于等于视窗的高度，如果是，则说明图片已进入或即将进入可视区域。</p>
+</li>
+<li>
+<p>将 <code>data-src</code> 赋值给 <code>src</code>，并移除该图片的事件监听或标记，避免重复计算。</p>
+</li>
+</ol>
+<p><strong>优点：</strong></p>
+<ul>
+<li><strong>兼容性极好</strong>：几乎兼容所有浏览器。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>性能开销大</strong>：<code>scroll</code> 事件触发非常频繁，如果在其回调函数中执行大量的计算（如循环、获取元素位置），很容易引发页面卡顿，造成不好的用户体验。</p>
+</li>
+<li>
+<p><strong>需要节流/防抖（Throttle/Debounce）</strong>：为了缓解性能问题，必须对事件处理函数进行节流或防抖操作，这增加了代码的复杂性。</p>
+</li>
+</ul>
+<h3 id="如何选择"><a href="#如何选择">如何选择？</a></h3>
+<p>在当下的开发环境中，选择哪种方式取决于你的项目需求和目标用户群体。</p>
+<ol>
+<li>
+<p>首选推荐：原生 loading="lazy"</p>
+<p>对于绝大多数场景，这都是最佳选择。它提供了足够好的性能和体验，且实现成本为零。对于不支持的旧浏览器，它会自动降级为普通图片加载，功能上没有问题，只是没有优化效果。你可以将其作为基础，再为不支持的浏览器提供 IntersectionObserver 作为增强方案。</p>
+</li>
+<li>
+<p>次优选择（也是当前最佳的 JS 方案）：IntersectionObserver</p>
+<p>当你需要比原生懒加载更多的控制权时，比如：</p>
+<ul>
+<li>
+<p>需要实现自定义的加载动画（如淡入、占位符切换）。</p>
+</li>
+<li>
+<p>需要更精确地控制预加载的距离。</p>
+</li>
+<li>
+<p>不仅是图片，还需要对组件、广告等其他类型的 DOM 元素进行懒加载。</p>
+</li>
+<li>
+<p>需要兼容一些不支持 <code>loading="lazy"</code> 但支持 <code>IntersectionObserver</code> 的浏览器版本（虽然这个区间很小）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>最后的备选方案：传统事件监听</p>
+<p>只有当你的项目必须兼容非常古老的浏览器（比如 IE8-11），且无法或不想引入 IntersectionObserver 的 Polyfill 时，才考虑使用这种方式。在现代项目开发中，它已基本被 IntersectionObserver 替代。</p>
+</li>
+</ol>
+<h3 id="总结与最佳实践"><a href="#总结与最佳实践">总结与最佳实践</a></h3>
+<p>综合来看，我认为<strong>最佳实践</strong>是 <strong>“原生懒加载为主，Intersection Observer 为辅”</strong> 的混合策略。</p>
+<p>你可以这样做：</p>
+<ol>
+<li>
+<p>为所有 <code>&#x3C;img></code> 标签默认加上 <code>loading="lazy"</code>。</p>
+</li>
+<li>
+<p>通过 JavaScript 检测浏览器是否支持 <code>loading="lazy"</code>。</p>
+</li>
+<li>
+<p>如果不支持，则启动 <code>IntersectionObserver</code> 的方案来作为 Polyfill（向下兼容的替代方案），实现懒加载。</p>
+</li>
+</ol>
+<p>这种方式结合了两者的优点，既能为现代浏览器提供最佳性能，又能确保在旧浏览器上懒加载功能依然可用，实现了优雅降级和渐进增强。许多成熟的第三方懒加载库，如 <code>lazysizes</code>，内部也是采用类似的智能检测和回退机制。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/html",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/html/","className":"$undefined","children":"前端开发 / html"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"图片懒加载"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-30T00:00:00.000Z","children":"2025年7月30日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1724," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"主流的图片懒加载方式","text":"主流的图片懒加载方式"},{"level":4,"id":"1-html-原生懒加载-loadinglazy","text":"1. HTML 原生懒加载 (loading=\"lazy\")"},{"level":4,"id":"2-intersection-observer-api-交叉观察器","text":"2. Intersection Observer API (交叉观察器)"},{"level":4,"id":"3-传统事件监听-scroll-resize-orientationchange","text":"3. 传统事件监听 (scroll, resize, orientationchange)"},{"level":3,"id":"如何选择","text":"如何选择？"},{"level":3,"id":"总结与最佳实践","text":"总结与最佳实践"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"图片懒加载 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，关于 Web 前端常见的图片懒加载（Lazy Loading）实现方式，可以从“原生支持”和“手动实现”两个大的维度来理解。我会为你梳理几种主流的方法，并分析各自的优缺点，最后给出一个当前最佳实践的建议。  主流的图片懒加载方式 图片…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

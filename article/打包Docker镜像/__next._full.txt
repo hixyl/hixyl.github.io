@@ -1,0 +1,505 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E6%89%93%E5%8C%85Docker%E9%95%9C%E5%83%8F",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E6%89%93%E5%8C%85Docker%E9%95%9C%E5%83%8F","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T446a,<p>我们来系统且深入地讲清楚 Dockerfile 中最常用的命令。</p>
+<p>Dockerfile 是一个文本文档，它包含了用户在命令行上可以调用来组合成一个镜像的所有命令。它本质上是构建 Docker 镜像的“蓝图”或“食谱”。理解它的核心命令是高效、安全地使用 Docker 的第一步。</p>
+<p>我将按照一个典型 Dockerfile 的书写顺序和逻辑关系来展开讲解。</p>
+<hr>
+<h3 id="1-基础与起点-foundation"><a href="#1-基础与起点-foundation">1. 基础与起点 (Foundation)</a></h3>
+<h4 id="from"><a href="#from"><code>FROM</code></a></h4>
+<p>这是每一个 Dockerfile 的第一条指令（除了少数以 <code>ARG</code> 开头的特殊情况）。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：指定新镜像所基于的<strong>基础镜像</strong> (Base Image)。镜像是分层的，<code>FROM</code> 定义了你的镜像的起始层。</p>
+</li>
+<li>
+<p><strong>语法</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile">FROM &#x3C;image>[:&#x3C;tag>] [AS &#x3C;name>]
+</code></pre>
+</li>
+<li>
+<p><strong>详解</strong>：</p>
+<ul>
+<li>
+<p><code>&#x3C;image>:&#x3C;tag></code>：例如 <code>ubuntu:22.04</code>、<code>python:3.11-slim</code>、<code>nginx:latest</code>。选择一个尽可能小且满足需求的基础镜像是优化的关键。<code>slim</code>、<code>alpine</code> 这类标签通常表示轻量级版本。</p>
+</li>
+<li>
+<p><code>AS &#x3C;name></code>：这是在<strong>多阶段构建 (Multi-stage builds)</strong> 中为该构建阶段命名，后面会详细讲。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 使用官方的 Node.js 18 的 alpine 精简版作为基础镜像
+FROM node:18-alpine
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="2-构建指令-build-instructions"><a href="#2-构建指令-build-instructions">2. 构建指令 (Build Instructions)</a></h3>
+<p>这部分命令在 <code>docker build</code> 过程中执行，用于向镜像中添加文件、安装软件和进行配置。</p>
+<h4 id="run"><a href="#run"><code>RUN</code></a></h4>
+<p>构建镜像时执行的命令。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：安装软件包、创建目录、编译代码等。每条 <code>RUN</code> 指令都会在当前镜像的顶层创建一个新的<strong>层 (Layer)</strong>。</p>
+</li>
+<li>
+<p><strong>语法</strong>：</p>
+<ol>
+<li>
+<p><strong>Shell 格式</strong>: <code>RUN &#x3C;command></code> (命令在 <code>/bin/sh -c</code> 中执行)</p>
+</li>
+<li>
+<p><strong>Exec 格式</strong>: <code>RUN ["executable", "param1", "param2"]</code> (直接执行，不经过 shell)</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>详解与最佳实践</strong>：</p>
+<ul>
+<li>
+<p><strong>合并命令</strong>：为了减少镜像的层数和大小，应该将多个相关的 <code>RUN</code> 命令用 <code>&#x26;&#x26;</code> 连接起来。例如，更新包列表和安装软件应该放在一条 <code>RUN</code> 指令里。</p>
+</li>
+<li>
+<p><strong>清理缓存</strong>：在同一条 <code>RUN</code> 指令中，安装完软件包后应立即清理缓存文件，以减小镜像体积。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 不好的例子：创建了两个不必要的层
+# RUN apt-get update
+# RUN apt-get install -y curl
+
+# 好的例子：合并为一层，并清理缓存
+RUN apt-get update &#x26;&#x26; \
+    apt-get install -y curl \
+    &#x26;&#x26; rm -rf /var/lib/apt/lists/*
+</code></pre>
+</li>
+</ul>
+<h4 id="copy-与-add"><a href="#copy-与-add"><code>COPY</code> 与 <code>ADD</code></a></h4>
+<p>将本地文件或目录复制到镜像的文件系统中。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：将应用程序代码、配置文件等添加到镜像中。</p>
+</li>
+<li>
+<p><strong>语法</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile">COPY [--chown=&#x3C;user>:&#x3C;group>] &#x3C;src>... &#x3C;dest>
+ADD [--chown=&#x3C;user>:&#x3C;group>] &#x3C;src>... &#x3C;dest>
+</code></pre>
+</li>
+<li>
+<p><strong>详解与抉择</strong>：</p>
+<ul>
+<li>
+<p><code>COPY</code>：功能直接纯粹，就是从<strong>构建上下文 (build context)</strong> 中复制文件到镜像。</p>
+</li>
+<li>
+<p><code>ADD</code>：比 <code>COPY</code> 多了两个额外功能：</p>
+<ol>
+<li>
+<p>源文件 <code>&#x3C;src></code> 可以是一个 URL。</p>
+</li>
+<li>
+<p>如果源文件是一个本地的 tar 压缩包（如 <code>.tar.gz</code>），<code>ADD</code> 会自动解压它。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>最佳实践与我的选择：</p>
+<p>始终优先使用 COPY。它的行为更可预测、更透明。ADD 的自动解压和远程 URL 功能会带来不可预见的风险（例如，URL 内容变化、解压出非预期的文件结构），并且可能导致缓存失效。如果需要下载文件，应该使用 RUN wget ... 或 RUN curl ...，这样可以更好地控制下载过程和进行清理。如果需要解压，使用 RUN tar -xvf ...。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 复制当前目录下的 package.json 和 package-lock.json 到镜像的 /app/ 目录下
+COPY package*.json ./app/
+
+# 复制整个项目到镜像的 /app/ 目录下
+COPY . ./app/
+</code></pre>
+<p><strong>优化提示</strong>：先复制 <code>package.json</code> 并执行 <code>npm install</code>，再复制整个项目代码。这样，如果你的项目代码变了，但依赖没变，Docker 可以利用缓存，跳过 <code>npm install</code> 这一耗时步骤。</p>
+</li>
+</ul>
+<h4 id="workdir"><a href="#workdir"><code>WORKDIR</code></a></h4>
+<p>设置工作目录。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：为后续的 <code>RUN</code>, <code>CMD</code>, <code>ENTRYPOINT</code>, <code>COPY</code>, <code>ADD</code> 指令设置当前工作目录。如果目录不存在，<code>WORKDIR</code> 会自动创建它。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>WORKDIR /path/to/workdir</code></p>
+</li>
+<li>
+<p><strong>详解</strong>：</p>
+<ul>
+<li>使用 <code>WORKDIR</code> 而不是 <code>RUN cd /path</code>。<code>WORKDIR</code> 的效果是持久的，会影响之后的所有指令。而 <code>RUN cd</code> 只在当前那条 <code>RUN</code> 指令中有效。</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile">WORKDIR /app
+
+# 下面的 COPY 和 RUN 都在 /app 目录下执行
+COPY package*.json .
+RUN npm install
+COPY . .
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="3-运行时配置-runtime-configuration"><a href="#3-运行时配置-runtime-configuration">3. 运行时配置 (Runtime Configuration)</a></h3>
+<p>这部分命令不影响镜像的构建，但会影响基于此镜像启动的容器的行为。</p>
+<h4 id="cmd-与-entrypoint"><a href="#cmd-与-entrypoint"><code>CMD</code> 与 <code>ENTRYPOINT</code></a></h4>
+<p>这两个命令都用于指定容器启动时要执行的命令，但它们的侧重点和交互方式不同，是 Dockerfile 中最容易混淆的命令。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：定义容器的默认执行命令。</p>
+</li>
+<li>
+<p><strong>详解与对比</strong>：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>CMD</code> (命令)</th>
+<th><code>ENTRYPOINT</code> (入口点)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>目的</strong></td>
+<td>为容器提供一个<strong>默认的、可被覆盖的</strong>执行命令。</td>
+<td>将容器配置为像一个<strong>可执行文件</strong>，提供固定的入口。</td>
+</tr>
+<tr>
+<td><strong>覆盖方式</strong></td>
+<td>在 <code>docker run</code> 时附加的命令会<strong>完全覆盖</strong> <code>CMD</code> 的内容。</td>
+<td>在 <code>docker run</code> 时附加的命令会作为<strong>参数追加</strong>给 <code>ENTRYPOINT</code>。</td>
+</tr>
+<tr>
+<td><strong>语法 (推荐)</strong></td>
+<td>Exec 格式: <code>CMD ["executable", "param1", "param2"]</code></td>
+<td>Exec 格式: <code>ENTRYPOINT ["executable", "param1", "param2"]</code></td>
+</tr>
+<tr>
+<td><strong>语法 (不推荐)</strong></td>
+<td>Shell 格式: <code>CMD command param1 param2</code></td>
+<td>Shell 格式: <code>ENTRYPOINT command param1 param2</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>如何选择和组合使用？</strong></p>
+<ol>
+<li>
+<p><strong>只想运行一个命令，且希望用户可以轻松替换它</strong>：</p>
+<ul>
+<li>
+<p>使用 <code>CMD</code>。</p>
+</li>
+<li>
+<p><strong>场景</strong>：基础镜像如 <code>ubuntu</code>，默认启动 <code>bash</code>，但用户可以 <code>docker run ubuntu ls -l</code> 来执行不同命令。</p>
+</li>
+<li>
+<p><strong>示例</strong>：<code>CMD ["python", "app.py"]</code>。用户可以通过 <code>docker run my-app python manage.py shell</code> 来覆盖。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>想让容器表现得像一个固定的程序，只接受参数</strong>：</p>
+<ul>
+<li>
+<p>使用 <code>ENTRYPOINT</code>。</p>
+</li>
+<li>
+<p><strong>场景</strong>：创建一个只用于 <code>ping</code> 的工具容器。</p>
+</li>
+<li>
+<p><strong>示例</strong>：<code>ENTRYPOINT ["ping"]</code>。用户运行 <code>docker run my-ping-container google.com</code>，实际执行的是 <code>ping google.com</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>最佳实践：<code>ENTRYPOINT</code> + <code>CMD</code> 组合</strong></p>
+<ul>
+<li>
+<p>这是最强大和灵活的用法。<code>ENTRYPOINT</code> 定义主命令，<code>CMD</code> 为主命令提供<strong>默认参数</strong>。</p>
+</li>
+<li>
+<p><strong>场景</strong>：一个 Web 服务，主命令是固定的，但可以调整启动参数。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile">ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+CMD ["--spring.profiles.active=prod"]
+</code></pre>
+<ul>
+<li>
+<p>用户直接 <code>docker run my-app</code>，执行的是 <code>java -jar /app/app.jar --spring.profiles.active=prod</code>。</p>
+</li>
+<li>
+<p>用户 <code>docker run my-app --spring.profiles.active=dev</code>，<code>CMD</code> 的默认参数被覆盖，执行的是 <code>java -jar /app/app.jar --spring.profiles.active=dev</code>。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="expose"><a href="#expose"><code>EXPOSE</code></a></h4>
+<p>声明容器在运行时监听的网络端口。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：这是一个<strong>文档性</strong>的指令，告诉使用者这个镜像中的服务倾向于使用哪个端口。它<strong>不会</strong>自动将端口发布到主机上。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>EXPOSE &#x3C;port> [&#x3C;port>/&#x3C;protocol>...]</code></p>
+</li>
+<li>
+<p><strong>详解</strong>：</p>
+<ul>
+<li>
+<p>它只是元数据，实际的端口映射需要在 <code>docker run</code> 时通过 <code>-p</code> 或 <code>-P</code> 参数来完成。</p>
+</li>
+<li>
+<p>例如 <code>docker run -p 8080:80 my-image</code>，将主机的 8080 端口映射到容器的 80 端口。<code>EXPOSE 80</code> 只是提示你容器内服务在 80 端口。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 声明容器内的 Nginx 服务监听 80 端口
+EXPOSE 80
+</code></pre>
+</li>
+</ul>
+<h4 id="env"><a href="#env"><code>ENV</code></a></h4>
+<p>设置环境变量。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：定义环境变量，这些变量在镜像的构建过程 (<code>RUN</code> 指令) 和容器的运行过程中都可用。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>ENV &#x3C;key>=&#x3C;value> ...</code></p>
+</li>
+<li>
+<p><strong>详解</strong>：</p>
+<ul>
+<li>对于配置信息，如数据库地址、API 密钥等，使用环境变量是一种非常好的实践，因为它将配置与代码分离。</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 设置一个版本号，方便后续指令使用
+ENV APP_VERSION=1.0
+
+# 设置应用配置
+ENV DB_HOST=database
+ENV DB_PORT=5432
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="4-元数据与高级指令-metadata--advanced"><a href="#4-元数据与高级指令-metadata--advanced">4. 元数据与高级指令 (Metadata &#x26; Advanced)</a></h3>
+<h4 id="arg"><a href="#arg"><code>ARG</code></a></h4>
+<p>定义构建时变量。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：<code>ARG</code> 定义的变量只在 <code>docker build</code> 过程中有效，容器运行时不可用。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>ARG &#x3C;name>[=&#x3C;default value>]</code></p>
+</li>
+<li>
+<p><strong>与 <code>ENV</code> 的区别</strong>：</p>
+<ul>
+<li>
+<p><code>ARG</code> 是构建时 (build-time) 的。</p>
+</li>
+<li>
+<p><code>ENV</code> 是构建时和运行时 (run-time) 都有。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>用法</strong>：</p>
+<ul>
+<li>
+<p>可以在 <code>docker build</code> 命令中通过 <code>--build-arg</code> 来传递值。</p>
+</li>
+<li>
+<p><code>ARG</code> 可以放在 <code>FROM</code> 之前，用于动态指定基础镜像。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile">ARG PYTHON_VERSION=3.11
+FROM python:${PYTHON_VERSION}-slim
+
+ARG APP_DIR=/app
+WORKDIR ${APP_DIR}
+</code></pre>
+<p>构建时可以这样覆盖默认值：<code>docker build --build-arg PYTHON_VERSION=3.10 .</code></p>
+</li>
+</ul>
+<h4 id="user"><a href="#user"><code>USER</code></a></h4>
+<p>设置运行容器时的用户名或 UID。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：出于<strong>安全</strong>考虑，避免以 <code>root</code> 用户身份运行容器内的应用。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>USER &#x3C;user>[:&#x3C;group>]</code></p>
+</li>
+<li>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>在 <code>RUN</code> 指令中创建非 root 用户，然后在 Dockerfile 的末尾使用 <code>USER</code> 指令切换。</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 创建一个非 root 用户 'appuser'
+RUN addgroup -S appgroup &#x26;&#x26; adduser -S appuser -G appgroup
+
+# 切换到这个用户
+USER appuser
+</code></pre>
+</li>
+</ul>
+<h4 id="volume"><a href="#volume"><code>VOLUME</code></a></h4>
+<p>创建一个可以挂载的卷。</p>
+<ul>
+<li>
+<p><strong>核心作用</strong>：指定镜像中的某个目录为数据卷。当容器启动时，Docker 会将这个目录的内容管理起来，用于持久化数据，或者在容器间共享数据。</p>
+</li>
+<li>
+<p><strong>语法</strong>：<code>VOLUME ["/path/to/volume"]</code></p>
+</li>
+<li>
+<p><strong>详解</strong>：</p>
+<ul>
+<li>
+<p>这个指令可以帮助防止容器内的应用向容器的可写层写入大量数据，从而保持镜像的整洁。</p>
+</li>
+<li>
+<p>通常用于数据库的数据目录、应用的日志目录等。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># 将 /var/log 目录声明为数据卷，容器内产生的日志将写入到这个卷中
+VOLUME /var/log
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="总结与完整示例"><a href="#总结与完整示例">总结与完整示例</a></h3>
+<p>下面是一个注释详尽的 Node.js 应用的 Dockerfile，它运用了多阶段构建等最佳实践。</p>
+<p>Dockerfile</p>
+<pre><code class="hljs language-Dockerfile"># ==================================
+# 第一阶段：构建 (Builder Stage)
+# ==================================
+# 使用一个包含完整构建工具链的镜像作为构建环境
+FROM node:18 AS builder
+
+# 设置构建阶段的工作目录
+WORKDIR /app
+
+# 复制 package.json 和 lock 文件
+# 这样可以利用 Docker 缓存，只有在依赖变化时才重新安装
+COPY package*.json ./
+
+# 安装所有依赖，包括开发依赖
+RUN npm install
+
+# 复制所有源代码到工作目录
+COPY . .
+
+# 执行构建命令 (例如，编译 TypeScript, 打包前端资源)
+RUN npm run build
+
+# ==================================
+# 第二阶段：生产 (Production Stage)
+# ==================================
+# 使用一个非常轻量的基础镜像用于生产环境
+FROM node:18-alpine
+
+# 设置生产环境的工作目录
+WORKDIR /app
+
+# 从'builder'阶段复制 package.json 和 lock 文件
+COPY package*.json ./
+
+# 只安装生产环境所需的依赖，减小最终镜像大小
+RUN npm install --omit=dev
+
+# 从'builder'阶段复制构建好的应用文件
+# 这就是多阶段构建的核心：只把最终产物拿过来
+COPY --from=builder /app/dist ./dist
+
+# 创建一个非 root 用户来运行应用，增强安全性
+RUN addgroup -S appgroup &#x26;&#x26; adduser -S appuser -G appgroup
+USER appuser
+
+# 对外暴露应用程序的端口
+EXPOSE 3000
+
+# 容器启动时执行的默认命令
+CMD ["node", "dist/main.js"]
+</code></pre>
+<p>这个例子展示了如何组合使用这些命令来创建一个<strong>优化、安全且高效</strong>的 Docker 镜像。掌握这些核心命令及其背后的原理，你就能自如地为任何应用编写高质量的 Dockerfile。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/部署",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/","className":"$undefined","children":"前端开发 / 部署"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"打包Docker镜像"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-09-04T00:00:00.000Z","children":"2025年9月4日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2581," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-基础与起点-foundation","text":"1. 基础与起点 (Foundation)"},{"level":4,"id":"from","text":"FROM"},{"level":3,"id":"2-构建指令-build-instructions","text":"2. 构建指令 (Build Instructions)"},{"level":4,"id":"run","text":"RUN"},{"level":4,"id":"copy-与-add","text":"COPY 与 ADD"},{"level":4,"id":"workdir","text":"WORKDIR"},{"level":3,"id":"3-运行时配置-runtime-configuration","text":"3. 运行时配置 (Runtime Configuration)"},{"level":4,"id":"cmd-与-entrypoint","text":"CMD 与 ENTRYPOINT"},{"level":4,"id":"expose","text":"EXPOSE"},{"level":4,"id":"env","text":"ENV"},{"level":3,"id":"4-元数据与高级指令-metadata--advanced","text":"4. 元数据与高级指令 (Metadata &#x26; Advanced)"},{"level":4,"id":"arg","text":"ARG"},{"level":4,"id":"user","text":"USER"},{"level":4,"id":"volume","text":"VOLUME"},{"level":3,"id":"总结与完整示例","text":"总结与完整示例"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"打包Docker镜像 | 流年石刻"}],["$","meta","1",{"name":"description","content":"我们来系统且深入地讲清楚 Dockerfile 中最常用的命令。 Dockerfile 是一个文本文档，它包含了用户在命令行上可以调用来组合成一个镜像的所有命令。它本质上是构建 Docker 镜像的“蓝图”或“食谱”。理解它的核心命令是高效…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

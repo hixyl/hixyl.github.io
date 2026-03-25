@@ -1,0 +1,148 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T1a3d,<p>要深入理解 Node.js，不能把它简单看作“运行在服务器上的 JavaScript”。它是一个经过精密设计的<strong>运行时环境（Runtime）</strong>，本质上是将 <strong>Chrome V8 引擎</strong>、<strong>Libuv 库</strong>以及一系列 <strong>C++ 绑定</strong>结合在一起的产物。</p>
+<p>我们可以从架构、核心机制、以及适用场景三个维度来拆解它。</p>
+<hr>
+<h2 id="1-宏观架构它由什么组成"><a href="#1-宏观架构它由什么组成">1. 宏观架构：它由什么组成？</a></h2>
+<p>Node.js 的结构可以分为三层：</p>
+<ul>
+<li>
+<p><strong>顶层（JavaScript Library）：</strong> 我们平时编写的 <code>fs</code>、<code>http</code>、<code>path</code> 等内置模块。</p>
+</li>
+<li>
+<p><strong>中间层（Node.js Bindings）：</strong> 这一层主要由 C++ 编写。由于 V8 是 C++ 写的，底层的系统操作也是 C++，这一层的作用就是让 JS 代码能够调用底层的 C++ 逻辑。</p>
+</li>
+<li>
+<p><strong>底层（Dependencies）：</strong></p>
+<ul>
+<li>
+<p><strong>V8 引擎：</strong> 负责将 JS 代码编译成机器码，执行速度极快。</p>
+</li>
+<li>
+<p><strong>Libuv：</strong> Node.js 的核心灵魂。它是一个 C 语言编写的库，负责<strong>事件循环（Event Loop）</strong>、<strong>线程池（Thread Pool）</strong>、<strong>信号处理</strong>等。它让 Node.js 具备了跨平台操作系统的异步 I/O 能力。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-核心机制为什么它能处理高并发"><a href="#2-核心机制为什么它能处理高并发">2. 核心机制：为什么它能处理高并发？</a></h2>
+<p>Node.js 的高性能并不依靠“堆线程”，而是依靠<strong>非阻塞 I/O</strong> 和 <strong>事件循环</strong>。</p>
+<h4 id="非阻塞-io-non-blocking-io"><a href="#非阻塞-io-non-blocking-io"><strong>非阻塞 I/O (Non-blocking I/O)</strong></a></h4>
+<p>在传统的后端环境（如早期的 Apache/PHP）中，如果代码要读取文件，主线程会停下来等硬盘读完。这叫“阻塞”。</p>
+<p>在 Node.js 中，主线程发起读取请求后，会立刻去处理下一个任务。硬盘读完后，会通过“通知”的方式告诉主线程回来处理结果。</p>
+<h4 id="事件循环-event-loop-的六个阶段"><a href="#事件循环-event-loop-的六个阶段"><strong>事件循环 (Event Loop) 的六个阶段</strong></a></h4>
+<p>事件循环并不是简单的一个 while 循环，它在内部被细分为几个阶段：</p>
+<ol>
+<li>
+<p><strong>Timers (定时器阶段)：</strong> 执行 <code>setTimeout</code> 和 <code>setInterval</code> 的回调。</p>
+</li>
+<li>
+<p><strong>Pending Callbacks：</strong> 执行延迟到下一个循环迭代的 I/O 回调。</p>
+</li>
+<li>
+<p><strong>Idle, Prepare：</strong> 仅系统内部使用。</p>
+</li>
+<li>
+<p><strong>Poll (轮询阶段)：</strong> 检索新的 I/O 事件；执行 I/O 相关的回调（几乎所有除了定时器、关闭回调和 <code>setImmediate</code> 之外的回调）。</p>
+</li>
+<li>
+<p><strong>Check (检查阶段)：</strong> 执行 <code>setImmediate()</code> 的回调。</p>
+</li>
+<li>
+<p><strong>Close Callbacks：</strong> 执行关闭事件的回调，如 <code>socket.on('close', ...)</code>。</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>关键点：</strong> 如果你在 Poll 阶段写了一个死循环，那么整个事件循环就会卡死，后面的 Timers 也永远不会被执行。</p>
+</blockquote>
+<hr>
+<h2 id="3-模块系统从-commonjs-到-esm"><a href="#3-模块系统从-commonjs-到-esm">3. 模块系统：从 CommonJS 到 ESM</a></h2>
+<p>Node.js 的模块化经历了一个长期的演变：</p>
+<ul>
+<li>
+<p><strong>CommonJS (CJS)：</strong> 使用 <code>require()</code> 和 <code>module.exports</code>。它是同步加载的，最初是为服务器端设计的。</p>
+</li>
+<li>
+<p><strong>ES Modules (ESM)：</strong> 使用 <code>import</code> 和 <code>export</code>。这是 JavaScript 的官方标准。现代 Node.js 已经全面支持 ESM。</p>
+</li>
+</ul>
+<p>目前生态正处于从 CJS 向 ESM 迁移的阵痛期，这也是为什么你经常会在配置 <code>package.json</code> 时看到 <code>"type": "module"</code> 的原因。</p>
+<hr>
+<h2 id="4-优劣势与第一性原理思考"><a href="#4-优劣势与第一性原理思考">4. 优劣势与第一性原理思考</a></h2>
+<p>如果我们从<strong>资源利用率</strong>的角度来看：</p>
+<ul>
+<li>
+<p><strong>优势：</strong></p>
+<ul>
+<li>
+<p><strong>轻量高效：</strong> 适合 I/O 密集型任务（如聊天应用、实时通知、中转网关）。</p>
+</li>
+<li>
+<p><strong>单语言优势：</strong> 前后端共用一套逻辑，极大降低了沟通成本和代码复用成本。</p>
+</li>
+<li>
+<p><strong>生态繁荣：</strong> NPM 拥有全球最大的第三方库生态。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>局限性（挑战）：</strong></p>
+<ul>
+<li>
+<p><strong>CPU 密集型任务软肋：</strong> 像视频编码、大型科学计算，如果处理不好会阻塞主线程（虽然现在可以用 <code>worker_threads</code> 缓解）。</p>
+</li>
+<li>
+<p><strong>可靠性：</strong> 单线程意味着一旦主线程抛出未捕获的异常，整个进程就会崩溃（通常需要 PM2 等工具进行守护）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="5-nodejs-的现代版图"><a href="#5-nodejs-的现代版图">5. Node.js 的现代版图</a></h2>
+<p>到了 2026 年，Node.js 已经不再是唯一的选择，它面临着 <strong>Deno</strong> 和 <strong>Bun</strong> 的竞争。但 Node.js 依然拥有最稳固的企业级基础。</p>
+<table>
+<thead>
+<tr>
+<th><strong>场景</strong></th>
+<th><strong>推荐程度</strong></th>
+<th><strong>原因</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BFF (Backend For Frontend)</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>转换 API 数据、SSR 渲染的最佳选择。</td>
+</tr>
+<tr>
+<td><strong>实时通讯 (Socket.io)</strong></td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>事件驱动机制天然契合长连接。</td>
+</tr>
+<tr>
+<td><strong>微服务网关</strong></td>
+<td>⭐⭐⭐⭐</td>
+<td>转发请求速度快，资源消耗低。</td>
+</tr>
+<tr>
+<td><strong>复杂金融计算</strong></td>
+<td>⭐</td>
+<td>浮点数精度和 CPU 密集计算不是它的强项。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="总结"><a href="#总结">总结</a></h2>
+<p>Node.js 是一个利用 <strong>非阻塞 I/O</strong> 绕过了 JavaScript 单线程限制的怪才。它不适合去“挖矿”或者做复杂的 3D 渲染，但它非常擅长充当互联网的“搬运工”和“调度员”。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/node服务",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/node%E6%9C%8D%E5%8A%A1/","children":"前端开发 / node服务"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"深入理解node.js"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-16T00:00:00.000Z","children":"2026年3月16日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1064," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"1-宏观架构它由什么组成","text":"1. 宏观架构：它由什么组成？"},{"level":2,"id":"2-核心机制为什么它能处理高并发","text":"2. 核心机制：为什么它能处理高并发？"},{"level":4,"id":"非阻塞-io-non-blocking-io","text":"非阻塞 I/O (Non-blocking I/O)"},{"level":4,"id":"事件循环-event-loop-的六个阶段","text":"事件循环 (Event Loop) 的六个阶段"},{"level":2,"id":"3-模块系统从-commonjs-到-esm","text":"3. 模块系统：从 CommonJS 到 ESM"},{"level":2,"id":"4-优劣势与第一性原理思考","text":"4. 优劣势与第一性原理思考"},{"level":2,"id":"5-nodejs-的现代版图","text":"5. Node.js 的现代版图"},{"level":2,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

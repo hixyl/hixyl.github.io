@@ -1,0 +1,292 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","vue3%E5%92%8Cvue2%E7%9A%84%E5%8C%BA%E5%88%AB",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","vue3%E5%92%8Cvue2%E7%9A%84%E5%8C%BA%E5%88%AB","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T35ac,<p>Vue 3 并不是 Vue 2 的简单升级，它在<strong>核心层面</strong>进行了重大的重新设计，旨在解决 Vue 2 在大规模应用、性能瓶颈和类型支持方面遇到的问题。</p>
+<p>用一句话总结：<strong>Vue 3 在保持 Vue 2 易用性的基础上，通过全新的底层（响应式系统、编译器）和新的上层（组合式 API），实现了性能、可维护性和开发体验的全面飞跃。</strong></p>
+<p>我们将从几个核心维度进行对比，深入剖析它们的根本差异：</p>
+<hr>
+<h3 id="1-响应式系统根本性的引擎换代"><a href="#1-响应式系统根本性的引擎换代">1. 响应式系统：根本性的“引擎”换代</a></h3>
+<p>这是 Vue 3 <strong>最核心、最底层的变化</strong>。</p>
+<ul>
+<li>
+<p><strong>Vue 2: <code>Object.defineProperty</code></strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> 它通过“劫持”对象属性的 <code>get</code> 和 <code>set</code> 方法来实现响应式。</p>
+</li>
+<li>
+<p><strong>核心缺陷 (痛点)：</strong></p>
+<ol>
+<li>
+<p><strong>初始化开销大：</strong> 必须在组件初始化时，递归遍历 <code>data</code> 中的所有属性，为每个属性都执行 <code>Object.defineProperty</code>。</p>
+</li>
+<li>
+<p><strong>无法监听“新”属性：</strong> 对于在 <code>data</code> 中未声明的属性，如果后续动态添加（例如 <code>this.someObject.newProp = 'value'</code>），Vue 2 无法检测到。你必须使用 <code>Vue.set</code> (或 <code>this.$set</code>) 这一“补丁”API。</p>
+</li>
+<li>
+<p><strong>无法监听数组“索引”和“长度”：</strong> 直接通过索引修改数组（例如 <code>this.arr[0] = 'newValue'</code>）或修改数组长度，Vue 2 同样无法检测。你必须使用 <code>push</code>、<code>pop</code>、<code>splice</code> 等被 Vue "重写"过的数组方法，或者 <code>Vue.set</code>。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3: <code>Proxy</code> (ES6)</strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> 它使用 ES6 的 <code>Proxy</code> 对象来“代理”整个目标对象（而不是单个属性）。<code>Proxy</code> 提供了 13 种不同的“陷阱” (trap)，可以拦截对该对象的<strong>所有</strong>操作（如 <code>get</code>, <code>set</code>, <code>deleteProperty</code>, <code>has</code> 等）。</p>
+</li>
+<li>
+<p><strong>核心优势 (解决方案)：</strong></p>
+<ol>
+<li>
+<p><strong>“懒”劫持，性能更优：</strong> <code>Proxy</code> 是对整个对象进行代理。它不需要在初始化时遍历所有属性。只有当你<strong>访问</strong>某个属性时，它才会被“捕获”和“追踪”。</p>
+</li>
+<li>
+<p><strong>原生支持动态属性：</strong> 现在，你动态添加新属性（<code>state.newProp = 'value'</code>）或删除属性（<code>delete state.oldProp</code>），<code>Proxy</code> 都能完美监听到，<strong>不再需要 <code>Vue.set</code> 或 <code>Vue.delete</code></strong>。</p>
+</li>
+<li>
+<p><strong>原生支持数组所有操作：</strong> 无论是通过索引修改 (<code>arr[0] = 'newValue'</code>) 还是修改 <code>.length</code>，<code>Proxy</code> 都能无缝捕获。</p>
+</li>
+<li>
+<p><strong>支持 <code>Map</code>, <code>Set</code>, <code>WeakMap</code>, <code>WeakSet</code>。</strong></p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>总结 (响应式)：</strong> Vue 3 用 <code>Proxy</code> 替换了 <code>Object.defineProperty</code>，从根本上解决了 Vue 2 的所有响应式“陷阱”。这使得 API 更简洁（告别 <code>$set</code>），性能更好（懒劫持），能力更强。</p>
+</blockquote>
+<hr>
+<h3 id="2-api-架构解决代码组织的难题"><a href="#2-api-架构解决代码组织的难题">2. API 架构：解决“代码组织”的难题</a></h3>
+<p>这是对开发者<strong>日常编码影响最大</strong>的变化。</p>
+<ul>
+<li>
+<p><strong>Vue 2: Options API (选项式 API)</strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> 代码被组织在 <code>data</code>, <code>methods</code>, <code>computed</code>, <code>watch</code>, <code>mounted</code> 等“选项”中。</p>
+</li>
+<li>
+<p><strong>核心缺陷 (痛点)：</strong></p>
+<ul>
+<li>
+<p><strong>逻辑碎片化：</strong> 当组件变得复杂时，一个“功能点”（比如“用户登录”）的逻辑（状态、方法、计算属性、监听器）会被<strong>强制分散</strong>到不同的选项块中。</p>
+</li>
+<li>
+<p><strong>可维护性差：</strong> 在一个几百行的大组件里，<code>data</code> 在最上面，<code>methods</code> 在中间，<code>watch</code> 在最下面。要理解一个功能，你必须在文件中反复“横跳”。</p>
+</li>
+<li>
+<p><strong>复用性受限：</strong> 逻辑复用主要依赖 Mixins。Mixins 存在严重问题：命名冲突（如果多个 Mixin 有同名方法）、数据来源不清晰（<code>this</code> 上的某个属性到底来自哪个 Mixin？）。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3: Composition API (组合式 API)</strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> 它允许我们将代码逻辑<strong>按功能</strong>组织在一起。它基于 <code>setup</code> 函数（或 <code>&#x3C;script setup></code> 语法糖）和一系列响应式函数（<code>ref</code>, <code>reactive</code>, <code>computed</code>, <code>watchEffect</code> 等）工作。</p>
+</li>
+<li>
+<p><strong>核心优势 (解决方案)：</strong></p>
+<ol>
+<li>
+<p><strong>逻辑高内聚：</strong> 我们可以将与某个功能（如“购物车”）相关的所有状态、方法、计算属性都写在一起，甚至可以封装到一个单独的 <code>useShoppingCart.js</code> 文件中。</p>
+</li>
+<li>
+<p><strong>可维护性极强：</strong> <code>setup</code> (或 <code>&#x3C;script setup></code>) 结构非常清晰，代码自上而下按逻辑功能组织，易于阅读和修改。</p>
+</li>
+<li>
+<p><strong>强大的复用性 (Composables)：</strong> 逻辑复用不再需要 Mixins。取而代之的是 "Composables" (组合函数)。它就是一个普通的 <code>use</code> 开头的 JavaScript 函数（如 <code>useMousePosition()</code>），可以返回响应式状态。它没有命名冲突，数据来源一目了然，并且天生支持 TypeScript。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>重要提示：</strong> Vue 3 <strong>完全兼容</strong> Options API。你可以继续使用 Vue 2 的风格。Composition API 是<strong>增量添加</strong>的，它主要用于解决 Options API 在大型项目中的短板。</p>
+</blockquote>
+<hr>
+<h3 id="3-性能优化更智能的-vdom"><a href="#3-性能优化更智能的-vdom">3. 性能优化：更智能的 VDOM</a></h3>
+<p>Vue 3 在<strong>挂载 (Mount)</strong>、<strong>更新 (Update)</strong> 和<strong>打包体积 (Bundle Size)</strong> 方面都远超 Vue 2。</p>
+<ul>
+<li>
+<p><strong>Vue 2: “尽力而为”的 VDOM Diff</strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> 当组件更新时，Vue 2 会生成一个新的 VDOM 树，并与旧树进行<strong>全量对比</strong> (Diff)。</p>
+</li>
+<li>
+<p><strong>核心缺陷 (痛点)：</strong></p>
+<ul>
+<li>
+<p>Diff 过程是“启发式”的，它会尝试跳过一些子树，但总体上还是需要递归遍历。</p>
+</li>
+<li>
+<p>即使你的模板中只有一小部分是动态的（比如一个 <code>{{ msg }}</code>），其他都是纯静态的 HTML，Vue 2 在更新时也需要遍历所有节点来“发现”这个变化。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3: “编译器优化”的 VDOM</strong></p>
+<ul>
+<li>
+<p><strong>原理：</strong> Vue 3 引入了“编译时优化”的概念，它在编译模板时，会<strong>分析</strong>模板中的动静内容。</p>
+</li>
+<li>
+<p><strong>核心优势 (解决方案)：</strong></p>
+<ol>
+<li>
+<p><strong>静态树提升 (Static Tree Hoisting)：</strong> 编译器会检测到模板中<strong>永远不会改变</strong>的部分（如纯 HTML 标签、无绑定的组件），并将它们“提升”到 <code>render</code> 函数之外。这些节点在组件初始化时被创建一次，<strong>在后续更新中完全跳过 Diff</strong>。</p>
+</li>
+<li>
+<p><strong>补丁标记 (Patch Flags)：</strong> 编译器会为动态节点（如 <code>{{ msg }}</code>）<strong>“打标记”</strong>。例如，一个只改变了文本内容的节点会被标记为 <code>1 /* TEXT */</code>。在更新时，Vue 3 的 VDOM 看到这个标记，就知道它<strong>只需要</strong>对比这个节点的文本内容，而无需检查它的 class、style 或其他属性。</p>
+</li>
+<li>
+<p><strong>动态节点收集 (Block Tree)：</strong> 编译器会将所有动态节点收集到一个扁平数组中。在更新时，Vue 3 只需遍历这个“动态节点列表”，而不需要再递归遍历整个 VDOM 树。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>总结 (性能)：</strong> Vue 3 的 VDOM 更新从“全量 Diff”进化为“精准靶向更新”。这得益于编译器的智能分析，使得更新性能与模板的复杂度<strong>解耦</strong>，只与动态内容的数量相关。</p>
+</blockquote>
+<hr>
+<h3 id="4-typescript-支持从可用到原生"><a href="#4-typescript-支持从可用到原生">4. TypeScript 支持：从“可用”到“原生”</a></h3>
+<ul>
+<li>
+<p><strong>Vue 2:</strong></p>
+<ul>
+<li>
+<p>Vue 2 本身是用 JavaScript 编写的。</p>
+</li>
+<li>
+<p>对 TS 的支持是“外挂”的，主要依赖 <code>vue-class-component</code> 和 <code>vue-property-decorator</code>，这需要使用 Class 风格来编写组件，与 Vue 正常的 API 风格（Options API）差异很大。</p>
+</li>
+<li>
+<p><code>this</code> 的类型推导在 Vue 2 + TS 中是一个巨大的痛点，非常复杂且容易出错。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3:</strong></p>
+<ul>
+<li>
+<p>Vue 3 的<strong>整个代码库都是用 TypeScript 重写的</strong>。</p>
+</li>
+<li>
+<p>Composition API（如 <code>ref&#x3C;string>()</code>）与 TypeScript 完美契合，提供了<strong>无与伦比的类型推导和自动补全</strong>。</p>
+</li>
+<li>
+<p>即使你使用 Options API，Vue 3 的类型定义也比 Vue 2 强得多。</p>
+</li>
+<li>
+<p><code>&#x3C;script setup lang="ts"></code> 提供了目前最好的 TSX/JSX 之外的 TS 体验。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5-生态系统与新特性"><a href="#5-生态系统与新特性">5. 生态系统与新特性</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>Vue 2</strong></th>
+<th><strong>Vue 3</strong></th>
+<th><strong>核心区别</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fragment</strong></td>
+<td><strong>不支持</strong> (必须有单一根节点)</td>
+<td><strong>支持</strong></td>
+<td>Vue 3 组件的 <code>template</code> 可以有多个平级的根元素，不再需要无意义的 <code>&#x3C;div></code> 包裹。</td>
+</tr>
+<tr>
+<td><strong>Teleport</strong></td>
+<td>需要第三方库</td>
+<td><strong>内置</strong> (<code>&#x3C;Teleport></code>)</td>
+<td>可以将组件的一部分 DOM“传送”到组件外部的任意位置（如 <code>&#x3C;body></code>），非常适合实现弹窗、Tooltip。</td>
+</tr>
+<tr>
+<td><strong>Suspense</strong></td>
+<td>不支持</td>
+<td><strong>内置 (实验性)</strong> (<code>&#x3C;Suspense></code>)</td>
+<td>优雅地处理异步组件（如代码分割的路由）的加载状态，可以在组件数据 <code>setup</code> 中 <code>await</code> 异步操作。</td>
+</tr>
+<tr>
+<td><strong>构建工具</strong></td>
+<td>Vue CLI (基于 Webpack)</td>
+<td><strong>Vite (默认推荐)</strong></td>
+<td>Vite 利用原生 ESM 实现了<strong>毫秒级的冷启动</strong>和<strong>近乎即时的热更新 (HMR)</strong>，开发体验远超基于 Webpack 的 Vue CLI。</td>
+</tr>
+<tr>
+<td><strong>SFC 改进</strong></td>
+<td><code>@import</code> CSS</td>
+<td><code>&#x3C;style scoped></code> 支持 <code>v-bind</code></td>
+<td>Vue 3 允许在 CSS 中通过 <code>v-bind(color)</code> 直接使用 <code>&#x3C;script setup></code> 中定义的 JS 变量。</td>
+</tr>
+<tr>
+<td><strong>打包体积</strong></td>
+<td>约 30KB (Runtime)</td>
+<td>约 22.5KB (Runtime, 可 Tree-shaking)</td>
+<td>Vue 3 内核更小，且对 <code>tree-shaking</code> 支持极好。如果你不使用某个特性（如 <code>v-model</code>)，它就不会被打包。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="结论该如何看待这些区别"><a href="#结论该如何看待这些区别">结论：该如何看待这些区别？</a></h3>
+<ol>
+<li>
+<p><strong>对于新项目：</strong> <strong>毫无疑问应选择 Vue 3。</strong> 它提供了更好的性能、更强的可维护性（Composition API）、一流的 TypeScript 支持和更现代化的工具链（Vite）。</p>
+</li>
+<li>
+<p><strong>对于老项目：</strong> Vue 2 仍然稳定可靠。但如果项目规模巨大，深受 Options API 逻辑分散和 Mixins 混乱之苦，那么 Vue 3 的 Composition API 提供了清晰的重构方向。</p>
+</li>
+<li>
+<p><strong>核心思想：</strong> Vue 3 解决的是 Vue 2 在“规模化 (Scaling)”时遇到的问题。<code>Proxy</code> 解决了响应式的性能和“陷阱”问题；Composition API 解决了大型组件的代码组织问题；Vite 解决了大型项目的“开发体验”问题。</p>
+</li>
+</ol>
+<p>Vue 3 是一次彻底的、面向未来的重写，它让 Vue 在与 React 和 Svelte 等现代框架的竞争中保持了强大的优势。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","className":"$undefined","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"vue3和vue2的区别"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-11-11T00:00:00.000Z","children":"2025年11月11日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2204," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-响应式系统根本性的引擎换代","text":"1. 响应式系统：根本性的“引擎”换代"},{"level":3,"id":"2-api-架构解决代码组织的难题","text":"2. API 架构：解决“代码组织”的难题"},{"level":3,"id":"3-性能优化更智能的-vdom","text":"3. 性能优化：更智能的 VDOM"},{"level":3,"id":"4-typescript-支持从可用到原生","text":"4. TypeScript 支持：从“可用”到“原生”"},{"level":3,"id":"5-生态系统与新特性","text":"5. 生态系统与新特性"},{"level":3,"id":"结论该如何看待这些区别","text":"结论：该如何看待这些区别？"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"vue3和vue2的区别 | 流年石刻"}],["$","meta","1",{"name":"description","content":"Vue 3 并不是 Vue 2 的简单升级，它在核心层面进行了重大的重新设计，旨在解决 Vue 2 在大规模应用、性能瓶颈和类型支持方面遇到的问题。 用一句话总结：Vue 3 在保持 Vue 2 易用性的基础上，通过全新的底层（响应式系统、…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

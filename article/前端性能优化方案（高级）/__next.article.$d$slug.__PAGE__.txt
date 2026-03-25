@@ -1,0 +1,177 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T365f,<p>在前端基础优化之上，我们进入更深水区的探讨。高级优化的核心在于<strong>打破浏览器的常规限制</strong>，以及<strong>利用系统级的API进行精细的资源调度</strong>。</p>
+<p>为了让初级前端也能清晰掌握，我们将继续剖析底层机制，并重点分析每种技术方案的成立条件、性能边界和可能带来的额外成本（即机会成本）。</p>
+<hr>
+<h3 id="一-突破单线程瓶颈web-worker-处理密集型计算"><a href="#一-突破单线程瓶颈web-worker-处理密集型计算">一、 突破单线程瓶颈：Web Worker 处理密集型计算</a></h3>
+<p>前端的页面卡顿往往是因为 JavaScript 主线程被长时间霸占。虽然我们可以用前面提到的“防抖节流”减少执行次数，但这无法解决<strong>单次计算量极其巨大</strong>的问题（例如：纯前端解析几十 MB 的 Excel 文件、复杂的图像滤镜处理、大批量数据的加密解密）。</p>
+<ul>
+<li>
+<p><strong>底层原理</strong>：</p>
+<p>浏览器提供了一种机制，允许我们在主线程之外开辟独立的后台运行线程（Web Worker）。主线程负责处理 DOM 和响应用户点击，Worker 线程负责埋头算数。两者互不干扰，通过 <code>postMessage</code> 发送消息进行通信。</p>
+</li>
+<li>
+<p><strong>代码实现</strong>：</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 1. main.js (主线程代码)</span>
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'worker.js'</span>); <span class="hljs-comment">// 开启后台线程</span>
+
+<span class="hljs-comment">// 监听后台线程算完后发回来的结果</span>
+worker.<span class="hljs-property">onmessage</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'收到计算结果:'</span>, event.<span class="hljs-property">data</span>);
+  <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'result'</span>).<span class="hljs-property">textContent</span> = event.<span class="hljs-property">data</span>;
+};
+
+<span class="hljs-comment">// 触发后台线程开始干活</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'btn'</span>).<span class="hljs-property">onclick</span> = <span class="hljs-function">() =></span> {
+  worker.<span class="hljs-title function_">postMessage</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">'START_HEAVY_CALCULATION'</span>, <span class="hljs-attr">payload</span>: <span class="hljs-number">100000000</span> });
+};
+
+<span class="hljs-comment">// 2. worker.js (后台线程代码)</span>
+<span class="hljs-comment">// 注意：这里没有 window 和 document 对象，无法操作 DOM</span>
+self.<span class="hljs-property">onmessage</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">data</span>.<span class="hljs-property">type</span> === <span class="hljs-string">'START_HEAVY_CALCULATION'</span>) {
+    <span class="hljs-keyword">let</span> result = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// 模拟耗时巨大的计算</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; event.<span class="hljs-property">data</span>.<span class="hljs-property">payload</span>; i++) {
+      result += i;
+    }
+    <span class="hljs-comment">// 将结果发回主线程</span>
+    self.<span class="hljs-title function_">postMessage</span>(result);
+  }
+};
+</code></pre>
+<ul>
+<li>
+<p><strong>边界与成本分析</strong>：</p>
+<p>Web Worker 并非万能。它最大的成本在于<strong>通信开销</strong>。主线程和 Worker 之间传递数据时，浏览器底层使用的是“结构化克隆算法”，会把数据序列化再反序列化。如果你传递了一个体积巨大的 JSON 对象，单纯拷贝这个对象所消耗的性能，可能比计算本身还要高。因此，Worker 适用于“计算逻辑极其复杂，但输入输出数据量相对可控”的场景。</p>
+</li>
+</ul>
+<hr>
+<h3 id="二-现代懒加载基石intersection-observer-api"><a href="#二-现代懒加载基石intersection-observer-api">二、 现代懒加载基石：Intersection Observer API</a></h3>
+<p>传统的图片懒加载或触底加载更多，通常是监听页面的 <code>scroll</code> 事件，并在回调中调用 <code>element.getBoundingClientRect()</code> 来判断元素是否进入了可视区域。我们在前一次探讨中明确过，读取布局属性会<strong>强制触发浏览器的同步重排</strong>，导致极其严重的性能损耗。</p>
+<ul>
+<li>
+<p><strong>底层原理</strong>：</p>
+<p><code>Intersection Observer</code>（交叉观察器）是浏览器提供的原生 API。它的核心优势在于<strong>异步执行</strong>。它将元素的可见性计算交给了浏览器底层（甚至是另外的线程）去处理，当目标元素与视口（Viewport）发生交叉时，才会异步地触发回调函数。这彻底避开了主线程的滚动事件监听和同步重排。</p>
+</li>
+<li>
+<p><strong>代码实现</strong>：</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// HTML 结构：真实的图片地址放在 data-src 中</span>
+<span class="hljs-comment">// &#x3C;img class="lazy-image" data-src="real-image.jpg" src="placeholder.png" /></span>
+
+<span class="hljs-keyword">const</span> images = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'.lazy-image'</span>);
+
+<span class="hljs-comment">// 1. 创建观察器</span>
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-function">(<span class="hljs-params">entries, observer</span>) =></span> {
+  entries.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">entry</span> =></span> {
+    <span class="hljs-comment">// isIntersecting 为 true 表示元素进入了可视区域</span>
+    <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
+      <span class="hljs-keyword">const</span> img = entry.<span class="hljs-property">target</span>;
+      <span class="hljs-comment">// 替换真实图片地址</span>
+      img.<span class="hljs-property">src</span> = img.<span class="hljs-property">dataset</span>.<span class="hljs-property">src</span>; 
+      <span class="hljs-comment">// 加载完毕后，停止观察该元素，节省内存</span>
+      observer.<span class="hljs-title function_">unobserve</span>(img); 
+    }
+  });
+}, {
+  <span class="hljs-comment">// rootMargin: '50px' // 可以在距离可视区域还有 50px 时提前触发加载</span>
+});
+
+<span class="hljs-comment">// 2. 遍历并观察所有图片</span>
+images.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">img</span> =></span> observer.<span class="hljs-title function_">observe</span>(img));
+</code></pre>
+<hr>
+<h3 id="三-掌控网络请求优先级preload-与-prefetch"><a href="#三-掌控网络请求优先级preload-与-prefetch">三、 掌控网络请求优先级：Preload 与 Prefetch</a></h3>
+<p>浏览器解析 HTML 是从上到下按顺序进行的。如果某些核心资源（比如首屏关键的字体文件、深层嵌套的 CSS）藏得很深，浏览器往往很晚才发现并去下载它，拖慢了整体渲染。</p>
+<ul>
+<li>
+<p><strong>底层原理</strong>：</p>
+<p>通过在 HTML 的 <code>&#x3C;head></code> 标签中添加特定的 <code>&#x3C;link></code>，我们可以<strong>干预浏览器的默认下载调度</strong>，强行提升或降低某些资源的下载优先级。</p>
+<ul>
+<li>
+<p><strong>Preload (预加载)</strong>：告诉浏览器“这个资源在<strong>当前页面</strong>马上就要用到，请立刻用最高优先级下载它”。</p>
+</li>
+<li>
+<p><strong>Prefetch (预获取)</strong>：告诉浏览器“这个资源在<strong>下一个页面</strong>可能会用到，请在网络空闲时，顺便把它下载下来放在缓存里”。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>典型案例</strong>：</p>
+<p>首屏有一张极其重要的 Banner 轮播图，但它的加载逻辑写在一个外部 JS 脚本里。按照常规流程，浏览器得先下载并执行完 JS，才会去请求图片。使用 Preload 可以打破这种串行等待。</p>
+</li>
+<li>
+<p><strong>代码实现</strong>：</p>
+</li>
+</ul>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/hero-banner.jpg"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"image"</span>></span>
+  
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preload"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/custom-font.woff2"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"font"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"font/woff2"</span> <span class="hljs-attr">crossorigin</span>></span>
+  
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"prefetch"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/login-chunk.js"</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"script"</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+</code></pre>
+<ul>
+<li>
+<p><strong>边界与风险评估</strong>：</p>
+<p>这属于“危险的优化武器”。如果滥用 <code>preload</code>（把所有资源都设为预加载），会导致网络通道拥堵，真正急需的资源反而被抢占带宽。而 <code>prefetch</code> 则存在机会成本：如果用户最终没有点击进入下一个页面，你就在白白浪费用户的流量和手机电量。必须基于真实的用户行为分析（如高频点击路径）来精准投放。</p>
+</li>
+</ul>
+<hr>
+<h3 id="四-帧级别的任务调度时间分片-time-slicing"><a href="#四-帧级别的任务调度时间分片-time-slicing">四、 帧级别的任务调度：时间分片 (Time Slicing)</a></h3>
+<p>如果后端一次性给你抛来 10 万条数据，要求你必须在前端做复杂处理然后再渲染（假设因为某些客观原因不能用虚拟列表），常规的循环会导致页面直接卡死几秒钟。</p>
+<ul>
+<li>
+<p><strong>底层原理</strong>：</p>
+<p>大多数显示器的刷新率是 60Hz，也就是每秒刷新 60 次。这意味着浏览器大约每 <strong>16.6 毫秒</strong>（1000ms / 60）就要绘制一帧。如果 JS 执行时间超过了 16.6 毫秒，浏览器就赶不上绘制下一帧，画面就会卡顿掉帧。</p>
+<p><code>requestAnimationFrame</code> (rAF) 是一个原生 API，它能确保在浏览器每次重绘之前执行回调。我们可以利用它，把 10 万条数据的处理任务，切碎成几千个小任务。每次只在 16.6 毫秒的空闲时间里处理一小批数据，处理完就把主线程控制权交还给浏览器去渲染，下一帧再接着处理。</p>
+</li>
+<li>
+<p><strong>代码实现</strong>：</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> totalData = <span class="hljs-number">100000</span>; <span class="hljs-comment">// 总数据量</span>
+<span class="hljs-keyword">const</span> chunk = <span class="hljs-number">500</span>; <span class="hljs-comment">// 每次处理 500 条</span>
+<span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>; <span class="hljs-comment">// 当前处理到的索引</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">renderList</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 计算这一次分片要处理的数据边界</span>
+  <span class="hljs-keyword">const</span> end = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(index + chunk, totalData);
+  
+  <span class="hljs-comment">// 执行一小批任务</span>
+  <span class="hljs-keyword">for</span> (; index &#x3C; end; index++) {
+    <span class="hljs-comment">// ... 执行数据处理或 DOM 操作</span>
+  }
+
+  <span class="hljs-comment">// 如果还有数据没处理完，安排在下一帧继续执行</span>
+  <span class="hljs-keyword">if</span> (index &#x3C; totalData) {
+    <span class="hljs-title function_">requestAnimationFrame</span>(renderList);
+  }
+}
+
+<span class="hljs-comment">// 启动时间分片</span>
+<span class="hljs-title function_">requestAnimationFrame</span>(renderList);
+</code></pre>
+<p>通过这种方式，原本长达几秒的同步阻塞，变成了分布在几秒内的无数个极其微小的任务间隔，页面在这个过程中依然能响应用户的点击和滚动，极大地挽救了交互体验。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"前端性能优化方案（高级）"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1745," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-突破单线程瓶颈web-worker-处理密集型计算","text":"一、 突破单线程瓶颈：Web Worker 处理密集型计算"},{"level":3,"id":"二-现代懒加载基石intersection-observer-api","text":"二、 现代懒加载基石：Intersection Observer API"},{"level":3,"id":"三-掌控网络请求优先级preload-与-prefetch","text":"三、 掌控网络请求优先级：Preload 与 Prefetch"},{"level":3,"id":"四-帧级别的任务调度时间分片-time-slicing","text":"四、 帧级别的任务调度：时间分片 (Time Slicing)"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

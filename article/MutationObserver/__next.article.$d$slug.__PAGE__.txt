@@ -1,0 +1,129 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T247e,<p>在 Web 开发中，<code>MutationObserver</code> 就像是一个潜伏在 DOM 树里的“私家侦探”。它不参与业务逻辑的直接执行，而是静静地观察你指定的 DOM 节点，一旦节点发生了增删、属性修改或文本变动，它就会立刻记录下来并执行你预设的回调。</p>
+<p>相比于已经废弃的 <code>MutationEvents</code>（那玩意儿每变动一下就触发一次，非常消耗性能），<code>MutationObserver</code> 是<strong>异步</strong>执行的。它会等待当前所有 DOM 操作完成后，把所有的变动打包成一个“批次”发给你，这让它在处理高频变动时表现得非常优雅。</p>
+<hr>
+<h2 id="核心应用场景与代码实现"><a href="#核心应用场景与代码实现">核心应用场景与代码实现</a></h2>
+<h3 id="1-自动滚动的聊天窗口或日志监控"><a href="#1-自动滚动的聊天窗口或日志监控">1. 自动滚动的聊天窗口或日志监控</a></h3>
+<p>这是最经典的场景。当新消息不断插入容器底部时，你需要实时计算滚动高度并将窗口滚动到最下方。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> targetNode = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'chat-box'</span>);
+
+<span class="hljs-comment">// 配置观察选项：只观察子节点的变动</span>
+<span class="hljs-keyword">const</span> config = { <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span> };
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">callback</span> = (<span class="hljs-params">mutationsList</span>) => {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> mutation <span class="hljs-keyword">of</span> mutationsList) {
+        <span class="hljs-keyword">if</span> (mutation.<span class="hljs-property">type</span> === <span class="hljs-string">'childList'</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'检测到新消息插入'</span>);
+            <span class="hljs-comment">// 自动滚动到底部</span>
+            targetNode.<span class="hljs-property">scrollTop</span> = targetNode.<span class="hljs-property">scrollHeight</span>;
+        }
+    }
+};
+
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(callback);
+observer.<span class="hljs-title function_">observe</span>(targetNode, config);
+</code></pre>
+<h3 id="2-防止非法篡改-dom如水印保护"><a href="#2-防止非法篡改-dom如水印保护">2. 防止非法篡改 DOM（如水印保护）</a></h3>
+<p>很多企业级应用会在页面上覆盖一层透明的“水印” DIV。聪明的用户可能会通过 Chrome 控制台直接删掉这个节点或修改其 CSS。<code>MutationObserver</code> 可以瞬间发现并“打回原形”。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> watermark = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'watermark'</span>);
+
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(<span class="hljs-function">(<span class="hljs-params">mutations</span>) =></span> {
+    mutations.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">mutation</span>) =></span> {
+        <span class="hljs-comment">// 如果水印被删除，或者样式被修改</span>
+        <span class="hljs-keyword">if</span> (mutation.<span class="hljs-property">removedNodes</span>.<span class="hljs-property">length</span> || mutation.<span class="hljs-property">type</span> === <span class="hljs-string">'attributes'</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">warn</span>(<span class="hljs-string">'警告：检测到非法篡改水印！正在恢复...'</span>);
+            <span class="hljs-comment">// 停止观察，防止无限递归</span>
+            observer.<span class="hljs-title function_">disconnect</span>();
+            <span class="hljs-comment">// 这里可以重新渲染水印，或者直接刷新页面</span>
+            <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(watermark);
+            <span class="hljs-comment">// 重新开始观察</span>
+            observer.<span class="hljs-title function_">observe</span>(watermark, config);
+        }
+    });
+});
+
+observer.<span class="hljs-title function_">observe</span>(watermark, { <span class="hljs-attr">attributes</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span> });
+</code></pre>
+<h3 id="3-第三方脚本的动态注入监控"><a href="#3-第三方脚本的动态注入监控">3. 第三方脚本的动态注入监控</a></h3>
+<p>如果你在做一个浏览器插件或者基础架构监控，你需要知道页面上什么时候多出了一个 <code>&#x3C;script></code> 标签（可能是广告插件或统计代码），从而进行拦截或分析。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(<span class="hljs-function">(<span class="hljs-params">mutations</span>) =></span> {
+    mutations.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">mutation</span>) =></span> {
+        mutation.<span class="hljs-property">addedNodes</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">node</span>) =></span> {
+            <span class="hljs-keyword">if</span> (node.<span class="hljs-property">tagName</span> === <span class="hljs-string">'SCRIPT'</span>) {
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`检测到脚本注入: <span class="hljs-subst">${node.src}</span>`</span>);
+                <span class="hljs-comment">// 可以在这里进行安全过滤</span>
+            }
+        });
+    });
+});
+
+observer.<span class="hljs-title function_">observe</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-property">documentElement</span>, { <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span> });
+</code></pre>
+<hr>
+<h2 id="避坑指南性能与细节"><a href="#避坑指南性能与细节">避坑指南：性能与细节</a></h2>
+<p>虽然 <code>MutationObserver</code> 性能很好，但如果不注意以下两点，还是会出问题：</p>
+<ol>
+<li>
+<p><strong>无限递归循环</strong>：如果你在 <code>MutationObserver</code> 的回调函数里又去修改了被观察的那个 DOM，那么回调会再次被触发。</p>
+<ul>
+<li><strong>对策</strong>：在修改前先调用 <code>observer.disconnect()</code>，修改完后再 <code>observe()</code>；或者在回调逻辑中加入判断条件。</li>
+</ul>
+</li>
+<li>
+<p><strong>内存泄漏</strong>：当你的 DOM 节点被销毁时，虽然现代浏览器会自动回收，但养成手动销毁观察者的习惯总是好的。</p>
+<ul>
+<li><strong>操作</strong>：在组件卸载或逻辑结束时执行 <code>observer.disconnect()</code>。</li>
+</ul>
+</li>
+</ol>
+<h3 id="常用参数速查表"><a href="#常用参数速查表">常用参数速查表</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>参数</strong></th>
+<th><strong>含义</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>childList</code></strong></td>
+<td>观察子节点的增删（最常用）。</td>
+</tr>
+<tr>
+<td><strong><code>attributes</code></strong></td>
+<td>观察属性的变化（比如 class, style, data-id）。</td>
+</tr>
+<tr>
+<td><strong><code>subtree</code></strong></td>
+<td>深度优先，不仅观察目标节点，还观察它所有的后代节点。</td>
+</tr>
+<tr>
+<td><strong><code>characterData</code></strong></td>
+<td>观察文本节点的内容变化。</td>
+</tr>
+<tr>
+<td><strong><code>attributeOldValue</code></strong></td>
+<td>记录变动前的属性值，方便对比。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><code>MutationObserver</code> 的本质是提供了一种<strong>非侵入式</strong>的 DOM 监控手段，它让你不需要去改写原有的业务逻辑（比如不用在每一个 <code>appendChild</code> 后面都写一段逻辑），就能对页面变动做出响应。</p>
+<p>你想了解一下它与 <code>IntersectionObserver</code>（观察元素是否进入视野）在性能优化上的区别，还是想看它在 Vue/React 框架里的具体封装案例？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"MutationObserver"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-25T00:00:00.000Z","children":"2026年2月25日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[919," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"核心应用场景与代码实现","text":"核心应用场景与代码实现"},{"level":3,"id":"1-自动滚动的聊天窗口或日志监控","text":"1. 自动滚动的聊天窗口或日志监控"},{"level":3,"id":"2-防止非法篡改-dom如水印保护","text":"2. 防止非法篡改 DOM（如水印保护）"},{"level":3,"id":"3-第三方脚本的动态注入监控","text":"3. 第三方脚本的动态注入监控"},{"level":2,"id":"避坑指南性能与细节","text":"避坑指南：性能与细节"},{"level":3,"id":"常用参数速查表","text":"常用参数速查表"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

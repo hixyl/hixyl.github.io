@@ -1,0 +1,386 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T7c3f,<p>好的，我们来彻底讲清楚 JavaScript 中的原型 (prototype) 和原型链 (prototype chain)。</p>
+<p>我会用一个尽量形象的方式，从根本原因讲起，让你不仅知道“是什么”，更理解“为什么是这样”。</p>
+<hr>
+<h3 id="1-从一个问题开始javascript-如何实现共享与继承"><a href="#1-从一个问题开始javascript-如何实现共享与继承">1. 从一个问题开始：JavaScript 如何实现“共享”与“继承”？</a></h3>
+<p>想象一下，你正在用一个构造函数（可以暂时理解为“类”的早期雏形）来创建很多个“人”的对象：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">name, age</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+  <span class="hljs-comment">// 假设我们想让每个人都能打招呼</span>
+  <span class="hljs-comment">// this.sayHello = function() {</span>
+  <span class="hljs-comment">//   console.log("你好，我是" + this.name);</span>
+  <span class="hljs-comment">// };</span>
+}
+
+<span class="hljs-keyword">let</span> person1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"张三"</span>, <span class="hljs-number">30</span>);
+<span class="hljs-keyword">let</span> person2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"李四"</span>, <span class="hljs-number">25</span>);
+</code></pre>
+<p>现在，我们希望 <code>person1</code> 和 <code>person2</code> 都有一个 <code>sayHello</code> 的方法。最直接的想法是把 <code>sayHello</code> 放在 <code>Person</code> 函数内部（如上面注释掉的代码）。</p>
+<p>但这会带来一个严重的问题：每 <code>new</code> 一个 <code>Person</code> 实例，就会在内存里创建一个新的 <code>sayHello</code> 函数。如果有一万个实例，内存里就有一万个功能完全相同的函数。这显然是巨大的资源浪费。</p>
+<p><strong>核心问题：</strong> 如何让所有 <code>Person</code> 的实例都能“共享”同一个 <code>say-Hello</code> 函数，而不是各自持有一个？</p>
+<p>为了解决这个问题，JavaScript 的设计者引入了 <strong>原型 (prototype)</strong> 机制。</p>
+<hr>
+<h3 id="2-核心概念原型-prototype"><a href="#2-核心概念原型-prototype">2. 核心概念：原型 (Prototype)</a></h3>
+<p>JavaScript 的规定是：<strong>每个函数（Function）都天生自带一个 <code>prototype</code> 属性，这个属性指向一个对象</strong>。这个对象，我们就称之为 <strong>原型对象</strong>。</p>
+<p>这个原型对象有什么用呢？</p>
+<p>它的作用就是：作为由这个函数创建出来的所有实例的“公共仓库”。</p>
+<p>我们可以把需要共享的属性和方法，直接添加到这个原型对象上。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">name, age</span>) {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+}
+
+<span class="hljs-comment">// 不在构造函数内部定义，而是加在它的原型对象上</span>
+<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">sayHello</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"你好，我是"</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+};
+
+<span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">species</span> = <span class="hljs-string">"人类"</span>;
+
+<span class="hljs-keyword">let</span> person1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"张三"</span>, <span class="hljs-number">30</span>);
+<span class="hljs-keyword">let</span> person2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"李四"</span>, <span class="hljs-number">25</span>);
+
+person1.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// 输出: 你好，我是张三</span>
+person2.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// 输出: 你好，我是李四</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person1.<span class="hljs-property">species</span>); <span class="hljs-comment">// 输出: 人类</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person2.<span class="hljs-property">species</span>); <span class="hljs-comment">// 输出: 人类</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person1.<span class="hljs-property">sayHello</span> === person2.<span class="hljs-property">sayHello</span>); <span class="hljs-comment">// 输出: true</span>
+</code></pre>
+<p>看，现在 <code>sayHello</code> 和 <code>species</code> 这两个属性被所有实例共享了，内存中只存在一份。问题解决了。</p>
+<p>那么，新的问题来了：<code>person1</code> 明明自己身上没有 <code>sayHello</code> 方法，它是怎么找到并调用 <code>Person.prototype</code> 上的 <code>sayHello</code> 方法的呢？</p>
+<p>这就引出了下一个概念：<strong><code>__proto__</code></strong> 和 <strong>原型链</strong>。</p>
+<hr>
+<h3 id="3-连接的桥梁__proto__-与原型链-prototype-chain"><a href="#3-连接的桥梁__proto__-与原型链-prototype-chain">3. 连接的桥梁：<code>__proto__</code> 与原型链 (Prototype Chain)</a></h3>
+<h4 id="__proto__-隐式原型"><a href="#__proto__-隐式原型"><code>__proto__</code> (隐式原型)</a></h4>
+<p>JavaScript 的规定是：<strong>每个对象（Object）都天生自带一个 <code>__proto__</code> 属性，这个属性指向创建它的那个构造函数的原型对象</strong>。</p>
+<ul>
+<li>
+<p><code>person1</code> 是由 <code>new Person()</code> 创建的，所以 <code>person1</code> 的 <code>__proto__</code> 属性指向 <code>Person.prototype</code>。</p>
+</li>
+<li>
+<p><code>person2</code> 也是由 <code>new Person()</code> 创建的，所以 <code>person2</code> 的 <code>__proto__</code> 属性也指向 <code>Person.prototype</code>。</p>
+</li>
+</ul>
+<p>我们可以验证一下：</p>
+<p>console.log(person1.<strong>proto</strong> === Person.prototype); // 输出: true</p>
+<p>这个 <code>__proto__</code> 属性就是实例对象和它的“公共仓库”（原型对象）之间连接的桥梁。</p>
+<blockquote>
+<p><strong>注意</strong>：<code>__proto__</code> 是一个非标准的、但被广泛实现的属性，用于我们理解和调试。在现代 JavaScript 中，推荐使用 <code>Object.getPrototypeOf(obj)</code> 来获取一个对象的原型。</p>
+</blockquote>
+<h4 id="原型链-prototype-chain"><a href="#原型链-prototype-chain">原型链 (Prototype Chain)</a></h4>
+<p>现在我们来完整地描述一下，当执行 <code>person1.sayHello()</code> 时，JavaScript 引擎到底做了什么：</p>
+<ol>
+<li>
+<p><strong>首先，在 <code>person1</code> 对象自身上查找</strong>，看有没有 <code>sayHello</code> 属性。——没有。</p>
+</li>
+<li>
+<p><strong>然后，顺着 <code>person1</code> 的 <code>__proto__</code> 属性</strong>，找到了 <code>Person.prototype</code> 这个对象。</p>
+</li>
+<li>
+<p><strong>在 <code>Person.prototype</code> 对象上查找</strong>，看有没有 <code>sayHello</code> 属性。——找到了！于是就执行它。</p>
+</li>
+</ol>
+<p>这个 <strong>“顺着 <code>__proto__</code> 不断向上查找属性的过程”</strong> ，形成的这个链式结构，就是 <strong>原型链</strong>。</p>
+<h4 id="链的终点是什么"><a href="#链的终点是什么">链的终点是什么？</a></h4>
+<p>我们继续这个查找过程。如果在 <code>Person.prototype</code> 上也找不到呢？比如，我们调用一个不存在的方法 <code>person1.toString()</code>（假设我们没在 <code>Person.prototype</code> 上定义过它）。</p>
+<ol>
+<li>
+<p>在 <code>person1</code> 自身上查找 <code>toString</code>。——没有。</p>
+</li>
+<li>
+<p>顺着 <code>person1.__proto__</code> 找到 <code>Person.prototype</code>，在它上面查找。——没有。</p>
+</li>
+<li>
+<p><strong>查找不会停止！</strong> 引擎会继续查找 <code>Person.prototype</code> 这个对象自身的 <code>__proto__</code>。</p>
+</li>
+</ol>
+<p><code>Person.prototype</code> 本身也是一个普通对象，它的构造函数是 <code>Object</code>。所以，<code>Person.prototype.__proto__</code> 指向的是 <code>Object.prototype</code>。</p>
+<ol start="4">
+<li><strong>在 <code>Object.prototype</code> 对象上查找</strong> <code>toString</code>。——找到了！JavaScript 内置的 <code>toString</code> 方法就在这里。于是执行它。</li>
+</ol>
+<p>如果连 <code>Object.prototype</code> 上都找不到呢？那引擎就会去看 <code>Object.prototype</code> 的 <code>__proto__</code>，而 <code>Object.prototype.__proto__</code> 是 <code>null</code>。</p>
+<p>当查找到 <code>null</code> 时，整个查找过程结束，如果还没找到，就返回 <code>undefined</code>。</p>
+<p>所以，<strong>原型链的终点是 <code>null</code></strong>。</p>
+<p>完整的查找链条就像这样：</p>
+<p>person1 -> Person.prototype -> Object.prototype -> null</p>
+<hr>
+<h3 id="4-梳理关系图与关键等式"><a href="#4-梳理关系图与关键等式">4. 梳理关系图与关键等式</a></h3>
+<p>为了彻底清晰，我们总结一下几个关键角色的关系：</p>
+<ul>
+<li>
+<p><strong>构造函数 (Constructor)</strong>：比如 <code>Person</code> 函数。</p>
+</li>
+<li>
+<p><strong>原型对象 (Prototype Object)</strong>：比如 <code>Person.prototype</code>。</p>
+</li>
+<li>
+<p><strong>实例 (Instance)</strong>：比如 <code>person1</code>。</p>
+</li>
+</ul>
+<p>它们之间存在一个“黄金三角”关系：</p>
+<ol>
+<li>
+<p><code>person1.__proto__ === Person.prototype</code></p>
+<ul>
+<li>实例的 <code>__proto__</code> 指向构造函数的 <code>prototype</code>。</li>
+</ul>
+</li>
+<li>
+<p><code>Person.prototype.constructor === Person</code></p>
+<ul>
+<li>原型对象上有一个 <code>constructor</code> 属性，指回它自己的构造函数。这是一个“回程票”。</li>
+</ul>
+</li>
+</ol>
+<p>这个关系图可以帮助你理解一切：</p>
+<pre><code class="hljs language-lua">+<span class="hljs-comment">----------------+      .prototype      +--------------------+</span>
+|                | <span class="hljs-comment">-------------------> |                    |</span>
+|   Person       |                      |  Person.prototype  |
+| (构造函数)     | &#x3C;<span class="hljs-comment">------------------- |  (原型对象)        |</span>
+|                |      .constructor    |                    |
++<span class="hljs-comment">----------------+                      +--------------------+</span>
+      ^                                          ^
+      | .constructor (间接)                        | .__proto__
+      |                                          |
++<span class="hljs-comment">-----|----------+                      +--------|---------+</span>
+|                |                      |                  |
+|   person1      |                      |  person2         |
+|   (实例)       |                      |  (实例)          |
+|                |                      |                  |
++<span class="hljs-comment">----------------+                      +------------------+</span>
+</code></pre>
+<hr>
+<h3 id="5-现代-javascript-中的-class"><a href="#5-现代-javascript-中的-class">5. 现代 JavaScript 中的 <code>class</code></a></h3>
+<p>你可能会说，现在写代码都用 <code>class</code> 了，还需要懂这些吗？</p>
+<p><strong>非常需要。</strong> 因为 ES6 的 <code>class</code> 语法，本质上就是原型继承的 <strong>语法糖 (Syntactic Sugar)</strong>。它的底层实现原理，完完全全就是我们上面讲的这一套。</p>
+<p>我们用 <code>class</code> 重写上面的例子：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+  }
+
+  <span class="hljs-comment">// 写在这里的方法，其实就是加在了 Person.prototype 上</span>
+  <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"你好，我是"</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+  }
+}
+
+<span class="hljs-keyword">let</span> person1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"张三"</span>, <span class="hljs-number">30</span>);
+person1.<span class="hljs-title function_">sayHello</span>();
+
+<span class="hljs-comment">// 底层原理完全一样</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(person1.<span class="hljs-property">__proto__</span> === <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// 输出: true</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-title class_">Person</span>); <span class="hljs-comment">// 输出: "function"，证明 class 本质还是个函数</span>
+</code></pre>
+<p><code>class</code> 语法让代码看起来更像传统的面向对象语言，更清晰，更易于组织，但它并没有创造新的继承模型。理解原型链，才能真正理解 <code>class</code> 的行为，也才能在遇到复杂继承问题时，知道如何去调试和解决。</p>
+<h3 id="总结与核心观点"><a href="#总结与核心观点">总结与核心观点</a></h3>
+<ol>
+<li>
+<p><strong>原型 (Prototype) 的本质目的</strong>：是为了 <strong>高效地共享属性和方法</strong>，解决 JavaScript 中对象创建的内存浪费问题。它是一种实现继承的机制。</p>
+</li>
+<li>
+<p><strong>两个关键属性</strong>：</p>
+<ul>
+<li>
+<p><code>prototype</code>：<strong>函数独有</strong>，指向一个对象（原型对象），这个对象是未来由该函数创建的所有实例的“公共仓库”。</p>
+</li>
+<li>
+<p><code>__proto__</code>：<strong>对象独有</strong>，指向创建该对象的构造函数的 <code>prototype</code>。它是连接实例和原型对象的桥梁。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>原型链 (Prototype Chain) 的本质</strong>：一个 <strong>属性查找机制</strong>。当你访问一个对象的属性时，如果对象自身没有，它就会沿着 <code>__proto__</code> 这条链一直向上查找，直到找到为止，或者到达链的终点 <code>null</code>。</p>
+</li>
+<li>
+<p><strong>最终选择</strong>：在现代开发中，<strong>你应该优先使用 <code>class</code> 语法</strong>。它更简洁、清晰，且不易出错。但是，你必须深刻理解其背后的原型和原型链机制，这能让你写出更健壮、更高性能的代码，并且在面对看似“诡异”的 bug 时，能够从容地从语言底层原理去分析和定位问题。不理解原型链而直接使用 <code>class</code>，就像一个会开车但完全不懂发动机原理的司机，日常驾驶没问题，一旦车子出状况就束手无策。</p>
+</li>
+</ol>
+<p>我们来深入地拆解一下 <code>Person.prototype.constructor === Person</code> 这句代码，以及它背后“回程票”这个精妙的比喻。</p>
+<p>为了彻底搞明白，我们不能只看这一个点，而是要从 JavaScript 创建对象的核心机制出发，一步步推导出这个结论。</p>
+<h3 id="第一步理解两个关键角色构造函数和原型对象"><a href="#第一步理解两个关键角色构造函数和原型对象">第一步：理解两个关键角色：构造函数和原型对象</a></h3>
+<p>首先，我们有两个主角：</p>
+<ol>
+<li>
+<p><strong>构造函数 (Constructor Function):</strong> 在这个例子里就是 <code>Person</code>。它本质上就是一个普通的 JavaScript 函数，但我们约定俗成地用 <code>new</code> 关键字来调用它，目的是为了创建特定类型的对象实例。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-ini">function Person(name) {
+  <span class="hljs-attr">this.name</span> = name<span class="hljs-comment">;</span>
+}
+</code></pre>
+</li>
+<li>
+<p><strong>原型对象 (Prototype Object):</strong> 在你定义 <code>Person</code> 这个函数的时候，JavaScript 引擎会“偷偷地”帮你做一件事：创建一个与之配对的普通对象，并把它赋值给 <code>Person</code> 函数的一个特殊属性——<code>prototype</code>。</p>
+<p>这个对象，我们称之为 <code>Person</code> 的原型对象。也就是 <code>Person.prototype</code>。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 即使你只写了一行 function Person() {}</span>
+<span class="hljs-comment">// JS 引擎在背后已经帮你创建了 Person.prototype 这个对象</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>); <span class="hljs-comment">// "object"</span>
+</code></pre>
+</li>
+</ol>
+<p>所以，在一切开始之前，我们就有了这样一种关系：<strong>构造函数 <code>Person</code> 通过自身的 <code>prototype</code> 属性，单向指向了原型对象 <code>Person.prototype</code>。</strong></p>
+<pre><code class="hljs language-javascript">           .<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>
+<span class="hljs-title class_">Person</span>  --------------->  <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>
+(构造函数)                 (原型对象)
+</code></pre>
+<h3 id="第二步建立回程票--constructor-属性的诞生"><a href="#第二步建立回程票--constructor-属性的诞生">第二步：建立“回程票” —— <code>constructor</code> 属性的诞生</a></h3>
+<p>光有单程票还不够。为了让关系更紧密，JavaScript 引擎在创建 <code>Person.prototype</code> 这个对象时，又多做了一件至关重要的事：</p>
+<p><strong>在这个原型对象（<code>Person.prototype</code>）上，自动添加一个名为 <code>constructor</code> 的属性，让它反过来指向构造函数 <code>Person</code> 本身。</strong></p>
+<p>这就是“回程票”的由来。</p>
+<p>我们可以把这个关系可视化：</p>
+<pre><code class="hljs language-javascript">           .<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>
+<span class="hljs-title class_">Person</span>  &#x3C;--------------->  <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>
+(构造函数)                 (原型对象)
+           .<span class="hljs-property">constructor</span>
+</code></pre>
+<p>现在，<code>Person.prototype</code> 这个原型对象，通过它的 <code>constructor</code> 属性，就能准确地“知道”自己是由哪个构造函数所创建和管理的。</p>
+<p>所以，<code>Person.prototype.constructor === Person</code> 这句代码的结果为 <code>true</code>，就变得理所当然了。它验证的正是这条“回程”的链接是否建立。</p>
+<p><strong>“回程票”这个比喻的精妙之处在于：</strong></p>
+<ul>
+<li>
+<p><strong>出发点是 <code>Person</code></strong>：我们从 <code>Person</code> 出发，通过 <code>.prototype</code> 这张“去程票”，到达了原型对象 <code>Person.prototype</code> 这个目的地。</p>
+</li>
+<li>
+<p><strong>目的地有回程信息</strong>：在 <code>Person.prototype</code> 这个目的地，我们找到了一张名为 <code>.constructor</code> 的“回程票”。</p>
+</li>
+<li>
+<p><strong>回程票的目的地是出发点</strong>：这张回程票的目的地，恰好就是我们最初的出发点 <code>Person</code>。</p>
+</li>
+</ul>
+<h3 id="第三步这张回程票有什么用"><a href="#第三步这张回程票有什么用">第三步：这张“回程票”有什么用？</a></h3>
+<p>你可能会问，为什么要设计这么一个看似“绕圈子”的机制？这张“回程票”在实际开发中非常有用。</p>
+<p>它的核心价值体现在 <strong>实例对象</strong> 上。</p>
+<p>当我们创建一个实例时：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-ini">const <span class="hljs-attr">p1</span> = new Person(<span class="hljs-string">'Alice'</span>)<span class="hljs-comment">;</span>
+</code></pre>
+<p><code>new</code> 命令会做几件事，其中一件关键的就是：<strong>将实例 <code>p1</code> 的内部 <code>[[Prototype]]</code> 链接（在浏览器中常表现为 <code>__proto__</code>）指向构造函数的原型对象 <code>Person.prototype</code>。</strong></p>
+<pre><code class="hljs language-ini"><span class="hljs-attr">p1.__proto__</span> === Person.prototype<span class="hljs-comment">; // true</span>
+</code></pre>
+<p>现在，我们来看整个图景：</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 构造函数与原型对象的双向链接</span>
+<span class="hljs-title class_">Person</span> &#x3C;---- .<span class="hljs-property">constructor</span> ---- <span class="hljs-title class_">Person</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>
+
+                                   ^
+                                   | .<span class="hljs-property">__proto__</span>
+                                   |
+                                  <span class="hljs-title function_">p1</span>
+                              (实例对象)
+</code></pre>
+<p>由于 <code>p1</code> 自身并没有 <code>constructor</code> 属性，当代码访问 <code>p1.constructor</code> 时，JavaScript 的原型链查找机制会启动：</p>
+<ol>
+<li>
+<p>在 <code>p1</code> 自身上查找 <code>constructor</code>。没找到。</p>
+</li>
+<li>
+<p>沿着 <code>p1</code> 的 <code>__proto__</code> 链接，找到 <code>Person.prototype</code>。</p>
+</li>
+<li>
+<p>在 <code>Person.prototype</code> 上查找 <code>constructor</code>。找到了！它的值是 <code>Person</code> 函数。</p>
+</li>
+<li>
+<p>返回这个值。</p>
+</li>
+</ol>
+<p>所以，<code>p1.constructor === Person</code> 的结果也是 <code>true</code>。</p>
+<p><strong>这带来了两个非常强大的应用场景：</strong></p>
+<ol>
+<li>
+<p><strong>动态识别对象类型：</strong> 如果你只有一个实例 <code>p1</code>，你可以通过 <code>p1.constructor</code> 来得知它是由哪个构造函数创建的。这比 <code>instanceof</code> 在某些复杂场景下（例如跨窗口或<code>iframe</code>）更为可靠。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-arduino">console.<span class="hljs-built_in">log</span>(p<span class="hljs-number">1.</span>constructor.name); <span class="hljs-comment">// "Person"</span>
+</code></pre>
+</li>
+<li>
+<p><strong>基于现有实例创建新实例：</strong> 这是最能体现“回程票”价值的地方。假设你有一个对象，但不知道它的具体构造函数是什么，但你就是想创建一个和它同类型的新对象。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createAnother</span>(<span class="hljs-params">someInstance</span>) {
+  <span class="hljs-comment">// 我不需要知道 someInstance 是 new Person() 还是 new Car()</span>
+  <span class="hljs-comment">// 我只需要用它的 "回程票" (constructor) 就能创建新的同类实例</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> someInstance.<span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-string">'new name'</span></span>);
+}
+
+<span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">'Alice'</span>);
+<span class="hljs-keyword">const</span> p2 = <span class="hljs-title function_">createAnother</span>(p1); <span class="hljs-comment">// p2 是一个新的 Person 实例</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(p2 <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Person</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(p2.<span class="hljs-property">name</span>); <span class="hljs-comment">// "new name"</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="一个常见的陷阱重写原型"><a href="#一个常见的陷阱重写原型">一个常见的陷阱：重写原型</a></h3>
+<p>需要特别注意的是，如果你用一个新对象完全覆盖了 <code>prototype</code>，那么这张“回程票”就会丢失。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Car</span>(<span class="hljs-params"></span>) {}
+
+<span class="hljs-comment">// 错误的做法：直接赋值一个新对象</span>
+<span class="hljs-title class_">Car</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = {
+  <span class="hljs-attr">drive</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Vroom!'</span>);
+  }
+};
+
+<span class="hljs-keyword">const</span> myCar = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Car</span>();
+
+<span class="hljs-comment">// 回程票丢失了！</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Car</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Car</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-comment">// 它指向了新对象的默认构造函数 Object</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Car</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Object</span>); <span class="hljs-comment">// true</span>
+
+<span class="hljs-comment">// 实例也受到了影响</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myCar.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Car</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myCar.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Object</span>); <span class="hljs-comment">// true</span>
+</code></pre>
+<p><strong>正确的做法是，在重写原型时，手动将“回程票”重新贴上：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Bike</span>(<span class="hljs-params"></span>) {}
+
+<span class="hljs-title class_">Bike</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = {
+  <span class="hljs-attr">constructor</span>: <span class="hljs-title class_">Bike</span>, <span class="hljs-comment">// 手动修正 constructor 指向，把回程票贴回来！</span>
+  <span class="hljs-attr">ride</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Riding...'</span>);
+  }
+};
+
+<span class="hljs-keyword">const</span> myBike = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Bike</span>();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Bike</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Bike</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myBike.<span class="hljs-property">constructor</span> === <span class="hljs-title class_">Bike</span>); <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p><code>Person.prototype.constructor === Person</code> 之所以成立，是因为 JavaScript 在创建函数 <code>Person</code> 时，会同步创建一个原型对象 <code>Person.prototype</code>，并在这个原型对象上设置一个 <code>constructor</code> 属性，让它指回到 <code>Person</code> 函数本身。</p>
+<p>这个设计形成了一个闭环，它：</p>
+<ul>
+<li>
+<p><strong>建立了构造函数和其原型对象之间的双向引用。</strong></p>
+</li>
+<li>
+<p><strong>允许实例对象通过原型链访问到自己的构造函数。</strong></p>
+</li>
+<li>
+<p><strong>提供了一种强大的、与具体类型解耦的编程范式，使得我们可以基于一个实例来创建它的同类。</strong></p>
+</li>
+</ul>
+<p>“回程票”的比喻非常贴切地描绘了 <code>constructor</code> 属性的角色：它是一个从原型对象返回其构造函数的路径，是 JavaScript 原型体系中一个基础且优雅的设计。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"原型和原型链"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[3342," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",12," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-从一个问题开始javascript-如何实现共享与继承","text":"1. 从一个问题开始：JavaScript 如何实现“共享”与“继承”？"},{"level":3,"id":"2-核心概念原型-prototype","text":"2. 核心概念：原型 (Prototype)"},{"level":3,"id":"3-连接的桥梁__proto__-与原型链-prototype-chain","text":"3. 连接的桥梁：__proto__ 与原型链 (Prototype Chain)"},{"level":4,"id":"__proto__-隐式原型","text":"__proto__ (隐式原型)"},{"level":4,"id":"原型链-prototype-chain","text":"原型链 (Prototype Chain)"},{"level":4,"id":"链的终点是什么","text":"链的终点是什么？"},{"level":3,"id":"4-梳理关系图与关键等式","text":"4. 梳理关系图与关键等式"},{"level":3,"id":"5-现代-javascript-中的-class","text":"5. 现代 JavaScript 中的 class"},{"level":3,"id":"总结与核心观点","text":"总结与核心观点"},{"level":3,"id":"第一步理解两个关键角色构造函数和原型对象","text":"第一步：理解两个关键角色：构造函数和原型对象"},{"level":3,"id":"第二步建立回程票--constructor-属性的诞生","text":"第二步：建立“回程票” —— constructor 属性的诞生"},{"level":3,"id":"第三步这张回程票有什么用","text":"第三步：这张“回程票”有什么用？"},{"level":3,"id":"一个常见的陷阱重写原型","text":"一个常见的陷阱：重写原型"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,248 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3bbc,<p>我们来系统且深入地剖析 Vite 框架。这不仅仅是一个工具的介绍，更是对其背后思想、技术选型和行业影响的彻底解读。</p>
+<h3 id="核心摘要vite-是什么"><a href="#核心摘要vite-是什么">核心摘要：Vite 是什么？</a></h3>
+<p>Vite (法语，意为 "快") 是一个现代化的前端构建工具。它从根本上改变了开发者在开发环境中的工作方式，提供了<strong>近乎即时</strong>的开发服务器启动和<strong>极速</strong>的热模块更新（HMR），从而极大地提升了开发体验。</p>
+<p>如果用一句话来概括其精髓：<strong>Vite 利用现代浏览器原生支持的 ES 模块（ESM）特性，在开发阶段实现了“无捆绑”的服务模式，将性能瓶颈彻底甩开。</strong></p>
+<hr>
+<h3 id="一问题的根源传统构建工具以-webpack-为例的困境"><a href="#一问题的根源传统构建工具以-webpack-为例的困境">一、问题的根源：传统构建工具（以 Webpack 为例）的困境</a></h3>
+<p>要理解 Vite 的革命性，必须先明白它解决了什么问题。以 Webpack 为代表的传统构建工具，其工作流程可以概括为：</p>
+<ol>
+<li>
+<p><strong>启动：</strong> 从入口文件（如 <code>main.js</code>）开始，分析整个项目的依赖关系，形成一个依赖图（Dependency Graph）。</p>
+</li>
+<li>
+<p><strong>打包（Bundle）：</strong> 将依赖图中的所有模块（JavaScript、CSS、Vue/React 组件等）通过对应的加载器（Loader）和插件（Plugin）处理，最终<strong>捆绑</strong>成一个或少数几个浏览器可识别的 JavaScript 文件（bundle.js）。</p>
+</li>
+<li>
+<p><strong>服务：</strong> 启动一个开发服务器，提供打包后的文件。</p>
+</li>
+</ol>
+<p>这个模式在开发环境中的核心痛点在于 <strong>“捆绑”</strong> 这一步。</p>
+<ul>
+<li>
+<p><strong>启动慢：</strong> 随着项目规模变大，模块数量增多，首次启动时需要遍历和打包的文件越来越多，等待时间从几秒到几十秒甚至数分钟不等。每一次冷启动都是一种煎熬。</p>
+</li>
+<li>
+<p><strong>更新慢：</strong> 当你修改一个文件时，Webpack 需要重新计算相关依赖并重新生成 bundle。即便有热模块更新（HMR），在大型项目中，这个过程也可能需要数秒钟，打断了开发者的心流。</p>
+</li>
+</ul>
+<p>根本原因在于，<strong>Webpack 的模型是为生产环境的最终交付物设计的，却被直接用在了需要高频反馈的开发环境中</strong>。它就像在客人点菜前，就把整个宴会的所有菜品都做好并打包，效率自然低下。</p>
+<h3 id="二vite-的解法两大核心支柱"><a href="#二vite-的解法两大核心支柱">二、Vite 的解法：两大核心支柱</a></h3>
+<p>Vite 通过区分“开发环境”和“生产环境”并采用截然不同的策略，巧妙地解决了上述问题。</p>
+<h4 id="1-开发环境原生-esm--按需编译"><a href="#1-开发环境原生-esm--按需编译">1. 开发环境：原生 ESM + 按需编译</a></h4>
+<p>这是 Vite 的灵魂所在。它颠覆了“先打包，再服务”的传统模式。</p>
+<p><strong>底层原理：</strong></p>
+<ul>
+<li>
+<p><strong>启动阶段：</strong> Vite 启动一个开发服务器，但它<strong>不进行任何打包</strong>。它只做两件轻量级的事情：</p>
+<ol>
+<li>
+<p><strong>依赖预构建（Dependency Pre-bundling）：</strong> Vite 会找到你项目 <code>node_modules</code> 中的第三方依赖（例如 <code>vue</code>, <code>react</code>），并使用速度极快的 <strong>esbuild</strong>（一个用 Go 语言编写的打包器）将它们预构建成标准的 ESM 格式。这一步有两大目的：</p>
+<ul>
+<li>
+<p><strong>格式统一：</strong> 很多第三方包输出的是 CommonJS 或 UMD 格式，浏览器不认。esbuild 将它们统一转换为浏览器友好的 ESM。</p>
+</li>
+<li>
+<p><strong>性能优化：</strong> 像 <code>lodash-es</code> 这样包含数百个小模块的库，如果不预构建，浏览器会同时发出数百个 HTTP 请求，造成网络拥堵。预构建将它们打包成一个或少数几个大模块，大大减少了请求数量。这一步非常快，而且只在依赖变更时才需要重新执行。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>启动服务器：</strong> 完成预构建后，服务器立即就绪。这个过程通常在毫秒级别完成。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>请求处理阶段（按需服务）：</strong></p>
+<ol>
+<li>
+<p>浏览器请求 <code>index.html</code>。</p>
+</li>
+<li>
+<p>Vite 返回 <code>index.html</code>，其中包含 <code>&#x3C;script type="module" src="/src/main.js">&#x3C;/script></code>。注意 <code>type="module"</code>，这告诉浏览器要使用原生 ESM 的方式来加载模块。</p>
+</li>
+<li>
+<p>浏览器解析到 <code>import App from './App.vue'</code>，于是向服务器发送一个对 <code>/src/App.vue</code> 的请求。</p>
+</li>
+<li>
+<p><strong>Vite 服务器拦截这个请求</strong>，对 <code>.vue</code> 文件进行实时编译（转换成浏览器可执行的 JavaScript 和 CSS），然后将编译结果返回给浏览器。</p>
+</li>
+<li>
+<p>浏览器继续解析，遇到新的 <code>import</code>，就继续发送新的请求。Vite 持续按需编译并提供服务。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p><strong>优势体现：</strong></p>
+<ul>
+<li>
+<p><strong>极速启动：</strong> 无需打包应用所有代码，服务器启动时间与项目规模无关。</p>
+</li>
+<li>
+<p><strong>极速 HMR：</strong> 当你修改一个文件时（例如 <code>App.vue</code>），Vite 只需要让浏览器重新请求这一个文件即可。由于原生 ESM 的特性，只有直接或间接导入了该模块的其他模块才会受到影响，更新范围极小且精确。这种更新速度与项目总模块数无关，始终保持飞快。</p>
+</li>
+</ul>
+<p>Vite 的开发服务器就像一个高级的“点餐”餐厅：浏览器点什么（<code>import</code>），Vite 就做什么（编译并提供），绝不提前准备。</p>
+<h4 id="2-生产环境rollup-打包"><a href="#2-生产环境rollup-打包">2. 生产环境：Rollup 打包</a></h4>
+<p>Vite 很清楚，虽然原生 ESM 在开发时表现优异，但在生产环境中，出于对网络性能、加载速度和旧浏览器兼容性的考虑，精细打包仍然是最佳实践。</p>
+<p>因此，在执行 <code>npm run build</code> 时，Vite 使用 <strong>Rollup</strong> 来进行打包。</p>
+<p><strong>为什么是 Rollup？</strong></p>
+<ul>
+<li>
+<p><strong>优化的输出：</strong> Rollup 在 Tree-shaking（摇树优化，即移除未使用的代码）方面做得非常出色，能生成更小、更高效的代码。</p>
+</li>
+<li>
+<p><strong>插件生态成熟：</strong> Rollup 拥有一个成熟且设计良好的插件 API，Vite 自身的大部分功能就是通过其内部插件实现的，同时也兼容大量优秀的社区 Rollup 插件。</p>
+</li>
+<li>
+<p><strong>专注于 ES Moudle：</strong> Rollup 从设计之初就围绕 ESM，这与 Vite 的理念高度一致。</p>
+</li>
+</ul>
+<p>虽然 esbuild 速度更快，但其在代码分割、CSS 处理等方面的生态和功能成熟度还不及 Rollup。因此，Vite 选择了“开发用 esbuild，生产用 Rollup”的黄金组合，兼顾了开发体验和最终产物质量。</p>
+<h3 id="三使用方法入门"><a href="#三使用方法入门">三、使用方法入门</a></h3>
+<p>Vite 的使用极其简单，遵循“约定优于配置”的原则。</p>
+<ol>
+<li>
+<p><strong>创建项目：</strong></p>
+<p>Bash</p>
+<pre><code class="hljs language-sql">npm <span class="hljs-keyword">create</span> vite<span class="hljs-variable">@latest</span>
+</code></pre>
+<p>跟随交互式命令行，选择你需要的框架（Vanilla JS, Vue, React, Preact, Lit, Svelte, Solid 等）。</p>
+</li>
+<li>
+<p><strong>项目结构：</strong></p>
+<ul>
+<li>
+<p><code>index.html</code>：<strong>应用的入口文件</strong>。这与 Webpack 把 JS 作为入口有显著不同。<code>&#x3C;script type="module"></code> 标签指向你的主 JS 文件。</p>
+</li>
+<li>
+<p><code>src/</code>：你的源代码。</p>
+</li>
+<li>
+<p><code>vite.config.js</code> (或 <code>.ts</code>)：Vite 的配置文件，非常简洁。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>核心配置 (<code>vite.config.js</code>)：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-vue'</span> <span class="hljs-comment">// 引入框架插件</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">plugins</span>: [<span class="hljs-title function_">vue</span>()], <span class="hljs-comment">// 注册插件</span>
+  <span class="hljs-attr">resolve</span>: {
+    <span class="hljs-attr">alias</span>: { <span class="hljs-comment">// 配置路径别名</span>
+      <span class="hljs-string">'@'</span>: <span class="hljs-string">'/src'</span>,
+    }
+  },
+  <span class="hljs-attr">server</span>: {
+    <span class="hljs-attr">proxy</span>: { <span class="hljs-comment">// 配置开发服务器代理，解决跨域问题</span>
+      <span class="hljs-string">'/api'</span>: {
+        <span class="hljs-attr">target</span>: <span class="hljs-string">'http://jsonplaceholder.typicode.com'</span>,
+        <span class="hljs-attr">changeOrigin</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">rewrite</span>: <span class="hljs-function">(<span class="hljs-params">path</span>) =></span> path.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/^\/api/</span>, <span class="hljs-string">''</span>),
+      }
+    }
+  },
+  <span class="hljs-attr">build</span>: { <span class="hljs-comment">// 生产环境打包配置</span>
+    <span class="hljs-attr">outDir</span>: <span class="hljs-string">'dist'</span>, <span class="hljs-comment">// 输出目录</span>
+    <span class="hljs-attr">sourcemap</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 生成 source map</span>
+  }
+})
+</code></pre>
+<p>Vite 的配置比 Webpack 简单几个数量级，开箱即用，只有在需要深度定制时才需要进行少量配置。</p>
+</li>
+</ol>
+<h3 id="四vite-vs-webpack-深度对比"><a href="#四vite-vs-webpack-深度对比">四、Vite vs. Webpack 深度对比</a></h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Vite</th>
+<th>Webpack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心原理 (开发)</strong></td>
+<td><strong>原生 ESM 按需服务</strong>，无打包</td>
+<td><strong>万物皆模块，先打包再服务</strong></td>
+</tr>
+<tr>
+<td><strong>开发服务器启动</strong></td>
+<td><strong>毫秒级</strong>，与项目规模无关</td>
+<td><strong>秒级到分钟级</strong>，随项目规模线性增长</td>
+</tr>
+<tr>
+<td><strong>热模块更新 (HMR)</strong></td>
+<td><strong>极快</strong>，与项目规模无关，仅更新变动模块</td>
+<td>较快，但随项目规模增大而变慢，需重新计算部分 bundle</td>
+</tr>
+<tr>
+<td><strong>底层工具</strong></td>
+<td><strong>esbuild</strong> (Go, 依赖预构建) + <strong>Rollup</strong> (JS, 生产打包)</td>
+<td><strong>Webpack</strong> (JS) + 各类 Loader/Plugin</td>
+</tr>
+<tr>
+<td><strong>配置文件</strong></td>
+<td><strong>简洁</strong>，约定优于配置，开箱即用</td>
+<td><strong>复杂</strong>，高度灵活但学习成本高，需大量配置</td>
+</tr>
+<tr>
+<td><strong>入口文件</strong></td>
+<td><code>index.html</code> (更符合 Web 直觉)</td>
+<td>JavaScript 文件 (JS-centric)</td>
+</tr>
+<tr>
+<td><strong>生态系统</strong></td>
+<td>快速增长，基于 Rollup 插件体系，生态已相当完善</td>
+<td><strong>极其庞大</strong>，成熟稳定，覆盖各种极端场景</td>
+</tr>
+</tbody>
+</table>
+<h3 id="五性能优势的根源为什么-vite-这么快"><a href="#五性能优势的根源为什么-vite-这么快">五、性能优势的根源：为什么 Vite 这么快？</a></h3>
+<p>总结一下，Vite 的性能优势源于几个关键的架构决策：</p>
+<ol>
+<li>
+<p><strong>根本上绕过了开发环境的“打包”</strong>：这是最核心的一点。它将传统构建工具最耗时的步骤直接取消了，性能自然实现了飞跃。它将模块解析和组合的工作<strong>转移给了浏览器</strong>，自己只做单文件的转换。</p>
+</li>
+<li>
+<p><strong>拥抱原生 ESM</strong>：现代浏览器处理原生模块的效率已经非常高。Vite 站在了浏览器技术演进的肩膀上，享受了技术红利。</p>
+</li>
+<li>
+<p><strong>使用编译型语言工具</strong>：在需要打包的场景（依赖预构建），Vite 选择了 Go 语言编写的 <strong>esbuild</strong>。Go 语言是编译型语言，并且充分利用了多核心并行处理，其执行速度比用 JavaScript 编写的工具（如 Webpack）快 <strong>10-100 倍</strong>。</p>
+</li>
+<li>
+<p><strong>精细化的热更新</strong>：基于 ESM 的依赖关系图，Vite 的 HMR 边界清晰且稳定。它能精确地知道哪个模块失效了，并通过 websocket 推送给浏览器，浏览器只需重新请求该模块即可，无需重新加载页面或执行大量无关代码。</p>
+</li>
+</ol>
+<h3 id="六结论与选择"><a href="#六结论与选择">六、结论与选择</a></h3>
+<p><strong>对于绝大多数新项目（尤其是使用 Vue 和 React 的项目），Vite 是当前无可争议的最佳选择。</strong> 它提供的开发体验是颠覆性的，能够显著提升开发效率和幸福感。</p>
+<p><strong>那么，什么时候可能还会考虑 Webpack？</strong></p>
+<ol>
+<li>
+<p><strong>极端复杂的项目需求</strong>：如果你的项目需要一些非常冷门、只有 Webpack 生态才支持的特定功能（例如 Webpack 5 的模块联邦 <code>Module Federation</code>，尽管 Vite 也有插件在尝试实现）。</p>
+</li>
+<li>
+<p><strong>深度依赖 Webpack 生态的存量项目</strong>：迁移一个庞大且深度绑定 Webpack 特定 loader 或 plugin 的老项目，成本可能很高。</p>
+</li>
+<li>
+<p><strong>需要支持极旧的浏览器</strong>：Vite 默认的浏览器支持目标是支持原生 ESM 的现代浏览器。虽然可以通过插件支持旧浏览器，但 Webpack 在这方面的配置和社区方案积累更深厚。</p>
+</li>
+</ol>
+<p>总而言之，Webpack 是一个功能强大、灵活且成熟的“瑞士军刀”，它定义了一个时代。而 <strong>Vite 则是利用新技术浪潮，对开发者体验进行“第一性原理”反思后诞生的新一代利器。</strong> 它没有试图在旧的道路上优化，而是直接选择了一条更高效、更符合现代 Web 形态的新路，并因此取得了压倒性的性能优势。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/工程化",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/","children":"前端开发 / 工程化"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"深入剖析Vite框架"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2652," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"核心摘要vite-是什么","text":"核心摘要：Vite 是什么？"},{"level":3,"id":"一问题的根源传统构建工具以-webpack-为例的困境","text":"一、问题的根源：传统构建工具（以 Webpack 为例）的困境"},{"level":3,"id":"二vite-的解法两大核心支柱","text":"二、Vite 的解法：两大核心支柱"},{"level":4,"id":"1-开发环境原生-esm--按需编译","text":"1. 开发环境：原生 ESM + 按需编译"},{"level":4,"id":"2-生产环境rollup-打包","text":"2. 生产环境：Rollup 打包"},{"level":3,"id":"三使用方法入门","text":"三、使用方法入门"},{"level":3,"id":"四vite-vs-webpack-深度对比","text":"四、Vite vs. Webpack 深度对比"},{"level":3,"id":"五性能优势的根源为什么-vite-这么快","text":"五、性能优势的根源：为什么 Vite 这么快？"},{"level":3,"id":"六结论与选择","text":"六、结论与选择"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

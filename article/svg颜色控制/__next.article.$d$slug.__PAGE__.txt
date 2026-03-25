@@ -1,0 +1,233 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3fee,<p>将SVG插入网页并根据样式主题（例如浅色/深色模式）自动改变其颜色，核心在于让SVG的颜色不由其自身写死的属性决定，而是由外部的CSS来控制。</p>
+<p>将SVG视为DOM的一部分，而不是一张独立的图片，是解决这个问题的关键。</p>
+<p>以下是几种主流且高效的方法，我会分析各自的优劣并给出最终推荐。</p>
+<h3 id="核心推荐方案内联svg--css自定义属性-css-variables"><a href="#核心推荐方案内联svg--css自定义属性-css-variables">核心推荐方案：内联SVG + CSS自定义属性 (CSS Variables)</a></h3>
+<p>这是最灵活、最强大的方法，能完美应对多色SVG和复杂的主题切换需求。它将SVG直接作为HTML代码的一部分，使其内部的 <code>&#x3C;path></code>, <code>&#x3C;circle></code> 等元素可以像 <code>&#x3C;div></code> 或 <code>&#x3C;p></code> 一样被CSS直接选中并赋予样式。</p>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>
+<p><strong>准备SVG文件</strong>：</p>
+<ul>
+<li>
+<p>用代码编辑器（如VS Code）或矢量图形软件（如Illustrator, Figma）打开你的 <code>.svg</code> 文件。</p>
+</li>
+<li>
+<p><strong>关键一步</strong>：找到并删除SVG元素（如 <code>&#x3C;path></code>）上写死的颜色属性，例如 <code>fill="#000000"</code> 或 <code>stroke="white"</code>。如果保留这些内联样式，它们会覆盖掉外部CSS的设置。</p>
+</li>
+<li>
+<p>你可以保留<code>class</code>属性，方便CSS选择。</p>
+</li>
+</ul>
+<p><strong>清理前:</strong></p>
+<p>XML</p>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">...</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#333333"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span> /></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">rect</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#CCCCCC"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span> /></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+</code></pre>
+<p><strong>清理后:</strong></p>
+<p>XML</p>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-icon"</span> <span class="hljs-attr">...</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">path</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-main"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span> /></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">rect</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-secondary"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span> /></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+</code></pre>
+</li>
+<li>
+<p>定义主题颜色：</p>
+<p>在你的CSS中，使用CSS自定义属性（变量）来定义不同主题下的颜色。通常在 :root 中定义浅色模式的默认值，然后使用 @media 查询来覆盖深色模式的值。</p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-pseudo">:root</span> {
+  <span class="hljs-comment">/* 浅色主题 (默认) */</span>
+  <span class="hljs-attr">--icon-primary-color</span>: <span class="hljs-number">#2c3e50</span>;
+  <span class="hljs-attr">--icon-secondary-color</span>: <span class="hljs-number">#7f8c8d</span>;
+  <span class="hljs-attr">--page-background</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-color-scheme</span>: dark) {
+  <span class="hljs-comment">/* 深色主题 */</span>
+  <span class="hljs-selector-pseudo">:root</span> {
+    <span class="hljs-attr">--icon-primary-color</span>: <span class="hljs-number">#ecf0f1</span>;
+    <span class="hljs-attr">--icon-secondary-color</span>: <span class="hljs-number">#95a5a6</span>;
+    <span class="hljs-attr">--page-background</span>: <span class="hljs-number">#121212</span>;
+  }
+}
+
+<span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--page-background);
+}
+</code></pre>
+</li>
+<li>
+<p>内联SVG并应用样式：</p>
+<p>将清理后的SVG代码直接粘贴到你的HTML文件中。然后，在CSS中为SVG内部的元素指定颜色，使用前面定义的变量。</p>
+<p><strong>HTML:</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>我的应用<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-icon"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 1024 1024"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">path</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-main"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">path</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">rect</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-secondary"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">rect</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+</code></pre>
+<p><strong>CSS:</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-comment">/* 为SVG内部元素应用变量 */</span>
+<span class="hljs-selector-class">.my-icon</span> <span class="hljs-selector-class">.icon-main</span> {
+  <span class="hljs-attribute">fill</span>: <span class="hljs-built_in">var</span>(--icon-primary-color);
+}
+
+<span class="hljs-selector-class">.my-icon</span> <span class="hljs-selector-class">.icon-secondary</span> {
+  <span class="hljs-attribute">fill</span>: <span class="hljs-built_in">var</span>(--icon-secondary-color);
+}
+</code></pre>
+</li>
+</ol>
+<p>当用户的操作系统切换浅色/深色模式时，浏览器会自动应用 <code>@media</code> 查询中的CSS变量，SVG颜色也随之无缝切换。</p>
+<hr>
+<h3 id="替代方案"><a href="#替代方案">替代方案</a></h3>
+<h4 id="方案二利用-currentcolor-关键字针对单色svg"><a href="#方案二利用-currentcolor-关键字针对单色svg">方案二：利用 <code>currentColor</code> 关键字（针对单色SVG）</a></h4>
+<p><code>currentColor</code> 是一个特殊的CSS值，它代表了元素自身的 <code>color</code> 文本颜色。如果将SVG的 <code>fill</code> 或 <code>stroke</code> 设置为 <code>currentColor</code>，它就会自动继承其父元素的文本颜色。这是处理单色图标最简洁优雅的方式。</p>
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li>
+<p>准备SVG文件：</p>
+<p>打开SVG文件，将所有需要变色的 fill 或 stroke 属性值修改为 currentColor。</p>
+<p>XML</p>
+<pre><code class="hljs language-xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">path</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"..."</span>/></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+</code></pre>
+</li>
+<li>
+<p>内联SVG并控制父元素颜色：</p>
+<p>将修改后的SVG内联到HTML中。现在你只需要控制包裹它的父元素或它自身的 color 属性即可。</p>
+<p><strong>HTML &#x26; CSS:</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+  <span class="hljs-selector-pseudo">:root</span> {
+    <span class="hljs-attr">--text-color</span>: <span class="hljs-number">#333</span>;
+    <span class="hljs-attr">--bg-color</span>: <span class="hljs-number">#fff</span>;
+  }
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-color-scheme</span>: dark) {
+    <span class="hljs-selector-pseudo">:root</span> {
+      <span class="hljs-attr">--text-color</span>: <span class="hljs-number">#eee</span>;
+      <span class="hljs-attr">--bg-color</span>: <span class="hljs-number">#222</span>;
+    }
+  }
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--text-color); <span class="hljs-comment">/* 设置全局文本颜色 */</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bg-color);
+  }
+  <span class="hljs-selector-class">.link-with-icon</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#3498db</span>; <span class="hljs-comment">/* 链接颜色 */</span>
+  }
+  <span class="hljs-selector-class">.link-with-icon</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#e74c3c</span>; <span class="hljs-comment">/* 悬停颜色 */</span>
+  }
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>
+  这是一个普通图标
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">...</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"link-with-icon"</span>></span>
+  这是一个链接图标
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">...</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">svg</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">a</span>></span>
+</code></pre>
+<p>在这个例子里，第一个图标会跟随body的文本颜色（并根据主题变化），第二个图标则会像文字一样，跟随链接的颜色和悬停效果变化。</p>
+</li>
+</ol>
+<h4 id="方案三使用css-mask-image-遮罩"><a href="#方案三使用css-mask-image-遮罩">方案三：使用CSS <code>mask-image</code> (遮罩)</a></h4>
+<p>这种方法不直接为SVG上色，而是将SVG作为“镂空模板”（遮罩），透过它来显示元素的背景色。这种方法的好处是可以使用 <code>&#x3C;img></code> 标签或 <code>background-image</code> 来引用SVG，而无需内联。缺点是只能产生单色的效果。</p>
+<p><strong>操作步骤:</strong></p>
+<ol>
+<li>
+<p><strong>准备SVG文件</strong>：SVG本身不需要特殊处理，一个普通的黑色（或任何单色）SVG即可。</p>
+</li>
+<li>
+<p><strong>应用CSS</strong>：</p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+   <span class="hljs-selector-pseudo">:root</span> {
+    <span class="hljs-attr">--icon-color</span>: <span class="hljs-number">#333</span>;
+  }
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-color-scheme</span>: dark) {
+    <span class="hljs-selector-pseudo">:root</span> {
+      <span class="hljs-attr">--icon-color</span>: <span class="hljs-number">#eee</span>;
+    }
+  }
+
+  <span class="hljs-selector-class">.icon-mask</span> {
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--icon-color); <span class="hljs-comment">/* 颜色由背景决定 */</span>
+    <span class="hljs-attribute">mask-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'path/to/your/icon.svg'</span>);
+    <span class="hljs-attribute">mask-size</span>: contain;
+    <span class="hljs-attribute">mask-repeat</span>: no-repeat;
+    <span class="hljs-comment">/* 为了兼容性，可能需要-webkit-前缀 */</span>
+    -webkit-<span class="hljs-attribute">mask-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'path/to/your/icon.svg'</span>);
+    -webkit-<span class="hljs-attribute">mask-size</span>: contain;
+    -webkit-<span class="hljs-attribute">mask-repeat</span>: no-repeat;
+  }
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+
+<span class="hljs-tag">&#x3C;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-mask"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">span</span>></span>
+</code></pre>
+</li>
+</ol>
+<hr>
+<h3 id="方法对比与最终选择"><a href="#方法对比与最终选择">方法对比与最终选择</a></h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>优点</th>
+<th>缺点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>内联SVG + CSS变量</strong></td>
+<td><strong>功能最强</strong>，支持多色、复杂动画；SEO友好；可访问性高。</td>
+<td>HTML会变得冗长；不方便缓存（除非用JS模板）。</td>
+<td><strong>绝大多数场景</strong>，特别是需要控制SVG不同部分颜色的复杂图标或插图。</td>
+</tr>
+<tr>
+<td><strong><code>currentColor</code></strong></td>
+<td><strong>代码最简洁</strong>，逻辑清晰；图标行为与文本完全一致。</td>
+<td>只能实现单色效果。</td>
+<td>大量的<strong>单色图标</strong>，如图标字体、UI按钮中的小图标。</td>
+</tr>
+<tr>
+<td><strong>CSS <code>mask-image</code></strong></td>
+<td>无需内联SVG，可使用 <code>&#x3C;img></code>；CSS控制简单。</td>
+<td>只能实现单色效果；浏览器兼容性需注意（尽管现代浏览器支持良好）。</td>
+<td>当你无法或不想内联SVG，且只需要单色图标时。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="我的选择"><a href="#我的选择">我的选择</a></h3>
+<p>对于你的问题——“根据样式主题自动设置其颜色”，我<strong>首选推荐 <code>内联SVG + CSS自定义属性</code></strong>。</p>
+<p>这是最根本、最不受限的解决方案。它完全符合现代Web开发的组件化和主题化思想，一次设置，即可在任何需要的地方通过CSS变量轻松控制SVG的颜色，无论是简单的双色主题切换，还是未来可能出现的更复杂的多主题（如高对比度模式、色盲模式等）都能从容应对。</p>
+<p>如果你的需求非常明确，所有图标都只需要一种颜色，那么**<code>currentColor</code> 方法**则更胜一筹，因为它极致的简洁性是其最大的魅力。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/css",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css/","children":"前端开发 / css"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"svg颜色控制"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-24T00:00:00.000Z","children":"2025年7月24日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1403," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"核心推荐方案内联svg--css自定义属性-css-variables","text":"核心推荐方案：内联SVG + CSS自定义属性 (CSS Variables)"},{"level":3,"id":"替代方案","text":"替代方案"},{"level":4,"id":"方案二利用-currentcolor-关键字针对单色svg","text":"方案二：利用 currentColor 关键字（针对单色SVG）"},{"level":4,"id":"方案三使用css-mask-image-遮罩","text":"方案三：使用CSS mask-image (遮罩)"},{"level":3,"id":"方法对比与最终选择","text":"方法对比与最终选择"},{"level":3,"id":"我的选择","text":"我的选择"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

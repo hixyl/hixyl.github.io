@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="/favicon.svg"/><link rel="stylesheet" href="/_next/static/chunks/0g~zs8c5~_~uf.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/02f1pwhv5qrki.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/0bmby6ta573to.js"/><script src="/_next/static/chunks/0_z.jfmr09pj2.js" async=""></script><script src="/_next/static/chunks/0i3-0s_7226ci.js" async=""></script><script src="/_next/static/chunks/110q6k5sdl4es.js" async=""></script><script src="/_next/static/chunks/07uz2g0_38qia.js" async=""></script><script src="/_next/static/chunks/turbopack-0wksw0vhbvo4p.js" async=""></script><script src="/_next/static/chunks/0j8g4_qst9ksd.js" async=""></script><script src="/_next/static/chunks/0d3shmwh5_nmn.js" async=""></script><script src="/_next/static/chunks/0m-fjq7yr4k5u.js" async=""></script><script src="/_next/static/chunks/14787qi7nx.7q.js" async=""></script><script src="/_next/static/chunks/0eqp1b9heft3y.js" async=""></script><link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" as="style"/><link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2" as="script"/><meta name="next-size-adjust" content=""/><title>Object各种函数用法 | 流年石刻</title><meta name="description" content="好的，我们来深入且系统地讲解 Object.create 函数，并梳理 Object 上的其他核心函数。  Object.create 的深入解析 Object.create 是一个非常基础且强大的方法，它允许我们创建一个新对象，并精确地指…"/><link rel="icon" href="/favicon.ico?favicon.0x3dzn~oxb6tn.ico" sizes="256x256" type="image/x-icon"/><link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"/><script>
+              (function() {
+                var t = localStorage.getItem('theme');
+                if (t) { document.documentElement.setAttribute('data-theme', t); }
+                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                }
+              })();
+            </script><script src="/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body class="inter_5901b7c6-module__ec5Qua__variable"><div hidden=""><!--$--><!--/$--></div><canvas style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999"></canvas><header class="jsx-c06749dc0426c6ed site-header"><div class="jsx-c06749dc0426c6ed header-inner"><a class="logo" href="/"><img src="/favicon.svg" alt="Logo" width="24" height="24" class="jsx-c06749dc0426c6ed logo-icon"/><span class="jsx-c06749dc0426c6ed logo-text">流年石刻</span></a><nav class="jsx-c06749dc0426c6ed nav-links "><a class="nav-link " href="/">首页</a><a class="nav-link " href="/categories/">分类</a><a class="nav-link " href="/articles/">文章</a><a class="nav-link " href="/timeline/">时间轴</a><a class="nav-link " href="/editor/">编辑器</a><a class="nav-link " href="/about/">关于</a></nav><div class="jsx-c06749dc0426c6ed header-actions"><a class="search-btn" aria-label="搜索" href="/search/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="jsx-c06749dc0426c6ed"><circle cx="11" cy="11" r="8" class="jsx-c06749dc0426c6ed"></circle><path d="m21 21-4.35-4.35" class="jsx-c06749dc0426c6ed"></path></svg></a><button aria-label="菜单" class="jsx-c06749dc0426c6ed mobile-menu-btn"><span class="jsx-c06749dc0426c6ed hamburger "><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span></span></button></div></div></header><main style="position:relative;z-index:1;min-height:calc(100vh - 200px)"><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><!--/$--><div style="opacity:0;transform:translateY(12px)"><div style="width:0%" class="jsx-b5e5479b599c7115 reading-progress"></div><article class="container page-module__y-5DuW__article-page"><div class="page-module__y-5DuW__article-layout"><div class="page-module__y-5DuW__article-main"><header class="page-module__y-5DuW__article-header"><div><span>📂</span><a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/">前端开发 / js</a></div><h1 class="page-module__y-5DuW__article-title">Object各种函数用法</h1><div class="page-module__y-5DuW__article-meta"><time dateTime="2025-08-14T00:00:00.000Z">2025年8月14日</time><span class="page-module__y-5DuW__sep">·</span><span>2068<!-- --> 字</span><span class="page-module__y-5DuW__sep">·</span><span>约 <!-- -->7<!-- --> 分钟</span></div><div class="page-module__y-5DuW__article-tags"><span class="page-module__y-5DuW__tag">Obsidian</span></div></header><div class="prose page-module__y-5DuW__article-content"><p>好的，我们来深入且系统地讲解 <code>Object.create()</code> 函数，并梳理 <code>Object</code> 上的其他核心函数。</p>
+<h3 id="objectcreate-的深入解析"><a href="#objectcreate-的深入解析"><code>Object.create()</code> 的深入解析</a></h3>
+<p><code>Object.create()</code> 是一个非常基础且强大的方法，它允许我们创建一个新对象，并<strong>精确地指定这个新对象的原型（prototype）</strong>。这是理解 <code>Object.create()</code> 的核心。相较于通过 <code>new</code> 关键字或对象字面量 <code>{}</code> 创建对象，<code>Object.create()</code> 给了你对原型链最直接的控制权。</p>
+<h4 id="语法"><a href="#语法">语法</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(proto, propertiesObject)
+</code></pre>
+<p>它接收两个参数：</p>
+<ol>
+<li>
+<p><code>proto</code>: <strong>必需参数</strong>。一个对象，它将成为新创建对象的原型。它可以是任何对象，甚至可以是 <code>null</code>。</p>
+</li>
+<li>
+<p><code>propertiesObject</code>: <strong>可选参数</strong>。一个对象，用于为新对象定义额外的自有属性（own properties），其格式与 <code>Object.defineProperties()</code> 的第二个参数相同。</p>
+</li>
+</ol>
+<hr>
+<h4 id="核心用法与场景"><a href="#核心用法与场景">核心用法与场景</a></h4>
+<h5 id="1-实现纯粹的原型式继承"><a href="#1-实现纯粹的原型式继承">1. 实现纯粹的原型式继承</a></h5>
+<p>这是 <code>Object.create()</code> 最经典、最主要的用途。它能让你清晰地建立对象间的继承关系。</p>
+<p>假设我们有一个“动物”原型，它有一个 <code>breathe</code> 方法：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> animal = {
+  <span class="hljs-attr">isAlive</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-title function_">breathe</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'inhale, exhale'</span>);
+  }
+};
+
+<span class="hljs-comment">// 创建一个 dog 对象，它的原型是 animal</span>
+<span class="hljs-keyword">const</span> dog = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(animal);
+dog.<span class="hljs-property">breed</span> = <span class="hljs-string">'Labrador'</span>; <span class="hljs-comment">// 为 dog 添加自有属性</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(dog.<span class="hljs-property">isAlive</span>);      <span class="hljs-comment">// true (继承自 animal)</span>
+dog.<span class="hljs-title function_">breathe</span>();                 <span class="hljs-comment">// "inhale, exhale" (继承自 animal)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(dog.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">'breed'</span>));   <span class="hljs-comment">// true (breed 是 dog 自己的属性)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(dog.<span class="hljs-title function_">hasOwnProperty</span>(<span class="hljs-string">'isAlive'</span>)); <span class="hljs-comment">// false (isAlive 是原型链上的属性)</span>
+</code></pre>
+<p><strong>背后发生了什么？</strong></p>
+<p><code>dog</code> 对象本身是空的（除了我们后来添加的 <code>breed</code> 属性）。当我们访问 <code>dog.isAlive</code> 时，JavaScript 引擎在 <code>dog</code> 对象上找不到它，于是就会沿着它的原型链向上查找，在 <code>animal</code> 对象上找到了 <code>isAlive</code> 并返回其值。这个查找链条是：<code>dog ---> animal ---> Object.prototype ---> null</code>。</p>
+<h5 id="2-创建一个纯净的对象-objectcreatenull"><a href="#2-创建一个纯净的对象-objectcreatenull">2. 创建一个“纯净”的对象 (<code>Object.create(null)</code>)</a></h5>
+<p>这是一个非常重要的特例。通常，我们用 <code>{}</code> 创建的对象，其原型默认是 <code>Object.prototype</code>，因此它天生就带有一些方法，如 <code>toString()</code>, <code>hasOwnProperty()</code> 等。</p>
+<p>但在某些场景下，我们希望创建一个完全干净、不继承任何东西的对象，把它当作一个纯粹的“哈希表”或“字典”来使用，以避免潜在的键名冲突。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 创建一个“纯净”的 map 对象</span>
+<span class="hljs-keyword">const</span> map = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-literal">null</span>);
+
+map.<span class="hljs-property">name</span> = <span class="hljs-string">'My Map'</span>;
+map.<span class="hljs-property">toString</span> = <span class="hljs-string">'a string'</span>; <span class="hljs-comment">// 这里的 toString 只是一个普通的属性键</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(map.<span class="hljs-property">name</span>); <span class="hljs-comment">// "My Map"</span>
+
+<span class="hljs-comment">// 因为 map 的原型是 null，它没有任何继承的方法</span>
+<span class="hljs-comment">// console.log(map.toString()); // 这会抛出错误: Uncaught TypeError: map.toString is not a function</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(map[<span class="hljs-string">'toString'</span>]); <span class="hljs-comment">// "a string"</span>
+
+<span class="hljs-comment">// 同样，它也没有 hasOwnProperty 方法</span>
+<span class="hljs-comment">// console.log(map.hasOwnProperty('name')); // 错误: map.hasOwnProperty is not a function</span>
+</code></pre>
+<p>为什么这很有用？</p>
+<p>如果用户输入的数据中恰好有一个键是 hasOwnProperty，而你又把它存入一个普通对象 let obj = {} 中，当你调用 obj.hasOwnProperty 时，你可能无法区分这是用户数据还是原型上的方法。使用 Object.create(null) 创建的对象则完全没有这个问题。</p>
+<h5 id="3-使用第二个参数定义属性"><a href="#3-使用第二个参数定义属性">3. 使用第二个参数定义属性</a></h5>
+<p>第二个可选参数允许你在创建对象时，就以非常精确的方式定义其自有属性。这提供了比简单赋值更强大的控制力。</p>
+<p>属性描述符（Property Descriptors）有以下几个键：</p>
+<ul>
+<li>
+<p><code>value</code>: 属性的值。</p>
+</li>
+<li>
+<p><code>writable</code>: 是否可写（<code>true</code>/<code>false</code>）。</p>
+</li>
+<li>
+<p><code>enumerable</code>: 是否可被 <code>for...in</code> 循环或 <code>Object.keys()</code> 枚举（<code>true</code>/<code>false</code>）。</p>
+</li>
+<li>
+<p><code>configurable</code>: 是否可被删除或更改其特性（<code>true</code>/<code>false</code>）。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> user = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-literal">null</span>, {
+  <span class="hljs-comment">// 定义一个数据属性</span>
+  <span class="hljs-attr">name</span>: {
+    <span class="hljs-attr">value</span>: <span class="hljs-string">'John Doe'</span>,
+    <span class="hljs-attr">writable</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>
+  },
+  <span class="hljs-comment">// 定义一个只读的、不可枚举的属性</span>
+  <span class="hljs-attr">id</span>: {
+    <span class="hljs-attr">value</span>: <span class="hljs-number">123</span>,
+    <span class="hljs-attr">writable</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">false</span>
+  }
+});
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>);      <span class="hljs-comment">// "John Doe"</span>
+user.<span class="hljs-property">name</span> = <span class="hljs-string">'Jane Doe'</span>;      <span class="hljs-comment">// 可以修改</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>);      <span class="hljs-comment">// "Jane Doe"</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">id</span>);        <span class="hljs-comment">// 123</span>
+<span class="hljs-comment">// user.id = 456;            // 在严格模式下会报错，非严格模式下静默失败</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(user)); <span class="hljs-comment">// ["name"] (因为 id 的 enumerable 是 false)</span>
+</code></pre>
+<hr>
+<h3 id="object-上的其他重要静态函数"><a href="#object-上的其他重要静态函数">Object 上的其他重要静态函数</a></h3>
+<p><code>Object</code> 构造函数本身也挂载了许多非常有用的静态方法。我们可以将它们分类来理解。</p>
+<h4 id="一-对象的创建与修改"><a href="#一-对象的创建与修改">一、 对象的创建与修改</a></h4>
+<p>除了 <code>Object.create()</code>，还有：</p>
+<ol>
+<li>
+<p><strong><code>Object.assign(target, ...sources)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：将一个或多个源对象（<code>sources</code>）的所有<strong>可枚举的自有属性</strong>复制到目标对象（<code>target</code>）。它会返回修改后的 <code>target</code> 对象。</p>
+</li>
+<li>
+<p><strong>关键点</strong>：这是一个<strong>浅拷贝</strong>（Shallow Copy）。如果源对象的属性值是另一个对象，那么复制的是该对象的引用，而不是对象本身。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> defaults = { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> };
+<span class="hljs-keyword">const</span> options = { <span class="hljs-attr">b</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">4</span> };
+<span class="hljs-keyword">const</span> merged = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>({}, defaults, options); <span class="hljs-comment">// { a: 1, b: 3, c: 4 }</span>
+<span class="hljs-comment">// options.b 覆盖了 defaults.b</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.defineProperty(obj, prop, descriptor)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：在一个对象上直接定义一个新属性，或修改一个现有属性。</p>
+</li>
+<li>
+<p><strong>关键点</strong>：提供对属性特性的精细控制（writable, enumerable, configurable）。这是实现数据劫持（如 Vue 2.x）的基础。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.defineProperties(obj, props)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：在一个对象上定义或修改多个属性。<code>Object.create()</code> 的第二个参数内部就使用了这个逻辑。</li>
+</ul>
+</li>
+</ol>
+<h4 id="二-获取对象的属性信息自省"><a href="#二-获取对象的属性信息自省">二、 获取对象的属性信息（自省）</a></h4>
+<p>这些方法用于检查对象自身的结构。</p>
+<ol>
+<li>
+<p><strong><code>Object.keys(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回一个数组，包含对象自身的所有<strong>可枚举属性</strong>的<strong>键名（字符串）</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.values(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回一个数组，包含对象自身的所有<strong>可枚举属性</strong>的<strong>值</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.entries(obj)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：返回一个数组，每个成员是对象自身的一个 <code>[key, value]</code> 键值对数组。对于将对象转换为 <code>Map</code> 或进行 <code>for...of</code> 循环非常有用。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> obj = { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> };
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [key, value] <span class="hljs-keyword">of</span> <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(obj)) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${key}</span>: <span class="hljs-subst">${value}</span>`</span>);
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.getOwnPropertyNames(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回一个数组，包含对象自身的**所有属性（包括不可枚举的属性，但不包括 Symbol 属性）**的键名。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.getOwnPropertySymbols(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回一个数组，包含对象自身的所有 Symbol 属性。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.getOwnPropertyDescriptor(obj, prop)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回指定对象上一个自有属性的属性描述符。如果属性不存在，则返回 <code>undefined</code>。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.getOwnPropertyDescriptors(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回一个对象，包含了指定对象所有自有属性的描述符。</li>
+</ul>
+</li>
+</ol>
+<h4 id="三-原型链的操作"><a href="#三-原型链的操作">三、 原型链的操作</a></h4>
+<ol>
+<li>
+<p><strong><code>Object.getPrototypeOf(obj)</code></strong></p>
+<ul>
+<li><strong>作用</strong>：返回指定对象的原型。这是获取一个对象原型的标准、推荐方法（优于非标准的 <code>__proto__</code>）。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.setPrototypeOf(obj, prototype)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：设置一个对象的原型。</p>
+</li>
+<li>
+<p><strong>注意</strong>：这是一个非常消耗性能的操作，因为它会改变对象的整个继承链。在性能敏感的代码中应避免使用。最好在对象创建之初就用 <code>Object.create()</code> 来确定其原型。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="四-控制对象的状态使其不可变"><a href="#四-控制对象的状态使其不可变">四、 控制对象的状态（使其不可变）</a></h4>
+<p>这些方法用于锁定对象，防止其被修改。</p>
+<ol>
+<li>
+<p><strong><code>Object.preventExtensions(obj)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：让一个对象<strong>不能再添加</strong>新的属性。已有属性仍然可以被修改或删除。</p>
+</li>
+<li>
+<p>检查方法：<code>Object.isExtensible(obj)</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.seal(obj)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：<strong>密封</strong>一个对象。这会 <code>preventExtensions</code>，并且把所有现有属性标记为 <code>configurable: false</code>。这意味着你不能添加新属性，也不能删除或重新配置现有属性，但<strong>可以修改</strong>现有属性的值（如果它们是 <code>writable: true</code> 的话）。</p>
+</li>
+<li>
+<p>检查方法：<code>Object.isSealed(obj)</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.freeze(obj)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：<strong>冻结</strong>一个对象。这是最严格的级别，它会 <code>seal</code> 对象，并将其所有数据属性的 <code>writable</code> 特性设为 <code>false</code>。对象将变得完全不可变（仅限第一层，是浅冻结）。</p>
+</li>
+<li>
+<p>检查方法：<code>Object.isFrozen(obj)</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="五-实用工具"><a href="#五-实用工具">五、 实用工具</a></h4>
+<ol>
+<li>
+<p><strong><code>Object.is(value1, value2)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：判断两个值是否是相同的值。它比 <code>===</code> 更严格。</p>
+</li>
+<li>
+<p><strong>与 <code>===</code> 的区别</strong>：</p>
+<ul>
+<li>
+<p><code>Object.is(NaN, NaN)</code> 返回 <code>true</code> (而 <code>NaN === NaN</code> 返回 <code>false</code>)。</p>
+</li>
+<li>
+<p><code>Object.is(+0, -0)</code> 返回 <code>false</code> (而 <code>+0 === -0</code> 返回 <code>true</code>)。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Object.fromEntries(iterable)</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：<code>Object.entries()</code> 的逆操作。它接收一个 <code>[key, value]</code> 形式的迭代器（如数组或 <code>Map</code>），并返回一个新的对象。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> entries = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>([
+  [<span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>],
+  [<span class="hljs-string">'baz'</span>, <span class="hljs-number">42</span>]
+]);
+<span class="hljs-keyword">const</span> obj = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">fromEntries</span>(entries); <span class="hljs-comment">// { foo: "bar", baz: 42 }</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p><code>Object</code> 上的这些静态方法为 JavaScript 开发者提供了操作和理解这门语言核心——对象的全套工具。</p>
+<ul>
+<li>
+<p><strong><code>Object.create()</code></strong> 是基石，它让你从<strong>原型</strong>这个根源上控制对象的创建。</p>
+</li>
+<li>
+<p><strong>属性访问系列 (<code>keys</code>, <code>values</code>, <code>entries</code> 等)</strong> 提供了标准化的方式来迭代和检视对象内容。</p>
+</li>
+<li>
+<p><strong>属性定义系列 (<code>defineProperty</code>, <code>defineProperties</code>)</strong> 提供了对属性底层特性的精细控制。</p>
+</li>
+<li>
+<p><strong>原型操作系列 (<code>getPrototypeOf</code>, <code>setPrototypeOf</code>)</strong> 提供了管理继承链的能力。</p>
+</li>
+<li>
+<p><strong>对象状态控制系列 (<code>freeze</code>, <code>seal</code>, <code>preventExtensions</code>)</strong> 提供了创建不可变数据的原生支持。</p>
+</li>
+<li>
+<p><strong>实用工具 (<code>assign</code>, <code>is</code>, <code>fromEntries</code>)</strong> 简化了许多常见的编程任务。</p>
+</li>
+</ul>
+<p>理解并熟练运用这些方法，是深入掌握 JavaScript 面向对象编程和函数式编程范式的关键。</p></div><div class="page-module__y-5DuW__article-footer"><a class="page-module__y-5DuW__back-link" href="/articles/">← 返回文章列表</a></div></div><aside class="page-module__y-5DuW__article-sidebar"><nav aria-label="文章目录" class="jsx-f4963e7009facef toc"><h4 class="jsx-f4963e7009facef toc-title">目录</h4><ul class="jsx-f4963e7009facef toc-list"><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#objectcreate-的深入解析" class="jsx-f4963e7009facef toc-link ">Object.create() 的深入解析</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#语法" class="jsx-f4963e7009facef toc-link ">语法</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#核心用法与场景" class="jsx-f4963e7009facef toc-link ">核心用法与场景</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#object-上的其他重要静态函数" class="jsx-f4963e7009facef toc-link ">Object 上的其他重要静态函数</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#一-对象的创建与修改" class="jsx-f4963e7009facef toc-link ">一、 对象的创建与修改</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#二-获取对象的属性信息自省" class="jsx-f4963e7009facef toc-link ">二、 获取对象的属性信息（自省）</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#三-原型链的操作" class="jsx-f4963e7009facef toc-link ">三、 原型链的操作</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#四-控制对象的状态使其不可变" class="jsx-f4963e7009facef toc-link ">四、 控制对象的状态（使其不可变）</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#五-实用工具" class="jsx-f4963e7009facef toc-link ">五、 实用工具</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#总结" class="jsx-f4963e7009facef toc-link ">总结</a></li></ul></nav></aside></div></article><!--$--><!--/$--></div></main><footer class="Footer-module__EZoWya__site-footer"><div class="Footer-module__EZoWya__footer-inner"><div class="Footer-module__EZoWya__footer-poetry">闲云潭影日悠悠，物换星移几度秋</div><div class="Footer-module__EZoWya__footer-meta"><span>© <!-- -->2026<!-- --> <!-- -->流年石刻</span><span class="Footer-module__EZoWya__dot">·</span><span>流年似水，石刻永恒</span></div></div></footer><script src="/_next/static/chunks/0bmby6ta573to.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[94277,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n3:I[70119,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n4:I[39756,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n5:I[98168,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"/_next/static/chunks/14787qi7nx.7q.js\"],\"default\"]\n6:I[37457,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n7:I[79520,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"\"]\nb:I[68027,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"style\"]\n:HL[\"/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/chunks/02f1pwhv5qrki.css\",\"style\"]\n:HL[\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"article\",\"Object%E5%90%84%E7%A7%8D%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"article\",{\"children\":[[\"slug\",\"Object%E5%90%84%E7%A7%8D%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\"}],[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              (function() {\\n                var t = localStorage.getItem('theme');\\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\\n                  document.documentElement.setAttribute('data-theme', 'dark');\\n                }\\n              })();\\n            \"}}]]}],[\"$\",\"body\",null,{\"className\":\"inter_5901b7c6-module__ec5Qua__variable\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{}],[\"$\",\"main\",null,{\"style\":{\"position\":\"relative\",\"zIndex\":1,\"minHeight\":\"calc(100vh - 200px)\"},\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L6\",null,{}]}],\"templateStyles\":[],\"templateScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"async\":true}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14787qi7nx.7q.js\",\"async\":true}]],\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"Footer-module__EZoWya__site-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-poetry\",\"children\":\"闲云潭影日悠悠，物换星移几度秋\"}],[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-meta\",\"children\":[[\"$\",\"span\",null,{\"children\":[\"© \",2026,\" \",\"流年石刻\"]}],[\"$\",\"span\",null,{\"className\":\"Footer-module__EZoWya__dot\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":\"流年似水，石刻永恒\"}]]}]]}]}],[[\"$\",\"$L7\",null,{\"src\":\"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2\"}],[\"$\",\"$L7\",null,{\"id\":\"google-analytics\",\"children\":\"window.dataLayer = window.dataLayer || [];\\n                function gtag(){dataLayer.push(arguments);}\\n                gtag('js', new Date());\\n                gtag('config', 'G-N3DJ3JTVT2');\"}]]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"$L8\",{},null,false,null]},null,false,\"$@9\"]},null,false,\"$@9\"]},null,false,null],\"$La\",false]],\"m\":\"$undefined\",\"G\":[\"$b\",[\"$Lc\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"ozBVcz1soOKExL08cmsFl\"}\n"])</script><script>self.__next_f.push([1,"e:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"OutletBoundary\"]\nf:\"$Sreact.suspense\"\n12:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"ViewportBoundary\"]\n14:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"MetadataBoundary\"]\n8:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/02f1pwhv5qrki.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0eqp1b9heft3y.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$f\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@10\"}]}]]}]\n11:[]\n9:\"$W11\"\na:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L14\",null,{\"children\":[\"$\",\"$f\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L15\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\nc:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script><script>self.__next_f.push([1,"16:I[23422,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n17:I[22016,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"\"]\n18:T4dc6,"])</script><script>self.__next_f.push([1,"\u003cp\u003e好的，我们来深入且系统地讲解 \u003ccode\u003eObject.create()\u003c/code\u003e 函数，并梳理 \u003ccode\u003eObject\u003c/code\u003e 上的其他核心函数。\u003c/p\u003e\n\u003ch3 id=\"objectcreate-的深入解析\"\u003e\u003ca href=\"#objectcreate-的深入解析\"\u003e\u003ccode\u003eObject.create()\u003c/code\u003e 的深入解析\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003eObject.create()\u003c/code\u003e 是一个非常基础且强大的方法，它允许我们创建一个新对象，并\u003cstrong\u003e精确地指定这个新对象的原型（prototype）\u003c/strong\u003e。这是理解 \u003ccode\u003eObject.create()\u003c/code\u003e 的核心。相较于通过 \u003ccode\u003enew\u003c/code\u003e 关键字或对象字面量 \u003ccode\u003e{}\u003c/code\u003e 创建对象，\u003ccode\u003eObject.create()\u003c/code\u003e 给了你对原型链最直接的控制权。\u003c/p\u003e\n\u003ch4 id=\"语法\"\u003e\u003ca href=\"#语法\"\u003e语法\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ecreate\u003c/span\u003e(proto, propertiesObject)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e它接收两个参数：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eproto\u003c/code\u003e: \u003cstrong\u003e必需参数\u003c/strong\u003e。一个对象，它将成为新创建对象的原型。它可以是任何对象，甚至可以是 \u003ccode\u003enull\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003epropertiesObject\u003c/code\u003e: \u003cstrong\u003e可选参数\u003c/strong\u003e。一个对象，用于为新对象定义额外的自有属性（own properties），其格式与 \u003ccode\u003eObject.defineProperties()\u003c/code\u003e 的第二个参数相同。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch4 id=\"核心用法与场景\"\u003e\u003ca href=\"#核心用法与场景\"\u003e核心用法与场景\u003c/a\u003e\u003c/h4\u003e\n\u003ch5 id=\"1-实现纯粹的原型式继承\"\u003e\u003ca href=\"#1-实现纯粹的原型式继承\"\u003e1. 实现纯粹的原型式继承\u003c/a\u003e\u003c/h5\u003e\n\u003cp\u003e这是 \u003ccode\u003eObject.create()\u003c/code\u003e 最经典、最主要的用途。它能让你清晰地建立对象间的继承关系。\u003c/p\u003e\n\u003cp\u003e假设我们有一个“动物”原型，它有一个 \u003ccode\u003ebreathe\u003c/code\u003e 方法：\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e animal = {\n  \u003cspan class=\"hljs-attr\"\u003eisAlive\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e,\n  \u003cspan class=\"hljs-title function_\"\u003ebreathe\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'inhale, exhale'\u003c/span\u003e);\n  }\n};\n\n\u003cspan class=\"hljs-comment\"\u003e// 创建一个 dog 对象，它的原型是 animal\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e dog = \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ecreate\u003c/span\u003e(animal);\ndog.\u003cspan class=\"hljs-property\"\u003ebreed\u003c/span\u003e = \u003cspan class=\"hljs-string\"\u003e'Labrador'\u003c/span\u003e; \u003cspan class=\"hljs-comment\"\u003e// 为 dog 添加自有属性\u003c/span\u003e\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(dog.\u003cspan class=\"hljs-property\"\u003eisAlive\u003c/span\u003e);      \u003cspan class=\"hljs-comment\"\u003e// true (继承自 animal)\u003c/span\u003e\ndog.\u003cspan class=\"hljs-title function_\"\u003ebreathe\u003c/span\u003e();                 \u003cspan class=\"hljs-comment\"\u003e// \"inhale, exhale\" (继承自 animal)\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(dog.\u003cspan class=\"hljs-title function_\"\u003ehasOwnProperty\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'breed'\u003c/span\u003e));   \u003cspan class=\"hljs-comment\"\u003e// true (breed 是 dog 自己的属性)\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(dog.\u003cspan class=\"hljs-title function_\"\u003ehasOwnProperty\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'isAlive'\u003c/span\u003e)); \u003cspan class=\"hljs-comment\"\u003e// false (isAlive 是原型链上的属性)\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e背后发生了什么？\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003edog\u003c/code\u003e 对象本身是空的（除了我们后来添加的 \u003ccode\u003ebreed\u003c/code\u003e 属性）。当我们访问 \u003ccode\u003edog.isAlive\u003c/code\u003e 时，JavaScript 引擎在 \u003ccode\u003edog\u003c/code\u003e 对象上找不到它，于是就会沿着它的原型链向上查找，在 \u003ccode\u003eanimal\u003c/code\u003e 对象上找到了 \u003ccode\u003eisAlive\u003c/code\u003e 并返回其值。这个查找链条是：\u003ccode\u003edog ---\u003e animal ---\u003e Object.prototype ---\u003e null\u003c/code\u003e。\u003c/p\u003e\n\u003ch5 id=\"2-创建一个纯净的对象-objectcreatenull\"\u003e\u003ca href=\"#2-创建一个纯净的对象-objectcreatenull\"\u003e2. 创建一个“纯净”的对象 (\u003ccode\u003eObject.create(null)\u003c/code\u003e)\u003c/a\u003e\u003c/h5\u003e\n\u003cp\u003e这是一个非常重要的特例。通常，我们用 \u003ccode\u003e{}\u003c/code\u003e 创建的对象，其原型默认是 \u003ccode\u003eObject.prototype\u003c/code\u003e，因此它天生就带有一些方法，如 \u003ccode\u003etoString()\u003c/code\u003e, \u003ccode\u003ehasOwnProperty()\u003c/code\u003e 等。\u003c/p\u003e\n\u003cp\u003e但在某些场景下，我们希望创建一个完全干净、不继承任何东西的对象，把它当作一个纯粹的“哈希表”或“字典”来使用，以避免潜在的键名冲突。\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// 创建一个“纯净”的 map 对象\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e map = \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ecreate\u003c/span\u003e(\u003cspan class=\"hljs-literal\"\u003enull\u003c/span\u003e);\n\nmap.\u003cspan class=\"hljs-property\"\u003ename\u003c/span\u003e = \u003cspan class=\"hljs-string\"\u003e'My Map'\u003c/span\u003e;\nmap.\u003cspan class=\"hljs-property\"\u003etoString\u003c/span\u003e = \u003cspan class=\"hljs-string\"\u003e'a string'\u003c/span\u003e; \u003cspan class=\"hljs-comment\"\u003e// 这里的 toString 只是一个普通的属性键\u003c/span\u003e\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(map.\u003cspan class=\"hljs-property\"\u003ename\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// \"My Map\"\u003c/span\u003e\n\n\u003cspan class=\"hljs-comment\"\u003e// 因为 map 的原型是 null，它没有任何继承的方法\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// console.log(map.toString()); // 这会抛出错误: Uncaught TypeError: map.toString is not a function\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(map[\u003cspan class=\"hljs-string\"\u003e'toString'\u003c/span\u003e]); \u003cspan class=\"hljs-comment\"\u003e// \"a string\"\u003c/span\u003e\n\n\u003cspan class=\"hljs-comment\"\u003e// 同样，它也没有 hasOwnProperty 方法\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// console.log(map.hasOwnProperty('name')); // 错误: map.hasOwnProperty is not a function\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e为什么这很有用？\u003c/p\u003e\n\u003cp\u003e如果用户输入的数据中恰好有一个键是 hasOwnProperty，而你又把它存入一个普通对象 let obj = {} 中，当你调用 obj.hasOwnProperty 时，你可能无法区分这是用户数据还是原型上的方法。使用 Object.create(null) 创建的对象则完全没有这个问题。\u003c/p\u003e\n\u003ch5 id=\"3-使用第二个参数定义属性\"\u003e\u003ca href=\"#3-使用第二个参数定义属性\"\u003e3. 使用第二个参数定义属性\u003c/a\u003e\u003c/h5\u003e\n\u003cp\u003e第二个可选参数允许你在创建对象时，就以非常精确的方式定义其自有属性。这提供了比简单赋值更强大的控制力。\u003c/p\u003e\n\u003cp\u003e属性描述符（Property Descriptors）有以下几个键：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003evalue\u003c/code\u003e: 属性的值。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003ewritable\u003c/code\u003e: 是否可写（\u003ccode\u003etrue\u003c/code\u003e/\u003ccode\u003efalse\u003c/code\u003e）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eenumerable\u003c/code\u003e: 是否可被 \u003ccode\u003efor...in\u003c/code\u003e 循环或 \u003ccode\u003eObject.keys()\u003c/code\u003e 枚举（\u003ccode\u003etrue\u003c/code\u003e/\u003ccode\u003efalse\u003c/code\u003e）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003econfigurable\u003c/code\u003e: 是否可被删除或更改其特性（\u003ccode\u003etrue\u003c/code\u003e/\u003ccode\u003efalse\u003c/code\u003e）。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e user = \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ecreate\u003c/span\u003e(\u003cspan class=\"hljs-literal\"\u003enull\u003c/span\u003e, {\n  \u003cspan class=\"hljs-comment\"\u003e// 定义一个数据属性\u003c/span\u003e\n  \u003cspan class=\"hljs-attr\"\u003ename\u003c/span\u003e: {\n    \u003cspan class=\"hljs-attr\"\u003evalue\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'John Doe'\u003c/span\u003e,\n    \u003cspan class=\"hljs-attr\"\u003ewritable\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e,\n    \u003cspan class=\"hljs-attr\"\u003eenumerable\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-comment\"\u003e// 定义一个只读的、不可枚举的属性\u003c/span\u003e\n  \u003cspan class=\"hljs-attr\"\u003eid\u003c/span\u003e: {\n    \u003cspan class=\"hljs-attr\"\u003evalue\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e123\u003c/span\u003e,\n    \u003cspan class=\"hljs-attr\"\u003ewritable\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e,\n    \u003cspan class=\"hljs-attr\"\u003eenumerable\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e\n  }\n});\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(user.\u003cspan class=\"hljs-property\"\u003ename\u003c/span\u003e);      \u003cspan class=\"hljs-comment\"\u003e// \"John Doe\"\u003c/span\u003e\nuser.\u003cspan class=\"hljs-property\"\u003ename\u003c/span\u003e = \u003cspan class=\"hljs-string\"\u003e'Jane Doe'\u003c/span\u003e;      \u003cspan class=\"hljs-comment\"\u003e// 可以修改\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(user.\u003cspan class=\"hljs-property\"\u003ename\u003c/span\u003e);      \u003cspan class=\"hljs-comment\"\u003e// \"Jane Doe\"\u003c/span\u003e\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(user.\u003cspan class=\"hljs-property\"\u003eid\u003c/span\u003e);        \u003cspan class=\"hljs-comment\"\u003e// 123\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// user.id = 456;            // 在严格模式下会报错，非严格模式下静默失败\u003c/span\u003e\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003ekeys\u003c/span\u003e(user)); \u003cspan class=\"hljs-comment\"\u003e// [\"name\"] (因为 id 的 enumerable 是 false)\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003chr\u003e\n\u003ch3 id=\"object-上的其他重要静态函数\"\u003e\u003ca href=\"#object-上的其他重要静态函数\"\u003eObject 上的其他重要静态函数\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003eObject\u003c/code\u003e 构造函数本身也挂载了许多非常有用的静态方法。我们可以将它们分类来理解。\u003c/p\u003e\n\u003ch4 id=\"一-对象的创建与修改\"\u003e\u003ca href=\"#一-对象的创建与修改\"\u003e一、 对象的创建与修改\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e除了 \u003ccode\u003eObject.create()\u003c/code\u003e，还有：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.assign(target, ...sources)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：将一个或多个源对象（\u003ccode\u003esources\u003c/code\u003e）的所有\u003cstrong\u003e可枚举的自有属性\u003c/strong\u003e复制到目标对象（\u003ccode\u003etarget\u003c/code\u003e）。它会返回修改后的 \u003ccode\u003etarget\u003c/code\u003e 对象。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e关键点\u003c/strong\u003e：这是一个\u003cstrong\u003e浅拷贝\u003c/strong\u003e（Shallow Copy）。如果源对象的属性值是另一个对象，那么复制的是该对象的引用，而不是对象本身。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e defaults = { \u003cspan class=\"hljs-attr\"\u003ea\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e, \u003cspan class=\"hljs-attr\"\u003eb\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e };\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e options = { \u003cspan class=\"hljs-attr\"\u003eb\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e3\u003c/span\u003e, \u003cspan class=\"hljs-attr\"\u003ec\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e4\u003c/span\u003e };\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e merged = \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003eassign\u003c/span\u003e({}, defaults, options); \u003cspan class=\"hljs-comment\"\u003e// { a: 1, b: 3, c: 4 }\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// options.b 覆盖了 defaults.b\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.defineProperty(obj, prop, descriptor)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：在一个对象上直接定义一个新属性，或修改一个现有属性。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e关键点\u003c/strong\u003e：提供对属性特性的精细控制（writable, enumerable, configurable）。这是实现数据劫持（如 Vue 2.x）的基础。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.defineProperties(obj, props)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：在一个对象上定义或修改多个属性。\u003ccode\u003eObject.create()\u003c/code\u003e 的第二个参数内部就使用了这个逻辑。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4 id=\"二-获取对象的属性信息自省\"\u003e\u003ca href=\"#二-获取对象的属性信息自省\"\u003e二、 获取对象的属性信息（自省）\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e这些方法用于检查对象自身的结构。\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.keys(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个数组，包含对象自身的所有\u003cstrong\u003e可枚举属性\u003c/strong\u003e的\u003cstrong\u003e键名（字符串）\u003c/strong\u003e。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.values(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个数组，包含对象自身的所有\u003cstrong\u003e可枚举属性\u003c/strong\u003e的\u003cstrong\u003e值\u003c/strong\u003e。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.entries(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个数组，每个成员是对象自身的一个 \u003ccode\u003e[key, value]\u003c/code\u003e 键值对数组。对于将对象转换为 \u003ccode\u003eMap\u003c/code\u003e 或进行 \u003ccode\u003efor...of\u003c/code\u003e 循环非常有用。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e obj = { \u003cspan class=\"hljs-attr\"\u003ea\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e, \u003cspan class=\"hljs-attr\"\u003eb\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e };\n\u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e (\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e [key, value] \u003cspan class=\"hljs-keyword\"\u003eof\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003eentries\u003c/span\u003e(obj)) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e`\u003cspan class=\"hljs-subst\"\u003e${key}\u003c/span\u003e: \u003cspan class=\"hljs-subst\"\u003e${value}\u003c/span\u003e`\u003c/span\u003e);\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.getOwnPropertyNames(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个数组，包含对象自身的**所有属性（包括不可枚举的属性，但不包括 Symbol 属性）**的键名。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.getOwnPropertySymbols(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个数组，包含对象自身的所有 Symbol 属性。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.getOwnPropertyDescriptor(obj, prop)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回指定对象上一个自有属性的属性描述符。如果属性不存在，则返回 \u003ccode\u003eundefined\u003c/code\u003e。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.getOwnPropertyDescriptors(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回一个对象，包含了指定对象所有自有属性的描述符。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4 id=\"三-原型链的操作\"\u003e\u003ca href=\"#三-原型链的操作\"\u003e三、 原型链的操作\u003c/a\u003e\u003c/h4\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.getPrototypeOf(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：返回指定对象的原型。这是获取一个对象原型的标准、推荐方法（优于非标准的 \u003ccode\u003e__proto__\u003c/code\u003e）。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.setPrototypeOf(obj, prototype)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：设置一个对象的原型。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e注意\u003c/strong\u003e：这是一个非常消耗性能的操作，因为它会改变对象的整个继承链。在性能敏感的代码中应避免使用。最好在对象创建之初就用 \u003ccode\u003eObject.create()\u003c/code\u003e 来确定其原型。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4 id=\"四-控制对象的状态使其不可变\"\u003e\u003ca href=\"#四-控制对象的状态使其不可变\"\u003e四、 控制对象的状态（使其不可变）\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e这些方法用于锁定对象，防止其被修改。\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.preventExtensions(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：让一个对象\u003cstrong\u003e不能再添加\u003c/strong\u003e新的属性。已有属性仍然可以被修改或删除。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e检查方法：\u003ccode\u003eObject.isExtensible(obj)\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.seal(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：\u003cstrong\u003e密封\u003c/strong\u003e一个对象。这会 \u003ccode\u003epreventExtensions\u003c/code\u003e，并且把所有现有属性标记为 \u003ccode\u003econfigurable: false\u003c/code\u003e。这意味着你不能添加新属性，也不能删除或重新配置现有属性，但\u003cstrong\u003e可以修改\u003c/strong\u003e现有属性的值（如果它们是 \u003ccode\u003ewritable: true\u003c/code\u003e 的话）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e检查方法：\u003ccode\u003eObject.isSealed(obj)\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.freeze(obj)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：\u003cstrong\u003e冻结\u003c/strong\u003e一个对象。这是最严格的级别，它会 \u003ccode\u003eseal\u003c/code\u003e 对象，并将其所有数据属性的 \u003ccode\u003ewritable\u003c/code\u003e 特性设为 \u003ccode\u003efalse\u003c/code\u003e。对象将变得完全不可变（仅限第一层，是浅冻结）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e检查方法：\u003ccode\u003eObject.isFrozen(obj)\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4 id=\"五-实用工具\"\u003e\u003ca href=\"#五-实用工具\"\u003e五、 实用工具\u003c/a\u003e\u003c/h4\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.is(value1, value2)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：判断两个值是否是相同的值。它比 \u003ccode\u003e===\u003c/code\u003e 更严格。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e与 \u003ccode\u003e===\u003c/code\u003e 的区别\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eObject.is(NaN, NaN)\u003c/code\u003e 返回 \u003ccode\u003etrue\u003c/code\u003e (而 \u003ccode\u003eNaN === NaN\u003c/code\u003e 返回 \u003ccode\u003efalse\u003c/code\u003e)。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eObject.is(+0, -0)\u003c/code\u003e 返回 \u003ccode\u003efalse\u003c/code\u003e (而 \u003ccode\u003e+0 === -0\u003c/code\u003e 返回 \u003ccode\u003etrue\u003c/code\u003e)。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.fromEntries(iterable)\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：\u003ccode\u003eObject.entries()\u003c/code\u003e 的逆操作。它接收一个 \u003ccode\u003e[key, value]\u003c/code\u003e 形式的迭代器（如数组或 \u003ccode\u003eMap\u003c/code\u003e），并返回一个新的对象。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003c/p\u003e\n\u003cp\u003eJavaScript\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e entries = \u003cspan class=\"hljs-keyword\"\u003enew\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eMap\u003c/span\u003e([\n  [\u003cspan class=\"hljs-string\"\u003e'foo'\u003c/span\u003e, \u003cspan class=\"hljs-string\"\u003e'bar'\u003c/span\u003e],\n  [\u003cspan class=\"hljs-string\"\u003e'baz'\u003c/span\u003e, \u003cspan class=\"hljs-number\"\u003e42\u003c/span\u003e]\n]);\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e obj = \u003cspan class=\"hljs-title class_\"\u003eObject\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003efromEntries\u003c/span\u003e(entries); \u003cspan class=\"hljs-comment\"\u003e// { foo: \"bar\", baz: 42 }\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3 id=\"总结\"\u003e\u003ca href=\"#总结\"\u003e总结\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003eObject\u003c/code\u003e 上的这些静态方法为 JavaScript 开发者提供了操作和理解这门语言核心——对象的全套工具。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eObject.create()\u003c/code\u003e\u003c/strong\u003e 是基石，它让你从\u003cstrong\u003e原型\u003c/strong\u003e这个根源上控制对象的创建。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e属性访问系列 (\u003ccode\u003ekeys\u003c/code\u003e, \u003ccode\u003evalues\u003c/code\u003e, \u003ccode\u003eentries\u003c/code\u003e 等)\u003c/strong\u003e 提供了标准化的方式来迭代和检视对象内容。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e属性定义系列 (\u003ccode\u003edefineProperty\u003c/code\u003e, \u003ccode\u003edefineProperties\u003c/code\u003e)\u003c/strong\u003e 提供了对属性底层特性的精细控制。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e原型操作系列 (\u003ccode\u003egetPrototypeOf\u003c/code\u003e, \u003ccode\u003esetPrototypeOf\u003c/code\u003e)\u003c/strong\u003e 提供了管理继承链的能力。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e对象状态控制系列 (\u003ccode\u003efreeze\u003c/code\u003e, \u003ccode\u003eseal\u003c/code\u003e, \u003ccode\u003epreventExtensions\u003c/code\u003e)\u003c/strong\u003e 提供了创建不可变数据的原生支持。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e实用工具 (\u003ccode\u003eassign\u003c/code\u003e, \u003ccode\u003eis\u003c/code\u003e, \u003ccode\u003efromEntries\u003c/code\u003e)\u003c/strong\u003e 简化了许多常见的编程任务。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e理解并熟练运用这些方法，是深入掌握 JavaScript 面向对象编程和函数式编程范式的关键。\u003c/p\u003e"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"$L16\",null,{}],[\"$\",\"article\",null,{\"className\":\"container page-module__y-5DuW__article-page\",\"children\":[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-layout\",\"children\":[[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-main\",\"children\":[[\"$\",\"header\",null,{\"className\":\"page-module__y-5DuW__article-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"$undefined\",\"children\":[[\"$\",\"span\",null,{\"className\":\"$undefined\",\"children\":\"📂\"}],[[\"$\",\"$L17\",\"前端开发/js\",{\"href\":\"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/\",\"className\":\"$undefined\",\"children\":\"前端开发 / js\"}]]]}],[\"$\",\"h1\",null,{\"className\":\"page-module__y-5DuW__article-title\",\"children\":\"Object各种函数用法\"}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-meta\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"2025-08-14T00:00:00.000Z\",\"children\":\"2025年8月14日\"}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[2068,\" 字\"]}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[\"约 \",7,\" 分钟\"]}]]}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-tags\",\"children\":[[\"$\",\"span\",\"Obsidian\",{\"className\":\"page-module__y-5DuW__tag\",\"children\":\"Obsidian\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose page-module__y-5DuW__article-content\",\"dangerouslySetInnerHTML\":{\"__html\":\"$18\"}}],\"$L19\",\"$L1a\"]}],\"$L1b\"]}]}]]\n"])</script><script>self.__next_f.push([1,"1c:I[34574,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n1d:I[55132,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n19:[\"$\",\"$L1c\",null,{}]\n1a:[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-footer\",\"children\":[\"$\",\"$L17\",null,{\"href\":\"/articles/\",\"className\":\"page-module__y-5DuW__back-link\",\"children\":\"← 返回文章列表\"}]}]\n1b:[\"$\",\"aside\",null,{\"className\":\"page-module__y-5DuW__article-sidebar\",\"children\":[\"$\",\"$L1d\",null,{\"headings\":[{\"level\":3,\"id\":\"objectcreate-的深入解析\",\"text\":\"Object.create() 的深入解析\"},{\"level\":4,\"id\":\"语法\",\"text\":\"语法\"},{\"level\":4,\"id\":\"核心用法与场景\",\"text\":\"核心用法与场景\"},{\"level\":3,\"id\":\"object-上的其他重要静态函数\",\"text\":\"Object 上的其他重要静态函数\"},{\"level\":4,\"id\":\"一-对象的创建与修改\",\"text\":\"一、 对象的创建与修改\"},{\"level\":4,\"id\":\"二-获取对象的属性信息自省\",\"text\":\"二、 获取对象的属性信息（自省）\"},{\"level\":4,\"id\":\"三-原型链的操作\",\"text\":\"三、 原型链的操作\"},{\"level\":4,\"id\":\"四-控制对象的状态使其不可变\",\"text\":\"四、 控制对象的状态（使其不可变）\"},{\"level\":4,\"id\":\"五-实用工具\",\"text\":\"五、 实用工具\"},{\"level\":3,\"id\":\"总结\",\"text\":\"总结\"}]}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"1e:I[27201,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"IconMark\"]\n10:null\n15:[[\"$\",\"title\",\"0\",{\"children\":\"Object各种函数用法 | 流年石刻\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"好的，我们来深入且系统地讲解 Object.create 函数，并梳理 Object 上的其他核心函数。  Object.create 的深入解析 Object.create 是一个非常基础且强大的方法，它允许我们创建一个新对象，并精确地指…\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"$L1e\",\"4\",{}]]\n"])</script></body></html>

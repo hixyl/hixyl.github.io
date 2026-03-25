@@ -1,0 +1,559 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T94db,<p>我们来深入、彻底地探讨一下前端开发中常用的设计模式。</p>
+<p>首先要明确一个核心思想：设计模式不是具体的技术，也不是必须遵守的强制规定，而是<strong>在特定场景下，针对反复出现的问题，经过验证的、优雅的、可复用的解决方案</strong>。在前端领域，随着应用复杂度的指数级增长，我们面临的主要问题通常包括：</p>
+<ul>
+<li>
+<p><strong>UI 的复杂性</strong>：如何管理和复用大量的 UI 组件？</p>
+</li>
+<li>
+<p><strong>状态的复杂性</strong>：如何管理散落在应用各处的、相互依赖的数据状态？</p>
+</li>
+<li>
+<p><strong>逻辑的复杂性</strong>：如何组织业务逻辑、副作用（如 API 请求），使其清晰、可维护、可测试？</p>
+</li>
+<li>
+<p><strong>团队协作</strong>：如何建立一套统一的“语言”和“范式”，让团队成员能够高效协作，降低维护成本？</p>
+</li>
+</ul>
+<p>设计模式正是为了解决这些问题而存在的。下面，我将结合前端的实际场景，将这些模式分为几类来详细阐述。</p>
+<hr>
+<h3 id="一-奠定基础的基石模式-foundational-patterns"><a href="#一-奠定基础的基石模式-foundational-patterns">一、 奠定基础的基石模式 (Foundational Patterns)</a></h3>
+<p>这些模式是前端代码组织方式的基石，几乎所有现代前端项目都离不开它们。</p>
+<h4 id="1-模块模式-module-pattern"><a href="#1-模块模式-module-pattern">1. 模块模式 (Module Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：将相关的代码（变量、函数）封装在一个独立的单元（模块）中，通过明确的接口（<code>export</code>）暴露需要对外提供的部分，同时隐藏内部实现细节。这是实现“高内聚、低耦合”的基础。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>早期 (IIFE)</strong>：在没有原生模块系统之前，开发者使用“立即执行函数表达式”(Immediately Invoked Function Expression) 来模拟模块，避免全局变量污染。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-ini">const <span class="hljs-attr">myModule</span> = (() => {
+  // 私有变量
+  const <span class="hljs-attr">privateVariable</span> = <span class="hljs-string">'Hello World'</span><span class="hljs-comment">;</span>
+
+  // 私有函数
+  const <span class="hljs-attr">privateMethod</span> = () => {
+    console.log(privateVariable)<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  // 暴露给外部的公共接口
+  return {
+    publicMethod: () => {
+      privateMethod()<span class="hljs-comment">;</span>
+    }
+  }<span class="hljs-comment">;</span>
+})()<span class="hljs-comment">;</span>
+
+myModule.publicMethod()<span class="hljs-comment">; // 输出: "Hello World"</span>
+// console.log(myModule.privateVariable)<span class="hljs-comment">; // 报错: undefined</span>
+</code></pre>
+</li>
+<li>
+<p><strong>现代 (ES6 Modules)</strong>：现在，ES6 模块已经成为标准。我们使用 <code>import</code> 和 <code>export</code> 关键字，这使得模块化更加简单和强大。几乎你写的每一个 <code>.js</code> / <code>.ts</code> 文件都是一个模块。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// utils.js (一个模块)</span>
+<span class="hljs-keyword">const</span> privateVariable = <span class="hljs-string">'...'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">formatDate</span> = (<span class="hljs-params">date</span>) => {
+  <span class="hljs-comment">// ... 格式化逻辑</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'formatted date'</span>;
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">trim</span> = (<span class="hljs-params">str</span>) => {
+  <span class="hljs-comment">// ... 去除空格逻辑</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'trimmed string'</span>;
+};
+
+<span class="hljs-comment">// MyComponent.js (另一个模块)</span>
+<span class="hljs-keyword">import</span> { formatDate } <span class="hljs-keyword">from</span> <span class="hljs-string">'./utils.js'</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params">{ date }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{formatDate(date)}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：模块模式是前端工程化的基石，它解决了代码组织和依赖管理的核心问题，是后续所有复杂模式的基础。</p>
+</li>
+</ul>
+<hr>
+<h3 id="二-创建与实例化的模式-creational-patterns"><a href="#二-创建与实例化的模式-creational-patterns">二、 创建与实例化的模式 (Creational Patterns)</a></h3>
+<p>这类模式关注于如何创建对象和实例，使创建过程更加灵活和解耦。</p>
+<h4 id="1-工厂模式-factory-pattern"><a href="#1-工厂模式-factory-pattern">1. 工厂模式 (Factory Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：不直接使用 <code>new</code> 关键字创建实例，而是提供一个专门的函数（工厂）来创建对象。这样，创建的具体逻辑被封装起来，调用者无需关心对象是如何被创建的。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>组件工厂</strong>：在大型组件库或复杂应用中，你可能需要根据不同的类型创建不同的组件。例如，一个表单渲染器可以根据 <code>type</code> 字段来创建不同的输入框组件。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">TextInput</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./TextInput'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">SelectInput</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./SelectInput'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Checkbox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./Checkbox'</span>;
+
+<span class="hljs-comment">// 这是我们的组件工厂</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">FormFieldFactory</span>(<span class="hljs-params">{ <span class="hljs-keyword">type</span>, ...props }</span>) {
+  <span class="hljs-keyword">switch</span> (<span class="hljs-keyword">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'text'</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">TextInput</span> {<span class="hljs-attr">...props</span>} /></span></span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'select'</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">SelectInput</span> {<span class="hljs-attr">...props</span>} /></span></span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'checkbox'</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Checkbox</span> {<span class="hljs-attr">...props</span>} /></span></span>;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`Unknown form field type: <span class="hljs-subst">${<span class="hljs-keyword">type</span>}</span>`</span>);
+  }
+}
+
+<span class="hljs-comment">// 使用</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyForm</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> fieldConfig = { <span class="hljs-attr">type</span>: <span class="hljs-string">'select'</span>, <span class="hljs-attr">label</span>: <span class="hljs-string">'Choose an option'</span>, <span class="hljs-attr">options</span>: [...] };
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">form</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">FormFieldFactory</span> {<span class="hljs-attr">...fieldConfig</span>} /></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">form</span>></span></span>
+  );
+}
+</code></pre>
+</li>
+<li>
+<p><strong>对象创建</strong>：根据不同条件创建具有不同方法或属性的对象，例如创建一个 API 请求的适配器。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>优缺点</strong>：</p>
+<ul>
+<li>
+<p><strong>优点</strong>：将创建逻辑和使用逻辑分离，调用者更简单。易于扩展，增加新类型只需修改工厂函数。</p>
+</li>
+<li>
+<p><strong>缺点</strong>：每增加一个产品，就需要修改工厂的 <code>switch...case</code> 或 <code>if...else</code> 逻辑。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-单例模式-singleton-pattern"><a href="#2-单例模式-singleton-pattern">2. 单例模式 (Singleton Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：确保一个类在整个应用生命周期中只有一个实例，并提供一个全局访问点来获取这个实例。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>全局状态管理 (Store)</strong>：像 Redux/Vuex/Pinia 的 Store 就是典型的单例。整个应用共享同一个 Store 实例来存取状态。</p>
+</li>
+<li>
+<p><strong>全局服务或配置</strong>：比如一个全局的 API 请求服务实例 (封装了 <code>axios</code> 或 <code>fetch</code>)，它可能包含了认证信息、拦截器等，在任何地方调用都应该是同一个实例。</p>
+</li>
+<li>
+<p><strong>弹窗管理器</strong>：一个应用通常只需要一个 <code>Modal</code> 或 <code>Toast</code> 管理器，来确保同一时间弹窗的逻辑是统一管理的。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-comment">// apiService.js - 一个单例的请求服务</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ApiService</span> {
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">if</span> (ApiService.instance) {
+      <span class="hljs-keyword">return</span> ApiService.instance;
+    }
+    <span class="hljs-comment">// 配置axios或fetch，比如设置baseURL, headers等</span>
+    <span class="hljs-keyword">this</span>.client = axios.create({
+      baseURL: <span class="hljs-string">'/api'</span>,
+      <span class="hljs-comment">// ...其他配置</span>
+    });
+    ApiService.instance = <span class="hljs-keyword">this</span>;
+  }
+
+  <span class="hljs-keyword">get</span>(url, config) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.client.<span class="hljs-keyword">get</span>(url, config);
+  }
+  <span class="hljs-comment">// ...post, put, delete等方法</span>
+}
+
+<span class="hljs-comment">// 导出的始终是同一个实例</span>
+export <span class="hljs-keyword">const</span> apiService = new ApiService();
+
+<span class="hljs-comment">// 在任何组件中导入使用</span>
+<span class="hljs-comment">// import { apiService } from './apiService';</span>
+<span class="hljs-comment">// apiService.get('/users');</span>
+</code></pre>
+</li>
+<li>
+<p><strong>优缺点</strong>：</p>
+<ul>
+<li>
+<p><strong>优点</strong>：保证实例唯一，节约资源，提供全局访问点，非常适合管理全局状态。</p>
+</li>
+<li>
+<p><strong>缺点</strong>：可能被滥用，造成全局状态污染和强耦合，不利于单元测试（因为状态是全局共享的，测试用例之间会相互影响）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="三-结构与通信的模式-structural--behavioral-patterns"><a href="#三-结构与通信的模式-structural--behavioral-patterns">三、 结构与通信的模式 (Structural &#x26; Behavioral Patterns)</a></h3>
+<p>这是前端框架和库中应用最广泛、最核心的一类模式，它们定义了组件、对象之间如何组织、通信和协作。</p>
+<h4 id="1-观察者模式-observer-pattern--发布-订阅模式-publish-subscribe-pattern"><a href="#1-观察者模式-observer-pattern--发布-订阅模式-publish-subscribe-pattern">1. 观察者模式 (Observer Pattern) / 发布-订阅模式 (Publish-Subscribe Pattern)</a></h4>
+<p>这两个模式非常相似，核心思想都是定义一种一对多的依赖关系，当一个对象（“主题”或“发布者”）的状态发生改变时，所有依赖于它的对象（“观察者”或“订阅者”）都会得到通知并自动更新。</p>
+<ul>
+<li>
+<p><strong>在前端的应用</strong>：<strong>这是现代前端框架的灵魂。</strong></p>
+<ul>
+<li>
+<p><strong>UI 自动更新</strong>：React 的 <code>useState</code> / <code>useEffect</code>，Vue 的 <code>ref</code> / <code>reactive</code> 都是观察者模式的精密实现。你的数据（<code>state</code>）就是“主题”，你的组件就是“观察者”。当你调用 <code>setState</code> 或修改 <code>ref</code> 的值时，框架这个“通知中心”就会被触发，自动找出所有依赖这个数据的“观察者”（组件），并重新渲染它们。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-scss"><span class="hljs-comment">// React中的体现</span>
+function <span class="hljs-built_in">Counter</span>() {
+  <span class="hljs-comment">// 'count' 是主题 (Subject)</span>
+  <span class="hljs-comment">// 'Counter' 组件是观察者 (Observer)</span>
+  const <span class="hljs-selector-attr">[count, setCount]</span> = <span class="hljs-built_in">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-comment">// 当调用 setCount(1) 时，React 会通知 Counter 组件需要重新渲染</span>
+  return (
+    &#x3C;button onClick={() => <span class="hljs-built_in">setCount</span>(count + <span class="hljs-number">1</span>)}>
+      Count: {count}
+    &#x3C;/<span class="hljs-selector-tag">button</span>>
+  );
+}
+</code></pre>
+</li>
+<li>
+<p><strong>事件总线 (Event Bus)</strong>：在一些复杂场景下，用于非父子关系的组件通信。一个组件发布一个事件，另一个不相关的组件订阅了这个事件并做出响应。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-comment">// eventBus.js</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">EventBus</span> {
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.listeners = {};
+  }
+  <span class="hljs-comment">// 订阅</span>
+  subscribe(event, callback) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.listeners[event]) {
+      <span class="hljs-keyword">this</span>.listeners[event] = [];
+    }
+    <span class="hljs-keyword">this</span>.listeners[event].push(callback);
+  }
+  <span class="hljs-comment">// 发布</span>
+  publish(event, <span class="hljs-keyword">data</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.listeners[event]) {
+      <span class="hljs-keyword">this</span>.listeners[event].forEach(callback => callback(<span class="hljs-keyword">data</span>));
+    }
+  }
+}
+export <span class="hljs-keyword">const</span> eventBus = new EventBus(); <span class="hljs-comment">// 单例模式</span>
+
+<span class="hljs-comment">// ComponentA.js</span>
+<span class="hljs-comment">// eventBus.publish('user:login', { name: 'Alice' });</span>
+
+<span class="hljs-comment">// ComponentB.js</span>
+<span class="hljs-comment">// eventBus.subscribe('user:login', (user) => console.log(`${user.name} has logged in.`));</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：观察者模式是实现“响应式编程”和“数据驱动视图”的核心，是理解现代前端框架工作原理的关键。</p>
+</li>
+</ul>
+<h4 id="2-代理模式-proxy-pattern"><a href="#2-代理模式-proxy-pattern">2. 代理模式 (Proxy Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：为一个对象提供一个代理（或占位符），以控制对这个对象的访问。代理可以添加额外的逻辑，如访问控制、缓存、懒加载、日志记录等。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>Vue 3 的响应式系统</strong>：Vue 3 使用了 ES6 的 <code>Proxy</code> 对象来实现其响应式系统。当你访问或修改一个由 <code>reactive()</code> 创建的代理对象时，<code>Proxy</code> 的 <code>get</code> 和 <code>set</code> 陷阱（trap）会被触发。Vue 在这些陷阱中加入了依赖收集（<code>get</code>时）和触发更新（<code>set</code>时）的逻辑，从而实现了精准的UI更新。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 简化版的Vue 3响应式原理</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reactive</span>(<span class="hljs-params">target</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(target, {
+    <span class="hljs-title function_">get</span>(<span class="hljs-params">target, key, receiver</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[Proxy GET] 访问了属性: <span class="hljs-subst">${key}</span>`</span>);
+      <span class="hljs-comment">// 依赖收集：告诉Vue，当前这个组件依赖这个属性</span>
+      <span class="hljs-title function_">track</span>(target, key);
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">get</span>(target, key, receiver);
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value, receiver</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[Proxy SET] 修改了属性: <span class="hljs-subst">${key}</span> = <span class="hljs-subst">${value}</span>`</span>);
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">set</span>(target, key, value, receiver);
+      <span class="hljs-comment">// 触发更新：告诉Vue，所有依赖这个属性的组件都需要重新渲染</span>
+      <span class="hljs-title function_">trigger</span>(target, key);
+      <span class="hljs-keyword">return</span> result;
+    }
+  });
+}
+
+<span class="hljs-keyword">const</span> state = <span class="hljs-title function_">reactive</span>({ <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> });
+<span class="hljs-comment">// state.count; // 触发 get</span>
+<span class="hljs-comment">// state.count = 1; // 触发 set</span>
+</code></pre>
+</li>
+<li>
+<p><strong>API 拦截</strong>：可以创建一个 API 客户端的代理，用于自动添加 token、处理通用错误、缓存请求结果等。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：代理模式在框架底层大放异彩，是实现无感知、高性能数据绑定的利器。</p>
+</li>
+</ul>
+<h4 id="3-装饰器模式-decorator-pattern"><a href="#3-装饰器模式-decorator-pattern">3. 装饰器模式 (Decorator Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：动态地给一个对象添加一些额外的职责，就增加功能来说，装饰器模式相比生成子类更为灵活。它像一个包装器，可以在不改变原对象代码的情况下，为其包裹上新的功能。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>高阶组件 (Higher-Order Component, HOC) in React</strong>：HOC 是一个函数，它接收一个组件作为参数，并返回一个新的、增强版的组件。这是 React 中经典的装饰器模式实现。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// withAuth 是一个 HOC (装饰器)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">withAuth</span>(<span class="hljs-params">WrappedComponent</span>) {
+  <span class="hljs-comment">// 返回一个新的组件</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">props</span>) {
+    <span class="hljs-keyword">const</span> { isAuthenticated } = <span class="hljs-title function_">useAuth</span>(); <span class="hljs-comment">// 假设有个认证的hook</span>
+
+    <span class="hljs-keyword">if</span> (!isAuthenticated) {
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>请先登录<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>;
+    }
+    <span class="hljs-comment">// 如果认证通过，渲染原始组件，并传入props</span>
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...props</span>} /></span></span>;
+  };
+}
+
+<span class="hljs-comment">// MySecretData 是需要被保护的组件</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MySecretData</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>这是机密信息<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+<span class="hljs-comment">// 使用HOC装饰（增强）它</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AuthenticatedSecretData</span> = <span class="hljs-title function_">withAuth</span>(<span class="hljs-title class_">MySecretData</span>);
+
+<span class="hljs-comment">// 使用增强后的组件</span>
+<span class="hljs-comment">// &#x3C;AuthenticatedSecretData /></span>
+</code></pre>
+</li>
+<li>
+<p><strong>TypeScript/Babel 中的装饰器语法</strong>：在 Angular、MobX 等库中广泛使用。通过 <code>@</code> 语法糖，可以更优雅地为类或方法添加元数据或特定功能（如日志、依赖注入）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：虽然 React Hooks 的出现减少了 HOC 的使用，但装饰器模式在代码复用和功能增强方面依然是一种非常重要的思想。</p>
+</li>
+</ul>
+<hr>
+<h3 id="四-前端特有的架构模式-frontend-specific-architectural-patterns"><a href="#四-前端特有的架构模式-frontend-specific-architectural-patterns">四、 前端特有的架构模式 (Frontend-specific Architectural Patterns)</a></h3>
+<p>这些模式更多的是关于如何组织整个应用或组件的宏观结构。</p>
+<h4 id="1-提供者模式-provider-pattern"><a href="#1-提供者模式-provider-pattern">1. 提供者模式 (Provider Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：通过一个顶层组件（Provider）向其所有后代组件提供数据或功能，避免了将 <code>props</code> 逐层传递（即“属性钻探” Prop Drilling）的繁琐。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><strong>React Context API</strong>：这是 Provider 模式最直接的实现。<code>Redux</code> 的 <code>&#x3C;Provider></code>，<code>React Router</code> 的路由上下文，以及各种 UI 库的主题切换功能，都基于此模式。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// ThemeContext.js</span>
+<span class="hljs-keyword">import</span> { createContext, useContext, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ThemeContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-comment">// 这是 Provider 组件</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">ThemeProvider</span>(<span class="hljs-params">{ children }</span>) {
+  <span class="hljs-keyword">const</span> [theme, setTheme] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">'light'</span>);
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">toggleTheme</span> = (<span class="hljs-params"></span>) => <span class="hljs-title function_">setTheme</span>(<span class="hljs-function"><span class="hljs-params">t</span> =></span> (t === <span class="hljs-string">'light'</span> ? <span class="hljs-string">'dark'</span> : <span class="hljs-string">'light'</span>));
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ThemeContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">theme</span>, <span class="hljs-attr">toggleTheme</span> }}></span>
+      {children}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">ThemeContext.Provider</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// 自定义 Hook，方便消费 Context</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">useTheme</span> = (<span class="hljs-params"></span>) => <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">ThemeContext</span>);
+
+<span class="hljs-comment">// App.js (顶层)</span>
+<span class="hljs-comment">// &#x3C;ThemeProvider></span>
+<span class="hljs-comment">//   &#x3C;MyEntireApp /></span>
+<span class="hljs-comment">// &#x3C;/ThemeProvider></span>
+
+<span class="hljs-comment">// DeeplyNestedComponent.js (任意深层子组件)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">DeeplyNestedComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { theme, toggleTheme } = <span class="hljs-title function_">useTheme</span>(); <span class="hljs-comment">// 直接获取，无需关心层级</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{toggleTheme}</span>></span>Current theme: {theme}<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span></span>;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：Provider 模式是现代前端进行跨组件状态共享和依赖注入的标准解决方案。</p>
+</li>
+</ul>
+<h4 id="2-容器展示组件模式-containerpresentational-components"><a href="#2-容器展示组件模式-containerpresentational-components">2. 容器/展示组件模式 (Container/Presentational Components)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：将组件分为两类：</p>
+<ul>
+<li>
+<p><strong>容器组件 (Container Components)</strong>：负责**“如何工作”**。它们关心数据获取、状态管理、业务逻辑，通常包含副作用，并将处理好的数据和函数作为 <code>props</code> 传递给展示组件。</p>
+</li>
+<li>
+<p><strong>展示组件 (Presentational Components)</strong>：负责**“如何展示”**。它们是“哑”组件（Dumb Components），只接收 <code>props</code> 并渲染 UI，不包含自己的状态和业务逻辑，具有很高的复用性。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// --- 容器组件 (Container) ---</span>
+<span class="hljs-comment">// UserProfileContainer.js</span>
+<span class="hljs-keyword">import</span> { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { apiService } <span class="hljs-keyword">from</span> <span class="hljs-string">'./apiService'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">UserProfile</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./UserProfile'</span>; <span class="hljs-comment">// 引入展示组件</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfileContainer</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [isLoading, setIsLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-title function_">setIsLoading</span>(<span class="hljs-literal">true</span>);
+    apiService.<span class="hljs-title function_">get</span>(<span class="hljs-string">`/users/<span class="hljs-subst">${userId}</span>`</span>)
+      .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">response</span> =></span> <span class="hljs-title function_">setUser</span>(response.<span class="hljs-property">data</span>))
+      .<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">setIsLoading</span>(<span class="hljs-literal">false</span>));
+  }, [userId]);
+
+  <span class="hljs-keyword">if</span> (isLoading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>;
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">UserProfile</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span> /></span></span>; <span class="hljs-comment">// 将数据传递给展示组件</span>
+}
+
+<span class="hljs-comment">// --- 展示组件 (Presentational) ---</span>
+<span class="hljs-comment">// UserProfile.js</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ user }</span>) {
+  <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>{user.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Email: {user.email}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+</code></pre>
+</li>
+<li>
+<p><strong>演进与现状</strong>：React Hooks 的出现模糊了容器和展示组件的界限。现在，我们更倾向于在自定义 Hooks (<code>useUser</code>) 中封装逻辑，然后在组件中同时使用这些 Hooks 和渲染 JSX。<strong>但其核心思想——“逻辑与视图分离”——依然是组织复杂组件时非常有价值的原则。</strong></p>
+</li>
+</ul>
+<h4 id="3-hooks-模式-hooks-pattern"><a href="#3-hooks-模式-hooks-pattern">3. Hooks 模式 (Hooks Pattern)</a></h4>
+<ul>
+<li>
+<p><strong>核心思想</strong>：这不是一个经典的设计模式，而是 React 提出的一种<strong>在函数组件中复用状态逻辑</strong>的机制。它允许你将组件逻辑（如状态、生命周期、上下文）提取到可重用的函数（自定义 Hook）中。</p>
+</li>
+<li>
+<p><strong>在前端的应用</strong>：</p>
+<ul>
+<li>
+<p><code>useState</code>, <code>useEffect</code>, <code>useContext</code> 等是 React 内置的 Hooks。</p>
+</li>
+<li>
+<p><strong>自定义 Hooks</strong> 是 Hooks 模式的精髓，它让你能以一种干净、组合式的方式封装和复用逻辑。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// useWindowSize.js (一个自定义 Hook)</span>
+<span class="hljs-keyword">import</span> { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useWindowSize</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [size, setSize] = <span class="hljs-title function_">useState</span>({
+    <span class="hljs-attr">width</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>,
+    <span class="hljs-attr">height</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerHeight</span>,
+  });
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleResize</span> = (<span class="hljs-params"></span>) => {
+      <span class="hljs-title function_">setSize</span>({
+        <span class="hljs-attr">width</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>,
+        <span class="hljs-attr">height</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerHeight</span>,
+      });
+    };
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'resize'</span>, handleResize);
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =></span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'resize'</span>, handleResize);
+  }, []);
+
+  <span class="hljs-keyword">return</span> size;
+}
+
+<span class="hljs-comment">// 任意组件中使用</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { width, height } = <span class="hljs-title function_">useWindowSize</span>(); <span class="hljs-comment">// 一行代码复用了所有逻辑</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Window size: {width} x {height}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>小结</strong>：Hooks 模式是现代 React 开发的范式，它遵循“组合优于继承”的原则，极大地提高了逻辑复用的灵活性和代码的简洁性。</p>
+</li>
+</ul>
+<h3 id="结论与最佳实践"><a href="#结论与最佳实践">结论与最佳实践</a></h3>
+<p>我认为，对于一名前端开发者来说，最好的答案不是去死记硬背每个模式的定义，而是要理解它们<strong>试图解决什么问题</strong>。</p>
+<ol>
+<li>
+<p><strong>从问题出发</strong>：当你遇到代码重复、职责不清、数据流混乱、难以测试等问题时，停下来想一想，是否有某个设计模式的思想可以借鉴。</p>
+<ul>
+<li>
+<p>需要全局共享状态？ -> <strong>单例模式</strong>（Store）、<strong>提供者模式</strong>（Context）。</p>
+</li>
+<li>
+<p>需要解耦组件间的通信？ -> <strong>观察者模式</strong>（Event Bus）。</p>
+</li>
+<li>
+<p>需要复用有状态的逻辑？ -> <strong>Hooks 模式</strong>（自定义 Hook）、<strong>装饰器模式</strong>（HOC）。</p>
+</li>
+<li>
+<p>需要根据不同条件创建不同实例？ -> <strong>工厂模式</strong>。</p>
+</li>
+<li>
+<p>想让数据变化时 UI 自动更新？ -> <strong>观察者模式</strong>是其底层原理，框架已为你实现。</p>
+</li>
+<li>
+<p>想让组件更纯粹、更易测试？ -> <strong>容器/展示组件</strong>的分离思想。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>拥抱框架的实现</strong>：现代前端框架（React, Vue, Angular）本身就是设计模式的集大成者。你日常使用的 <code>useState</code>、<code>reactive</code>、<code>Provider</code>、<code>Service/DI</code> 已经让你在不自觉中应用了这些模式。深入理解框架的源码或核心原理，是学习设计模式在前端应用的绝佳途径。</p>
+</li>
+<li>
+<p><strong>避免过度设计</strong>：不要为了用模式而用模式。对于简单的应用或组件，直接、清晰的代码远比生搬硬套一个复杂模式要好。设计模式是用来解决复杂性的，而不是增加复杂性的。</p>
+</li>
+</ol>
+<p>最终，掌握设计模式会让你在面对复杂前端工程时，拥有更广阔的视野和更强大的“武器库”，从而写出更健壮、更可维护、更优雅的代码。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"设计模式"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[3683," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",13," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-奠定基础的基石模式-foundational-patterns","text":"一、 奠定基础的基石模式 (Foundational Patterns)"},{"level":4,"id":"1-模块模式-module-pattern","text":"1. 模块模式 (Module Pattern)"},{"level":3,"id":"二-创建与实例化的模式-creational-patterns","text":"二、 创建与实例化的模式 (Creational Patterns)"},{"level":4,"id":"1-工厂模式-factory-pattern","text":"1. 工厂模式 (Factory Pattern)"},{"level":4,"id":"2-单例模式-singleton-pattern","text":"2. 单例模式 (Singleton Pattern)"},{"level":3,"id":"三-结构与通信的模式-structural--behavioral-patterns","text":"三、 结构与通信的模式 (Structural &#x26; Behavioral Patterns)"},{"level":4,"id":"1-观察者模式-observer-pattern--发布-订阅模式-publish-subscribe-pattern","text":"1. 观察者模式 (Observer Pattern) / 发布-订阅模式 (Publish-Subscribe Pattern)"},{"level":4,"id":"2-代理模式-proxy-pattern","text":"2. 代理模式 (Proxy Pattern)"},{"level":4,"id":"3-装饰器模式-decorator-pattern","text":"3. 装饰器模式 (Decorator Pattern)"},{"level":3,"id":"四-前端特有的架构模式-frontend-specific-architectural-patterns","text":"四、 前端特有的架构模式 (Frontend-specific Architectural Patterns)"},{"level":4,"id":"1-提供者模式-provider-pattern","text":"1. 提供者模式 (Provider Pattern)"},{"level":4,"id":"2-容器展示组件模式-containerpresentational-components","text":"2. 容器/展示组件模式 (Container/Presentational Components)"},{"level":4,"id":"3-hooks-模式-hooks-pattern","text":"3. Hooks 模式 (Hooks Pattern)"},{"level":3,"id":"结论与最佳实践","text":"结论与最佳实践"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,208 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+c:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E5%89%8D%E7%AB%AF%E5%A4%8D%E6%9D%82%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E4%B8%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E5%89%8D%E7%AB%AF%E5%A4%8D%E6%9D%82%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E4%B8%8E%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{"children":["$L9",{},null,false,null]},null,false,"$@a"]},null,false,"$@a"]},null,false,null],"$Lb",false]],"m":"$undefined","G":["$c",["$Ld"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":["$Le",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}]
+12:[]
+a:"$W12"
+b:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+d:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T317c,<h2 id="一-核心痛点为什么原生-json-会引发-bug"><a href="#一-核心痛点为什么原生-json-会引发-bug">一、 核心痛点：为什么原生 JSON 会引发 Bug？</a></h2>
+<p>前端在处理状态持久化时，通常习惯使用 <code>JSON.stringify()</code> 将对象转换为字符串并存入 <code>localStorage</code> 或 <code>sessionStorage</code>。但 JSON 本质上是一种跨语言的轻量级<strong>文本数据交换格式</strong>，它并不是为了完整保存 JavaScript 内存中的对象状态而设计的。</p>
+<p>这就导致了两个难以回避的客观边界：</p>
+<ol>
+<li>
+<p><strong>类型丢失与静默变异</strong>：</p>
+<ul>
+<li>
+<p><code>undefined</code>、<code>Function</code>、<code>Symbol</code> 会在转换时被直接忽略。</p>
+</li>
+<li>
+<p><code>NaN</code>、<code>Infinity</code> 会被强制转换为 <code>null</code>。</p>
+</li>
+<li>
+<p><code>Date</code> 对象会被转换为 ISO 字符串，且解析时无法自动还原为 Date 实例。</p>
+</li>
+<li>
+<p><code>Map</code>、<code>Set</code>、<code>RegExp</code>、<code>Error</code> 等复杂对象会被转换为无意义的空对象 <code>{}</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>循环引用导致崩溃</strong>：</p>
+<ul>
+<li>当对象结构中存在相互引用（例如对象 A 的属性指向 B，B 的属性又指回 A）时，<code>JSON.stringify</code> 无法处理这种内存指针的闭环，会直接抛出 <code>TypeError: Converting circular structure to JSON</code> 异常。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="二-解决方案与技术路径"><a href="#二-解决方案与技术路径">二、 解决方案与技术路径</a></h2>
+<p>要突破上述边界，工程实践中通常有三种演进路径。我们需要根据具体的业务场景、数据规模以及对包体积的敏感度来做决策。</p>
+<h3 id="路径一原生-api-的深度定制轻量级干预"><a href="#路径一原生-api-的深度定制轻量级干预">路径一：原生 API 的深度定制（轻量级干预）</a></h3>
+<p>利用 <code>JSON.stringify</code> 和 <code>JSON.parse</code> 内置的 <code>replacer</code> 和 <code>reviver</code> 参数，建立一套自定义的序列化规则，用“魔法标记”来记录丢失的类型信息。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 1. 序列化：将特殊类型转换为带标记的普通对象</span>
+<span class="hljs-keyword">const</span> replacer = <span class="hljs-keyword">function</span>(<span class="hljs-params">key, value</span>) {
+    <span class="hljs-keyword">const</span> origValue = <span class="hljs-variable language_">this</span>[key]; <span class="hljs-comment">// 必须使用 this[key] 获取未被默认转换的原始值</span>
+    <span class="hljs-keyword">if</span> (origValue <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Date</span>) <span class="hljs-keyword">return</span> { <span class="hljs-attr">_type</span>: <span class="hljs-string">'Date'</span>, <span class="hljs-attr">val</span>: origValue.<span class="hljs-title function_">getTime</span>() };
+    <span class="hljs-keyword">if</span> (origValue <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Map</span>) <span class="hljs-keyword">return</span> { <span class="hljs-attr">_type</span>: <span class="hljs-string">'Map'</span>, <span class="hljs-attr">val</span>: <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(origValue) };
+    <span class="hljs-keyword">if</span> (origValue <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">RegExp</span>) <span class="hljs-keyword">return</span> { <span class="hljs-attr">_type</span>: <span class="hljs-string">'RegExp'</span>, <span class="hljs-attr">val</span>: origValue.<span class="hljs-property">source</span>, <span class="hljs-attr">flags</span>: origValue.<span class="hljs-property">flags</span> };
+    <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Number</span>.<span class="hljs-built_in">isNaN</span>(origValue)) <span class="hljs-keyword">return</span> { <span class="hljs-attr">_type</span>: <span class="hljs-string">'NaN'</span> };
+    <span class="hljs-keyword">return</span> value;
+};
+
+<span class="hljs-comment">// 2. 反序列化：识别标记并重新实例化</span>
+<span class="hljs-keyword">const</span> reviver = <span class="hljs-keyword">function</span>(<span class="hljs-params">key, value</span>) {
+    <span class="hljs-keyword">if</span> (value &#x26;&#x26; <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'object'</span> &#x26;&#x26; value.<span class="hljs-property">_type</span>) {
+        <span class="hljs-keyword">switch</span> (value.<span class="hljs-property">_type</span>) {
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'Date'</span>: <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(value.<span class="hljs-property">val</span>);
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'Map'</span>: <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(value.<span class="hljs-property">val</span>);
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'RegExp'</span>: <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(value.<span class="hljs-property">val</span>, value.<span class="hljs-property">flags</span>);
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'NaN'</span>: <span class="hljs-keyword">return</span> <span class="hljs-title class_">NaN</span>;
+        }
+    }
+    <span class="hljs-keyword">return</span> value;
+};
+
+<span class="hljs-comment">// 使用示例</span>
+<span class="hljs-keyword">const</span> str = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(complexData, replacer);
+<span class="hljs-keyword">const</span> data = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(str, reviver);
+</code></pre>
+<ul>
+<li>
+<p><strong>优势</strong>：零外部依赖，完全可控，不增加打包体积。</p>
+</li>
+<li>
+<p><strong>劣势</strong>：无法处理循环引用；需要手动维护大量的类型映射，容易遗漏边界条件。</p>
+</li>
+</ul>
+<h3 id="路径二引入专业序列化库极致的字符串转换"><a href="#路径二引入专业序列化库极致的字符串转换">路径二：引入专业序列化库（极致的字符串转换）</a></h3>
+<p>将类型推断和内存指针的扁平化处理交给成熟的第三方工具，实现代码层的“完美且简洁”。</p>
+<ol>
+<li>
+<p><strong><code>superjson</code>（专注类型保留）</strong>：</p>
+<p>在底层构建元数据映射，将复杂对象转换为带有类型标签的字符串。完美支持 <code>Date</code>、<code>Map</code>、<code>Set</code>、<code>BigInt</code> 等，API 完全对标原生 JSON。</p>
+</li>
+<li>
+<p><strong><code>devalue</code>（专注解决循环引用）</strong>：</p>
+<p>不仅保留类型，还能精确重建对象间的内存互相引用关系。常用于复杂状态机或服务端渲染（SSR）的数据脱水与注水。</p>
+</li>
+</ol>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> superjson <span class="hljs-keyword">from</span> <span class="hljs-string">'superjson'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> devalue <span class="hljs-keyword">from</span> <span class="hljs-string">'devalue'</span>;
+
+<span class="hljs-comment">// superjson 转换</span>
+<span class="hljs-keyword">const</span> str1 = superjson.<span class="hljs-title function_">stringify</span>(obj);
+<span class="hljs-keyword">const</span> restored1 = superjson.<span class="hljs-title function_">parse</span>(str1);
+
+<span class="hljs-comment">// devalue 转换（处理循环引用）</span>
+<span class="hljs-keyword">const</span> str2 = devalue.<span class="hljs-title function_">stringify</span>(obj);
+<span class="hljs-keyword">const</span> restored2 = devalue.<span class="hljs-title function_">parse</span>(str2);
+</code></pre>
+<ul>
+<li>
+<p><strong>优势</strong>：开发体验极佳，彻底解决类型丢失和循环引用报错。</p>
+</li>
+<li>
+<p><strong>劣势</strong>：带来了额外的包体积；由于需要构建和解析元数据，CPU 运算耗时高于原生 JSON。在大规模数据高频读写时，可能产生微小的性能损耗。</p>
+</li>
+</ul>
+<h3 id="路径三降维打击indexeddb-与结构化克隆"><a href="#路径三降维打击indexeddb-与结构化克隆">路径三：降维打击——IndexedDB 与结构化克隆</a></h3>
+<p>如果最终目的是“存储数据”而非“通过网络传输字符串”，最严谨的做法是放弃强制字符串转换，直接使用浏览器底层的 <code>IndexedDB</code>。</p>
+<p>它默认采用<strong>结构化克隆算法 (Structured Clone Algorithm)</strong>：</p>
+<ul>
+<li>
+<p>原生支持直接存入 <code>Map</code>、<code>Set</code>、<code>Date</code>、<code>ArrayBuffer</code> 甚至 <code>Blob</code>。</p>
+</li>
+<li>
+<p>原生支持并正确解析循环引用。</p>
+</li>
+</ul>
+<p>为了抹平底层 API 的复杂性，通常配合 <code>localforage</code> 等封装库使用：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> localforage <span class="hljs-keyword">from</span> <span class="hljs-string">'localforage'</span>;
+
+<span class="hljs-comment">// 极其复杂且包含循环引用的对象</span>
+<span class="hljs-keyword">const</span> complexState = { <span class="hljs-attr">map</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(), <span class="hljs-attr">date</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>() };
+complexState.<span class="hljs-property">self</span> = complexState;
+
+<span class="hljs-comment">// 直接写入，无需转换</span>
+<span class="hljs-keyword">await</span> localforage.<span class="hljs-title function_">setItem</span>(<span class="hljs-string">'app_state'</span>, complexState);
+
+<span class="hljs-comment">// 直接读取，保持内存结构和类型完好</span>
+<span class="hljs-keyword">const</span> state = <span class="hljs-keyword">await</span> localforage.<span class="hljs-title function_">getItem</span>(<span class="hljs-string">'app_state'</span>);
+</code></pre>
+<ul>
+<li>
+<p><strong>优势</strong>：零 CPU 序列化开销，是最符合计算机系统底层逻辑的复杂数据存储方案。</p>
+</li>
+<li>
+<p><strong>劣势</strong>：需要处理异步（Promise）逻辑；无法用于必须要求同步读取的极早期渲染阶段。</p>
+</li>
+</ul>
+<hr>
+<h2 id="三-选型决策矩阵"><a href="#三-选型决策矩阵">三、 选型决策矩阵</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>业务场景特征</strong></th>
+<th><strong>核心痛点</strong></th>
+<th><strong>推荐技术方案</strong></th>
+<th><strong>综合评估</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>仅包含零散的特殊类型 (Date等)</strong></td>
+<td>数据丢失</td>
+<td><strong>原生 JSON + 自定义解析</strong></td>
+<td>维护成本低，无需引入依赖。</td>
+</tr>
+<tr>
+<td><strong>重度依赖 Map/Set/BigInt 的状态机</strong></td>
+<td>类型变异、API 繁杂</td>
+<td><strong><code>superjson</code></strong></td>
+<td>牺牲几 KB 体积换取绝对的开发效率和数据一致性。</td>
+</tr>
+<tr>
+<td><strong>存在网状结构或循环引用的对象</strong></td>
+<td>JSON 抛出崩溃异常</td>
+<td><strong><code>devalue</code> 或 <code>flatted</code></strong></td>
+<td>必须引入此类库来打平内存指针。</td>
+</tr>
+<tr>
+<td><strong>大体积/复杂对象的大量持久化存储</strong></td>
+<td>转换时的 CPU 性能瓶颈、Storage 容量限制</td>
+<td><strong><code>IndexedDB</code> (配合 <code>localforage</code>)</strong></td>
+<td>彻底绕开字符串序列化的降维方案，异步读取是唯一的机会成本。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>你需要我基于你们团队目前的技术栈（比如 Vue/React 状态管理库）和具体的使用场景，为你编写一个开箱即用的模块化 <code>storage.js</code> 封装文件吗？</p>e:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","className":"$undefined","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"前端复杂对象存储与序列化实践指南"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1328," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":2,"id":"一-核心痛点为什么原生-json-会引发-bug","text":"一、 核心痛点：为什么原生 JSON 会引发 Bug？"},{"level":2,"id":"二-解决方案与技术路径","text":"二、 解决方案与技术路径"},{"level":3,"id":"路径一原生-api-的深度定制轻量级干预","text":"路径一：原生 API 的深度定制（轻量级干预）"},{"level":3,"id":"路径二引入专业序列化库极致的字符串转换","text":"路径二：引入专业序列化库（极致的字符串转换）"},{"level":3,"id":"路径三降维打击indexeddb-与结构化克隆","text":"路径三：降维打击——IndexedDB 与结构化克隆"},{"level":2,"id":"三-选型决策矩阵","text":"三、 选型决策矩阵"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"前端复杂对象存储与序列化实践指南 | 流年石刻"}],["$","meta","1",{"name":"description","content":"一、 核心痛点：为什么原生 JSON 会引发 Bug？ 前端在处理状态持久化时，通常习惯使用 JSON.stringify 将对象转换为字符串并存入 localStorage 或 sessionStorage。但 JSON 本质上是一种跨语…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

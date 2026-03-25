@@ -1,0 +1,154 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T2473,<p>理解浏览器如何运作，核心在于区分“执行代码的工人”和“维持工厂运转的后台”。虽然 JavaScript 引擎（主线程）同一时间只能做一件事，但浏览器为其配备了数个独立线程来处理杂活。</p>
+<p>我们可以将这些线程按功能进行分类梳理：</p>
+<h3 id="1-计时器线程-timer-thread"><a href="#1-计时器线程-timer-thread">1. 计时器线程 (Timer Thread)</a></h3>
+<p><strong>职责</strong>：专门负责 <code>setTimeout</code> 和 <code>setInterval</code> 的计时。主线程调用计时 API 后，就把任务甩给这个线程，主线程就去忙别的了。</p>
+<p><strong>代码示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1. 主线程：开始计时'</span>);
+
+<span class="hljs-comment">// 这一步只是“下单”，计时由计时器线程在后台完成</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3. 任务队列：时间到了，主线程空闲后执行我'</span>);
+}, <span class="hljs-number">2000</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2. 主线程：继续执行后续代码'</span>);
+</code></pre>
+<ul>
+<li><strong>协作逻辑</strong>：计时器线程独立数秒，时间一到，它把回调函数扔进“任务队列”，等待主线程临幸。</li>
+</ul>
+<hr>
+<h3 id="2-事件触发线程-event-trigger-thread"><a href="#2-事件触发线程-event-trigger-thread">2. 事件触发线程 (Event Trigger Thread)</a></h3>
+<p><strong>职责</strong>：监控用户的交互行为（点击、滚动、键盘输入等）。它独立于 JS 引擎，确保即便 JS 正在算题，你的点击也能被浏览器记录下来。</p>
+<p><strong>代码示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> btn = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'#myButton'</span>);
+
+<span class="hljs-comment">// 注册监听：主线程告诉事件触发线程，“盯着这个按钮”</span>
+btn.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'按钮被点击了，回调进入任务队列'</span>);
+};
+
+<span class="hljs-comment">// 如果主线程在这里写个死循环，点击事件依然会被触发线程捕获并排队</span>
+<span class="hljs-comment">// while(true) {} </span>
+</code></pre>
+<ul>
+<li><strong>协作逻辑</strong>：当用户点击时，该线程将对应的 <code>onclick</code> 回调函数放入任务队列。</li>
+</ul>
+<hr>
+<h3 id="3-异步-http-请求线程-http-request-thread"><a href="#3-异步-http-请求线程-http-request-thread">3. 异步 HTTP 请求线程 (HTTP Request Thread)</a></h3>
+<p><strong>职责</strong>：负责所有的网络 IO 操作。请求一个图片、发一个 <code>fetch</code> 或 <code>Ajax</code>，都是这个线程在跑腿。</p>
+<p><strong>代码示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'1. 准备发请求'</span>);
+
+<span class="hljs-comment">// 主线程发起 fetch，随后将控制权交给网络线程</span>
+<span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://api.example.com/data'</span>)
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">response</span> =></span> response.<span class="hljs-title function_">json</span>())
+    .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">data</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'3. 数据拿到了：'</span>, data));
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'2. 主线程没被阻塞，继续运行'</span>);
+</code></pre>
+<ul>
+<li><strong>协作逻辑</strong>：网络线程负责三次握手、数据传输。当服务器返回数据后，它将 <code>then</code> 里面的回调函数塞进微任务队列。</li>
+</ul>
+<hr>
+<h3 id="4-gui-渲染线程-gui-rendering-thread"><a href="#4-gui-渲染线程-gui-rendering-thread">4. GUI 渲染线程 (GUI Rendering Thread)</a></h3>
+<p><strong>职责</strong>：把 HTML、CSS 变成像素，渲染页面。</p>
+<p><strong>注意</strong>：它与 JS 引擎线程是<strong>互斥</strong>的。这意味着当 JS 在执行时，渲染线程会被冻结；反之，渲染时 JS 也会等待。</p>
+<p><strong>代码现象示例</strong>：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundColor</span> = <span class="hljs-string">'blue'</span>;
+
+<span class="hljs-comment">// 如果这里有一段极长时间的计算</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>; i&#x3C;<span class="hljs-number">1000000000</span>; i++) {}
+
+<span class="hljs-comment">// 现象：背景色不会立刻变蓝，而是等循环结束，主线程空了，渲染线程才接手变蓝</span>
+</code></pre>
+<ul>
+<li><strong>协作逻辑</strong>：这就是为什么“长任务”会导致页面掉帧或卡顿，因为主线程占着坑，渲染线程没法干活。</li>
+</ul>
+<hr>
+<h3 id="5-web-worker-线程"><a href="#5-web-worker-线程">5. Web Worker 线程</a></h3>
+<p><strong>职责</strong>：这是浏览器开放给开发者的“私人保镖”，专门用来处理那些会卡死主线程的大型计算。它有自己独立的执行环境。</p>
+<p><strong>代码示例</strong>：</p>
+<p><code>main.js</code> (主线程):</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> myWorker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'worker.js'</span>);
+
+<span class="hljs-comment">// 向保镖发指令</span>
+myWorker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-number">1000000</span>);
+
+<span class="hljs-comment">// 监听保镖的回信</span>
+myWorker.<span class="hljs-property">onmessage</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'计算结果出来了：'</span> + e.<span class="hljs-property">data</span>);
+};
+</code></pre>
+<p><code>worker.js</code> (独立线程):</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js">onmessage = <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
+    <span class="hljs-comment">// 在这里做几十亿次计算，主线程（UI）完全不会卡顿</span>
+    <span class="hljs-keyword">let</span> result = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>; i&#x3C;e.<span class="hljs-property">data</span>; i++) { result += i; }
+    <span class="hljs-title function_">postMessage</span>(result);
+};
+</code></pre>
+<hr>
+<h3 id="总结对比"><a href="#总结对比">总结对比</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>线程名称</strong></th>
+<th><strong>是否阻塞 UI</strong></th>
+<th><strong>触发时机</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JS 引擎线程</strong></td>
+<td><strong>是</strong></td>
+<td>执行主代码、回调函数</td>
+</tr>
+<tr>
+<td><strong>GUI 渲染线程</strong></td>
+<td>N/A</td>
+<td>绘制页面（与 JS 互斥）</td>
+</tr>
+<tr>
+<td><strong>计时器线程</strong></td>
+<td>否</td>
+<td><code>setTimeout</code> 被调用时</td>
+</tr>
+<tr>
+<td><strong>事件触发线程</strong></td>
+<td>否</td>
+<td>浏览器检测到交互行为时</td>
+</tr>
+<tr>
+<td><strong>网络线程</strong></td>
+<td>否</td>
+<td>发起 <code>fetch</code>/<code>xhr</code> 请求时</td>
+</tr>
+<tr>
+<td><strong>Web Worker</strong></td>
+<td>否</td>
+<td>显式通过 <code>new Worker</code> 创建时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心逻辑</strong>：</p>
+<p>为了保证用户体验，主线程必须保持“轻量”。耗时的<strong>等待</strong>（计时、网络、等待点击）交由前三个后台线程；耗时的<strong>计算</strong>交由 Web Worker；最后，所有的产出都通过“任务队列”回到主线程进行统一调度。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"浏览器独立线程"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-25T00:00:00.000Z","children":"2026年2月25日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1005," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-计时器线程-timer-thread","text":"1. 计时器线程 (Timer Thread)"},{"level":3,"id":"2-事件触发线程-event-trigger-thread","text":"2. 事件触发线程 (Event Trigger Thread)"},{"level":3,"id":"3-异步-http-请求线程-http-request-thread","text":"3. 异步 HTTP 请求线程 (HTTP Request Thread)"},{"level":3,"id":"4-gui-渲染线程-gui-rendering-thread","text":"4. GUI 渲染线程 (GUI Rendering Thread)"},{"level":3,"id":"5-web-worker-线程","text":"5. Web Worker 线程"},{"level":3,"id":"总结对比","text":"总结对比"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

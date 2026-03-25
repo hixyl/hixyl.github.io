@@ -1,0 +1,232 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","Vite%20%E5%B8%B8%E8%A7%81%E9%A2%98%E7%9B%AE",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","Vite%20%E5%B8%B8%E8%A7%81%E9%A2%98%E7%9B%AE","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T3a37,<p>为了帮助你系统性地掌握 Vite 并能在面试中游刃有余，我们将这些问题从<strong>核心原理、配置与机制、插件生态、性能优化</strong>四个维度进行深度拆解。</p>
+<p>解答的原则是：不仅告诉你“是什么”，更会拆解底层运转的“为什么”。即使是初级开发者也能通过代码和原理解释看懂，而深度的细节足以应对中高级开发岗位的考察。</p>
+<hr>
+<h3 id="一-核心原理与架构设计"><a href="#一-核心原理与架构设计">一、 核心原理与架构设计</a></h3>
+<h4 id="1-什么是-vite它为什么在开发阶段比-webpack-快得多"><a href="#1-什么是-vite它为什么在开发阶段比-webpack-快得多">1. 什么是 Vite？它为什么在开发阶段比 Webpack 快得多？</a></h4>
+<p><strong>解答：</strong></p>
+<p>这是 Vite 面试最核心的“必考题”。两者的根本差异在于<strong>构建方式</strong>。</p>
+<ul>
+<li>
+<p><strong>Webpack 的方式（打包伺服）：</strong> 它需要从入口文件开始，分析所有的依赖关系，将所有的代码打包（Bundle）成一个或多个庞大的文件后，才启动开发服务器。项目越大，等待时间越长。</p>
+</li>
+<li>
+<p><strong>Vite 的方式（Native ESM 伺服）：</strong> 它直接利用了现代浏览器原生支持 ES 模块（<code>&#x3C;script type="module"></code>）的特性。Vite 启动时不需要打包项目代码，只需启动一个本地静态服务器。当浏览器发起对某个模块的请求时，Vite 服务器才在服务端按需编译该模块并返回。</p>
+</li>
+</ul>
+<p><strong>代码/原理体现：</strong></p>
+<p>你在 Vite 项目的 <code>index.html</code> 中会看到这样的代码：</p>
+<p>HTML</p>
+<pre><code class="hljs language-php-template"><span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/src/main.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+</span></code></pre>
+<p>当浏览器解析到这里，会发起一个 <code>GET /src/main.js</code> 的 HTTP 请求。Vite 拦截这个请求，处理后返回。这就是所谓的**“让浏览器接管打包程序的部分工作”**。</p>
+<h4 id="2-vite-的开发环境和生产环境分别用什么工具为什么不统一"><a href="#2-vite-的开发环境和生产环境分别用什么工具为什么不统一">2. Vite 的开发环境和生产环境分别用什么工具？为什么不统一？</a></h4>
+<p><strong>解答：</strong></p>
+<ul>
+<li>
+<p><strong>开发环境：</strong> 使用 <strong>Esbuild</strong>（进行依赖预构建） + 浏览器原生 <strong>ESM</strong> 解析。</p>
+</li>
+<li>
+<p><strong>生产环境：</strong> 使用 <strong>Rollup</strong> 进行打包。</p>
+</li>
+</ul>
+<p><strong>为什么不统一用 Esbuild？</strong></p>
+<p>Esbuild 虽然极快，但它目前的生态和功能（特别是代码分割 Code Splitting、CSS 处理等高级特性）还不如 Rollup 成熟。在生产环境，我们需要最极致的产物优化（如强缓存、按需加载），Rollup 丰富且成熟的插件生态能提供更稳妥、体积更小的生产级代码。</p>
+<h4 id="3-什么是依赖预构建dependency-pre-bundling它解决了什么问题"><a href="#3-什么是依赖预构建dependency-pre-bundling它解决了什么问题">3. 什么是“依赖预构建”（Dependency Pre-bundling）？它解决了什么问题？</a></h4>
+<p><strong>解答：</strong></p>
+<p>由于 Vite 开发时依赖浏览器原生 ESM，但这会带来两个致命问题，依赖预构建就是为了解决它们：</p>
+<ol>
+<li>
+<p><strong>兼容性问题：</strong> 很多第三方依赖（如 React, Lodash）依然是 CommonJS 或 UMD 格式，浏览器无法通过 <code>import</code> 解析。Vite 会使用 <strong>Esbuild</strong> 将它们转换成 ESM 格式。</p>
+</li>
+<li>
+<p><strong>网络并发问题：</strong> 某些包内部有成百上千个小模块（比如 <code>lodash-es</code>）。如果不预构建，浏览器遇到 <code>import { debounce } from 'lodash-es'</code> 时，可能会发出几百个 HTTP 请求，导致浏览器网络请求拥塞（Waterfall）。</p>
+</li>
+</ol>
+<p><strong>预构建的作用：</strong></p>
+<p>Vite 会在服务器启动前，用 Esbuild 将这些分散的内部模块打包成一个单独的模块，缓存在 <code>node_modules/.vite</code> 中。这样几百个请求就合并成了一个请求。</p>
+<hr>
+<h3 id="二-核心机制深度解析"><a href="#二-核心机制深度解析">二、 核心机制深度解析</a></h3>
+<h4 id="4-vite-的热更新hmr机制是怎样的和-webpack-有何不同"><a href="#4-vite-的热更新hmr机制是怎样的和-webpack-有何不同">4. Vite 的热更新（HMR）机制是怎样的？和 Webpack 有何不同？</a></h4>
+<p><strong>解答：</strong></p>
+<ul>
+<li>
+<p><strong>Webpack HMR：</strong> 当一个文件修改时，Webpack 需要重新编译涉及到的模块，并重新生成一部分 Bundle 传递给浏览器。项目大了，重新编译的链条依然会变慢。</p>
+</li>
+<li>
+<p><strong>Vite HMR：</strong> Vite 同样在服务端和浏览器之间建立了 WebSocket 连接。但是，当文件变动时，Vite 只需要使该模块的浏览器缓存失效，并通知浏览器重新请求<strong>这一个单纯的模块</strong>。无论项目总规模多大，HMR 的速度始终保持在毫秒级。</p>
+</li>
+</ul>
+<h4 id="5-vite-是如何处理-css-和样式预处理器的"><a href="#5-vite-是如何处理-css-和样式预处理器的">5. Vite 是如何处理 CSS 和样式预处理器的？</a></h4>
+<p><strong>解答：</strong></p>
+<p>Vite 对 CSS 的处理是开箱即用的。</p>
+<ul>
+<li>
+<p><strong>预处理器（Sass/Less/Stylus）：</strong> 不需要像 Webpack 那样配置复杂的 loader，只需要安装对应的依赖即可直接在代码中引入。</p>
+</li>
+<li>
+<p><strong>CSS Modules：</strong> 任何以 <code>.module.css</code> 为后缀的文件都会被自动当作 CSS Modules 处理。</p>
+</li>
+</ul>
+<p><strong>代码示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// Vite 内部自动拦截并将此请求编译为 CSS 代码注入到页面 &#x3C;style> 标签中</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./style.less'</span>; 
+
+<span class="hljs-comment">// 自动生成局部哈希类名</span>
+<span class="hljs-keyword">import</span> classes <span class="hljs-keyword">from</span> <span class="hljs-string">'./button.module.css'</span>; 
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'btn'</span>).<span class="hljs-property">className</span> = classes.<span class="hljs-property">btn</span>;
+</code></pre>
+<hr>
+<h3 id="三-配置生态与工程化"><a href="#三-配置生态与工程化">三、 配置、生态与工程化</a></h3>
+<h4 id="6-vite-插件和-rollup-插件是什么关系如何编写一个简单的-vite-插件"><a href="#6-vite-插件和-rollup-插件是什么关系如何编写一个简单的-vite-插件">6. Vite 插件和 Rollup 插件是什么关系？如何编写一个简单的 Vite 插件？</a></h4>
+<p><strong>解答：</strong></p>
+<p>Vite 插件在设计上<strong>扩展了 Rollup 插件接口</strong>。这意味着大多数 Rollup 插件可以直接在 Vite 中使用。同时，Vite 引入了自己独有的钩子（Hooks），用于处理开发服务器相关的逻辑。</p>
+<p><strong>独有钩子包括：</strong></p>
+<ul>
+<li>
+<p><code>config</code>: 修改 Vite 配置。</p>
+</li>
+<li>
+<p><code>configureServer</code>: 拿到开发服务器实例，用于添加自定义中间件。</p>
+</li>
+<li>
+<p><code>transformIndexHtml</code>: 转换 <code>index.html</code> 的内容。</p>
+</li>
+<li>
+<p><code>handleHotUpdate</code>: 自定义 HMR 更新逻辑。</p>
+</li>
+</ul>
+<p><strong>代码示例（一个给 HTML 自动注入虚拟数据的简单插件）：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// vite-plugin-inject-data.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">injectDataPlugin</span>(<span class="hljs-params">data</span>) {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vite-plugin-inject-data'</span>, <span class="hljs-comment">// 必须的插件名称</span>
+    <span class="hljs-title function_">transformIndexHtml</span>(<span class="hljs-params">html</span>) {
+      <span class="hljs-comment">// 匹配并替换 HTML 中的占位符</span>
+      <span class="hljs-keyword">return</span> html.<span class="hljs-title function_">replace</span>(
+        <span class="hljs-string">'&#x3C;title>Vite App&#x3C;/title>'</span>,
+        <span class="hljs-string">`&#x3C;title><span class="hljs-subst">${data.title}</span>&#x3C;/title>`</span>
+      );
+    }
+  }
+}
+
+<span class="hljs-comment">// vite.config.js</span>
+<span class="hljs-keyword">import</span> injectDataPlugin <span class="hljs-keyword">from</span> <span class="hljs-string">'./vite-plugin-inject-data'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">plugins</span>: [
+    <span class="hljs-title function_">injectDataPlugin</span>({ <span class="hljs-attr">title</span>: <span class="hljs-string">'我的炫酷应用'</span> })
+  ]
+}
+</code></pre>
+<h4 id="7-如何在-vite-中配置环境变量"><a href="#7-如何在-vite-中配置环境变量">7. 如何在 Vite 中配置环境变量？</a></h4>
+<p><strong>解答：</strong></p>
+<p>Vite 使用 <code>dotenv</code> 从环境目录中的 <code>.env</code> 文件加载额外的环境变量。</p>
+<p>为了防止意外泄漏机密环境变量，Vite 只会暴露以 <code>VITE_</code> 开头的变量给客户端源码。</p>
+<p><strong>代码示例：</strong></p>
+<p>代码段</p>
+<pre><code class="hljs language-ini"><span class="hljs-comment"># .env 文件</span>
+<span class="hljs-attr">VITE_API_URL</span>=https://api.example.com
+<span class="hljs-attr">DB_PASSWORD</span>=secret <span class="hljs-comment"># 这个不会暴露给客户端</span>
+</code></pre>
+<p>JavaScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-comment">// 在业务代码中使用</span>
+console.<span class="hljs-built_in">log</span>(<span class="hljs-keyword">import</span>.meta.env.VITE_API_URL); 
+</code></pre>
+<hr>
+<h3 id="四-性能优化与疑难杂症进阶考察"><a href="#四-性能优化与疑难杂症进阶考察">四、 性能优化与疑难杂症（进阶考察）</a></h3>
+<h4 id="8-vite-生产环境构建有哪些核心优化手段"><a href="#8-vite-生产环境构建有哪些核心优化手段">8. Vite 生产环境构建有哪些核心优化手段？</a></h4>
+<p><strong>解答：</strong></p>
+<p>生产环境优化主要集中在 <code>vite.config.js</code> 的 <code>build</code> 选项中：</p>
+<ol>
+<li>
+<p><strong>代码分割（ManualChunks）：</strong> 将大体积的第三方库（如 Vue/React、Echarts）单独拆分，利用浏览器缓存。</p>
+</li>
+<li>
+<p><strong>移除 Console：</strong> 利用 Esbuild 在构建时剥离调试代码。</p>
+</li>
+<li>
+<p><strong>开启 Gzip/Brotli 压缩：</strong> 结合 <code>vite-plugin-compression</code> 插件。</p>
+</li>
+</ol>
+<p><strong>代码示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">build</span>: {
+    <span class="hljs-comment">// 移除 console 和 debugger</span>
+    <span class="hljs-attr">minify</span>: <span class="hljs-string">'esbuild'</span>,
+    <span class="hljs-attr">esbuild</span>: {
+      <span class="hljs-attr">drop</span>: [<span class="hljs-string">'console'</span>, <span class="hljs-string">'debugger'</span>],
+    },
+    <span class="hljs-attr">rollupOptions</span>: {
+      <span class="hljs-attr">output</span>: {
+        <span class="hljs-comment">// 自定义拆包策略</span>
+        <span class="hljs-title function_">manualChunks</span>(<span class="hljs-params">id</span>) {
+          <span class="hljs-keyword">if</span> (id.<span class="hljs-title function_">includes</span>(<span class="hljs-string">'node_modules'</span>)) {
+            <span class="hljs-comment">// 将所有 node_modules 里的包单独打包到一个 vendor.js 中</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'vendor'</span>;
+          }
+        }
+      }
+    }
+  }
+});
+</code></pre>
+<h4 id="9-当项目非常大时vite-开发环境初次加载慢白屏时间长怎么排查和解决"><a href="#9-当项目非常大时vite-开发环境初次加载慢白屏时间长怎么排查和解决">9. 当项目非常大时，Vite 开发环境初次加载慢（白屏时间长），怎么排查和解决？</a></h4>
+<p><strong>解答：</strong></p>
+<p>这是一个非常考验实战经验的问题。Vite 虽快，但在超大项目中首次加载可能会遇到 HTTP 请求瀑布流问题（成百上千个 ESM 按需请求）。</p>
+<p><strong>解决思路：</strong></p>
+<ol>
+<li>
+<p><strong>利用 <code>optimizeDeps.include</code>：</strong> 当 Vite 碰到按需动态引入的深层组件时，可能会来不及预构建。可以手动强制提前预构建大模块。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-css">optimizeDeps: {
+  include: [<span class="hljs-string">'echarts'</span>, <span class="hljs-string">'lodash-es'</span>, <span class="hljs-string">'element-plus/es'</span>]
+}
+</code></pre>
+</li>
+<li>
+<p><strong>避免滥用 Barrel File（桶文件/入口文件导出）：</strong> 如果你的项目有一个 <code>components/index.ts</code> 集中导出了几百个组件。当你哪怕只 import 了一个按钮，浏览器也会去解析这几百个组件的代码。<strong>解决方案是将深层导入改为精准路径导入</strong>（<code>import Btn from 'components/Btn'</code>）。</p>
+</li>
+<li>
+<p><strong>开启 HTTP/2：</strong> 因为 Vite 强依赖大量并发网络请求，配置开发服务器 <code>server.https</code> 开启 HTTP/2 协议可以通过多路复用大幅度提升模块加载速度。</p>
+</li>
+</ol>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/工程化",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/","className":"$undefined","children":"前端开发 / 工程化"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Vite 常见题目"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1842," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"一-核心原理与架构设计","text":"一、 核心原理与架构设计"},{"level":4,"id":"1-什么是-vite它为什么在开发阶段比-webpack-快得多","text":"1. 什么是 Vite？它为什么在开发阶段比 Webpack 快得多？"},{"level":4,"id":"2-vite-的开发环境和生产环境分别用什么工具为什么不统一","text":"2. Vite 的开发环境和生产环境分别用什么工具？为什么不统一？"},{"level":4,"id":"3-什么是依赖预构建dependency-pre-bundling它解决了什么问题","text":"3. 什么是“依赖预构建”（Dependency Pre-bundling）？它解决了什么问题？"},{"level":3,"id":"二-核心机制深度解析","text":"二、 核心机制深度解析"},{"level":4,"id":"4-vite-的热更新hmr机制是怎样的和-webpack-有何不同","text":"4. Vite 的热更新（HMR）机制是怎样的？和 Webpack 有何不同？"},{"level":4,"id":"5-vite-是如何处理-css-和样式预处理器的","text":"5. Vite 是如何处理 CSS 和样式预处理器的？"},{"level":3,"id":"三-配置生态与工程化","text":"三、 配置、生态与工程化"},{"level":4,"id":"6-vite-插件和-rollup-插件是什么关系如何编写一个简单的-vite-插件","text":"6. Vite 插件和 Rollup 插件是什么关系？如何编写一个简单的 Vite 插件？"},{"level":4,"id":"7-如何在-vite-中配置环境变量","text":"7. 如何在 Vite 中配置环境变量？"},{"level":3,"id":"四-性能优化与疑难杂症进阶考察","text":"四、 性能优化与疑难杂症（进阶考察）"},{"level":4,"id":"8-vite-生产环境构建有哪些核心优化手段","text":"8. Vite 生产环境构建有哪些核心优化手段？"},{"level":4,"id":"9-当项目非常大时vite-开发环境初次加载慢白屏时间长怎么排查和解决","text":"9. 当项目非常大时，Vite 开发环境初次加载慢（白屏时间长），怎么排查和解决？"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"Vite 常见题目 | 流年石刻"}],["$","meta","1",{"name":"description","content":"为了帮助你系统性地掌握 Vite 并能在面试中游刃有余，我们将这些问题从核心原理、配置与机制、插件生态、性能优化四个维度进行深度拆解。 解答的原则是：不仅告诉你“是什么”，更会拆解底层运转的“为什么”。即使是初级开发者也能通过代码和原理解释…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

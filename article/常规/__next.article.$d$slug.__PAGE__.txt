@@ -1,0 +1,385 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T71cb,<h1 id="为什么要初始化-css-样式"><a href="#为什么要初始化-css-样式"><strong>为什么要初始化 CSS 样式?</strong></a></h1>
+<ul>
+<li>
+<p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。</p>
+</li>
+<li>
+<p>当然，初始化样式会对 SEO 有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</p>
+</li>
+<li>
+<p>最简单的初始化方法： <code>* { padding: 0; margin: 0; }</code> （强烈不建议）</p>
+</li>
+<li>
+<p>使用 <code>normalize.css</code></p>
+</li>
+</ul>
+<h1 id="css-优先级算法如何计算"><a href="#css-优先级算法如何计算">CSS 优先级算法如何计算？</a></h1>
+<ul>
+<li>优先级就近原则，同权重情况下样式定义最近者为准;</li>
+<li>载入样式以最后载入的定位为准;</li>
+</ul>
+<p>优先级为:</p>
+<ul>
+<li>同权重: 内联样式表（标签内部）> 嵌入样式表（当前文件中）> 外部样式表（外部文件中）。</li>
+<li>!important > id > class > tag</li>
+<li>!important 比 内联优先级高</li>
+</ul>
+<h1 id="-min-widthmax-widthwidth-的包含优先级关系"><a href="#-min-widthmax-widthwidth-的包含优先级关系">🔥 <strong>min-width、max-width、width 的包含（优先级）关系</strong></a></h1>
+<p><strong>属性的含义：</strong></p>
+<ul>
+<li><code>min-width</code> 限制元素的最小宽度</li>
+<li><code>max-width</code> 限制元素的最大宽度</li>
+<li><code>width</code> 元素的宽度</li>
+</ul>
+<p><strong>三者之间的优先级：</strong></p>
+<p><code>min-width</code> 和 <code>max-width</code> 的优先级都高于 <code>width</code>。即使 <code>width</code> 后面加上 <code>!important</code>。</p>
+<ul>
+<li>当浏览器缩小导致元素宽度小于 <code>min-width</code> 时，元素的 <code>width</code> 就会被 <code>min-width</code> 的值取代，浏览器出现滚动条来容纳元素。</li>
+<li>当浏览器放大导致元素的宽度大于 <code>max-width</code> 时，元素的 <code>width</code> 就会被 <code>max-width</code> 值取代。</li>
+<li>当 <code>min-width</code> 值大于 <code>max-width</code> 时，则以 <code>min-width</code> 值为准。</li>
+</ul>
+<p><strong>所以三者优先级排序： <code>min-width > max-width > width</code></strong></p>
+<p>当 <code>min-width > width</code> 时，以 <code>min-width</code> 为主</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+  <span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">600px</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
+    <span class="hljs-comment">/*当width值设为&#x3C;600px时，盒子始终以宽600px呈现*/</span>
+    <span class="hljs-comment">/*当width值设为>1000px时，盒子始终以宽1000px呈现*/</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background-color</span>: red;
+  }
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+</code></pre>
+<p>当 <code>max-width &#x3C; width</code> 时，以 <code>max-width</code> 为主</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+  <span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">600px</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
+    <span class="hljs-comment">/*当浏览器缩放过程中，计算得到width值&#x3C;min-width时，则宽度为600px*/</span>
+    <span class="hljs-comment">/*当浏览器放大程中，计算得到width值>max-width时，则宽度为1000px*/</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background-color</span>: red;
+  }
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+</code></pre>
+<h1 id="以下样式导致-span-文字的颜色是什么"><a href="#以下样式导致-span-文字的颜色是什么">以下样式导致 span 文字的颜色是什么</a></h1>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.a1</span> { <span class="hljs-attribute">color</span>: red; }
+<span class="hljs-selector-class">.a2</span> { <span class="hljs-attribute">color</span>: blue; }
+<span class="hljs-selector-class">.a3</span> { <span class="hljs-attribute">color</span>: yellow; }
+</code></pre>
+<p>则 <code>&#x3C;span class="a2 a3 a1">test&#x3C;/span></code> 的颜色是： A. red B. blue <strong>C.yellow</strong> D. 不确定</p>
+<h1 id="元素竖向的百分比设定是相对于父容器的高度吗"><a href="#元素竖向的百分比设定是相对于父容器的高度吗">🔥 <strong>元素竖向的百分比设定是相对于父容器的高度吗？</strong></a></h1>
+<ul>
+<li>对于 height 属性来说是的。</li>
+<li>对于 <strong>margin-top/bottom(padding-top/bottom) 来讲不是</strong>，而是<strong>相对于容器的宽度</strong>计算的</li>
+</ul>
+<h1 id="bfcblock-formating-context"><a href="#bfcblock-formating-context">BFC（Block Formating Context）</a></h1>
+<ul>
+<li>理解
+<ul>
+<li>拥有一些特性，可以利用其帮助我们布局</li>
+</ul>
+</li>
+<li><strong>触发条件</strong>
+<ul>
+<li>根元素，即 HTML 元素</li>
+<li>float: left | right</li>
+<li>position: absolute | fixed</li>
+<li>display: inline-block | table-cell | flex | inline-flex</li>
+<li>overflow: hidden | auto | scroll</li>
+</ul>
+</li>
+<li>解决问题
+<ul>
+<li>清除浮动：
+<ul>
+<li>子浮动，父 <code>overflow: hidden</code>（缺点：阴影和下拉菜单）</li>
+</ul>
+</li>
+<li>div 垂直方向 margin 上下合并：
+<ul>
+<li>其中一个包 div ，设置 <code>overflow：hidden</code></li>
+</ul>
+</li>
+<li>div 垂直方向 margin 内外合并：
+<ul>
+<li>父容器 1px 透明上边框</li>
+<li>父容器 <code>overflow: hidden</code></li>
+</ul>
+</li>
+<li>右侧 div 自适应：左边浮动，右边设置 <code>overflow：hidden</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="-请解释一下为什么需要清除浮动清除浮动的方式"><a href="#-请解释一下为什么需要清除浮动清除浮动的方式">🔥 请解释一下为什么需要清除浮动？清除浮动的方式</a></h1>
+<p><a href="https://www.notion.so/1e2d5abe78f84152b6c75e5709fd4a24?pvs=21">清除浮动</a></p>
+<ul>
+<li>原本作用
+<ul>
+<li>浮动本质是用来做一些文字混排效果的，但是被我们拿来做布局用，则会有很多的问题出现。</li>
+</ul>
+</li>
+<li>带来的影响
+<ul>
+<li>由于浮动元素<strong>不再占用原文档流</strong>的位置，所以它会对后面的元素<strong>排版产生影响</strong>（div忽视它的存在，但文字环绕），为了解决这些问题，此时就需要在该元素中清除浮动。准确地说，并不是清除浮动，而是<strong>清除浮动后造成的影响</strong></li>
+</ul>
+</li>
+<li>本质
+<ul>
+<li>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为 0 的问题。</li>
+</ul>
+</li>
+<li>方法
+<ul>
+<li>
+<p>额外标签 <code>clear: both</code></p>
+</li>
+<li>
+<p>BFC父元素 <code>overflow：hidden</code></p>
+</li>
+<li>
+<p>伪元素</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.clearfix</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">clear</span>: both;
+  <span class="hljs-attribute">visibility</span>: hidden;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="-设置元素浮动后该元素的-display-值是多少"><a href="#-设置元素浮动后该元素的-display-值是多少">🔥 设置元素浮动后，该元素的 display 值是多少？</a></h2>
+<ul>
+<li>自动变成了 <code>display: block</code></li>
+</ul>
+<h1 id="-你对-line-height-是如何理解的"><a href="#-你对-line-height-是如何理解的">🔥 你对 line-height 是如何理解的？</a></h1>
+<p>行高是指一行文字的高度，具体说是<strong>两行文字间基线的距离</strong>。CSS中起高度作用的是 height 和 line-height，没有定义 height 属性，最终其表现作用一定是 line-height 。</p>
+<h1 id="-display-nonevisibility-hidden-和-opacity-0-的区别"><a href="#-display-nonevisibility-hidden-和-opacity-0-的区别">🔥 display: none、visibility: hidden 和 opacity: 0 的区别？</a></h1>
+<ul>
+<li><code>display: none</code> （不占空间，不能点击）（回流+重绘）</li>
+<li><code>visibility: hidden</code> （<strong>占据空间</strong>，不可点击）（重绘）</li>
+<li><code>opacity: 0</code>（<strong>占据空间</strong>，可以点击）（重建图层，性能较高）</li>
+</ul>
+<p>更多：<a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/100">分析比较 opacity: 0、visibility: hidden、display: none 优劣和适用场景</a></p>
+<h1 id="-浏览器如何解析-css-选择器的换句话说-css-的匹配规则是什么"><a href="#-浏览器如何解析-css-选择器的换句话说-css-的匹配规则是什么">🔥 浏览器如何解析 CSS 选择器的，换句话说 CSS 的匹配规则是什么？</a></h1>
+<p>从右向左，提高查找效率</p>
+<ul>
+<li>浏览器根据选择器过滤掉 DOM 中的元素，并向上遍历其父元素以确定匹配项。</li>
+<li>选择器链的长度越短，浏览器可以越快地确定该元素是否与选择器匹配。</li>
+</ul>
+<p>（div p em）</p>
+<ul>
+<li>如果从左到右，有无数多个 div 都得向下查找，效率低</li>
+<li>反之，只有当当前元素是 em 时，才会向上查找，效率高</li>
+</ul>
+<p><strong>例如</strong>：</p>
+<ul>
+<li>使用这个选择器 <code>p span</code>，浏览器首先找到所有<code>&#x3C;span></code>元素，然后一直向上遍历其父元素直到根以找到<code>&#x3C;p></code>元素。</li>
+<li>对于特定的<code>&#x3C;span></code>，一旦找到<code>&#x3C;p></code> ，它就知道 <code>&#x3C;span></code> 匹配并可以停止匹配。</li>
+</ul>
+<h1 id="响应式设计原理"><a href="#响应式设计原理">响应式设计原理</a></h1>
+<p>通过媒体查询检测不同设备屏幕尺寸做处理</p>
+<h1 id="文字超长的省略号写法"><a href="#文字超长的省略号写法"><strong>文字超长的省略号写法</strong></a></h1>
+<h3 id="单行文本省略"><a href="#单行文本省略">单行文本省略</a></h3>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.single-line-ellipsis</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>; <span class="hljs-comment">/* 设置一个固定宽度，根据实际需求调整 */</span>
+  <span class="hljs-attribute">white-space</span>: nowrap; <span class="hljs-comment">/* 强制文本在一行内显示 */</span>
+  <span class="hljs-attribute">overflow</span>: hidden; <span class="hljs-comment">/* 超出宽度的部分隐藏 */</span>
+  <span class="hljs-attribute">text-overflow</span>: ellipsis; <span class="hljs-comment">/* 用省略号表示超出的文本 */</span>
+}
+</code></pre>
+<h3 id="多行文本省略"><a href="#多行文本省略">多行文本省略</a></h3>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.multi-line-ellipsis</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>; <span class="hljs-comment">/* 设置一个固定宽度，根据实际需求调整 */</span>
+  <span class="hljs-attribute">overflow</span>: hidden; <span class="hljs-comment">/* 超出宽度的部分隐藏 */</span>
+  <span class="hljs-attribute">text-overflow</span>: ellipsis; <span class="hljs-comment">/* 这行对于多行省略号只是辅助，主要靠下面的属性 */</span>
+  <span class="hljs-attribute">display</span>: -webkit-box; <span class="hljs-comment">/* 开启弹性伸缩盒子模型 */</span>
+  -webkit-<span class="hljs-selector-tag">line</span>-clamp: <span class="hljs-number">3</span>; <span class="hljs-comment">/* 显示的行数，超出部分用省略号表示，这里设置为 3 行，可根据需求修改 */</span>
+  -webkit-<span class="hljs-attribute">box-orient</span>: vertical; <span class="hljs-comment">/* 子元素垂直排列 */</span>
+}
+</code></pre>
+<h1 id="li-与-li-之间有看不见的空白间隔是什么原因引起的有什么解决办法"><a href="#li-与-li-之间有看不见的空白间隔是什么原因引起的有什么解决办法">li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</a></h1>
+<ul>
+<li><strong>场景：</strong>
+<ul>
+<li>有时，在写页面的时候，会需要将这个块状元素横排显示，此时就需要将 display 属性设置为 inline-block，此时问题出现了，在两个元素之间会出现大约8px左右的空白间隙。</li>
+</ul>
+</li>
+<li><strong>原因：</strong>
+<ul>
+<li>浏览器的默认行为是把 inline 元素间的空白字符（空格换行tab）渲染成一个空格，也就是我们上面的代码 <code>&#x3C;li></code> 换行后会产生换行字符，而它会变成一个空格，当然空格就占用一个字符的宽度。</li>
+</ul>
+</li>
+<li><strong>解决：</strong>
+<ul>
+<li>给 ul 标签设置 <code>font-size: 0;</code> 并为 li 元素重新设置 <code>font-size: XXpx;</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="-图片为什么有左右上下间隙怎么去除"><a href="#-图片为什么有左右上下间隙怎么去除">🔥 <strong>图片为什么有左右上下间隙,怎么去除?</strong></a></h1>
+<p>原因：</p>
+<ul>
+<li>左右：因为 img 是 <code>inline-block</code> 行内块元素，行内元素之间有『换行（回车），空格，tab』时会产生左右间隙</li>
+<li>上下：<strong>行内元素默认与父容器基线对齐</strong>，而基线与父容器底部有一定间隙，所以上下图片间有间隙。</li>
+</ul>
+<p>解决办法：</p>
+<ul>
+<li>移除上下间隙：
+<ul>
+<li>img 本身设置 <code>display: block;</code></li>
+<li>父元素设置 <code>font-size: 0;</code> （基线与字体大小有关，字体为零，基线间就没距离了）</li>
+<li>img 本身设置 <code>vertical-align: bottom;</code>（让inline-block的img与每行的底部对齐）</li>
+</ul>
+</li>
+<li>移除左右间距：
+<ul>
+<li>行内元素间不要有换行，连成一行写消除间隙</li>
+<li>第一行结尾写上 <code>&#x3C;!-- ，第二行开头跟上 --></code> 。即利用注释消除间距</li>
+<li>父元素 font-size 设置 0</li>
+</ul>
+</li>
+</ul>
+<h1 id="chrome-中文字体小于-12px-文字"><a href="#chrome-中文字体小于-12px-文字">Chrome 中文字体小于 12px 文字</a></h1>
+<ul>
+<li>老版：<code>webkit-text-size-adjust: none</code></li>
+<li>新版：<code>webkit-transform: scale(.8, .8)</code></li>
+</ul>
+<h1 id="如果需要手动写动画你认为最小时间间隔是多久为什么"><a href="#如果需要手动写动画你认为最小时间间隔是多久为什么">如果需要手动写动画，你认为最小时间间隔是多久，为什么？</a></h1>
+<p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms</p>
+<h1 id="-style-标签写在-body-后与-body-前head有什么区别"><a href="#-style-标签写在-body-后与-body-前head有什么区别">🔥 style 标签写在 body 后与 body 前（head）有什么区别？</a></h1>
+<p><a href="https://www.notion.so/42d6f636c0d74bec8640d4b7bf171ad5?pvs=21">🔥 <strong>样式脚本书写顺序</strong></a></p>
+<h1 id="️-为何要将-js-放在-html-底部"><a href="#️-为何要将-js-放在-html-底部">⭐️ <strong>为何要将 JS 放在 HTML 底部？</strong></a></h1>
+<h1 id="已知如下代码如何修改才能让图片宽度为-300px-"><a href="#已知如下代码如何修改才能让图片宽度为-300px-">已知如下代码，如何修改才能让图片宽度为 300px ？</a></h1>
+<p>注意下面代码不可修改。</p>
+<pre><code class="hljs language-jsx">&#x3C;img src=<span class="hljs-string">"1.jpg"</span> style=<span class="hljs-string">"width:480px!important;"</span>>
+</code></pre>
+<p>方案1:</p>
+<pre><code class="hljs language-css"><span class="hljs-attribute">max-width</span>: <span class="hljs-number">300px</span>;
+</code></pre>
+<p>方案2:</p>
+<pre><code class="hljs language-css"><span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">0.625</span>);
+<span class="hljs-attribute">transform-origin</span>: top left;
+</code></pre>
+<h1 id="textarea-如何禁止拉伸"><a href="#textarea-如何禁止拉伸">textarea 如何禁止拉伸</a></h1>
+<p>使用 CSS 样式可以避免拉伸</p>
+<p><code>textarea { resize: none; }</code></p>
+<h1 id="-有没有使用过-css-variable它解决了哪些问题"><a href="#-有没有使用过-css-variable它解决了哪些问题">🔥 有没有使用过 css variable，它解决了哪些问题</a></h1>
+<p>css 变量减少样式重复定义，比如同一个颜色值要在多个地方重复使用，以前通过 less 和 sass 预处理做到，现在 css 变量也可以做到，方便维护，提高可读性</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-pseudo">:root</span> {
+	<span class="hljs-attr">--bgcolor</span>: blue;
+	<span class="hljs-attr">--color</span>: red;
+}
+<span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color);
+}
+<span class="hljs-selector-tag">div</span> {
+	backgroung-<span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bgcolor);
+	<span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color)
+}
+</code></pre>
+<p>方便在 js 中使用</p>
+<pre><code class="hljs language-jsx"><span class="hljs-comment">// 设置变量</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"box"</span>).<span class="hljs-property">style</span>.<span class="hljs-title function_">setPropertyValue</span>(<span class="hljs-string">'--color'</span>, <span class="hljs-string">'pink'</span>)
+<span class="hljs-comment">// 读取变量</span>
+doucment.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'box'</span>).<span class="hljs-property">style</span>.<span class="hljs-title function_">getPropertyValue</span>(<span class="hljs-string">'--color'</span>).<span class="hljs-title function_">trim</span>()
+<span class="hljs-comment">// 删除变量</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'box'</span>).<span class="hljs-property">style</span>.<span class="hljs-title function_">removeProperty</span>(<span class="hljs-string">'--color'</span>)
+</code></pre>
+<h1 id="--与--选择器有什么不同"><a href="#--与--选择器有什么不同">🔥 '+' 与 '~' 选择器有什么不同</a></h1>
+<p><code>+</code> 选择器匹配紧邻的兄弟元素</p>
+<p><code>~</code> 选择器匹配随后的所有兄弟元素</p>
+<h1 id="-css-动画与-js-动画哪个性能更好"><a href="#-css-动画与-js-动画哪个性能更好">🔥 CSS 动画与 JS 动画哪个性能更好</a></h1>
+<p>事实上，大多数场景下，基于 CSS 的动画几乎是跟 JavaScript 动画表现一致——至少在 FireFox 上是如此。一些基于 Javascript 的动画库，像 <a href="https://greensock.com/gsap/">GSAP</a> 和 <a href="http://velocityjs.org/">Velocity.JS</a>，甚至声称他们在性能上可以做得比<a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/">原生 CSS transition/animation</a> 更好。这是可能的，因为在重绘事件发生之前，CSS transition 和 animation 在主的 UI 线程仅仅是重新采集元素的样式，这跟通过 <code>requestAnimationFrame()</code> 回调获取重新采集元素样式是一样的，也是在下一次重绘之前触发。假如二者都是在主 UI 线程创建的动画，那它们在性能方面没有差异。</p>
+<p>但我们仍然认为 CSS 动画是更好的选择。为什么？关键是只要动画涉及的属性不引起 reflow（重新布局）（参考 <a href="https://csstriggers.com/">CSS trigger</a> 获得更多信息），我们可以把采样操作移出主线程。最常见的属性是 CSS transform。如果一个元素被提升为一个 <a href="https://wiki.mozilla.org/Gecko:Overview#Graphics">layer</a>，transform 属性动画就可以在 GPU 中进行。这意味着更好地性能，特别是在移动设备上。在 <a href="https://wiki.mozilla.org/Platform/GFX/OffMainThreadCompositing">OffMainThreadCompositing</a> 上寻找更多细节。</p>
+<p>来源：</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Performance/CSS_JavaScript_animation_performance">CSS 动画与 JavaScript 动画的性能 - Web 性能 | MDN</a></p>
+<ul>
+<li>CSS3 的动画：
+<ol>
+<li>在性能上会稍微好一些，浏览器会对 CSS3 的动画做一些优化（比如专门新建一个图层用来跑动画）</li>
+<li>代码相对简单</li>
+<li>在动画控制上不够灵活</li>
+<li>兼容性不好</li>
+<li>部分动画功能无法实现（如滚动动画，视差滚动等）</li>
+</ol>
+</li>
+<li>JavaScript 的动画：
+<ol>
+<li>正好弥补了 css 缺点，控制能力很强，可以单帧的控制、变换，同时写得好完全可以兼容 IE6</li>
+<li>功能强大</li>
+<li>如果动画比较复杂，在使用 <strong><code>requestAnimationFrame</code></strong> 时，回调函数中执行了大量的计算或操作，导致了每帧的执行时间过长。这样就会使得浏览器无法在每一帧中及时完成绘制，从而出现卡顿的情况。</li>
+</ol>
+</li>
+<li>总结：
+<ul>
+<li>对于一些复杂控制的动画，使用 javascript 会比较好。而在实现一些小的交互动效的时候，可以多考虑 CSS</li>
+</ul>
+</li>
+</ul>
+<h1 id="为什么会发生样式抖动"><a href="#为什么会发生样式抖动">为什么会发生样式抖动</a></h1>
+<p>因为没有指定元素具体高度和宽度，比如数据还没有加载进来时元素高度是 100px(假设这里是 100px)，数据加载进来后，因为有了数据，然后元素被撑大，所有出现了抖动</p>
+<h1 id="css-如何匹配前-n-个子元素及最后-n-个子元素"><a href="#css-如何匹配前-n-个子元素及最后-n-个子元素">css 如何匹配前 N 个子元素及最后 N 个子元素</a></h1>
+<ul>
+<li>如何匹配最前三个子元素: <code>:nth-child(-n+3)</code></li>
+<li>如何匹配最后三个子元素: <code>:nth-last-child(-n+3)</code></li>
+</ul>
+<pre><code class="hljs language-html"><span class="hljs-meta">&#x3C;!DOCTYPE <span class="hljs-keyword">html</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>Document<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">style</span>></span><span class="css">
+      <span class="hljs-selector-class">.item</span><span class="hljs-selector-pseudo">:nth-child</span>(-n + <span class="hljs-number">3</span>) {
+        <span class="hljs-attribute">color</span>: red;
+      }
+      <span class="hljs-selector-class">.item</span><span class="hljs-selector-pseudo">:nth-last-child</span>(-n + <span class="hljs-number">3</span>) {
+        <span class="hljs-attribute">color</span>: blue;
+      }
+    </span><span class="hljs-tag">&#x3C;/<span class="hljs-name">style</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>1<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>2<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>3<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>4<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>5<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>6<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>7<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>8<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>></span>9<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span>
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/css",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css/","children":"前端开发 / css"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"常规"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2957," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"-设置元素浮动后该元素的-display-值是多少","text":"🔥 设置元素浮动后，该元素的 display 值是多少？"},{"level":3,"id":"单行文本省略","text":"单行文本省略"},{"level":3,"id":"多行文本省略","text":"多行文本省略"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

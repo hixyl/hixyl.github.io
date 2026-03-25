@@ -1,12 +1,12 @@
 1:"$Sreact.fragment"
 2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-a:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
-b:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
 c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
 d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
 :HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
-3:T1467,<h2 id="actuator-健康监控"><a href="#actuator-健康监控">actuator 健康监控</a></h2>
+4:T1467,<h2 id="actuator-健康监控"><a href="#actuator-健康监控">actuator 健康监控</a></h2>
 <p>如果要查看应用指标或对应用进行监控，可以加入执行器actuator的依赖</p>
 <p>监控项目是否alive</p>
 <p>依赖 <code>pom.xml</code></p>
@@ -85,11 +85,11 @@ management.endpoints.web.exposure.include=health, info
     }
 
 }
-</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"page-module__y-5DuW__article-cats","children":[["$","span","新知笔记",{"className":"page-module__y-5DuW__cat-badge","children":"新知笔记"}],["$","span","后端学习",{"className":"page-module__y-5DuW__cat-badge","children":"后端学习"}]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"10月7日spring学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-10-07T17:00:52.000Z","children":"2022年10月7日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[225," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",1," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springboot",{"className":"page-module__y-5DuW__tag","children":"springboot"}],["$","span","actuator",{"className":"page-module__y-5DuW__tag","children":"actuator"}],["$","span","banner",{"className":"page-module__y-5DuW__tag","children":"banner"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4","$L5"]}],"$L6"]}]}]],["$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"IMF9C1R5y-D_frCZNGCB_"}
-4:["$","$La",null,{}]
-5:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$Lb",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
-6:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"actuator-健康监控","text":"actuator 健康监控"},{"level":2,"id":"配置文件","text":"配置文件"},{"level":3,"id":"yaml配置文件","text":"yaml配置文件"},{"level":2,"id":"banner","text":"banner"},{"level":3,"id":"banner配置文件","text":"banner配置文件"},{"level":3,"id":"关闭banner","text":"关闭banner"}]}]}]
-7:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
-8:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
-9:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+</code></pre>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","新知笔记",{"href":"/categories/%E6%96%B0%E7%9F%A5%E7%AC%94%E8%AE%B0/","children":"新知笔记"}],["$","$L3","后端学习",{"href":"/categories/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/","children":"后端学习"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"10月7日spring学习笔记"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2022-10-07T17:00:52.000Z","children":"2022年10月7日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[225," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",1," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","spring",{"className":"page-module__y-5DuW__tag","children":"spring"}],["$","span","springboot",{"className":"page-module__y-5DuW__tag","children":"springboot"}],["$","span","actuator",{"className":"page-module__y-5DuW__tag","children":"actuator"}],["$","span","banner",{"className":"page-module__y-5DuW__tag","children":"banner"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"actuator-健康监控","text":"actuator 健康监控"},{"level":2,"id":"配置文件","text":"配置文件"},{"level":3,"id":"yaml配置文件","text":"yaml配置文件"},{"level":2,"id":"banner","text":"banner"},{"level":3,"id":"banner配置文件","text":"banner配置文件"},{"level":3,"id":"关闭banner","text":"关闭banner"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
 f:null

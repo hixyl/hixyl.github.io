@@ -1,0 +1,379 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T5797,<p>好的，我们来彻底讲清楚前端中的装饰者模式（Decorator Pattern）。</p>
+<p>这是一种在软件设计中被广泛使用的结构型设计模式。它的核心思想是：<strong>在不改变原有对象结构的基础上，动态地给一个对象添加一些额外的职责（功能）</strong>。</p>
+<p>为了真正理解它，我们将从问题的根源出发，循序渐进地剖析其原理、实现、应用场景以及优缺点。</p>
+<h3 id="1-问题缘起为什么要用装饰者模式"><a href="#1-问题缘起为什么要用装饰者模式">1. 问题缘起：为什么要用装饰者模式？</a></h3>
+<p>想象一个场景，你正在开发一个 UI 组件库。你有一个基础的 <code>Button</code> 组件。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-perl">// 最基础的按钮
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> </span>{
+  render() {
+    console.log(<span class="hljs-string">"渲染一个基础按钮"</span>);
+  }
+}
+</code></pre>
+<p>现在，产品经理提出了新需求：</p>
+<ol>
+<li>
+<p>需要一种带<strong>红色边框</strong>的按钮。</p>
+</li>
+<li>
+<p>需要一种点击后能<strong>自动上报日志</strong>的按钮。</p>
+</li>
+<li>
+<p>需要一种既有<strong>红色边框</strong>，又能<strong>上报日志</strong>的按钮。</p>
+</li>
+<li>
+<p>未来可能还需要带<strong>图标</strong>的按钮、<strong>禁用状态</strong>的按钮、带<strong>加载动画</strong>的按钮...</p>
+</li>
+</ol>
+<p>你如何实现这些需求？</p>
+<h4 id="方案一继承-inheritance"><a href="#方案一继承-inheritance">方案一：继承 (Inheritance)</a></h4>
+<p>最直接的想法是使用继承。</p>
+<ul>
+<li>
+<p><code>RedBorderButton extends Button</code></p>
+</li>
+<li>
+<p><code>LoggingButton extends Button</code></p>
+</li>
+</ul>
+<p>但问题马上就来了：如何实现一个“既有红色边框又能上报日志”的按钮？</p>
+<ul>
+<li>
+<p>让 <code>RedBorderLoggingButton extends RedBorderButton</code>？</p>
+</li>
+<li>
+<p>还是 <code>RedBorderLoggingButton extends LoggingButton</code>？</p>
+</li>
+<li>
+<p>如果再来一个“带图标”的功能，类的数量会爆炸式增长（<code>IconLoggingButton</code>, <code>IconRedBorderButton</code>, <code>IconRedBorderLoggingButton</code>...），形成所谓的<strong>类爆炸</strong>问题。继承在这种场景下显得非常僵化和笨重。</p>
+</li>
+</ul>
+<h4 id="方案二修改基类"><a href="#方案二修改基类">方案二：修改基类</a></h4>
+<p>直接在 <code>Button</code> 基类里增加各种 <code>if/else</code> 判断。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Button</span> {
+  <span class="hljs-built_in">constructor</span>(config) {
+    <span class="hljs-keyword">this</span>.config = config;
+  }
+  <span class="hljs-built_in">render</span>() {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.config.hasRedBorder) {
+      <span class="hljs-comment">//...</span>
+    }
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.config.needsLogging) {
+      <span class="hljs-comment">//...</span>
+    }
+    <span class="hljs-comment">// ...</span>
+  }
+}
+</code></pre>
+<p>这违反了软件设计的<strong>开放/封闭原则</strong>（对扩展开放，对修改封闭）。每次新增功能，你都得去修改这个庞大而脆弱的基类，很快它就会变得难以维护。</p>
+<p><strong>核心矛盾</strong>：我们希望为对象添加功能，但又不希望通过继承或修改基类这种僵硬的方式。我们想要一种更灵活、可组合的方式。</p>
+<p>这就是装饰者模式要解决的问题。</p>
+<h3 id="2-装饰者模式的核心思想与结构"><a href="#2-装饰者模式的核心思想与结构">2. 装饰者模式的核心思想与结构</a></h3>
+<p>装饰者模式提供了一个绝佳的解决方案：<strong>保持核心组件的纯粹，将各种增强功能作为“包装纸”（装饰者），一层一层地包在核心组件外面</strong>。</p>
+<p>每层“包装纸”都和核心组件拥有相同的接口，这样它们就可以无限层地嵌套下去。</p>
+<p>打个比方，一杯清咖啡（核心组件）是苦的。</p>
+<ul>
+<li>
+<p>想加奶？用“牛奶”这个装饰者包一层。</p>
+</li>
+<li>
+<p>还想加糖？再用“糖”这个装饰者包一层。</p>
+</li>
+</ul>
+<p>最终你得到的是 <code>糖(牛奶(清咖啡))</code>。无论怎么包装，它本质上还是一杯“咖啡”，可以“喝”。</p>
+<h4 id="模式结构-uml"><a href="#模式结构-uml">模式结构 (UML)</a></h4>
+<ul>
+<li>
+<p><strong>Component (组件)</strong>：一个接口或抽象类，定义了核心对象和装饰后对象共有的行为。</p>
+</li>
+<li>
+<p><strong>ConcreteComponent (具体组件)</strong>：被装饰的核心对象，实现了 Component 接口。 (例如：<code>Button</code> 类)</p>
+</li>
+<li>
+<p><strong>Decorator (装饰者)</strong>：同样实现了 Component 接口。最关键的是，<strong>它内部持有一个 Component 对象的引用</strong> (HAS-A 关系)。它的作用就是给这个引用的对象添加额外的功能。</p>
+</li>
+<li>
+<p><strong>ConcreteDecorator (具体装饰者)</strong>：Decorator 的具体实现，负责实现具体的装饰逻辑。(例如：<code>RedBorderDecorator</code>, <code>LoggingDecorator</code>)</p>
+</li>
+</ul>
+<p>关键点在于：<strong>Decorator 既实现了 Component 接口（IS-A），又包含了另一个 Component 实例（HAS-A）</strong>。这使得它可以完美地替代原始对象，并形成链式调用。</p>
+<h3 id="3-javascripttypescript-实现"><a href="#3-javascripttypescript-实现">3. JavaScript/TypeScript 实现</a></h3>
+<p>我们用前面按钮的例子来具体实现一下。</p>
+<h4 id="第1步定义统一的接口-component"><a href="#第1步定义统一的接口-component">第1步：定义统一的接口 (Component)</a></h4>
+<p>虽然 JavaScript 没有严格的接口，但我们可以约定一个共同的方法，比如 <code>render</code>。在 TypeScript 中，我们可以明确定义 <code>interface</code>。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-csharp"><span class="hljs-comment">// Component 接口</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title">IComponent</span> {
+  render(): <span class="hljs-keyword">void</span>;
+}
+</code></pre>
+<h4 id="第2步实现具体组件-concretecomponent"><a href="#第2步实现具体组件-concretecomponent">第2步：实现具体组件 (ConcreteComponent)</a></h4>
+<p>这是我们最核心、最基础的对象。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-perl">// ConcreteComponent
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> <span class="hljs-title">implements</span> <span class="hljs-title">IComponent</span> </span>{
+  render(): void {
+    console.log(<span class="hljs-string">"渲染一个基础按钮"</span>);
+  }
+}
+</code></pre>
+<h4 id="第3步创建抽象装饰者-decorator"><a href="#第3步创建抽象装饰者-decorator">第3步：创建抽象装饰者 (Decorator)</a></h4>
+<p>这个基类封装了通用逻辑：持有一个被装饰的对象，并遵循同样的接口。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-comment">// Decorator</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Decorator</span> <span class="hljs-title">implements</span> <span class="hljs-title">IComponent</span> {
+  <span class="hljs-keyword">protected</span> component: IComponent;
+
+  <span class="hljs-keyword">constructor</span>(component: IComponent) {
+    <span class="hljs-keyword">this</span>.component = component;
+  }
+
+  <span class="hljs-comment">// 将 render 请求传递给被包装的对象</span>
+  render(): void {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.component) {
+      <span class="hljs-keyword">this</span>.component.render();
+    }
+  }
+}
+</code></pre>
+<h4 id="第4步创建具体装饰者-concretedecorator"><a href="#第4步创建具体装饰者-concretedecorator">第4步：创建具体装饰者 (ConcreteDecorator)</a></h4>
+<p>现在，我们可以创建各种功能的“包装纸”了。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-scss"><span class="hljs-comment">// ConcreteDecorator A: 红色边框</span>
+class RedBorderDecorator extends Decorator {
+  <span class="hljs-built_in">constructor</span>(component: IComponent) {
+    super(component);
+  }
+
+  <span class="hljs-built_in">render</span>(): void {
+    <span class="hljs-comment">// 1. 调用父类（或原始组件）的 render</span>
+    super<span class="hljs-selector-class">.render</span>();
+    <span class="hljs-comment">// 2. 添加自己的装饰逻辑</span>
+    this<span class="hljs-selector-class">.addRedBorder</span>();
+  }
+
+  private <span class="hljs-built_in">addRedBorder</span>(): void {
+    console<span class="hljs-selector-class">.log</span>("=> 为按钮添加红色边框");
+  }
+}
+
+<span class="hljs-comment">// ConcreteDecorator B: 日志上报</span>
+class LoggingDecorator extends Decorator {
+  <span class="hljs-built_in">constructor</span>(component: IComponent) {
+    super(component);
+  }
+
+  <span class="hljs-built_in">render</span>(): void {
+    <span class="hljs-comment">// 1. 可以在调用前、后或完全覆盖原始行为</span>
+    this<span class="hljs-selector-class">.reportLog</span>();
+    super<span class="hljs-selector-class">.render</span>();
+  }
+  
+  private <span class="hljs-built_in">reportLog</span>(): void {
+    console<span class="hljs-selector-class">.log</span>("=> 上报渲染日志");
+  }
+}
+</code></pre>
+<h4 id="第5步组合使用"><a href="#第5步组合使用">第5步：组合使用</a></h4>
+<p>现在，我们可以像搭积木一样，自由组合这些功能。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-comment">// 创建一个基础按钮</span>
+<span class="hljs-type">const</span> button = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Button</span>();
+console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"--- 只有基础按钮 ---"</span>);
+button.<span class="hljs-built_in">render</span>();
+<span class="hljs-comment">// 输出: 渲染一个基础按钮</span>
+
+console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"\n--- 添加红色边框 ---"</span>);
+<span class="hljs-type">const</span> redButton = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RedBorderDecorator</span>(button);
+redButton.<span class="hljs-built_in">render</span>();
+<span class="hljs-comment">// 输出:</span>
+<span class="hljs-comment">// 渲染一个基础按钮</span>
+<span class="hljs-comment">// => 为按钮添加红色边框</span>
+
+console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"\n--- 再添加日志功能 ---"</span>);
+<span class="hljs-type">const</span> logAndRedButton = <span class="hljs-keyword">new</span> <span class="hljs-built_in">LoggingDecorator</span>(redButton);
+logAndRedButton.<span class="hljs-built_in">render</span>();
+<span class="hljs-comment">// 输出:</span>
+<span class="hljs-comment">// => 上报渲染日志</span>
+<span class="hljs-comment">// 渲染一个基础按钮</span>
+<span class="hljs-comment">// => 为按钮添加红色边框</span>
+
+console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"\n--- 换个顺序组合 ---"</span>);
+<span class="hljs-type">const</span> redAndLogButton = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RedBorderDecorator</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">LoggingDecorator</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Button</span>()));
+redAndLogButton.<span class="hljs-built_in">render</span>();
+<span class="hljs-comment">// 输出:</span>
+<span class="hljs-comment">// => 上报渲染日志</span>
+<span class="hljs-comment">// 渲染一个基础按钮</span>
+<span class="hljs-comment">// => 为按钮添加红色边框</span>
+</code></pre>
+<p>你可以看到，我们没有修改任何原始的 <code>Button</code> 代码，就实现了功能的动态、灵活组合。</p>
+<h3 id="4-前端领域的真实应用"><a href="#4-前端领域的真实应用">4. 前端领域的真实应用</a></h3>
+<p>上面的例子比较理论化，在现代前端开发中，装饰者模式有更常见的表现形式。</p>
+<h4 id="a-react-中的高阶组件-higher-order-components-hoc"><a href="#a-react-中的高阶组件-higher-order-components-hoc">a. React 中的高阶组件 (Higher-Order Components, HOC)</a></h4>
+<p>HOC 是一个函数，它接收一个组件作为参数，并返回一个新的、功能增强的组件。这与装饰者模式的思想<strong>完全一致</strong>。</p>
+<p><code>HOC(WrappedComponent) => EnhancedComponent</code></p>
+<ul>
+<li>
+<p><code>WrappedComponent</code> 就是 ConcreteComponent。</p>
+</li>
+<li>
+<p><code>HOC</code> 就是 Decorator。</p>
+</li>
+<li>
+<p><code>EnhancedComponent</code> 就是装饰后的最终成品。</p>
+</li>
+</ul>
+<p>例如，React Router 的 <code>withRouter</code> 就是一个经典的 HOC，它会给你的组件注入 <code>history</code>, <code>location</code>, <code>match</code> 等 props。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-comment">// 这是一个 HOC (装饰者)</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">withExtraInfo</span> = (<span class="hljs-params">WrappedComponent</span>) => {
+  <span class="hljs-comment">// 返回一个新的组件</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">props</span>) =></span> {
+    <span class="hljs-keyword">const</span> extraInfo = <span class="hljs-string">"这是被注入的额外信息"</span>;
+    
+    <span class="hljs-comment">// 渲染原始组件，并传入新的 prop</span>
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...props</span>} <span class="hljs-attr">extraInfo</span>=<span class="hljs-string">{extraInfo}</span> /></span></span>;
+  };
+};
+
+<span class="hljs-comment">// 这是一个基础组件 (ConcreteComponent)</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">MyComponent</span> = (<span class="hljs-params">props</span>) => {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>我的基础内容<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>来自HOC的信息: {props.extraInfo}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+};
+
+<span class="hljs-comment">// 使用 HOC 装饰组件</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">EnhancedComponent</span> = <span class="hljs-title function_">withExtraInfo</span>(<span class="hljs-title class_">MyComponent</span>);
+
+<span class="hljs-comment">// 使用时，就好像 MyComponent 天然就有了 extraInfo 这个 prop</span>
+<span class="hljs-comment">// &#x3C;EnhancedComponent /></span>
+</code></pre>
+<h4 id="b-es7-的-decorator-语法-"><a href="#b-es7-的-decorator-语法-">b. ES7+ 的 Decorator 语法 (<code>@</code>)</a></h4>
+<p>JavaScript (特别是配合 TypeScript 或 Babel) 提供了 <code>@</code> 语法糖，让我们能以更声明式的方式使用装饰者模式。它通常用于装饰<strong>类</strong>或<strong>类的方法</strong>。</p>
+<p><strong>注意</strong>：此处的 <code>@</code> 装饰器是语言层面的特性，其应用更广，但其背后的思想源于装饰者模式。</p>
+<p>来看一个 <code>Angular</code> 或 <code>MobX</code> 中常见的例子：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 一个日志装饰器，用于装饰类的方法</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"><span class="hljs-attr">target</span>: <span class="hljs-built_in">any</span>, <span class="hljs-attr">propertyKey</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">descriptor</span>: <span class="hljs-title class_">PropertyDescriptor</span></span>) {
+  <span class="hljs-keyword">const</span> originalMethod = descriptor.<span class="hljs-property">value</span>; <span class="hljs-comment">// 获取原始方法</span>
+
+  <span class="hljs-comment">// 修改方法的行为</span>
+  descriptor.<span class="hljs-property">value</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">...<span class="hljs-attr">args</span>: <span class="hljs-built_in">any</span>[]</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[LOG] Calling method: <span class="hljs-subst">${propertyKey}</span>`</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[LOG] With arguments: <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(args)}</span>`</span>);
+    
+    <span class="hljs-keyword">const</span> result = originalMethod.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args); <span class="hljs-comment">// 调用原始方法</span>
+    
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`[LOG] Method returned: <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(result)}</span>`</span>);
+    <span class="hljs-keyword">return</span> result;
+  };
+
+  <span class="hljs-keyword">return</span> descriptor;
+}
+
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Calculator</span> {
+  <span class="hljs-comment">// 使用 @ 语法糖来“装饰”这个方法</span>
+  <span class="hljs-meta">@log</span>
+  <span class="hljs-title function_">add</span>(<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">number</span> {
+    <span class="hljs-keyword">return</span> a + b;
+  }
+}
+
+<span class="hljs-keyword">const</span> calc = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Calculator</span>();
+calc.<span class="hljs-title function_">add</span>(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+
+<span class="hljs-comment">/*
+输出会是:
+[LOG] Calling method: add
+[LOG] With arguments: [2,3]
+[LOG] Method returned: 5
+*/</span>
+</code></pre>
+<p>在这个例子中，<code>@log</code> 装饰器动态地为 <code>add</code> 方法添加了日志功能，而完全没有侵入 <code>Calculator</code> 类的内部实现。</p>
+<h3 id="5-优缺点与总结"><a href="#5-优缺点与总结">5. 优缺点与总结</a></h3>
+<h4 id="优点"><a href="#优点">优点</a></h4>
+<ol>
+<li>
+<p><strong>遵循开放/封闭原则</strong>：你可以在不修改现有代码的情况下，为对象引入新功能。</p>
+</li>
+<li>
+<p><strong>高度灵活性和可组合性</strong>：可以动态地、按任意顺序地组合功能，比继承灵活得多。</p>
+</li>
+<li>
+<p><strong>职责清晰</strong>：每个装饰者只负责一个功能，符合单一职责原则。基类可以保持纯粹和简洁。</p>
+</li>
+<li>
+<p><strong>运行时增强</strong>：可以在程序运行时决定如何装饰一个对象，赋予系统更大的弹性。</p>
+</li>
+</ol>
+<h4 id="缺点"><a href="#缺点">缺点</a></h4>
+<ol>
+<li>
+<p><strong>调试困难</strong>：由于层层嵌套，调用栈会变得很长，如果出现问题，追踪错误的源头会比较困难。</p>
+</li>
+<li>
+<p><strong>对象增多</strong>：会产生许多细小的、功能单一的对象（装饰者类），如果滥用，会让代码结构变得零散和复杂。</p>
+</li>
+<li>
+<p><strong>接口污染</strong>：装饰者模式要求装饰者与被装饰者实现相同的接口，这可能导致接口变得庞大，因为要包含所有可能的功能。</p>
+</li>
+</ol>
+<h3 id="结论与最佳实践"><a href="#结论与最佳实践">结论与最佳实践</a></h3>
+<p>装饰者模式是一种极其强大的设计模式，尤其适用于需要<strong>动态</strong>、<strong>可组合</strong>地为对象添加功能的场景。</p>
+<p>最佳选择：</p>
+<p>当你面临以下情况时，应优先考虑装饰者模式：</p>
+<ul>
+<li>
+<p><strong>你希望在不影响其他对象的情况下，为一个或几个对象动态添加功能。</strong></p>
+</li>
+<li>
+<p><strong>你发现使用继承会导致子类的数量呈指数级增长，难以管理。</strong></p>
+</li>
+<li>
+<p><strong>你想要避免在基类中堆积大量可选功能，导致基类臃肿不堪。</strong></p>
+</li>
+</ul>
+<p>在现代前端开发中，虽然你可能不会频繁地手动实现经典的 Class-based 装饰者，但理解其核心思想至关重要。因为它能帮助你更好地理解和运用 <strong>React HOCs</strong>、<strong>Vue Mixins/Composition API</strong> 的某些用法，以及 <strong>JavaScript/TypeScript 的 <code>@</code> 装饰器</strong>。这些技术本质上都是装饰者模式思想在不同场景下的具体体现，其目标都是为了实现更灵活、更可维护的代码扩展。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"装饰者模式"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2455," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-问题缘起为什么要用装饰者模式","text":"1. 问题缘起：为什么要用装饰者模式？"},{"level":4,"id":"方案一继承-inheritance","text":"方案一：继承 (Inheritance)"},{"level":4,"id":"方案二修改基类","text":"方案二：修改基类"},{"level":3,"id":"2-装饰者模式的核心思想与结构","text":"2. 装饰者模式的核心思想与结构"},{"level":4,"id":"模式结构-uml","text":"模式结构 (UML)"},{"level":3,"id":"3-javascripttypescript-实现","text":"3. JavaScript/TypeScript 实现"},{"level":4,"id":"第1步定义统一的接口-component","text":"第1步：定义统一的接口 (Component)"},{"level":4,"id":"第2步实现具体组件-concretecomponent","text":"第2步：实现具体组件 (ConcreteComponent)"},{"level":4,"id":"第3步创建抽象装饰者-decorator","text":"第3步：创建抽象装饰者 (Decorator)"},{"level":4,"id":"第4步创建具体装饰者-concretedecorator","text":"第4步：创建具体装饰者 (ConcreteDecorator)"},{"level":4,"id":"第5步组合使用","text":"第5步：组合使用"},{"level":3,"id":"4-前端领域的真实应用","text":"4. 前端领域的真实应用"},{"level":4,"id":"a-react-中的高阶组件-higher-order-components-hoc","text":"a. React 中的高阶组件 (Higher-Order Components, HOC)"},{"level":4,"id":"b-es7-的-decorator-语法-","text":"b. ES7+ 的 Decorator 语法 (@)"},{"level":3,"id":"5-优缺点与总结","text":"5. 优缺点与总结"},{"level":4,"id":"优点","text":"优点"},{"level":4,"id":"缺点","text":"缺点"},{"level":3,"id":"结论与最佳实践","text":"结论与最佳实践"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"装饰者模式 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来彻底讲清楚前端中的装饰者模式（Decorator Pattern）。 这是一种在软件设计中被广泛使用的结构型设计模式。它的核心思想是：在不改变原有对象结构的基础上，动态地给一个对象添加一些额外的职责（功能）。 为了真正理解它，我…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

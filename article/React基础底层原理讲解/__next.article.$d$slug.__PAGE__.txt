@@ -1,0 +1,377 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T740e,<p>要彻底理解 React 的实现原理，我们需要先忘掉那些复杂的框架概念，回到原生前端开发的最基本面：<strong>HTML 负责结构，CSS 负责样式，JavaScript 负责交互。</strong></p>
+<p>在没有 React 的时代，当数据发生变化时，我们需要用 JavaScript 手动去查找 DOM 节点（比如 <code>document.getElementById</code>），然后手动修改它们（比如 <code>element.innerText = newData</code>）。当页面非常复杂、数据变化频繁时，手动操作 DOM 不仅代码难以维护，而且性能很差，因为浏览器的 DOM 对象非常庞大。</p>
+<p>React 的诞生就是为了解决这个问题。它的核心思想是：<strong>UI 应该是数据的映射。你只需要关心数据是什么样子，React 负责帮你把数据高效地变成页面上的 DOM。</strong></p>
+<p>我们将通过四个逐步递进的阶段，用纯 JavaScript 从头实现一个“迷你版 React”。</p>
+<hr>
+<h3 id="第一阶段用-javascript-对象描述-uivirtual-dom"><a href="#第一阶段用-javascript-对象描述-uivirtual-dom">第一阶段：用 JavaScript 对象描述 UI（Virtual DOM）</a></h3>
+<p>真实的 DOM 节点非常沉重。你可以尝试在控制台打印一个简单的 <code>div</code>，展开后会看到成百上千个属性。如果频繁创建和销毁真实 DOM，浏览器会不堪重负。</p>
+<p>因此，React 引入了<strong>虚拟 DOM（Virtual DOM）</strong>。它其实就是一个普通的、轻量级的 JavaScript 对象，用来<strong>描述</strong>真实的 DOM 应该长什么样。</p>
+<p>假设我们有这样一段 HTML：</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>Hello<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>React<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+</code></pre>
+<p>用 JavaScript 对象（虚拟 DOM）来描述它，就是这样的：</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> vdom = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'div'</span>,
+  <span class="hljs-attr">props</span>: {
+    <span class="hljs-attr">id</span>: <span class="hljs-string">'app'</span>,
+    <span class="hljs-attr">className</span>: <span class="hljs-string">'container'</span>,
+    <span class="hljs-attr">children</span>: [
+      { <span class="hljs-attr">type</span>: <span class="hljs-string">'h1'</span>, <span class="hljs-attr">props</span>: { <span class="hljs-attr">children</span>: [<span class="hljs-string">'Hello'</span>] } },
+      { <span class="hljs-attr">type</span>: <span class="hljs-string">'p'</span>, <span class="hljs-attr">props</span>: { <span class="hljs-attr">children</span>: [<span class="hljs-string">'React'</span>] } }
+    ]
+  }
+};
+</code></pre>
+<p>为了方便生成这种对象，我们可以写一个辅助函数 <code>createElement</code>：</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createElement</span>(<span class="hljs-params">type, props, ...children</span>) {
+  <span class="hljs-keyword">return</span> {
+    type,
+    <span class="hljs-attr">props</span>: {
+      ...props,
+      <span class="hljs-comment">// 为了统一处理，我们将文本也包装成一个特殊的虚拟节点</span>
+      <span class="hljs-attr">children</span>: children.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span>
+        <span class="hljs-keyword">typeof</span> child === <span class="hljs-string">'object'</span> ? child : <span class="hljs-title function_">createTextElement</span>(child)
+      )
+    }
+  };
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createTextElement</span>(<span class="hljs-params">text</span>) {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'TEXT_ELEMENT'</span>,
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">nodeValue</span>: text,
+      <span class="hljs-attr">children</span>: []
+    }
+  };
+}
+</code></pre>
+<p><em>注：我们在日常开发中写的 JSX（比如 <code>&#x3C;div id="app">...&#x3C;/div></code>），本质上只是一个语法糖。在代码运行前，打包工具（如 Babel）会把你写的 JSX 编译成上面这种 <code>createElement</code> 函数的调用。</em></p>
+<hr>
+<h3 id="第二阶段将虚拟-dom-渲染到页面render"><a href="#第二阶段将虚拟-dom-渲染到页面render">第二阶段：将虚拟 DOM 渲染到页面（Render）</a></h3>
+<p>现在我们有了描述 UI 的 JavaScript 对象，下一步是把它变成浏览器里真正的 DOM。这就是 <code>render</code> 函数要做的事情：遍历这个 JS 对象，调用浏览器的 API 来创建真实的 DOM 树。</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params">vdom, container</span>) {
+  <span class="hljs-comment">// 1. 创建真实的 DOM 节点</span>
+  <span class="hljs-keyword">const</span> dom =
+    vdom.<span class="hljs-property">type</span> === <span class="hljs-string">'TEXT_ELEMENT'</span>
+      ? <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createTextNode</span>(<span class="hljs-string">''</span>)
+      : <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(vdom.<span class="hljs-property">type</span>);
+
+  <span class="hljs-comment">// 2. 将虚拟 DOM 上的属性（props）赋值给真实 DOM</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">isProperty</span> = key => key !== <span class="hljs-string">'children'</span>;
+  <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(vdom.<span class="hljs-property">props</span>)
+    .<span class="hljs-title function_">filter</span>(isProperty)
+    .<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">name</span> =></span> {
+      dom[name] = vdom.<span class="hljs-property">props</span>[name];
+    });
+
+  <span class="hljs-comment">// 3. 递归渲染子节点</span>
+  vdom.<span class="hljs-property">props</span>.<span class="hljs-property">children</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span> {
+    <span class="hljs-title function_">render</span>(child, dom);
+  });
+
+  <span class="hljs-comment">// 4. 将生成的真实 DOM 挂载到父容器上</span>
+  container.<span class="hljs-title function_">appendChild</span>(dom);
+}
+</code></pre>
+<p>到这一步，我们就完成了一个静态页面的渲染。但前端的复杂之处在于<strong>交互和更新</strong>。</p>
+<hr>
+<h3 id="第三阶段当数据改变时的高效更新diff-算法"><a href="#第三阶段当数据改变时的高效更新diff-算法">第三阶段：当数据改变时的高效更新（Diff 算法）</a></h3>
+<p>如果数据变化了怎么办？最粗暴的做法是：清空页面（<code>container.innerHTML = ''</code>），用新的数据生成一份全新的虚拟 DOM，然后重新跑一遍 <code>render</code> 函数。</p>
+<p>这显然不行，不仅性能差，还会丢失页面状态（比如输入框里正在输入的文字会消失）。</p>
+<p>React 的做法是：<strong>比较新旧两棵虚拟 DOM 树，找出它们之间的差异（Diff），然后只把变化的部分应用到真实的 DOM 上（这个过程叫做 Patch 或 Reconciliation）。</strong></p>
+<p>我们来看看 Diff 算法的核心逻辑思路：</p>
+<ol>
+<li>
+<p><strong>类型不同（Type changed）：</strong> 如果旧节点是 <code>&#x3C;h1></code>，新节点变成了 <code>&#x3C;p></code>，说明结构完全变了。React 不会继续对比子节点，而是直接销毁旧的真实 DOM，创建新的真实 DOM 替换上去。</p>
+</li>
+<li>
+<p><strong>类型相同，属性不同（Props changed）：</strong> 如果新旧节点都是 <code>&#x3C;div></code>，只是 <code>class</code> 从 <code>red</code> 变成了 <code>blue</code>。React 会保留现有的真实 DOM 节点，仅仅调用 <code>dom.setAttribute</code> 修改它的 class 属性。</p>
+</li>
+<li>
+<p><strong>对比子节点（Children Diff）：</strong> 递归地对比它们的子节点。</p>
+</li>
+</ol>
+<pre><code class="hljs language-mermaid">graph TD
+    A[数据发生变化] --> B[生成新的 Virtual DOM 树]
+    B --> C{与旧 Virtual DOM 对比&#x3C;br/>Diff 算法}
+    C -->|类型不同| D[销毁旧节点, 创建新节点]
+    C -->|类型相同| E[复用真实 DOM 节点, 仅更新发生变化的 Props]
+    E --> F[递归对比子节点]
+    C -->|节点被移除| G[从真实 DOM 中删除]
+    D --> H[将差异打补丁 Patch 到真实 DOM]
+    E --> H
+    G --> H
+</code></pre>
+<p>为了在对比子节点时能精准识别出“哪个节点是哪个”（特别是面对列表项打乱顺序、插入、删除的情况），React 引入了 <code>key</code> 属性。有了 <code>key</code>，React 就能知道一个节点到底是新建的，还是只是从别的位置移动过来的，从而最大化复用 DOM。</p>
+<hr>
+<h3 id="第四阶段从递归到可中断渲染fiber-架构"><a href="#第四阶段从递归到可中断渲染fiber-架构">第四阶段：从递归到可中断渲染（Fiber 架构）</a></h3>
+<p>刚才提到的 <code>render</code> 和 <code>Diff</code> 过程有一个致命的问题：<strong>它们是递归的</strong>。</p>
+<p>JavaScript 是单线程执行的，且与浏览器的绘制引擎互斥。如果页面非常庞大，虚拟 DOM 树很深，一旦开始递归遍历，JavaScript 就会一直占用主线程，可能需要几十甚至上百毫秒。在这个过程中，浏览器无法响应用户的点击，也无法绘制动画，页面就会显得“卡顿”。</p>
+<p>为了解决这个问题，React 16 彻底重写了核心架构，引入了 <strong>Fiber</strong>。</p>
+<p><strong>Fiber 的核心思路是：将一个庞大的渲染任务，拆分成无数个小任务。执行完一个小任务后，看看浏览器有没有更紧急的事情（比如用户点击、动画绘制），如果有，就暂停渲染，把控制权交还给浏览器；等浏览器空闲了，再接着渲染。</strong> 这被称为“时间切片”（Time Slicing）。</p>
+<p>要实现“暂停和恢复”，递归就行不通了（因为函数的调用栈无法中途暂停并保存状态）。React 把树形结构的虚拟 DOM 改造成为了一种<strong>单链表结构</strong>，也就是 Fiber 树。</p>
+<p>每个 Fiber 节点代表一个工作单元，并且保存了三个指针，将所有节点连接起来：</p>
+<ul>
+<li>
+<p><code>child</code>：指向第一个子节点。</p>
+</li>
+<li>
+<p><code>sibling</code>：指向右边的兄弟节点。</p>
+</li>
+<li>
+<p><code>return</code>：指向父节点。</p>
+</li>
+</ul>
+<pre><code class="hljs language-mermaid">graph TD
+    Div[div 父节点] -->|child| H1[h1 子节点]
+    H1 -->|return| Div
+    H1 -->|sibling| P[p 兄弟节点]
+    P -->|return| Div
+    P -. 没有 sibling .-> null
+</code></pre>
+<p><strong>Fiber 的工作循环（Work Loop）伪代码：</strong></p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> nextUnitOfWork = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 下一个要执行的 Fiber 节点</span>
+
+<span class="hljs-comment">// 浏览器的 API，在浏览器空闲时调用该函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">workLoop</span>(<span class="hljs-params">deadline</span>) {
+  <span class="hljs-keyword">let</span> shouldYield = <span class="hljs-literal">false</span>;
+  
+  <span class="hljs-comment">// 如果有任务，且还有空闲时间，就一直执行</span>
+  <span class="hljs-keyword">while</span> (nextUnitOfWork &#x26;&#x26; !shouldYield) {
+    nextUnitOfWork = <span class="hljs-title function_">performUnitOfWork</span>(nextUnitOfWork); <span class="hljs-comment">// 执行当前任务，并返回下一个任务</span>
+    <span class="hljs-comment">// 检查浏览器是否快要没有时间了（比如接近 16.6ms 的渲染周期）</span>
+    shouldYield = deadline.<span class="hljs-title function_">timeRemaining</span>() &#x3C; <span class="hljs-number">1</span>;
+  }
+  
+  <span class="hljs-comment">// 如果任务没做完，等浏览器下次空闲继续</span>
+  <span class="hljs-keyword">if</span> (nextUnitOfWork) {
+    <span class="hljs-title function_">requestIdleCallback</span>(workLoop);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 所有任务都计算完毕，一次性将变化提交（Commit）到真实的 DOM 上</span>
+    <span class="hljs-title function_">commitRoot</span>();
+  }
+}
+
+<span class="hljs-comment">// 开启循环</span>
+<span class="hljs-title function_">requestIdleCallback</span>(workLoop);
+</code></pre>
+<p><strong>在 <code>performUnitOfWork</code> 中做了什么？</strong></p>
+<ol>
+<li>
+<p><strong>处理当前节点：</strong> 为当前 Fiber 节点创建真实 DOM（但不挂载到页面上）。</p>
+</li>
+<li>
+<p><strong>构建 Fiber 树和 Diff：</strong> 找出当前节点的子节点的变化，为它们创建子 Fiber 节点，并建立 <code>child</code>、<code>sibling</code>、<code>return</code> 链接。记录下当前节点需要做什么具体的 DOM 操作（比如更新属性，或者删除节点）。</p>
+</li>
+<li>
+<p><strong>返回下一个任务：</strong> 按照“先找子节点 -> 再找兄弟节点 -> 最后回溯到父节点”的顺序，返回下一个需要处理的 Fiber 节点。</p>
+</li>
+</ol>
+<p>在这个阶段，<strong>真实的页面是没有任何变化的</strong>，一切都在内存中进行。</p>
+<p>当所有的 Fiber 节点都遍历计算完毕后（<code>nextUnitOfWork</code> 变成 <code>null</code>），React 就会进入 <strong>Commit 阶段</strong>。在这个阶段，React 会根据刚才记录下来的差异，<strong>一口气、同步地</strong>把所有的改变应用到真实的 DOM 上，从而避免用户看到渲染了一半的页面。</p>
+<hr>
+<h3 id="整体脉络回顾"><a href="#整体脉络回顾">整体脉络回顾</a></h3>
+<ol>
+<li>
+<p><strong>编写代码：</strong> 我们写类似 HTML 的 JSX 代码。</p>
+</li>
+<li>
+<p><strong>构建 VDOM：</strong> JSX 被转译成 <code>createElement</code> 函数调用，生成轻量级的 JavaScript 对象（虚拟 DOM）。</p>
+</li>
+<li>
+<p><strong>调度与协调（Render Phase / Reconciliation）：</strong> React 将虚拟 DOM 转化为 Fiber 树。利用浏览器的空闲时间，分段计算新旧节点的差异，并在内存中构建需要更新的 DOM 树。这个阶段是<strong>可中断</strong>的。</p>
+</li>
+<li>
+<p><strong>提交更新（Commit Phase）：</strong> 当所有差异计算完毕，React 一次性将这些变化（增删改）应用到浏览器的真实 DOM 上。这个阶段是<strong>同步且不可中断</strong>的。</p>
+</li>
+</ol>
+<p>通过将 UI 转化为数据结构（虚拟 DOM），再通过高效的对比（Diff），并利用链表结构和调度器（Fiber）解决性能瓶颈，这就是 React 能够高效渲染复杂交互界面的底层逻辑。</p>
+<hr>
+<p>在上一部分的推导中，我们明确了 <strong>Fiber 节点是 React 内部的工作单元，它以对象的形式存在于内存中，记录了组件的结构、属性和 DOM 节点。</strong></p>
+<p>但是在引入 Hooks 之前，函数组件（Function Component）存在一个致命的物理限制：<strong>函数每次执行完毕后，内部的局部变量就会被销毁（垃圾回收）。</strong> 如果页面重新渲染，函数再次被调用，所有的变量都会重新初始化。函数组件本身是没有“记忆”的。</p>
+<p>Hooks 的本质，就是提供一种机制，<strong>让无状态的函数组件能够将自己的内部状态和副作用“挂载”到它对应的那个 Fiber 节点上。</strong> 只要 Fiber 节点不被销毁，这份“记忆”就一直存在。</p>
+<p>为了把这个过程拆解清楚，我们将重点剖析 <code>useState</code> 和 <code>useEffect</code> 的核心算法思路。</p>
+<hr>
+<h3 id="第五阶段赋予函数组件记忆hooks-架构"><a href="#第五阶段赋予函数组件记忆hooks-架构">第五阶段：赋予函数组件记忆（Hooks 架构）</a></h3>
+<p>当 React 准备渲染一个函数组件时，它会做两件事：</p>
+<ol>
+<li>
+<p>把当前正在处理的 Fiber 节点保存到一个全局变量中（我们暂且叫它 <code>wipFiber</code>，Work In Progress Fiber）。</p>
+</li>
+<li>
+<p>在这个 Fiber 节点上初始化一个数组（或链表），用来存放这个组件里调用的所有 Hooks。同时准备一个游标变量（比如 <code>hookIndex</code>），初始值为 0。</p>
+</li>
+</ol>
+<h4 id="1-usestate-的核心逻辑"><a href="#1-usestate-的核心逻辑">1. useState 的核心逻辑</a></h4>
+<p>当你在函数组件内部调用 <code>useState</code> 时，React 并没有施展魔法，它只是在执行一次普通的函数调用，并进行如下操作：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 全局变量，记录当前正在渲染的 Fiber 节点和 Hook 索引</span>
+<span class="hljs-keyword">let</span> wipFiber = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">let</span> hookIndex = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useState</span>(<span class="hljs-params">initialValue</span>) {
+  <span class="hljs-comment">// 1. 尝试获取上一次渲染时留下的旧 Hook 状态</span>
+  <span class="hljs-comment">// wipFiber.alternate 指向上一次渲染完毕的旧 Fiber 树中的对应节点</span>
+  <span class="hljs-keyword">const</span> oldHook =
+    wipFiber.<span class="hljs-property">alternate</span> &#x26;&#x26;
+    wipFiber.<span class="hljs-property">alternate</span>.<span class="hljs-property">hooks</span> &#x26;&#x26;
+    wipFiber.<span class="hljs-property">alternate</span>.<span class="hljs-property">hooks</span>[hookIndex];
+
+  <span class="hljs-comment">// 2. 构造当前这一次渲染的全新 Hook 对象</span>
+  <span class="hljs-keyword">const</span> hook = {
+    <span class="hljs-comment">// 如果有旧状态就继承，没有就使用初始值</span>
+    <span class="hljs-attr">state</span>: oldHook ? oldHook.<span class="hljs-property">state</span> : initialValue,
+    <span class="hljs-comment">// 用于存放那些还未执行的更新操作（比如多次调用 setState）</span>
+    <span class="hljs-attr">queue</span>: [], 
+  };
+
+  <span class="hljs-comment">// 3. 计算最新状态</span>
+  <span class="hljs-comment">// 如果在两次渲染之间，用户调用了 setState，这些操作会被暂存在旧 Hook 的 queue 中</span>
+  <span class="hljs-keyword">const</span> actions = oldHook ? oldHook.<span class="hljs-property">queue</span> : [];
+  actions.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">action</span> =></span> {
+    <span class="hljs-comment">// 假设 action 是一个直接的值，或者是类似 prev => prev + 1 的函数</span>
+    hook.<span class="hljs-property">state</span> = <span class="hljs-keyword">typeof</span> action === <span class="hljs-string">'function'</span> ? <span class="hljs-title function_">action</span>(hook.<span class="hljs-property">state</span>) : action;
+  });
+
+  <span class="hljs-comment">// 4. 定义更新状态的函数 setState</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">setState</span> = action => {
+    <span class="hljs-comment">// 将更新动作推入队列</span>
+    hook.<span class="hljs-property">queue</span>.<span class="hljs-title function_">push</span>(action);
+    <span class="hljs-comment">// 【核心触发点】：告诉 React 需要重新渲染了。</span>
+    <span class="hljs-comment">// 这会将当前树标记为需要更新，并重新启动我们在第四阶段讲过的 Work Loop（工作循环）</span>
+    <span class="hljs-title function_">triggerRender</span>(); 
+  };
+
+  <span class="hljs-comment">// 5. 将这个构造好的 hook 对象保存到当前 Fiber 节点的 hooks 数组中</span>
+  wipFiber.<span class="hljs-property">hooks</span>.<span class="hljs-title function_">push</span>(hook);
+  <span class="hljs-comment">// 6. 游标向后移动一位，为下一个可能出现的 Hook 做准备</span>
+  hookIndex++;
+
+  <span class="hljs-comment">// 7. 返回当前状态和修改状态的方法</span>
+  <span class="hljs-keyword">return</span> [hook.<span class="hljs-property">state</span>, setState];
+}
+</code></pre>
+<h4 id="2-解构不能在条件语句中使用-hooks的约束边界"><a href="#2-解构不能在条件语句中使用-hooks的约束边界">2. 解构“不能在条件语句中使用 Hooks”的约束边界</a></h4>
+<p>现在我们可以从底层逻辑来审视 React 官方提出的一条铁律：“绝对不要在 <code>if</code> 或循环中调用 Hooks”。</p>
+<p>仔细观察上面的代码，<code>useState</code> 的内部完全<strong>没有标识符（ID）或变量名</strong>来区分它是哪个状态。它唯一依赖的，是 <code>hookIndex</code> 这个递增的数字索引。</p>
+<p>假设我们有这样的组件：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [name, setName] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">'Alice'</span>); <span class="hljs-comment">// hookIndex: 0</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() > <span class="hljs-number">0.5</span>) {
+    <span class="hljs-keyword">const</span> [age, setAge] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">25</span>);      <span class="hljs-comment">// hookIndex: 1</span>
+  }
+  <span class="hljs-keyword">const</span> [city, setCity] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">'Beijing'</span>); <span class="hljs-comment">// hookIndex: 2</span>
+}
+</code></pre>
+<p>如果在某次渲染中，<code>Math.random()</code> 导致 <code>if</code> 语句没有执行：</p>
+<ol>
+<li>
+<p><code>useState('Alice')</code> 执行，读取旧的 <code>hooks[0]</code>。<code>hookIndex</code> 变为 1。</p>
+</li>
+<li>
+<p><code>if</code> 被跳过。</p>
+</li>
+<li>
+<p><code>useState('Beijing')</code> 执行，此时它会去读取旧的 <code>hooks[1]</code>。</p>
+<p>结果，原本属于 <code>age</code> 的状态被错误地赋值给了 <code>city</code>。组件的数据会瞬间彻底错乱。</p>
+</li>
+</ol>
+<p><strong>结论：Hooks 的状态能够正确映射，建立在一个不可动摇的条件上——每次渲染时，组件内部 Hooks 的调用顺序和数量必须绝对保持一致。</strong></p>
+<p>代码段</p>
+<pre><code class="hljs language-mermaid">graph LR
+    subgraph Fiber 节点
+        HooksList[Hooks 链表/数组]
+    end
+    
+    HooksList --> Hook0[Hook 0&#x3C;br/>useState 'Alice']
+    Hook0 -->|next指针/索引| Hook1[Hook 1&#x3C;br/>useState 25]
+    Hook1 -->|next指针/索引| Hook2[Hook 2&#x3C;br/>useState 'Beijing']
+    
+    classDef hook fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    class Hook0,Hook1,Hook2 hook;
+</code></pre>
+<h4 id="3-useeffect-的底层执行链路"><a href="#3-useeffect-的底层执行链路">3. useEffect 的底层执行链路</a></h4>
+<p>如果说 <code>useState</code> 是为了解决数据的存储问题，那么 <code>useEffect</code> 就是为了解决<strong>副作用的调度问题</strong>。副作用指的是那些与 UI 渲染计算无关的操作，比如发起网络请求、操作非 React 控制的真实 DOM、设置定时器等。</p>
+<p><code>useEffect</code> 的内部结构也是一个挂载在 Fiber 节点上的对象，它的核心逻辑围绕着<strong>依赖项（Dependencies）比对</strong>展开。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useEffect</span>(<span class="hljs-params">callback, dependencies</span>) {
+  <span class="hljs-keyword">const</span> oldHook =
+    wipFiber.<span class="hljs-property">alternate</span> &#x26;&#x26;
+    wipFiber.<span class="hljs-property">alternate</span>.<span class="hljs-property">hooks</span> &#x26;&#x26;
+    wipFiber.<span class="hljs-property">alternate</span>.<span class="hljs-property">hooks</span>[hookIndex];
+
+  <span class="hljs-comment">// 检查依赖项是否发生了变化</span>
+  <span class="hljs-keyword">const</span> hasChanged = oldHook
+    ? !dependencies.<span class="hljs-title function_">every</span>(<span class="hljs-function">(<span class="hljs-params">dep, i</span>) =></span> dep === oldHook.<span class="hljs-property">dependencies</span>[i])
+    : <span class="hljs-literal">true</span>;
+
+  <span class="hljs-keyword">const</span> hook = {
+    dependencies,
+    <span class="hljs-comment">// 如果依赖变了（或者没有提供依赖项），记录下需要执行的 callback</span>
+    <span class="hljs-comment">// 否则直接复用之前的 callback 占位</span>
+    <span class="hljs-attr">effect</span>: hasChanged ? callback : <span class="hljs-literal">null</span>,
+    <span class="hljs-comment">// 记录可能存在的清理函数（比如 clearTimeout）</span>
+    <span class="hljs-attr">cleanup</span>: oldHook ? oldHook.<span class="hljs-property">cleanup</span> : <span class="hljs-literal">null</span>, 
+  };
+
+  wipFiber.<span class="hljs-property">hooks</span>.<span class="hljs-title function_">push</span>(hook);
+  hookIndex++;
+}
+</code></pre>
+<p>这里需要理清一个非常重要的时间线。<strong>副作用函数（callback）绝对不能在组件的渲染阶段（Render Phase）执行。</strong> 在之前的 Fiber 讲解中我们提到，Render 阶段是可以被浏览器中断的。如果在这个阶段发起网络请求，一旦渲染被中断并重新开始，请求就会被触发多次。</p>
+<p>因此，React 对副作用的处理流程是分离的：</p>
+<ol>
+<li>
+<p><strong>Render 阶段：</strong> 执行组件函数，遇到 <code>useEffect</code> 时，只计算依赖项是否改变，将需要执行的副作用函数收集起来，暂存在 Fiber 节点上。</p>
+</li>
+<li>
+<p><strong>Commit 阶段：</strong> 计算完所有节点的差异后，同步地把变化应用到真实 DOM 上（页面更新）。</p>
+</li>
+<li>
+<p><strong>Commit 阶段之后：</strong> 此时真实的 DOM 已经更新完毕。React 会遍历所有的 Fiber 节点，找出那些标记了需要执行的 effect。先执行旧 hook 中记录的 <code>cleanup</code> 函数（清理上一次的遗留物），然后再执行新的 <code>effect</code> 函数。</p>
+</li>
+</ol>
+<hr>
+<h3 id="全景视图react-的闭环运行机制"><a href="#全景视图react-的闭环运行机制">全景视图：React 的闭环运行机制</a></h3>
+<p>将第一步的 Virtual DOM 到现在的 Hooks 结合起来，我们可以清晰地勾勒出 React 运转的完整链路：</p>
+<ol>
+<li>
+<p><strong>初始化：</strong> <code>createRoot(container).render(&#x3C;App />)</code> 触发首次渲染，进入 Work Loop 建立 Fiber 树。</p>
+</li>
+<li>
+<p><strong>函数执行与挂载状态：</strong> 调度器执行 <code>App()</code> 函数。内部调用的 <code>useState</code> 和 <code>useEffect</code> 依次在当前的 Fiber 节点上创建并挂载状态对象。</p>
+</li>
+<li>
+<p><strong>构建 VDOM 与对比：</strong> 函数返回一段 JSX（也就是 <code>createElement</code> 嵌套调用生成的虚拟 DOM）。React 将这份虚拟 DOM 与当前的 Fiber 节点进行比对（Diff）。</p>
+</li>
+<li>
+<p><strong>提交到屏幕：</strong> 浏览器空闲时间被榨干或者计算完毕后，统一 Commit，操作真实 DOM。</p>
+</li>
+<li>
+<p><strong>执行副作用：</strong> 真实 DOM 更新后，依次触发依赖项发生变化的 <code>useEffect</code> 回调。</p>
+</li>
+<li>
+<p><strong>状态变更触发重启：</strong> 用户点击按钮触发 <code>setState</code>。React 将更新动作塞入对应 Hook 的队列中，重新将 <code>App</code> 所在的 Fiber 节点标记为起点，重新开启 Work Loop，进入下一轮循环。</p>
+</li>
+</ol>
+<p>这种将状态依附于 Fiber 链表、通过不可变数据（Virtual DOM）描述视图、依靠可中断调度循环（Work Loop）分配计算资源、并在最终统一提交（Commit）的架构，构成了现代 React 运行的全部基石。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React基础底层原理讲解"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[4069," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",14," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"第一阶段用-javascript-对象描述-uivirtual-dom","text":"第一阶段：用 JavaScript 对象描述 UI（Virtual DOM）"},{"level":3,"id":"第二阶段将虚拟-dom-渲染到页面render","text":"第二阶段：将虚拟 DOM 渲染到页面（Render）"},{"level":3,"id":"第三阶段当数据改变时的高效更新diff-算法","text":"第三阶段：当数据改变时的高效更新（Diff 算法）"},{"level":3,"id":"第四阶段从递归到可中断渲染fiber-架构","text":"第四阶段：从递归到可中断渲染（Fiber 架构）"},{"level":3,"id":"整体脉络回顾","text":"整体脉络回顾"},{"level":3,"id":"第五阶段赋予函数组件记忆hooks-架构","text":"第五阶段：赋予函数组件记忆（Hooks 架构）"},{"level":4,"id":"1-usestate-的核心逻辑","text":"1. useState 的核心逻辑"},{"level":4,"id":"2-解构不能在条件语句中使用-hooks的约束边界","text":"2. 解构“不能在条件语句中使用 Hooks”的约束边界"},{"level":4,"id":"3-useeffect-的底层执行链路","text":"3. useEffect 的底层执行链路"},{"level":3,"id":"全景视图react-的闭环运行机制","text":"全景视图：React 的闭环运行机制"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

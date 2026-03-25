@@ -1,0 +1,416 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T6742,<p>好的，我们来深入、彻底地剖析 React <code>useEffect</code> 的实现原理。</p>
+<p>我会遵循第一性原理，从 “为什么需要 Effect” 出发，逐步拆解其核心机制，最后用一个简化的、带有详尽注释的代码实现来为你揭示其内部工作流程。</p>
+<hr>
+<h3 id="一问题的根源为什么-react-需要-useeffect"><a href="#一问题的根源为什么-react-需要-useeffect">一、问题的根源：为什么 React 需要 <code>useEffect</code>？</a></h3>
+<p>React 的核心思想是<strong>声明式 UI</strong>，即 <code>UI = f(state)</code>。你告诉 React 你想要_什么样_的 UI（声明），React 负责搞定如何更新 DOM（实现）。这个模型非常纯粹和强大，因为函数 <code>f</code> 应该是<strong>纯函数</strong>——对于相同的输入（state 和 props），总是返回相同的输出（UI 描述），并且没有<strong>副作用（Side Effect）</strong>。</p>
+<p>但现实世界的应用充满了副作用：</p>
+<ul>
+<li>
+<p><strong>数据获取</strong>：<code>fetch('/api/data')</code></p>
+</li>
+<li>
+<p><strong>DOM 操作</strong>：手动修改一个不受 React 控制的 DOM 元素，比如设置 <code>document.title</code>。</p>
+</li>
+<li>
+<p><strong>订阅</strong>：<code>window.addEventListener(...)</code> 或 <code>webSocket.onmessage(...)</code></p>
+</li>
+<li>
+<p><strong>定时器</strong>：<code>setInterval(...)</code> 或 <code>setTimeout(...)</code></p>
+</li>
+</ul>
+<p>这些操作不直接关联于渲染输出，它们会改变外部世界的状态。如果直接把它们写在组件函数体里，会在每次渲染时都执行，这会引发性能问题和逻辑混乱（比如重复发起 API 请求、重复订阅事件）。</p>
+<p><code>useEffect</code> 的诞生，就是为了给函数组件提供一个标准、可控的方式，来处理这些“逃离”了 React 纯粹渲染流程的副作用。它保证了：</p>
+<ol>
+<li>
+<p><strong>时机可控</strong>：副作用代码在 React 完成 DOM 更新、浏览器完成绘制<strong>之后</strong>异步执行，不会阻塞渲染。</p>
+</li>
+<li>
+<p><strong>条件可控</strong>：可以精确控制副作用在<strong>何时</strong>重新执行（通过依赖项数组）。</p>
+</li>
+<li>
+<p><strong>生命周期管理</strong>：提供清理机制，以防止内存泄漏和无效操作（例如，在组件卸载时取消订阅）。</p>
+</li>
+</ol>
+<h3 id="二useeffect-的核心机制与数据结构"><a href="#二useeffect-的核心机制与数据结构">二、<code>useEffect</code> 的核心机制与数据结构</a></h3>
+<p>要理解 <code>useEffect</code> 的原理，必须先了解 React 内部是如何表示一个组件实例的。在 React 16+（Fiber 架构）中，每个组件实例都对应一个<strong>Fiber 节点</strong>。这个 Fiber 节点是一个 JavaScript 对象，它保存了组件的类型、props、state，以及<strong>一个存储 Hooks 信息的链表</strong>。</p>
+<p>是的，当你连续调用 <code>useState</code>, <code>useEffect</code> 时，它们的信息被存储在一个<strong>有序链表</strong>中。</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 这是一个极度简化的 Fiber 节点概念</span>
+<span class="hljs-title class_">FiberNode</span> = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'MyComponent'</span>,
+  <span class="hljs-attr">state</span>: { ... },
+  <span class="hljs-attr">props</span>: { ... },
+  <span class="hljs-attr">memoizedState</span>: hook1 -> hook2 -> hook3 -> <span class="hljs-literal">null</span> <span class="hljs-comment">// Hooks 链表</span>
+};
+
+<span class="hljs-comment">// 每个 Hook 节点</span>
+<span class="hljs-title class_">Hook</span> = {
+  <span class="hljs-attr">memoizedState</span>: <span class="hljs-built_in">any</span>, <span class="hljs-comment">// 存储 state 的值，或 useEffect 的依赖项</span>
+  <span class="hljs-attr">next</span>: <span class="hljs-title class_">Hook</span> | <span class="hljs-literal">null</span>   <span class="hljs-comment">// 指向下一个 Hook</span>
+};
+</code></pre>
+<p><code>useEffect</code> 的工作就完全建立在这个 Fiber 节点和 Hooks 链表之上。</p>
+<p>我们来拆解 <code>useEffect</code> 的执行流程，这分为两个主要阶段：<strong>渲染阶段（Render Phase）</strong> 和 <strong>提交阶段（Commit Phase）</strong>。</p>
+<h4 id="1-渲染阶段render-phase"><a href="#1-渲染阶段render-phase">1. 渲染阶段（Render Phase）</a></h4>
+<p>这是 React 调用你的组件函数的时候。</p>
+<ol>
+<li>
+<p><strong>首次渲染</strong>：</p>
+<ul>
+<li>
+<p>当 <code>useEffect(create, deps)</code> 被调用时，React 会创建一个新的 Hook 对象。</p>
+</li>
+<li>
+<p>它将 <code>create</code> 函数（你传入的第一个参数）和 <code>deps</code> 依赖项数组存储在这个 Hook 对象中。</p>
+</li>
+<li>
+<p><strong>关键</strong>：它不会立刻执行 <code>create</code> 函数。相反，它会在 Fiber 节点的 <code>updateQueue</code>（更新队列）上标记一个<strong>待处理的 Effect</strong>。这个标记包含了 <code>create</code> 函数本身。</p>
+</li>
+<li>
+<p>这个 Hook 对象被添加到当前 Fiber 节点的 Hooks 链表中。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>更新渲染</strong>：</p>
+<ul>
+<li>
+<p>组件函数再次执行，<code>useEffect(create, deps)</code> 也再次被调用。</p>
+</li>
+<li>
+<p>React 根据<strong>调用顺序</strong>找到上一次渲染时对应的 Hook 对象。<strong>（这就是为什么 Hooks 必须在顶层调用，不能在条件或循环中）</strong></p>
+</li>
+<li>
+<p>React 会比较本次传入的 <code>deps</code> 数组和上一次存储在 Hook 对象中的旧 <code>deps</code> 数组。</p>
+</li>
+<li>
+<p>比较规则是 <code>Object.is</code>，逐项比较。</p>
+</li>
+<li>
+<p><strong>如果依赖项没有变化</strong>：什么都不做。</p>
+</li>
+<li>
+<p><strong>如果依赖项发生变化</strong>（或者没有提供依赖项数组 <code>undefined</code>）：React 就会再次在 Fiber 节点的 <code>updateQueue</code> 上标记一个待处理的 Effect。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-提交阶段commit-phase"><a href="#2-提交阶段commit-phase">2. 提交阶段（Commit Phase）</a></h4>
+<p>这是 React 已经计算完所有变更并<strong>更新了真实 DOM</strong>之后。</p>
+<ol>
+<li>
+<p><strong>执行 Effects</strong>：</p>
+<ul>
+<li>
+<p>在 Commit 阶段的末尾，浏览器已经基本完成了绘制。React 会遍历所有在渲染阶段被标记了“待处理 Effect”的 Fiber 节点。</p>
+</li>
+<li>
+<p>对于每一个标记，React 会<strong>异步地</strong>执行它对应的 <code>create</code> 函数。</p>
+</li>
+<li>
+<p><strong>为什么是异步？</strong> 为了不阻塞浏览器的绘制和用户交互，让页面感觉更流畅。这也是它和 <code>useLayoutEffect</code>（同步执行）的核心区别。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>处理清理函数（Cleanup）</strong>：</p>
+<ul>
+<li>
+<p><code>create</code> 函数可以返回一个函数，这就是<strong>清理函数</strong>。</p>
+</li>
+<li>
+<p>当 React 执行 <code>create</code> 函数后，如果发现有返回值（且是函数），它会把这个清理函数<strong>存储在 Effect 对象自身</strong>上。</p>
+</li>
+<li>
+<p><strong>清理函数何时执行？</strong></p>
+<ul>
+<li>
+<p><strong>组件卸载时</strong>：React 会执行所有该组件上存储的清理函数。</p>
+</li>
+<li>
+<p><strong>依赖项更新，Effect 重新执行前</strong>：在下一次执行该 Effect 的 <code>create</code> 函数<strong>之前</strong>，React 会先执行上一次存储的清理函数。这保证了旧的订阅或定时器被清理掉，防止了内存泄漏。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>总结一下这个流程：</p>
+<p>Render Phase: useEffect 被调用 -> 比较依赖项 -> 如果变化，则**调度（Schedule）**一个 Effect。</p>
+<p>Commit Phase: React 更新 DOM -> 浏览器绘制 -> React 异步执行所有被调度的 Effect -> 存储返回的清理函数。</p>
+<h3 id="三简化的代码实现"><a href="#三简化的代码实现">三、简化的代码实现</a></h3>
+<p>下面的代码并非 React 源码，而是一个高度简化的模型，用于揭示 <code>useEffect</code> 的核心工作原理。它能让你清晰地看到 Fiber、Hook 链表、依赖项比较、Effect 队列和清理函数的完整生命周期。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 全局变量，用于模拟 React 的内部工作状态</span>
+<span class="hljs-keyword">let</span> workInProgressFiber = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 当前正在处理的 Fiber 节点</span>
+<span class="hljs-keyword">let</span> hookIndex = <span class="hljs-number">0</span>;              <span class="hljs-comment">// 当前正在处理的 Hook 在链表中的索引</span>
+
+<span class="hljs-comment">// --- React 内部数据结构模拟 ---</span>
+
+<span class="hljs-comment">/**
+ * 创建一个 Fiber 节点
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">Function</span>} <span class="hljs-variable">component</span> - 组件函数
+ * <span class="hljs-doctag">@returns</span> {<span class="hljs-type">object</span>} Fiber 节点
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createFiber</span>(<span class="hljs-params">component</span>) {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">type</span>: component,
+    <span class="hljs-comment">// memoizedState 在真实 React 中是 Hooks 链表的头节点</span>
+    <span class="hljs-comment">// 这里简化为一个数组，索引即代表顺序</span>
+    <span class="hljs-attr">hooks</span>: [],
+    <span class="hljs-comment">// 存储需要执行的副作用函数及其清理函数</span>
+    <span class="hljs-attr">effects</span>: [],
+  };
+}
+
+<span class="hljs-comment">/**
+ * 获取当前正在处理的 Hook 对象
+ * 如果是首次渲染，则创建新的 Hook 对象
+ * <span class="hljs-doctag">@returns</span> {<span class="hljs-type">object</span>} Hook 对象
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getHook</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 从当前 Fiber 的 hooks 数组中获取</span>
+  <span class="hljs-keyword">const</span> hooks = workInProgressFiber.<span class="hljs-property">hooks</span>;
+  
+  <span class="hljs-comment">// 如果当前索引的 hook 不存在，说明是首次渲染该 hook</span>
+  <span class="hljs-keyword">if</span> (hookIndex >= hooks.<span class="hljs-property">length</span>) {
+    hooks.<span class="hljs-title function_">push</span>({});
+  }
+  
+  <span class="hljs-comment">// 返回当前 hook，并将索引后移，为下一个 hook 做准备</span>
+  <span class="hljs-keyword">return</span> hooks[hookIndex++];
+}
+
+
+<span class="hljs-comment">// --- useEffect 的模拟实现 ---</span>
+
+<span class="hljs-comment">/**
+ * 模拟 useEffect 的实现
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">Function</span>} <span class="hljs-variable">create</span> - 副作用函数，可能返回一个清理函数
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">Array&#x3C;any> | undefined</span>} <span class="hljs-variable">deps</span> - 依赖项数组
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useEffect</span>(<span class="hljs-params">create, deps</span>) {
+  <span class="hljs-comment">// 1. 获取当前 Hook 对象</span>
+  <span class="hljs-comment">// 'memoizedState' 在这里用于存储上一次的依赖项</span>
+  <span class="hljs-keyword">const</span> hook = <span class="hljs-title function_">getHook</span>();
+
+  <span class="hljs-comment">// 2. 比较依赖项</span>
+  <span class="hljs-keyword">const</span> oldDeps = hook.<span class="hljs-property">memoizedState</span>;
+  <span class="hljs-keyword">let</span> hasChanged = <span class="hljs-literal">true</span>; <span class="hljs-comment">// 默认依赖项已改变</span>
+
+  <span class="hljs-keyword">if</span> (oldDeps) {
+    <span class="hljs-comment">// 如果提供了依赖项数组，则进行比较</span>
+    <span class="hljs-comment">// 如果没有提供 deps (undefined)，则每次都执行</span>
+    <span class="hljs-keyword">if</span> (deps) {
+      <span class="hljs-comment">// 检查新旧依赖项数组长度是否一致</span>
+      hasChanged = deps.<span class="hljs-property">length</span> !== oldDeps.<span class="hljs-property">length</span>;
+      <span class="hljs-keyword">if</span> (!hasChanged) {
+        <span class="hljs-comment">// 长度一致，逐项比较</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; deps.<span class="hljs-property">length</span>; i++) {
+          <span class="hljs-keyword">if</span> (!<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">is</span>(deps[i], oldDeps[i])) {
+            hasChanged = <span class="hljs-literal">true</span>;
+            <span class="hljs-keyword">break</span>;
+          }
+        }
+      }
+    }
+  }
+
+  <span class="hljs-comment">// 3. 如果依赖项变化，则调度 Effect</span>
+  <span class="hljs-keyword">if</span> (hasChanged) {
+    <span class="hljs-comment">// 'effect' 是一个对象，包含了待执行的函数和它未来的清理函数</span>
+    <span class="hljs-keyword">const</span> effect = {
+      <span class="hljs-attr">create</span>: create, <span class="hljs-comment">// 副作用函数</span>
+      <span class="hljs-attr">destroy</span>: <span class="hljs-literal">undefined</span>, <span class="hljs-comment">// 清理函数，初始为 undefined</span>
+    };
+    
+    <span class="hljs-comment">// 将这个 effect 推入当前 Fiber 节点的 effects 队列中</span>
+    <span class="hljs-comment">// 真实 React 中会使用更复杂的更新队列和标记位</span>
+    workInProgressFiber.<span class="hljs-property">effects</span>.<span class="hljs-title function_">push</span>(effect);
+
+    <span class="hljs-comment">// 将新的依赖项存储在 hook 中，供下一次比较</span>
+    hook.<span class="hljs-property">memoizedState</span> = deps;
+  }
+}
+
+
+<span class="hljs-comment">// --- 模拟 React 的渲染和提交过程 ---</span>
+
+<span class="hljs-comment">/**
+ * 模拟 React 的渲染（执行组件函数）
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">object</span>} <span class="hljs-variable">fiber</span> - 要渲染的 Fiber 节点
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params">fiber</span>) {
+  <span class="hljs-comment">// 设置全局变量，指向当前工作的 Fiber</span>
+  workInProgressFiber = fiber;
+  <span class="hljs-comment">// 重置 hook 索引，因为每次渲染都是从头开始调用 hooks</span>
+  hookIndex = <span class="hljs-number">0</span>;
+  <span class="hljs-comment">// 清空上一次的 effects 队列，准备接收新的 effects</span>
+  fiber.<span class="hljs-property">effects</span> = [];
+  
+  <span class="hljs-comment">// 执行组件函数，这会触发内部的 useEffect 调用</span>
+  fiber.<span class="hljs-title function_">type</span>();
+  
+  <span class="hljs-comment">// 渲染阶段结束，返回 Fiber 节点</span>
+  <span class="hljs-keyword">return</span> fiber;
+}
+
+<span class="hljs-comment">/**
+ * 模拟 React 的提交（执行 Effects 和清理）
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">object</span>} <span class="hljs-variable">fiber</span> - 已经完成渲染的 Fiber 节点
+ */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">commit</span>(<span class="hljs-params">fiber</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Commit Phase ---"</span>);
+  
+  <span class="hljs-comment">// 遍历 effects 队列</span>
+  fiber.<span class="hljs-property">effects</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">effect</span> =></span> {
+    <span class="hljs-comment">// 1. 执行上一次的清理函数 (如果存在)</span>
+    <span class="hljs-comment">// 这是为了在执行新 effect 之前，清理掉旧的 effect (如取消订阅)</span>
+    <span class="hljs-keyword">if</span> (effect.<span class="hljs-property">destroy</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  🧹 Running cleanup function..."</span>);
+      effect.<span class="hljs-title function_">destroy</span>();
+    }
+    
+    <span class="hljs-comment">// 2. 执行新的副作用函数</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  🚀 Running effect create function..."</span>);
+    <span class="hljs-keyword">const</span> destroy = effect.<span class="hljs-title function_">create</span>();
+    
+    <span class="hljs-comment">// 3. 存储新的清理函数 (如果返回了的话)</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> destroy === <span class="hljs-string">'function'</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  💾 Storing new cleanup function."</span>);
+      effect.<span class="hljs-property">destroy</span> = destroy;
+    }
+  });
+
+  <span class="hljs-comment">// 清理全局变量</span>
+  workInProgressFiber = <span class="hljs-literal">null</span>;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Commit Phase End ---\n"</span>);
+}
+
+<span class="hljs-comment">// --- 示例应用 ---</span>
+
+<span class="hljs-comment">// 我们的组件</span>
+<span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">let</span> show = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">MyComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Render with count: <span class="hljs-subst">${count}</span>`</span>);
+  
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`  [Effect 1] Runs because count changed to: <span class="hljs-subst">${count}</span>`</span>);
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">title</span> = <span class="hljs-string">`Count: <span class="hljs-subst">${count}</span>`</span>;
+    
+    <span class="hljs-comment">// 返回一个清理函数</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =></span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`  [Cleanup 1] Cleaning up effect for count: <span class="hljs-subst">${count-<span class="hljs-number">1</span>}</span>`</span>);
+    };
+  }, [count]); <span class="hljs-comment">// 依赖于 count</span>
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  [Effect 2] Runs only once after initial render."</span>);
+    
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">handler</span> = (<span class="hljs-params"></span>) => <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Window resized!"</span>);
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+    
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =></span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  [Cleanup 2] Removing resize listener."</span>);
+      <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'resize'</span>, handler);
+    };
+  }, []); <span class="hljs-comment">// 空依赖数组，只运行一次</span>
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"  [Effect 3] Runs after every render."</span>);
+  }); <span class="hljs-comment">// 没有依赖数组，每次渲染都运行</span>
+}
+
+
+<span class="hljs-comment">// --- 模拟 React 应用生命周期 ---</span>
+
+<span class="hljs-comment">// 1. 初始化</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Initial Render ---"</span>);
+<span class="hljs-keyword">const</span> myComponentFiber = <span class="hljs-title function_">createFiber</span>(<span class="hljs-title class_">MyComponent</span>);
+
+<span class="hljs-comment">// 2. 首次渲染和提交</span>
+<span class="hljs-keyword">let</span> renderedFiber = <span class="hljs-title function_">render</span>(myComponentFiber);
+<span class="hljs-title function_">commit</span>(renderedFiber);
+
+<span class="hljs-comment">// 3. 模拟状态更新 (count 改变)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Update Render (count changes) ---"</span>);
+count = <span class="hljs-number">1</span>;
+renderedFiber = <span class="hljs-title function_">render</span>(myComponentFiber);
+<span class="hljs-title function_">commit</span>(renderedFiber);
+
+<span class="hljs-comment">// 4. 模拟另一次状态更新 (count 再次改变)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Update Render (count changes again) ---"</span>);
+count = <span class="hljs-number">2</span>;
+renderedFiber = <span class="hljs-title function_">render</span>(myComponentFiber);
+<span class="hljs-title function_">commit</span>(renderedFiber);
+
+<span class="hljs-comment">// 5. 模拟状态更新 (但 count 不变，仅是父组件重渲染)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Update Render (count does NOT change) ---"</span>);
+renderedFiber = <span class="hljs-title function_">render</span>(myComponentFiber);
+<span class="hljs-title function_">commit</span>(renderedFiber); <span class="hljs-comment">// 注意：这次 commit 时，依赖于 count 的 effect 不会运行</span>
+
+<span class="hljs-comment">// 6. 模拟组件卸载 (手动触发所有清理)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"--- Unmount ---"</span>);
+<span class="hljs-title function_">commit</span>({
+  ...myComponentFiber,
+  <span class="hljs-comment">// 模拟卸载时，清空 create 函数，只保留 destroy</span>
+  <span class="hljs-attr">effects</span>: myComponentFiber.<span class="hljs-property">effects</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">e</span> =></span> ({...e, <span class="hljs-attr">create</span>: <span class="hljs-function">()=></span>{}}))
+});
+
+</code></pre>
+<p>当你运行上述代码，观察控制台的输出，你会清晰地看到 <code>useEffect</code> 的整个生命周期：何时渲染、何时比较依赖、何时执行副作用、何时执行清理。</p>
+<h3 id="四最终总结与要点"><a href="#四最终总结与要点">四、最终总结与要点</a></h3>
+<ol>
+<li>
+<p><strong>核心目的</strong>：在函数组件中管理副作用，将非纯粹的逻辑操作与纯粹的渲染逻辑解耦。</p>
+</li>
+<li>
+<p><strong>数据结构</strong>：<code>useEffect</code> 的状态（主要是依赖项）存储在与组件实例（Fiber 节点）关联的 <strong>Hook 链表</strong>中。</p>
+</li>
+<li>
+<p><strong>双阶段执行</strong>：</p>
+<ul>
+<li>
+<p><strong>渲染阶段</strong>：调用 <code>useEffect</code>，比较依赖项，若有变化则<strong>调度</strong>一个 Effect。此阶段是纯粹的计算，不执行副作用。</p>
+</li>
+<li>
+<p><strong>提交阶段</strong>：在 DOM 更新后，<strong>异步</strong>执行被调度的 Effect，并处理其清理函数。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>依赖项数组</strong>是性能优化的关键，它告诉 React 是否需要跳过一个 Effect 的执行。</p>
+<ul>
+<li>
+<p><code>[dep1, dep2]</code>：<code>dep1</code> 或 <code>dep2</code> 改变时重新执行。</p>
+</li>
+<li>
+<p><code>[]</code>：只在组件首次挂载后执行一次。</p>
+</li>
+<li>
+<p><code>undefined</code>（不传）：每次渲染后都执行。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>清理函数</strong>是 <code>useEffect</code> 实现资源安全管理（如取消订阅、清除定时器）的基石，它总是在下一次 Effect 执行<strong>之前</strong>或组件<strong>卸载时</strong>运行。</p>
+</li>
+<li>
+<p><strong>调用顺序</strong>的稳定性是 Hooks 机制的基石。React 依赖这个不变的顺序来在每次渲染时找到正确的 Hook 状态。</p>
+</li>
+</ol>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"useEffect 原理"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-23T00:00:00.000Z","children":"2025年7月23日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2764," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一问题的根源为什么-react-需要-useeffect","text":"一、问题的根源：为什么 React 需要 useEffect？"},{"level":3,"id":"二useeffect-的核心机制与数据结构","text":"二、useEffect 的核心机制与数据结构"},{"level":4,"id":"1-渲染阶段render-phase","text":"1. 渲染阶段（Render Phase）"},{"level":4,"id":"2-提交阶段commit-phase","text":"2. 提交阶段（Commit Phase）"},{"level":3,"id":"三简化的代码实现","text":"三、简化的代码实现"},{"level":3,"id":"四最终总结与要点","text":"四、最终总结与要点"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

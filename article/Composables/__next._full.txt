@@ -1,0 +1,258 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","Composables",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","Composables","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T318e,<p>在 Vue 3 中，自定义 Hooks（官方称为 <strong>Composables</strong>，组合式函数）是利用组合式 API（Composition API）来封装和复用<strong>有状态逻辑</strong>的最佳实践。</p>
+<p>它解决了以前 <code>Mixins</code> 存在的命名冲突、来源不清晰以及逻辑分散等痛点。我们可以把一个复杂的组件逻辑拆分成一个个独立的、可测试的微小单元。</p>
+<hr>
+<h2 id="1-基本结构"><a href="#1-基本结构">1. 基本结构</a></h2>
+<p>一个标准的 Composable 通常遵循以下约定：</p>
+<ul>
+<li>
+<p><strong>命名：</strong> 以 <code>use</code> 开头（如 <code>useMouse</code>, <code>useFetch</code>）。</p>
+</li>
+<li>
+<p><strong>输入：</strong> 可以接收参数（可以是普通值、Ref 或 Getter）。</p>
+</li>
+<li>
+<p><strong>输出：</strong> 通常返回一个包含 <code>ref</code> 或 <code>function</code> 的对象（方便解构，但也需注意解构后会丢失响应性的坑，通常建议返回 Ref 对象）。</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-核心示例追踪鼠标位置"><a href="#2-核心示例追踪鼠标位置">2. 核心示例：追踪鼠标位置</a></h2>
+<p>这是最经典的一个例子，展示了如何封装状态和生命周期钩子。</p>
+<h3 id="编写-usemousejs"><a href="#编写-usemousejs">编写 <code>useMouse.js</code></a></h3>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { ref, onMounted, onUnmounted } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useMouse</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 1. 定义内部状态</span>
+  <span class="hljs-keyword">const</span> x = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>)
+  <span class="hljs-keyword">const</span> y = <span class="hljs-title function_">ref</span>(<span class="hljs-number">0</span>)
+
+  <span class="hljs-comment">// 2. 定义改变状态的逻辑</span>
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">event</span>) {
+    x.<span class="hljs-property">value</span> = event.<span class="hljs-property">pageX</span>
+    y.<span class="hljs-property">value</span> = event.<span class="hljs-property">pageY</span>
+  }
+
+  <span class="hljs-comment">// 3. 挂载生命周期钩子</span>
+  <span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =></span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'mousemove'</span>, update))
+  <span class="hljs-title function_">onUnmounted</span>(<span class="hljs-function">() =></span> <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">'mousemove'</span>, update))
+
+  <span class="hljs-comment">// 4. 暴露状态（返回对象）</span>
+  <span class="hljs-keyword">return</span> { x, y }
+}
+</code></pre>
+<h3 id="在组件中使用"><a href="#在组件中使用">在组件中使用</a></h3>
+<p>代码段</p>
+<pre><code class="hljs language-vue">&#x3C;script setup>
+import { useMouse } from './useMouse'
+
+// 解构获取响应性数据
+const { x, y } = useMouse()
+&#x3C;/script>
+
+&#x3C;template>
+  &#x3C;div>Mouse position is at: {{ x }}, {{ y }}&#x3C;/div>
+&#x3C;/template>
+</code></pre>
+<hr>
+<h2 id="3-进阶技巧与最佳实践"><a href="#3-进阶技巧与最佳实践">3. 进阶技巧与最佳实践</a></h2>
+<p>为了写出高质量的 Composables，建议关注以下几个维度：</p>
+<h3 id="a-灵活的输入参数"><a href="#a-灵活的输入参数">A. 灵活的输入参数</a></h3>
+<p>优秀的 Hooks 应该既支持传入普通值，也支持传入 Ref。可以使用 <code>toValue</code>（Vue 3.3+）来统一处理。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> { toValue, watchEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useData</span>(<span class="hljs-params">url</span>) {
+  <span class="hljs-title function_">watchEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-comment">// 无论 url 是字符串还是 ref，toValue 都能拿到具体的值</span>
+    <span class="hljs-keyword">const</span> currentUrl = <span class="hljs-title function_">toValue</span>(url)
+    <span class="hljs-comment">// 执行 fetch 逻辑...</span>
+  })
+}
+</code></pre>
+<h3 id="b-始终返回对象而非数组"><a href="#b-始终返回对象而非数组">B. 始终返回对象而非数组</a></h3>
+<p>虽然 React Hooks 习惯返回数组（如 <code>const [val, setVal] = useState()</code>），但在 Vue 中<strong>推荐返回对象</strong>。这样在解构时可以按需取值，且不需要严格遵守顺序。</p>
+<h3 id="c-资源清理"><a href="#c-资源清理">C. 资源清理</a></h3>
+<p>如果你的 Hook 开启了定时器、网络请求或 DOM 事件监听，务必在 <code>onUnmounted</code> 中清理，防止内存泄漏。</p>
+<h3 id="d-嵌套使用"><a href="#d-嵌套使用">D. 嵌套使用</a></h3>
+<p>Composables 内部可以调用其他的 Composables。这种“套娃”能力使得你可以通过组合小的逻辑单元来构建极其复杂的业务逻辑。</p>
+<hr>
+<h2 id="4-为什么选择-composables-而不是-mixins"><a href="#4-为什么选择-composables-而不是-mixins">4. 为什么选择 Composables 而不是 Mixins？</a></h2>
+<p>如果你在犹豫是否要重构旧代码，下表对比了它们的本质区别：</p>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>Mixins</strong></th>
+<th><strong>Composables (Hooks)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>属性来源</strong></td>
+<td>隐式（不知道属性来自哪个 Mixin）</td>
+<td><strong>显式</strong>（通过 import 和解构明确来源）</td>
+</tr>
+<tr>
+<td><strong>命名冲突</strong></td>
+<td>容易冲突（多个 Mixin 拥有同名变量）</td>
+<td><strong>无冲突</strong>（可以在解构时重命名）</td>
+</tr>
+<tr>
+<td><strong>逻辑组织</strong></td>
+<td>碎片化（按生命周期拆分）</td>
+<td><strong>集中式</strong>（将同一功能的逻辑聚拢在一起）</td>
+</tr>
+<tr>
+<td><strong>类型支持</strong></td>
+<td>较差</td>
+<td><strong>优秀</strong>（原生支持 TypeScript）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="我的建议"><a href="#我的建议">我的建议</a></h2>
+<p>在实际开发中，<strong>不要为了拆分而拆分</strong>。如果逻辑只在一个组件中使用且代码量适中，直接写在组件内即可。当你发现某个逻辑（如：分页处理、表单校验、防抖节流、第三方库初始化）在多个地方出现时，才是抽象成 Composable 的最佳时机。</p>
+<p>此外，在编写涉及异步请求的 Hooks 时，建议利用 Vue 的异步组件和 <code>Suspense</code> 特性，或者像 <code>VueUse</code> 库那样返回 <code>isLoading</code> 和 <code>error</code> 状态。</p>
+<hr>
+<h1 id="vue-composables-和-react-hooks-的区别"><a href="#vue-composables-和-react-hooks-的区别">Vue Composables 和 React Hooks 的区别</a></h1>
+<p>虽然 Vue 3 的 Composables 在命名上致敬了 React Hooks（都以 <code>use</code> 开头），但如果你拆开“引擎盖”看一眼，会发现它们的工作原理其实是两种完全不同的哲学。</p>
+<p>简单来说：<strong>React Hooks 是“快照”，而 Vue Composables 是“连接”。</strong></p>
+<hr>
+<h2 id="1-执行机制一次性-vs-反复运行"><a href="#1-执行机制一次性-vs-反复运行">1. 执行机制：一次性 vs. 反复运行</a></h2>
+<p>这是两者最本质的区别，决定了你编写代码时的心智负担。</p>
+<ul>
+<li>
+<p><strong>React Hooks：</strong> 每当组件状态改变，整个函数组件会<strong>重新执行</strong>。这意味着所有的 Hooks 也会跟着重新运行。为了防止性能问题或无限循环，你必须小心翼翼地使用 <code>useMemo</code>、<code>useCallback</code> 和依赖数组。</p>
+</li>
+<li>
+<p><strong>Vue Composables：</strong> <code>setup()</code>（或 <code>&#x3C;script setup></code>）只在组件创建时<strong>执行一次</strong>。它建立了一套响应式的追踪系统。后续的更新是由数据直接触发对应的 DOM 局部变更，而不是重新运行整个逻辑块。</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-闭包与心智负担"><a href="#2-闭包与心智负担">2. 闭包与“心智负担”</a></h2>
+<p>如果你写过 React，一定被“过时闭包（Stale Closures）”坑过。</p>
+<ul>
+<li>
+<p><strong>React 的困境：</strong> 由于函数反复执行，如果你在某个异步回调里访问状态，拿到的可能是“旧帧”里的数据。</p>
+</li>
+<li>
+<p><strong>Vue 的优势：</strong> 因为代码只运行一次，且数据是基于 <strong>Proxy</strong> 的引用，你拿到的永远是那个响应式对象的最新值。你不需要担心闭包捕获了旧变量，因为“变量”本身就是响应式的容器。</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-调用规则的约束"><a href="#3-调用规则的约束">3. 调用规则的约束</a></h2>
+<p>React 有著名的“Hooks 规则”，而 Vue 几乎没有。</p>
+<table>
+<thead>
+<tr>
+<th><strong>场景</strong></th>
+<th><strong>React Hooks</strong></th>
+<th><strong>Vue Composables</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>循环/条件判断</strong></td>
+<td><strong>严禁使用</strong>。Hooks 必须严格按照固定的顺序调用。</td>
+<td><strong>允许使用</strong>。因为逻辑只在初始化时运行一次，不依赖调用顺序。</td>
+</tr>
+<tr>
+<td><strong>手动依赖管理</strong></td>
+<td>必须在 <code>useEffect</code> 等后方手动维护 <code>[dep]</code> 数组。</td>
+<td><strong>自动追踪</strong>。<code>watch</code> 和 <code>computed</code> 会自动收集依赖。</td>
+</tr>
+<tr>
+<td><strong>性能优化</strong></td>
+<td>需要手动 <code>useCallback</code> 避免子组件无谓重绘。</td>
+<td><strong>自动优化</strong>。细粒度的响应式系统确保只有受影响的部分更新。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-数据模型的对比"><a href="#4-数据模型的对比">4. 数据模型的对比</a></h2>
+<ul>
+<li>
+<p><strong>React 是不可变（Immutable）的：</strong> 更新状态必须给出一个全新的对象（<code>setState(prev => ({...prev, count: 1}))</code>）。</p>
+</li>
+<li>
+<p><strong>Vue 是可变（Mutable）的：</strong> 你直接修改 <code>count.value++</code> 即可。Vue 的响应式引擎会自动感知并通知订阅者。</p>
+</li>
+</ul>
+<hr>
+<h2 id="5-直观对比表"><a href="#5-直观对比表">5. 直观对比表</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>React Hooks</strong></th>
+<th><strong>Vue 3 Composables</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>底层原理</strong></td>
+<td>闭包 + 链表存储</td>
+<td>Proxy + 依赖收集</td>
+</tr>
+<tr>
+<td><strong>执行频率</strong></td>
+<td>每次渲染都执行</td>
+<td>仅在初始化时执行一次</td>
+</tr>
+<tr>
+<td><strong>依赖声明</strong></td>
+<td>必须手动声明依赖数组</td>
+<td>自动收集依赖，零手动维护</td>
+</tr>
+<tr>
+<td><strong>学习曲线</strong></td>
+<td>初期简单，进阶处理闭包/性能极难</td>
+<td>概念稍多（ref, reactive），但后期极稳</td>
+</tr>
+<tr>
+<td><strong>代码组织</strong></td>
+<td>逻辑容易散落在各处</td>
+<td>逻辑高度内聚，非常利于复用</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="总结建议"><a href="#总结建议">总结建议</a></h2>
+<p>如果你从 React 转到 Vue，最需要改变的习惯就是：<strong>别再纠结“依赖数组”了</strong>。</p>
+<p>在 React 中，你是在编写一段“描述当前状态的代码”；而在 Vue 中，你是在编写一个“生产响应式数据的工厂”。</p>
+<p>Vue 的 Composables 让你能像写普通 JavaScript 逻辑一样去组织代码，而不用担心因为少写了一个依赖项导致程序出现诡异的 Bug。</p>
+<p><strong>你想深入了解一下 Vue 是如何通过 <code>watchEffect</code> 实现比 React <code>useEffect</code> 更智能的自动依赖追踪的吗？</strong></p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","className":"$undefined","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Composables"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1717," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":2,"id":"1-基本结构","text":"1. 基本结构"},{"level":2,"id":"2-核心示例追踪鼠标位置","text":"2. 核心示例：追踪鼠标位置"},{"level":3,"id":"编写-usemousejs","text":"编写 useMouse.js"},{"level":3,"id":"在组件中使用","text":"在组件中使用"},{"level":2,"id":"3-进阶技巧与最佳实践","text":"3. 进阶技巧与最佳实践"},{"level":3,"id":"a-灵活的输入参数","text":"A. 灵活的输入参数"},{"level":3,"id":"b-始终返回对象而非数组","text":"B. 始终返回对象而非数组"},{"level":3,"id":"c-资源清理","text":"C. 资源清理"},{"level":3,"id":"d-嵌套使用","text":"D. 嵌套使用"},{"level":2,"id":"4-为什么选择-composables-而不是-mixins","text":"4. 为什么选择 Composables 而不是 Mixins？"},{"level":2,"id":"我的建议","text":"我的建议"},{"level":2,"id":"1-执行机制一次性-vs-反复运行","text":"1. 执行机制：一次性 vs. 反复运行"},{"level":2,"id":"2-闭包与心智负担","text":"2. 闭包与“心智负担”"},{"level":2,"id":"3-调用规则的约束","text":"3. 调用规则的约束"},{"level":2,"id":"4-数据模型的对比","text":"4. 数据模型的对比"},{"level":2,"id":"5-直观对比表","text":"5. 直观对比表"},{"level":2,"id":"总结建议","text":"总结建议"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"Composables | 流年石刻"}],["$","meta","1",{"name":"description","content":"在 Vue 3 中，自定义 Hooks（官方称为 Composables，组合式函数）是利用组合式 API（Composition API）来封装和复用有状态逻辑的最佳实践。 它解决了以前 Mixins 存在的命名冲突、来源不清晰以及逻辑分…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

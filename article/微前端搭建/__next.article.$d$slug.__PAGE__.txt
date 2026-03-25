@@ -1,0 +1,197 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T349e,<p>使用 <code>micro-app</code> 搭建微前端架构是一个非常务实的选择。与 <code>qiankun</code> 等基于路由劫持的框架不同，<code>micro-app</code> 的核心逻辑是基于 <strong>Web Components</strong>。</p>
+<p>这意味着，你引入子应用的方式，就像在 HTML 中写一个 <code>&#x3C;div></code> 或 <code>&#x3C;iframe></code> 一样自然。这种“类原生”的隔离机制大大降低了上手门槛。</p>
+<p>为了让你快速跑通流程，我们使用 <strong>React + Vite</strong> 来搭建一个最简模型：</p>
+<ul>
+<li>
+<p><strong>主应用 (Host):</strong> 运行在 <code>http://localhost:3000</code></p>
+</li>
+<li>
+<p><strong>子应用 (Child):</strong> 运行在 <code>http://localhost:4000</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="第一步初始化项目结构"><a href="#第一步初始化项目结构">第一步：初始化项目结构</a></h3>
+<p>首先，我们需要创建两个独立的 React 项目。在终端中执行以下操作：</p>
+<p>Bash</p>
+<pre><code class="hljs language-sql"># 创建主应用
+npm <span class="hljs-keyword">create</span> vite<span class="hljs-variable">@latest</span> main<span class="hljs-operator">-</span>app <span class="hljs-comment">-- --template react-ts</span>
+
+# 创建子应用
+npm <span class="hljs-keyword">create</span> vite<span class="hljs-variable">@latest</span> child<span class="hljs-operator">-</span>app <span class="hljs-comment">-- --template react-ts</span>
+</code></pre>
+<p>安装依赖：</p>
+<p>Bash</p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> main-app &#x26;&#x26; npm install
+<span class="hljs-built_in">cd</span> ../child-app &#x26;&#x26; npm install
+</code></pre>
+<hr>
+<h3 id="第二步配置主应用-main-app"><a href="#第二步配置主应用-main-app">第二步：配置主应用 (Main App)</a></h3>
+<p>主应用的职责是加载 <code>micro-app</code> 的基座环境，并渲染子应用组件。</p>
+<h4 id="1-安装依赖"><a href="#1-安装依赖">1. 安装依赖</a></h4>
+<p>在 <code>main-app</code> 目录下：</p>
+<p>Bash</p>
+<pre><code class="hljs language-css">npm <span class="hljs-selector-tag">i</span> <span class="hljs-keyword">@micro-zoe</span>/micro-app --save
+</code></pre>
+<h4 id="2-初始化-microapp"><a href="#2-初始化-microapp">2. 初始化 MicroApp</a></h4>
+<p>在主应用的入口文件（通常是 <code>src/main.tsx</code>）中引入并启动。</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// main-app/src/main.tsx</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">ReactDOM</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom/client'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.tsx'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./index.css'</span>
+<span class="hljs-keyword">import</span> microApp <span class="hljs-keyword">from</span> <span class="hljs-string">'@micro-zoe/micro-app'</span>
+
+<span class="hljs-comment">// 初始化 micro-app</span>
+microApp.<span class="hljs-title function_">start</span>()
+
+<span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">createRoot</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'root'</span>)!).<span class="hljs-title function_">render</span>(
+  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">React.StrictMode</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">App</span> /></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">React.StrictMode</span>></span></span>,
+)
+</code></pre>
+<h4 id="3-引入子应用"><a href="#3-引入子应用">3. 引入子应用</a></h4>
+<p>在 <code>src/App.tsx</code> 中，我们使用 <code>&#x3C;micro-app></code> 标签来加载子应用。</p>
+<blockquote>
+<p><strong>注意</strong>：TypeScript 可能会报错提示无法识别 <code>&#x3C;micro-app></code> 元素，这是因为它是自定义 Web Component。你可以暂时忽略，或者在 <code>src/vite-env.d.ts</code> 中添加声明（见文末“常见问题”）。</p>
+</blockquote>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// main-app/src/App.tsx</span>
+<span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">padding:</span> <span class="hljs-attr">20</span> }}></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>我是主应用 (Main App)<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">hr</span> /></span>
+      {/* name: 子应用唯一名称
+        url: 子应用运行的地址
+        iframe: 开启iframe沙箱（可选，建议开启以获得更好隔离）
+      */}
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">micro-app</span> 
+        <span class="hljs-attr">name</span>=<span class="hljs-string">"child-app"</span> 
+        <span class="hljs-attr">url</span>=<span class="hljs-string">"http://localhost:4000/"</span> 
+        <span class="hljs-attr">iframe</span> 
+      ></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">micro-app</span>></span> 
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  )
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">App</span>
+</code></pre>
+<h4 id="4-固定端口"><a href="#4-固定端口">4. 固定端口</a></h4>
+<p>修改 <code>main-app/vite.config.ts</code>，确保主应用跑在 3000 端口：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">plugins</span>: [<span class="hljs-title function_">react</span>()],
+  <span class="hljs-attr">server</span>: {
+    <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span>,
+  }
+})
+</code></pre>
+<hr>
+<h3 id="第三步配置子应用-child-app"><a href="#第三步配置子应用-child-app">第三步：配置子应用 (Child App)</a></h3>
+<p>子应用本质上就是一个普通的 React 应用，但为了能被主应用加载，我们需要解决最核心的 <strong>跨域 (CORS)</strong> 问题。</p>
+<p>因为主应用 (Port 3000) 请求子应用 (Port 4000) 的资源（HTML/JS/CSS）时，浏览器默认会拦截跨域请求。</p>
+<h4 id="1-配置-cors-和端口"><a href="#1-配置-cors-和端口">1. 配置 CORS 和端口</a></h4>
+<p>修改 <code>child-app/vite.config.ts</code>：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+<span class="hljs-keyword">import</span> react <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-react'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">plugins</span>: [<span class="hljs-title function_">react</span>()],
+  <span class="hljs-attr">server</span>: {
+    <span class="hljs-attr">port</span>: <span class="hljs-number">4000</span>, <span class="hljs-comment">// 子应用端口</span>
+    <span class="hljs-attr">headers</span>: {
+      <span class="hljs-comment">// 允许跨域，这是微前端正常运行的关键</span>
+      <span class="hljs-string">'Access-Control-Allow-Origin'</span>: <span class="hljs-string">'*'</span>,
+    }
+  }
+})
+</code></pre>
+<h4 id="2-修改子应用内容"><a href="#2-修改子应用内容">2. 修改子应用内容</a></h4>
+<p>为了区分，修改 <code>child-app/src/App.tsx</code> 的 UI：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// child-app/src/App.tsx</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">background:</span> '#<span class="hljs-attr">f0f2f5</span>', <span class="hljs-attr">padding:</span> <span class="hljs-attr">20</span>, <span class="hljs-attr">border:</span> '<span class="hljs-attr">1px</span> <span class="hljs-attr">dashed</span> #<span class="hljs-attr">1890ff</span>' }}></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">h2</span>></span>我是子应用 (Child App)<span class="hljs-tag">&#x3C;/<span class="hljs-name">h2</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>我运行在: {window.location.href}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  )
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">App</span>
+</code></pre>
+<hr>
+<h3 id="第四步运行与验证"><a href="#第四步运行与验证">第四步：运行与验证</a></h3>
+<ol>
+<li>
+<p>打开一个终端，运行子应用：</p>
+<p>Bash</p>
+<pre><code class="hljs language-sh"><span class="hljs-built_in">cd</span> child-app &#x26;&#x26; npm run dev
+</code></pre>
+</li>
+<li>
+<p>打开另一个终端，运行主应用：</p>
+<p>Bash</p>
+<pre><code class="hljs language-sh"><span class="hljs-built_in">cd</span> main-app &#x26;&#x26; npm run dev
+</code></pre>
+</li>
+<li>
+<p>访问 <code>http://localhost:3000</code>。</p>
+</li>
+</ol>
+<p><strong>预期结果：</strong> 你应该能看到主应用的标题下方，完整渲染出了子应用的灰色背景区域。</p>
+<hr>
+<h3 id="深入分析可能遇到的问题"><a href="#深入分析可能遇到的问题">深入分析：可能遇到的问题</a></h3>
+<p>在实际开发中，你可能会遇到以下两个最常见的问题：</p>
+<h4 id="1-typescript-报错"><a href="#1-typescript-报错">1. TypeScript 报错</a></h4>
+<p>因为 <code>&#x3C;micro-app></code> 不是标准的 HTML 标签，React 的 TS 类型定义中不包含它。</p>
+<p>解决方法： 在主应用的 src/vite-env.d.ts 或新建 custom.d.ts 中添加：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">declare</span> <span class="hljs-keyword">namespace</span> <span class="hljs-title class_">JSX</span> {
+  <span class="hljs-keyword">interface</span> <span class="hljs-title class_">IntrinsicElements</span> {
+    <span class="hljs-string">'micro-app'</span>: <span class="hljs-built_in">any</span>
+  }
+}
+</code></pre>
+<h4 id="2-图片资源加载-404"><a href="#2-图片资源加载-404">2. 图片/资源加载 404</a></h4>
+<p>当子应用被主应用加载时，如果子应用里的图片使用的是相对路径（如 <code>./assets/logo.png</code>），浏览器会基于<strong>主应用</strong>的域名（localhost:3000）去请求，导致 404。</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li>
+<p><strong>Vite 场景：</strong> <code>micro-app</code> 的 iframe 模式通常能自动处理路径补全。</p>
+</li>
+<li>
+<p><strong>非 iframe 模式：</strong> 你需要在子应用中设置 <code>publicPath</code>。在 <code>child-app/src/main.tsx</code> 中：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-comment">// 如果在微前端环境中，设置 public path</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-variable language_">window</span>.<span class="hljs-property">__MICRO_APP_ENVIRONMENT__</span>) {
+  <span class="hljs-comment">// 这一步通常构建工具配合，Vite 中较少直接操作 __webpack_public_path__</span>
+  <span class="hljs-comment">// 但 micro-app 会自动处理 link 和 script 标签的路径</span>
+}
+</code></pre>
+<p><em>最稳健的做法：</em> 在子应用中使用绝对路径引入图片，或者确保构建工具将资源处理为 Base64（如果是小图）。</p>
+</li>
+</ul>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p>这个架构的逻辑闭环在于：<strong>主应用通过 Fetch 请求拉取子应用的 HTML，解析出其中的 CSS 和 JS 标签，然后在沙箱环境中执行这些 JS，最后将生成的 DOM 插入到 <code>&#x3C;micro-app></code> 标签内。</strong></p>
+<p>Web Component 仅仅是作为容器，真正的魔法在于 <code>micro-app</code> 对资源的加载和作用域的隔离。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/工程化",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E5%8C%96/","children":"前端开发 / 工程化"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"微前端搭建"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-01-21T00:00:00.000Z","children":"2026年1月21日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1097," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"第一步初始化项目结构","text":"第一步：初始化项目结构"},{"level":3,"id":"第二步配置主应用-main-app","text":"第二步：配置主应用 (Main App)"},{"level":4,"id":"1-安装依赖","text":"1. 安装依赖"},{"level":4,"id":"2-初始化-microapp","text":"2. 初始化 MicroApp"},{"level":4,"id":"3-引入子应用","text":"3. 引入子应用"},{"level":4,"id":"4-固定端口","text":"4. 固定端口"},{"level":3,"id":"第三步配置子应用-child-app","text":"第三步：配置子应用 (Child App)"},{"level":4,"id":"1-配置-cors-和端口","text":"1. 配置 CORS 和端口"},{"level":4,"id":"2-修改子应用内容","text":"2. 修改子应用内容"},{"level":3,"id":"第四步运行与验证","text":"第四步：运行与验证"},{"level":3,"id":"深入分析可能遇到的问题","text":"深入分析：可能遇到的问题"},{"level":4,"id":"1-typescript-报错","text":"1. TypeScript 报错"},{"level":4,"id":"2-图片资源加载-404","text":"2. 图片/资源加载 404"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

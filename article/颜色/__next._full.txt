@@ -1,0 +1,648 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E9%A2%9C%E8%89%B2",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E9%A2%9C%E8%89%B2","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T5c3a,<p>我们来彻底拆解一下 CSS 的十六进制（Hex）颜色码，并提供一套让你能快速上手、微调并应用于实践的设计方法。</p>
+<h3 id="第一部分彻底搞懂-rrggbb-编码"><a href="#第一部分彻底搞懂-rrggbb-编码">第一部分：彻底搞懂 <code>#RRGGBB</code> 编码</a></h3>
+<p>从第一性原理出发，屏幕上所有颜色的本质是<strong>光的三原色混合</strong>，即 <strong>R</strong>ed（红）、<strong>G</strong>reen（绿）、<strong>B</strong>lue（蓝），这被称为 <strong>RGB 加色模型</strong>。当你把这三种颜色的光以不同强度混合时，就能创造出成千上万种颜色。</p>
+<ul>
+<li>
+<p><strong>全开 (最亮)</strong>: 红、绿、蓝光都开到最亮，混合后得到白色。</p>
+</li>
+<li>
+<p><strong>全关 (最暗)</strong>: 所有光都关闭，得到黑色。</p>
+</li>
+</ul>
+<p>为了在代码中精确控制这三种光的强度，计算机为每一种颜色通道（R、G、B）分配了一个数值范围：从 <strong>0 (全关)</strong> 到 <strong>255 (全开)</strong>。这个范围的大小是 256 个级别，即 28，正好是一个字节（8-bit）能表示的范围。</p>
+<p>所以，一个颜色可以用三个0-255的数字表示，例如：</p>
+<ul>
+<li>
+<p><code>rgb(255, 0, 0)</code> 是纯红色。</p>
+</li>
+<li>
+<p><code>rgb(255, 255, 255)</code> 是白色。</p>
+</li>
+<li>
+<p><code>rgb(80, 150, 200)</code> 是某种蓝色。</p>
+</li>
+</ul>
+<p><strong>那么，十六进制 (<code>#RRGGBB</code>) 是什么？</strong></p>
+<p>它本质上就是 <code>rgb(R, G, B)</code> 的另一种写法，一种对计算机更友好的紧凑格式。</p>
+<p><strong>“十六进制”</strong> 是一种计数系统，我们平时用的是十进制（0-9），而十六进制使用 <strong>0-9</strong> 和 <strong>A-F</strong> 一共16个符号来计数。</p>
+<ul>
+<li>
+<p><code>0-9</code> 对应 <code>0-9</code></p>
+</li>
+<li>
+<p><code>A</code> 对应 <code>10</code></p>
+</li>
+<li>
+<p><code>B</code> 对应 <code>11</code></p>
+</li>
+<li>
+<p><code>C</code> 对应 <code>12</code></p>
+</li>
+<li>
+<p><code>D</code> 对应 <code>13</code></p>
+</li>
+<li>
+<p><code>E</code> 对应 <code>14</code></p>
+</li>
+<li>
+<p><code>F</code> 对应 <code>15</code></p>
+</li>
+</ul>
+<p><code>#RRGGBB</code> 格式就是把 R、G、B 各自的 0-255 的十进制数值，转换成两位十六进制数。</p>
+<ul>
+<li>
+<p><code>RR</code>: 代表红色的强度</p>
+</li>
+<li>
+<p><code>GG</code>: 代表绿色的强度</p>
+</li>
+<li>
+<p><code>BB</code>: 代表蓝色的强度</p>
+</li>
+</ul>
+<p><strong>为什么是两位？</strong> 因为一个十六进制位可以表示16个数，两位十六进制数可以表示 16×16=256 个数，正好对应 0-255 的范围。</p>
+<p><strong>关键转换：</strong></p>
+<ul>
+<li>
+<p><code>0</code> (十进制) = <code>00</code> (十六进制)</p>
+</li>
+<li>
+<p><code>255</code> (十进制) = <code>FF</code> (十六进制) (因为 255=15×16+15)</p>
+</li>
+</ul>
+<p>所以：</p>
+<ul>
+<li>
+<p><code>rgb(255, 0, 0)</code> -> <code>#FF0000</code></p>
+</li>
+<li>
+<p><code>rgb(0, 255, 0)</code> -> <code>#00FF00</code></p>
+</li>
+<li>
+<p><code>rgb(0, 0, 255)</code> -> <code>#0000FF</code></p>
+</li>
+<li>
+<p><code>rgb(0, 0, 0)</code> -> <code>#000000</code></p>
+</li>
+<li>
+<p><code>rgb(255, 255, 255)</code> -> <code>#FFFFFF</code></p>
+</li>
+</ul>
+<p>三位简写：</p>
+<p>当 RR, GG, BB 的两位数字都相同时，可以简写成三位。</p>
+<ul>
+<li>
+<p><code>#FF0000</code> -> <code>#F00</code></p>
+</li>
+<li>
+<p><code>#00GG00</code> -> <code>#0G0</code> (例如 <code>#009900</code> -> <code>#090</code>)</p>
+</li>
+<li>
+<p><code>#FFFFFF</code> -> <code>#FFF</code></p>
+</li>
+<li>
+<p><code>#000000</code> -> <code>#000</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="第二部分快速记忆获取与微调颜色的心法"><a href="#第二部分快速记忆获取与微调颜色的心法">第二部分：快速记忆、获取与微调颜色的心法</a></h3>
+<p>不要去死记硬背每个代码，而是建立一个心智模型。把 <code>#RRGGBB</code> 想象成三个独立的调色滑块。</p>
+<h4 id="1-记住几个关键坐标"><a href="#1-记住几个关键坐标">1. 记住几个关键“坐标”</a></h4>
+<p>你只需要记住 5 个关键的亮度节点，就能覆盖大部分情况：</p>
+<ul>
+<li>
+<p><code>00</code>: <strong>关闭</strong> (最暗)</p>
+</li>
+<li>
+<p><code>40</code>: <strong>暗</strong> (约25%亮度)</p>
+</li>
+<li>
+<p><code>80</code>: <strong>中等</strong> (50%亮度，这是标准中灰色 <code>#808080</code> 的来源)</p>
+</li>
+<li>
+<p><code>C0</code>: <strong>亮</strong> (约75%亮度)</p>
+</li>
+<li>
+<p><code>FF</code>: <strong>全开</strong> (最亮)</p>
+</li>
+</ul>
+<p><strong>记忆:</strong> <code>0</code> -> <code>4</code> -> <code>8</code> -> <code>C</code> -> <code>F</code>。</p>
+<h4 id="2-掌握三个调整杠杆"><a href="#2-掌握三个调整杠杆">2. 掌握三个调整“杠杆”</a></h4>
+<p>有了坐标，你就可以通过调整三个杠杆来创造几乎任何颜色。</p>
+<p><strong>杠杆一：亮度 (Brightness) - 让颜色变亮或变暗</strong></p>
+<ul>
+<li>
+<p><strong>核心思想</strong>: 同步调高或调低 R, G, B 的值。</p>
+</li>
+<li>
+<p><strong>示例</strong>:</p>
+<ul>
+<li>
+<p>从一个<strong>中蓝色</strong> <code>#4080C0</code> 开始。</p>
+</li>
+<li>
+<p><strong>想更亮一点？</strong> 将每个值都增加一些：<code>#80B0E0</code>。</p>
+</li>
+<li>
+<p><strong>想更暗一点？</strong> 将每个值都降低一些：<code>#2060A0</code>。</p>
+</li>
+<li>
+<p><strong>得到白色和黑色</strong>: <code>#FFFFFF</code> (全亮), <code>#000000</code> (全暗)。</p>
+</li>
+<li>
+<p><strong>得到灰色</strong>: 当 R, G, B 三个值相等时，就是灰色。值越高，灰色越亮。</p>
+<ul>
+<li><code>#333333</code> (深灰), <code>#808080</code> (中灰), <code>#CCCCCC</code> (亮灰)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>杠杆二：饱和度 (Saturation) - 让颜色更鲜艳或更灰暗</strong></p>
+<ul>
+<li>
+<p><strong>核心思想</strong>: 调整 R, G, B 三个值之间的<strong>差距</strong>。差距越大，颜色越鲜艳（饱和度高）；差距越小，颜色越灰暗（饱和度低）。</p>
+</li>
+<li>
+<p><strong>示例</strong>:</p>
+<ul>
+<li>
+<p>从一个<strong>纯红色</strong> <code>#FF0000</code> 开始 (R和G/B的差距最大)。</p>
+</li>
+<li>
+<p><strong>想让它不那么刺眼，变成“豆沙红”或“铁锈红”？</strong> 保持 R 为主导，但给 G 和 B 加上一些值，缩小差距。例如 <code>#C04040</code>。这里的 R(<code>C0</code>) 仍然远大于 G(<code>40</code>) 和 B(<code>40</code>)，所以它还是红色系，但因为 G 和 B 不再是 <code>00</code>，颜色就不那么“纯”了，显得更柔和、沉稳。</p>
+</li>
+<li>
+<p><strong>想得到一个“天蓝色”？</strong></p>
+<ol>
+<li>
+<p>先想一个纯蓝色 <code>#0000FF</code>。太艳了。</p>
+</li>
+<li>
+<p>降低饱和度，同时提高亮度。我们给 R 和 G 都加一点值，让它们向 B 靠拢，同时保证 B 是最大的。例如 <code>#87CEEB</code> (SkyBlue的官方代码)，你看，B(<code>EB</code>)最大，G(<code>CE</code>)其次，R(<code>87</code>)最小，它们之间有差距，但不极端，而且整体数值偏高，所以是明亮的、饱和度适中的蓝色。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>杠杆三：色相 (Hue) - 改变颜色本身</strong></p>
+<ul>
+<li>
+<p><strong>核心思想</strong>: 改变 R, G, B 哪个是主导，哪个是辅助。</p>
+</li>
+<li>
+<p><strong>示例</strong>:</p>
+<ul>
+<li>
+<p>从<strong>纯红色</strong> <code>#FF0000</code> 开始。</p>
+</li>
+<li>
+<p><strong>想把它变成橙色？</strong> 红色（R）保持最强，然后开始加入绿色（G）。<code>#FF8000</code> 就是一个不错的橙色。G 加得越多，颜色就越黄。</p>
+</li>
+<li>
+<p><strong>想把它变成黄色？</strong> 把绿色（G）也开到最大。<code>#FFFF00</code> 就是纯黄色 (红光+绿光=黄光)。</p>
+</li>
+<li>
+<p><strong>想把它变成紫色/品红？</strong> 红色（R）保持最强，然后开始加入蓝色（B）。<code>#FF0080</code> 会得到一个偏粉的紫色，<code>#FF00FF</code> 是纯品红色 (红光+蓝光=品红光)。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结心法：</strong></p>
+<ol>
+<li>
+<p><strong>选定主色</strong>: 确定 R, G, B 哪个最大。想做蓝色，就把 BB 设为最大。</p>
+</li>
+<li>
+<p><strong>调节亮度</strong>: 整体调高或调低 R, G, B 的值。</p>
+</li>
+<li>
+<p><strong>调节饱和度</strong>: 拉开或缩小 R, G, B 之间的差值。</p>
+</li>
+</ol>
+<hr>
+<h3 id="第三部分前端颜色设计原则与技巧"><a href="#第三部分前端颜色设计原则与技巧">第三部分：前端颜色设计原则与技巧</a></h3>
+<p>掌握了技术，我们来谈谈艺术和策略。</p>
+<h4 id="1-黄金法则60-30-10-原则"><a href="#1-黄金法则60-30-10-原则">1. 黄金法则：60-30-10 原则</a></h4>
+<p>这是一个经典的设计法则，能让你的配色方案和谐且有重点。</p>
+<ul>
+<li>
+<p><strong>60% 主色 (Primary Color)</strong>: 占据页面最大面积，通常是背景、大色块。它决定了网站的整体基调。一般选择中性色或饱和度较低的颜色，如白色、浅灰色、淡蓝色。</p>
+</li>
+<li>
+<p><strong>30% 辅色 (Secondary Color)</strong>: 用于需要与主色区分开的模块，如卡片、侧边栏、激活状态的背景。它需要与主色有明显的区分，但又不能喧宾夺主。</p>
+</li>
+<li>
+<p><strong>10% 点缀色 (Accent Color)</strong>: 这是最重要的颜色，用于需要用户注意和交互的元素，如按钮 (Call-To-Action)、链接、图标、警告提示。通常选择饱和度高、与主辅色对比强烈的颜色。</p>
+</li>
+</ul>
+<h4 id="2-对比度是可用性的生命线"><a href="#2-对比度是可用性的生命线">2. 对比度是可用性的生命线</a></h4>
+<p>无论颜色多好看，如果用户看不清文字，一切都等于零。</p>
+<ul>
+<li>
+<p><strong>WCAG 标准</strong>: Web 内容可访问性指南 (WCAG) 规定了文本和背景之间的最小对比度。AA 级要求普通文本至少为 4.5:1，大号文本（18pt+）至少为 3:1。</p>
+</li>
+<li>
+<p><strong>使用工具</strong>: 不要凭感觉。使用在线的对比度检查工具（Contrast Checker）或浏览器自带的开发者工具来验证你的颜色组合是否达标。</p>
+</li>
+<li>
+<p><strong>技巧</strong>: 一个常见的安全做法是，用深色（如深灰 <code>#333333</code> 而不是纯黑 <code>#000000</code>）文字搭配浅色背景（如白色 <code>#FFFFFF</code>），或者用白色文字搭配深色背景。纯黑配纯白有时会过于刺眼。</p>
+</li>
+</ul>
+<h4 id="3-从灰色开始设计"><a href="#3-从灰色开始设计">3. 从灰色开始设计</a></h4>
+<p>这是一个专业技巧，能让你专注于布局和信息层次，而不是一开始就被颜色干扰。</p>
+<ol>
+<li>
+<p><strong>灰度稿</strong>: 先用不同深浅的灰色（<code>#FFF</code>, <code>#EEE</code>, <code>#CCC</code>, <code>#888</code>, <code>#333</code>）来设计整个页面布局、卡片、按钮和文本。</p>
+</li>
+<li>
+<p><strong>确定层次</strong>: 通过灰色的深浅来区分信息的重要性和模块的划分。</p>
+</li>
+<li>
+<p><strong>上色</strong>: 当布局和层次结构清晰后，再根据 60-30-10 原则，用你选好的主色、辅色、点缀色去替换对应的灰色。这能确保你的设计在视觉结构上是稳固的。</p>
+</li>
+</ol>
+<h4 id="4-理解颜色的心理暗示但别滥用"><a href="#4-理解颜色的心理暗示但别滥用">4. 理解颜色的心理暗示（但别滥用）</a></h4>
+<p>颜色会引发情感共鸣，这与文化和语境紧密相关。</p>
+<ul>
+<li>
+<p><strong>蓝色</strong>: 信任、专业、冷静。（科技、金融、企业官网）</p>
+</li>
+<li>
+<p><strong>绿色</strong>: 自然、健康、成长、成功。（环保、健康产品、表示“操作成功”的提示）</p>
+</li>
+<li>
+<p><strong>红色</strong>: 紧急、危险、热情、促销。（错误提示、清仓甩卖、呼吁行动）</p>
+</li>
+<li>
+<p><strong>黄色/橙色</strong>: 乐观、友好、警示。（创意产业、食品、需要注意的提示）</p>
+</li>
+<li>
+<p><strong>黑色/深灰</strong>: 权威、奢华、精密。（奢侈品、高端科技产品）</p>
+</li>
+</ul>
+<p><strong>关键</strong>：不要迷信颜色心理学，它更多是锦上添花。用户首先关心的是你的产品好不好用，其次才是它看起来怎么样。</p>
+<h4 id="5-借助工具站在巨人的肩膀上"><a href="#5-借助工具站在巨人的肩膀上">5. 借助工具，站在巨人的肩膀上</a></h4>
+<ul>
+<li>
+<p><strong>配色方案生成器</strong>: Coolors.co, Adobe Color 等网站可以帮助你快速生成和谐的配色方案。你可以锁定一个你喜欢的颜色，让它为你生成搭配的其他颜色。</p>
+</li>
+<li>
+<p><strong>大厂设计系统</strong>: 学习 Apple Human Interface Guidelines, Google Material Design, Ant Design 等成熟设计系统的用色规范。它们都是经过大量研究和实践验证的，是极好的学习范本。</p>
+</li>
+</ul>
+<p>最终建议：</p>
+<p>我个人认为，对于初学者和大多数项目而言，最好的方案是采用“从灰色开始”的设计流程，并严格遵守“60-30-10”原则和“对比度”要求。先用不同深浅的灰色把界面做得清晰易用，然后选择一个你喜欢且符合产品调性的点缀色（例如品牌色），再搭配一个中性的主色和辅色。这个方法几乎不会出错，能保证你的设计既专业又可用。</p>
+<p>我们来系统性地梳理一下红、绿、蓝（RGB）三原色是如何混合成我们能在屏幕上看到的所有颜色的。这背后的核心是<strong>加色模型（Additive Color Model）</strong>。</p>
+<h3 id="核心原理加色模型-vs-减色模型"><a href="#核心原理加色模型-vs-减色模型">核心原理：加色模型 vs. 减色模型</a></h3>
+<p>首先，必须纠正一个我们从小在美术课上建立的认知误区。我们学到的是“红黄蓝”是三原色，混合起来会变暗，最终趋向于黑色。那个是<strong>减色模型（Subtractive Color Model）</strong>，适用于颜料、油墨、染料等。它的原理是物体吸收（减去）了某些颜色的光，我们看到的是被反射的剩余光。</p>
+<p>而屏幕、投影仪、LED灯等自身发光的设备，遵循的是<strong>加色模型（Additive Color Model）</strong>。</p>
+<ul>
+<li>
+<p><strong>起点</strong>：黑色（没有任何光）。</p>
+</li>
+<li>
+<p><strong>过程</strong>：不断地往上“添加”光。</p>
+</li>
+<li>
+<p><strong>结果</strong>：添加的光越多，颜色越亮。当三种光都加到最亮时，就混合成了白色。</p>
+</li>
+</ul>
+<p>可以想象你身处一个完全黑暗的房间，面前有三盏灯：一盏纯红，一盏纯绿，一盏纯蓝。接下来所有的色彩，都是通过调节这三盏灯的亮度开关得到的。</p>
+<hr>
+<h3 id="系统性的混合规则"><a href="#系统性的混合规则">系统性的混合规则</a></h3>
+<p>我们将每种颜色光的强度（亮度）量化为 0 (关闭) 到 255 (最亮)。</p>
+<h4 id="1-基础颜色三原色黑与白"><a href="#1-基础颜色三原色黑与白">1. 基础颜色：三原色、黑与白</a></h4>
+<ul>
+<li>
+<p><strong>黑色 (Black)</strong>：关闭所有灯。</p>
+<ul>
+<li>
+<p>R=0,G=0,B=0</p>
+</li>
+<li>
+<p><code>#000000</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>红色 (Red)</strong>：只开红灯到最亮。</p>
+<ul>
+<li>
+<p>R=255,G=0,B=0</p>
+</li>
+<li>
+<p><code>#FF0000</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>绿色 (Green)</strong>：只开绿灯到最亮。</p>
+<ul>
+<li>
+<p>R=0,G=255,B=0</p>
+</li>
+<li>
+<p><code>#00FF00</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>蓝色 (Blue)</strong>：只开蓝灯到最亮。</p>
+<ul>
+<li>
+<p>R=0,G=0,B=255</p>
+</li>
+<li>
+<p><code>#0000FF</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>白色 (White)</strong>：将所有灯都开到最亮。</p>
+<ul>
+<li>
+<p>R=255,G=255,B=255</p>
+</li>
+<li>
+<p><code>#FFFFFF</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-次级颜色两种原色的等量混合"><a href="#2-次级颜色两种原色的等量混合">2. 次级颜色：两种原色的等量混合</a></h4>
+<p>当两种原色光以最大强度混合时，会产生明亮、鲜艳的次级颜色。</p>
+<ul>
+<li>
+<p><strong>黄色 (Yellow) = 红光 + 绿光</strong></p>
+<ul>
+<li>
+<p>R=255,G=255,B=0</p>
+</li>
+<li>
+<p><code>#FFFF00</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>青色 (Cyan) = 绿光 + 蓝光</strong></p>
+<ul>
+<li>
+<p>R=0,G=255,B=255</p>
+</li>
+<li>
+<p><code>#00FFFF</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>品红 (Magenta) = 红光 + 蓝光</strong></p>
+<ul>
+<li>
+<p>R=255,G=0,B=255</p>
+</li>
+<li>
+<p><code>#FF00FF</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>一个有趣的关联</strong>：你会发现，光的次级颜色（青、品、黄）恰好是打印（减色模型）的三原色（CMY, Cyan, Magenta, Yellow）。这两个系统互为反转，构成了一个完美的色彩闭环。</p>
+<h4 id="3-所有其他颜色三种原色的不等量混合"><a href="#3-所有其他颜色三种原色的不等量混合">3. “所有其他颜色”：三种原色的不等量混合</a></h4>
+<p>这是创造无限色彩的关键。通过<strong>改变每种原色光的比例和整体亮度</strong>，可以得到色谱中的任何颜色。</p>
+<p>我们可以通过两个维度来控制：</p>
+<p><strong>维度一：改变比例（改变色相和饱和度）</strong></p>
+<p>颜色的“身份”（即色相，Hue）由占主导地位的光和辅助光的比例决定。</p>
+<ul>
+<li>
+<p><strong>如何得到橙色 (Orange)？</strong></p>
+<ul>
+<li>
+<p>我们知道黄色是 <code>红+绿</code>。橙色在色谱上位于红色和黄色之间。</p>
+</li>
+<li>
+<p>因此，它的配方应该是**“满分的红”<strong>加上</strong>“一部分的绿”**。</p>
+</li>
+<li>
+<p>例如：R=255,G=128,B=0。这里的绿色分量大约是红色的一半，就得到了明亮的橙色 <code>#FF8000</code>。如果绿色再少点，就更偏红；绿色再多点，就更偏黄。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>如何得到紫色 (Purple)？</strong></p>
+<ul>
+<li>
+<p>我们知道品红是 <code>红+蓝</code>。紫色通常被认为是介于品红和蓝色之间。</p>
+</li>
+<li>
+<p>因此，它的配方是**“满分的蓝”<strong>加上</strong>“一部分的红”<strong>，或者</strong>“满分的红”<strong>加上</strong>“一部分的蓝”**，具体取决于你想要哪种紫。</p>
+</li>
+<li>
+<p>例如：R=128,G=0,B=255。这里的红色分量大约是蓝色的一半，就得到了偏蓝的紫色（紫罗兰色）<code>#8000FF</code>。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>维度二：改变整体亮度（改变明暗）</strong></p>
+<p>在确定了颜色的比例后，可以通过等比例地缩放 R, G, B 的值来调整明暗。</p>
+<ul>
+<li>
+<p><strong>如何得到棕色 (Brown)？</strong></p>
+<ul>
+<li>
+<p>棕色在本质上是一种**“暗的、饱和度不高的橙色”**。</p>
+</li>
+<li>
+<ol>
+<li><strong>先得到橙色</strong>：我们用 <code>#FF8000</code> (R=255,G=128,B=0)。</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><strong>把它变暗</strong>：将所有值按比例降低。比如，我们把最亮的红色从 255 降到 160 左右（<code>A0</code> in Hex）。为了保持橙色的比例，绿色大约是红色的一半，即 80 (<code>50</code> in Hex)。</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li><strong>得到结果</strong>：Rapprox160,Gapprox80,B=0。代码 <code>#A05000</code> 就是一个不错的棕色。如果你再加入一点点蓝色，比如 <code>#A05020</code>，会让棕色看起来更“沉稳”，因为三种光都存在了，饱和度就降低了。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>如何得到灰色 (Gray)？</strong></p>
+<ul>
+<li>
+<p>当 R, G, B 三个值完全相等，但又不是 0 或 255 时，就得到了灰色。</p>
+</li>
+<li>
+<p>R=G=B</p>
+</li>
+<li>
+<p>例如：<code>#808080</code> (R=128,G=128,B=128) 是 50% 的中灰色。<code>#333333</code> 是深灰，<code>#CCCCCC</code> 是浅灰。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="可视化心智模型rgb-色彩空间立方体"><a href="#可视化心智模型rgb-色彩空间立方体">可视化心智模型：RGB 色彩空间立方体</a></h3>
+<p>为了更好地理解这个系统，你可以想象一个三维的立方体：</p>
+<ul>
+<li>
+<p><strong>原点 (0,0,0)</strong>：是<strong>黑色</strong>。</p>
+</li>
+<li>
+<p><strong>三个坐标轴</strong>：分别代表 <strong>R, G, B</strong> 轴，从 0 延伸到 255。</p>
+</li>
+<li>
+<p><strong>离原点最远的顶点 (255,255,255)</strong>：是<strong>白色</strong>。</p>
+</li>
+<li>
+<p><strong>坐标轴的末端</strong>：分别是<strong>纯红、纯绿、纯蓝</strong>。</p>
+</li>
+<li>
+<p><strong>另外三个顶点</strong>：分别是<strong>黄色、青色、品红</strong>。</p>
+</li>
+<li>
+<p><strong>立方体内的任何一个点</strong>：都代表一个独一无二的颜色，其坐标就是 <code>(R, G, B)</code> 的值。</p>
+</li>
+</ul>
+<p><strong>你想要的所有颜色，都在这个立方体的内部或表面上。</strong> 混合颜色的过程，就是在个立方体中寻找一个点的过程。</p>
+<h3 id="总结梳理表"><a href="#总结梳理表">总结梳理表</a></h3>
+<table>
+<thead>
+<tr>
+<th>结果颜色</th>
+<th>红色 (R)</th>
+<th>绿色 (G)</th>
+<th>蓝色 (B)</th>
+<th>混合逻辑</th>
+<th>示例代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>黑色</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>无光</td>
+<td><code>#000000</code></td>
+</tr>
+<tr>
+<td><strong>白色</strong></td>
+<td>255</td>
+<td>255</td>
+<td>255</td>
+<td>所有光最大强度</td>
+<td><code>#FFFFFF</code></td>
+</tr>
+<tr>
+<td><strong>灰色</strong></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>R=G=B, 且 x > 0</td>
+<td><code>#808080</code></td>
+</tr>
+<tr>
+<td><strong>红色</strong></td>
+<td>255</td>
+<td>0</td>
+<td>0</td>
+<td>纯红光</td>
+<td><code>#FF0000</code></td>
+</tr>
+<tr>
+<td><strong>绿色</strong></td>
+<td>0</td>
+<td>255</td>
+<td>0</td>
+<td>纯绿光</td>
+<td><code>#00FF00</code></td>
+</tr>
+<tr>
+<td><strong>蓝色</strong></td>
+<td>0</td>
+<td>0</td>
+<td>255</td>
+<td>纯蓝光</td>
+<td><code>#0000FF</code></td>
+</tr>
+<tr>
+<td><strong>黄色</strong></td>
+<td>255</td>
+<td>255</td>
+<td>0</td>
+<td>红光 + 绿光</td>
+<td><code>#FFFF00</code></td>
+</tr>
+<tr>
+<td><strong>青色</strong></td>
+<td>0</td>
+<td>255</td>
+<td>255</td>
+<td>绿光 + 蓝光</td>
+<td><code>#00FFFF</code></td>
+</tr>
+<tr>
+<td><strong>品红</strong></td>
+<td>255</td>
+<td>0</td>
+<td>255</td>
+<td>红光 + 蓝光</td>
+<td><code>#FF00FF</code></td>
+</tr>
+<tr>
+<td><strong>橙色</strong></td>
+<td>255</td>
+<td>~128</td>
+<td>0</td>
+<td>满分红 + 半分绿</td>
+<td><code>#FF8000</code></td>
+</tr>
+<tr>
+<td><strong>棕色</strong></td>
+<td>~139</td>
+<td>~69</td>
+<td>~19</td>
+<td>暗的、低饱和度的橙色</td>
+<td><code>#8B4513</code></td>
+</tr>
+</tbody>
+</table>
+<p>通过掌握“加色法”的根本原理，并理解通过调整“比例”和“亮度”这两个杠杆，你就拥有了系统性地创造和理解屏幕上任何颜色的能力。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/css",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css/","className":"$undefined","children":"前端开发 / css"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"颜色"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-24T00:00:00.000Z","children":"2025年7月24日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[3681," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",13," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"第一部分彻底搞懂-rrggbb-编码","text":"第一部分：彻底搞懂 #RRGGBB 编码"},{"level":3,"id":"第二部分快速记忆获取与微调颜色的心法","text":"第二部分：快速记忆、获取与微调颜色的心法"},{"level":4,"id":"1-记住几个关键坐标","text":"1. 记住几个关键“坐标”"},{"level":4,"id":"2-掌握三个调整杠杆","text":"2. 掌握三个调整“杠杆”"},{"level":3,"id":"第三部分前端颜色设计原则与技巧","text":"第三部分：前端颜色设计原则与技巧"},{"level":4,"id":"1-黄金法则60-30-10-原则","text":"1. 黄金法则：60-30-10 原则"},{"level":4,"id":"2-对比度是可用性的生命线","text":"2. 对比度是可用性的生命线"},{"level":4,"id":"3-从灰色开始设计","text":"3. 从灰色开始设计"},{"level":4,"id":"4-理解颜色的心理暗示但别滥用","text":"4. 理解颜色的心理暗示（但别滥用）"},{"level":4,"id":"5-借助工具站在巨人的肩膀上","text":"5. 借助工具，站在巨人的肩膀上"},{"level":3,"id":"核心原理加色模型-vs-减色模型","text":"核心原理：加色模型 vs. 减色模型"},{"level":3,"id":"系统性的混合规则","text":"系统性的混合规则"},{"level":4,"id":"1-基础颜色三原色黑与白","text":"1. 基础颜色：三原色、黑与白"},{"level":4,"id":"2-次级颜色两种原色的等量混合","text":"2. 次级颜色：两种原色的等量混合"},{"level":4,"id":"3-所有其他颜色三种原色的不等量混合","text":"3. “所有其他颜色”：三种原色的不等量混合"},{"level":3,"id":"可视化心智模型rgb-色彩空间立方体","text":"可视化心智模型：RGB 色彩空间立方体"},{"level":3,"id":"总结梳理表","text":"总结梳理表"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"颜色 | 流年石刻"}],["$","meta","1",{"name":"description","content":"我们来彻底拆解一下 CSS 的十六进制（Hex）颜色码，并提供一套让你能快速上手、微调并应用于实践的设计方法。  第一部分：彻底搞懂 RRGGBB 编码 从第一性原理出发，屏幕上所有颜色的本质是光的三原色混合，即 Red（红）、Green（…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

@@ -1,0 +1,291 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T54e3,<p>我们来彻底讲明白 <code>requestAnimationFrame</code> (通常简称为 rAF)。</p>
+<p>要真正理解它，我们不能只看它是什么，更要明白它<strong>为什么</strong>会出现，它解决了什么根本性的问题。</p>
+<h3 id="一requestanimationframe-的诞生背景旧时代的困境"><a href="#一requestanimationframe-的诞生背景旧时代的困境">一、<code>requestAnimationFrame</code> 的诞生背景：旧时代的困境</a></h3>
+<p>在 <code>rAF</code> 出现之前，要在网页上实现一个连续的动画效果，开发者通常依赖 <code>setTimeout</code> 或 <code>setInterval</code>。比如，想让一个元素每秒移动60次，你可能会这样写：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 旧方法：使用 setInterval</span>
+<span class="hljs-keyword">let</span> position = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-box'</span>);
+
+<span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =></span> {
+  position += <span class="hljs-number">1</span>; <span class="hljs-comment">// 每次移动 1px</span>
+  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">`translateX(<span class="hljs-subst">${position}</span>px)`</span>;
+}, <span class="hljs-number">16</span>); <span class="hljs-comment">// 尝试模拟 60fps (1000ms / 60 ≈ 16.67ms)</span>
+</code></pre>
+<p>这个看似可行的方法，背后却隐藏着几个致命的缺陷：</p>
+<ol>
+<li>
+<p><strong>时机不精确</strong>：<code>setTimeout</code> 和 <code>setInterval</code> 只是将你的回调函数放入一个宏任务队列中，并不能保证在精确的 <code>16ms</code> 后执行。如果主线程正在忙于处理其他任务（比如复杂的计算或DOM操作），你的动画回调就会被延迟，导致掉帧和卡顿。</p>
+</li>
+<li>
+<p><strong>与渲染不同步</strong>：这是最核心的问题。显示器的刷新是固定频率的（比如 60Hz 或 144Hz），而 <code>setTimeout</code> 的执行时机与这个刷新周期完全无关。这会导致：</p>
+<ul>
+<li>
+<p><strong>过度绘制</strong>：在一帧的时间内（例如16.7ms），你的 <code>setInterval</code> 可能执行了两次，但屏幕只刷新了一次。第二次的计算和DOM修改就完全浪费了。</p>
+</li>
+<li>
+<p><strong>丢帧抖动</strong>：你的代码可能在屏幕刚刚完成一帧绘制后才执行，那么这次更新就要等到下一帧才能显示出来，视觉上就会感觉慢了一拍，产生抖动（Jank）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>资源浪费</strong>：即使用户切换到了其他浏览器标签页，导致你的动画页面完全不可见，<code>setInterval</code> 默认情况下仍然在后台不知疲倦地运行，持续消耗CPU和电池资源。</p>
+</li>
+</ol>
+<p>浏览器开发者们看到了这些问题，他们需要一个 <strong>与浏览器渲染节奏同步、并且足够智能</strong> 的 API。于是，<code>requestAnimationFrame</code> 应运而生。</p>
+<h3 id="二requestanimationframe-是什么从第一性原理理解"><a href="#二requestanimationframe-是什么从第一性原理理解">二、<code>requestAnimationFrame</code> 是什么？从第一性原理理解</a></h3>
+<p><code>requestAnimationFrame</code> 的本质不是一个传统的定时器，而是一个 <strong>“请求”</strong>。</p>
+<p>你调用它，就等于向浏览器发出一个请求：“<strong>浏览器，请在你下一次准备重绘（Repaint）屏幕之前，执行一下我指定的这个函数。</strong>”</p>
+<p>这个简单的模式，完美地解决了上述所有问题：</p>
+<ol>
+<li>
+<p><strong>时机精准，与渲染同步</strong>：浏览器是“帧”的管理者，它最清楚何时进行下一次绘制。<code>rAF</code> 回调函数被安排在浏览器绘制流程的最佳时机点，确保你的每一次更新都能赶上当次绘制，从而实现最流畅的动画。不多不少，一帧只执行一次。</p>
+</li>
+<li>
+<p><strong>避免无效渲染</strong>：因为 <code>rAF</code> 的执行与屏幕刷新率绑定（通常是 60Hz，即大约每 16.7ms 一次），所以不会发生在一帧内执行多次动画代码的浪费情况。</p>
+</li>
+<li>
+<p><strong>智能的资源管理</strong>：当页面处于非激活状态（例如最小化或切换到其他标签页）时，浏览器会<strong>自动暂停</strong> <code>rAF</code> 的执行。当页面再次激活时，它会无缝地继续执行。这极大地节省了CPU和电池资源。</p>
+</li>
+<li>
+<p><strong>由浏览器决定频率</strong>：你不再需要猜测 <code>16</code>、<code>17</code> 还是 <code>1000/60</code>。浏览器会根据当前显示器的刷新率（可能是60Hz, 75Hz, 120Hz, 144Hz等）自动调整执行频率，始终以最优的节奏运行。</p>
+</li>
+</ol>
+<h3 id="三核心用法与语法"><a href="#三核心用法与语法">三、核心用法与语法</a></h3>
+<h4 id="1-基础动画循环"><a href="#1-基础动画循环">1. 基础动画循环</a></h4>
+<p>这是最经典的用法。要创建一个持续的动画，你需要在回调函数的结尾再次调用 <code>requestAnimationFrame</code>，形成一个循环。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-box'</span>);
+<span class="hljs-keyword">let</span> start = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 用于记录动画开始时间</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">step</span>(<span class="hljs-params">timestamp</span>) {
+  <span class="hljs-comment">// timestamp 是由浏览器传入的高精度时间戳，表示 rAF 回调开始执行的时间</span>
+  <span class="hljs-keyword">if</span> (!start) start = timestamp;
+  
+  <span class="hljs-keyword">const</span> progress = timestamp - start; <span class="hljs-comment">// 计算从开始到现在经过了多少毫秒</span>
+  
+  <span class="hljs-comment">// 让元素在2秒内向右移动500px</span>
+  <span class="hljs-comment">// progress / 2000 得到一个 0 到 1 的进度值</span>
+  element.<span class="hljs-property">style</span>.<span class="hljs-property">transform</span> = <span class="hljs-string">'translateX('</span> + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(progress / <span class="hljs-number">2000</span>, <span class="hljs-number">1</span>) * <span class="hljs-number">500</span> + <span class="hljs-string">'px)'</span>;
+
+  <span class="hljs-keyword">if</span> (progress &#x3C; <span class="hljs-number">2000</span>) {
+    <span class="hljs-comment">// 如果动画未结束，则请求下一帧</span>
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">requestAnimationFrame</span>(step);
+  }
+}
+
+<span class="hljs-comment">// 启动动画</span>
+<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">requestAnimationFrame</span>(step);
+</code></pre>
+<p><strong>关键点</strong>：</p>
+<ul>
+<li>
+<p><strong><code>timestamp</code> 参数</strong>：这是 <code>rAF</code> 的精髓所在。它让你能创建<strong>帧率无关</strong>的动画。无论用户的显示器是60Hz还是144Hz，动画完成的总时长都应该是2秒。通过计算时间差（<code>deltaTime</code>），你可以让动画的运动速度基于真实时间，而不是基于帧数。</p>
+</li>
+<li>
+<p><strong>循环调用</strong>：在 <code>step</code> 函数内部再次调用 <code>requestAnimationFrame(step)</code> 是创建连续动画的关键。</p>
+</li>
+<li>
+<p><strong>取消动画</strong>：<code>requestAnimationFrame</code> 会返回一个ID，你可以使用 <code>cancelAnimationFrame(id)</code> 来中途停止动画。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> animationId = <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">requestAnimationFrame</span>(step);
+
+<span class="hljs-comment">// 在某个时刻，比如用户点击按钮时</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'stopBtn'</span>).<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">cancelAnimationFrame</span>(animationId);
+};
+</code></pre>
+<hr>
+<h3 id="四全面且深入的用法扩展"><a href="#四全面且深入的用法扩展">四、全面且深入的用法扩展</a></h3>
+<p><code>rAF</code> 的能力远不止于简单的DOM动画。它的核心价值在于“同步于渲染”，这使得它在任何与视觉更新相关的场景下都非常有用。</p>
+<h4 id="1-高性能的事件处理滚动缩放鼠标移动"><a href="#1-高性能的事件处理滚动缩放鼠标移动">1. 高性能的事件处理（滚动、缩放、鼠标移动）</a></h4>
+<p>像 <code>scroll</code>, <code>resize</code>, <code>mousemove</code> 这类事件触发频率极高。如果你在事件回调里直接进行复杂的DOM操作，会引发大量的重排和重绘，导致页面卡顿。</p>
+<p><code>rAF</code> 提供了一种优雅的节流（Throttle）方案。</p>
+<p><strong>错误示范：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'scroll'</span>, <span class="hljs-function">() =></span> {
+  <span class="hljs-comment">// 每次滚动都直接操作DOM，性能极差</span>
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundColor</span> = <span class="hljs-string">`hsl(<span class="hljs-subst">${<span class="hljs-variable language_">window</span>.scrollY % <span class="hljs-number">360</span>}</span>, 50%, 50%)`</span>;
+});
+</code></pre>
+<p><strong>正确且高性能的用法：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> isTicking = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">let</span> lastScrollY = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">updateOnScroll</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 在这里进行所有耗费性能的DOM读取和写入</span>
+  <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>.<span class="hljs-property">backgroundColor</span> = <span class="hljs-string">`hsl(<span class="hljs-subst">${lastScrollY % <span class="hljs-number">360</span>}</span>, 50%, 50%)`</span>;
+  
+  <span class="hljs-comment">// 重置标志位</span>
+  isTicking = <span class="hljs-literal">false</span>;
+}
+
+<span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'scroll'</span>, <span class="hljs-function">() =></span> {
+  lastScrollY = <span class="hljs-variable language_">window</span>.<span class="hljs-property">scrollY</span>; <span class="hljs-comment">// 仅更新变量</span>
+
+  <span class="hljs-keyword">if</span> (!isTicking) {
+    <span class="hljs-comment">// 如果当前没有正在等待执行的 rAF，就请求一个</span>
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">requestAnimationFrame</span>(updateOnScroll);
+    isTicking = <span class="hljs-literal">true</span>; <span class="hljs-comment">// 设置标志位，防止在一帧内重复请求</span>
+  }
+});
+</code></pre>
+<p>原理分析：</p>
+<p>用户的滚动操作可能在16.7ms内触发了10次 scroll 事件。上述代码只会将最新的滚动位置 lastScrollY 记录下来，并且只会在下一帧绘制前调用一次 updateOnScroll 函数。这确保了无论事件触发多频繁，DOM更新的频率永远不会超过屏幕的刷新率，实现了完美的性能优化。</p>
+<h4 id="2-canvas-和-webgl-游戏视觉渲染主循环"><a href="#2-canvas-和-webgl-游戏视觉渲染主循环">2. Canvas 和 WebGL 游戏/视觉渲染主循环</a></h4>
+<p>对于 <code>&#x3C;canvas></code> 和 WebGL 编程，<code>rAF</code> 是驱动整个渲染流程的唯一标准。游戏或交互式视觉应用的主循环就是一个典型的 <code>rAF</code> 循环。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> canvas = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'myCanvas'</span>);
+<span class="hljs-keyword">const</span> ctx = canvas.<span class="hljs-title function_">getContext</span>(<span class="hljs-string">'2d'</span>);
+
+<span class="hljs-comment">// 游戏状态</span>
+<span class="hljs-keyword">const</span> player = { <span class="hljs-attr">x</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">speed</span>: <span class="hljs-number">200</span> }; <span class="hljs-comment">// 速度：200像素/秒</span>
+<span class="hljs-keyword">let</span> lastTime = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">gameLoop</span>(<span class="hljs-params">currentTime</span>) {
+  <span class="hljs-keyword">const</span> deltaTime = (currentTime - lastTime) / <span class="hljs-number">1000</span>; <span class="hljs-comment">// 计算距离上一帧的时间差（秒）</span>
+  lastTime = currentTime;
+
+  <span class="hljs-comment">// 1. 更新状态 (Update)</span>
+  <span class="hljs-title function_">update</span>(deltaTime);
+
+  <span class="hljs-comment">// 2. 清空画布并绘制 (Draw)</span>
+  <span class="hljs-title function_">draw</span>();
+  
+  <span class="hljs-comment">// 3. 请求下一帧</span>
+  <span class="hljs-title function_">requestAnimationFrame</span>(gameLoop);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">update</span>(<span class="hljs-params">dt</span>) {
+  <span class="hljs-comment">// 根据时间差来更新玩家位置，保证帧率无关</span>
+  player.<span class="hljs-property">x</span> += player.<span class="hljs-property">speed</span> * dt;
+  <span class="hljs-keyword">if</span> (player.<span class="hljs-property">x</span> > canvas.<span class="hljs-property">width</span>) player.<span class="hljs-property">x</span> = <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  ctx.<span class="hljs-title function_">clearRect</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.<span class="hljs-property">width</span>, canvas.<span class="hljs-property">height</span>); <span class="hljs-comment">// 清空画布</span>
+  ctx.<span class="hljs-property">fillStyle</span> = <span class="hljs-string">'red'</span>;
+  ctx.<span class="hljs-title function_">fillRect</span>(player.<span class="hljs-property">x</span>, player.<span class="hljs-property">y</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>); <span class="hljs-comment">// 绘制玩家</span>
+}
+
+<span class="hljs-comment">// 启动游戏循环</span>
+<span class="hljs-title function_">requestAnimationFrame</span>(gameLoop);
+</code></pre>
+<p>这个 <code>update</code> -> <code>draw</code> 的循环结构是所有实时图形应用的基础，而 <code>rAF</code> 是驱动它的心脏。</p>
+<h4 id="3-性能监控实时fps计算"><a href="#3-性能监控实时fps计算">3. 性能监控：实时FPS计算</a></h4>
+<p>想知道你的页面动画或交互的实际帧率（FPS）吗？<code>rAF</code> 是最精确的测量工具。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">let</span> frameCount = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">let</span> lastTimestamp = performance.<span class="hljs-title function_">now</span>();
+<span class="hljs-keyword">const</span> fpsDisplay = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'fps'</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">measureFPS</span>(<span class="hljs-params">timestamp</span>) {
+  frameCount++;
+  <span class="hljs-keyword">if</span> (timestamp - lastTimestamp >= <span class="hljs-number">1000</span>) {
+    fpsDisplay.<span class="hljs-property">textContent</span> = <span class="hljs-string">`FPS: <span class="hljs-subst">${frameCount}</span>`</span>;
+    frameCount = <span class="hljs-number">0</span>;
+    lastTimestamp = timestamp;
+  }
+  <span class="hljs-title function_">requestAnimationFrame</span>(measureFPS);
+}
+
+<span class="hljs-title function_">requestAnimationFrame</span>(measureFPS);
+</code></pre>
+<p>这段代码每秒钟统计一次 <code>rAF</code> 的调用次数，这个次数就是当前页面渲染的实际帧率。</p>
+<h4 id="4-同步多个动画的启动"><a href="#4-同步多个动画的启动">4. 同步多个动画的启动</a></h4>
+<p>如果你需要多个独立的动画在视觉上完全同时开始，将它们的启动函数放在同一个 <code>rAF</code> 回调中是最佳实践。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">animateBox1</span>(<span class="hljs-params"></span>) { <span class="hljs-comment">/* ... */</span> }
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">animateText</span>(<span class="hljs-params"></span>) { <span class="hljs-comment">/* ... */</span> }
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">animateBackground</span>(<span class="hljs-params"></span>) { <span class="hljs-comment">/* ... */</span> }
+
+<span class="hljs-comment">// 同时请求启动，确保它们在同一帧开始</span>
+<span class="hljs-title function_">requestAnimationFrame</span>(<span class="hljs-function">() =></span> {
+  <span class="hljs-title function_">animateBox1</span>();
+  <span class="hljs-title function_">animateText</span>();
+  <span class="hljs-title function_">animateBackground</span>();
+});
+</code></pre>
+<h3 id="五与-css-动画过渡的抉择"><a href="#五与-css-动画过渡的抉择">五、与 CSS 动画/过渡的抉择</a></h3>
+<p>虽然 <code>rAF</code> 非常强大，但并非所有动画都需要它。</p>
+<ul>
+<li>
+<p><strong>优先选择 CSS Transitions 和 Animations</strong>：</p>
+<ul>
+<li>
+<p><strong>场景</strong>：简单的、定义明确的“状态A到状态B”的过渡（如 <code>hover</code> 效果、菜单滑入滑出）。</p>
+</li>
+<li>
+<p><strong>优势</strong>：语法简单（声明式），浏览器可以进行深度优化，比如将动画完全交给GPU处理，完全不占用主线程（JS线程）资源，性能通常是最好的。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>选择 <code>requestAnimationFrame</code></strong>：</p>
+<ul>
+<li>
+<p><strong>场景</strong>：</p>
+<ol>
+<li>
+<p>需要与用户输入实时交互的动画（如跟随鼠标的特效）。</p>
+</li>
+<li>
+<p>复杂的、基于物理计算的动画（如粒子系统、布料模拟）。</p>
+</li>
+<li>
+<p>动画路径或时间线不固定，需要由JS动态计算。</p>
+</li>
+<li>
+<p>在 <code>&#x3C;canvas></code> 或 WebGL 上进行绘制。</p>
+</li>
+<li>
+<p>需要精确控制动画过程中的每一个细节，或者需要与其他逻辑同步。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p><code>requestAnimationFrame</code> 是现代Web动画和高性能视觉更新的基石。它并非一个简单的定时器，而是开发者与浏览器渲染引擎之间的一个协作协议。</p>
+<ul>
+<li>
+<p><strong>核心价值</strong>：将JavaScript的计算与浏览器的绘制周期同步，以屏幕刷新率为节奏，不多也不少。</p>
+</li>
+<li>
+<p><strong>核心优势</strong>：流畅（无卡顿）、高效（智能暂停，节省CPU和电池）、精确（帧率自适应）。</p>
+</li>
+<li>
+<p><strong>核心用法</strong>：</p>
+<ol>
+<li>
+<p><strong>JS动画</strong>：创建基于时间戳的、帧率无关的流畅动画。</p>
+</li>
+<li>
+<p><strong>事件节流</strong>：优化高频事件（滚动、鼠标移动）的回调，防止性能瓶颈。</p>
+</li>
+<li>
+<p><strong>渲染循环</strong>：驱动Canvas/WebGL等实时图形应用。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>理解并掌握 <code>requestAnimationFrame</code>，就意味着你掌握了在浏览器中创建高性能、流畅视觉体验的关键钥匙。对于任何涉及动态视觉更新的场景，它都应该是你的首选方案。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"requestAnimationFrame"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2418," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一requestanimationframe-的诞生背景旧时代的困境","text":"一、requestAnimationFrame 的诞生背景：旧时代的困境"},{"level":3,"id":"二requestanimationframe-是什么从第一性原理理解","text":"二、requestAnimationFrame 是什么？从第一性原理理解"},{"level":3,"id":"三核心用法与语法","text":"三、核心用法与语法"},{"level":4,"id":"1-基础动画循环","text":"1. 基础动画循环"},{"level":3,"id":"四全面且深入的用法扩展","text":"四、全面且深入的用法扩展"},{"level":4,"id":"1-高性能的事件处理滚动缩放鼠标移动","text":"1. 高性能的事件处理（滚动、缩放、鼠标移动）"},{"level":4,"id":"2-canvas-和-webgl-游戏视觉渲染主循环","text":"2. Canvas 和 WebGL 游戏/视觉渲染主循环"},{"level":4,"id":"3-性能监控实时fps计算","text":"3. 性能监控：实时FPS计算"},{"level":4,"id":"4-同步多个动画的启动","text":"4. 同步多个动画的启动"},{"level":3,"id":"五与-css-动画过渡的抉择","text":"五、与 CSS 动画/过渡的抉择"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

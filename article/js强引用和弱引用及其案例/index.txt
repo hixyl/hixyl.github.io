@@ -1,0 +1,197 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+c:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","js%E5%BC%BA%E5%BC%95%E7%94%A8%E5%92%8C%E5%BC%B1%E5%BC%95%E7%94%A8%E5%8F%8A%E5%85%B6%E6%A1%88%E4%BE%8B",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","js%E5%BC%BA%E5%BC%95%E7%94%A8%E5%92%8C%E5%BC%B1%E5%BC%95%E7%94%A8%E5%8F%8A%E5%85%B6%E6%A1%88%E4%BE%8B","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":"$L8","templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L9",{},null,false,null]},null,false,"$@a"]},null,false,"$@a"]},null,false,null],"$Lb",false]],"m":"$undefined","G":["$c",["$Ld"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$L6",null,{}]
+9:["$","$1","c",{"children":["$Le",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}]
+12:[]
+a:"$W12"
+b:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+d:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T2621,<p>为了彻底理清 JavaScript 的集合体系，我们需要从最底层的<strong>内存管理机制</strong>出发。无论是 <code>Map</code> 还是 <code>Set</code>，它们最核心的区别不在于 API 的好用程度，而在于它们如何与系统的**垃圾回收（Garbage Collection, GC）**对话。</p>
+<hr>
+<h2 id="第一部分核心底层强引用-vs-弱引用"><a href="#第一部分核心底层强引用-vs-弱引用">第一部分：核心底层——强引用 vs 弱引用</a></h2>
+<p>在 JavaScript 中，内存管理是自动的，但它是基于“可达性”逻辑的。</p>
+<h3 id="1-强引用-strong-reference"><a href="#1-强引用-strong-reference">1. 强引用 (Strong Reference)</a></h3>
+<p>这是 JS 的默认行为。只要一个变量指向一个对象，这个对象就是“可达”的，垃圾回收器绝不会碰它。</p>
+<ul>
+<li>
+<p><strong>逻辑</strong>：<code>A -> Object</code>。只要 A 还在，Object 就在。</p>
+</li>
+<li>
+<p><strong>代价</strong>：如果你忘记手动将 <code>A = null</code>，Object 会永远占用内存，这就是<strong>内存泄漏</strong>的根源。</p>
+</li>
+</ul>
+<h3 id="2-弱引用-weak-reference"><a href="#2-弱引用-weak-reference">2. 弱引用 (Weak Reference)</a></h3>
+<p>弱引用不会被垃圾回收器计入。它像是一个“旁观者”。</p>
+<ul>
+<li>
+<p><strong>逻辑</strong>：<code>A --(weak)--> Object</code>。如果没有其他<strong>强引用</strong>指向这个 Object，即便 A 还在看着它，垃圾回收器也会在下次清理时直接把 Object 收走。</p>
+</li>
+<li>
+<p><strong>代价</strong>：你无法遍历弱引用的集合，因为对象可能随时消失，导致结果不可预测。</p>
+</li>
+</ul>
+<hr>
+<h2 id="第二部分map-与-weakmap-的深度梳理"><a href="#第二部分map-与-weakmap-的深度梳理">第二部分：Map 与 WeakMap 的深度梳理</a></h2>
+<p>你之前的疑惑集中在：<strong>既然逻辑一样，为什么要用 WeakMap？</strong></p>
+<h3 id="1-场景回顾私有属性与-this"><a href="#1-场景回顾私有属性与-this">1. 场景回顾：私有属性与 <code>this</code></a></h3>
+<p>在 <code>class</code> 或 <code>function</code> 中，我们利用 <code>WeakMap</code> 实现私有化。</p>
+<ul>
+<li><strong>代码示例（Function 写法）：</strong></li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> privates = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakMap</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">User</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-comment">// 这里的 this 指向 new 出来的实例对象</span>
+  <span class="hljs-comment">// 我们把实例对象作为 Key，把私有数据作为 Value</span>
+  privates.<span class="hljs-title function_">set</span>(<span class="hljs-variable language_">this</span>, { <span class="hljs-attr">name</span>: name }); 
+}
+
+<span class="hljs-title class_">User</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">getName</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> privates.<span class="hljs-title function_">get</span>(<span class="hljs-variable language_">this</span>).<span class="hljs-property">name</span>;
+};
+</code></pre>
+<ul>
+<li>
+<p><strong>为什么要用 WeakMap 而不是 Map？</strong></p>
+<p>如果用 <code>Map</code>，当你执行 <code>user = null</code> 试图销毁用户时，<code>Map</code> 依然强引用着 <code>user</code> 实例作为 Key。结果是：<code>user</code> 实例和它的私有数据 <code>{ name }</code> 都会残留在内存中。</p>
+<p>使用 <code>WeakMap</code>，当 <code>user = null</code> 后，唯一的强引用断开，<code>WeakMap</code> 里的这条记录会被 GC 自动抹除。</p>
+</li>
+</ul>
+<h3 id="2-场景回顾dom-节点元数据"><a href="#2-场景回顾dom-节点元数据">2. 场景回顾：DOM 节点元数据</a></h3>
+<ul>
+<li>
+<p><strong>逻辑</strong>：给 DOM 元素“贴标签”。</p>
+</li>
+<li>
+<p><strong>优势</strong>：当 DOM 元素从页面移除（例如 Vue/React 组件卸载）时，<code>WeakMap</code> 里的标签会自动消失，无需手动清理 <code>Map.delete(el)</code>。</p>
+</li>
+</ul>
+<hr>
+<h2 id="第三部分set-与-weakset-的系统梳理"><a href="#第三部分set-与-weakset-的系统梳理">第三部分：Set 与 WeakSet 的系统梳理</a></h2>
+<p><code>Set</code> 系列处理的是<strong>值的集合</strong>（类似数组，但值唯一），而不是键值对。</p>
+<h3 id="1-set唯一值的容器"><a href="#1-set唯一值的容器">1. Set：唯一值的容器</a></h3>
+<p><code>Set</code> 是强引用的，可以存储任何类型的值。</p>
+<ul>
+<li><strong>用法</strong>：去重、判断是否存在。</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> tags = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>([<span class="hljs-string">'js'</span>, <span class="hljs-string">'css'</span>, <span class="hljs-string">'js'</span>]); <span class="hljs-comment">// 结果只有 'js' 和 'css'</span>
+tags.<span class="hljs-title function_">add</span>(<span class="hljs-string">'html'</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(tags.<span class="hljs-title function_">has</span>(<span class="hljs-string">'js'</span>)); <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="2-weakset对象的临时通行证"><a href="#2-weakset对象的临时通行证">2. WeakSet：对象的“临时通行证”</a></h3>
+<p><code>WeakSet</code> 只能存储<strong>对象</strong>，且对这些对象是弱引用。</p>
+<ul>
+<li>
+<p><strong>底层逻辑</strong>：它不存储值，它只存储“对象的引用”。如果对象在外部被销毁，它在 <code>WeakSet</code> 里也会消失。</p>
+</li>
+<li>
+<p><strong>特性</strong>：不可遍历，没有 <code>size</code>。</p>
+</li>
+</ul>
+<h3 id="3-weakset-的典型用处防重入与打标签"><a href="#3-weakset-的典型用处防重入与打标签">3. WeakSet 的典型用处：防重入与打标签</a></h3>
+<p>假设你有一个复杂的函数，你希望确保某些对象只被处理一次，且不干扰它们的回收。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> processedObjects = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakSet</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">complexProcess</span>(<span class="hljs-params">obj</span>) {
+  <span class="hljs-keyword">if</span> (processedObjects.<span class="hljs-title function_">has</span>(obj)) {
+    <span class="hljs-keyword">return</span>; <span class="hljs-comment">// 如果已经处理过，直接跳过</span>
+  }
+  
+  <span class="hljs-comment">// 执行复杂的业务逻辑...</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"正在处理对象..."</span>, obj);
+  
+  <span class="hljs-comment">// 处理完打个标签</span>
+  processedObjects.<span class="hljs-title function_">add</span>(obj);
+}
+
+<span class="hljs-keyword">let</span> data = { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span> };
+<span class="hljs-title function_">complexProcess</span>(data); <span class="hljs-comment">// 处理</span>
+<span class="hljs-title function_">complexProcess</span>(data); <span class="hljs-comment">// 自动跳过</span>
+
+data = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 当 data 设为 null，WeakSet 自动释放对原对象的引用</span>
+</code></pre>
+<hr>
+<h2 id="第四部分四种集合结构全对比总结"><a href="#第四部分四种集合结构全对比总结">第四部分：四种集合结构全对比总结</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>结构</strong></th>
+<th><strong>存储内容</strong></th>
+<th><strong>唯一性依据</strong></th>
+<th><strong>引用强度</strong></th>
+<th><strong>核心价值</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Map</strong></td>
+<td>任意键值对</td>
+<td>键唯一</td>
+<td>强引用</td>
+<td>灵活的字典，支持各种类型的 Key</td>
+</tr>
+<tr>
+<td><strong>WeakMap</strong></td>
+<td>对象为键的键值对</td>
+<td>键（对象）唯一</td>
+<td><strong>弱引用(键)</strong></td>
+<td><strong>内存安全</strong>地关联元数据、私有属性</td>
+</tr>
+<tr>
+<td><strong>Set</strong></td>
+<td>任意值</td>
+<td>值唯一</td>
+<td>强引用</td>
+<td>高效去重、集合运算（交/并/差）</td>
+</tr>
+<tr>
+<td><strong>WeakSet</strong></td>
+<td>仅限对象</td>
+<td>对象唯一</td>
+<td><strong>弱引用</strong></td>
+<td><strong>内存安全</strong>地标记对象状态（如：是否被处理过）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="关键结论如何做选择"><a href="#关键结论如何做选择">关键结论：如何做选择？</a></h3>
+<ol>
+<li>
+<p><strong>如果你需要处理字符串、数字等基础类型</strong>：只能选 <code>Map</code> 或 <code>Set</code>。</p>
+</li>
+<li>
+<p><strong>如果你需要遍历、统计数量</strong>：只能选 <code>Map</code> 或 <code>Set</code>。</p>
+</li>
+<li>
+<p><strong>如果你在处理 DOM 节点或类实例，且不希望干扰它们的生死（GC）</strong>：请务必选择 <code>WeakMap</code> 或 <code>WeakSet</code>。</p>
+</li>
+</ol>e:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"js强引用和弱引用及其案例"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-02T00:00:00.000Z","children":"2026年3月2日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1062," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":2,"id":"第一部分核心底层强引用-vs-弱引用","text":"第一部分：核心底层——强引用 vs 弱引用"},{"level":3,"id":"1-强引用-strong-reference","text":"1. 强引用 (Strong Reference)"},{"level":3,"id":"2-弱引用-weak-reference","text":"2. 弱引用 (Weak Reference)"},{"level":2,"id":"第二部分map-与-weakmap-的深度梳理","text":"第二部分：Map 与 WeakMap 的深度梳理"},{"level":3,"id":"1-场景回顾私有属性与-this","text":"1. 场景回顾：私有属性与 this"},{"level":3,"id":"2-场景回顾dom-节点元数据","text":"2. 场景回顾：DOM 节点元数据"},{"level":2,"id":"第三部分set-与-weakset-的系统梳理","text":"第三部分：Set 与 WeakSet 的系统梳理"},{"level":3,"id":"1-set唯一值的容器","text":"1. Set：唯一值的容器"},{"level":3,"id":"2-weakset对象的临时通行证","text":"2. WeakSet：对象的“临时通行证”"},{"level":3,"id":"3-weakset-的典型用处防重入与打标签","text":"3. WeakSet 的典型用处：防重入与打标签"},{"level":2,"id":"第四部分四种集合结构全对比总结","text":"第四部分：四种集合结构全对比总结"},{"level":3,"id":"关键结论如何做选择","text":"关键结论：如何做选择？"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"js强引用和弱引用及其案例 | 流年石刻"}],["$","meta","1",{"name":"description","content":"为了彻底理清 JavaScript 的集合体系，我们需要从最底层的内存管理机制出发。无论是 Map 还是 Set，它们最核心的区别不在于 API 的好用程度，而在于它们如何与系统的垃圾回收（Garbage Collection, GC）对话…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

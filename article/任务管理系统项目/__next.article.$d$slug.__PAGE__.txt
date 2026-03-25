@@ -1,0 +1,360 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T748c,<p>构建一个“麻雀虽小，五脏俱全”的后端项目，核心在于<strong>职责分离（Separation of Concerns）</strong>。将路由、控制器、业务逻辑和数据访问解耦，可以极大提升代码的可维护性和可测试性。</p>
+<p>为了满足你的需求，这里设计一个<strong>任务管理系统（Task API）</strong>。它使用 Express.js 构建，以 SQLite 为数据库（无需额外安装独立的数据库服务，方便运行），并引入了分层架构、全局错误处理、分页、数据库索引和简单的内存缓存。</p>
+<h3 id="1-目录结构与工程化设计"><a href="#1-目录结构与工程化设计">1. 目录结构与工程化设计</a></h3>
+<p>在开始写代码前，先明确项目的骨架。这种经典的三层架构是现代后端工程化的基础：</p>
+<p>Plaintext</p>
+<pre><code class="hljs language-bash">express-task-api/
+├── config/
+│   └── db.js            <span class="hljs-comment"># 数据库连接与初始化</span>
+├── middlewares/
+│   ├── errorHandler.js  <span class="hljs-comment"># 全局异常捕获</span>
+│   └── cache.js         <span class="hljs-comment"># 缓存中间件（性能优化）</span>
+├── models/
+│   └── taskModel.js     <span class="hljs-comment"># 数据访问层 (DAO - 直接操作数据库)</span>
+├── services/
+│   └── taskService.js   <span class="hljs-comment"># 业务逻辑层 (处理核心规则)</span>
+├── controllers/
+│   └── taskController.js# 路由控制层 (解析请求与响应)
+├── routes/
+│   └── taskRoutes.js    <span class="hljs-comment"># 路由分发</span>
+├── app.js               <span class="hljs-comment"># Express 应用实例与中间件组装</span>
+├── server.js            <span class="hljs-comment"># 服务启动入口</span>
+└── package.json
+</code></pre>
+<h3 id="2-核心代码实现"><a href="#2-核心代码实现">2. 核心代码实现</a></h3>
+<p>你需要安装以下基础依赖：</p>
+<p><code>npm install express sqlite3 sqlite cors</code></p>
+<h4 id="21-数据库配置与优化-configdbjs"><a href="#21-数据库配置与优化-configdbjs">2.1 数据库配置与优化 (config/db.js)</a></h4>
+<p>这里使用了 SQLite，并在 <code>status</code> 字段上建立了索引。<strong>性能优化点：</strong> 当数据量变大时，按状态（如查询所有“未完成”任务）过滤时的全表扫描会被索引查找替代，时间复杂度从 $O(N)$ 降至 $O(\log N)$。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// config/db.js</span>
+<span class="hljs-keyword">const</span> sqlite3 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sqlite3'</span>).<span class="hljs-title function_">verbose</span>();
+<span class="hljs-keyword">const</span> { open } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sqlite'</span>);
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">initDB</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> db = <span class="hljs-keyword">await</span> <span class="hljs-title function_">open</span>({
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">'./database.sqlite'</span>,
+        <span class="hljs-attr">driver</span>: sqlite3.<span class="hljs-property">Database</span>
+    });
+
+    <span class="hljs-comment">// 初始化表与索引</span>
+    <span class="hljs-keyword">await</span> db.<span class="hljs-title function_">exec</span>(<span class="hljs-string">`
+        CREATE TABLE IF NOT EXISTS tasks (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL,
+            status TEXT DEFAULT 'pending', -- pending, completed, archived
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
+        -- 性能优化：为常用查询字段建立索引
+        CREATE INDEX IF NOT EXISTS idx_status ON tasks(status);
+    `</span>);
+
+    <span class="hljs-keyword">return</span> db;
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = initDB;
+</code></pre>
+<h4 id="22-数据访问层-modelstaskmodeljs"><a href="#22-数据访问层-modelstaskmodeljs">2.2 数据访问层 (models/taskModel.js)</a></h4>
+<p>只负责和数据库打交道，不包含业务判断。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// models/taskModel.js</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskModel</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">db</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span> = db;
+    }
+
+    <span class="hljs-comment">// 性能优化：引入分页 (limit, offset)</span>
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">findTasks</span>(<span class="hljs-params">limit, offset, status</span>) {
+        <span class="hljs-keyword">let</span> query = <span class="hljs-string">`SELECT * FROM tasks`</span>;
+        <span class="hljs-keyword">const</span> params = [];
+
+        <span class="hljs-keyword">if</span> (status) {
+            query += <span class="hljs-string">` WHERE status = ?`</span>;
+            params.<span class="hljs-title function_">push</span>(status);
+        }
+
+        query += <span class="hljs-string">` ORDER BY created_at DESC LIMIT ? OFFSET ?`</span>;
+        params.<span class="hljs-title function_">push</span>(limit, offset);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">all</span>(query, params);
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">findById</span>(<span class="hljs-params">id</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">get</span>(<span class="hljs-string">`SELECT * FROM tasks WHERE id = ?`</span>, [id]);
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">create</span>(<span class="hljs-params">title</span>) {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">run</span>(<span class="hljs-string">`INSERT INTO tasks (title) VALUES (?)`</span>, [title]);
+        <span class="hljs-keyword">return</span> result.<span class="hljs-property">lastID</span>;
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">updateStatus</span>(<span class="hljs-params">id, status</span>) {
+        <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">run</span>(<span class="hljs-string">`UPDATE tasks SET status = ? WHERE id = ?`</span>, [status, id]);
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">delete</span>(<span class="hljs-params">id</span>) {
+        <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">db</span>.<span class="hljs-title function_">run</span>(<span class="hljs-string">`DELETE FROM tasks WHERE id = ?`</span>, [id]);
+    }
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-title class_">TaskModel</span>;
+</code></pre>
+<h4 id="23-业务逻辑层-servicestaskservicejs"><a href="#23-业务逻辑层-servicestaskservicejs">2.3 业务逻辑层 (services/taskService.js)</a></h4>
+<p><strong>经典业务逻辑体现：</strong> 状态流转限制。比如，已归档（archived）的任务不能直接被标记为完成。所有的业务异常都在这里抛出。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// services/taskService.js</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskService</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">taskModel</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span> = taskModel;
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">getTasks</span>(<span class="hljs-params">page = <span class="hljs-number">1</span>, pageSize = <span class="hljs-number">10</span>, status</span>) {
+        <span class="hljs-keyword">const</span> limit = <span class="hljs-built_in">parseInt</span>(pageSize, <span class="hljs-number">10</span>);
+        <span class="hljs-keyword">const</span> offset = (<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(<span class="hljs-number">1</span>, page) - <span class="hljs-number">1</span>) * limit;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">findTasks</span>(limit, offset, status);
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">createTask</span>(<span class="hljs-params">title</span>) {
+        <span class="hljs-keyword">if</span> (!title || title.<span class="hljs-title function_">trim</span>() === <span class="hljs-string">''</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Task title is required'</span>); <span class="hljs-comment">// 业务校验</span>
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">create</span>(title.<span class="hljs-title function_">trim</span>());
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">updateTaskStatus</span>(<span class="hljs-params">id, newStatus</span>) {
+        <span class="hljs-keyword">const</span> validStatuses = [<span class="hljs-string">'pending'</span>, <span class="hljs-string">'completed'</span>, <span class="hljs-string">'archived'</span>];
+        <span class="hljs-keyword">if</span> (!validStatuses.<span class="hljs-title function_">includes</span>(newStatus)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Invalid status'</span>);
+        }
+
+        <span class="hljs-keyword">const</span> task = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">findById</span>(id);
+        <span class="hljs-keyword">if</span> (!task) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Task not found'</span>);
+
+        <span class="hljs-comment">// 核心业务逻辑：已归档任务不可更改状态</span>
+        <span class="hljs-keyword">if</span> (task.<span class="hljs-property">status</span> === <span class="hljs-string">'archived'</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Cannot update an archived task'</span>);
+        }
+
+        <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">updateStatus</span>(id, newStatus);
+        <span class="hljs-keyword">return</span> { id, <span class="hljs-attr">status</span>: newStatus };
+    }
+
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">deleteTask</span>(<span class="hljs-params">id</span>) {
+        <span class="hljs-keyword">const</span> task = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">findById</span>(id);
+        <span class="hljs-keyword">if</span> (!task) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Task not found'</span>);
+        <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskModel</span>.<span class="hljs-title function_">delete</span>(id);
+    }
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-title class_">TaskService</span>;
+</code></pre>
+<h4 id="24-中间件与控制器-controllers--middlewares"><a href="#24-中间件与控制器-controllers--middlewares">2.4 中间件与控制器 (controllers &#x26; middlewares)</a></h4>
+<p><strong>性能优化点：</strong> 简单的内存缓存。对于高频读取且不常变动的接口（例如统计信息或基础列表），缓存在内存中可以极大降低数据库 I/O。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// middlewares/cache.js</span>
+<span class="hljs-keyword">const</span> memoryCache = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+
+<span class="hljs-comment">// 简单的中间件缓存实现</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">simpleCache</span> = (<span class="hljs-params">durationInSeconds</span>) => {
+    <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =></span> {
+        <span class="hljs-keyword">const</span> key = req.<span class="hljs-property">originalUrl</span>;
+        <span class="hljs-keyword">const</span> cachedResponse = memoryCache.<span class="hljs-title function_">get</span>(key);
+
+        <span class="hljs-keyword">if</span> (cachedResponse &#x26;&#x26; cachedResponse.<span class="hljs-property">expiry</span> > <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>()) {
+            <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">json</span>(cachedResponse.<span class="hljs-property">data</span>); <span class="hljs-comment">// 命中缓存直接返回</span>
+        }
+
+        <span class="hljs-comment">// 劫持 res.json 以便在发送前存入缓存</span>
+        <span class="hljs-keyword">const</span> originalSend = res.<span class="hljs-property">json</span>;
+        res.<span class="hljs-property">json</span> = <span class="hljs-function">(<span class="hljs-params">body</span>) =></span> {
+            memoryCache.<span class="hljs-title function_">set</span>(key, {
+                <span class="hljs-attr">data</span>: body,
+                <span class="hljs-attr">expiry</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>() + durationInSeconds * <span class="hljs-number">1000</span>
+            });
+            originalSend.<span class="hljs-title function_">call</span>(res, body);
+        };
+        <span class="hljs-title function_">next</span>();
+    };
+};
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = simpleCache;
+</code></pre>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// middlewares/errorHandler.js</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">errorHandler</span> = (<span class="hljs-params">err, req, res, next</span>) => {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`[Error] <span class="hljs-subst">${err.message}</span>`</span>);
+    <span class="hljs-comment">// 统一的错误格式输出</span>
+    res.<span class="hljs-title function_">status</span>(err.<span class="hljs-property">status</span> || <span class="hljs-number">400</span>).<span class="hljs-title function_">json</span>({
+        <span class="hljs-attr">success</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">error</span>: err.<span class="hljs-property">message</span> || <span class="hljs-string">'Internal Server Error'</span>
+    });
+};
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = errorHandler;
+</code></pre>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// controllers/taskController.js</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskController</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">taskService</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskService</span> = taskService;
+    }
+
+    <span class="hljs-comment">// 利用箭头函数绑定 this，或者在路由注册时使用 bind</span>
+    getTasks = <span class="hljs-title function_">async</span> (req, res, next) => {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> { page, limit, status } = req.<span class="hljs-property">query</span>;
+            <span class="hljs-keyword">const</span> tasks = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskService</span>.<span class="hljs-title function_">getTasks</span>(page, limit, status);
+            res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: tasks });
+        } <span class="hljs-keyword">catch</span> (error) {
+            <span class="hljs-title function_">next</span>(error); <span class="hljs-comment">// 传递给全局错误处理中间件</span>
+        }
+    };
+
+    createTask = <span class="hljs-title function_">async</span> (req, res, next) => {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> { title } = req.<span class="hljs-property">body</span>;
+            <span class="hljs-keyword">const</span> id = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskService</span>.<span class="hljs-title function_">createTask</span>(title);
+            res.<span class="hljs-title function_">status</span>(<span class="hljs-number">201</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: { id, title } });
+        } <span class="hljs-keyword">catch</span> (error) {
+            <span class="hljs-title function_">next</span>(error);
+        }
+    };
+
+    updateStatus = <span class="hljs-title function_">async</span> (req, res, next) => {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> { id } = req.<span class="hljs-property">params</span>;
+            <span class="hljs-keyword">const</span> { status } = req.<span class="hljs-property">body</span>;
+            <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskService</span>.<span class="hljs-title function_">updateTaskStatus</span>(id, status);
+            res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">data</span>: result });
+        } <span class="hljs-keyword">catch</span> (error) {
+            <span class="hljs-title function_">next</span>(error);
+        }
+    };
+
+    deleteTask = <span class="hljs-title function_">async</span> (req, res, next) => {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> { id } = req.<span class="hljs-property">params</span>;
+            <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">taskService</span>.<span class="hljs-title function_">deleteTask</span>(id);
+            res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'Deleted successfully'</span> });
+        } <span class="hljs-keyword">catch</span> (error) {
+            <span class="hljs-title function_">next</span>(error);
+        }
+    };
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-title class_">TaskController</span>;
+</code></pre>
+<h4 id="25-路由与应用入口-routes-appjs-serverjs"><a href="#25-路由与应用入口-routes-appjs-serverjs">2.5 路由与应用入口 (routes, app.js, server.js)</a></h4>
+<p>将各层进行依赖注入（Dependency Injection），这是保证模块可测试性的关键。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// routes/taskRoutes.js</span>
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> simpleCache = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../middlewares/cache'</span>);
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-function">(<span class="hljs-params">taskController</span>) =></span> {
+    <span class="hljs-keyword">const</span> router = express.<span class="hljs-title class_">Router</span>();
+    
+    <span class="hljs-comment">// 查询列表使用了 5 秒的短缓存，降低高并发下的 DB 压力</span>
+    router.<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-title function_">simpleCache</span>(<span class="hljs-number">5</span>), taskController.<span class="hljs-property">getTasks</span>);
+    router.<span class="hljs-title function_">post</span>(<span class="hljs-string">'/'</span>, taskController.<span class="hljs-property">createTask</span>);
+    router.<span class="hljs-title function_">patch</span>(<span class="hljs-string">'/:id/status'</span>, taskController.<span class="hljs-property">updateStatus</span>);
+    router.<span class="hljs-title function_">delete</span>(<span class="hljs-string">'/:id'</span>, taskController.<span class="hljs-property">deleteTask</span>);
+
+    <span class="hljs-keyword">return</span> router;
+};
+</code></pre>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// app.js</span>
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
+<span class="hljs-keyword">const</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./middlewares/errorHandler'</span>);
+<span class="hljs-keyword">const</span> taskRoutes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/taskRoutes'</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createApp</span>(<span class="hljs-params">taskController</span>) {
+    <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>();
+    
+    app.<span class="hljs-title function_">use</span>(<span class="hljs-title function_">cors</span>());
+    app.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">json</span>()); <span class="hljs-comment">// 解析 JSON body</span>
+
+    <span class="hljs-comment">// 挂载路由</span>
+    app.<span class="hljs-title function_">use</span>(<span class="hljs-string">'/api/tasks'</span>, <span class="hljs-title function_">taskRoutes</span>(taskController));
+
+    <span class="hljs-comment">// 全局错误处理垫后</span>
+    app.<span class="hljs-title function_">use</span>(errorHandler);
+
+    <span class="hljs-keyword">return</span> app;
+}
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = createApp;
+</code></pre>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// server.js</span>
+<span class="hljs-keyword">const</span> initDB = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./config/db'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskModel</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./models/taskModel'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskService</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./services/taskService'</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TaskController</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./controllers/taskController'</span>);
+<span class="hljs-keyword">const</span> createApp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./app'</span>);
+
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PORT</span> = process.<span class="hljs-property">env</span>.<span class="hljs-property">PORT</span> || <span class="hljs-number">3000</span>;
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">startServer</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">// 1. 初始化数据库</span>
+        <span class="hljs-keyword">const</span> db = <span class="hljs-keyword">await</span> <span class="hljs-title function_">initDB</span>();
+
+        <span class="hljs-comment">// 2. 依赖注入组装应用</span>
+        <span class="hljs-keyword">const</span> taskModel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskModel</span>(db);
+        <span class="hljs-keyword">const</span> taskService = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskService</span>(taskModel);
+        <span class="hljs-keyword">const</span> taskController = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskController</span>(taskService);
+
+        <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">createApp</span>(taskController);
+
+        <span class="hljs-comment">// 3. 启动监听</span>
+        app.<span class="hljs-title function_">listen</span>(<span class="hljs-variable constant_">PORT</span>, <span class="hljs-function">() =></span> {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Server is running on http://localhost:<span class="hljs-subst">${PORT}</span>`</span>);
+        });
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Failed to start server:'</span>, err);
+        process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>);
+    }
+}
+
+<span class="hljs-title function_">startServer</span>();
+</code></pre>
+<h3 id="3-设计思路与解构分析"><a href="#3-设计思路与解构分析">3. 设计思路与解构分析</a></h3>
+<ul>
+<li>
+<p><strong>业务隔离的必要性</strong>：很多初学者习惯在 Controller 里写 SQL 或判断逻辑。这里的代码严格遵循了“Controller 只管请求调度，Service 只管业务规则，Model 只管数据读写”。如果未来要把 SQLite 换成 MySQL 或 PostgreSQL，只需要重写 <code>TaskModel</code>，上面的 <code>Service</code> 和 <code>Controller</code> 一行代码都不用改。</p>
+</li>
+<li>
+<p><strong>防御性编程</strong>：在 <code>Service</code> 层对空标题、无效状态进行了拦截，并在状态流转上切断了非法路径（归档不可编辑）。</p>
+</li>
+<li>
+<p><strong>性能优化的切面</strong>：</p>
+<ol>
+<li>
+<p><strong>数据库层</strong>：<code>idx_status</code> 索引解决了分类过滤时的性能瓶颈。</p>
+</li>
+<li>
+<p><strong>查询层</strong>：强制的分页处理（<code>limit</code>/<code>offset</code>）防止一次请求打爆内存。</p>
+</li>
+<li>
+<p><strong>网络层</strong>：<code>simpleCache</code> 中间件以极低的成本实现了查询接口的防抖降压。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>你可以直接运行 <code>node server.js</code> 来启动这个项目并用 Postman 或 cURL 测试对应的端点。你需要针对这套架构补充自动化测试（如 Jest）方面的代码吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/node服务",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/node%E6%9C%8D%E5%8A%A1/","children":"前端开发 / node服务"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"任务管理系统项目"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1526," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-目录结构与工程化设计","text":"1. 目录结构与工程化设计"},{"level":3,"id":"2-核心代码实现","text":"2. 核心代码实现"},{"level":4,"id":"21-数据库配置与优化-configdbjs","text":"2.1 数据库配置与优化 (config/db.js)"},{"level":4,"id":"22-数据访问层-modelstaskmodeljs","text":"2.2 数据访问层 (models/taskModel.js)"},{"level":4,"id":"23-业务逻辑层-servicestaskservicejs","text":"2.3 业务逻辑层 (services/taskService.js)"},{"level":4,"id":"24-中间件与控制器-controllers--middlewares","text":"2.4 中间件与控制器 (controllers &#x26; middlewares)"},{"level":4,"id":"25-路由与应用入口-routes-appjs-serverjs","text":"2.5 路由与应用入口 (routes, app.js, server.js)"},{"level":3,"id":"3-设计思路与解构分析","text":"3. 设计思路与解构分析"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

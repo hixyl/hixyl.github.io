@@ -1,0 +1,90 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T18f9,<p>探讨React和Vue的Diff算法，是理解这两个框架底层运行逻辑的绝佳切入点。对于初级开发者来说，直接啃源码可能会陷入细节的泥潭，所以我们可以抛开复杂的代码，从它们各自的设计思路和解决问题的策略来对比。</p>
+<p>简单来说，<strong>Diff算法就是找茬游戏</strong>。当数据发生变化时，框架需要对比“旧的虚拟DOM树”和“新的虚拟DOM树”，找出它们之间的不同，然后只把这些不同的地方更新到真实的网页（DOM）上，从而避免全量重绘，提升性能。</p>
+<p>两者在同层节点比较、同类型节点比较等宏观策略上是相似的（比如都认为跨层级的DOM移动很少，所以只做同级比较）。它们的根本差异，主要体现在<strong>列表对比（多节点Diff）<strong>的策略以及</strong>编译期的优化</strong>上。</p>
+<h3 id="react简单直接与时间切片"><a href="#react简单直接与时间切片">React：简单直接与时间切片</a></h3>
+<p>React的设计哲学偏向于“纯粹”和“运行时处理”。</p>
+<ul>
+<li>
+<p><strong>Diff策略（仅向右移动）：</strong> 当面对一个列表的更新时，React的策略相对简单粗暴。它会从左到右依次对比新旧节点。如果发现有相同的节点（通过 <code>key</code> 识别），它会判断这个节点是否需要移动。React的核心规则是：<strong>只允许节点向右移动</strong>。</p>
+</li>
+<li>
+<p><strong>初级理解：</strong> 假设原来有一排人站队 <code>[A, B, C, D]</code>，现在要变成 <code>[D, A, B, C]</code>。按照人类的直觉，只要把 <code>D</code> 拎到最前面就好了。但在React的算法里，它发现 <code>A, B, C</code> 的相对位置没有变，只是它们前面的 <code>D</code> 跑到后面去了。因为React“只向右移动”，它不会把 <code>D</code> 移到前面，而是把 <code>A, B, C</code> 依次向右移动到 <code>D</code> 的后面。在某些极端情况下（比如把最后一个元素移到第一个），React的性能开销会比较大。</p>
+</li>
+<li>
+<p><strong>Fiber架构的妥协：</strong> 为什么React要采用这种看起来不是最优的策略？因为React自16版本引入了Fiber架构，它的虚拟DOM变成了单链表结构，目的是为了支持<strong>时间切片（可中断渲染）</strong>。单链表没有往回指的指针，做复杂的双向对比极其困难。所以React牺牲了一部分Diff的极限效率，换取了主线程在面对庞大组件树时不会卡死的能力。</p>
+</li>
+</ul>
+<h3 id="vue追求极致的dom操作最少化"><a href="#vue追求极致的dom操作最少化">Vue：追求极致的DOM操作最少化</a></h3>
+<p>Vue的设计哲学偏向于“响应式”和“编译期优化”。Vue在列表比对上，演进了两代经典的算法。</p>
+<ul>
+<li>
+<p><strong>Vue 2（双端比较）：</strong></p>
+<ul>
+<li>
+<p>它设置了四个指针，分别指向新旧列表的头部和尾部。然后不断地进行“头跟头”、“尾跟尾”、“头跟尾”、“尾跟头”的比较。</p>
+</li>
+<li>
+<p><strong>初级理解：</strong> 同样是排队 <code>[A, B, C, D]</code> 变成 <code>[D, A, B, C]</code>。Vue 2 会同时从两头看。它一下就发现，旧队列的尾部 <code>D</code>，正好是新队列的头部 <code>D</code>。于是它直接指挥：把 <code>D</code> 挪到最前面！一步搞定，非常聪明。这种算法对于日常开发中常见的数组反转、插入、删除操作非常高效。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3（最长递增子序列 + 编译优化）：</strong></p>
+<ul>
+<li>
+<p>Vue 3 将Diff算法推向了更复杂的**最长递增子序列（LIS）**算法。</p>
+</li>
+<li>
+<p><strong>初级理解：</strong> 它首先会像Vue 2那样掐头去尾，把两端没有变化的节点先剔除。剩下的中间部分，它会去寻找一个“相对位置完全没有被打乱的最长队伍”。对于那些在这个“最长队伍”里的人，原地不动；只把不在队伍里的人进行移动或插入。这在数学和逻辑上保证了DOM的移动次数一定是<strong>最少</strong>的。</p>
+</li>
+<li>
+<p><strong>降维打击（静态标记）：</strong> Diff算法再快，也比不上“不Diff”。Vue因为使用了模板（Template），可以在代码编译阶段就知道哪些标签是永远不会变的（比如一个纯文本的 <code>&#x3C;h1>标题&#x3C;/h1></code>），哪些是动态的。Vue 3 会给动态节点打上“标记”（PatchFlag）。在更新时，Vue直接越过所有的静态节点，顺着标记只更新有变化的节点，这使得它的更新效率极高。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="本质差异为什么会有这种不同"><a href="#本质差异为什么会有这种不同">本质差异：为什么会有这种不同？</a></h3>
+<p>探究其背后的底层原因，主要源于两者对<strong>视图书写方式</strong>的选择：</p>
+<table>
+<thead>
+<tr>
+<th><strong>维度</strong></th>
+<th><strong>React (JSX)</strong></th>
+<th><strong>Vue (Template)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>灵活性</strong></td>
+<td>极高，完全是JavaScript的语法能力，可以写出极其复杂的动态结构。</td>
+<td>受限于模板语法，结构相对固定。</td>
+</tr>
+<tr>
+<td><strong>可预测性</strong></td>
+<td>极低，框架在运行前很难猜到你写的JSX最后会生成什么DOM树。</td>
+<td>极高，框架在编译时就能清晰地看懂整个页面的静态和动态分布。</td>
+</tr>
+<tr>
+<td><strong>Diff重心</strong></td>
+<td>无法提前预测，只能依赖强大的<strong>运行时</strong>比较，通过Fiber拆分任务来保证不卡顿。</td>
+<td>能够提前预测，通过<strong>编译时</strong>优化减少Diff工作量，并使用复杂的算法做到精细的DOM更新。</td>
+</tr>
+</tbody>
+</table>
+<p>总结来说，React的Diff策略是为了配合其可中断渲染架构的妥协，强调的是在巨型应用中依然能保持界面的响应；而Vue的Diff策略则是在模板可预知的前提下，追求以最少的DOM操作完成更新，强调的是精准和高效。</p>
+<p>需要我为你展示一段简单的伪代码，来直观看看它们在判断节点是否更新时的核心逻辑差异吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React 和 Vue diff 算法对比"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1412," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"react简单直接与时间切片","text":"React：简单直接与时间切片"},{"level":3,"id":"vue追求极致的dom操作最少化","text":"Vue：追求极致的DOM操作最少化"},{"level":3,"id":"本质差异为什么会有这种不同","text":"本质差异：为什么会有这种不同？"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,422 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T5cbd,<p>我们来深入且系统地讲明白 CSS 动画。我会从其本质出发，剖析两大核心机制，探讨性能优化，并最终总结出主流的实战用法。</p>
+<hr>
+<h3 id="一动画的本质与-css-的角色"><a href="#一动画的本质与-css-的角色">一、动画的本质与 CSS 的角色</a></h3>
+<p>从第一性原理看，动画的本质是<strong>在一段时间内，连续改变一个或多个元素的视觉属性，从而欺骗眼睛，产生运动或变化的错觉</strong>。</p>
+<p>在网页中，实现动画有多种方式（比如 JavaScript、SVG SMIL、GIF），但 CSS 动画之所以成为主流，原因在于它将动画的<strong>声明</strong>与<strong>执行</strong>分开了：</p>
+<ul>
+<li>
+<p><strong>声明 (Declaration)</strong>：你用 CSS 告诉浏览器，“这个元素，在触发某个条件时，需要在 0.5 秒内，从左边移动到右边，并且颜色要从蓝色渐变到红色”。</p>
+</li>
+<li>
+<p><strong>执行 (Execution)</strong>：浏览器拿到这个“指令”后，自己负责计算每一帧（通常是每秒 60 帧）元素的具体位置和颜色，并进行渲染。</p>
+</li>
+</ul>
+<p>这种分离的最大优势是<strong>性能</strong>。浏览器是渲染专家，它能将动画计算和渲染过程优化到极致，比如利用 GPU（图形处理器）进行硬件加速，从而在不阻塞主线程（负责执行 JavaScript）的情况下，实现极其流畅的动画效果。</p>
+<h3 id="二css-动画的两大基石transition-与-animation"><a href="#二css-动画的两大基石transition-与-animation">二、CSS 动画的两大基石：<code>Transition</code> 与 <code>Animation</code></a></h3>
+<p>CSS 提供了两种实现动画的核心机制，理解它们的区别是掌握 CSS 动画的关键。</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>Transition</code> (过渡)</th>
+<th><code>Animation</code> (动画)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>本质</strong></td>
+<td>隐式动画，定义了 <strong>从状态 A 到状态 B</strong> 的转变过程。</td>
+<td>显式动画，定义了 <strong>一个或多个关键帧（Keyframes）</strong> 的完整序列。</td>
+</tr>
+<tr>
+<td><strong>触发方式</strong></td>
+<td>需要一个明确的状态改变来触发，如 <code>:hover</code>, <code>:focus</code>, 或者通过 JavaScript 改变 class。</td>
+<td>应用后可自动播放，无需状态改变。</td>
+</tr>
+<tr>
+<td><strong>复杂度</strong></td>
+<td>简单。只能定义开始和结束状态之间的过渡。</td>
+<td>复杂。可以定义动画路径上的多个中间状态。</td>
+</tr>
+<tr>
+<td><strong>控制力</strong></td>
+<td>有限。只能控制时长、延迟、缓动函数。</td>
+<td>强大。可以控制循环次数、播放方向、填充模式、暂停/播放。</td>
+</tr>
+<tr>
+<td><strong>核心用法</strong></td>
+<td>用于 UI 元素状态切换时的平滑过渡，增强用户体验。</td>
+<td>用于创建复杂的、独立的、可循环的动画效果。</td>
+</tr>
+<tr>
+<td><strong>我的推荐</strong></td>
+<td><strong>UI 状态切换的首选方案</strong>。简单、高效、意图明确。</td>
+<td><strong>当需要多步、循环或更精细控制时使用</strong>。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="深入-transition"><a href="#深入-transition">深入 <code>Transition</code></a></h4>
+<p><code>transition</code> 就像一个自动扶梯，你只需要告诉它起点和终点，它就会平滑地把你送过去。它由四个子属性构成，通常使用缩写形式。</p>
+<p>语法：</p>
+<p>transition: [property] [duration] [timing-function] [delay];</p>
+<ul>
+<li>
+<p><code>transition-property</code>: 指定哪个 CSS 属性参与过渡。可以是 <code>all</code>（所有可动画属性），也可以是具体的属性，如 <code>transform</code>, <code>opacity</code>。<strong>明确指定属性是更好的实践</strong>。</p>
+</li>
+<li>
+<p><code>transition-duration</code>: 过渡持续的时长，如 <code>0.3s</code> 或 <code>300ms</code>。</p>
+</li>
+<li>
+<p><code>transition-timing-function</code>: 缓动函数，定义了动画速度的变化曲线。</p>
+<ul>
+<li>
+<p><code>linear</code>: 匀速。</p>
+</li>
+<li>
+<p><code>ease</code>: 慢-快-慢（默认值），最自然常用。</p>
+</li>
+<li>
+<p><code>ease-in</code>: 慢速开始，加速结束。</p>
+</li>
+<li>
+<p><code>ease-out</code>: 快速开始，减速结束。</p>
+</li>
+<li>
+<p><code>ease-in-out</code>: 慢速开始和结束。</p>
+</li>
+<li>
+<p><code>cubic-bezier(n,n,n,n)</code>: 自定义贝塞尔曲线，提供终极控制力。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>transition-delay</code>: 延迟多久后开始过渡。</p>
+</li>
+</ul>
+<p><strong>示例：一个平滑变大的按钮</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.button</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#3498db</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.3s</span> ease, background-color <span class="hljs-number">0.3s</span> ease; <span class="hljs-comment">/* 对多个属性应用过渡 */</span>
+}
+
+<span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#2980b9</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">1.1</span>); <span class="hljs-comment">/* 状态改变，触发 transition */</span>
+}
+</code></pre>
+<p>在这个例子中，当鼠标悬停时，<code>transform</code> 和 <code>background-color</code> 属性会发生变化。因为我们定义了 <code>transition</code>，这个变化过程将在 0.3 秒内平滑地完成，而不是瞬间跳变。</p>
+<hr>
+<h4 id="深入-animation"><a href="#深入-animation">深入 <code>Animation</code></a></h4>
+<p><code>animation</code> 则像一部电影脚本，你不仅定义了开头和结尾，还定义了中间的“剧情”。它由两部分组成：</p>
+<ol>
+<li>
+<p><strong><code>@keyframes</code> 规则</strong>：定义动画的“关键帧”。</p>
+</li>
+<li>
+<p><strong><code>animation-*</code> 属性</strong>：将这个关键帧应用到元素上，并控制其播放方式。</p>
+</li>
+</ol>
+<p><strong>1. <code>@keyframes</code> 规则</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-keyword">@keyframes</span> slide-in-fade-in {
+  <span class="hljs-comment">/* from 等同于 0% */</span>
+  <span class="hljs-selector-tag">from</span> {
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">20px</span>);
+  }
+
+  <span class="hljs-comment">/* 也可以定义中间状态 */</span>
+  <span class="hljs-number">60%</span> {
+      <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.8</span>;
+  }
+  
+  <span class="hljs-comment">/* to 等同于 100% */</span>
+  <span class="hljs-selector-tag">to</span> {
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0</span>);
+  }
+}
+</code></pre>
+<p><strong>2. <code>animation-*</code> 属性</strong></p>
+<p>通常也使用缩写形式：</p>
+<p>animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];</p>
+<ul>
+<li>
+<p><code>animation-name</code>: 绑定到 <code>@keyframes</code> 规则的名称。</p>
+</li>
+<li>
+<p><code>animation-duration</code>: 动画单次循环的时长。</p>
+</li>
+<li>
+<p><code>animation-timing-function</code>: 与 <code>transition</code> 的缓动函数相同。</p>
+</li>
+<li>
+<p><code>animation-delay</code>: 延迟多久后开始动画。</p>
+</li>
+<li>
+<p><code>animation-iteration-count</code>: 播放次数。可以是数字，也可以是 <code>infinite</code> (无限循环)。</p>
+</li>
+<li>
+<p><code>animation-direction</code>: 播放方向。</p>
+<ul>
+<li>
+<p><code>normal</code>: 正常播放（默认）。</p>
+</li>
+<li>
+<p><code>reverse</code>: 反向播放。</p>
+</li>
+<li>
+<p><code>alternate</code>: 奇数次正向，偶数次反向。</p>
+</li>
+<li>
+<p><code>alternate-reverse</code>: 奇数次反向，偶数次正向。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>animation-fill-mode</code>: 定义动画播放前后，元素的样式状态。这是一个非常重要的属性。</p>
+<ul>
+<li>
+<p><code>none</code>: 默认值。动画结束后，元素回到初始状态。</p>
+</li>
+<li>
+<p><code>forwards</code>: 动画结束后，元素保持在最后一帧的样式。</p>
+</li>
+<li>
+<p><code>backwards</code>: 在 <code>animation-delay</code> 期间，元素会立即应用第一帧的样式。</p>
+</li>
+<li>
+<p><code>both</code>: 同时应用 <code>forwards</code> 和 <code>backwards</code> 的规则。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>animation-play-state</code>: 控制动画的播放与暂停 (<code>running</code> 或 <code>paused</code>)。通常用 JavaScript 来切换。</p>
+</li>
+</ul>
+<p><strong>示例：一个呼吸式光晕效果</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-keyword">@keyframes</span> pulse-glow {
+  <span class="hljs-number">0%</span> {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">52</span>, <span class="hljs-number">152</span>, <span class="hljs-number">219</span>, <span class="hljs-number">0.4</span>);
+  }
+  <span class="hljs-number">50%</span> {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">52</span>, <span class="hljs-number">152</span>, <span class="hljs-number">219</span>, <span class="hljs-number">0.8</span>);
+  }
+  <span class="hljs-number">100%</span> {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">52</span>, <span class="hljs-number">152</span>, <span class="hljs-number">219</span>, <span class="hljs-number">0.4</span>);
+  }
+}
+
+<span class="hljs-selector-class">.glowing-dot</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#3498db</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">animation</span>: pulse-glow <span class="hljs-number">2s</span> ease-in-out infinite; <span class="hljs-comment">/* 应用动画，无限循环 */</span>
+}
+</code></pre>
+<h3 id="三性能的命脉理解渲染流水线"><a href="#三性能的命脉理解渲染流水线">三、性能的命脉：理解渲染流水线</a></h3>
+<p>要真正“深入”理解 CSS 动画，就必须谈性能。浏览器渲染页面的过程大致分为以下几步：</p>
+<ol>
+<li>
+<p><strong>Layout (布局)</strong>：计算元素在屏幕上的确切位置和大小。改变 <code>width</code>, <code>height</code>, <code>left</code>, <code>top</code> 等属性会触发此步骤。<strong>这是最昂贵的操作</strong>。</p>
+</li>
+<li>
+<p><strong>Paint (绘制)</strong>：填充像素，绘制元素的可见部分，如颜色、边框、阴影。改变 <code>background-color</code>, <code>box-shadow</code> 等会触发此步骤。</p>
+</li>
+<li>
+<p><strong>Composite (合成)</strong>：将绘制好的各个层（Layers）按照正确顺序合并到屏幕上。</p>
+</li>
+</ol>
+<p><strong>最高性能的动画，只触发 Composite 步骤，跳过 Layout 和 Paint。</strong></p>
+<p>能够做到这一点的属性只有两个：</p>
+<ul>
+<li>
+<p><code>transform</code>: 改变元素的位置（<code>translate</code>）、大小（<code>scale</code>）、旋转（<code>rotate</code>）和倾斜（<code>skew</code>）。浏览器会为该元素创建一个独立的“合成层”，移动这个层就像移动一张独立的纸，不会影响周围的元素，因此无需重新布局和绘制。</p>
+</li>
+<li>
+<p><code>opacity</code>: 改变元素的透明度。同样，这通常也可以在合成层上完成。</p>
+</li>
+</ul>
+<p>性能优化的核心原则：</p>
+<p>尽可能只对 transform 和 opacity 属性进行动画。</p>
+<p>例如，要移动一个元素，不要使用 <code>left</code> 或 <code>margin-left</code>：</p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-comment">/* ❌ 低性能方式 */</span>
+<span class="hljs-selector-class">.box</span><span class="hljs-selector-class">.animate</span> {
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>; <span class="hljs-comment">/* 会触发 Layout，性能差 */</span>
+}
+
+<span class="hljs-comment">/* ✅ 高性能方式 */</span>
+<span class="hljs-selector-class">.box</span><span class="hljs-selector-class">.animate</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">100px</span>); <span class="hljs-comment">/* 只触发 Composite，性能好 */</span>
+}
+</code></pre>
+<p>对于无法避免要动画其他属性的情况，可以使用 <code>will-change</code> 属性提前告知浏览器：“我准备要动画这个属性了，你最好为它准备一个独立的合成层”。但这会消耗内存，需要谨慎使用，不能滥用。</p>
+<p><code>will-change: transform, opacity;</code></p>
+<h3 id="四主流用法与实战场景"><a href="#四主流用法与实战场景">四、主流用法与实战场景</a></h3>
+<p>结合以上原理，我们可以总结出 CSS 动画在现代网页中的主流用法。</p>
+<h4 id="1-微交互-micro-interactions"><a href="#1-微交互-micro-interactions">1. 微交互 (Micro-interactions)</a></h4>
+<p>这是 <code>transition</code> 的主场，用于提供即时、微妙的视觉反馈，让界面感觉更“活”、更灵敏。</p>
+<ul>
+<li>
+<p><strong>按钮/链接悬停效果</strong>：改变背景色、大小、阴影。</p>
+</li>
+<li>
+<p><strong>输入框聚焦效果</strong>：改变边框颜色、添加光晕。</p>
+</li>
+<li>
+<p><strong>图标交互</strong>：简单的旋转或颜色变化，如点击汉堡菜单图标变成关闭叉号。</p>
+</li>
+<li>
+<p><strong>Tooltips/提示框</strong>：使用 <code>transform: scale()</code> 和 <code>opacity</code> 实现平滑的淡入淡出和缩放效果。</p>
+</li>
+</ul>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-comment">/* Tooltip 的平滑出现 */</span>
+<span class="hljs-selector-class">.tooltip</span> {
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">10px</span>);
+  <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">0.2s</span> ease, transform <span class="hljs-number">0.2s</span> ease;
+}
+
+<span class="hljs-selector-class">.has-tooltip</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.tooltip</span> {
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0</span>);
+}
+</code></pre>
+<h4 id="2-ui-状态转换-ui-state-transitions"><a href="#2-ui-状态转换-ui-state-transitions">2. UI 状态转换 (UI State Transitions)</a></h4>
+<p>当界面布局或内容发生较大变化时，使用动画引导用户的视线，避免生硬感。</p>
+<ul>
+<li>
+<p><strong>模态框/弹窗</strong>：从屏幕外滑入或从中心放大出现，背景遮罩层淡入。</p>
+</li>
+<li>
+<p><strong>侧边栏/导航菜单</strong>：从左侧或右侧平滑滑出。</p>
+</li>
+<li>
+<p><strong>内容折叠/展开 (Accordion)</strong>：改变 <code>max-height</code> (这是一个可以动画但性能不算最优的属性，但对于高度不定的内容是常用技巧) 和 <code>transform: rotate()</code> (用于箭头图标)。</p>
+</li>
+</ul>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-comment">/* 侧边栏滑出 */</span>
+<span class="hljs-selector-class">.sidebar</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(-<span class="hljs-number">100%</span>);
+  <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.4s</span> <span class="hljs-built_in">cubic-bezier</span>(<span class="hljs-number">0.25</span>, <span class="hljs-number">0.8</span>, <span class="hljs-number">0.25</span>, <span class="hljs-number">1</span>);
+}
+<span class="hljs-selector-class">.sidebar</span><span class="hljs-selector-class">.is-open</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">0</span>);
+}
+</code></pre>
+<h4 id="3-加载指示器-loading-indicators"><a href="#3-加载指示器-loading-indicators">3. 加载指示器 (Loading Indicators)</a></h4>
+<p>这是 <code>animation</code> 和 <code>@keyframes</code> 的经典应用场景，通常使用无限循环。</p>
+<ul>
+<li>
+<p><strong>旋转器 (Spinner)</strong>：一个不断旋转的圆环。</p>
+</li>
+<li>
+<p><strong>脉冲点 (Pulsing Dots)</strong>：几个点依次放大缩小。</p>
+</li>
+<li>
+<p><strong>进度条动画</strong>：骨架屏（Skeleton Screen）上闪烁的光泽效果。</p>
+</li>
+</ul>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-comment">/* 骨架屏光泽效果 */</span>
+<span class="hljs-keyword">@keyframes</span> shimmer {
+  <span class="hljs-number">100%</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">100%</span>);
+  }
+}
+
+<span class="hljs-selector-class">.skeleton-shine</span> {
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">overflow</span>: hidden;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+}
+
+<span class="hljs-selector-class">.skeleton-shine</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(-<span class="hljs-number">100%</span>);
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-number">90deg</span>, transparent, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.5</span>), transparent);
+  <span class="hljs-attribute">animation</span>: shimmer <span class="hljs-number">1.5s</span> infinite;
+}
+</code></pre>
+<h4 id="4-吸引注意力和叙事-attention--storytelling"><a href="#4-吸引注意力和叙事-attention--storytelling">4. 吸引注意力和叙事 (Attention &#x26; Storytelling)</a></h4>
+<p>用于需要主动吸引用户注意力的元素，或在页面滚动时讲述一个故事。</p>
+<ul>
+<li>
+<p><strong>"添加到购物车"按钮的确认动画</strong>：按钮上出现一个对勾，或者有一个小商品飞入购物车的动画。</p>
+</li>
+<li>
+<p><strong>滚动触发动画 (Scroll-triggered Animations)</strong>：当元素滚动进入视窗时，执行一个淡入、滑入的效果。这通常需要少量 JavaScript (使用 <code>Intersection Observer API</code>) 来检测元素是否可见，然后在元素上添加一个 class 来触发 CSS <code>transition</code> 或 <code>animation</code>。</p>
+</li>
+<li>
+<p><strong>页面加载动画 (Page Load Animations)</strong>：在页面初次加载时，展示一个品牌相关的、有创意的动画。</p>
+</li>
+</ul>
+<h4 id="5-无障碍考虑-accessibility"><a href="#5-无障碍考虑-accessibility">5. 无障碍考虑 (Accessibility)</a></h4>
+<p>一个重要的现代实践是尊重用户的偏好。有些用户可能会因为动画而感到不适或头晕。CSS 提供了 <code>prefers-reduced-motion</code> 媒体查询。</p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.animated-element</span> {
+  <span class="hljs-attribute">animation</span>: complex-animation <span class="hljs-number">5s</span> infinite;
+}
+
+<span class="hljs-comment">/* 当用户在操作系统中设置了“减弱动态效果”时 */</span>
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-reduced-motion</span>: reduce) {
+  <span class="hljs-selector-class">.animated-element</span> {
+    <span class="hljs-attribute">animation</span>: none; <span class="hljs-comment">/* 直接禁用动画 */</span>
+  }
+  
+  <span class="hljs-comment">/* 或者用一个更简单的淡入淡出替代 */</span>
+  <span class="hljs-selector-class">.fade-in-element</span> {
+    <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">0.3s</span>;
+  }
+}
+</code></pre>
+<h3 id="结论与最佳实践"><a href="#结论与最佳实践">结论与最佳实践</a></h3>
+<ul>
+<li>
+<p><strong>选择正确的工具</strong>：简单的状态切换用 <code>transition</code>，复杂的序列动画用 <code>animation</code>。这是最根本的决策。</p>
+</li>
+<li>
+<p><strong>性能至上</strong>：永远优先考虑动画 <code>transform</code> 和 <code>opacity</code> 属性。把这当作肌肉记忆。</p>
+</li>
+<li>
+<p><strong>意图明确</strong>：动画应该服务于用户体验，而不是炫技。好的动画是功能性的、不易察觉的。</p>
+</li>
+<li>
+<p><strong>利用硬件加速</strong>：对于即将发生或复杂的动画，明智地使用 <code>will-change</code>，但不要滥用。</p>
+</li>
+<li>
+<p><strong>拥抱无障碍</strong>：始终使用 <code>prefers-reduced-motion</code> 为用户提供选择。</p>
+</li>
+<li>
+<p><strong>适时求助 JS</strong>：当动画需要与用户输入（如鼠标拖拽）实时交互，或涉及复杂的物理模拟时，CSS 就力不从心了，这时就应该交给 JavaScript 动画库（如 GSAP）来处理。</p>
+</li>
+</ul>
+<p>通过掌握 <code>transition</code> 和 <code>animation</code> 的核心原理，并始终将性能和用户体验放在首位，你就能游刃有余地运用 CSS 动画来构建流畅、优雅且高效的现代网页界面。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/css",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css/","children":"前端开发 / css"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"动画"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-24T00:00:00.000Z","children":"2025年7月24日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2716," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一动画的本质与-css-的角色","text":"一、动画的本质与 CSS 的角色"},{"level":3,"id":"二css-动画的两大基石transition-与-animation","text":"二、CSS 动画的两大基石：Transition 与 Animation"},{"level":4,"id":"深入-transition","text":"深入 Transition"},{"level":4,"id":"深入-animation","text":"深入 Animation"},{"level":3,"id":"三性能的命脉理解渲染流水线","text":"三、性能的命脉：理解渲染流水线"},{"level":3,"id":"四主流用法与实战场景","text":"四、主流用法与实战场景"},{"level":4,"id":"1-微交互-micro-interactions","text":"1. 微交互 (Micro-interactions)"},{"level":4,"id":"2-ui-状态转换-ui-state-transitions","text":"2. UI 状态转换 (UI State Transitions)"},{"level":4,"id":"3-加载指示器-loading-indicators","text":"3. 加载指示器 (Loading Indicators)"},{"level":4,"id":"4-吸引注意力和叙事-attention--storytelling","text":"4. 吸引注意力和叙事 (Attention &#x26; Storytelling)"},{"level":4,"id":"5-无障碍考虑-accessibility","text":"5. 无障碍考虑 (Accessibility)"},{"level":3,"id":"结论与最佳实践","text":"结论与最佳实践"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

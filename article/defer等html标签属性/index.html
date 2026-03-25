@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="/favicon.svg"/><link rel="stylesheet" href="/_next/static/chunks/0g~zs8c5~_~uf.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/02f1pwhv5qrki.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/0bmby6ta573to.js"/><script src="/_next/static/chunks/0_z.jfmr09pj2.js" async=""></script><script src="/_next/static/chunks/0i3-0s_7226ci.js" async=""></script><script src="/_next/static/chunks/110q6k5sdl4es.js" async=""></script><script src="/_next/static/chunks/07uz2g0_38qia.js" async=""></script><script src="/_next/static/chunks/turbopack-0wksw0vhbvo4p.js" async=""></script><script src="/_next/static/chunks/0j8g4_qst9ksd.js" async=""></script><script src="/_next/static/chunks/0d3shmwh5_nmn.js" async=""></script><script src="/_next/static/chunks/0m-fjq7yr4k5u.js" async=""></script><script src="/_next/static/chunks/14787qi7nx.7q.js" async=""></script><script src="/_next/static/chunks/0eqp1b9heft3y.js" async=""></script><link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" as="style"/><link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2" as="script"/><meta name="next-size-adjust" content=""/><title>defer等html标签属性 | 流年石刻</title><meta name="description" content="我们来系统且深入地剖析 &lt;script 标签，从 defer 属性开始，并延展到所有相关的属性。 这不仅仅是关于“功能是什么”，更是关于“为什么需要它”以及“在何种场景下做出最优选择”。  defer 的核心作用：延迟且有序的执行 defe…"/><link rel="icon" href="/favicon.ico?favicon.0x3dzn~oxb6tn.ico" sizes="256x256" type="image/x-icon"/><link rel="icon" href="/favicon.svg"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"/><script>
+              (function() {
+                var t = localStorage.getItem('theme');
+                if (t) { document.documentElement.setAttribute('data-theme', t); }
+                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                }
+              })();
+            </script><script src="/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body class="inter_5901b7c6-module__ec5Qua__variable"><div hidden=""><!--$--><!--/$--></div><canvas style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999"></canvas><header class="jsx-c06749dc0426c6ed site-header"><div class="jsx-c06749dc0426c6ed header-inner"><a class="logo" href="/"><img src="/favicon.svg" alt="Logo" width="24" height="24" class="jsx-c06749dc0426c6ed logo-icon"/><span class="jsx-c06749dc0426c6ed logo-text">流年石刻</span></a><nav class="jsx-c06749dc0426c6ed nav-links "><a class="nav-link " href="/">首页</a><a class="nav-link " href="/categories/">分类</a><a class="nav-link " href="/articles/">文章</a><a class="nav-link " href="/timeline/">时间轴</a><a class="nav-link " href="/editor/">编辑器</a><a class="nav-link " href="/about/">关于</a></nav><div class="jsx-c06749dc0426c6ed header-actions"><a class="search-btn" aria-label="搜索" href="/search/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="jsx-c06749dc0426c6ed"><circle cx="11" cy="11" r="8" class="jsx-c06749dc0426c6ed"></circle><path d="m21 21-4.35-4.35" class="jsx-c06749dc0426c6ed"></path></svg></a><button aria-label="菜单" class="jsx-c06749dc0426c6ed mobile-menu-btn"><span class="jsx-c06749dc0426c6ed hamburger "><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span><span class="jsx-c06749dc0426c6ed"></span></span></button></div></div></header><main style="position:relative;z-index:1;min-height:calc(100vh - 200px)"><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><!--/$--><div style="opacity:0;transform:translateY(12px)"><div style="width:0%" class="jsx-b5e5479b599c7115 reading-progress"></div><article class="container page-module__y-5DuW__article-page"><div class="page-module__y-5DuW__article-layout"><div class="page-module__y-5DuW__article-main"><header class="page-module__y-5DuW__article-header"><div><span>📂</span><a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/html/">前端开发 / html</a></div><h1 class="page-module__y-5DuW__article-title">defer等html标签属性</h1><div class="page-module__y-5DuW__article-meta"><time dateTime="2025-07-29T00:00:00.000Z">2025年7月29日</time><span class="page-module__y-5DuW__sep">·</span><span>2033<!-- --> 字</span><span class="page-module__y-5DuW__sep">·</span><span>约 <!-- -->7<!-- --> 分钟</span></div><div class="page-module__y-5DuW__article-tags"><span class="page-module__y-5DuW__tag">Obsidian</span></div></header><div class="prose page-module__y-5DuW__article-content"><p>我们来系统且深入地剖析 <code>&#x3C;script></code> 标签，从 <code>defer</code> 属性开始，并延展到所有相关的属性。</p>
+<p>这不仅仅是关于“功能是什么”，更是关于“为什么需要它”以及“在何种场景下做出最优选择”。</p>
+<h3 id="defer-的核心作用延迟且有序的执行"><a href="#defer-的核心作用延迟且有序的执行"><code>defer</code> 的核心作用：延迟且有序的执行</a></h3>
+<p><code>defer</code> 的全称是 "defer execution"。它的核心目的，是在不阻塞页面渲染的前提下，加载并执行 JavaScript 代码。</p>
+<p>要理解 <code>defer</code>，首先要明白浏览器默认是如何处理 <code>&#x3C;script></code> 标签的。</p>
+<h4 id="1-默认行为无任何属性"><a href="#1-默认行为无任何属性">1. 默认行为（无任何属性）</a></h4>
+<p>当浏览器解析 HTML 文档时，从上到下逐行处理。如果遇到一个普通的 <code>&#x3C;script src="...">&#x3C;/script></code> 标签：</p>
+<ol>
+<li>
+<p><strong>停止解析</strong>：浏览器会立即暂停解析后续的 HTML。</p>
+</li>
+<li>
+<p><strong>下载脚本</strong>：它会发起请求去下载该脚本文件。</p>
+</li>
+<li>
+<p><strong>执行脚本</strong>：下载完成后，立即执行这个脚本。</p>
+</li>
+<li>
+<p><strong>继续解析</strong>：脚本执行完毕后，才继续解析剩余的 HTML。</p>
+</li>
+</ol>
+<p>这个过程是<strong>阻塞式 (Blocking)</strong> 的。如果脚本很大或者网络很慢，用户就会长时间看到一个白屏，因为浏览器被卡住，无法渲染页面的其余部分。这带来了极差的用户体验。</p>
+<p><em>(这是一个简化的示意图，红色代表阻塞)</em></p>
+<h4 id="2-defer-的解决方案"><a href="#2-defer-的解决方案">2. <code>defer</code> 的解决方案</a></h4>
+<p>为了解决上述问题，<code>defer</code> 属性应运而生。当你在 script 标签上加上 <code>defer</code> 时，行为会变成这样：</p>
+<ol>
+<li>
+<p><strong>并行下载</strong>：浏览器看到 <code>&#x3C;script defer src="...">&#x3C;/script></code>，会立即开始<strong>异步下载</strong>脚本文件，但<strong>不会停止</strong>解析后续的 HTML。下载过程和 HTML 解析是并行的。</p>
+</li>
+<li>
+<p><strong>延迟执行</strong>：脚本下载完成后并不会立即执行，而是会等待整个 HTML 文档都被解析完毕（即 <code>DOMContentLoaded</code> 事件触发之前）。</p>
+</li>
+<li>
+<p><strong>有序执行</strong>：如果页面上有多个带 <code>defer</code> 的脚本，它们会严格按照在 HTML 中出现的顺序来执行。第一个 <code>defer</code> 脚本总是先于第二个 <code>defer</code> 脚本执行。</p>
+</li>
+</ol>
+<p><strong><code>defer</code> 的核心优势：</strong></p>
+<ul>
+<li>
+<p><strong>非阻塞渲染</strong>：下载过程不影响页面渲染，用户能更快地看到完整页面结构。</p>
+</li>
+<li>
+<p><strong>DOM可用</strong>：执行时，整个 DOM 树已经构建完毕，脚本可以安全地访问页面上的任何元素。</p>
+</li>
+<li>
+<p><strong>执行顺序保证</strong>：对于有依赖关系的脚本（例如，<code>jquery.js</code> 必须在 <code>main.js</code> 之前执行），<code>defer</code> 能够确保正确的执行顺序。</p>
+</li>
+</ul>
+<hr>
+<h3 id="defer-以外的其它-script-标签属性"><a href="#defer-以外的其它-script-标签属性"><code>defer</code> 以外的其它 Script 标签属性</a></h3>
+<p>除了 <code>defer</code>，<code>&#x3C;script></code> 标签还有一系列非常重要的属性。其中，与 <code>defer</code> 最常比较的是 <code>async</code>。</p>
+<h4 id="async异步无序的执行"><a href="#async异步无序的执行"><code>async</code>：异步无序的执行</a></h4>
+<p><code>async</code> (asynchronous) 属性也用于实现非阻塞的脚本加载，但它和 <code>defer</code> 有一个关键区别。</p>
+<ol>
+<li>
+<p><strong>并行下载</strong>：和 <code>defer</code> 一样，<code>async</code> 脚本的下载过程与 HTML 解析并行，不阻塞页面渲染。</p>
+</li>
+<li>
+<p><strong>立即执行</strong>：<strong>关键区别来了</strong>。一旦 <code>async</code> 脚本下载完成，它会<strong>立即执行</strong>，而不管 HTML 文档是否解析完毕。这可能会暂停 HTML 的解析。</p>
+</li>
+<li>
+<p><strong>无序执行</strong>：如果有多个 <code>async</code> 脚本，它们的执行顺序是不可预测的。哪个先下载完，哪个就先执行。这被称为“竞争”或“竞速”状态。</p>
+</li>
+</ol>
+<p>async 的适用场景：</p>
+<p>它适用于那些完全独立、不依赖于其他脚本、也不需要操作 DOM 的脚本。最典型的例子：</p>
+<ul>
+<li>
+<p><strong>网站分析脚本</strong> (如 Google Analytics)</p>
+</li>
+<li>
+<p><strong>广告脚本</strong></p>
+</li>
+<li>
+<p><strong>各种追踪器</strong></p>
+</li>
+</ul>
+<p>这些脚本的共同点是：它们自己运行自己的，不关心页面结构，也不影响其他功能。早点执行或晚点执行都无所谓。</p>
+<hr>
+<h3 id="对比与抉择defer-vs-async-vs-默认"><a href="#对比与抉择defer-vs-async-vs-默认">对比与抉择：<code>defer</code> vs <code>async</code> vs 默认</a></h3>
+<p>为了彻底清晰，我们用一个表格来总结：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>HTML解析时下载</th>
+<th>阻塞HTML解析？</th>
+<th>脚本执行时机</th>
+<th>执行顺序</th>
+<th>DOM是否完备</th>
+<th>最佳用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>无</strong></td>
+<td>否（暂停解析去下载）</td>
+<td><strong>是</strong>（下载和执行都阻塞）</td>
+<td>下载后立即执行</td>
+<td>严格按顺序</td>
+<td>不一定，取决于脚本位置</td>
+<td><strong>基本不推荐使用</strong></td>
+</tr>
+<tr>
+<td><code>defer</code></td>
+<td>是（并行下载）</td>
+<td><strong>否</strong></td>
+<td>HTML解析完毕后，<code>DOMContentLoaded</code>前</td>
+<td><strong>严格按顺序</strong></td>
+<td><strong>是</strong></td>
+<td>需要操作DOM或有依赖关系的脚本</td>
+</tr>
+<tr>
+<td><code>async</code></td>
+<td>是（并行下载）</td>
+<td><strong>否</strong>（但执行时可能暂停）</td>
+<td>下载后立即执行</td>
+<td><strong>无序，谁先下完谁先执行</strong></td>
+<td>不保证</td>
+<td>独立、无依赖的第三方脚本（如分析、广告）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="我的选择建议"><a href="#我的选择建议">我的选择建议</a></h4>
+<p>对于现代 Web 开发，你应该遵循以下原则：</p>
+<ol>
+<li>
+<p><strong><code>defer</code> 是首选和默认选项</strong>：对于所有对页面功能至关重要的脚本（比如你的应用主逻辑 <code>app.js</code>、UI框架 <code>vue.js</code> 等），都应该使用 <code>defer</code> 并将它们放在 <code>&#x3C;head></code> 中。这既能获得最佳的加载性能，又能保证脚本逻辑的稳定可靠。</p>
+</li>
+<li>
+<p><strong><code>async</code> 用于特定场景</strong>：只在你加载那些完全独立的第三方脚本时，才考虑使用 <code>async</code>。</p>
+</li>
+<li>
+<p><strong>避免无属性的脚本</strong>：尽量避免在 <code>&#x3C;head></code> 中使用无属性的 <code>&#x3C;script></code>。如果你确实有极少数情况，需要在页面渲染的某个特定点立即执行一段代码（比如一个修复早期渲染问题的 polyfill），可以考虑将其放在 <code>&#x3C;body></code> 的末尾，但这通常不如 <code>defer</code> 优雅。</p>
+</li>
+</ol>
+<hr>
+<h3 id="其他重要属性"><a href="#其他重要属性">其他重要属性</a></h3>
+<p>除了 <code>defer</code> 和 <code>async</code>，还有一些属性你也应该了解。</p>
+<ul>
+<li>
+<p><strong><code>src</code> (source)</strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：指定外部脚本文件的 URL。这是最基本、最常用的属性。如果一个 <code>&#x3C;script></code> 标签没有 <code>src</code> 属性，那么浏览器会将其视为内联脚本，并执行标签内的代码。</p>
+</li>
+<li>
+<p><strong>示例</strong>：<code>&#x3C;script src="/path/to/script.js">&#x3C;/script></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>type</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：声明脚本的 MIME 类型。在 HTML5 中，其默认值是 <code>text/javascript</code>，所以你通常可以省略它。</p>
+</li>
+<li>
+<p><strong>重要特例 <code>type="module"</code></strong>：这是现代 JavaScript 的一个重要属性。它告诉浏览器这个脚本是一个 ES 模块。</p>
+<ul>
+<li>
+<p>模块脚本默认行为类似 <code>defer</code>（异步加载，DOM 解析后执行），无需再额外添加 <code>defer</code>。</p>
+</li>
+<li>
+<p>它有自己的顶级作用域，不会污染全局命名空间。</p>
+</li>
+<li>
+<p>可以使用 <code>import</code> 和 <code>export</code> 关键字。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>：<code>&#x3C;script type="module" src="main.mjs">&#x3C;/script></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>nomodule</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：这是一个布尔属性，用于为不支持 ES 模块的老旧浏览器提供一个回退脚本。支持 <code>type="module"</code> 的现代浏览器会忽略带有 <code>nomodule</code> 属性的脚本。</p>
+</li>
+<li>
+<p><strong>示例</strong>：</p>
+<p>HTML</p>
+<pre><code class="hljs language-php-template"><span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"app.mjs"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">nomodule</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"legacy-app.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>integrity</code> (Subresource Integrity - SRI)</strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：一个重要的安全特性。它允许你提供一个文件内容的哈希值。浏览器在下载脚本后，会计算其哈希值并与你提供的值进行比对。如果不匹配，浏览器将拒绝执行该脚本。</p>
+</li>
+<li>
+<p><strong>为什么需要？</strong>：这可以防止 CDN（内容分发网络）被攻击者篡改后，向你的用户提供恶意脚本。</p>
+</li>
+<li>
+<p><strong>示例</strong>：<code>&#x3C;script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">&#x3C;/script></code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>crossorigin</code></strong></p>
+<ul>
+<li>
+<p><strong>作用</strong>：当脚本从一个与你的网站不同的源（域名）加载时，该属性用于配置 CORS（跨源资源共享）请求。</p>
+</li>
+<li>
+<p><code>anonymous</code>：默认值。发送请求时不携带任何身份凭证（如 Cookie 或 HTTP 认证）。</p>
+</li>
+<li>
+<p><code>use-credentials</code>：发送请求时会携带身份凭证。</p>
+</li>
+<li>
+<p><strong>为什么需要？</strong>：如果你想捕获跨域脚本中发生的错误详情（而不是只得到一个模糊的 "Script error."），你就必须设置 <code>crossorigin="anonymous"</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>referrerpolicy</code></strong></p>
+<ul>
+<li><strong>作用</strong>：一个更精细的隐私控制属性。它用于控制在请求脚本时，HTTP <code>Referer</code> 头部会发送哪些信息。例如，<code>no-referrer</code> 表示完全不发送来源信息。</li>
+</ul>
+</li>
+</ul>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p><code>defer</code> 是一个用于优化页面加载性能和保证脚本执行稳定性的关键属性。它通过<strong>异步下载</strong>和<strong>延迟有序执行</strong>的机制，解决了传统 <code>&#x3C;script></code> 标签阻塞页面渲染的痛点。</p>
+<p>在现代开发中，最佳实践是将你的主要脚本放在 <code>&#x3C;head></code> 中并一律使用 <code>defer</code>，而将独立的第三方脚本（如分析工具）使用 <code>async</code>。同时，结合使用 <code>type="module"</code>、<code>integrity</code> 等属性，可以构建一个既高效又安全的现代化 Web 应用。</p></div><div class="page-module__y-5DuW__article-footer"><a class="page-module__y-5DuW__back-link" href="/articles/">← 返回文章列表</a></div></div><aside class="page-module__y-5DuW__article-sidebar"><nav aria-label="文章目录" class="jsx-f4963e7009facef toc"><h4 class="jsx-f4963e7009facef toc-title">目录</h4><ul class="jsx-f4963e7009facef toc-list"><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#defer-的核心作用延迟且有序的执行" class="jsx-f4963e7009facef toc-link ">defer 的核心作用：延迟且有序的执行</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#1-默认行为无任何属性" class="jsx-f4963e7009facef toc-link ">1. 默认行为（无任何属性）</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#2-defer-的解决方案" class="jsx-f4963e7009facef toc-link ">2. defer 的解决方案</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#defer-以外的其它-script-标签属性" class="jsx-f4963e7009facef toc-link ">defer 以外的其它 Script 标签属性</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#async异步无序的执行" class="jsx-f4963e7009facef toc-link ">async：异步无序的执行</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#对比与抉择defer-vs-async-vs-默认" class="jsx-f4963e7009facef toc-link ">对比与抉择：defer vs async vs 默认</a></li><li style="padding-left:1.6rem" class="jsx-f4963e7009facef toc-item"><a href="#我的选择建议" class="jsx-f4963e7009facef toc-link ">我的选择建议</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#其他重要属性" class="jsx-f4963e7009facef toc-link ">其他重要属性</a></li><li style="padding-left:0.8rem" class="jsx-f4963e7009facef toc-item"><a href="#总结" class="jsx-f4963e7009facef toc-link ">总结</a></li></ul></nav></aside></div></article><!--$--><!--/$--></div></main><footer class="Footer-module__EZoWya__site-footer"><div class="Footer-module__EZoWya__footer-inner"><div class="Footer-module__EZoWya__footer-poetry">闲云潭影日悠悠，物换星移几度秋</div><div class="Footer-module__EZoWya__footer-meta"><span>© <!-- -->2026<!-- --> <!-- -->流年石刻</span><span class="Footer-module__EZoWya__dot">·</span><span>流年似水，石刻永恒</span></div></div></footer><script src="/_next/static/chunks/0bmby6ta573to.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[94277,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n3:I[70119,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n4:I[39756,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n5:I[98168,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"/_next/static/chunks/14787qi7nx.7q.js\"],\"default\"]\n6:I[37457,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\"]\n7:I[79520,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"\"]\ne:I[68027,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"default\",1]\n:HL[\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"style\"]\n:HL[\"/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/chunks/02f1pwhv5qrki.css\",\"style\"]\n:HL[\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"article\",\"defer%E7%AD%89html%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"article\",{\"children\":[[\"slug\",\"defer%E7%AD%89html%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css\"}],[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              (function() {\\n                var t = localStorage.getItem('theme');\\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\\n                  document.documentElement.setAttribute('data-theme', 'dark');\\n                }\\n              })();\\n            \"}}]]}],[\"$\",\"body\",null,{\"className\":\"inter_5901b7c6-module__ec5Qua__variable\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{}],[\"$\",\"main\",null,{\"style\":{\"position\":\"relative\",\"zIndex\":1,\"minHeight\":\"calc(100vh - 200px)\"},\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L6\",null,{}]}],\"templateStyles\":[],\"templateScripts\":[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0m-fjq7yr4k5u.js\",\"async\":true}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/14787qi7nx.7q.js\",\"async\":true}]],\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"Footer-module__EZoWya__site-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-poetry\",\"children\":\"闲云潭影日悠悠，物换星移几度秋\"}],[\"$\",\"div\",null,{\"className\":\"Footer-module__EZoWya__footer-meta\",\"children\":[[\"$\",\"span\",null,{\"children\":[\"© \",2026,\" \",\"流年石刻\"]}],[\"$\",\"span\",null,{\"className\":\"Footer-module__EZoWya__dot\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":\"流年似水，石刻永恒\"}]]}]]}]}],[[\"$\",\"$L7\",null,{\"src\":\"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2\"}],[\"$\",\"$L7\",null,{\"id\":\"google-analytics\",\"children\":\"window.dataLayer = window.dataLayer || [];\\n                function gtag(){dataLayer.push(arguments);}\\n                gtag('js', new Date());\\n                gtag('config', 'G-N3DJ3JTVT2');\"}]]]}]]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[\"$L8\",[\"$L9\",\"$La\"],\"$Lb\"]}],{},null,false,null]},null,false,\"$@c\"]},null,false,\"$@c\"]},null,false,null],\"$Ld\",false]],\"m\":\"$undefined\",\"G\":[\"$e\",[\"$Lf\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"ozBVcz1soOKExL08cmsFl\"}\n"])</script><script>self.__next_f.push([1,"10:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"OutletBoundary\"]\n11:\"$Sreact.suspense\"\n14:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"ViewportBoundary\"]\n16:I[97367,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"MetadataBoundary\"]\n9:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/02f1pwhv5qrki.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\na:[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/0eqp1b9heft3y.js\",\"async\":true,\"nonce\":\"$undefined\"}]\nb:[\"$\",\"$L10\",null,{\"children\":[\"$\",\"$11\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@12\"}]}]\n13:[]\nc:\"$W13\"\nd:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L14\",null,{\"children\":\"$L15\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L16\",null,{\"children\":[\"$\",\"$11\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L17\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\nf:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/0g~zs8c5~_~uf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script><script>self.__next_f.push([1,"18:I[23422,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n19:I[22016,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"\"]\n1a:T318b,"])</script><script>self.__next_f.push([1,"\u003cp\u003e我们来系统且深入地剖析 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 标签，从 \u003ccode\u003edefer\u003c/code\u003e 属性开始，并延展到所有相关的属性。\u003c/p\u003e\n\u003cp\u003e这不仅仅是关于“功能是什么”，更是关于“为什么需要它”以及“在何种场景下做出最优选择”。\u003c/p\u003e\n\u003ch3 id=\"defer-的核心作用延迟且有序的执行\"\u003e\u003ca href=\"#defer-的核心作用延迟且有序的执行\"\u003e\u003ccode\u003edefer\u003c/code\u003e 的核心作用：延迟且有序的执行\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003edefer\u003c/code\u003e 的全称是 \"defer execution\"。它的核心目的，是在不阻塞页面渲染的前提下，加载并执行 JavaScript 代码。\u003c/p\u003e\n\u003cp\u003e要理解 \u003ccode\u003edefer\u003c/code\u003e，首先要明白浏览器默认是如何处理 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 标签的。\u003c/p\u003e\n\u003ch4 id=\"1-默认行为无任何属性\"\u003e\u003ca href=\"#1-默认行为无任何属性\"\u003e1. 默认行为（无任何属性）\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e当浏览器解析 HTML 文档时，从上到下逐行处理。如果遇到一个普通的 \u003ccode\u003e\u0026#x3C;script src=\"...\"\u003e\u0026#x3C;/script\u003e\u003c/code\u003e 标签：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e停止解析\u003c/strong\u003e：浏览器会立即暂停解析后续的 HTML。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e下载脚本\u003c/strong\u003e：它会发起请求去下载该脚本文件。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e执行脚本\u003c/strong\u003e：下载完成后，立即执行这个脚本。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e继续解析\u003c/strong\u003e：脚本执行完毕后，才继续解析剩余的 HTML。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e这个过程是\u003cstrong\u003e阻塞式 (Blocking)\u003c/strong\u003e 的。如果脚本很大或者网络很慢，用户就会长时间看到一个白屏，因为浏览器被卡住，无法渲染页面的其余部分。这带来了极差的用户体验。\u003c/p\u003e\n\u003cp\u003e\u003cem\u003e(这是一个简化的示意图，红色代表阻塞)\u003c/em\u003e\u003c/p\u003e\n\u003ch4 id=\"2-defer-的解决方案\"\u003e\u003ca href=\"#2-defer-的解决方案\"\u003e2. \u003ccode\u003edefer\u003c/code\u003e 的解决方案\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e为了解决上述问题，\u003ccode\u003edefer\u003c/code\u003e 属性应运而生。当你在 script 标签上加上 \u003ccode\u003edefer\u003c/code\u003e 时，行为会变成这样：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e并行下载\u003c/strong\u003e：浏览器看到 \u003ccode\u003e\u0026#x3C;script defer src=\"...\"\u003e\u0026#x3C;/script\u003e\u003c/code\u003e，会立即开始\u003cstrong\u003e异步下载\u003c/strong\u003e脚本文件，但\u003cstrong\u003e不会停止\u003c/strong\u003e解析后续的 HTML。下载过程和 HTML 解析是并行的。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e延迟执行\u003c/strong\u003e：脚本下载完成后并不会立即执行，而是会等待整个 HTML 文档都被解析完毕（即 \u003ccode\u003eDOMContentLoaded\u003c/code\u003e 事件触发之前）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e有序执行\u003c/strong\u003e：如果页面上有多个带 \u003ccode\u003edefer\u003c/code\u003e 的脚本，它们会严格按照在 HTML 中出现的顺序来执行。第一个 \u003ccode\u003edefer\u003c/code\u003e 脚本总是先于第二个 \u003ccode\u003edefer\u003c/code\u003e 脚本执行。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003edefer\u003c/code\u003e 的核心优势：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e非阻塞渲染\u003c/strong\u003e：下载过程不影响页面渲染，用户能更快地看到完整页面结构。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eDOM可用\u003c/strong\u003e：执行时，整个 DOM 树已经构建完毕，脚本可以安全地访问页面上的任何元素。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e执行顺序保证\u003c/strong\u003e：对于有依赖关系的脚本（例如，\u003ccode\u003ejquery.js\u003c/code\u003e 必须在 \u003ccode\u003emain.js\u003c/code\u003e 之前执行），\u003ccode\u003edefer\u003c/code\u003e 能够确保正确的执行顺序。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch3 id=\"defer-以外的其它-script-标签属性\"\u003e\u003ca href=\"#defer-以外的其它-script-标签属性\"\u003e\u003ccode\u003edefer\u003c/code\u003e 以外的其它 Script 标签属性\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e除了 \u003ccode\u003edefer\u003c/code\u003e，\u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 标签还有一系列非常重要的属性。其中，与 \u003ccode\u003edefer\u003c/code\u003e 最常比较的是 \u003ccode\u003easync\u003c/code\u003e。\u003c/p\u003e\n\u003ch4 id=\"async异步无序的执行\"\u003e\u003ca href=\"#async异步无序的执行\"\u003e\u003ccode\u003easync\u003c/code\u003e：异步无序的执行\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003ccode\u003easync\u003c/code\u003e (asynchronous) 属性也用于实现非阻塞的脚本加载，但它和 \u003ccode\u003edefer\u003c/code\u003e 有一个关键区别。\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e并行下载\u003c/strong\u003e：和 \u003ccode\u003edefer\u003c/code\u003e 一样，\u003ccode\u003easync\u003c/code\u003e 脚本的下载过程与 HTML 解析并行，不阻塞页面渲染。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e立即执行\u003c/strong\u003e：\u003cstrong\u003e关键区别来了\u003c/strong\u003e。一旦 \u003ccode\u003easync\u003c/code\u003e 脚本下载完成，它会\u003cstrong\u003e立即执行\u003c/strong\u003e，而不管 HTML 文档是否解析完毕。这可能会暂停 HTML 的解析。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e无序执行\u003c/strong\u003e：如果有多个 \u003ccode\u003easync\u003c/code\u003e 脚本，它们的执行顺序是不可预测的。哪个先下载完，哪个就先执行。这被称为“竞争”或“竞速”状态。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003easync 的适用场景：\u003c/p\u003e\n\u003cp\u003e它适用于那些完全独立、不依赖于其他脚本、也不需要操作 DOM 的脚本。最典型的例子：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e网站分析脚本\u003c/strong\u003e (如 Google Analytics)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e广告脚本\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e各种追踪器\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e这些脚本的共同点是：它们自己运行自己的，不关心页面结构，也不影响其他功能。早点执行或晚点执行都无所谓。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"对比与抉择defer-vs-async-vs-默认\"\u003e\u003ca href=\"#对比与抉择defer-vs-async-vs-默认\"\u003e对比与抉择：\u003ccode\u003edefer\u003c/code\u003e vs \u003ccode\u003easync\u003c/code\u003e vs 默认\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e为了彻底清晰，我们用一个表格来总结：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e属性\u003c/th\u003e\n\u003cth\u003eHTML解析时下载\u003c/th\u003e\n\u003cth\u003e阻塞HTML解析？\u003c/th\u003e\n\u003cth\u003e脚本执行时机\u003c/th\u003e\n\u003cth\u003e执行顺序\u003c/th\u003e\n\u003cth\u003eDOM是否完备\u003c/th\u003e\n\u003cth\u003e最佳用途\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e无\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e否（暂停解析去下载）\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e是\u003c/strong\u003e（下载和执行都阻塞）\u003c/td\u003e\n\u003ctd\u003e下载后立即执行\u003c/td\u003e\n\u003ctd\u003e严格按顺序\u003c/td\u003e\n\u003ctd\u003e不一定，取决于脚本位置\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e基本不推荐使用\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003edefer\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e是（并行下载）\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e否\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eHTML解析完毕后，\u003ccode\u003eDOMContentLoaded\u003c/code\u003e前\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e严格按顺序\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e是\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e需要操作DOM或有依赖关系的脚本\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003easync\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e是（并行下载）\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e否\u003c/strong\u003e（但执行时可能暂停）\u003c/td\u003e\n\u003ctd\u003e下载后立即执行\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e无序，谁先下完谁先执行\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e不保证\u003c/td\u003e\n\u003ctd\u003e独立、无依赖的第三方脚本（如分析、广告）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch4 id=\"我的选择建议\"\u003e\u003ca href=\"#我的选择建议\"\u003e我的选择建议\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e对于现代 Web 开发，你应该遵循以下原则：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003edefer\u003c/code\u003e 是首选和默认选项\u003c/strong\u003e：对于所有对页面功能至关重要的脚本（比如你的应用主逻辑 \u003ccode\u003eapp.js\u003c/code\u003e、UI框架 \u003ccode\u003evue.js\u003c/code\u003e 等），都应该使用 \u003ccode\u003edefer\u003c/code\u003e 并将它们放在 \u003ccode\u003e\u0026#x3C;head\u003e\u003c/code\u003e 中。这既能获得最佳的加载性能，又能保证脚本逻辑的稳定可靠。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003easync\u003c/code\u003e 用于特定场景\u003c/strong\u003e：只在你加载那些完全独立的第三方脚本时，才考虑使用 \u003ccode\u003easync\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e避免无属性的脚本\u003c/strong\u003e：尽量避免在 \u003ccode\u003e\u0026#x3C;head\u003e\u003c/code\u003e 中使用无属性的 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e。如果你确实有极少数情况，需要在页面渲染的某个特定点立即执行一段代码（比如一个修复早期渲染问题的 polyfill），可以考虑将其放在 \u003ccode\u003e\u0026#x3C;body\u003e\u003c/code\u003e 的末尾，但这通常不如 \u003ccode\u003edefer\u003c/code\u003e 优雅。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch3 id=\"其他重要属性\"\u003e\u003ca href=\"#其他重要属性\"\u003e其他重要属性\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e除了 \u003ccode\u003edefer\u003c/code\u003e 和 \u003ccode\u003easync\u003c/code\u003e，还有一些属性你也应该了解。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003esrc\u003c/code\u003e (source)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：指定外部脚本文件的 URL。这是最基本、最常用的属性。如果一个 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 标签没有 \u003ccode\u003esrc\u003c/code\u003e 属性，那么浏览器会将其视为内联脚本，并执行标签内的代码。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003ccode\u003e\u0026#x3C;script src=\"/path/to/script.js\"\u003e\u0026#x3C;/script\u003e\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003etype\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：声明脚本的 MIME 类型。在 HTML5 中，其默认值是 \u003ccode\u003etext/javascript\u003c/code\u003e，所以你通常可以省略它。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e重要特例 \u003ccode\u003etype=\"module\"\u003c/code\u003e\u003c/strong\u003e：这是现代 JavaScript 的一个重要属性。它告诉浏览器这个脚本是一个 ES 模块。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e模块脚本默认行为类似 \u003ccode\u003edefer\u003c/code\u003e（异步加载，DOM 解析后执行），无需再额外添加 \u003ccode\u003edefer\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e它有自己的顶级作用域，不会污染全局命名空间。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e可以使用 \u003ccode\u003eimport\u003c/code\u003e 和 \u003ccode\u003eexport\u003c/code\u003e 关键字。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003ccode\u003e\u0026#x3C;script type=\"module\" src=\"main.mjs\"\u003e\u0026#x3C;/script\u003e\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003enomodule\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：这是一个布尔属性，用于为不支持 ES 模块的老旧浏览器提供一个回退脚本。支持 \u003ccode\u003etype=\"module\"\u003c/code\u003e 的现代浏览器会忽略带有 \u003ccode\u003enomodule\u003c/code\u003e 属性的脚本。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003c/p\u003e\n\u003cp\u003eHTML\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-php-template\"\u003e\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003escript\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003etype\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"module\"\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003esrc\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"app.mjs\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003escript\u003c/span\u003e\u003e\u003c/span\u003e\n\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003escript\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003enomodule\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003esrc\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"legacy-app.js\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003escript\u003c/span\u003e\u003e\u003c/span\u003e\n\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003eintegrity\u003c/code\u003e (Subresource Integrity - SRI)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：一个重要的安全特性。它允许你提供一个文件内容的哈希值。浏览器在下载脚本后，会计算其哈希值并与你提供的值进行比对。如果不匹配，浏览器将拒绝执行该脚本。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e为什么需要？\u003c/strong\u003e：这可以防止 CDN（内容分发网络）被攻击者篡改后，向你的用户提供恶意脚本。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：\u003ccode\u003e\u0026#x3C;script src=\"https://code.jquery.com/jquery-3.6.0.min.js\" integrity=\"sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=\" crossorigin=\"anonymous\"\u003e\u0026#x3C;/script\u003e\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003ecrossorigin\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e作用\u003c/strong\u003e：当脚本从一个与你的网站不同的源（域名）加载时，该属性用于配置 CORS（跨源资源共享）请求。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eanonymous\u003c/code\u003e：默认值。发送请求时不携带任何身份凭证（如 Cookie 或 HTTP 认证）。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003euse-credentials\u003c/code\u003e：发送请求时会携带身份凭证。\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e为什么需要？\u003c/strong\u003e：如果你想捕获跨域脚本中发生的错误详情（而不是只得到一个模糊的 \"Script error.\"），你就必须设置 \u003ccode\u003ecrossorigin=\"anonymous\"\u003c/code\u003e。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003ereferrerpolicy\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e作用\u003c/strong\u003e：一个更精细的隐私控制属性。它用于控制在请求脚本时，HTTP \u003ccode\u003eReferer\u003c/code\u003e 头部会发送哪些信息。例如，\u003ccode\u003eno-referrer\u003c/code\u003e 表示完全不发送来源信息。\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"总结\"\u003e\u003ca href=\"#总结\"\u003e总结\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003edefer\u003c/code\u003e 是一个用于优化页面加载性能和保证脚本执行稳定性的关键属性。它通过\u003cstrong\u003e异步下载\u003c/strong\u003e和\u003cstrong\u003e延迟有序执行\u003c/strong\u003e的机制，解决了传统 \u003ccode\u003e\u0026#x3C;script\u003e\u003c/code\u003e 标签阻塞页面渲染的痛点。\u003c/p\u003e\n\u003cp\u003e在现代开发中，最佳实践是将你的主要脚本放在 \u003ccode\u003e\u0026#x3C;head\u003e\u003c/code\u003e 中并一律使用 \u003ccode\u003edefer\u003c/code\u003e，而将独立的第三方脚本（如分析工具）使用 \u003ccode\u003easync\u003c/code\u003e。同时，结合使用 \u003ccode\u003etype=\"module\"\u003c/code\u003e、\u003ccode\u003eintegrity\u003c/code\u003e 等属性，可以构建一个既高效又安全的现代化 Web 应用。\u003c/p\u003e"])</script><script>self.__next_f.push([1,"8:[[\"$\",\"$L18\",null,{}],[\"$\",\"article\",null,{\"className\":\"container page-module__y-5DuW__article-page\",\"children\":[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-layout\",\"children\":[[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-main\",\"children\":[[\"$\",\"header\",null,{\"className\":\"page-module__y-5DuW__article-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"$undefined\",\"children\":[[\"$\",\"span\",null,{\"className\":\"$undefined\",\"children\":\"📂\"}],[[\"$\",\"$L19\",\"前端开发/html\",{\"href\":\"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/html/\",\"className\":\"$undefined\",\"children\":\"前端开发 / html\"}]]]}],[\"$\",\"h1\",null,{\"className\":\"page-module__y-5DuW__article-title\",\"children\":\"defer等html标签属性\"}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-meta\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"2025-07-29T00:00:00.000Z\",\"children\":\"2025年7月29日\"}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[2033,\" 字\"]}],[\"$\",\"span\",null,{\"className\":\"page-module__y-5DuW__sep\",\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[\"约 \",7,\" 分钟\"]}]]}],[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-tags\",\"children\":[[\"$\",\"span\",\"Obsidian\",{\"className\":\"page-module__y-5DuW__tag\",\"children\":\"Obsidian\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose page-module__y-5DuW__article-content\",\"dangerouslySetInnerHTML\":{\"__html\":\"$1a\"}}],\"$L1b\",\"$L1c\"]}],\"$L1d\"]}]}]]\n"])</script><script>self.__next_f.push([1,"1e:I[34574,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n1f:I[55132,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\",\"/_next/static/chunks/0eqp1b9heft3y.js\"],\"default\"]\n1b:[\"$\",\"$L1e\",null,{}]\n1c:[\"$\",\"div\",null,{\"className\":\"page-module__y-5DuW__article-footer\",\"children\":[\"$\",\"$L19\",null,{\"href\":\"/articles/\",\"className\":\"page-module__y-5DuW__back-link\",\"children\":\"← 返回文章列表\"}]}]\n1d:[\"$\",\"aside\",null,{\"className\":\"page-module__y-5DuW__article-sidebar\",\"children\":[\"$\",\"$L1f\",null,{\"headings\":[{\"level\":3,\"id\":\"defer-的核心作用延迟且有序的执行\",\"text\":\"defer 的核心作用：延迟且有序的执行\"},{\"level\":4,\"id\":\"1-默认行为无任何属性\",\"text\":\"1. 默认行为（无任何属性）\"},{\"level\":4,\"id\":\"2-defer-的解决方案\",\"text\":\"2. defer 的解决方案\"},{\"level\":3,\"id\":\"defer-以外的其它-script-标签属性\",\"text\":\"defer 以外的其它 Script 标签属性\"},{\"level\":4,\"id\":\"async异步无序的执行\",\"text\":\"async：异步无序的执行\"},{\"level\":3,\"id\":\"对比与抉择defer-vs-async-vs-默认\",\"text\":\"对比与抉择：defer vs async vs 默认\"},{\"level\":4,\"id\":\"我的选择建议\",\"text\":\"我的选择建议\"},{\"level\":3,\"id\":\"其他重要属性\",\"text\":\"其他重要属性\"},{\"level\":3,\"id\":\"总结\",\"text\":\"总结\"}]}]}]\n"])</script><script>self.__next_f.push([1,"15:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"20:I[27201,[\"/_next/static/chunks/0j8g4_qst9ksd.js\",\"/_next/static/chunks/0d3shmwh5_nmn.js\"],\"IconMark\"]\n12:null\n17:[[\"$\",\"title\",\"0\",{\"children\":\"defer等html标签属性 | 流年石刻\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"我们来系统且深入地剖析 \u003cscript 标签，从 defer 属性开始，并延展到所有相关的属性。 这不仅仅是关于“功能是什么”，更是关于“为什么需要它”以及“在何种场景下做出最优选择”。  defer 的核心作用：延迟且有序的执行 defe…\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"$L20\",\"4\",{}]]\n"])</script></body></html>

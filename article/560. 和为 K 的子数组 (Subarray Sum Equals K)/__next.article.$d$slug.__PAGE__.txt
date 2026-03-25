@@ -1,0 +1,243 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3080,<h2 id="560-和为-k-的子数组-subarray-sum-equals-k"><a href="#560-和为-k-的子数组-subarray-sum-equals-k">560. 和为 K 的子数组 (Subarray Sum Equals K)</a></h2>
+<p><strong>难度：</strong> 🟡 中等</p>
+<h2 id="-题目描述"><a href="#-题目描述">📖 题目描述</a></h2>
+<p>给你一个整数数组 $nums$ 和一个整数 $k$，请你统计并返回 <strong>该数组中和为 $k$ 的子数组的个数</strong>。</p>
+<blockquote>
+<p><strong>子数组</strong> 是数组中元素的 <strong>连续</strong> 非空序列。</p>
+</blockquote>
+<hr>
+<h2 id="-示例"><a href="#-示例">📥 示例</a></h2>
+<p><strong>示例 1：</strong></p>
+<blockquote>
+<p><strong>输入：</strong> <code>nums = [1, 1, 1]</code>, <code>k = 2</code></p>
+<p><strong>输出：</strong> <code>2</code></p>
+<p><strong>解释：</strong> 符合条件的子数组为 <code>[1, 1]</code>（前两个）和 <code>[1, 1]</code>（后两个）。</p>
+</blockquote>
+<p><strong>示例 2：</strong></p>
+<blockquote>
+<p><strong>输入：</strong> <code>nums = [1, 2, 3]</code>, <code>k = 3</code></p>
+<p><strong>输出：</strong> <code>2</code></p>
+<p><strong>解释：</strong> 符合条件的子数组为 <code>[1, 2]</code> 和 <code>[3]</code>。</p>
+</blockquote>
+<hr>
+<h2 id="-提示"><a href="#-提示">📋 提示</a></h2>
+<ul>
+<li>
+<p>$1 \le nums.length \le 2 \times 10^4$</p>
+</li>
+<li>
+<p>$-1000 \le nums[i] \le 1000$</p>
+</li>
+<li>
+<p>$-10^7 \le k \le 10^7$</p>
+</li>
+</ul>
+<hr>
+<h2 id="-核心解法回顾前缀和--哈希表"><a href="#-核心解法回顾前缀和--哈希表">💡 核心解法回顾（前缀和 + 哈希表）</a></h2>
+<ul>
+<li>
+<p><strong>基本原理：</strong> 子数组和 $\text{sum}(i, j) = \text{prefixSum}[j] - \text{prefixSum}[i-1]$。</p>
+</li>
+<li>
+<p><strong>等式转换：</strong> 我们要找的是 $\text{prefixSum}[j] - \text{prefixSum}[i-1] = k$，即 $\text{prefixSum}[i-1] = \text{prefixSum}[j] - k$。</p>
+</li>
+<li>
+<p><strong>优化技巧：</strong> 使用哈希表记录<strong>前缀和出现的次数</strong>，将 $O(n^2)$ 的搜索降低到 $O(n)$。</p>
+</li>
+</ul>
+<hr>
+<p>解决“和为 K 的子数组”这类问题，最直观的暴力解法是嵌套循环（$O(n^2)$），但在数据量较大（$2 \times 10^4$）且包含负数的情况下，最优雅且高效的方案是利用<strong>前缀和 (Prefix Sum)</strong> 结合 <strong>哈希表 (Hash Map)</strong>。</p>
+<p>由于数组中存在负数，传统的“滑动窗口”法在这里行不通（因为窗口内数值的和不具有单调性）。</p>
+<hr>
+<h2 id="核心解题思路"><a href="#核心解题思路">核心解题思路</a></h2>
+<h4 id="1-前缀和的物理意义"><a href="#1-前缀和的物理意义">1. 前缀和的物理意义</a></h4>
+<p>假设 $P[i]$ 是数组从开头到下标 $i$ 的元素之和。那么，任意一个连续子数组 $[j, i]$ 的和可以表示为：</p>
+<p>$$\text{Sum}(j, i) = P[i] - P[j-1]$$</p>
+<p>我们的目标是找到有多少组 $(j, i)$ 满足：</p>
+<p>$$P[i] - P[j-1] = k$$</p>
+<h4 id="2-等式变形"><a href="#2-等式变形">2. 等式变形</a></h4>
+<p>将上面的公式稍作变形：</p>
+<p>$$P[j-1] = P[i] - k$$</p>
+<p>这意味着：当我们遍历到下标 $i$ 时，如果在此之前（下标 $0$ 到 $i-1$）出现过前缀和等于 $P[i] - k$ 的情况，那么从那个位置到当前位置的子数组和就一定等于 $k$。</p>
+<h4 id="3-哈希表的妙用"><a href="#3-哈希表的妙用">3. 哈希表的妙用</a></h4>
+<p>我们不需要真的去记录所有的 $P[j-1]$，只需要用一个哈希表来存储<strong>每个前缀和出现的次数</strong>。</p>
+<ul>
+<li>
+<p><strong>Key</strong>: 前缀和的值。</p>
+</li>
+<li>
+<p><strong>Value</strong>: 该前缀和出现的频率。</p>
+</li>
+</ul>
+<p><strong>特别注意：</strong> 在开始遍历前，需要先在哈希表中存入 <code>{0: 1}</code>。这代表前缀和为 0 已经出现过一次（用于处理从数组第一个元素开始就满足和为 $k$ 的情况）。</p>
+<hr>
+<h2 id="javascript-代码实现"><a href="#javascript-代码实现">JavaScript 代码实现</a></h2>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number[]</span>} <span class="hljs-variable">nums</span>
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">number</span>} <span class="hljs-variable">k</span>
+ * <span class="hljs-doctag">@return</span> {<span class="hljs-type">number</span>}
+ */</span>
+<span class="hljs-keyword">var</span> subarraySum = <span class="hljs-keyword">function</span>(<span class="hljs-params">nums, k</span>) {
+    <span class="hljs-comment">// map 用于存储前缀和及其出现的次数</span>
+    <span class="hljs-keyword">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+    <span class="hljs-comment">// 初始化：前缀和为 0 出现了 1 次</span>
+    map.<span class="hljs-title function_">set</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+    
+    <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">let</span> currentSum = <span class="hljs-number">0</span>;
+    
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> num <span class="hljs-keyword">of</span> nums) {
+        <span class="hljs-comment">// 1. 累加当前元素，得到当前的前缀和</span>
+        currentSum += num;
+        
+        <span class="hljs-comment">// 2. 检查 map 中是否存在 (currentSum - k)</span>
+        <span class="hljs-comment">// 如果存在，说明找到了符合条件的子数组</span>
+        <span class="hljs-keyword">if</span> (map.<span class="hljs-title function_">has</span>(currentSum - k)) {
+            count += map.<span class="hljs-title function_">get</span>(currentSum - k);
+        }
+        
+        <span class="hljs-comment">// 3. 更新当前前缀和在 map 中的出现次数</span>
+        map.<span class="hljs-title function_">set</span>(currentSum, (map.<span class="hljs-title function_">get</span>(currentSum) || <span class="hljs-number">0</span>) + <span class="hljs-number">1</span>);
+    }
+    
+    <span class="hljs-keyword">return</span> count;
+};
+</code></pre>
+<hr>
+<h2 id="复杂度分析"><a href="#复杂度分析">复杂度分析</a></h2>
+<ol>
+<li>
+<p><strong>时间复杂度：$O(n)$</strong></p>
+<p>我们只需要遍历一遍数组。哈希表的插入和查找操作在平均情况下都是 $O(1)$ 的。</p>
+</li>
+<li>
+<p><strong>空间复杂度：$O(n)$</strong></p>
+<p>在最坏情况下（所有前缀和都不相同），哈希表需要存储 $n$ 个不同的键值对。</p>
+</li>
+</ol>
+<h2 id="举例演示"><a href="#举例演示">举例演示</a></h2>
+<p>以 <code>nums = [1, 2, 3], k = 3</code> 为例：</p>
+<ol>
+<li>
+<p>初始化 <code>map = {0: 1}</code>, <code>count = 0</code>, <code>currentSum = 0</code>。</p>
+</li>
+<li>
+<p>遍历 <code>1</code>: <code>currentSum = 1</code>。检查 <code>1 - 3 = -2</code> 不在 map 中。更新 <code>map = {0:1, 1:1}</code>。</p>
+</li>
+<li>
+<p>遍历 <code>2</code>: <code>currentSum = 3</code>。检查 <code>3 - 3 = 0</code> 在 map 中，<code>count += map.get(0)</code> -> <code>count = 1</code>。更新 <code>map = {0:1, 1:1, 3:1}</code>。</p>
+</li>
+<li>
+<p>遍历 <code>3</code>: <code>currentSum = 6</code>。检查 <code>6 - 3 = 3</code> 在 map 中，<code>count += map.get(3)</code> -> <code>count = 2</code>。更新 <code>map = {0:1, 1:1, 3:1, 6:1}</code>。</p>
+</li>
+<li>
+<p>结果返回 <code>2</code>。</p>
+</li>
+</ol>
+<p>这种方法的精妙之处在于它将<strong>区间求和问题</strong>转化为了<strong>频率计数问题</strong>，从而绕过了 $O(n^2)$ 的暴力枚举。
+这种“一看就懂，一写就废”或者“过几天就忘”的情况非常普遍。这是因为前缀和+哈希表的解法虽然代码短，但它违背了我们直观的“切片式”思考逻辑。</p>
+<p>为了让你彻底记住并理解，我们换一个视角，用**“修路”<strong>和</strong>“找标记”**的逻辑来重新解构它。</p>
+<hr>
+<h2 id="1-建立直觉路程与里程碑"><a href="#1-建立直觉路程与里程碑">1. 建立直觉：路程与里程碑</a></h2>
+<p>想象你在一条公路上开车，路边每隔一段距离有一个里程碑。</p>
+<ul>
+<li>
+<p><strong>前缀和（Prefix Sum）</strong>：就是你仪表盘上显示的<strong>总行程</strong>。</p>
+</li>
+<li>
+<p><strong>子数组（Subarray）</strong>：就是你从<strong>某一个里程碑 A</strong> 到 <strong>另一个里程碑 B</strong> 之间行驶的那段路。</p>
+</li>
+</ul>
+<p>如果你想找一段刚好 <strong>$k$ 公里</strong>长的路，你会怎么做？</p>
+<ol>
+<li>
+<p>你不需要每次停下来往回量。</p>
+</li>
+<li>
+<p>你只需要看一眼现在的总里程 $S$。</p>
+</li>
+<li>
+<p>然后问自己：“在之前路过的里程碑里，有没有哪个里程碑的记录恰好是 $S - k$ ？”</p>
+</li>
+<li>
+<p>如果有，那么<strong>从那个里程碑到你现在位置的这段路，长度一定就是 $k$</strong>。</p>
+</li>
+</ol>
+<hr>
+<h2 id="2-为什么一定要用哈希表map"><a href="#2-为什么一定要用哈希表map">2. 为什么一定要用哈希表（Map）？</a></h2>
+<p>如果你每走一步，都要回头去翻所有的里程碑记录，那效率就是 $O(n^2)$。</p>
+<p>哈希表在这里的作用是**“瞬间定位”**。</p>
+<ul>
+<li>
+<p>你把路过的每一个“总里程”都随手记在一个小本子（Map）上。</p>
+</li>
+<li>
+<p>本子里记录的是：<strong>这个里程数出现了多少次</strong>。</p>
+</li>
+<li>
+<p>当你到达新位置时，你不是在找 $k$，而是在找那个<strong>能凑出 $k$ 的“旧记录”</strong>（即 $currentSum - k$）。</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-最容易忘的细节为什么要初始化-0-1"><a href="#3-最容易忘的细节为什么要初始化-0-1">3. 最容易忘的细节：为什么要初始化 <code>{0: 1}</code>？</a></h2>
+<p>这是很多人记不住的坑。</p>
+<ul>
+<li>
+<p><strong>物理意义</strong>：在你还没起步（数组一个元素都没加）时，你的总行程就是 <code>0</code>。</p>
+</li>
+<li>
+<p><strong>逻辑意义</strong>：如果数组从第一个元素开始，加到某个位置正好等于 $k$（比如 $nums=[3, 1], k=3$），此时 $currentSum = 3$。</p>
+</li>
+<li>
+<p>计算 $currentSum - k = 3 - 3 = 0$。</p>
+</li>
+<li>
+<p>如果你的 Map 里没有记录过 <code>0</code>，你就漏掉了这个从头开始的子数组。</p>
+</li>
+</ul>
+<p><strong>所以，初始化 <code>{0: 1}</code> 是为了给“从头开始就满分”的情况一个机会。</strong></p>
+<hr>
+<h2 id="4-总结成一个三步口诀"><a href="#4-总结成一个三步口诀">4. 总结成一个“三步口诀”</a></h2>
+<p>如果你下次记不住代码，就回想这三步：</p>
+<ol>
+<li>
+<p><strong>累加记录</strong>：一边走一边把路上的数加起来（<code>currentSum</code>）。</p>
+</li>
+<li>
+<p><strong>回头查账</strong>：看看 Map 里有没有我的“差值伙伴”（<code>currentSum - k</code>）。有几个，就加几个。</p>
+</li>
+<li>
+<p><strong>登记入库</strong>：把自己当前的这个总和也记到 Map 里，给后面的人当“伙伴”。</p>
+</li>
+</ol>
+<hr>
+<h2 id="5-什么时候该想到这个套路"><a href="#5-什么时候该想到这个套路">5. 什么时候该想到这个套路？</a></h2>
+<p>只要题目满足以下两个条件，脑子里就应该跳出这个方案：</p>
+<ol>
+<li>
+<p><strong>关键词</strong>：连续子数组、求和、等于 $k$。</p>
+</li>
+<li>
+<p><strong>元素特征</strong>：数组里有<strong>负数</strong>（这意味着你不能用简单的滑动窗口，因为窗口里的和会忽大忽小，没有单调性）。</p>
+</li>
+</ol>
+<hr>
+<h2 id="思考一个变式"><a href="#思考一个变式">思考一个变式</a></h2>
+<p>如果题目改成了：<strong>“返回和为 k 的最长子数组的长度”</strong>。</p>
+<p>思路是一样的，但 Map 里存的就不再是“次数”了，而是**“第一次出现这个前缀和的下标”**。因为我们要算长度，所以需要下标差。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/算法",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%AE%97%E6%B3%95/","children":"前端开发 / 算法"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"560. 和为 K 的子数组 (Subarray Sum Equals K)"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-17T00:00:00.000Z","children":"2026年3月17日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1683," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":2,"id":"560-和为-k-的子数组-subarray-sum-equals-k","text":"560. 和为 K 的子数组 (Subarray Sum Equals K)"},{"level":2,"id":"-题目描述","text":"📖 题目描述"},{"level":2,"id":"-示例","text":"📥 示例"},{"level":2,"id":"-提示","text":"📋 提示"},{"level":2,"id":"-核心解法回顾前缀和--哈希表","text":"💡 核心解法回顾（前缀和 + 哈希表）"},{"level":2,"id":"核心解题思路","text":"核心解题思路"},{"level":4,"id":"1-前缀和的物理意义","text":"1. 前缀和的物理意义"},{"level":4,"id":"2-等式变形","text":"2. 等式变形"},{"level":4,"id":"3-哈希表的妙用","text":"3. 哈希表的妙用"},{"level":2,"id":"javascript-代码实现","text":"JavaScript 代码实现"},{"level":2,"id":"复杂度分析","text":"复杂度分析"},{"level":2,"id":"举例演示","text":"举例演示"},{"level":2,"id":"1-建立直觉路程与里程碑","text":"1. 建立直觉：路程与里程碑"},{"level":2,"id":"2-为什么一定要用哈希表map","text":"2. 为什么一定要用哈希表（Map）？"},{"level":2,"id":"3-最容易忘的细节为什么要初始化-0-1","text":"3. 最容易忘的细节：为什么要初始化 {0: 1}？"},{"level":2,"id":"4-总结成一个三步口诀","text":"4. 总结成一个“三步口诀”"},{"level":2,"id":"5-什么时候该想到这个套路","text":"5. 什么时候该想到这个套路？"},{"level":2,"id":"思考一个变式","text":"思考一个变式"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

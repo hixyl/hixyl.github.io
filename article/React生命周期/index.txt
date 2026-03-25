@@ -1,0 +1,194 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T2cc4,<p>对于初始渲染数据的获取，放在哪个生命周期是一个非常核心且重要的问题。答案根据你使用的组件类型（函数组件或类组件）而有所不同。</p>
+<p><strong>总的来说，最佳实践是放在组件“挂载完成”的那个时间点。</strong></p>
+<hr>
+<h3 id="最佳选择-现代-react函数组件中的-useeffect"><a href="#最佳选择-现代-react函数组件中的-useeffect">最佳选择 (现代 React)：函数组件中的 <code>useEffect</code></a></h3>
+<p>在现代的 React 开发中，我们首选函数组件和 Hooks。对于初始数据获取，你应该使用 <code>useEffect</code> Hook，并给它一个空的依赖数组 <code>[]</code>。</p>
+<ul>
+<li>
+<p><strong>生命周期：</strong> <code>useEffect(() => { ... }, [])</code></p>
+</li>
+<li>
+<p><strong>何时执行：</strong> 它会在组件的首次渲染（挂载）完成后执行，且<strong>只会执行一次</strong>。</p>
+</li>
+</ul>
+<p><strong>为什么是这里？</strong></p>
+<ol>
+<li>
+<p><strong>不阻塞渲染：</strong> 组件会先完成它的首次渲染（例如，显示一个 "Loading..." 的界面），然后 <code>useEffect</code> 里的代码才会执行。这保证了用户能立刻看到页面内容，而不是等待数据返回时看到一个白屏。</p>
+</li>
+<li>
+<p><strong>副作用隔离：</strong> 数据获取是一种“副作用”（Side Effect），<code>useEffect</code> 的设计初衷就是用来处理这些副作用。</p>
+</li>
+<li>
+<p><strong>防止重复获取：</strong> 空的依赖数组 <code>[]</code> 告诉 React，这个 effect 不依赖于任何 props 或 state，因此它只需要在组件“出生”时运行一次，之后无论组件如何更新，都不会再次运行。</p>
+</li>
+</ol>
+<p><strong>代码示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 1. 初始化 state，初始值为 null 或一个空状态</span>
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+
+  <span class="hljs-comment">// 2. 使用 useEffect 获取初始数据</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-comment">// 定义一个异步函数来获取数据</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchUserData</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://api.example.com/user/1'</span>);
+        <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-title function_">setUser</span>(data); <span class="hljs-comment">// 3. 数据获取成功后，更新 state</span>
+      } <span class="hljs-keyword">catch</span> (error) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"Failed to fetch user data:"</span>, error);
+      } <span class="hljs-keyword">finally</span> {
+        <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>); <span class="hljs-comment">// 4. 无论成功与否，结束 loading 状态</span>
+      }
+    };
+
+    <span class="hljs-title function_">fetchUserData</span>(); <span class="hljs-comment">// 执行数据获取</span>
+
+  }, []); <span class="hljs-comment">// &#x3C;-- 空依赖数组是关键，确保只在初始渲染后执行一次</span>
+
+  <span class="hljs-comment">// 5. 根据 state 渲染 UI</span>
+  <span class="hljs-keyword">if</span> (loading) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+  }
+
+  <span class="hljs-keyword">if</span> (!user) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Failed to load user.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+  }
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>Welcome, {user.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span></span>;
+}
+</code></pre>
+<hr>
+<h3 id="传统选择类组件中的-componentdidmount"><a href="#传统选择类组件中的-componentdidmount">传统选择：类组件中的 <code>componentDidMount</code></a></h3>
+<p>如果你在使用类组件（例如维护老项目），那么获取初始数据的正确位置是 <code>componentDidMount</code>。</p>
+<ul>
+<li>
+<p><strong>生命周期：</strong> <code>componentDidMount()</code></p>
+</li>
+<li>
+<p><strong>何时执行：</strong> 这个方法在组件实例被创建并插入到 DOM 后立即执行。它也只会在组件的整个生命周期中执行一次。</p>
+</li>
+</ul>
+<p>它的理念和 <code>useEffect</code> 是一样的：在组件已经呈现在屏幕上之后，再开始进行数据请求等异步操作。</p>
+<p><strong>代码示例：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserProfile</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">React.Component</span> {
+  <span class="hljs-comment">// 1. 在 constructor 中初始化 state</span>
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">props</span>) {
+    <span class="hljs-variable language_">super</span>(props);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span> = {
+      <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+      <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span>,
+    };
+  }
+
+  <span class="hljs-comment">// 2. 在 componentDidMount 中获取数据</span>
+  <span class="hljs-title function_">componentDidMount</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://api.example.com/user/1'</span>)
+      .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">response</span> =></span> response.<span class="hljs-title function_">json</span>())
+      .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">data</span> =></span> {
+        <span class="hljs-comment">// 3. 数据获取成功后，用 this.setState 更新 state</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setState</span>({ <span class="hljs-attr">user</span>: data, <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span> });
+      })
+      .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"Failed to fetch user data:"</span>, error);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setState</span>({ <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span> });
+      });
+  }
+
+  <span class="hljs-comment">// 4. render 方法根据 state 渲染 UI</span>
+  <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> { user, loading } = <span class="hljs-variable language_">this</span>.<span class="hljs-property">state</span>;
+
+    <span class="hljs-keyword">if</span> (loading) {
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+    }
+
+    <span class="hljs-keyword">if</span> (!user) {
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Failed to load user.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>Welcome, {user.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span></span>;
+  }
+}
+</code></pre>
+<hr>
+<h3 id="绝对不能放数据请求的地方"><a href="#绝对不能放数据请求的地方">绝对不能放数据请求的地方</a></h3>
+<ul>
+<li>
+<p><strong><code>render()</code> 方法 (类组件) 或函数组件的顶层作用域：</strong></p>
+<ul>
+<li><code>render</code> 必须是一个纯函数，只负责根据 <code>props</code> 和 <code>state</code> 返回 UI。在这里请求数据会导致每次 <code>state</code> 更新（比如 <code>setState({ loading: false })</code>）时都重新触发 <code>render</code>，从而再次发起请求，造成无限循环。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>constructor()</code> (类组件)：</strong></p>
+<ul>
+<li>构造函数应该只用来初始化 <code>state</code> 和绑定方法。在这里发起异步请求是一种反模式，因为在数据返回并调用 <code>setState</code> 之前，组件可能已经完成了挂载，这会使逻辑变得混乱且难以维护。</li>
+</ul>
+</li>
+</ul>
+<h3 id="结论"><a href="#结论">结论</a></h3>
+<table>
+<thead>
+<tr>
+<th>组件类型</th>
+<th><strong>最佳生命周期</strong></th>
+<th><strong>原因</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>函数组件 (推荐)</strong></td>
+<td><code>useEffect(() => { ... }, [])</code></td>
+<td>现代 React 最佳实践，用于处理副作用。</td>
+</tr>
+<tr>
+<td><strong>类组件 (传统)</strong></td>
+<td><code>componentDidMount()</code></td>
+<td>组件挂载完成后执行，且只执行一次。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最终建议：</strong> 对于任何新的开发，请使用<strong>函数组件</strong>，并将初始数据获取逻辑放在 <strong><code>useEffect</code></strong> Hook 中，并附带一个<strong>空依赖数组 <code>[]</code></strong>。这是最清晰、最符合 React 设计理念的做法。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","className":"$undefined","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React生命周期"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[995," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",4," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"最佳选择-现代-react函数组件中的-useeffect","text":"最佳选择 (现代 React)：函数组件中的 useEffect"},{"level":3,"id":"传统选择类组件中的-componentdidmount","text":"传统选择：类组件中的 componentDidMount"},{"level":3,"id":"绝对不能放数据请求的地方","text":"绝对不能放数据请求的地方"},{"level":3,"id":"结论","text":"结论"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"React生命周期 | 流年石刻"}],["$","meta","1",{"name":"description","content":"对于初始渲染数据的获取，放在哪个生命周期是一个非常核心且重要的问题。答案根据你使用的组件类型（函数组件或类组件）而有所不同。 总的来说，最佳实践是放在组件“挂载完成”的那个时间点。  传统选择：类组件中的 componentDidMount…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

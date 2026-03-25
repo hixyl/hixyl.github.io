@@ -1,0 +1,185 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T34fc,<p>好的，我们来彻底讲清楚事件代理（Event Delegation）。</p>
+<h3 id="核心思想一个生活中的比喻"><a href="#核心思想一个生活中的比喻">核心思想：一个生活中的比喻</a></h3>
+<p>想象一个公寓楼，里面住了100户人家。如果每个住户都自己去楼下信箱取快递，那就需要100个人频繁地上下楼。但更高效的方式是，快递员把所有快递都交给公寓前台（一个代理人），然后由前台根据包裹上的房号，通知对应的住户来领取。</p>
+<p>在这个比喻中：</p>
+<ul>
+<li>
+<p><strong>公寓楼</strong> (<code>&#x3C;ul></code> 或 <code>&#x3C;div></code> 容器) 就是 <strong>代理事件的父元素</strong>。</p>
+</li>
+<li>
+<p><strong>住户</strong> (<code>&#x3C;li></code> 或 <code>&#x3C;a></code> 等子元素) 就是 <strong>真正触发事件的目标元素</strong>。</p>
+</li>
+<li>
+<p><strong>前台</strong> 就是我们绑定在父元素上的 <strong>那个唯一的事件监听器</strong>。</p>
+</li>
+<li>
+<p><strong>快递包裹上的房号</strong> 就是事件对象中的 <strong><code>event.target</code></strong>，它告诉我们事件究竟是哪个住户（子元素）触发的。</p>
+</li>
+</ul>
+<p><strong>事件代理的核心就是：不给每个子元素单独设置事件监听器，而是只给它们的共同父元素设置一个监听器，利用事件冒泡原理来管理所有子元素的事件。</strong></p>
+<hr>
+<h3 id="事件代理发生在事件处理流程的哪个阶段"><a href="#事件代理发生在事件处理流程的哪个阶段">事件代理发生在事件处理流程的哪个阶段？</a></h3>
+<p><strong>事件代理主要利用了“事件冒泡（Event Bubbling）”阶段。</strong></p>
+<p>要理解这一点，必须先了解完整的DOM事件流（DOM Event Flow）。当一个事件在DOM元素上发生时，它会经历三个阶段：</p>
+<ol>
+<li>
+<p><strong>捕获阶段 (Capturing Phase):</strong> 事件从最外层的<code>window</code>对象开始，逐级“向下”传播，直到抵达真正触发事件的目标元素。这个阶段就像是上级领导在向下传达指令。</p>
+</li>
+<li>
+<p><strong>目标阶段 (Target Phase):</strong> 事件到达了目标元素（例如，你点击的那个按钮）。浏览器会执行绑定在该元素上的事件处理函数。</p>
+</li>
+<li>
+<p><strong>冒泡阶段 (Bubbling Phase):</strong> 事件从目标元素开始，逐级“向上”冒泡，直到再次回到最外层的<code>window</code>对象。这个过程就像是基层员工在向上汇报工作。</p>
+</li>
+</ol>
+<p><strong>事件代理正是抓住了第3个阶段——冒泡阶段</strong>。当子元素（如<code>&#x3C;li></code>）被点击后，它自己没有监听器，所以什么也不做。但这个点击事件会继续向上“冒泡”到父元素（如<code>&#x3C;ul></code>）。因为我们在<code>&#x3C;ul></code>上设置了监听器，所以这个监听器此时会被触发。在监听器内部，我们通过检查<code>event.target</code>（事件的真正来源），来判断是否是我们关心的那个子元素触发了事件，并执行相应的逻辑。</p>
+<p>虽然理论上也可以在捕获阶段做代理，但这么做违反直觉（事件还没到目标就开始处理），且绝大多数场景下都不需要，因此<strong>99%的事件代理实践都是基于冒泡阶段</strong>。</p>
+<hr>
+<h3 id="有什么好处"><a href="#有什么好处">有什么好处？</a></h3>
+<ol>
+<li>
+<p><strong>大幅提升性能，减少内存消耗</strong></p>
+<ul>
+<li>
+<p><strong>不使用代理：</strong> 如果一个列表有1000个<code>&#x3C;li></code>，你就需要创建1000个事件监听函数，并在内存中维护1000个绑定关系。这会占用大量内存，尤其是在移动设备上。</p>
+</li>
+<li>
+<p><strong>使用代理：</strong> 无论列表有多少个<code>&#x3C;li></code>，你都只需要创建一个函数和一个监听器。内存占用极小，性能开销也只在事件触发时有一次函数执行和判断，远优于前一种方式。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>轻松处理动态添加的元素</strong></p>
+<ul>
+<li>
+<p>这是一个非常关键的优势。假设你有一个待办事项列表，用户可以随时添加新的事项。</p>
+</li>
+<li>
+<p><strong>不使用代理：</strong> 每当一个新的<code>&#x3C;li></code>被添加到列表中时，你都必须用JavaScript再次获取这个新元素，并为它单独绑定一次事件监听器。这非常繁琐且容易出错。</p>
+</li>
+<li>
+<p><strong>使用代理：</strong> 因为事件监听器是绑定在父元素<code>&#x3C;ul></code>上的，所以无论你何时添加新的<code>&#x3C;li></code>，它都天然处于<code>&#x3C;ul></code>的管理之下。点击新的<code>&#x3C;li></code>时，事件同样会冒泡到<code>&#x3C;ul></code>并被正确处理，<strong>无需任何额外的绑定操作</strong>。代码变得极其简洁和健壮。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>代码更简洁，维护性更强</strong></p>
+<ul>
+<li>将相似的逻辑集中在一个地方（父元素的监听器）处理，而不是分散到几十上百个子元素上，使得代码结构更清晰，更易于阅读和维护。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="什么时候使用事件代理"><a href="#什么时候使用事件代理">什么时候使用事件代理？</a></h3>
+<p>了解了它的原理和好处后，使用场景就非常明确了。</p>
+<p><strong>最佳答案是：当你需要对大量相似的、或动态变化的子元素响应相同的事件时，就应该优先考虑使用事件代理。</strong></p>
+<p>具体场景包括：</p>
+<ol>
+<li>
+<p>导航菜单 (<ul> / <ol>) 和列表 (<li>)</p>
+<p>一个菜单或列表中有很多链接，你希望点击任何一个都有响应。这是最经典的用例。</p>
+</li>
+<li>
+<p>数据表格 (<table>)</p>
+<p>表格中可能有成百上千个单元格(<td>)或行(<tr>)需要响应点击、悬停等事件。给每个单元格都绑定事件是灾难性的，给整个<table>或<tbody>做代理则非常高效。</p>
+</li>
+<li>
+<p>动态生成的内容</p>
+<p>比如一个待办事项列表（To-do List）、商品评论区、无限滚动的文章列表等。这些内容都是通过JavaScript动态添加到页面上的，使用事件代理可以一劳永逸地处理所有未来新增元素的事件。</p>
+</li>
+<li>
+<p>按钮组或工具栏</p>
+<p>一个界面上有很多功能相似的按钮（比如文本编辑器的工具栏），可以将事件代理到它们的容器<div>上。</p>
+</li>
+</ol>
+<h3 id="代码实例直观对比"><a href="#代码实例直观对比">代码实例：直观对比</a></h3>
+<p>假设我们有一个简单的待办事项列表，点击事项可以将其标记为完成。</p>
+<p>HTML</p>
+<pre><code class="hljs language-php-template"><span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"todo-list"</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">li</span>></span>学习 JavaScript<span class="hljs-tag">&#x3C;/<span class="hljs-name">li</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">li</span>></span>学习 CSS<span class="hljs-tag">&#x3C;/<span class="hljs-name">li</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">li</span>></span>学习 HTML<span class="hljs-tag">&#x3C;/<span class="hljs-name">li</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">ul</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"add-item"</span>></span>添加新事项<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+</span></code></pre>
+<p><strong>方法一：不使用事件代理（低效且无法处理动态添加）</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 获取所有已存在的li</span>
+<span class="hljs-keyword">const</span> listItems = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'#todo-list li'</span>);
+
+<span class="hljs-comment">// 为每一个li绑定事件</span>
+listItems.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">item</span> =></span> {
+  item.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">style</span>.<span class="hljs-property">textDecoration</span> = <span class="hljs-string">'line-through'</span>;
+  });
+});
+
+<span class="hljs-comment">// 问题：为动态添加的li绑定事件会很麻烦</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'add-item'</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> newItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'li'</span>);
+  newItem.<span class="hljs-property">textContent</span> = <span class="hljs-string">'新添加的事项'</span>;
+  <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'todo-list'</span>).<span class="hljs-title function_">appendChild</span>(newItem);
+  <span class="hljs-comment">// 你必须在这里再次为 newItem 绑定一次事件，非常繁琐！</span>
+  newItem.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+     <span class="hljs-variable language_">this</span>.<span class="hljs-property">style</span>.<span class="hljs-property">textDecoration</span> = <span class="hljs-string">'line-through'</span>;
+  });
+});
+</code></pre>
+<p><strong>方法二：使用事件代理（高效且完美处理动态添加）</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> todoList = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'todo-list'</span>);
+
+<span class="hljs-comment">// 只在父元素上绑定一个事件监听器</span>
+todoList.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+  <span class="hljs-comment">// event.target 是真正被点击的元素</span>
+  <span class="hljs-comment">// event.currentTarget 是绑定了监听器的元素，即&#x3C;ul></span>
+
+  <span class="hljs-comment">// 检查被点击的元素是否是 li</span>
+  <span class="hljs-keyword">if</span> (event.<span class="hljs-property">target</span> &#x26;&#x26; event.<span class="hljs-property">target</span>.<span class="hljs-property">nodeName</span> === <span class="hljs-string">'LI'</span>) {
+    <span class="hljs-comment">// 是 li，执行逻辑</span>
+    event.<span class="hljs-property">target</span>.<span class="hljs-property">style</span>.<span class="hljs-property">textDecoration</span> = <span class="hljs-string">'line-through'</span>;
+  }
+});
+
+<span class="hljs-comment">// 添加新元素时，无需任何额外操作，事件会自动生效</span>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'add-item'</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> newItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'li'</span>);
+  newItem.<span class="hljs-property">textContent</span> = <span class="hljs-string">'新添加的事项'</span>;
+  todoList.<span class="hljs-title function_">appendChild</span>(newItem);
+  <span class="hljs-comment">// 看，这里什么都不用做！</span>
+});
+</code></pre>
+<p>通过对比，事件代理的优雅和强大一目了然。</p>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<ul>
+<li>
+<p><strong>是什么：</strong> 将子元素的事件监听器统一设置在其父元素上。</p>
+</li>
+<li>
+<p><strong>如何工作：</strong> 利用 <strong>事件冒泡</strong> 机制，在父元素上捕获到由子元素触发的事件。</p>
+</li>
+<li>
+<p><strong>关键点：</strong> 在父元素的监听函数中，通过 <code>event.target</code> 来识别事件的真正来源。</p>
+</li>
+<li>
+<p><strong>好处：</strong> 性能高、内存占用少、能自动为动态添加的元素绑定事件、代码更简洁。</p>
+</li>
+<li>
+<p><strong>何时使用：</strong> 处理大量相似子元素或动态增删子元素的事件时。</p>
+</li>
+</ul>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"事件代理"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1870," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"核心思想一个生活中的比喻","text":"核心思想：一个生活中的比喻"},{"level":3,"id":"事件代理发生在事件处理流程的哪个阶段","text":"事件代理发生在事件处理流程的哪个阶段？"},{"level":3,"id":"有什么好处","text":"有什么好处？"},{"level":3,"id":"什么时候使用事件代理","text":"什么时候使用事件代理？"},{"level":3,"id":"代码实例直观对比","text":"代码实例：直观对比"},{"level":3,"id":"总结","text":"总结"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

@@ -1,0 +1,356 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T5f29,<p>要彻底理解 Vue 3 的实现原理，我们需要先抛开框架的光环，回到最基础的原生 JavaScript 层面。</p>
+<p>使用原生 JavaScript 操作 DOM 时，我们通常面临两个核心痛点：</p>
+<ol>
+<li>
+<p><strong>状态同步麻烦</strong>：数据发生变化时，需要手动获取 DOM 元素并更新对应的内容（例如 <code>document.getElementById('msg').innerText = newMsg</code>）。当应用变得庞大，这种“命令式”的代码会导致逻辑极度混乱。</p>
+</li>
+<li>
+<p><strong>性能开销大</strong>：频繁、无序地直接操作真实的 DOM 元素是非常消耗性能的。</p>
+</li>
+</ol>
+<p>Vue 3 的核心本质，就是用一套精妙的 JavaScript 算法，帮开发者<strong>自动、高效地完成“数据到 DOM 的映射”</strong>。</p>
+<p>这套机制可以拆解为三大核心模块：<strong>响应式系统（Reactivity）</strong>、<strong>虚拟 DOM 与渲染器（Renderer）</strong>、<strong>编译器（Compiler）</strong>。</p>
+<hr>
+<h3 id="一-响应式系统reactivity让数据变化能被感知"><a href="#一-响应式系统reactivity让数据变化能被感知">一、 响应式系统（Reactivity）：让数据变化能被“感知”</a></h3>
+<p>Vue 3 响应式系统的核心是拦截（或者说代理）对象的操作。当你修改一个变量时，Vue 需要知道这个变量被修改了，从而去触发页面更新。</p>
+<p>在 Vue 3 中，这是通过 ES6 的 <code>Proxy</code> 对象实现的。<code>Proxy</code> 可以理解为在目标数据之前架设了一层“拦截网”。</p>
+<h4 id="1-核心思路依赖收集track与触发更新trigger"><a href="#1-核心思路依赖收集track与触发更新trigger">1. 核心思路：依赖收集（Track）与触发更新（Trigger）</a></h4>
+<p>假设我们有一个渲染页面的函数，它依赖了某个数据。我们希望：<strong>在渲染页面时，记录下用到了哪些数据（依赖收集）；在这些数据改变时，重新执行渲染函数（触发更新）。</strong></p>
+<p>下面是用纯原生 JavaScript 模拟 Vue 3 响应式的核心代码：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 用于存储副作用函数（例如渲染界面的函数）的全局变量</span>
+<span class="hljs-keyword">let</span> activeEffect = <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">// effect 函数：接收一个函数，并在其内部所依赖的数据发生变化时重新执行</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">effect</span>(<span class="hljs-params">fn</span>) {
+  activeEffect = fn; <span class="hljs-comment">// 将当前函数设为激活状态</span>
+  <span class="hljs-title function_">fn</span>();              <span class="hljs-comment">// 执行一次函数，这会触发内部数据的“读取”操作</span>
+  activeEffect = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 执行完毕后清除</span>
+}
+
+<span class="hljs-comment">// 依赖存储结构：WeakMap -> Map -> Set</span>
+<span class="hljs-comment">// 结构为：target (原始对象) -> key (属性名) -> Set (依赖该属性的 effect 函数集合)</span>
+<span class="hljs-keyword">const</span> targetMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">WeakMap</span>();
+
+<span class="hljs-comment">// 依赖收集函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">track</span>(<span class="hljs-params">target, key</span>) {
+  <span class="hljs-keyword">if</span> (activeEffect) {
+    <span class="hljs-keyword">let</span> depsMap = targetMap.<span class="hljs-title function_">get</span>(target);
+    <span class="hljs-keyword">if</span> (!depsMap) {
+      targetMap.<span class="hljs-title function_">set</span>(target, (depsMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>()));
+    }
+    <span class="hljs-keyword">let</span> dep = depsMap.<span class="hljs-title function_">get</span>(key);
+    <span class="hljs-keyword">if</span> (!dep) {
+      depsMap.<span class="hljs-title function_">set</span>(key, (dep = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>()));
+    }
+    dep.<span class="hljs-title function_">add</span>(activeEffect); <span class="hljs-comment">// 将当前的 effect 函数收集起来</span>
+  }
+}
+
+<span class="hljs-comment">// 触发更新函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">trigger</span>(<span class="hljs-params">target, key</span>) {
+  <span class="hljs-keyword">const</span> depsMap = targetMap.<span class="hljs-title function_">get</span>(target);
+  <span class="hljs-keyword">if</span> (!depsMap) <span class="hljs-keyword">return</span>;
+  <span class="hljs-keyword">const</span> dep = depsMap.<span class="hljs-title function_">get</span>(key);
+  <span class="hljs-keyword">if</span> (dep) {
+    dep.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">effectFn</span> =></span> <span class="hljs-title function_">effectFn</span>()); <span class="hljs-comment">// 遍历执行所有收集到的副作用函数</span>
+  }
+}
+
+<span class="hljs-comment">// 响应式数据工厂函数 (类似 Vue 3 的 reactive)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reactive</span>(<span class="hljs-params">target</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(target, {
+    <span class="hljs-title function_">get</span>(<span class="hljs-params">target, key, receiver</span>) {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">get</span>(target, key, receiver);
+      <span class="hljs-title function_">track</span>(target, key); <span class="hljs-comment">// 核心：读取属性时，进行依赖收集</span>
+      <span class="hljs-keyword">return</span> result;
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value, receiver</span>) {
+      <span class="hljs-keyword">const</span> oldValue = target[key];
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">set</span>(target, key, value, receiver);
+      <span class="hljs-keyword">if</span> (oldValue !== value) {
+        <span class="hljs-title function_">trigger</span>(target, key); <span class="hljs-comment">// 核心：修改属性时，触发对应的依赖函数</span>
+      }
+      <span class="hljs-keyword">return</span> result;
+    }
+  });
+}
+</code></pre>
+<h4 id="2-运作流程展示"><a href="#2-运作流程展示">2. 运作流程展示</a></h4>
+<pre><code class="hljs language-mermaid">sequenceDiagram
+    participant Code as 开发者代码
+    participant Reactive as Proxy (响应式对象)
+    participant Dep as 依赖中心 (targetMap)
+    participant Effect as 副作用函数 (渲染DOM)
+
+    Code->>Effect: 1. 执行 effect(renderFn)
+    Effect->>Reactive: 2. 读取 state.msg
+    Reactive->>Dep: 3. 拦截 get，调用 track() 记录依赖
+    Code->>Reactive: 4. 修改 state.msg = 'New!'
+    Reactive->>Dep: 5. 拦截 set，调用 trigger()
+    Dep->>Effect: 6. 找出依赖该数据的 renderFn 并重新执行
+    Effect-->>Code: 7. 页面 DOM 更新
+</code></pre>
+<p>通过这段逻辑，Vue 就实现了“数据驱动”。我们只需要修改被 <code>Proxy</code> 包裹的数据，之前绑定过该数据的函数就会自动重新执行。</p>
+<hr>
+<h3 id="二-虚拟-dom-与渲染器renderer高效地绘制页面"><a href="#二-虚拟-dom-与渲染器renderer高效地绘制页面">二、 虚拟 DOM 与渲染器（Renderer）：高效地绘制页面</a></h3>
+<p>当响应式数据改变，导致渲染函数重新执行时，如果我们直接用原生 JS 去重绘整个 DOM（如 <code>innerHTML = ...</code>），性能损耗极大。</p>
+<p>为了解决这个问题，Vue 引入了<strong>虚拟 DOM（Virtual DOM）</strong>。虚拟 DOM 本质上就是一个普通的 JavaScript 对象，它用来<strong>描述</strong>真实的 DOM 结构。</p>
+<h4 id="1-什么是虚拟-dom-vnode"><a href="#1-什么是虚拟-dom-vnode">1. 什么是虚拟 DOM (VNode)</a></h4>
+<p>一段真实的 HTML 代码：</p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>></span>Hello Vue<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+</code></pre>
+<p>对应的虚拟 DOM 对象大概长这样：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> vnode = {
+  <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+  <span class="hljs-attr">props</span>: {
+    <span class="hljs-attr">class</span>: <span class="hljs-string">'box'</span>,
+    <span class="hljs-attr">id</span>: <span class="hljs-string">'app'</span>
+  },
+  <span class="hljs-attr">children</span>: <span class="hljs-string">'Hello Vue'</span>
+}
+</code></pre>
+<h4 id="2-渲染器的工作挂载mount与打补丁patch"><a href="#2-渲染器的工作挂载mount与打补丁patch">2. 渲染器的工作：挂载（Mount）与打补丁（Patch）</a></h4>
+<p>渲染器（Renderer）包含两个主要职责：</p>
+<ul>
+<li>
+<p><strong>挂载 (Mount)</strong>：把第一次生成的 VNode 转化为真实的 DOM 并插入页面。</p>
+</li>
+<li>
+<p><strong>打补丁 (Patch/Diff)</strong>：当数据变化产生新的 VNode 时，将新旧两个 VNode 进行比对（Diff 算法），<strong>只找出需要修改的地方，然后精准地去操作真实 DOM</strong>。</p>
+</li>
+</ul>
+<p>原生 JS 模拟渲染器的核心逻辑如下：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 创建真实 DOM 并挂载</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">mount</span>(<span class="hljs-params">vnode, container</span>) {
+  <span class="hljs-comment">// 1. 根据 tag 创建真实 DOM 节点，并将真实 DOM 存储在 vnode 上以便后续使用</span>
+  <span class="hljs-keyword">const</span> el = (vnode.<span class="hljs-property">el</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(vnode.<span class="hljs-property">tag</span>));
+  
+  <span class="hljs-comment">// 2. 处理属性 props</span>
+  <span class="hljs-keyword">if</span> (vnode.<span class="hljs-property">props</span>) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> vnode.<span class="hljs-property">props</span>) {
+      el.<span class="hljs-title function_">setAttribute</span>(key, vnode.<span class="hljs-property">props</span>[key]);
+    }
+  }
+
+  <span class="hljs-comment">// 3. 处理子节点 children</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> vnode.<span class="hljs-property">children</span> === <span class="hljs-string">'string'</span>) {
+    el.<span class="hljs-property">textContent</span> = vnode.<span class="hljs-property">children</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(vnode.<span class="hljs-property">children</span>)) {
+    vnode.<span class="hljs-property">children</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span> <span class="hljs-title function_">mount</span>(child, el)); <span class="hljs-comment">// 递归挂载</span>
+  }
+
+  <span class="hljs-comment">// 4. 插入容器</span>
+  container.<span class="hljs-title function_">appendChild</span>(el);
+}
+
+<span class="hljs-comment">// 核心的 Diff 算法 (精简版思路)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">patch</span>(<span class="hljs-params">n1, n2</span>) {
+  <span class="hljs-comment">// 假设两者 tag 相同，复用旧的真实 DOM 节点</span>
+  <span class="hljs-keyword">const</span> el = (n2.<span class="hljs-property">el</span> = n1.<span class="hljs-property">el</span>); 
+
+  <span class="hljs-comment">// 1. 比对 Props (属性)</span>
+  <span class="hljs-keyword">const</span> oldProps = n1.<span class="hljs-property">props</span> || {};
+  <span class="hljs-keyword">const</span> newProps = n2.<span class="hljs-property">props</span> || {};
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> newProps) { <span class="hljs-comment">// 添加或更新新属性</span>
+    <span class="hljs-keyword">if</span> (newProps[key] !== oldProps[key]) {
+      el.<span class="hljs-title function_">setAttribute</span>(key, newProps[key]);
+    }
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> oldProps) { <span class="hljs-comment">// 删除旧属性</span>
+    <span class="hljs-keyword">if</span> (!(key <span class="hljs-keyword">in</span> newProps)) {
+      el.<span class="hljs-title function_">removeAttribute</span>(key);
+    }
+  }
+
+  <span class="hljs-comment">// 2. 比对 Children (子节点) - 这里是 Diff 算法最复杂的地方</span>
+  <span class="hljs-keyword">const</span> oldChildren = n1.<span class="hljs-property">children</span>;
+  <span class="hljs-keyword">const</span> newChildren = n2.<span class="hljs-property">children</span>;
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> newChildren === <span class="hljs-string">'string'</span>) {
+    <span class="hljs-comment">// 新的是文本</span>
+    <span class="hljs-keyword">if</span> (oldChildren !== newChildren) {
+      el.<span class="hljs-property">textContent</span> = newChildren;
+    }
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(newChildren)) {
+    <span class="hljs-comment">// 新的是数组</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> oldChildren === <span class="hljs-string">'string'</span>) {
+      <span class="hljs-comment">// 旧的是文本，清空文本并挂载新数组</span>
+      el.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">''</span>;
+      newChildren.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span> <span class="hljs-title function_">mount</span>(child, el));
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// 核心：新旧都是数组，需要进行复杂的 Diff 比对</span>
+      <span class="hljs-comment">// Vue 3 这里采用的是基于 "最长递增子序列" 的快速 Diff 算法</span>
+      <span class="hljs-comment">// 目的是用最少的移动操作，把旧 DOM 序列变成新 DOM 序列</span>
+      
+      <span class="hljs-keyword">const</span> commonLength = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">min</span>(oldChildren.<span class="hljs-property">length</span>, newChildren.<span class="hljs-property">length</span>);
+      <span class="hljs-comment">// 先 patch 公共长度的部分</span>
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; commonLength; i++) {
+        <span class="hljs-title function_">patch</span>(oldChildren[i], newChildren[i]);
+      }
+      <span class="hljs-comment">// 如果新节点更多，挂载新增的</span>
+      <span class="hljs-keyword">if</span> (newChildren.<span class="hljs-property">length</span> > oldChildren.<span class="hljs-property">length</span>) {
+        newChildren.<span class="hljs-title function_">slice</span>(oldChildren.<span class="hljs-property">length</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span> <span class="hljs-title function_">mount</span>(child, el));
+      } 
+      <span class="hljs-comment">// 如果旧节点更多，卸载多余的</span>
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (oldChildren.<span class="hljs-property">length</span> > newChildren.<span class="hljs-property">length</span>) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = newChildren.<span class="hljs-property">length</span>; i &#x3C; oldChildren.<span class="hljs-property">length</span>; i++) {
+          el.<span class="hljs-title function_">removeChild</span>(oldChildren[i].<span class="hljs-property">el</span>);
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p>Vue 3 的 Diff 算法相比 Vue 2 做了大量优化，引入了<strong>静态提升</strong>、<strong>补丁标记（PatchFlag）和最长递增子序列</strong>算法。它在编译阶段就标记好了哪些节点是动态的（会发生变化），在比对时直接跳过静态节点，极大地提升了比对速度。</p>
+<hr>
+<h3 id="三-编译器compiler将模板转化为代码"><a href="#三-编译器compiler将模板转化为代码">三、 编译器（Compiler）：将模板转化为代码</a></h3>
+<p>在开发时，我们写的是 Vue 特有的模板语法：</p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">template</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"app"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{{ msg }}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">template</span>></span>
+</code></pre>
+<p>但由于虚拟 DOM 是一个 JavaScript 对象，浏览器和 JavaScript 引擎并不认识上面这种包含了 <code>{{ }}</code> 的 HTML 字符串。</p>
+<p><strong>编译器</strong>的任务就是：把上面这段类似 HTML 的字符串，转化为一个能返回虚拟 DOM 对象（VNode）的 <strong>JavaScript 函数（渲染函数 Render Function）</strong>。</p>
+<h4 id="编译的三个步骤"><a href="#编译的三个步骤">编译的三个步骤</a></h4>
+<p>代码段</p>
+<pre><code class="hljs language-mermaid">graph TD
+    A["模板字符串: '&#x3C;div> {{msg}} &#x3C;/div>'"] --> B{"(1) 解析 Parse"}
+    B --> C["AST 抽象语法树"]
+    C --> D{"(2) 转换 Transform"}
+    D --> E["带有指令解析和优化的 AST"]
+    E --> F{"(3) 生成 Generate"}
+    F --> G["JavaScript 渲染函数代码字符串"]
+</code></pre>
+<ol>
+<li>
+<p><strong>Parse (解析)</strong>：利用正则表达式等词法分析手段，把模板字符串切割，并解析成一个描述 HTML 结构的对象树，即 <strong>AST (抽象语法树)</strong>。</p>
+</li>
+<li>
+<p><strong>Transform (转换)</strong>：遍历这棵 AST，将里面的 Vue 指令（如 <code>v-if</code>, <code>v-for</code>）转换为对应的逻辑代码标记。同时在这个阶段，Vue 会进行静态分析，给动态节点打上 <code>PatchFlag</code>（补丁标记），告诉渲染器将来只用更新这些动态部位。</p>
+</li>
+<li>
+<p><strong>Generate (生成)</strong>：将处理好的 AST 转换为一段 JavaScript 原生字符串代码，并构造出一个函数。</p>
+</li>
+</ol>
+<p>经过编译器处理，最终在内存中生成的渲染函数（简化版）如下：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 编译后生成的 JS 渲染函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+    <span class="hljs-attr">props</span>: { <span class="hljs-attr">id</span>: <span class="hljs-string">'app'</span> },
+    <span class="hljs-attr">children</span>: [
+      {
+        <span class="hljs-attr">tag</span>: <span class="hljs-string">'p'</span>,
+        <span class="hljs-comment">// 这里的 this.msg 会触发响应式系统（Proxy）的 get 拦截</span>
+        <span class="hljs-attr">children</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">msg</span> 
+      }
+    ]
+  }
+}
+</code></pre>
+<hr>
+<h3 id="四-融会贯通vue-3-的完整运行链路"><a href="#四-融会贯通vue-3-的完整运行链路">四、 融会贯通：Vue 3 的完整运行链路</a></h3>
+<p>现在，我们将响应式系统、编译器、渲染器拼接在一起，这也是 Vue 3 组件从初始化到页面更新的完整工作流。</p>
+<p>代码段</p>
+<pre><code class="hljs language-mermaid">flowchart TD
+    subgraph 编译时 Compile Time
+        T[Vue 模板 Template] -- Compiler 编译 --> RF[渲染函数 Render Function]
+    end
+
+    subgraph 运行时 Runtime
+        State[响应式数据 Proxy]
+        
+        RF -- 执行并读取数据 --> State
+        State -- 依赖收集 Track --> RF
+        
+        RF -- 首次执行返回 --> VNode1[初始 Virtual DOM]
+        VNode1 -- Renderer 挂载 Mount --> DOM[真实 DOM]
+        
+        State -- 数据被修改 Trigger --> RF
+        
+        RF -- 重新执行返回 --> VNode2[新的 Virtual DOM]
+        VNode1 -. Renderer 比对 Patch .-> VNode2
+        VNode2 -- 极小化操作 --> DOM
+    end
+</code></pre>
+<p><strong>完整执行逻辑如下：</strong></p>
+<ol>
+<li>
+<p><strong>初始化阶段</strong>：</p>
+<ul>
+<li>
+<p>Vue 拿到你的组件对象。</p>
+</li>
+<li>
+<p>编译器将 <code>&#x3C;template></code> 中的内容编译为 <code>render</code> 函数。</p>
+</li>
+<li>
+<p>响应式模块把 <code>data</code> 或者 <code>setup</code> 中返回的数据通过 <code>Proxy</code> 转化为响应式对象。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>首次挂载阶段 (Mount)</strong>：</p>
+<ul>
+<li>
+<p>Vue 内部调用 <code>effect(component.render)</code>。</p>
+</li>
+<li>
+<p>由于是在 <code>effect</code> 中执行，<code>render</code> 函数运行的过程中，会读取响应式数据的属性，触发 <code>Proxy</code> 的 <code>get</code>。</p>
+</li>
+<li>
+<p>响应式系统记录下：这个数据的依赖是当前的 <code>render</code> 函数。</p>
+</li>
+<li>
+<p><code>render</code> 函数执行完毕，返回一棵完整的 VNode 树。</p>
+</li>
+<li>
+<p>渲染器的 <code>mount</code> 函数将这棵 VNode 树转换为真实的 DOM 节点，插入页面。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>更新阶段 (Update)</strong>：</p>
+<ul>
+<li>
+<p>当用户操作（如点击按钮）修改了某个响应式数据。</p>
+</li>
+<li>
+<p>触发 <code>Proxy</code> 的 <code>set</code>，响应式系统查找到依赖这个数据的 <code>render</code> 函数，并触发其重新执行。</p>
+</li>
+<li>
+<p><code>render</code> 函数再次运行，基于新的数据，生成一棵<strong>新的 VNode 树</strong>。</p>
+</li>
+<li>
+<p>渲染器的 <code>patch</code> 函数拿着旧的 VNode 和新的 VNode 进行 Diff 比对。</p>
+</li>
+<li>
+<p>比对出两棵树的差异（例如某个文本节点从 'A' 变成了 'B'），最后渲染器指挥原生 JS 去修改对应的真实 DOM 节点。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>以上就是从原生 JavaScript 出发，推导出 Vue 3 底层运作全貌的实现原理。一切看似魔法的自动更新，其基石建立在数据劫持（Proxy）、虚拟结构对比（VDOM Diff）以及编译期优化这三大支柱之上。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"vue3底层原理讲解"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2505," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-响应式系统reactivity让数据变化能被感知","text":"一、 响应式系统（Reactivity）：让数据变化能被“感知”"},{"level":4,"id":"1-核心思路依赖收集track与触发更新trigger","text":"1. 核心思路：依赖收集（Track）与触发更新（Trigger）"},{"level":4,"id":"2-运作流程展示","text":"2. 运作流程展示"},{"level":3,"id":"二-虚拟-dom-与渲染器renderer高效地绘制页面","text":"二、 虚拟 DOM 与渲染器（Renderer）：高效地绘制页面"},{"level":4,"id":"1-什么是虚拟-dom-vnode","text":"1. 什么是虚拟 DOM (VNode)"},{"level":4,"id":"2-渲染器的工作挂载mount与打补丁patch","text":"2. 渲染器的工作：挂载（Mount）与打补丁（Patch）"},{"level":3,"id":"三-编译器compiler将模板转化为代码","text":"三、 编译器（Compiler）：将模板转化为代码"},{"level":4,"id":"编译的三个步骤","text":"编译的三个步骤"},{"level":3,"id":"四-融会贯通vue-3-的完整运行链路","text":"四、 融会贯通：Vue 3 的完整运行链路"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

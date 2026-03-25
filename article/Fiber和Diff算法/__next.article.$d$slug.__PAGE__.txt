@@ -1,0 +1,197 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3ee7,<p>React 的 Fiber 架构和 Diff 算法是前端工程化中非常精妙的设计。要彻底讲清楚它们，我们需要回到问题的源头：<strong>React 为什么要引入 Fiber？它解决了什么问题？</strong></p>
+<p>在 React 16 之前，React 使用的是基于递归的对比（Stack Reconciler）。如果组件树非常深，递归的执行会长期占用浏览器的单线程。由于浏览器的渲染和 JS 执行是互斥的，如果一段 JS 执行时间超过了 16.6ms（假设 60fps），浏览器就无法按时绘制下一帧，导致页面掉帧、卡顿。</p>
+<p>Fiber 的核心目标只有一个：<strong>将同步的、不可中断的更新，变成异步的、可中断的更新。</strong></p>
+<p>为了实现这一点，React 重新实现了自己的协调（Reconciliation）引擎。我们分三个核心部分来拆解：Fiber 数据结构、双缓存树、以及基于 Fiber 的 Diff 算法。</p>
+<hr>
+<h3 id="一-什么是-fiber数据结构层"><a href="#一-什么是-fiber数据结构层">一、 什么是 Fiber？(数据结构层)</a></h3>
+<p>在过去，React 的虚拟 DOM 真的是一棵“树”。而 Fiber 将这棵树扁平化，变成了一个<strong>单链表树</strong>结构。</p>
+<p>每一个 React 元素不仅记录了父子关系，还记录了兄弟关系。这种结构使得工作可以随时暂停，并沿着指针找到回家的路（通过 <code>return</code> 指针返回父节点）。</p>
+<h4 id="1-fiber-节点的本质"><a href="#1-fiber-节点的本质">1. Fiber 节点的本质</a></h4>
+<p>我们可以把一个 Fiber 节点看作是一个工作单元。下面是一个简化的 Fiber 节点核心属性的 JS 代码表示：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">class</span> <span class="hljs-title class_">FiberNode</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">tag, pendingProps, key, mode</span>) {
+    <span class="hljs-comment">// 【1. 实例相关属性】</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">tag</span> = tag; <span class="hljs-comment">// 组件的类型（如函数组件、类组件、原生DOM等）</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">key</span> = key; <span class="hljs-comment">// React元素的key</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">type</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 对应的DOM元素类型，比如 'div', 'span'</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">stateNode</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 指向真实的DOM节点或组件实例</span>
+
+    <span class="hljs-comment">// 【2. 链表树结构】（核心：通过这三个指针实现了可中断和恢复）</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">return</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 指向父 Fiber 节点</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">child</span> = <span class="hljs-literal">null</span>;  <span class="hljs-comment">// 指向第一个子 Fiber 节点</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">sibling</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 指向右侧第一个兄弟 Fiber 节点</span>
+
+    <span class="hljs-comment">// 【3. 状态与工作相关】</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">pendingProps</span> = pendingProps; <span class="hljs-comment">// 新传入的 props</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">memoizedProps</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 上次渲染完成后的 props</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">memoizedState</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 组件的状态（比如 hooks 的链表就存在这里）</span>
+
+    <span class="hljs-comment">// 【4. 副作用与标记】</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">flags</span> = <span class="hljs-number">0</span>; <span class="hljs-comment">// 记录当前节点需要做什么操作（插入、更新、删除等，以前叫 effectTag）</span>
+    
+    <span class="hljs-comment">// 【5. 双缓存机制】</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">alternate</span> = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 指向另一个状态的自己（current &#x3C;-> workInProgress）</span>
+  }
+}
+</code></pre>
+<h4 id="2-图解-fiber-链表结构"><a href="#2-图解-fiber-链表结构">2. 图解 Fiber 链表结构</a></h4>
+<p>这种设计被称为“子节点指向父节点，父节点只指向第一个子节点，子节点指向兄弟节点”。在 Obsidian 中渲染如下：</p>
+<p>代码段</p>
+<pre><code class="hljs language-mermaid">graph TD
+    App[App Fiber] -->|child| Header[Header Fiber]
+    Header -->|return| App
+    Header -->|sibling| Main[Main Fiber]
+    Main -->|return| App
+    Main -->|child| Article[Article Fiber]
+    Article -->|return| Main
+    Article -->|sibling| Sidebar[Sidebar Fiber]
+    Sidebar -->|return| Main
+</code></pre>
+<hr>
+<h3 id="二-运行机制双缓存与两阶段-执行层"><a href="#二-运行机制双缓存与两阶段-执行层">二、 运行机制：双缓存与两阶段 (执行层)</a></h3>
+<p>React 在内存中维护了两棵 Fiber 树：</p>
+<ol>
+<li>
+<p><strong>Current Tree</strong>：当前屏幕上显示的树。</p>
+</li>
+<li>
+<p><strong>WorkInProgress (WIP) Tree</strong>：正在内存中构建的树。</p>
+</li>
+</ol>
+<pre><code class="hljs language-mermaid">graph LR
+    Root[FiberRootNode] -->|current| Current[Current Fiber Tree]
+    Root -.->|当更新发生时构建| WIP[WorkInProgress Tree]
+    Current -.->|alternate 指针互指| WIP
+</code></pre>
+<p>React 的更新流程被严格拆分为两个阶段：</p>
+<ul>
+<li>
+<p><strong>Render 阶段（可中断）：</strong> 在这个阶段，React 会自顶向下再自底向上地遍历节点，对比新的 React Element（JSX 编译产物）和老树（Current Tree），生成 WIP 树。如果浏览器主线程有更高优先级的任务（如用户输入、动画），这个阶段会<strong>暂停</strong>，让出控制权，之后再回来继续（通过 <code>alternate</code> 找到之前的状态）。</p>
+</li>
+<li>
+<p><strong>Commit 阶段（不可中断）：</strong> 一旦 WIP 树构建完毕，React 会一次性把所有的 DOM 变更（在 Render 阶段打上的 <code>flags</code>）同步更新到真实 DOM 上。此时 WIP 树变成新的 Current 树。</p>
+</li>
+</ul>
+<hr>
+<h3 id="三-fiber-架构下的-diff-算法"><a href="#三-fiber-架构下的-diff-算法">三、 Fiber 架构下的 Diff 算法</a></h3>
+<p>Diff 算法发生在哪里？<strong>发生在 Render 阶段。</strong></p>
+<p>准确地说，Diff 算法是对比<strong>新的 React Element</strong>（比如执行函数组件后返回的 JSX）和<strong>老的 Fiber 节点</strong>（Current Tree），然后生成<strong>新的 Fiber 节点</strong>（WIP Tree）的过程。</p>
+<p>React 为了保持 $O(N)$ 的时间复杂度，做出了三个经典假设，这在 Fiber 时代依然适用：</p>
+<ol>
+<li>
+<p>跨层级移动极少，只在同层级比较。</p>
+</li>
+<li>
+<p>类型不同，直接销毁重建。</p>
+</li>
+<li>
+<p>列表元素通过 <code>key</code> 保持稳定。</p>
+</li>
+</ol>
+<p>Diff 分为两类：<strong>单节点 Diff</strong> 和 <strong>多节点 Diff</strong>（数组）。这里重点拆解最复杂的多节点（数组）Diff。</p>
+<h4 id="多节点-diff-的核心逻辑"><a href="#多节点-diff-的核心逻辑">多节点 Diff 的核心逻辑</a></h4>
+<p>当节点是一个数组时，React 会经历两轮遍历。它的核心思想是：<strong>日常开发中，节点的更新（改属性/内容）比节点的插入、删除、移动发生得更频繁。</strong></p>
+<p><strong>第一轮遍历：处理更新</strong></p>
+<p>从左到右比对新老节点。如果 <code>key</code> 相同且 <code>type</code> 相同，则复用老 Fiber 节点，打上更新的标记；如果 <code>key</code> 不同，说明节点位置变了，<strong>立刻跳出第一轮遍历</strong>。</p>
+<p><strong>第二轮遍历：处理移动、插入和删除</strong></p>
+<p>将剩下没有比对完的老 Fiber 节点放入一个以 <code>key</code> 为键的 Map 中（<code>existingChildren</code>）。然后继续遍历剩下的新节点，通过新节点的 <code>key</code> 去 Map 里找老节点进行复用。</p>
+<p><strong>如何判断是否需要移动？（最精妙的部分：<code>lastPlacedIndex</code>）</strong></p>
+<p>React 内部维护了一个变量 <code>lastPlacedIndex</code>，它表示在当前为止，最后一个被复用的、在老 Fiber 树中最靠右的索引。</p>
+<p>对于接下来的新节点，如果在 Map 中找到了可以复用的老节点，会取出它的老索引 <code>oldIndex</code>：</p>
+<ul>
+<li>
+<p>如果 <code>oldIndex &#x3C; lastPlacedIndex</code>：说明这个节点在老树中的相对位置在左边，但现在它在新的序列中排在后面，所以<strong>需要向右移动</strong>。</p>
+</li>
+<li>
+<p>如果 <code>oldIndex >= lastPlacedIndex</code>：说明相对位置没变，<strong>不需要移动</strong>，并将 <code>lastPlacedIndex</code> 更新为当前的 <code>oldIndex</code>。</p>
+</li>
+</ul>
+<h4 id="js-代码还原-diff-移动逻辑"><a href="#js-代码还原-diff-移动逻辑">JS 代码还原 Diff 移动逻辑</a></h4>
+<p>下面这段代码剥离了复杂的 Fiber 连线逻辑，仅聚焦于“如何利用 <code>lastPlacedIndex</code> 决定节点是否移动”这一核心第一性原理：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">reconcileChildrenArray</span>(<span class="hljs-params">returnFiber, currentFirstChild, newChildren</span>) {
+  <span class="hljs-keyword">let</span> lastPlacedIndex = <span class="hljs-number">0</span>; <span class="hljs-comment">// 核心变量</span>
+  <span class="hljs-keyword">let</span> newIdx = <span class="hljs-number">0</span>;
+  
+  <span class="hljs-comment">// 省略第一轮遍历...直接看第二轮核心思想</span>
+  
+  <span class="hljs-comment">// 假设我们将剩下的老节点放入了 Map</span>
+  <span class="hljs-keyword">const</span> existingChildren = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); 
+  <span class="hljs-keyword">let</span> oldFiber = currentFirstChild;
+  <span class="hljs-keyword">while</span>(oldFiber) {
+    existingChildren.<span class="hljs-title function_">set</span>(oldFiber.<span class="hljs-property">key</span>, oldFiber);
+    oldFiber = oldFiber.<span class="hljs-property">sibling</span>;
+  }
+
+  <span class="hljs-comment">// 遍历剩下的新元素 JSX</span>
+  <span class="hljs-keyword">for</span> (; newIdx &#x3C; newChildren.<span class="hljs-property">length</span>; newIdx++) {
+    <span class="hljs-keyword">const</span> newElement = newChildren[newIdx];
+    <span class="hljs-keyword">const</span> matchedFiber = existingChildren.<span class="hljs-title function_">get</span>(newElement.<span class="hljs-property">key</span>);
+
+    <span class="hljs-keyword">if</span> (matchedFiber) {
+      <span class="hljs-comment">// 找到了可以复用的老节点！从 Map 中剔除</span>
+      existingChildren.<span class="hljs-title function_">delete</span>(newElement.<span class="hljs-property">key</span>);
+      
+      <span class="hljs-keyword">const</span> oldIndex = matchedFiber.<span class="hljs-property">index</span>; <span class="hljs-comment">// 这个节点在老树里的位置</span>
+      
+      <span class="hljs-keyword">if</span> (oldIndex &#x3C; lastPlacedIndex) {
+        <span class="hljs-comment">// 【核心逻辑】老位置 &#x3C; lastPlacedIndex，说明它本该在左边，现在要移动到右边</span>
+        matchedFiber.<span class="hljs-property">flags</span> |= <span class="hljs-title class_">Placement</span>; <span class="hljs-comment">// 打上移动（插入）标记</span>
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// 老位置在右边，说明它的相对顺序没乱，留在原地即可</span>
+        lastPlacedIndex = oldIndex; 
+      }
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// 没找到老节点，说明是全新的元素，直接打上插入标记</span>
+      <span class="hljs-keyword">const</span> newFiber = <span class="hljs-title function_">createFiberFromElement</span>(newElement);
+      newFiber.<span class="hljs-property">flags</span> |= <span class="hljs-title class_">Placement</span>;
+    }
+  }
+
+  <span class="hljs-comment">// Map 中剩下的节点都没用了，打上删除标记</span>
+  existingChildren.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">child</span> =></span> {
+    child.<span class="hljs-property">flags</span> |= <span class="hljs-title class_">Deletion</span>;
+  });
+}
+</code></pre>
+<h3 id="总结串联"><a href="#总结串联">总结串联</a></h3>
+<ol>
+<li>
+<p><strong>痛点驱动</strong>：因为组件树太深导致同步渲染卡顿，所以引入 Fiber。</p>
+</li>
+<li>
+<p><strong>结构改变</strong>：将树打平为带有 <code>return</code>、<code>child</code>、<code>sibling</code> 指针的链表，使得渲染过程成为一个可以暂停、恢复的“协程”。</p>
+</li>
+<li>
+<p><strong>空间换时间</strong>：利用双缓存树机制（<code>current</code> 和 <code>workInProgress</code>），在后台悄悄进行计算。</p>
+</li>
+<li>
+<p><strong>高效对比</strong>：在可中断的 Render 阶段进行 Diff。面对复杂的列表，优先处理更新，随后利用 <code>lastPlacedIndex</code> 作为标尺，精确计算出哪些真实 DOM 需要移动、插入或删除。最后在不可中断的 Commit 阶段一次性更新屏幕。</p>
+</li>
+</ol>
+<hr>
+<p>理解了底层执行逻辑后，其实会发现很多 React 的现象都变得顺理成章（例如为什么不能在条件语句中写 Hooks，因为它依赖链表的顺序结构）。</p>
+<p>在面试中，你可以这样简洁有力地回答：</p>
+<p>React Fiber 是一种将原本不可中断的同步渲染重构为<strong>异步可中断</strong>任务的架构，其核心是将树形结构扁平化为<strong>基于单链表的工作单元</strong>，从而实现“时间分片”以避免长任务阻塞浏览器主线程。在运行机制上，它利用<strong>双缓存技术</strong>将更新分为两个阶段：在可中断的 <strong>Render 阶段</strong>，通过高效的 Diff 算法对比新旧 Fiber 树并记录副作用（其中对多节点 Diff 采用两轮遍历及 <code>lastPlacedIndex</code> 标尺来最小化 DOM 移动）；最后在不可中断的 <strong>Commit 阶段</strong>将这些变更一次性提交到真实 DOM，从而兼顾了复杂的 UI 更新与极致的用户响应体验。</p>
+<hr>
+<p><strong>面试加分小建议：</strong> 如果你想进一步展示深度，可以在说完这段话后主动补充一句：</p>
+<blockquote>
+<p>“这种设计的本质是从‘递归调用栈’向‘虚拟堆栈’的转变，让 React 拥有了手动控制任务优先级和调度执行的能力。”</p>
+</blockquote>
+<p>你想让我继续为你拆解 React 调度器（Scheduler）是如何根据任务优先级来“见缝插针”执行这些 Fiber 任务的吗？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Fiber和Diff算法"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2275," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-什么是-fiber数据结构层","text":"一、 什么是 Fiber？(数据结构层)"},{"level":4,"id":"1-fiber-节点的本质","text":"1. Fiber 节点的本质"},{"level":4,"id":"2-图解-fiber-链表结构","text":"2. 图解 Fiber 链表结构"},{"level":3,"id":"二-运行机制双缓存与两阶段-执行层","text":"二、 运行机制：双缓存与两阶段 (执行层)"},{"level":3,"id":"三-fiber-架构下的-diff-算法","text":"三、 Fiber 架构下的 Diff 算法"},{"level":4,"id":"多节点-diff-的核心逻辑","text":"多节点 Diff 的核心逻辑"},{"level":4,"id":"js-代码还原-diff-移动逻辑","text":"JS 代码还原 Diff 移动逻辑"},{"level":3,"id":"总结串联","text":"总结串联"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

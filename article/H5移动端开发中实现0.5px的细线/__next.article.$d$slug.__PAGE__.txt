@@ -1,0 +1,229 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T3330,<p>在H5移动端开发中实现0.5px的细线是一个非常经典的问题。这背后的根本原因在于设备的<strong>物理像素</strong>和CSS的<strong>逻辑像素</strong>之间的关系，也就是设备像素比（Device Pixel Ratio, DPR）。</p>
+<p>例如，在DPR为2的Retina屏幕上，1个CSS像素实际上占据了2x2=4个物理像素。因此，你写的 <code>border: 1px solid black;</code> 实际上会渲染成一条2物理像素宽的线，这在视觉上就显得比较粗。我们想要实现的0.5px线，在DPR为2的屏幕上，其目标就是渲染出<strong>1物理像素</strong>的宽度。</p>
+<p>直接写 <code>border-width: 0.5px;</code> 在某些iOS的WebKit内核浏览器中可能会生效，但在Android和许多其他浏览器中，0.5px会被四舍五入到1px或直接忽略为0px，导致表现不一致。因此，我们需要一些更可靠的“黑科技”或技巧来实现它。</p>
+<p>以下是几种主流的实现方式，我将从原理、优缺点和适用场景进行分析。</p>
+<hr>
+<h3 id="方案一使用伪元素--transform-scale最推荐"><a href="#方案一使用伪元素--transform-scale最推荐">方案一：使用伪元素 + <code>transform: scale()</code>（最推荐）</a></h3>
+<p>这是目前最常用、最灵活且兼容性最好的方案。</p>
+<p>原理：</p>
+<p>利用伪元素（::before 或 ::after）生成一个1px的线，然后通过CSS的 transform 属性将其缩放50%。因为 transform 的缩放是亚像素级别的，可以精确地将1px的视觉元素缩小为0.5px。</p>
+<p><strong>实现代码 (以底部边框为例):</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.hairline-bottom</span> {
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-class">.hairline-bottom</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>; <span class="hljs-comment">/* 先画一条1px的线 */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e0e0e0</span>;
+  
+  <span class="hljs-comment">/* 根据DPR进行缩放 */</span>
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">-webkit-min-device-pixel-ratio</span>: <span class="hljs-number">2</span>), (<span class="hljs-attribute">min-device-pixel-ratio</span>: <span class="hljs-number">2</span>) {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(<span class="hljs-number">0.5</span>); <span class="hljs-comment">/* Y轴方向缩小一半 */</span>
+    <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">50%</span> <span class="hljs-number">100%</span>; <span class="hljs-comment">/* 从底部中心开始缩放 */</span>
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">-webkit-min-device-pixel-ratio</span>: <span class="hljs-number">3</span>), (<span class="hljs-attribute">min-device-pixel-ratio</span>: <span class="hljs-number">3</span>) {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(<span class="hljs-number">0.33333</span>); <span class="hljs-comment">/* 对于DPR=3的屏幕 */</span>
+  }
+}
+</code></pre>
+<p><strong>实现垂直线</strong>，只需将 <code>scaleY</code> 换成 <code>scaleX</code>，并调整宽高和位置即可。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>兼容性好</strong>：<code>transform</code> 属性在移动端浏览器支持非常广泛。</p>
+</li>
+<li>
+<p><strong>效果精准</strong>：可以实现真正的1物理像素线，线条清晰、颜色纯正。</p>
+</li>
+<li>
+<p><strong>可定制性强</strong>：可以轻松应用到元素的任意边，也可以实现圆角（通过给容器设置 <code>overflow: hidden</code> 和 <code>border-radius</code>）。</p>
+</li>
+<li>
+<p><strong>不产生额外DOM</strong>：使用伪元素，保持HTML结构干净。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>代码量稍多</strong>：相对于单一属性，需要写一个完整的伪元素规则。</p>
+</li>
+<li>
+<p><strong>占用伪元素</strong>：如果该元素已经需要使用 <code>::before</code> 或 <code>::after</code> 做其他事情，会产生冲突。</p>
+</li>
+<li>
+<p><strong>对于已有边框的元素</strong>：处理起来会更复杂一些，例如给一个已有 <code>border</code> 的 <code>input</code> 元素再加0.5px的线。</p>
+</li>
+</ul>
+<hr>
+<h3 id="方案二使用-box-shadow-模拟边框"><a href="#方案二使用-box-shadow-模拟边框">方案二：使用 <code>box-shadow</code> 模拟边框</a></h3>
+<p>原理：</p>
+<p>box-shadow 的第四个参数（扩展半径）可以接受小数值。通过设置一个没有模糊、没有偏移、扩展半径为0.5px的阴影来模拟一条细线。</p>
+<p><strong>实现代码 (以顶部边框为例):</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.hairline-top</span> {
+  <span class="hljs-comment">/* x偏移 y偏移 模糊半径 扩展半径 颜色 */</span>
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.5px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">#e0e0e0</span>;
+}
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>代码极其简单</strong>：一行CSS即可搞定。</p>
+</li>
+<li>
+<p><strong>不产生额外DOM</strong>，也不占用伪元素。</p>
+</li>
+<li>
+<p>可以方便地给四条边都加上（通过逗号分隔多个 <code>box-shadow</code> 规则）。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>颜色可能变淡</strong>：浏览器对阴影的渲染方式与边框不同，可能会做抗锯齿处理，导致0.5px阴影的颜色看起来比实际设置的颜色要浅一些。</p>
+</li>
+<li>
+<p><strong>性能隐忧</strong>：在大量元素上使用 <code>box-shadow</code> 理论上会比 <code>border</code> 有更大的性能开销，但在常规使用场景下影响不大。</p>
+</li>
+</ul>
+<hr>
+<h3 id="方案三使用-linear-gradient-渐变"><a href="#方案三使用-linear-gradient-渐变">方案三：使用 <code>linear-gradient</code> 渐变</a></h3>
+<p>原理：</p>
+<p>将元素的背景（background-image）设置为一个1px高的渐变，渐变的上半部分（50%）为线条颜色，下半部分（50%）为透明。这样就模拟出了一条0.5px的线。</p>
+<p><strong>实现代码 (以底部边框为例):</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.hairline-bottom</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(to bottom, transparent, transparent <span class="hljs-number">50%</span>, <span class="hljs-number">#e0e0e0</span> <span class="hljs-number">50%</span>);
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span> <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-position</span>: bottom;
+}
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>代码相对简洁</strong>。</p>
+</li>
+<li>
+<p><strong>不产生额外DOM</strong>，不占用伪元素。</p>
+</li>
+<li>
+<p>适用性好，可以应用到任何一边。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>颜色同样可能变淡</strong>：和 <code>box-shadow</code> 类似，渐变背景的渲染也可能导致颜色不如 <code>transform</code> 方案的纯粹。</p>
+</li>
+<li>
+<p><strong>语法稍显晦涩</strong>：对于不熟悉渐变的人来说，代码不如 <code>box-shadow</code> 直观。</p>
+</li>
+<li>
+<p><strong>会覆盖原有背景</strong>：如果元素本身有背景图或背景色，此方案会覆盖掉。</p>
+</li>
+</ul>
+<hr>
+<h3 id="方案四使用svg-data-uri"><a href="#方案四使用svg-data-uri">方案四：使用SVG Data URI</a></h3>
+<p>原理：</p>
+<p>创建一个1x1像素的SVG，在其中绘制一条0.5像素的线。然后将这个SVG进行Base64编码，作为 border-image 或 background-image 来使用。</p>
+<p><strong>实现代码 (以底部边框为例):</strong></p>
+<p>CSS</p>
+<pre><code class="hljs language-perl">.hairline-bottom {
+  border-bottom: 1px solid transparent;
+  border-image: url(<span class="hljs-string">"data:image/svg+xml;charset=utf-8,%3Csvg<span class="hljs-variable">%2</span>0xmlns<span class="hljs-variable">%3D</span>'http%3A%2F<span class="hljs-variable">%2Fwww</span>.w3.org<span class="hljs-variable">%2F200</span>0<span class="hljs-variable">%2Fsvg</span>'<span class="hljs-variable">%2</span>0height<span class="hljs-variable">%3D</span>'1px'<span class="hljs-variable">%2</span>0width<span class="hljs-variable">%3D</span>'100<span class="hljs-variable">%25</span>'%3E%3Cline<span class="hljs-variable">%20x</span>1<span class="hljs-variable">%3D</span>'0'<span class="hljs-variable">%20y</span>1<span class="hljs-variable">%3D</span>'1'<span class="hljs-variable">%20x</span>2<span class="hljs-variable">%3D</span>'100<span class="hljs-variable">%25</span>'<span class="hljs-variable">%20y</span>2<span class="hljs-variable">%3D</span>'1'<span class="hljs-variable">%2</span>0stroke<span class="hljs-variable">%3D</span>'<span class="hljs-variable">%23e0e0e0</span>'<span class="hljs-variable">%20stroke</span>-width<span class="hljs-variable">%3D</span>'0.5'%2F%3E%3C%2Fsvg<span class="hljs-variable">%3E</span>"</span>) <span class="hljs-number">1</span> stretch;
+}
+</code></pre>
+<p><em>注：上述SVG代码为了可读性未完全URL编码，实际使用时需要编码。</em></p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>效果精准</strong>：SVG是矢量图形，可以精确控制线条宽度，渲染效果非常清晰。</p>
+</li>
+<li>
+<p><strong>浏览器原生支持</strong>，兼容性好。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>代码可读性差</strong>：Base64编码后的字符串很长，不直观且难以维护。</p>
+</li>
+<li>
+<p><strong>修改不便</strong>：每次想修改线条颜色或样式，都需要重新生成SVG和编码。</p>
+</li>
+<li>
+<p><strong>有额外的HTTP请求开销（如果作为外部文件引用）</strong>，但作为Data URI则会增大CSS文件体积。</p>
+</li>
+</ul>
+<hr>
+<h3 id="总结与最终推荐"><a href="#总结与最终推荐">总结与最终推荐</a></h3>
+<table>
+<thead>
+<tr>
+<th>实现方式</th>
+<th>原理</th>
+<th>优点</th>
+<th>缺点</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>伪元素 + <code>transform</code></strong></td>
+<td>1px线 + 缩放</td>
+<td><strong>效果精准、兼容性好、灵活</strong></td>
+<td>代码稍多、占用伪元素</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong><code>box-shadow</code></strong></td>
+<td>0.5px阴影扩展</td>
+<td>代码极简、不占伪元素</td>
+<td>颜色可能变淡</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong><code>linear-gradient</code></strong></td>
+<td>1px渐变背景</td>
+<td>代码简洁、不占伪元素</td>
+<td>颜色可能变淡、覆盖背景</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>SVG</strong></td>
+<td>矢量图形</td>
+<td>效果精准、矢量</td>
+<td>代码复杂、维护困难</td>
+<td>★★☆☆☆</td>
+</tr>
+</tbody>
+</table>
+<p><strong>我的最终推荐是：</strong></p>
+<p><strong>首选方案：伪元素 + <code>transform: scale()</code></strong></p>
+<p>这是目前社区公认的最佳实践。它提供了最好的平衡性：效果精准、兼容性好，而且通过封装成一个通用的CSS类（如 <code>.hairline-top</code>, <code>.hairline-left</code> 等），可以在项目中非常方便地复用，最大程度地减少了其“代码量稍多”的缺点。这个方案最接近“一劳永逸”的解决方案。</p>
+<p><strong>次选方案：<code>box-shadow</code></strong></p>
+<p>如果你只是需要在一个或两个地方快速实现一个单边的细线，且对线条颜色没有极端严格的要求，<code>box-shadow</code> 是最快、最省事的选择。它非常适合快速原型开发或者需求简单的场景。</p>
+<p>在实际项目中，可以定义一套基于**伪元素+<code>transform</code>**的工具类，作为项目的基础样式库，这样在任何需要0.5px线的地方，只需添加一个类名即可，兼顾了效果和开发效率。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/css",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css/","children":"前端开发 / css"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"H5移动端开发中实现0.5px的细线"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1645," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"方案一使用伪元素--transform-scale最推荐","text":"方案一：使用伪元素 + transform: scale()（最推荐）"},{"level":3,"id":"方案二使用-box-shadow-模拟边框","text":"方案二：使用 box-shadow 模拟边框"},{"level":3,"id":"方案三使用-linear-gradient-渐变","text":"方案三：使用 linear-gradient 渐变"},{"level":3,"id":"方案四使用svg-data-uri","text":"方案四：使用SVG Data URI"},{"level":3,"id":"总结与最终推荐","text":"总结与最终推荐"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

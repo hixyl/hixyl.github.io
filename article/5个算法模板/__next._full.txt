@@ -1,0 +1,189 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","5%E4%B8%AA%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","5%E4%B8%AA%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T35d7,<p>想要用一个“万能模板”直接套用 LeetCode Hot 100 的所有题目是不切实际的，因为算法的本质是针对不同数据结构和业务场景的时间/空间复杂度优化。图的搜索、数组的排序、树的遍历在物理内存和逻辑推演上是完全不同的维度。</p>
+<p>不过，如果我们将 Hot 100 的题目进行解构，会发现它们高度集中在几个核心的<strong>逻辑模式</strong>上。掌握这几个模式的“骨架”，然后根据具体题目填充血肉，才是通关的最优解。</p>
+<p>以下是涵盖 Hot 100 中近 80% 题目的 5 大核心套路模板（JavaScript 实现）及其底层思路：</p>
+<h2 id="1-数组字符串滑动窗口与双指针模板"><a href="#1-数组字符串滑动窗口与双指针模板">1. 数组/字符串：滑动窗口与双指针模板</a></h2>
+<p><strong>核心思路</strong>：这类题目通常要求在连续区间内寻找最值（最长子串、最小覆盖子串等）。与其使用 $O(N^2)$ 的暴力双重循环，不如维护一个像毛毛虫一样爬行的窗口。右指针主动扩张寻找可行解，左指针被动收缩优化可行解。</p>
+<p><strong>适用题目</strong>：无重复字符的最长子串、最小覆盖子串、盛最多水的容器、三数之和。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">slidingWindow</span>(<span class="hljs-params">s</span>) {
+    <span class="hljs-comment">// 1. 初始化双指针和状态记录容器（如哈希表、计数器）</span>
+    <span class="hljs-keyword">let</span> left = <span class="hljs-number">0</span>, right = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">let</span> windowState = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); 
+    <span class="hljs-keyword">let</span> res = <span class="hljs-number">0</span>; <span class="hljs-comment">// 或具体字符串</span>
+
+    <span class="hljs-comment">// 2. 右指针主动扩张</span>
+    <span class="hljs-keyword">while</span> (right &#x3C; s.<span class="hljs-property">length</span>) {
+        <span class="hljs-keyword">let</span> charRight = s[right];
+        <span class="hljs-comment">// 更新窗口状态...</span>
+        <span class="hljs-comment">// windowState.set(charRight, ...)</span>
+        right++;
+
+        <span class="hljs-comment">// 3. 判断当前窗口是否满足“收缩”条件（比如出现了重复字符、长度超标等）</span>
+        <span class="hljs-keyword">while</span> (<span class="hljs-comment">/* 窗口需要收缩的条件 */</span>) {
+            <span class="hljs-comment">// 在收缩前或收缩后更新最终结果 res</span>
+            
+            <span class="hljs-keyword">let</span> charLeft = s[left];
+            <span class="hljs-comment">// 更新窗口状态，剔除左边元素...</span>
+            <span class="hljs-comment">// windowState.set(charLeft, ...)</span>
+            left++; <span class="hljs-comment">// 左指针被动收缩</span>
+        }
+        
+        <span class="hljs-comment">// 有些题目的 res 更新放在收缩循环外（如求最大窗口）</span>
+        <span class="hljs-comment">// res = Math.max(res, right - left);</span>
+    }
+    
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<h2 id="2-穷举与搜索回溯算法dfs模板"><a href="#2-穷举与搜索回溯算法dfs模板">2. 穷举与搜索：回溯算法（DFS）模板</a></h2>
+<p><strong>核心思路</strong>：解决“全排列”、“组合”、“子集”问题的本质是遍历一棵决策树。回溯的核心就三步：做选择 -> 递归进入下一层 -> 撤销选择。它穷尽了所有可能性。</p>
+<p><strong>适用题目</strong>：全排列、子集、组合总和、电话号码的字母组合、括号生成。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrackGenerator</span>(<span class="hljs-params">nums</span>) {
+    <span class="hljs-keyword">const</span> res = [];
+    
+    <span class="hljs-comment">// path: 当前走过的路径（已做的选择）</span>
+    <span class="hljs-comment">// startIndex: 防止组合重复（排列问题通常不需要，或者用 visited 数组）</span>
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">backtrack</span>(<span class="hljs-params">path, startIndex</span>) {
+        <span class="hljs-comment">// 1. 触发结束条件（到达树的叶子节点）</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-comment">/* 满足某个条件，如 path.length === nums.length */</span>) {
+            res.<span class="hljs-title function_">push</span>([...path]); <span class="hljs-comment">// 必须深拷贝，否则后续的 pop 会清空结果</span>
+            <span class="hljs-keyword">return</span>; 
+        }
+
+        <span class="hljs-comment">// 2. 遍历当前层的所有选择</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = startIndex; i &#x3C; nums.<span class="hljs-property">length</span>; i++) {
+            <span class="hljs-comment">// 剪枝逻辑：跳过不合法的选择</span>
+            <span class="hljs-comment">// if (!isValid(nums[i])) continue;</span>
+
+            <span class="hljs-comment">// 3. 做选择</span>
+            path.<span class="hljs-title function_">push</span>(nums[i]);
+            
+            <span class="hljs-comment">// 4. 进入下一层决策树</span>
+            <span class="hljs-title function_">backtrack</span>(path, i + <span class="hljs-number">1</span>); <span class="hljs-comment">// 组合问题传 i+1，如果是可以重复选的传 i</span>
+            
+            <span class="hljs-comment">// 5. 撤销选择（回溯，恢复状态）</span>
+            path.<span class="hljs-title function_">pop</span>();
+        }
+    }
+
+    <span class="hljs-title function_">backtrack</span>([], <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<h2 id="3-树结构二叉树递归遍历模板"><a href="#3-树结构二叉树递归遍历模板">3. 树结构：二叉树递归遍历模板</a></h2>
+<p><strong>核心思路</strong>：二叉树题目的本质是<strong>降维打击</strong>。把一个庞大的树结构问题，分解为一个节点与其左右子节点的问题。关键在于明确当前节点需要做什么，以及这个动作应该发生在遍历前（前序）、遍历中（中序）还是遍历后（后序）。</p>
+<p><strong>适用题目</strong>：翻转二叉树、二叉树的最大深度、二叉树的最近公共祖先、二叉树展开为链表。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">treeTraverse</span>(<span class="hljs-params">root</span>) {
+    <span class="hljs-comment">// 1. Base Case: 触底反弹</span>
+    <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-comment">/* 基础值，如 null, 0, [] 等 */</span>;
+    }
+
+    <span class="hljs-comment">// --- 前序位置：刚进入该节点时执行 ---</span>
+    <span class="hljs-comment">// (常用于自顶向下的逻辑，如传递深度)</span>
+
+    <span class="hljs-comment">// 2. 递归获取左右子树的信息</span>
+    <span class="hljs-keyword">let</span> leftResult = <span class="hljs-title function_">treeTraverse</span>(root.<span class="hljs-property">left</span>);
+    <span class="hljs-keyword">let</span> rightResult = <span class="hljs-title function_">treeTraverse</span>(root.<span class="hljs-property">right</span>);
+
+    <span class="hljs-comment">// --- 后序位置：即将离开该节点时执行 ---</span>
+    <span class="hljs-comment">// (常用于自底向上的逻辑，利用 leftResult 和 rightResult 组装当前节点的结果，这是最常用的位置)</span>
+    
+    <span class="hljs-comment">// 3. 整合结果并返回给父节点</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-comment">/* 基于当前节点、左结果、右结果的整合 */</span>;
+}
+</code></pre>
+<h2 id="4-有序空间二分查找模板"><a href="#4-有序空间二分查找模板">4. 有序空间：二分查找模板</a></h2>
+<p><strong>核心思路</strong>：二分查找不仅用于“在有序数组中找数字”，更强大的是用来寻找“满足某种条件的边界”。只要发现问题具备“单调性”（比如：某个值可行，比它小的值一定可行，比它大的值一定不可行），就可以用二分。</p>
+<p><strong>适用题目</strong>：搜索旋转排序数组、寻找两个正序数组的中位数、在排序数组中查找元素的第一个和最后一个位置。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">binarySearch</span>(<span class="hljs-params">nums, target</span>) {
+    <span class="hljs-comment">// 1. 定义搜索区间 [left, right]</span>
+    <span class="hljs-keyword">let</span> left = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">let</span> right = nums.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>;
+
+    <span class="hljs-comment">// 2. 当 left &#x3C;= right 时区间不为空</span>
+    <span class="hljs-keyword">while</span> (left &#x3C;= right) {
+        <span class="hljs-comment">// 防止 (left + right) 溢出，并向下取整</span>
+        <span class="hljs-keyword">let</span> mid = left + <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>((right - left) / <span class="hljs-number">2</span>);
+
+        <span class="hljs-keyword">if</span> (nums[mid] === target) {
+            <span class="hljs-comment">// 找到目标值</span>
+            <span class="hljs-keyword">return</span> mid; 
+            <span class="hljs-comment">// 如果是寻找左边界，这里改为 right = mid - 1;</span>
+            <span class="hljs-comment">// 如果是寻找右边界，这里改为 left = mid + 1;</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[mid] &#x3C; target) {
+            <span class="hljs-comment">// 目标在右侧，收缩左边界</span>
+            left = mid + <span class="hljs-number">1</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[mid] > target) {
+            <span class="hljs-comment">// 目标在左侧，收缩右边界</span>
+            right = mid - <span class="hljs-number">1</span>;
+        }
+    }
+    
+    <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>; <span class="hljs-comment">// 或返回 left 作为插入位置</span>
+}
+</code></pre>
+<h2 id="5-链表结构虚拟头节点dummy-head与快慢指针模板"><a href="#5-链表结构虚拟头节点dummy-head与快慢指针模板">5. 链表结构：虚拟头节点（Dummy Head）与快慢指针模板</a></h2>
+<p><strong>核心思路</strong>：链表题的难点往往在于处理头节点被删除或修改的边界情况，以及无法预知链表长度。引入一个指向原始头节点的 <code>dummy</code> 节点可以抹平所有边界差异；快慢指针则可以优雅地解决环形检测、寻找中点等问题。</p>
+<p><strong>适用题目</strong>：反转链表、合并两个有序链表、删除链表的倒数第 N 个结点、环形链表。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">processLinkedList</span>(<span class="hljs-params">head</span>) {
+    <span class="hljs-comment">// 1. 设置虚拟头节点，避免讨论原本 head 被删掉或移动的边界情况</span>
+    <span class="hljs-keyword">let</span> dummy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(-<span class="hljs-number">1</span>);
+    dummy.<span class="hljs-property">next</span> = head;
+
+    <span class="hljs-comment">// 2. 根据需求设置双指针（这里以找倒数第 n 个节点或找中点为例）</span>
+    <span class="hljs-keyword">let</span> slow = dummy;
+    <span class="hljs-keyword">let</span> fast = dummy;
+
+    <span class="hljs-comment">// 3. 快指针先走 / 共同走</span>
+    <span class="hljs-keyword">while</span> (fast !== <span class="hljs-literal">null</span> &#x26;&#x26; fast.<span class="hljs-property">next</span> !== <span class="hljs-literal">null</span>) {
+        slow = slow.<span class="hljs-property">next</span>;        <span class="hljs-comment">// 慢指针走一步</span>
+        fast = fast.<span class="hljs-property">next</span>.<span class="hljs-property">next</span>;   <span class="hljs-comment">// 快指针走两步</span>
+    }
+
+    <span class="hljs-comment">// 4. 处理指针停下后的逻辑（此时 slow 通常在中点，或者用于其他截断操作）</span>
+    <span class="hljs-comment">// ...</span>
+
+    <span class="hljs-comment">// 5. 返回时忽略 dummy 本身</span>
+    <span class="hljs-keyword">return</span> dummy.<span class="hljs-property">next</span>;
+}
+</code></pre>
+<p>理解这五个结构的运作机制，就可以覆盖很大一部分的高频考点。至于动态规划（DP），它不是一个代码模板，而是一种“状态定义”与“状态转移方程”的数学建模，必须具体问题具体分析。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/算法",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%AE%97%E6%B3%95/","className":"$undefined","children":"前端开发 / 算法"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"5个算法模板"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-18T00:00:00.000Z","children":"2026年3月18日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1617," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":2,"id":"1-数组字符串滑动窗口与双指针模板","text":"1. 数组/字符串：滑动窗口与双指针模板"},{"level":2,"id":"2-穷举与搜索回溯算法dfs模板","text":"2. 穷举与搜索：回溯算法（DFS）模板"},{"level":2,"id":"3-树结构二叉树递归遍历模板","text":"3. 树结构：二叉树递归遍历模板"},{"level":2,"id":"4-有序空间二分查找模板","text":"4. 有序空间：二分查找模板"},{"level":2,"id":"5-链表结构虚拟头节点dummy-head与快慢指针模板","text":"5. 链表结构：虚拟头节点（Dummy Head）与快慢指针模板"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"5个算法模板 | 流年石刻"}],["$","meta","1",{"name":"description","content":"想要用一个“万能模板”直接套用 LeetCode Hot 100 的所有题目是不切实际的，因为算法的本质是针对不同数据结构和业务场景的时间/空间复杂度优化。图的搜索、数组的排序、树的遍历在物理内存和逻辑推演上是完全不同的维度。 不过，如果我…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

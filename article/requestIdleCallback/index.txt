@@ -1,0 +1,250 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","requestIdleCallback",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","requestIdleCallback","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T3a27,<p>好的，我们来彻底讲清楚 <code>requestIdleCallback</code>。</p>
+<p><code>requestIdleCallback</code> 的核心使命只有一个：<strong>利用浏览器主线程的空闲时间去执行一些非关键性的低优先级任务，从而避免这些任务与高优先级的用户交互、动画和渲染等任务抢占资源，最终目的是提升应用的用户体验和流畅度。</strong></p>
+<p>要真正理解它，不能只看 API 本身，必须深入到浏览器工作的底层原理中去。</p>
+<h3 id="1-问题的根源繁忙的浏览器主线程"><a href="#1-问题的根源繁忙的浏览器主线程">1. 问题的根源：繁忙的浏览器主线程</a></h3>
+<p>首先要理解一个核心矛盾：<strong>浏览器的主线程是单线程的</strong>。</p>
+<p>这个主线程就像一位全能但分身乏术的管家，它需要处理所有的事情：</p>
+<ul>
+<li>
+<p><strong>JavaScript 执行</strong>：你写的业务逻辑、DOM 操作等。</p>
+</li>
+<li>
+<p><strong>页面渲染</strong>：计算样式（Style）、布局（Layout）、绘制（Paint）。</p>
+</li>
+<li>
+<p><strong>用户事件响应</strong>：处理点击、滚动、输入等交互。</p>
+</li>
+<li>
+<p><strong>处理定时器</strong>：<code>setTimeout</code>, <code>setInterval</code>。</p>
+</li>
+<li>
+<p><strong>处理异步请求</strong>：<code>Promise</code> 回调、<code>fetch</code> 响应处理等。</p>
+</li>
+</ul>
+<p>当这些任务蜂拥而至时，主线程只能一件一件地处理。如果一个任务执行时间过长（比如一个复杂的计算或者大量的 DOM 操作），主线程就会被阻塞。在用户看来，页面就“卡住了”——滚动没反应、点击没效果、动画也停了。我们通常称之为“掉帧”或“Jank”。</p>
+<h3 id="2-核心原理帧frame与空闲时间"><a href="#2-核心原理帧frame与空闲时间">2. 核心原理：帧（Frame）与空闲时间</a></h3>
+<p>为了实现流畅的视觉体验（例如 60fps 的动画），浏览器需要在大约 16.67 毫秒（1000ms/60）内完成一帧的渲染。</p>
+<p>在一帧（Frame）的时间里，浏览器大致会按以下优先级顺序完成一系列工作：</p>
+<p><em>(这是一个简化的模型，但足以说明问题)</em></p>
+<ol>
+<li>
+<p><strong>输入事件处理 (Input Events)</strong>：响应用户的点击、滚动等。这是最高优先级的，需要立即反馈。</p>
+</li>
+<li>
+<p><strong>JavaScript 定时器 (Timers)</strong>：执行到期的 <code>setTimeout</code> 等。</p>
+</li>
+<li>
+<p><strong><code>requestAnimationFrame</code> (rAF)</strong>：执行动画回调。这是在每一帧的_开始_阶段，专门为视觉更新设计的。</p>
+</li>
+<li>
+<p><strong>布局与绘制 (Layout &#x26; Paint)</strong>：</p>
+<ul>
+<li>
+<p><strong>Style</strong>：计算每个元素的最终样式。</p>
+</li>
+<li>
+<p><strong>Layout</strong>：计算元素在屏幕上的确切位置和大小（也叫 Reflow）。</p>
+</li>
+<li>
+<p><strong>Paint</strong>：将元素绘制成像素。</p>
+</li>
+<li>
+<p><strong>Composite</strong>：将不同的图层合并到屏幕上。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>任务队列中的其他宏任务 (Other Tasks)</strong></p>
+</li>
+</ol>
+<p>如果在完成上述所有<strong>高优先级</strong>工作后，距离 16.67ms 的截止时间还有剩余，这段时间就是<strong>主线程空闲时间（Idle Period）</strong>。</p>
+<p><code>requestIdleCallback</code> 就是浏览器对外暴露的一个钩子，它允许开发者<strong>将一个回调函数注册到这个空闲时间段去执行</strong>。</p>
+<p>换句话说，<code>requestIdleCallback</code> 的回调函数是在一帧的末尾，所有关键渲染和更新任务都已完成之后，如果还有时间，才会被调用。</p>
+<h3 id="3-api-设计的精髓deadline-对象"><a href="#3-api-设计的精髓deadline-对象">3. API 设计的精髓：<code>deadline</code> 对象</a></h3>
+<p>如果只是简单地在空闲时执行一个函数，可能会出现新的问题：如果我的函数执行时间很长，超出了当前帧剩余的空闲时间怎么办？这不又会影响到下一帧的开始，导致掉帧吗？</p>
+<p>为了解决这个问题，<code>requestIdleCallback</code> 的 API 设计得非常巧妙。它在调用你的回调函数时，会传入一个 <code>deadline</code> 对象作为参数。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-title function_">requestIdleCallback</span>(<span class="hljs-function">(<span class="hljs-params">deadline</span>) =></span> {
+    <span class="hljs-comment">// 你的任务代码</span>
+});
+</code></pre>
+<p>这个 <code>deadline</code> 对象包含了两个关键信息：</p>
+<ol>
+<li>
+<p><strong><code>timeRemaining()</code> (方法)</strong>：返回一个数字，表示当前帧还剩下多少毫秒的空闲时间。这个时间是动态变化的，并且有一个上限（通常是 50ms 左右），这是为了防止回调函数占用过多时间，即使系统当前非常空闲。</p>
+</li>
+<li>
+<p><strong><code>didTimeout</code> (布尔值)</strong>：表示任务是否因为超时而被强制执行。下面会详细解释。</p>
+</li>
+</ol>
+<p>这种设计模式被称为<strong>合作式调度（Cooperative Scheduling）</strong>。浏览器把控制权交给你，但通过 <code>deadline</code> 对象告诉你：“你现在可以工作，但请随时通过 <code>timeRemaining()</code> 检查时间，并在时间用完前停下来，把控制权还给我，以免影响下一帧。”</p>
+<h4 id="如何正确使用-deadline"><a href="#如何正确使用-deadline">如何正确使用 <code>deadline</code>？</a></h4>
+<p>正确的模式是，如果你的任务可以被拆分成多个小块，你应该在循环中不断检查剩余时间。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-scss"><span class="hljs-comment">// 假设有一个很长的任务队列</span>
+let tasks = <span class="hljs-selector-attr">[task1, task2, task3, ... , task100]</span>;
+
+function <span class="hljs-built_in">processTasks</span>(deadline) {
+    <span class="hljs-comment">// 只要还有空闲时间，并且还有任务没做完</span>
+    while (deadline.timeRemaining() > <span class="hljs-number">0</span> &#x26;&#x26; tasks<span class="hljs-selector-class">.length</span> > <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// 取出一个任务并执行</span>
+        let task = tasks<span class="hljs-selector-class">.shift</span>();
+        <span class="hljs-built_in">executeTask</span>(task);
+    }
+
+    <span class="hljs-comment">// 如果任务还没做完，就预约下一次空闲时间继续做</span>
+    if (tasks.length > <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">requestIdleCallback</span>(processTasks);
+    }
+}
+
+<span class="hljs-comment">// 启动任务</span>
+<span class="hljs-built_in">requestIdleCallback</span>(processTasks);
+</code></pre>
+<p>这就是 <code>requestIdleCallback</code> 的核心用法：将一个大任务拆解成多个小块，分散在多个帧的空闲时段去执行，化整为零，润物细无声地完成工作。</p>
+<h3 id="4-容错机制timeout-选项"><a href="#4-容错机制timeout-选项">4. 容错机制：<code>timeout</code> 选项</a></h3>
+<p>还有一个问题：如果浏览器一直很忙（比如用户在不停地滚动页面），那一帧接一帧都没有空闲时间，我的任务岂不是永远都得不到执行？</p>
+<p>为了防止任务被“饿死”，<code>requestIdleCallback</code> 提供了第二个可选参数：一个配置对象，其中可以包含 <code>timeout</code> 属性。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-scss"><span class="hljs-built_in">requestIdleCallback</span>(myTaskCallback, { timeout: <span class="hljs-number">2000</span> }); <span class="hljs-comment">// 单位是毫秒</span>
+</code></pre>
+<p>设置了 <code>timeout</code> 后，如果你的回调函数因为浏览器持续繁忙，在指定的 2000ms 后仍然没有被执行，那么浏览器会在下一帧动画之后，不再等待空闲，而是<strong>强制执行</strong>你的回调函数。</p>
+<p>当回调函数因为超时而被强制执行时，传入的 <code>deadline</code> 对象的属性会是：</p>
+<ul>
+<li>
+<p><code>deadline.timeRemaining()</code> 会返回 <code>0</code>。</p>
+</li>
+<li>
+<p><code>deadline.didTimeout</code> 会是 <code>true</code>。</p>
+</li>
+</ul>
+<p>这相当于一个保险丝，保证了任务的最终执行。</p>
+<h3 id="5-与其他异步方法的深入对比"><a href="#5-与其他异步方法的深入对比">5. 与其他异步方法的深入对比</a></h3>
+<p>理解 <code>requestIdleCallback</code> 的最佳方式是与它的“近亲”们进行对比。</p>
+<h4 id="requestidlecallback-vs-requestanimationframe"><a href="#requestidlecallback-vs-requestanimationframe"><code>requestIdleCallback</code> vs <code>requestAnimationFrame</code></a></h4>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>requestIdleCallback</code></th>
+<th><code>requestAnimationFrame</code> (rAF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>目的</strong></td>
+<td>执行<strong>非关键</strong>、可推迟的后台任务</td>
+<td>执行<strong>必须</strong>在下一帧渲染前完成的视觉更新（如动画）</td>
+</tr>
+<tr>
+<td><strong>执行时机</strong></td>
+<td>一帧的<strong>末尾</strong>，渲染完成后，如有空闲时间</td>
+<td>一帧的<strong>开始</strong>，渲染开始之前</td>
+</tr>
+<tr>
+<td><strong>调用频率</strong></td>
+<td>不固定，浏览器空闲时才调用</td>
+<td>非常规律，通常与显示器刷新率同步（如 60fps）</td>
+</tr>
+<tr>
+<td><strong>核心关注点</strong></td>
+<td><strong>不阻塞</strong>主线程，避免掉帧</td>
+<td><strong>精确同步</strong>渲染，保证动画平滑</td>
+</tr>
+<tr>
+<td><strong>适用场景</strong></td>
+<td>数据上报、预加载、后台计算、不紧急的 DOM 更新</td>
+<td>JavaScript 动画、Canvas 绘图、实时视觉反馈</td>
+</tr>
+</tbody>
+</table>
+<p>简单说，<code>rAF</code> 的优先级远高于 <code>requestIdleCallback</code>。前者是为了“画”，后者是为了在“不画”的时候“干点杂活”。</p>
+<h4 id="requestidlecallback-vs-settimeoutfn-0"><a href="#requestidlecallback-vs-settimeoutfn-0"><code>requestIdleCallback</code> vs <code>setTimeout(fn, 0)</code></a></h4>
+<p><code>setTimeout(fn, 0)</code> 的本意是“尽快，但在当前同步代码执行完之后”执行 <code>fn</code>。它会将 <code>fn</code> 放入宏任务队列的队尾。</p>
+<ul>
+<li>
+<p><strong>时机不确定性</strong>：<code>setTimeout</code> 无法感知浏览器的负载和渲染周期。如果在主线程繁忙时触发，它仍然会尝试“插队”执行，这恰恰是导致页面卡顿的元凶之一。</p>
+</li>
+<li>
+<p><strong>非合作性</strong>：<code>setTimeout</code> 一旦开始执行回调，就会一直执行到结束，不管花了多少时间。它没有 <code>deadline</code> 这样的机制来让你主动暂停。</p>
+</li>
+</ul>
+<p><code>requestIdleCallback</code> 则完全不同，它是在浏览器明确告诉你“现在有空”的时候才执行，并且提供机制让你“见好就收”，是一种更智能、对用户体验更友好的调度方式。</p>
+<h3 id="6-适用场景与局限性"><a href="#6-适用场景与局限性">6. 适用场景与局限性</a></h3>
+<h4 id="最佳适用场景"><a href="#最佳适用场景">最佳适用场景：</a></h4>
+<ol>
+<li>
+<p><strong>数据上报/分析（Analytics）</strong>：发送用户行为数据等。这些任务不紧急，延迟几百毫秒甚至几秒发送完全没问题。</p>
+</li>
+<li>
+<p><strong>数据预加载/预计算</strong>：当用户停留在某个页面时，可以利用空闲时间提前加载未来可能需要的数据或计算结果。</p>
+</li>
+<li>
+<p><strong>非关键性的 DOM 操作</strong>：比如构建一个非常庞大的、暂时不可见的 DOM 树，或者对一些不可见的元素进行更新。</p>
+</li>
+<li>
+<p><strong>大型库的初始化</strong>：如果一个库的初始化过程很复杂且耗时，可以将其拆分到 <code>requestIdleCallback</code> 中。</p>
+</li>
+</ol>
+<h4 id="不适用的场景"><a href="#不适用的场景">不适用的场景：</a></h4>
+<ol>
+<li>
+<p><strong>任何需要立即看到视觉反馈的任务</strong>：比如响应用户点击后展开一个菜单、显示 Tooltip 等。这些必须立即执行，否则用户会感到延迟。</p>
+</li>
+<li>
+<p><strong>动画</strong>：动画必须使用 <code>requestAnimationFrame</code> 来保证与渲染同步。</p>
+</li>
+<li>
+<p><strong>Promise 的 resolve/reject</strong>：<code>Promise</code> 的回调通常是微任务，需要尽快执行来确定后续逻辑。将其放入 <code>requestIdleCallback</code> 会不必要地延迟整个异步链条。</p>
+</li>
+</ol>
+<h4 id="局限性"><a href="#局限性">局限性：</a></h4>
+<ul>
+<li>
+<p><strong>不保证执行</strong>：如果页面一直处于繁忙状态，且你没有设置 <code>timeout</code>，回调可能永远不会执行。</p>
+</li>
+<li>
+<p><strong>浏览器支持</strong>：Safari 至今仍不支持 <code>requestIdleCallback</code>，需要使用 Polyfill。</p>
+</li>
+<li>
+<p><strong>现代替代方案</strong>：目前有一个更新、更强大的 <a href="https://www.google.com/search?q=%5Bhttps://developer.mozilla.org/en-US/docs/Web/API/Scheduler/postTask%5D(https://developer.mozilla.org/en-US/docs/Web/API/Scheduler/postTask)">Scheduler API (<code>postTask</code>)</a> 正在标准化，它提供了更精细的优先级控制（<code>user-blocking</code>, <code>user-visible</code>, <code>background</code>），可以看作是 <code>requestIdleCallback</code> 的进化版。</p>
+</li>
+</ul>
+<h3 id="总结"><a href="#总结">总结</a></h3>
+<p><code>requestIdleCallback</code> 是一个深刻洞察了浏览器工作原理后设计的精妙 API。它不是一个简单的延时工具，而是一种<strong>与浏览器渲染周期合作的调度策略</strong>。</p>
+<p>它通过让你在<strong>帧的空闲期</strong>执行<strong>可中断的低优先级任务</strong>，从根本上解决了后台任务与前台交互和渲染争抢主线程资源的问题，是前端性能优化中一个非常有价值的工具。</p>
+<p><strong>最终我认为的最佳理解是：</strong> <code>requestIdleCallback</code> 的本质是将任务的<strong>执行权</strong>从“我（开发者）想何时执行”转变为“浏览器认为何时执行最不影响体验”，并通过 <code>deadline</code> 对象实现了开发者与浏览器之间的“君子协定”，共同保障应用的流畅性。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/浏览器",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%B5%8F%E8%A7%88%E5%99%A8/","className":"$undefined","children":"前端开发 / 浏览器"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"requestIdleCallback"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-23T00:00:00.000Z","children":"2025年7月23日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2491," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",9," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-问题的根源繁忙的浏览器主线程","text":"1. 问题的根源：繁忙的浏览器主线程"},{"level":3,"id":"2-核心原理帧frame与空闲时间","text":"2. 核心原理：帧（Frame）与空闲时间"},{"level":3,"id":"3-api-设计的精髓deadline-对象","text":"3. API 设计的精髓：deadline 对象"},{"level":4,"id":"如何正确使用-deadline","text":"如何正确使用 deadline？"},{"level":3,"id":"4-容错机制timeout-选项","text":"4. 容错机制：timeout 选项"},{"level":3,"id":"5-与其他异步方法的深入对比","text":"5. 与其他异步方法的深入对比"},{"level":4,"id":"requestidlecallback-vs-requestanimationframe","text":"requestIdleCallback vs requestAnimationFrame"},{"level":4,"id":"requestidlecallback-vs-settimeoutfn-0","text":"requestIdleCallback vs setTimeout(fn, 0)"},{"level":3,"id":"6-适用场景与局限性","text":"6. 适用场景与局限性"},{"level":4,"id":"最佳适用场景","text":"最佳适用场景："},{"level":4,"id":"不适用的场景","text":"不适用的场景："},{"level":4,"id":"局限性","text":"局限性："},{"level":3,"id":"总结","text":"总结"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"requestIdleCallback | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来彻底讲清楚 requestIdleCallback。 requestIdleCallback 的核心使命只有一个：利用浏览器主线程的空闲时间去执行一些非关键性的低优先级任务，从而避免这些任务与高优先级的用户交互、动画和渲染等任务…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

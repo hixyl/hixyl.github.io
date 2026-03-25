@@ -1,0 +1,370 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","Object%E5%92%8CMap%E6%AF%94%E8%BE%83",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","Object%E5%92%8CMap%E6%AF%94%E8%BE%83","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T5c4e,<p>这是一个非常核心且重要的问题。要彻底讲明白 JavaScript 中 <code>Object</code> (<code>{}</code>) 和 <code>Map</code> 的区别，我们需要从它们的设计哲学、内部机制和实际应用场景三个层面进行深入剖析。</p>
+<p>这不仅仅是“<code>Map</code> 的键可以是任意类型”这么简单。</p>
+<hr>
+<h3 id="一-设计哲学的根本不同"><a href="#一-设计哲学的根本不同">一、 设计哲学的根本不同</a></h3>
+<p>首先，要理解它们被创造出来的<strong>目的</strong>是完全不同的。</p>
+<ul>
+<li>
+<p>Object ({})：语言的基石</p>
+<p>Object 是 JavaScript 这门语言的根基和最核心的构建块。它的首要设计目标不是作为一个纯粹的“哈希表”或“字典”，而是作为一种描述事物、组织代码和实现继承的结构。你代码里几乎所有东西（除了原始类型）最终都源自于对象。它的存在是为了构建数据实体（比如一个用户、一个产品）和实现面向对象编程（通过原型链）。将它用作键值对存储，实际上是它核心功能的一种“兼职”应用。</p>
+</li>
+<li>
+<p>Map：纯粹的数据结构</p>
+<p>Map 是在 ES6 (2015) 中被引入的，它的诞生就是为了解决一个长期存在的痛点：JavaScript 缺少一个真正意义上的、高效且功能纯粹的**哈希映射（Hash Map）**数据结构。Map 的设计目标非常专一：高效、可靠地管理键值对集合。它不关心原型链，不关心你的键是什么类型，它的所有 API (set, get, has, delete等) 都是为此目的而生。</p>
+</li>
+</ul>
+<p>这个哲学的不同，导致了它们在具体实现和功能上的所有差异。</p>
+<hr>
+<h3 id="二-核心区别的深入剖析"><a href="#二-核心区别的深入剖析">二、 核心区别的深入剖析</a></h3>
+<p>下面的表格和解析会详细对比它们的技术细节。</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>Object</code> (<code>{}</code>)</th>
+<th><code>Map</code></th>
+<th>剖析与深入理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>键的类型 (Key Type)</strong></td>
+<td><strong>字符串 (String) 或 Symbol</strong></td>
+<td><strong>任意类型</strong> (包括对象、函数、<code>NaN</code>)</td>
+<td>这是最本质的区别。<code>Object</code> 的键最终都会被隐式转换为字符串。<code>o[1]</code> 和 <code>o["1"]</code> 是一样的。如果你尝试用一个对象作为键 <code>o[{a:1}] = true</code>，这个键实际上会变成字符串 <code>"[object Object]"</code>，导致所有不同的对象键都指向同一个值，这是灾难性的。<code>Map</code> 则不存在这个问题，它使用 <code>SameValueZero</code> 算法比较键，<code>NaN</code> 也能作为唯一的键，不同的对象引用就是不同的键。</td>
+</tr>
+<tr>
+<td><strong>原型与继承 (Prototype)</strong></td>
+<td><strong>会继承原型链上的属性</strong></td>
+<td><strong>纯净的键值对集合</strong></td>
+<td>一个空的 <code>Object</code> (<code>const obj = {}</code>) 并不“空”，它通过原型链继承了 <code>Object.prototype</code> 上的方法，如 <code>toString</code>, <code>hasOwnProperty</code> 等。这会带来潜在的风险：<code>obj.toString</code> 可能会被意外覆盖，或者 <code>for...in</code> 循环会遍历到原型链上的属性。<strong><code>Map</code> 是一个纯粹的容器，它不会和你的数据键产生任何冲突</strong>。<code>map.get('toString')</code> 只会返回你显式设置的值。</td>
+</tr>
+<tr>
+<td><strong>元素顺序 (Order)</strong></td>
+<td><strong>不保证</strong> (现代引擎大多遵循插入顺序，但不应依赖)</td>
+<td><strong>保证插入顺序</strong></td>
+<td><code>Map</code> 遍历时，会严格按照元素插入的顺序进行。这在需要保证顺序的场景下至关重要。虽然现代 JS 引擎对 <code>Object</code> 的属性顺序做了很多优化，使其在很多情况下表现为有序，但 ECMA 规范对此的定义非常复杂，且在某些边缘情况下（如数字键混合）顺序可能不符合直觉。<strong>依赖 <code>Object</code> 的顺序是脆弱的，而 <code>Map</code> 的顺序是可靠的承诺。</strong></td>
+</tr>
+<tr>
+<td><strong>获取大小 (Size)</strong></td>
+<td>需手动计算: <code>Object.keys(obj).length</code></td>
+<td>直接获取: <code>map.size</code></td>
+<td><code>map.size</code> 是一个属性，获取大小的操作是 O(1) 复杂度，非常高效。而 <code>Object.keys()</code> 会返回一个包含所有键的数组，再获取其长度，这个过程相对低效，尤其是在数据量大时。</td>
+</tr>
+<tr>
+<td><strong>API 与迭代</strong></td>
+<td>API 分散，迭代方式多样</td>
+<td>统一、专用的 API 和迭代器</td>
+<td><code>Map</code> 提供了一套为键值操作量身定做的 API：<code>set</code>, <code>get</code>, <code>has</code>, <code>delete</code>, <code>clear</code>，非常清晰。它还内置了 <code>keys()</code>, <code>values()</code>, <code>entries()</code> 迭代器，可以非常方便地与 <code>for...of</code> 和解构赋值 (<code>for (const [key, value] of map)</code>) 配合使用。<code>Object</code> 的操作则相对分散（点/方括号赋值、<code>delete</code> 操作符、<code>hasOwnProperty</code> 方法等），<code>for...in</code> 循环还会遍历原型链，通常需要配合 <code>hasOwnProperty</code> 使用，比较繁琐。</td>
+</tr>
+<tr>
+<td><strong>性能 (Performance)</strong></td>
+<td>频繁增删性能较差</td>
+<td><strong>频繁增删性能更优</strong></td>
+<td>JS 引擎（如 V8）对 <code>Object</code> 的优化主要集中在“形状 (Shape/Hidden Class)”相对稳定的场景，即属性集合不经常变化的“类实例”模式。当 <code>Object</code> 被用作频繁添加和删除键的哈希表时，引擎需要不断更新其内部结构，导致性能下降。<code>Map</code> 的内部实现（通常是哈希表或类似结构）就是为这种动态增删场景优化的，性能表现更稳定、更可预测。</td>
+</tr>
+<tr>
+<td><strong>JSON 序列化</strong></td>
+<td><strong>直接支持</strong></td>
+<td><strong>默认不支持</strong></td>
+<td><code>JSON.stringify</code> 可以直接将一个 <code>Object</code> 转换为 JSON 字符串。但它无法直接序列化一个 <code>Map</code>，结果会是一个空对象 <code>{}</code>。你需要自己编写转换函数来实现 <code>Map</code> 的序列化和反序列化。这是一个在与 API 或本地存储交互时非常重要的实际考量。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="三-何时使用给出我的选择"><a href="#三-何时使用给出我的选择">三、 何时使用？给出我的选择</a></h3>
+<p>基于以上的深入剖析，选择的原则就变得非常清晰了：<strong>用其所长，回归本质</strong>。</p>
+<h4 id="选择-object--的场景"><a href="#选择-object--的场景"><strong>选择 <code>Object</code> (<code>{}</code>) 的场景：</strong></a></h4>
+<ol>
+<li>
+<p><strong>创建数据实体 / 结构化数据：</strong> 当你需要描述一个“东西”时，比如一个用户配置、一篇文章的属性。这些场景下，键是固定的、已知的字符串，<code>Object</code> 的字面量语法 <code>const user = { name: 'Alex', age: 30 };</code> 非常简洁直观。这正是 <code>Object</code> 的设计初衷。</p>
+</li>
+<li>
+<p><strong>JSON 数据交换：</strong> 任何需要与 JSON 格式进行转换的场景。因为这是原生支持的，无需任何额外工作。Web 开发中与后端 API 的数据交互几乎都是这种情况。</p>
+</li>
+<li>
+<p><strong>简单的、一次性的轻量级数据存储：</strong> 如果你只是需要一个临时存放几个字符串键值对的地方，且不关心顺序和潜在的继承问题，使用对象字面量是最快捷的方式。</p>
+</li>
+</ol>
+<h4 id="选择-map-的场景"><a href="#选择-map-的场景"><strong>选择 <code>Map</code> 的场景：</strong></a></h4>
+<ol>
+<li>
+<p><strong>真正的哈希表/字典需求：</strong> 当你需要一个纯粹的键值对集合，并且键的类型不确定时，<strong>必须使用 <code>Map</code></strong>。例如，用 DOM 节点对象作为键来存储其状态信息。</p>
+</li>
+<li>
+<p><strong>频繁的增删操作：</strong> 如果你的集合会经历大量元素的添加和删除，<code>Map</code> 提供了更稳定和优秀的性能。例如用作缓存（Cache）实现。</p>
+</li>
+<li>
+<p><strong>需要保证顺序：</strong> 任何依赖于插入顺序的逻辑，都应该使用 <code>Map</code>。</p>
+</li>
+<li>
+<p><strong>键值对数量巨大：</strong> 当数据量很大时，<code>Map</code> 在增、删、查以及获取大小方面的综合性能表现通常更优。</p>
+</li>
+</ol>
+<hr>
+<h3 id="结论与最终建议"><a href="#结论与最终建议">结论与最终建议</a></h3>
+<p><code>Object</code> 和 <code>Map</code> 并非取代关系，而是分工关系。</p>
+<p>将 <code>Object</code> 当作哈希表的用法，更多是一种历史遗留问题。在 <code>Map</code> 出现之前，开发者别无选择。但现在，我们应该做出更明智的选择。</p>
+<p>我的最终建议是：</p>
+<p><strong>默认使用 <code>Map</code> 来处理所有纯粹的键值对存储需求。让 <code>Object</code> 回归其作为“对象”和“数据记录”的本来职责。</strong></p>
+<p>遵循这个原则，你的代码会变得：</p>
+<ul>
+<li>
+<p><strong>更安全：</strong> 避免了原型链污染和意外的键名冲突。</p>
+</li>
+<li>
+<p><strong>更清晰：</strong> <code>Map</code> 的 API 明确表达了你的意图就是在操作一个键值集合，代码更具可读性。</p>
+</li>
+<li>
+<p><strong>更可预测：</strong> 在性能和元素顺序上，<code>Map</code> 的行为都比 <code>Object</code> 更可靠。</p>
+</li>
+</ul>
+<p>只有在你明确知道键都是简单字符串，且需要与 JSON 交互，或者只是创建一个简单的结构化数据记录时，才应该优先使用 <code>Object</code>。在所有其他“我需要一个字典”的场景里，<code>Map</code> 都是更专业、更合适的工具。</p>
+<h2 id="map常用方法"><a href="#map常用方法">Map常用方法</a></h2>
+<p>接下来深入讲解一下 <code>Map</code> 的常用方法。</p>
+<p><code>Map</code> 的 API 设计得非常直观和优雅，主要围绕着“增、删、改、查”这四个核心操作，并提供了强大的迭代能力。</p>
+<p>下面我将这些方法分为几类来详细说明，并附上清晰的示例代码。</p>
+<hr>
+<h3 id="一-核心操作增删改查"><a href="#一-核心操作增删改查">一、 核心操作：增、删、改、查</a></h3>
+<p>这类方法是你日常使用 <code>Map</code> 最频繁的。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>返回值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>set(key, value)</code></strong></td>
+<td><strong>增加或修改</strong>一个键值对。如果 <code>key</code> 已存在，则更新其 <code>value</code>；如果不存在，则添加新的键值对。</td>
+<td>返回 <code>Map</code> 对象本身，因此可以<strong>链式调用</strong>。</td>
+<td><code>map.set('name', 'Alex').set('age', 30);</code></td>
+</tr>
+<tr>
+<td><strong><code>get(key)</code></strong></td>
+<td><strong>查询</strong>指定 <code>key</code> 对应的 <code>value</code>。</td>
+<td>返回对应的 <code>value</code>，如果 <code>key</code> 不存在，则返回 <code>undefined</code>。</td>
+<td><code>const name = map.get('name'); // 'Alex'</code><br><code>const gender = map.get('gender'); // undefined</code></td>
+</tr>
+<tr>
+<td><strong><code>has(key)</code></strong></td>
+<td><strong>检查</strong> <code>Map</code> 中是否存在指定的 <code>key</code>。</td>
+<td>返回一个布尔值 (<code>true</code> 或 <code>false</code>)。</td>
+<td><code>map.has('age'); // true</code><br><code>map.has('gender'); // false</code></td>
+</tr>
+<tr>
+<td><strong><code>delete(key)</code></strong></td>
+<td><strong>删除</strong>指定的键值对。</td>
+<td>如果成功删除，返回 <code>true</code>；如果 <code>key</code> 不存在，返回 <code>false</code>。</td>
+<td><code>map.delete('age'); // true</code></td>
+</tr>
+<tr>
+<td><strong><code>clear()</code></strong></td>
+<td><strong>清空</strong> <code>Map</code> 中所有的键值对。</td>
+<td><code>undefined</code>。</td>
+<td><code>map.clear(); // map 现在是空的了</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码片段：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-c"><span class="hljs-comment">// 创建一个 Map</span>
+<span class="hljs-type">const</span> userMap = new Map();
+
+<span class="hljs-comment">// 1. 使用 set() 进行增、改操作 (支持链式调用)</span>
+userMap.<span class="hljs-built_in">set</span>(<span class="hljs-string">'name'</span>, <span class="hljs-string">'Bob'</span>); <span class="hljs-comment">// 新增</span>
+userMap.<span class="hljs-built_in">set</span>(<span class="hljs-string">'email'</span>, <span class="hljs-string">'bob@example.com'</span>); <span class="hljs-comment">// 新增</span>
+userMap.<span class="hljs-built_in">set</span>(<span class="hljs-string">'name'</span>, <span class="hljs-string">'Bob Smith'</span>); <span class="hljs-comment">// 修改已存在的 key</span>
+
+console.<span class="hljs-built_in">log</span>(userMap); 
+<span class="hljs-comment">// 输出: Map(2) { 'name' => 'Bob Smith', 'email' => 'bob@example.com' }</span>
+
+<span class="hljs-comment">// 2. 使用 get() 进行查询</span>
+console.<span class="hljs-built_in">log</span>(userMap.get(<span class="hljs-string">'name'</span>)); <span class="hljs-comment">// 'Bob Smith'</span>
+console.<span class="hljs-built_in">log</span>(userMap.get(<span class="hljs-string">'phone'</span>)); <span class="hljs-comment">// undefined</span>
+
+<span class="hljs-comment">// 3. 使用 has() 进行检查</span>
+console.<span class="hljs-built_in">log</span>(userMap.has(<span class="hljs-string">'email'</span>)); <span class="hljs-comment">// true</span>
+console.<span class="hljs-built_in">log</span>(userMap.has(<span class="hljs-string">'phone'</span>)); <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">// 4. 使用 delete() 进行删除</span>
+<span class="hljs-type">const</span> wasDeleted = userMap.delete(<span class="hljs-string">'email'</span>);
+console.<span class="hljs-built_in">log</span>(wasDeleted); <span class="hljs-comment">// true</span>
+console.<span class="hljs-built_in">log</span>(userMap.has(<span class="hljs-string">'email'</span>)); <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">// 5. 使用 clear() 清空</span>
+userMap.clear();
+console.<span class="hljs-built_in">log</span>(userMap.size); <span class="hljs-comment">// 0</span>
+</code></pre>
+<hr>
+<h3 id="二-属性与迭代"><a href="#二-属性与迭代">二、 属性与迭代</a></h3>
+<p><code>Map</code> 的迭代能力是其相对于 <code>Object</code> 的一大优势。它内置了多种迭代器，可以与 <code>for...of</code> 循环完美结合。</p>
+<table>
+<thead>
+<tr>
+<th>属性/方法</th>
+<th>描述</th>
+<th>返回值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>size</code></strong></td>
+<td>一个<strong>属性</strong>（不是方法），用于获取 <code>Map</code> 中键值对的数量。</td>
+<td>一个非负整数。</td>
+<td><code>const count = map.size;</code></td>
+</tr>
+<tr>
+<td><strong><code>keys()</code></strong></td>
+<td>返回一个<strong>键的迭代器 (Iterator)</strong>，包含 <code>Map</code> 中所有的键。</td>
+<td>一个新的 <code>Map Iterator</code> 对象。</td>
+<td><code>for (const key of map.keys()) { ... }</code></td>
+</tr>
+<tr>
+<td><strong><code>values()</code></strong></td>
+<td>返回一个<strong>值的迭代器 (Iterator)</strong>，包含 <code>Map</code> 中所有的值。</td>
+<td>一个新的 <code>Map Iterator</code> 对象。</td>
+<td><code>for (const value of map.values()) { ... }</code></td>
+</tr>
+<tr>
+<td><strong><code>entries()</code></strong></td>
+<td>返回一个<strong>键值对的迭代器 (Iterator)</strong>，每个元素是一个 <code>[key, value]</code> 形式的数组。</td>
+<td>一个新的 <code>Map Iterator</code> 对象。</td>
+<td><code>for (const entry of map.entries()) { ... }</code><br><code>for (const [key, value] of map) { ... }</code></td>
+</tr>
+<tr>
+<td><strong><code>forEach(callbackFn, thisArg)</code></strong></td>
+<td>按照插入顺序，为 <code>Map</code> 中的每个键值对执行一次提供的回调函数。</td>
+<td><code>undefined</code>。</td>
+<td><code>map.forEach((value, key, map) => { ... });</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键点：</strong></p>
+<ul>
+<li>
+<p><strong>默认迭代器是 <code>entries()</code></strong>：这意味着你可以直接在 <code>Map</code> 对象上使用 <code>for...of</code> 循环，它等同于调用 <code>map.entries()</code>。这是最常用、最方便的遍历方式。</p>
+</li>
+<li>
+<p><strong>回调函数参数顺序</strong>：注意 <code>forEach</code> 的回调函数签名是 <code>(value, key, map)</code>，这和数组的 <code>(element, index, array)</code> 有所不同，<strong>值在前，键在后</strong>。这在设计上是为了与 <code>Array.prototype.forEach</code> 的主要参数（值）保持一致。</p>
+</li>
+</ul>
+<p><strong>示例代码片段：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> fruitMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>([
+  [<span class="hljs-string">'apple'</span>, <span class="hljs-number">10</span>],
+  [<span class="hljs-string">'banana'</span>, <span class="hljs-number">20</span>],
+  [<span class="hljs-string">'orange'</span>, <span class="hljs-number">30</span>]
+]);
+
+<span class="hljs-comment">// 1. 获取大小</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(fruitMap.<span class="hljs-property">size</span>); <span class="hljs-comment">// 3</span>
+
+<span class="hljs-comment">// 2. 遍历所有的键 (keys)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- Keys ---'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">of</span> fruitMap.<span class="hljs-title function_">keys</span>()) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(key); <span class="hljs-comment">// apple, banana, orange</span>
+}
+
+<span class="hljs-comment">// 3. 遍历所有的值 (values)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- Values ---'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> value <span class="hljs-keyword">of</span> fruitMap.<span class="hljs-title function_">values</span>()) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value); <span class="hljs-comment">// 10, 20, 30</span>
+}
+
+<span class="hljs-comment">// 4. 遍历所有的键值对 (entries) - 最常用的方式</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- Entries (Default Iterator) ---'</span>);
+<span class="hljs-comment">// 直接在 map 上使用 for...of，并使用解构赋值</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [fruit, price] <span class="hljs-keyword">of</span> fruitMap) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">${fruit}</span>: $<span class="hljs-subst">${price}</span>`</span>);
+  <span class="hljs-comment">// apple: $10</span>
+  <span class="hljs-comment">// banana: $20</span>
+  <span class="hljs-comment">// orange: $30</span>
+}
+
+<span class="hljs-comment">// 5. 使用 forEach</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- forEach ---'</span>);
+fruitMap.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">price, fruit</span>) =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`The price of <span class="hljs-subst">${fruit}</span> is <span class="hljs-subst">${price}</span>`</span>);
+});
+</code></pre>
+<hr>
+<h3 id="三-map-与-array-的转换"><a href="#三-map-与-array-的转换">三、 <code>Map</code> 与 <code>Array</code> 的转换</a></h3>
+<p>在实际开发中，我们经常需要在 <code>Map</code> 和 <code>Array</code> 之间进行转换。</p>
+<ul>
+<li>
+<p><strong><code>Map</code> 转 <code>Array</code>：</strong></p>
+<ul>
+<li>
+<p>使用 <code>Array.from()</code></p>
+</li>
+<li>
+<p>使用展开运算符 (<code>...</code>)</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-arduino"><span class="hljs-type">const</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>([[<span class="hljs-string">'a'</span>, <span class="hljs-number">1</span>], [<span class="hljs-string">'b'</span>, <span class="hljs-number">2</span>]]);
+
+<span class="hljs-comment">// 转为键值对数组</span>
+<span class="hljs-type">const</span> arrayFrom = Array.<span class="hljs-built_in">from</span>(map); <span class="hljs-comment">// [['a', 1], ['b', 2]]</span>
+<span class="hljs-type">const</span> arraySpread = [...map];       <span class="hljs-comment">// [['a', 1], ['b', 2]]</span>
+
+<span class="hljs-comment">// 只转键</span>
+<span class="hljs-type">const</span> keysArray = [...map.<span class="hljs-built_in">keys</span>()]; <span class="hljs-comment">// ['a', 'b']</span>
+
+<span class="hljs-comment">// 只转值</span>
+<span class="hljs-type">const</span> valuesArray = [...map.<span class="hljs-built_in">values</span>()]; <span class="hljs-comment">// [1, 2]</span>
+</code></pre>
+</li>
+<li>
+<p><strong><code>Array</code> 转 <code>Map</code>：</strong></p>
+<ul>
+<li><code>Map</code> 的构造函数可以直接接收一个“键值对”形式的数组（即数组的每个元素也是一个包含两个元素的数组 <code>[key, value]</code>）。</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-c"><span class="hljs-type">const</span> <span class="hljs-built_in">array</span> = [[<span class="hljs-string">'name'</span>, <span class="hljs-string">'Chris'</span>], [<span class="hljs-string">'age'</span>, <span class="hljs-number">35</span>]];
+<span class="hljs-type">const</span> <span class="hljs-built_in">map</span> = new Map(<span class="hljs-built_in">array</span>);
+
+console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">map</span>.get(<span class="hljs-string">'name'</span>)); <span class="hljs-comment">// 'Chris'</span>
+</code></pre>
+</li>
+</ul>
+<p>这些就是 <code>Map</code> 的全部核心方法和属性。掌握了它们，你就能在各种场景下高效地使用 <code>Map</code> 来管理你的数据了。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"Object和Map比较"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-29T00:00:00.000Z","children":"2025年7月29日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[3029," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",11," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"一-设计哲学的根本不同","text":"一、 设计哲学的根本不同"},{"level":3,"id":"二-核心区别的深入剖析","text":"二、 核心区别的深入剖析"},{"level":3,"id":"三-何时使用给出我的选择","text":"三、 何时使用？给出我的选择"},{"level":4,"id":"选择-object--的场景","text":"选择 Object ({}) 的场景："},{"level":4,"id":"选择-map-的场景","text":"选择 Map 的场景："},{"level":3,"id":"结论与最终建议","text":"结论与最终建议"},{"level":2,"id":"map常用方法","text":"Map常用方法"},{"level":3,"id":"一-核心操作增删改查","text":"一、 核心操作：增、删、改、查"},{"level":3,"id":"二-属性与迭代","text":"二、 属性与迭代"},{"level":3,"id":"三-map-与-array-的转换","text":"三、 Map 与 Array 的转换"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"Object和Map比较 | 流年石刻"}],["$","meta","1",{"name":"description","content":"这是一个非常核心且重要的问题。要彻底讲明白 JavaScript 中 Object {} 和 Map 的区别，我们需要从它们的设计哲学、内部机制和实际应用场景三个层面进行深入剖析。 这不仅仅是“Map 的键可以是任意类型”这么简单。  二、…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

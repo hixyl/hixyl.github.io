@@ -1,0 +1,217 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T40d2,<p>前端性能优化是一个庞大的系统工程，为了方便理解和记忆，我们可以按照网页的生命周期，将优化分为三大阶段：<strong>网络传输阶段</strong>、<strong>浏览器渲染阶段</strong>和<strong>JavaScript执行阶段</strong>。</p>
+<p>下面将结合底层原理、典型案例和代码，为你系统地拆解这三个阶段的核心优化点。</p>
+<hr>
+<h3 id="一-网络传输阶段让资源到达得更快"><a href="#一-网络传输阶段让资源到达得更快">一、 网络传输阶段：让资源到达得更快</a></h3>
+<p>这个阶段的核心思路是：<strong>请求数量越少越好，请求体积越小越好。</strong></p>
+<h4 id="1-资源按需加载与代码分割-code-splitting"><a href="#1-资源按需加载与代码分割-code-splitting">1. 资源按需加载与代码分割 (Code Splitting)</a></h4>
+<ul>
+<li>
+<p><strong>底层原理</strong>：现代前端项目通常使用 Webpack 或 Vite 等构建工具，默认会将所有 JavaScript 打包成一个巨大的文件（Bundle）。浏览器必须下载并解析完这个大文件，才能开始执行逻辑。代码分割的原理是在构建时将代码拆分成多个小块（Chunks），只有当用户访问到特定路由或触发特定交互时，才通过动态创建 <code>&#x3C;script></code> 标签去请求对应的代码块。</p>
+</li>
+<li>
+<p><strong>典型案例</strong>：单页面应用（SPA）的首屏加载极慢，经常出现长时间的白屏。</p>
+</li>
+<li>
+<p><strong>代码实现</strong>（以 React 路由懒加载为例）：</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ❌ 劣质做法：全量导入，首屏需要下载所有页面的代码</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Home</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./Home'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Dashboard</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./Dashboard'</span>;
+
+<span class="hljs-comment">// ✅ 优化做法：动态导入，只有访问 Dashboard 时才下载对应代码</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { <span class="hljs-title class_">Suspense</span>, lazy } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Home</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =></span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./Home'</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Dashboard</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =></span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./Dashboard'</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="hljs-comment">// Suspense 用于在代码块下载过程中展示占位符</span>
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">div</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Routes</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/"</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Home</span> /></span>} />
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/dashboard"</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Dashboard</span> /></span>} />
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">Routes</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span></span>
+  );
+}
+</code></pre>
+<h4 id="2-http-缓存策略"><a href="#2-http-缓存策略">2. HTTP 缓存策略</a></h4>
+<ul>
+<li>
+<p><strong>底层原理</strong>：浏览器通过 HTTP 响应头（Headers）来决定是否缓存资源以及如何缓存。</p>
+<ul>
+<li>
+<p><strong>强缓存</strong>（<code>Cache-Control: max-age=31536000</code>）：浏览器直接从本地读取缓存，完全不发起网络请求。适用于不常变动的静态资源（如图片、第三方库）。</p>
+</li>
+<li>
+<p><strong>协商缓存</strong>（<code>ETag</code> / <code>Last-Modified</code>）：浏览器会向服务器发一个极小的校验请求，问“这个文件变了吗？”。如果没变，服务器返回 304 状态码，浏览器继续用本地缓存；如果变了，服务器返回 200 和新文件。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>实现思路</strong>：前端通常配合构建工具，给生成的文件名加上内容哈希（Hash），如 <code>main.a1b2c3.js</code>。一旦代码修改，哈希改变，文件名就变了。这样我们可以放心地给所有静态资源设置超长时间的强缓存。HTML 文件不设强缓存，始终走协商缓存。</p>
+</li>
+</ul>
+<hr>
+<h3 id="二-浏览器渲染阶段减少浏览器的无用功"><a href="#二-浏览器渲染阶段减少浏览器的无用功">二、 浏览器渲染阶段：减少浏览器的无用功</a></h3>
+<p>这个阶段是初级前端最容易写出性能瓶颈的地方。核心思路是：<strong>顺应浏览器的渲染机制，避免频繁打破渲染流水线。</strong></p>
+<p>浏览器渲染网页的基本流程（关键渲染路径）是：</p>
+<ol>
+<li>
+<p>解析 HTML 生成 DOM 树。</p>
+</li>
+<li>
+<p>解析 CSS 生成 CSSOM 树。</p>
+</li>
+<li>
+<p>将两者合并生成<strong>渲染树 (Render Tree)</strong>（剔除 <code>display: none</code> 的节点）。</p>
+</li>
+<li>
+<p><strong>布局 (Layout / 重排)</strong>：计算每个节点在屏幕上的确切大小和位置。</p>
+</li>
+<li>
+<p><strong>绘制 (Paint / 重绘)</strong>：将节点的颜色、阴影等视觉属性画在像素上。</p>
+</li>
+<li>
+<p><strong>合成 (Composite)</strong>：将不同的图层合并，显示到屏幕上。</p>
+</li>
+</ol>
+<h4 id="1-彻底理解并避免频繁的重排-reflow与重绘-repaint"><a href="#1-彻底理解并避免频繁的重排-reflow与重绘-repaint">1. 彻底理解并避免频繁的“重排 (Reflow)”与“重绘 (Repaint)”</a></h4>
+<ul>
+<li>
+<p><strong>底层原理</strong>：</p>
+<ul>
+<li>
+<p><strong>重绘</strong>：当你改变元素的颜色（<code>color</code>, <code>background</code>）时，浏览器只需要重新执行第 5 步（Paint）。这需要消耗性能，但尚可接受。</p>
+</li>
+<li>
+<p><strong>重排</strong>：当你改变元素的几何属性（<code>width</code>, <code>height</code>, <code>margin</code>，或者修改 DOM 结构）时，浏览器必须回到第 4 步重新计算整个页面的布局，这往往会牵连父元素和后续兄弟元素的位置变化，随后还要重新执行绘制和合成。<strong>重排的性能开销极其昂贵。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>典型陷阱：布局抖动 (Layout Thrashing)</strong></p>
+<p>浏览器很聪明，它会把多次修改样式的操作放在一个队列里，等待合适的时机批量执行。但是，如果你在用 JavaScript <strong>读取</strong>某些布局属性（如 <code>offsetTop</code>, <code>clientWidth</code>）时，浏览器为了给你返回最准确的值，会被迫立即清空队列，<strong>强制同步触发重排</strong>。</p>
+</li>
+<li>
+<p><strong>代码案例</strong>：</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ❌ 劣质做法：在循环中交替读写布局属性，导致每次循环都触发强制重排</span>
+<span class="hljs-keyword">const</span> boxes = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'.box'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; boxes.<span class="hljs-property">length</span>; i++) {
+  <span class="hljs-comment">// 读取 offsetWidth 强制浏览器进行重排以获取最新值</span>
+  <span class="hljs-keyword">const</span> currentWidth = boxes[i].<span class="hljs-property">offsetWidth</span>; 
+  <span class="hljs-comment">// 写入样式，加入渲染队列</span>
+  boxes[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = currentWidth + <span class="hljs-number">10</span> + <span class="hljs-string">'px'</span>; 
+}
+
+<span class="hljs-comment">// ✅ 优化做法：读写分离（将读取操作集中在前面，写入操作集中在后面）</span>
+<span class="hljs-keyword">const</span> boxes = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'.box'</span>);
+<span class="hljs-keyword">const</span> widths = [];
+<span class="hljs-comment">// 集中读取，此时浏览器只需要查询现有状态，不触发多次重排</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; boxes.<span class="hljs-property">length</span>; i++) {
+  widths.<span class="hljs-title function_">push</span>(boxes[i].<span class="hljs-property">offsetWidth</span>);
+}
+<span class="hljs-comment">// 集中写入，浏览器会将这些操作批量放入队列，最后只执行一次重排</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; boxes.<span class="hljs-property">length</span>; i++) {
+  boxes[i].<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = widths[i] + <span class="hljs-number">10</span> + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<h4 id="2-使用硬件加速进行动画"><a href="#2-使用硬件加速进行动画">2. 使用硬件加速进行动画</a></h4>
+<ul>
+<li>
+<p><strong>实现思路</strong>：做动画时，尽量使用 CSS 的 <code>transform</code> 和 <code>opacity</code>，而不是修改 <code>left</code> 或 <code>top</code>。</p>
+</li>
+<li>
+<p><strong>底层原理</strong>：修改 <code>transform</code> 和 <code>opacity</code> 不会触发重排和重绘，它们直接在第 6 步（合成 Composite）阶段由 GPU 完成处理。GPU 处理图像位移极其高效，能够保证动画达到丝滑的 60fps。</p>
+</li>
+</ul>
+<hr>
+<h3 id="三-javascript执行阶段保护主线程"><a href="#三-javascript执行阶段保护主线程">三、 JavaScript执行阶段：保护主线程</a></h3>
+<ul>
+<li><strong>底层原理</strong>：浏览器是多进程的，但负责执行 JavaScript 和处理页面渲染的是同一个<strong>单线程（主线程）</strong>。这意味着，如果你的 JavaScript 代码执行时间过长（比如巨大的循环计算），主线程被阻塞，浏览器就无法去响应用户的点击，也无法更新页面的绘制，页面就会表现为“卡死”。</li>
+</ul>
+<h4 id="1-防抖-debounce-与-节流-throttle"><a href="#1-防抖-debounce-与-节流-throttle">1. 防抖 (Debounce) 与 节流 (Throttle)</a></h4>
+<p>这是前端控制高频触发事件（如 <code>scroll</code>, <code>resize</code>, <code>input</code>）的利器。</p>
+<ul>
+<li>
+<p><strong>防抖 (Debounce) 原理</strong>：把多次高频触发合并为最后一次。就像你进电梯，只要一直有人按开门键，电梯门就不会关，直到最后一个人进来后等待几秒钟，门才关上。</p>
+</li>
+<li>
+<p><strong>使用场景</strong>：搜索框输入联想（用户输入完毕后才发网络请求）。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 防抖函数的底层实现</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">debounce</span>(<span class="hljs-params">fn, delay</span>) {
+  <span class="hljs-keyword">let</span> timer = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 闭包保存定时器引用</span>
+  
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">...args</span>) {
+    <span class="hljs-comment">// 如果再次触发，清空之前的定时器，重新计时</span>
+    <span class="hljs-keyword">if</span> (timer) <span class="hljs-built_in">clearTimeout</span>(timer); 
+    
+    timer = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+      fn.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args);
+    }, delay);
+  };
+}
+
+<span class="hljs-comment">// 使用案例</span>
+<span class="hljs-keyword">const</span> handleSearch = <span class="hljs-title function_">debounce</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"向服务器发送搜索请求: "</span>, e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>);
+}, <span class="hljs-number">500</span>);
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'searchInput'</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'input'</span>, handleSearch);
+</code></pre>
+<ul>
+<li>
+<p><strong>节流 (Throttle) 原理</strong>：保证在一段时间内只执行一次。就像水龙头滴水，无论水压多大，它都只能按照固定的频率一滴一滴地落下来。</p>
+</li>
+<li>
+<p><strong>使用场景</strong>：监听滚动事件触发加载更多，或者按钮防止连击。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 节流函数的底层实现（基于时间戳机制）</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">throttle</span>(<span class="hljs-params">fn, delay</span>) {
+  <span class="hljs-keyword">let</span> lastTime = <span class="hljs-number">0</span>;
+  
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">...args</span>) {
+    <span class="hljs-keyword">const</span> now = <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>();
+    <span class="hljs-comment">// 只有当前时间减去上一次执行时间大于设定的间隔，才执行函数</span>
+    <span class="hljs-keyword">if</span> (now - lastTime >= delay) {
+      fn.<span class="hljs-title function_">apply</span>(<span class="hljs-variable language_">this</span>, args);
+      lastTime = now; <span class="hljs-comment">// 更新上一次执行的时间</span>
+    }
+  };
+}
+</code></pre>
+<h4 id="2-大量数据的渲染优化虚拟列表"><a href="#2-大量数据的渲染优化虚拟列表">2. 大量数据的渲染优化（虚拟列表）</a></h4>
+<ul>
+<li>
+<p><strong>底层原理</strong>：如果后端一次性返回一万条数据，前端直接生成一万个 DOM 节点插入页面，浏览器瞬间就会崩溃。因为 DOM 节点是非常庞大的对象，创建和渲染成千上万个节点极其消耗内存和主线程算力。</p>
+</li>
+<li>
+<p><strong>实现思路</strong>：虚拟列表（Virtual List）。无论数据有多少条，只渲染屏幕可视区域内的几十个 DOM 节点。当用户滚动时，通过计算滚动距离，动态替换这几十个 DOM 节点内的数据内容，并利用 <code>transform: translateY</code> 调整它们的位置。</p>
+</li>
+</ul>
+<hr>
+<p>以上三个阶段涵盖了前端性能优化的核心骨架。理解了这些底层机制，无论是面对具体的业务卡顿，还是面试官的深度追问，都能从“网络、渲染、执行”的角度找到破局点。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"常见前端性能优化方案"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-05T00:00:00.000Z","children":"2026年3月5日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2030," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"一-网络传输阶段让资源到达得更快","text":"一、 网络传输阶段：让资源到达得更快"},{"level":4,"id":"1-资源按需加载与代码分割-code-splitting","text":"1. 资源按需加载与代码分割 (Code Splitting)"},{"level":4,"id":"2-http-缓存策略","text":"2. HTTP 缓存策略"},{"level":3,"id":"二-浏览器渲染阶段减少浏览器的无用功","text":"二、 浏览器渲染阶段：减少浏览器的无用功"},{"level":4,"id":"1-彻底理解并避免频繁的重排-reflow与重绘-repaint","text":"1. 彻底理解并避免频繁的“重排 (Reflow)”与“重绘 (Repaint)”"},{"level":4,"id":"2-使用硬件加速进行动画","text":"2. 使用硬件加速进行动画"},{"level":3,"id":"三-javascript执行阶段保护主线程","text":"三、 JavaScript执行阶段：保护主线程"},{"level":4,"id":"1-防抖-debounce-与-节流-throttle","text":"1. 防抖 (Debounce) 与 节流 (Throttle)"},{"level":4,"id":"2-大量数据的渲染优化虚拟列表","text":"2. 大量数据的渲染优化（虚拟列表）"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

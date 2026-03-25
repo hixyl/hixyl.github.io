@@ -1,0 +1,259 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+e:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",["$L9","$La"],"$Lb"]}],{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+10:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+b:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+13:[]
+c:"$W13"
+d:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$11",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+1a:T448f,<p>好的，我们来深入探讨一下如何在 JavaScript 中从零开始实现一个双向数据绑定。</p>
+<p>双向数据绑定，顾名思义，就是将数据（通常是一个 JavaScript 对象，我们称之为 Model）和视图（HTML 界面，我们称之为 View）进行绑定。当 Model 的数据发生变化时，View 会自动更新；反之，当用户在 View 中进行操作（比如在输入框里打字）导致视图变化时，Model 的数据也会被同步更新。</p>
+<p>这套机制是现代前端框架（如 Vue、Angular）的核心特性之一，它极大地简化了 DOM 操作，让开发者能更专注于业务逻辑。</p>
+<p>要实现这个效果，我们需要解决两个核心问题：</p>
+<ol>
+<li>
+<p><strong>Model -> View</strong>：如何侦测到 JavaScript 对象的变化，并将其同步到界面上？</p>
+</li>
+<li>
+<p><strong>View -> Model</strong>：如何监听界面元素的变化（例如用户输入），并更新对应的 JavaScript 对象？</p>
+</li>
+</ol>
+<p>第二个问题相对简单，我们可以通过 <code>addEventListener</code> (例如监听 <code>'input'</code> 事件) 来实现。真正的难点和精髓在于第一个问题：如何优雅地“知道”一个对象的数据被修改了。</p>
+<p>目前，主流的实现方式有两种：</p>
+<ul>
+<li>
+<p><strong>数据劫持/访问器（Accessor）</strong>：通过 <code>Object.defineProperty()</code> 实现，这是 Vue 2 的核心实现方式。</p>
+</li>
+<li>
+<p><strong>数据代理（Proxy）</strong>：通过 ES6 的 <code>Proxy</code> 对象实现，这是 Vue 3 的核心实现方式，也是目前更优的方案。</p>
+</li>
+</ul>
+<p>下面我们分别详细解析这两种方法，并给出一个综合的实现。</p>
+<hr>
+<h3 id="方案一使用-objectdefineproperty-数据劫持"><a href="#方案一使用-objectdefineproperty-数据劫持">方案一：使用 <code>Object.defineProperty()</code> (数据劫持)</a></h3>
+<p><code>Object.defineProperty()</code> 方法允许我们精确地添加或修改对象上的属性。通过定义属性的 <code>getter</code> 和 <code>setter</code> 函数，我们可以在属性被读取或被赋值时执行自定义的逻辑。这就是“数据劫持”的核心。</p>
+<p><strong>实现思路：</strong></p>
+<ol>
+<li>
+<p><strong>定义一个数据对象 <code>data</code></strong>。</p>
+</li>
+<li>
+<p><strong>遍历 <code>data</code> 的所有属性</strong>，对每一个属性都使用 <code>Object.defineProperty()</code> 重新定义。</p>
+</li>
+<li>
+<p>在 <code>setter</code> 函数中，当属性被赋予新值时，我们不仅要更新值本身，还要触发一个“更新视图”的操作。</p>
+</li>
+<li>
+<p>在 <code>getter</code> 函数中，我们直接返回属性的值。</p>
+</li>
+<li>
+<p>为视图元素（如 <code>input</code>）添加事件监听，当其 <code>value</code> 改变时，去修改 <code>data</code> 中对应的属性值，这将自动触发该属性的 <code>setter</code>，从而更新所有绑定了该数据的其他视图。</p>
+</li>
+</ol>
+<h4 id="代码示例"><a href="#代码示例">代码示例</a></h4>
+<p>假设我们有如下 HTML：</p>
+<p>HTML</p>
+<pre><code class="hljs language-bash">&#x3C;div <span class="hljs-built_in">id</span>=<span class="hljs-string">"app"</span>>
+    &#x3C;input <span class="hljs-built_in">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"my-input"</span>>
+    &#x3C;p>你好, &#x3C;span <span class="hljs-built_in">id</span>=<span class="hljs-string">"my-span"</span>>&#x3C;/span>&#x3C;/p>
+&#x3C;/div>
+</code></pre>
+<p>现在，我们用 <code>Object.defineProperty()</code> 来实现绑定：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">bindData</span>(<span class="hljs-params">obj, key, inputElement, displayElement</span>) {
+    <span class="hljs-keyword">let</span> value = obj[key]; <span class="hljs-comment">// 使用闭包保存初始值</span>
+
+    <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>(obj, key, {
+        <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 可枚举</span>
+        <span class="hljs-attr">configurable</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 可配置</span>
+
+        <span class="hljs-attr">get</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`获取数据: <span class="hljs-subst">${key}</span> = <span class="hljs-subst">${value}</span>`</span>);
+            <span class="hljs-keyword">return</span> value;
+        },
+        <span class="hljs-attr">set</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params">newValue</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`设置数据: <span class="hljs-subst">${key}</span> = <span class="hljs-subst">${newValue}</span>`</span>);
+            <span class="hljs-keyword">if</span> (newValue !== value) {
+                value = newValue;
+                <span class="hljs-comment">// 数据变化，更新视图</span>
+                <span class="hljs-title function_">updateView</span>();
+            }
+        }
+    });
+
+    <span class="hljs-comment">// 视图更新函数</span>
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">updateView</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- 触发视图更新 ---'</span>);
+        inputElement.<span class="hljs-property">value</span> = value;
+        displayElement.<span class="hljs-property">textContent</span> = value;
+    }
+
+    <span class="hljs-comment">// 监听视图 -> 模型的变化</span>
+    inputElement.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'input'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+        <span class="hljs-comment">// 用户输入时，更新数据。这会触发上面的 set 函数。</span>
+        obj[key] = event.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>;
+    });
+    
+    <span class="hljs-comment">// 初始化视图</span>
+    <span class="hljs-title function_">updateView</span>();
+}
+
+<span class="hljs-comment">// ---- 使用 ----</span>
+<span class="hljs-keyword">const</span> data = { <span class="hljs-attr">name</span>: <span class="hljs-string">'世界'</span> };
+<span class="hljs-keyword">const</span> input = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-input'</span>);
+<span class="hljs-keyword">const</span> span = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-span'</span>);
+
+<span class="hljs-title function_">bindData</span>(data, <span class="hljs-string">'name'</span>, input, span);
+
+<span class="hljs-comment">// 现在尝试在控制台修改数据，观察页面变化</span>
+<span class="hljs-comment">// data.name = 'Gemini';</span>
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p>兼容性好，支持到 IE9（IE8 仅部分支持）。</p>
+</li>
+<li>
+<p>思想经典，是理解响应式原理的重要基石。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>
+<p><strong>无法监听对象属性的新增或删除</strong>。<code>Object.defineProperty</code> 只能劫持对象初始化时已存在的属性。对于后加的属性，需要手动再次进行定义，Vue 2 中为此提供了 <code>Vue.set</code> API。</p>
+</li>
+<li>
+<p><strong>无法直接监听数组索引和 <code>length</code> 属性的变化</strong>。当通过索引修改数组元素（如 <code>arr[0] = ...</code>）或修改数组长度时，无法触发 <code>setter</code>。Vue 2 通过重写数组的 <code>push</code>, <code>pop</code>, <code>shift</code>, <code>unshift</code>, <code>splice</code>, <code>sort</code>, <code>reverse</code> 等方法来“曲线救国”。</p>
+</li>
+<li>
+<p>实现相对繁琐，需要遍历对象的所有属性进行单独设置。</p>
+</li>
+</ul>
+<hr>
+<h3 id="方案二使用-proxy-和-reflect-数据代理"><a href="#方案二使用-proxy-和-reflect-数据代理">方案二：使用 <code>Proxy</code> 和 <code>Reflect</code> (数据代理)</a></h3>
+<p>ES6 引入的 <code>Proxy</code> 对象，可以认为是 <code>Object.defineProperty</code> 的超集和进化版。它不是劫持对象的属性，而是在对象外层设置一个“代理层”。对该对象的任何操作（包括读取、设置、删除属性、调用函数等），都会先经过这个代理层，我们可以在代理层进行拦截和自定义处理。<code>Reflect</code> 对象则提供了一套与 <code>Proxy</code> 的拦截操作相对应的方法，通常在 <code>Proxy</code> 的处理函数中与之一同使用，以确保对原始对象的默认行为能够正确执行。</p>
+<p><strong>实现思路：</strong></p>
+<ol>
+<li>
+<p><strong>创建一个 <code>Proxy</code> 实例</strong>，传入我们的目标数据对象 <code>data</code> 和一个包含各种“陷阱”（trap）函数的 <code>handler</code> 对象。</p>
+</li>
+<li>
+<p>在 <code>handler</code> 的 <code>set</code> 陷阱中，当代理对象的任何属性被赋值时，这个函数就会被触发。</p>
+</li>
+<li>
+<p>在 <code>set</code> 函数中，我们使用 <code>Reflect.set()</code> 来完成对原始对象的赋值操作，并触发“更新视图”的逻辑。</p>
+</li>
+<li>
+<p>同样，为视图元素添加事件监听，当其值改变时，去修改代理对象的属性值，这将自动触发 <code>set</code> 陷阱。</p>
+</li>
+</ol>
+<h4 id="代码示例-1"><a href="#代码示例-1">代码示例</a></h4>
+<p>同样的 HTML 结构，使用 <code>Proxy</code> 的实现更加简洁和强大。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">reactiveBind</span>(<span class="hljs-params">obj, inputElement, displayElement</span>) {
+    <span class="hljs-keyword">const</span> handler = {
+        <span class="hljs-title function_">get</span>(<span class="hljs-params">target, key, receiver</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`获取数据: <span class="hljs-subst">${key}</span>`</span>);
+            <span class="hljs-comment">// 使用 Reflect.get 来确保正确的 this 上下文</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">get</span>(target, key, receiver);
+        },
+        <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value, receiver</span>) {
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`设置数据: <span class="hljs-subst">${key}</span> = <span class="hljs-subst">${value}</span>`</span>);
+            <span class="hljs-comment">// 使用 Reflect.set 来完成赋值，并返回操作是否成功</span>
+            <span class="hljs-keyword">const</span> success = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">set</span>(target, key, value, receiver);
+            <span class="hljs-keyword">if</span> (success) {
+                <span class="hljs-comment">// 数据变化，更新视图</span>
+                <span class="hljs-title function_">updateView</span>();
+            }
+            <span class="hljs-keyword">return</span> success;
+        }
+    };
+
+    <span class="hljs-keyword">const</span> proxy = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(obj, handler);
+
+    <span class="hljs-comment">// 视图更新函数</span>
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">updateView</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'--- 触发视图更新 ---'</span>);
+        <span class="hljs-comment">// 注意：这里我们应该从原始对象或代理中获取值</span>
+        <span class="hljs-comment">// 但为了简单，我们假设只有一个绑定的 key</span>
+        <span class="hljs-keyword">const</span> value = proxy[<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(obj)[<span class="hljs-number">0</span>]];
+        inputElement.<span class="hljs-property">value</span> = value;
+        displayElement.<span class="hljs-property">textContent</span> = value;
+    }
+
+    <span class="hljs-comment">// 监听视图 -> 模型的变化</span>
+    inputElement.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'input'</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) {
+        <span class="hljs-comment">// 用户输入时，更新代理对象的数据。这会触发上面的 set 陷阱。</span>
+        proxy[<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(obj)[<span class="hljs-number">0</span>]] = event.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>;
+    });
+
+    <span class="hljs-comment">// 初始化视图</span>
+    <span class="hljs-title function_">updateView</span>();
+    
+    <span class="hljs-keyword">return</span> proxy; <span class="hljs-comment">// 返回代理对象，之后的所有操作都应该在代理对象上进行</span>
+}
+
+<span class="hljs-comment">// ---- 使用 ----</span>
+<span class="hljs-keyword">const</span> data = { <span class="hljs-attr">name</span>: <span class="hljs-string">'世界'</span> };
+<span class="hljs-keyword">const</span> input = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-input'</span>);
+<span class="hljs-keyword">const</span> span = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'my-span'</span>);
+
+<span class="hljs-keyword">const</span> proxiedData = <span class="hljs-title function_">reactiveBind</span>(data, input, span);
+
+<span class="hljs-comment">// 尝试在控制台修改数据，注意要修改的是代理对象</span>
+<span class="hljs-comment">// proxiedData.name = 'Gemini';</span>
+
+<span class="hljs-comment">// 尝试添加新属性（虽然这个简单例子没处理新属性的绑定，但Proxy能侦测到）</span>
+<span class="hljs-comment">// proxiedData.age = 1;</span>
+</code></pre>
+<p><strong>优点：</strong></p>
+<ul>
+<li>
+<p><strong>功能强大</strong>：可以拦截多达 13 种操作（<code>get</code>, <code>set</code>, <code>has</code>, <code>deleteProperty</code> 等），远超 <code>Object.defineProperty</code>。</p>
+</li>
+<li>
+<p><strong>原生支持数组</strong>：可以直接监听数组的变化，包括通过索引修改、修改 <code>length</code> 等。</p>
+</li>
+<li>
+<p><strong>原生支持属性的新增和删除</strong>：不需要像 Vue 2 那样使用特殊的 API。</p>
+</li>
+<li>
+<p><strong>性能更好</strong>：<code>Proxy</code> 返回的是一个新对象，而不是修改原对象，某些场景下性能更优，且代码更简洁。</p>
+</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>兼容性问题</strong>：<code>Proxy</code> 是 ES6 的特性，无法通过 Polyfill（垫片）来兼容旧浏览器（如 IE11）。不过在 2025 年的今天，这对于绝大多数现代项目已经不是主要障碍。</li>
+</ul>
+<hr>
+<h3 id="结论与最佳选择"><a href="#结论与最佳选择">结论与最佳选择</a></h3>
+<p>在当前的技术背景下，<strong>使用 <code>Proxy</code> 是实现 JavaScript 双向数据绑定的最佳选择</strong>。</p>
+<p>它从根本上解决了 <code>Object.defineProperty</code> 的诸多痛点，使得响应式系统的实现更加健壮和简洁。Vue 3 全面转向 <code>Proxy</code> 也印证了这一点。<code>Proxy</code> 提供了一个更为全面的代理层，让数据劫持变得无懈可击，无论是对象还是数组，无论是修改、新增还是删除，都能被轻松捕获。</p>
+<p>虽然 <code>Object.defineProperty</code> 在兼容性上略有优势，但除非你的项目需要支持非常古老的浏览器环境，否则 <code>Proxy</code> 方案在功能、性能和代码优雅度上都全面胜出。理解 <code>Object.defineProperty</code> 的原理依然很有价值，因为它能帮助你更好地理解响应式编程的演进历史和核心思想，但对于新项目开发，<code>Proxy</code> 无疑是更现代、更强大的工具。</p>8:[["$","$L18",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L19","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"双向数据绑定"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2014," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$1a"}}],"$L1b","$L1c"]}],"$L1d"]}]}]]
+1e:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1f:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1b:["$","$L1e",null,{}]
+1c:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L19",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1d:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1f",null,{"headings":[{"level":3,"id":"方案一使用-objectdefineproperty-数据劫持","text":"方案一：使用 Object.defineProperty() (数据劫持)"},{"level":4,"id":"代码示例","text":"代码示例"},{"level":3,"id":"方案二使用-proxy-和-reflect-数据代理","text":"方案二：使用 Proxy 和 Reflect (数据代理)"},{"level":4,"id":"代码示例-1","text":"代码示例"},{"level":3,"id":"结论与最佳选择","text":"结论与最佳选择"}]}]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+12:null
+17:[["$","title","0",{"children":"双向数据绑定 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，我们来深入探讨一下如何在 JavaScript 中从零开始实现一个双向数据绑定。 双向数据绑定，顾名思义，就是将数据（通常是一个 JavaScript 对象，我们称之为 Model）和视图（HTML 界面，我们称之为 View）进行绑…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L20","4",{}]]

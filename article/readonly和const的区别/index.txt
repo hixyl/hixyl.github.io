@@ -1,0 +1,145 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+e:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","readonly%E5%92%8Cconst%E7%9A%84%E5%8C%BA%E5%88%AB",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","readonly%E5%92%8Cconst%E7%9A%84%E5%8C%BA%E5%88%AB","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",["$L9","$La"],"$Lb"]}],{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+10:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+b:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+13:[]
+c:"$W13"
+d:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$11",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+1a:T1732,<p>在 TypeScript 和 JavaScript 的世界里，<code>const</code> 和 <code>readonly</code> 经常被放在一起比较，因为它们都服务于同一个目标：<strong>防止变量或属性被修改</strong>。</p>
+<p>简单来说：<strong><code>const</code> 作用于变量（Variable），而 <code>readonly</code> 作用于属性（Property）。</strong></p>
+<hr>
+<h2 id="1-核心差异对照表"><a href="#1-核心差异对照表">1. 核心差异对照表</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>const</strong></th>
+<th><strong>readonly</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>所属语言</strong></td>
+<td>JavaScript (ES6+)</td>
+<td>TypeScript (特有)</td>
+</tr>
+<tr>
+<td><strong>约束对象</strong></td>
+<td><strong>变量引用</strong>（该变量不能重新指向新对象）</td>
+<td><strong>类或接口的属性</strong>（该属性在初始化后不能修改）</td>
+</tr>
+<tr>
+<td><strong>检查时机</strong></td>
+<td>运行时 (Runtime)</td>
+<td>编译时 (Compile-time)</td>
+</tr>
+<tr>
+<td><strong>初始化</strong></td>
+<td>声明时必须赋值</td>
+<td>可以在声明时或在构造函数（Constructor）中赋值</td>
+</tr>
+<tr>
+<td><strong>适用范围</strong></td>
+<td>局部变量、全局常量</td>
+<td>类（Class）、接口（Interface）、类型别名（Type）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-深入理解-const"><a href="#2-深入理解-const">2. 深入理解 <code>const</code></a></h2>
+<p><code>const</code> 是 JavaScript 的原生关键字。它保证的是<strong>变量名和内存地址之间的绑定关系</strong>不可变。</p>
+<ul>
+<li>
+<p><strong>基本类型：</strong> 值确实不可变（如数字、字符串）。</p>
+</li>
+<li>
+<p><strong>引用类型（对象/数组）：</strong> <strong>内容是可变的</strong>，只是不能把变量重新指向另一个对象。</p>
+</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">const</span> user = { <span class="hljs-attr">name</span>: <span class="hljs-string">"Alice"</span> };
+
+user.<span class="hljs-property">name</span> = <span class="hljs-string">"Bob"</span>; <span class="hljs-comment">// ✅ 允许！因为 user 依然指向同一个对象</span>
+<span class="hljs-comment">// user = { name: "Charlie" }; // ❌ 报错：无法分配到常数</span>
+</code></pre>
+<hr>
+<h2 id="3-深入理解-readonly"><a href="#3-深入理解-readonly">3. 深入理解 <code>readonly</code></a></h2>
+<p><code>readonly</code> 是 TypeScript 提供的类型系统修饰符。它更像是一个“只读协议”，告诉编译器：“这个属性一旦确定，别让任何人动它”。</p>
+<ul>
+<li>
+<p><strong>灵活性：</strong> 它允许在构造函数中进行逻辑计算后再赋值，而 <code>const</code> 必须在声明那一刻写死。</p>
+</li>
+<li>
+<p><strong>编译后消失：</strong> 编译成 JS 后，<code>readonly</code> 会消失，它不影响运行时的行为。</p>
+</li>
+</ul>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Robot</span> {
+    <span class="hljs-keyword">readonly</span> <span class="hljs-attr">serialNumber</span>: <span class="hljs-built_in">string</span>;
+
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>) {
+        <span class="hljs-comment">// 允许在构造函数内初始化</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">serialNumber</span> = <span class="hljs-string">`SN-<span class="hljs-subst">${id}</span>-<span class="hljs-subst">${<span class="hljs-built_in">Math</span>.random()}</span>`</span>;
+    }
+
+    <span class="hljs-title function_">updateId</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-comment">// this.serialNumber = "NEW-ID"; // ❌ 报错：只读属性不可修改</span>
+    }
+}
+</code></pre>
+<hr>
+<h2 id="4-组合拳最严格的限制"><a href="#4-组合拳最严格的限制">4. 组合拳：最严格的限制</a></h2>
+<p>如果你想要一个变量既不能重新指向，其内部属性也不能被修改，你需要结合两者使用：</p>
+<p>TypeScript</p>
+<pre><code class="hljs language-ts"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">Point</span> {
+    <span class="hljs-keyword">readonly</span> <span class="hljs-attr">x</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-keyword">readonly</span> <span class="hljs-attr">y</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">p1</span>: <span class="hljs-title class_">Point</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> };
+
+<span class="hljs-comment">// p1 = { x: 1, y: 2 }; // ❌ const 阻止了重新赋值</span>
+<span class="hljs-comment">// p1.x = 5;            // ❌ readonly 阻止了修改属性</span>
+</code></pre>
+<hr>
+<h2 id="5-什么时候用哪个"><a href="#5-什么时候用哪个">5. 什么时候用哪个？</a></h2>
+<ul>
+<li>
+<p>如果你在声明一个<strong>局部的临时变量</strong>，或者一个<strong>全局的配置常量</strong>，使用 <code>const</code>。</p>
+</li>
+<li>
+<p>如果你在定义<strong>接口、类或对象字面量</strong>，且希望外部调用者不要随意修改里面的成员，使用 <code>readonly</code>。</p>
+</li>
+<li>
+<p>如果你正在处理一个<strong>数组且不希望它被 push/pop/splice</strong>，使用 <code>ReadonlyArray&#x3C;T></code>。</p>
+</li>
+</ul>
+<p>你需要我演示一下如何利用 <code>Readonly&#x3C;T></code> 快速把一个现有的复杂接口转换成全只读模式吗？</p>8:[["$","$L18",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L19","前端开发/typescript",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/typescript/","className":"$undefined","children":"前端开发 / typescript"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"readonly和const的区别"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-27T00:00:00.000Z","children":"2026年2月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[643," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",3," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$1a"}}],"$L1b","$L1c"]}],"$L1d"]}]}]]
+1e:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1f:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1b:["$","$L1e",null,{}]
+1c:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L19",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1d:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1f",null,{"headings":[{"level":2,"id":"1-核心差异对照表","text":"1. 核心差异对照表"},{"level":2,"id":"2-深入理解-const","text":"2. 深入理解 const"},{"level":2,"id":"3-深入理解-readonly","text":"3. 深入理解 readonly"},{"level":2,"id":"4-组合拳最严格的限制","text":"4. 组合拳：最严格的限制"},{"level":2,"id":"5-什么时候用哪个","text":"5. 什么时候用哪个？"}]}]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+12:null
+17:[["$","title","0",{"children":"readonly和const的区别 | 流年石刻"}],["$","meta","1",{"name":"description","content":"在 TypeScript 和 JavaScript 的世界里，const 和 readonly 经常被放在一起比较，因为它们都服务于同一个目标：防止变量或属性被修改。 简单来说：const 作用于变量（Variable），而 readonl…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L20","4",{}]]

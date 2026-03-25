@@ -1,0 +1,379 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T4aa6,<p>好的，我们来彻底讲明白如何在 JavaScript 中翻转一棵二叉树。</p>
+<p>这不仅仅是一个经典的算法问题，它还因为一则著名的轶事而广为人知：流行的软件包管理器 Homebrew 的作者 Max Howell 在 Google 面试时因为没能现场写出这个算法而被拒。这足以说明，理解它背后的原理非常重要。</p>
+<p>我们将从问题本身出发，通过第一性原理推导出解决方案，然后提供并解析两种主流的实现方法：递归和迭代。</p>
+<h3 id="1-核心问题什么是翻转二叉树"><a href="#1-核心问题什么是翻转二叉树">1. 核心问题：什么是“翻转”二叉树？</a></h3>
+<p>首先，我们需要一个二叉树的节点结构。在 JavaScript 中，通常用一个对象来表示：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 二叉树节点的构造函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">TreeNode</span>(<span class="hljs-params">val, left, right</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">val</span> = val === <span class="hljs-literal">undefined</span> ? <span class="hljs-number">0</span> : val;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">left</span> = left === <span class="hljs-literal">undefined</span> ? <span class="hljs-literal">null</span> : left;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">right</span> = right === <span class="hljs-literal">undefined</span> ? <span class="hljs-literal">null</span> : right;
+}
+</code></pre>
+<p>“翻转”或者叫“镜像”一棵二叉树，意味着对于树中的<strong>每一个节点</strong>，它的左子树和右子树都要互相交换位置。</p>
+<p>让我们看一个具体的例子：</p>
+<p><strong>原始二叉树:</strong></p>
+<pre><code class="hljs language-markdown"><span class="hljs-code">      4
+     / \
+    2   7
+   / \ / \
+  1  3 6  9
+</span></code></pre>
+<p><strong>翻转后的二叉树:</strong></p>
+<pre><code class="hljs language-markdown"><span class="hljs-code">      4
+     / \
+    7   2
+   / \ / \
+  9  6 3  1
+</span></code></pre>
+<p>观察上图，你会发现：</p>
+<ul>
+<li>
+<p>根节点 <code>4</code> 的左孩子 <code>2</code> 和右孩子 <code>7</code> 交换了位置。</p>
+</li>
+<li>
+<p>对于新的左孩子 <code>7</code>，它原来的左孩子 <code>6</code> 和右孩子 <code>9</code> 也交换了位置。</p>
+</li>
+<li>
+<p>对于新的右孩子 <code>2</code>，它原来的左孩子 <code>1</code> 和右孩子 <code>3</code> 也交换了位置。</p>
+</li>
+<li>
+<p>这个交换操作一直持续到树的末端。</p>
+</li>
+</ul>
+<h3 id="2-从根本上思考如何实现这个交换"><a href="#2-从根本上思考如何实现这个交换">2. 从根本上思考：如何实现这个交换？</a></h3>
+<p>这个问题的核心是“对每一个节点都执行相同的操作”。这种描述天然地指向了两种策略：<strong>递归 (Recursion)</strong> 和 <strong>迭代 (Iteration)</strong>。</p>
+<h4 id="逻辑推演递归思路"><a href="#逻辑推演递归思路">逻辑推演（递归思路）</a></h4>
+<ol>
+<li>
+<p><strong>最简化问题</strong>：如果这棵树只有一个节点（根节点），或者干脆是空的（<code>null</code>），需要翻转吗？不需要。这自然成为了我们思考的<strong>基线条件 (Base Case)</strong>。如果一个节点是 <code>null</code>，我们直接返回即可，因为没有东西可以翻转。</p>
+</li>
+<li>
+<p><strong>扩展一步</strong>：假设我们有一个节点，它有左、右两个孩子（但这两个孩子没有后代）。我们要翻转这棵树，需要做什么？很简单，只需要交换它的左右孩子。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-ini">// 伪代码
+let <span class="hljs-attr">temp</span> = node.left<span class="hljs-comment">;</span>
+<span class="hljs-attr">node.left</span> = node.right<span class="hljs-comment">;</span>
+<span class="hljs-attr">node.right</span> = temp<span class="hljs-comment">;</span>
+</code></pre>
+</li>
+<li>
+<p><strong>推广到整个树</strong>：现在我们来看一个完整的树。对于根节点，我们执行了第2步的交换操作。但这就够了吗？显然不够。我们交换过来的新的左子树（原来是右子树）本身也需要被翻转。同理，新的右子树（原来是左子树）也需要被翻转。</p>
+<p>这就形成了一个完美的递归结构：</p>
+<ul>
+<li>
+<p><strong>定义一个函数 <code>invertTree(node)</code></strong>：它的功能是翻转以 <code>node</code> 为根的这棵子树。</p>
+</li>
+<li>
+<p><strong>函数体</strong>：</p>
+<ol>
+<li>
+<p>处理基线条件：如果 <code>node</code> 是 <code>null</code>，直接返回。</p>
+</li>
+<li>
+<p>交换 <code>node.left</code> 和 <code>node.right</code>。</p>
+</li>
+<li>
+<p>对新的左子树（也就是原来的右子树）递归调用 <code>invertTree</code>。</p>
+</li>
+<li>
+<p>对新的右子树（也就是原来的左子树）递归调用 <code>invertTree</code>。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<p>这个逻辑是自洽且完备的。它保证了从上到下，每一层的每一个节点都会被正确处理。</p>
+<h3 id="3-javascript-实现与解析"><a href="#3-javascript-实现与解析">3. JavaScript 实现与解析</a></h3>
+<h4 id="方法一递归解法-dfs---深度优先搜索"><a href="#方法一递归解法-dfs---深度优先搜索">方法一：递归解法 (DFS - 深度优先搜索)</a></h4>
+<p>递归的实现方式直接翻译了我们上面的逻辑推演，代码非常简洁、优雅。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ * this.val = (val===undefined ? 0 : val)
+ * this.left = (left===undefined ? null : left)
+ * this.right = (right===undefined ? null : right)
+ * }
+ */</span>
+<span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">TreeNode</span>} <span class="hljs-variable">root</span>
+ * <span class="hljs-doctag">@return</span> {<span class="hljs-type">TreeNode</span>}
+ */</span>
+<span class="hljs-keyword">var</span> invertTree = <span class="hljs-keyword">function</span>(<span class="hljs-params">root</span>) {
+    <span class="hljs-comment">// 1. 基线条件：如果当前节点是 null，说明已经到底，直接返回。</span>
+    <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+
+    <span class="hljs-comment">// 2. 交换当前节点的左右子节点</span>
+    <span class="hljs-comment">// 这里我们先递归处理，再交换，效果是一样的。</span>
+    <span class="hljs-comment">// 也可以先交换，再递归。我们采用先递归后交换的“后序遍历”思路。</span>
+    
+    <span class="hljs-comment">// 递归地翻转左子树</span>
+    <span class="hljs-keyword">const</span> left = <span class="hljs-title function_">invertTree</span>(root.<span class="hljs-property">left</span>);
+    <span class="hljs-comment">// 递归地翻转右子树</span>
+    <span class="hljs-keyword">const</span> right = <span class="hljs-title function_">invertTree</span>(root.<span class="hljs-property">right</span>);
+
+    <span class="hljs-comment">// 将已经翻转好的左右子树，再进行交换</span>
+    root.<span class="hljs-property">left</span> = right;
+    root.<span class="hljs-property">right</span> = left;
+    
+    <span class="hljs-comment">// 3. 返回翻转后的当前节点</span>
+    <span class="hljs-keyword">return</span> root;
+};
+</code></pre>
+<p><strong>代码执行过程剖析：</strong></p>
+<p>我们以上面的树为例，看看 <code>invertTree(node=4)</code> 是如何执行的：</p>
+<ol>
+<li>
+<p><code>invertTree(4)</code> 被调用。<code>root</code> 不是 <code>null</code>。</p>
+</li>
+<li>
+<p><code>invertTree(4.left)</code> 即 <code>invertTree(2)</code> 被调用。</p>
+<ol>
+<li>
+<p><code>invertTree(2)</code> 被调用。<code>root</code> 不是 <code>null</code>。</p>
+</li>
+<li>
+<p><code>invertTree(2.left)</code> 即 <code>invertTree(1)</code> 被调用。</p>
+<ol>
+<li>
+<p><code>invertTree(1)</code> 被调用。<code>root</code> 不是 <code>null</code>。</p>
+</li>
+<li>
+<p><code>invertTree(1.left)</code> 即 <code>invertTree(null)</code> -> 返回 <code>null</code>。</p>
+</li>
+<li>
+<p><code>invertTree(1.right)</code> 即 <code>invertTree(null)</code> -> 返回 <code>null</code>。</p>
+</li>
+<li>
+<p>节点 <code>1</code> 的 <code>left</code> 和 <code>right</code> 交换（都是 <code>null</code>），<code>1</code> 本身不变。返回节点 <code>1</code>。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><code>invertTree(2.right)</code> 即 <code>invertTree(3)</code> 被调用。（过程同 <code>1</code>）。返回节点 <code>3</code>。</p>
+</li>
+<li>
+<p>在 <code>invertTree(2)</code> 的上下文中，<code>left</code> 变量接收到返回的 <code>1</code>，<code>right</code> 变量接收到返回的 <code>3</code>。</p>
+</li>
+<li>
+<p>交换 <code>2</code> 的子节点：<code>2.left</code> 变为 <code>3</code>，<code>2.right</code> 变为 <code>1</code>。返回节点 <code>2</code>。</p>
+</li>
+</ol>
+</li>
+<li>
+<p><code>invertTree(4.right)</code> 即 <code>invertTree(7)</code> 被调用。（过程同 <code>2</code>，最终 <code>7</code> 的左孩子变 <code>9</code>，右孩子变 <code>6</code>）。返回节点 <code>7</code>。</p>
+</li>
+<li>
+<p>在 <code>invertTree(4)</code> 的上下文中，<code>left</code> 变量接收到返回的、已翻转的节点 <code>2</code>，<code>right</code> 变量接收到返回的、已翻转的节点 <code>7</code>。</p>
+</li>
+<li>
+<p>交换 <code>4</code> 的子节点：<code>4.left</code> 变为 <code>7</code>，<code>4.right</code> 变为 <code>2</code>。</p>
+</li>
+<li>
+<p>返回根节点 <code>4</code>。整个树翻转完毕。</p>
+</li>
+</ol>
+<p>这种从下到上翻转的方式，属于<strong>深度优先搜索 (DFS)</strong> 中的<strong>后序遍历</strong>。你也可以采用前序遍历的方式（先交换，再递归），效果完全一样。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 前序遍历的递归实现</span>
+<span class="hljs-keyword">var</span> invertTreePreOrder = <span class="hljs-keyword">function</span>(<span class="hljs-params">root</span>) {
+    <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+    
+    <span class="hljs-comment">// 1. 先交换</span>
+    [root.<span class="hljs-property">left</span>, root.<span class="hljs-property">right</span>] = [root.<span class="hljs-property">right</span>, root.<span class="hljs-property">left</span>]; <span class="hljs-comment">// ES6 解构赋值，更简洁</span>
+    
+    <span class="hljs-comment">// 2. 再递归处理子树</span>
+    <span class="hljs-title function_">invertTreePreOrder</span>(root.<span class="hljs-property">left</span>);
+    <span class="hljs-title function_">invertTreePreOrder</span>(root.<span class="hljs-property">right</span>);
+    
+    <span class="hljs-keyword">return</span> root;
+};
+</code></pre>
+<h4 id="方法二迭代解法-bfs---广度优先搜索"><a href="#方法二迭代解法-bfs---广度优先搜索">方法二：迭代解法 (BFS - 广度优先搜索)</a></h4>
+<p>虽然递归很直观，但如果树的深度非常大，可能会导致调用栈溢出 (Stack Overflow)。迭代法则没有这个问题。</p>
+<p>我们可以使用一个队列 (Queue) 来辅助，这和<strong>广度优先搜索 (BFS)</strong> 的思路很像。</p>
+<p><strong>逻辑推演（迭代思路）</strong></p>
+<ol>
+<li>
+<p>创建一个队列，并把根节点放进去。</p>
+</li>
+<li>
+<p>当队列不为空时，循环执行以下操作：</p>
+<p>a. 从队列中取出一个节点（队首元素），称之为 currentNode。</p>
+<p>b. 交换 currentNode 的左右子节点。</p>
+<p>c. 如果 currentNode 交换后的左子节点（也就是原来的右子节点）不为 null，就把它加入队列。</p>
+<p>d. 如果 currentNode 交换后的右子节点（也就是原来的左子节点）不为 null，也把它加入队列。</p>
+</li>
+<li>
+<p>当队列为空时，说明树中所有节点都已经被访问并交换过，翻转完成。</p>
+</li>
+</ol>
+<p><strong>JavaScript 实现：</strong></p>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@param</span> {<span class="hljs-type">TreeNode</span>} <span class="hljs-variable">root</span>
+ * <span class="hljs-doctag">@return</span> {<span class="hljs-type">TreeNode</span>}
+ */</span>
+<span class="hljs-keyword">var</span> invertTreeIterative = <span class="hljs-keyword">function</span>(<span class="hljs-params">root</span>) {
+    <span class="hljs-keyword">if</span> (root === <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+    
+    <span class="hljs-comment">// 1. 创建一个队列，并将根节点入队</span>
+    <span class="hljs-keyword">const</span> queue = [root];
+    
+    <span class="hljs-comment">// 2. 当队列不为空时循环</span>
+    <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> > <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// a. 从队列中取出当前节点</span>
+        <span class="hljs-keyword">const</span> currentNode = queue.<span class="hljs-title function_">shift</span>(); <span class="hljs-comment">// shift() 取出并删除队首元素</span>
+        
+        <span class="hljs-comment">// b. 交换当前节点的左右子节点</span>
+        [currentNode.<span class="hljs-property">left</span>, currentNode.<span class="hljs-property">right</span>] = [currentNode.<span class="hljs-property">right</span>, currentNode.<span class="hljs-property">left</span>];
+        
+        <span class="hljs-comment">// c. 如果新的左子节点存在，将其入队，以便后续处理它的子节点</span>
+        <span class="hljs-keyword">if</span> (currentNode.<span class="hljs-property">left</span> !== <span class="hljs-literal">null</span>) {
+            queue.<span class="hljs-title function_">push</span>(currentNode.<span class="hljs-property">left</span>);
+        }
+        
+        <span class="hljs-comment">// d. 如果新的右子节点存在，将其入队</span>
+        <span class="hljs-keyword">if</span> (currentNode.<span class="hljs-property">right</span> !== <span class="hljs-literal">null</span>) {
+            queue.<span class="hljs-title function_">push</span>(currentNode.<span class="hljs-property">right</span>);
+        }
+    }
+    
+    <span class="hljs-comment">// 3. 返回根节点</span>
+    <span class="hljs-keyword">return</span> root;
+};
+</code></pre>
+<p><strong>代码执行过程剖析：</strong></p>
+<ol>
+<li>
+<p><code>queue = [4]</code></p>
+</li>
+<li>
+<p><strong>循环 1</strong>:</p>
+<ul>
+<li>
+<p><code>currentNode = 4</code> (出队)。<code>queue = []</code>。</p>
+</li>
+<li>
+<p>交换 <code>4</code> 的孩子。树变为：<code>4 -> (7, 2)</code>。</p>
+</li>
+<li>
+<p><code>4.left</code> (即 <code>7</code>) 不为 <code>null</code>，入队。<code>queue = [7]</code>。</p>
+</li>
+<li>
+<p><code>4.right</code> (即 <code>2</code>) 不为 <code>null</code>，入队。<code>queue = [7, 2]</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>循环 2</strong>:</p>
+<ul>
+<li>
+<p><code>currentNode = 7</code> (出队)。<code>queue = [2]</code>。</p>
+</li>
+<li>
+<p>交换 <code>7</code> 的孩子。树变为：<code>7 -> (9, 6)</code>。</p>
+</li>
+<li>
+<p><code>7.left</code> (即 <code>9</code>) 不为 <code>null</code>，入队。<code>queue = [2, 9]</code>。</p>
+</li>
+<li>
+<p><code>7.right</code> (即 <code>6</code>) 不为 <code>null</code>，入队。<code>queue = [2, 9, 6]</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>循环 3</strong>:</p>
+<ul>
+<li>
+<p><code>currentNode = 2</code> (出队)。<code>queue = [9, 6]</code>。</p>
+</li>
+<li>
+<p>交换 <code>2</code> 的孩子。树变为：<code>2 -> (3, 1)</code>。</p>
+</li>
+<li>
+<p><code>2.left</code> (即 <code>3</code>) 不为 <code>null</code>，入队。<code>queue = [9, 6, 3]</code>。</p>
+</li>
+<li>
+<p><code>2.right</code> (即 <code>1</code>) 不为 <code>null</code>，入队。<code>queue = [9, 6, 3, 1]</code>。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>后续循环</strong>:</p>
+<ul>
+<li><code>9, 6, 3, 1</code> 会依次出队。因为它们都是叶子节点，它们的 <code>left</code> 和 <code>right</code> 都是 <code>null</code>，交换后依然是 <code>null</code>，所以不会有新节点入队。</li>
+</ul>
+</li>
+<li>
+<p>队列最终变空，循环结束。返回 <code>root</code>。</p>
+</li>
+</ol>
+<h3 id="4-复杂度分析与对比"><a href="#4-复杂度分析与对比">4. 复杂度分析与对比</a></h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>递归解法 (DFS)</th>
+<th>迭代解法 (BFS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>时间复杂度</strong></td>
+<td>O(N)</td>
+<td>O(N)</td>
+</tr>
+<tr>
+<td></td>
+<td>我们需要访问树中的每一个节点恰好一次。</td>
+<td>我们需要访问树中的每一个节点并将其入队/出队一次。</td>
+</tr>
+<tr>
+<td><strong>空间复杂度</strong></td>
+<td>O(H)</td>
+<td>O(W)</td>
+</tr>
+<tr>
+<td></td>
+<td>H 是树的高度。空间消耗主要来自递归调用栈。最坏情况（树退化为链表），H=N，空间为 O(N)。最好情况（完全二叉树），H=logN，空间为 O(logN)。</td>
+<td>W 是树的最大宽度。空间消耗主要来自队列。最坏情况（完全二叉树），最后一层节点数最多，约为 N/2，空间为 O(N)。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="结论与建议"><a href="#结论与建议">结论与建议</a></h3>
+<p>两种方法都是正确且高效的。</p>
+<ul>
+<li>
+<p><strong>递归解法</strong>：代码更少，更简洁，逻辑更贴近问题的递归定义。对于大多数面试和日常应用场景，这都是首选，因为它最能体现你对问题本质的理解。</p>
+</li>
+<li>
+<p><strong>迭代解法</strong>：可以避免在树深度极大时出现调用栈溢出的风险，健壮性更好。在需要处理非常深或结构未知的树时，迭代是更安全的选择。</p>
+</li>
+</ul>
+<p><strong>综合来看，我更推荐使用递归解法。</strong></p>
+<p>它不仅代码优雅，而且深刻地反映了树形结构问题的内在特性——一个大问题可以分解为若干个结构相同的子问题。掌握了递归，你就掌握了解决大部分树相关问题的钥匙。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/算法",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%AE%97%E6%B3%95/","children":"前端开发 / 算法"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"翻转二叉树"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2262," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"1-核心问题什么是翻转二叉树","text":"1. 核心问题：什么是“翻转”二叉树？"},{"level":3,"id":"2-从根本上思考如何实现这个交换","text":"2. 从根本上思考：如何实现这个交换？"},{"level":4,"id":"逻辑推演递归思路","text":"逻辑推演（递归思路）"},{"level":3,"id":"3-javascript-实现与解析","text":"3. JavaScript 实现与解析"},{"level":4,"id":"方法一递归解法-dfs---深度优先搜索","text":"方法一：递归解法 (DFS - 深度优先搜索)"},{"level":4,"id":"方法二迭代解法-bfs---广度优先搜索","text":"方法二：迭代解法 (BFS - 广度优先搜索)"},{"level":3,"id":"4-复杂度分析与对比","text":"4. 复杂度分析与对比"},{"level":3,"id":"结论与建议","text":"结论与建议"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null

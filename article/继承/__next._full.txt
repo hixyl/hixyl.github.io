@@ -1,0 +1,186 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E7%BB%A7%E6%89%BF",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E7%BB%A7%E6%89%BF","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T3fed,<p>JavaScript 实现继承主要依赖于<strong>原型链</strong>。虽然 ES5 和 ES6 在语法上有所不同，但底层机制都是基于原型。</p>
+<hr>
+<h2 id="es5-中的继承"><a href="#es5-中的继承">ES5 中的继承</a></h2>
+<p>在 ES5 中，我们通常通过<strong>构造函数</strong>和<strong>原型链</strong>来模拟实现类的继承。核心思想是让子类的原型对象指向父类的实例，从而能够访问父类原型上的方法和属性。</p>
+<p>以下是一种常见的实现方式，被称为“寄生组合式继承”，因为它结合了多种模式的优点，避免了构造函数继承和原型链继承的缺点：</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 父类构造函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params">name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">hobbies</span> = [<span class="hljs-string">'reading'</span>, <span class="hljs-string">'swimming'</span>]; <span class="hljs-comment">// 引用类型属性</span>
+}
+
+<span class="hljs-comment">// 父类原型上的方法</span>
+<span class="hljs-title class_">Parent</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">sayHello</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello, my name is '</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span>);
+};
+
+<span class="hljs-comment">// 子类构造函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Child</span>(<span class="hljs-params">name, age</span>) {
+    <span class="hljs-comment">// 1. 借用构造函数继承属性</span>
+    <span class="hljs-comment">// 调用 Parent 构造函数，并改变其 this 指向 Child 的实例</span>
+    <span class="hljs-title class_">Parent</span>.<span class="hljs-title function_">call</span>(<span class="hljs-variable language_">this</span>, name);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+}
+
+<span class="hljs-comment">// 2. 继承原型方法（关键步骤）</span>
+<span class="hljs-comment">// 创建一个父类原型的副本作为子类的原型，避免直接赋值导致子类原型修改影响父类原型</span>
+<span class="hljs-title class_">Child</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(<span class="hljs-title class_">Parent</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>);
+
+<span class="hljs-comment">// 3. 修正子类构造函数的指向</span>
+<span class="hljs-comment">// Object.create() 会创建一个新对象，它的 constructor 属性会指向 Object，</span>
+<span class="hljs-comment">// 所以需要手动将其指回 Child 构造函数</span>
+<span class="hljs-title class_">Child</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">constructor</span> = <span class="hljs-title class_">Child</span>;
+
+<span class="hljs-comment">// 子类特有的方法</span>
+<span class="hljs-title class_">Child</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">sayAge</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'I am '</span> + <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> + <span class="hljs-string">' years old.'</span>);
+};
+
+<span class="hljs-comment">// 示例</span>
+<span class="hljs-keyword">const</span> parentInstance = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Parent</span>(<span class="hljs-string">'Dad'</span>);
+parentInstance.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is Dad</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(parentInstance.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+
+<span class="hljs-keyword">const</span> childInstance1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">'Alice'</span>, <span class="hljs-number">10</span>);
+childInstance1.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is Alice</span>
+childInstance1.<span class="hljs-title function_">sayAge</span>();   <span class="hljs-comment">// I am 10 years old.</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance1.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+
+<span class="hljs-keyword">const</span> childInstance2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">'Bob'</span>, <span class="hljs-number">8</span>);
+childInstance2.<span class="hljs-property">hobbies</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'drawing'</span>); <span class="hljs-comment">// 修改子实例的引用类型属性</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance1.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance2.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming", "drawing"]</span>
+</code></pre>
+<p><strong>解析：</strong></p>
+<ul>
+<li>
+<p><strong><code>Parent.call(this, name);</code></strong>：这行代码实现了属性的继承。它在 <code>Child</code> 构造函数内部调用 <code>Parent</code> 构造函数，并强制 <code>Parent</code> 构造函数中的 <code>this</code> 指向 <code>Child</code> 的新实例。这样，<code>Parent</code> 中定义的实例属性（如 <code>name</code> 和 <code>hobbies</code>）就会被复制到 <code>Child</code> 的实例上。这解决了原型链继承中引用类型属性被所有实例共享的问题。</p>
+</li>
+<li>
+<p><strong><code>Child.prototype = Object.create(Parent.prototype);</code></strong>：这是实现方法继承的关键。<code>Object.create()</code> 方法会创建一个新对象，并以指定对象（这里是 <code>Parent.prototype</code>）作为其原型。这意味着 <code>Child.prototype</code> 现在是一个新对象，它的原型是 <code>Parent.prototype</code>。当查找 <code>Child</code> 实例上的方法时，如果实例本身没有，就会沿着原型链向上查找到 <code>Child.prototype</code>，如果还没有，再继续查找到 <code>Parent.prototype</code>，从而实现了方法的继承。</p>
+</li>
+<li>
+<p><strong><code>Child.prototype.constructor = Child;</code></strong>：由于 <code>Object.create()</code> 创建的新对象的 <code>constructor</code> 属性会指向 <code>Object</code>，我们需要手动将其重置为 <code>Child</code>，以保持 <code>Child</code> 实例的 <code>constructor</code> 属性正确指向 <code>Child</code> 构造函数。</p>
+</li>
+</ul>
+<hr>
+<h2 id="es6-中的继承"><a href="#es6-中的继承">ES6 中的继承</a></h2>
+<p>ES6 引入了 <code>class</code> 语法，这使得 JavaScript 的面向对象编程更接近于传统面向对象语言（如 Java、C++）的风格。然而，<strong>ES6 的 <code>class</code> 只是语法糖</strong>，其底层仍然是基于 ES5 中的原型继承机制。</p>
+<p>ES6 通过 <code>extends</code> 关键字和 <code>super</code> 关键字实现了更简洁、更直观的继承。</p>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 父类</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name;
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">hobbies</span> = [<span class="hljs-string">'reading'</span>, <span class="hljs-string">'swimming'</span>]; <span class="hljs-comment">// 引用类型属性</span>
+    }
+
+    <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.name}</span>`</span>);
+    }
+}
+
+<span class="hljs-comment">// 子类</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Parent</span> {
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age</span>) {
+        <span class="hljs-comment">// 在子类构造函数中，如果使用了 this，则必须先调用 super()</span>
+        <span class="hljs-comment">// super() 调用父类的构造函数，并传入相应的参数</span>
+        <span class="hljs-variable language_">super</span>(name); <span class="hljs-comment">// 相当于 Parent.call(this, name)</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
+    }
+
+    <span class="hljs-title function_">sayAge</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`I am <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.age}</span> years old.`</span>);
+    }
+
+    <span class="hljs-comment">// 也可以重写父类方法</span>
+    <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">super</span>.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// 调用父类的 sayHello 方法</span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`... and I am a child.`</span>);
+    }
+}
+
+<span class="hljs-comment">// 示例</span>
+<span class="hljs-keyword">const</span> parentInstance = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Parent</span>(<span class="hljs-string">'Dad'</span>);
+parentInstance.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is Dad</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(parentInstance.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+
+<span class="hljs-keyword">const</span> childInstance1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">'Alice'</span>, <span class="hljs-number">10</span>);
+childInstance1.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Hello, my name is Alice\n... and I am a child.</span>
+childInstance1.<span class="hljs-title function_">sayAge</span>();   <span class="hljs-comment">// I am 10 years old.</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance1.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+
+<span class="hljs-keyword">const</span> childInstance2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Child</span>(<span class="hljs-string">'Bob'</span>, <span class="hljs-number">8</span>);
+childInstance2.<span class="hljs-property">hobbies</span>.<span class="hljs-title function_">push</span>(<span class="hljs-string">'drawing'</span>); <span class="hljs-comment">// 修改子实例的引用类型属性</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance1.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming"]</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(childInstance2.<span class="hljs-property">hobbies</span>); <span class="hljs-comment">// ["reading", "swimming", "drawing"]</span>
+</code></pre>
+<p><strong>解析：</strong></p>
+<ul>
+<li>
+<p><strong><code>class Child extends Parent</code></strong>：这是声明继承的语法。它明确表示 <code>Child</code> 类继承自 <code>Parent</code> 类。这在底层做了很多工作，包括设置 <code>Child.prototype</code> 的原型为 <code>Parent.prototype</code>，以及处理 <code>constructor</code> 的正确指向。</p>
+</li>
+<li>
+<p><strong><code>super(name);</code></strong>：在子类的 <code>constructor</code> 中，必须在 <code>this</code> 关键字被使用之前调用 <code>super()</code>。<code>super()</code> 扮演着两个关键角色：</p>
+<ul>
+<li>
+<p>作为函数调用时（<code>super(...)</code>），它调用父类的构造函数，并绑定 <code>this</code> 到子类实例。这确保了父类实例的属性被正确地初始化到子类实例上。</p>
+</li>
+<li>
+<p>作为对象使用时（<code>super.method()</code>），它允许你访问父类原型上的方法。这在重写父类方法并希望在重写方法中调用父类版本时非常有用。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="对比与思考"><a href="#对比与思考">对比与思考</a></h3>
+<p>从实现方式上看：</p>
+<ul>
+<li>
+<p><strong>ES5</strong>：通过手动操作原型对象和借用构造函数来模拟实现继承，代码相对复杂和冗长，但能帮助我们深入理解 JavaScript 的原型机制。</p>
+</li>
+<li>
+<p><strong>ES6</strong>：提供了更简洁、更符合直觉的 <code>class</code> 语法和 <code>extends</code>/<code>super</code> 关键字，大大简化了继承的实现。它隐藏了原型链操作的复杂性，让开发者能更专注于业务逻辑。</p>
+</li>
+</ul>
+<p>从底层原理上看：</p>
+<p>无论 ES5 还是 ES6，JavaScript 的继承都是基于<strong>原型链</strong>。一个对象的原型（<code>[[Prototype]]</code>，通常通过 <code>__proto__</code> 访问，或者更推荐的 <code>Object.getPrototypeOf()</code>）指向另一个对象，当访问一个对象的属性或方法时，如果该对象本身没有，就会沿着原型链向上查找，直到找到该属性或方法，或者原型链的终点（<code>null</code>）。</p>
+<p><strong>我的见解：</strong></p>
+<p>虽然 ES5 的实现方式能让我们更清晰地看到 JavaScript 继承的本质（原型链），但它确实较为繁琐且容易出错。ES6 的 <code>class</code> 语法糖极大地提升了代码的可读性和可维护性，使得 JavaScript 的面向对象编程体验更佳，也更符合其他主流面向对象语言的习惯。因此，在现代 JavaScript 开发中，我们理所当然地会优先选择使用 ES6 的 <code>class</code> 语法来实现继承。它在不改变底层原型机制的前提下，为开发者提供了更高级别的抽象，使得代码结构更加清晰，意图表达更加明确。</p>
+<hr>
+<p>如果想深入了解更多关于原型链的细节，或者对其他 JavaScript 编程概念感兴趣，我们可以继续探讨。</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"继承"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-22T00:00:00.000Z","children":"2025年7月22日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1553," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":2,"id":"es5-中的继承","text":"ES5 中的继承"},{"level":2,"id":"es6-中的继承","text":"ES6 中的继承"},{"level":3,"id":"对比与思考","text":"对比与思考"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"继承 | 流年石刻"}],["$","meta","1",{"name":"description","content":"JavaScript 实现继承主要依赖于原型链。虽然 ES5 和 ES6 在语法上有所不同，但底层机制都是基于原型。  ES6 中的继承 ES6 引入了 class 语法，这使得 JavaScript 的面向对象编程更接近于传统面向对象语言…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

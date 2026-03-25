@@ -1,0 +1,216 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","React%20%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E7%BB%84%E4%BB%B6%20maxHeight%20%E5%8A%A8%E7%94%BB%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D%E4%B8%8E%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","React%20%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF%E7%BB%84%E4%BB%B6%20maxHeight%20%E5%8A%A8%E7%94%BB%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D%E4%B8%8E%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":"$L8","templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+10:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$L6",null,{}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Lf",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}]
+13:[]
+b:"$W13"
+c:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$11",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+1a:T40ac,<h3 id="1-问题背景"><a href="#1-问题背景">1. 问题背景</a></h3>
+<p>项目中有一个可复用的 React 组件 <code>YlCollapse</code>，它实现了一个点击标题可以展开/收起内容的折叠面板。其动画效果是通过 CSS <code>transition</code> 和 <code>max-height</code> 属性实现的。</p>
+<p><strong>遇到的问题是：</strong> 当该组件包裹的内容（例如一个 antd <code>Table</code> 组件）在展开状态下，因用户操作（如切换分页）导致其自身高度突然增加时，<code>YlCollapse</code> 组件的容器没有随之适应新的高度，导致新增的内容被截断，无法完整显示。</p>
+<h3 id="2-根源分析"><a href="#2-根源分析">2. 根源分析</a></h3>
+<p>问题的核心在于 <code>ResizeObserver</code> 的观察目标与 <code>max-height</code> 动画机制之间产生了逻辑冲突。</p>
+<ol>
+<li>
+<p><strong>动画机制</strong>：组件利用 <code>overflow: hidden</code> 和 <code>max-height</code> 从 <code>0px</code> 到 <code>content.scrollHeight</code> 的 <code>transition</code> 来实现平滑的展开动画。</p>
+</li>
+<li>
+<p><strong><code>ResizeObserver</code> 的用法</strong>：原有代码使用 <code>ResizeObserver</code> 来侦测内容容器 <code>div.content</code> 本身的尺寸变化，期望在内容高度变化时自动更新 <code>max-height</code>。</p>
+</li>
+<li>
+<p><strong>核心冲突点（死循环）</strong>：<code>ResizeObserver</code> 侦测的是元素<strong>最终渲染的盒子尺寸</strong>（<code>height</code>）。然而，<code>div.content</code> 的渲染高度已经被 <code>max-height</code> 属性“锁死”了。当内部的 <code>Table</code> 变高时，<code>div.content</code> 的 <code>scrollHeight</code>（可滚动高度）确实增加了，但它的 <code>height</code>（渲染高度）并未改变。因此，<code>ResizeObserver</code> 不会触发回调，<code>max-height</code> 的值也就无法得到更新。这是一个典型的“死循环”陷阱。</p>
+</li>
+<li>
+<p><strong>次要问题</strong>：代码中使用了 <code>document.querySelector</code> 来获取 DOM 节点。在 React 中，这是一种指令式的反模式（anti-pattern），它破坏了组件的封装性，并且在复杂的 DOM 结构或多个组件实例共存时可能导致意想不到的 bug。</p>
+</li>
+</ol>
+<h3 id="3-解决方案与思路"><a href="#3-解决方案与思路">3. 解决方案与思路</a></h3>
+<p>我们采用**“职责分离”**的原则来重构组件逻辑，彻底解决此问题。</p>
+<ol>
+<li>
+<p><strong>分离动画与测量</strong>：我们引入一个额外的内层 <code>div</code> 作为包裹层。</p>
+<ul>
+<li>
+<p><strong>外层容器 (<code>div.content</code>)</strong>：<strong>只负责动画</strong>。它拥有 <code>max-height</code> 和 <code>overflow: hidden</code> 样式。</p>
+</li>
+<li>
+<p><strong>内层包裹层 (<code>wrapper</code>)</strong>：<strong>只负责测量</strong>。它的高度不受任何限制，会随着子内容自由伸缩。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>修正观察目标</strong>：将 <code>ResizeObserver</code> 的观察目标从外层容器改为这个不受约束的内层包裹层。这样，只要内部 <code>Table</code> 高度变化，内层的高度就会变化，<code>ResizeObserver</code> 就能被正确触发。</p>
+</li>
+<li>
+<p><strong>拥抱 React Hooks</strong>：使用 <code>useRef</code> Hook 来替代 <code>document.querySelector</code>，以声明式、更安全的方式获取 DOM 节点的引用。</p>
+</li>
+<li>
+<p><strong>优化渲染性能</strong>：在 <code>ResizeObserver</code> 的回调中，使用 <code>requestAnimationFrame</code> (rAF) 来包裹更新 <code>max-height</code> 的操作。这可以将 DOM 的更新操作与浏览器的渲染周期同步，避免因连续的“读/写”操作引发的“布局抖动”（Layout Thrashing），确保动画在内容频繁变化时依然保持流畅。</p>
+</li>
+</ol>
+<h3 id="4-代码对比"><a href="#4-代码对比">4. 代码对比</a></h3>
+<h4 id="41-原有问题代码"><a href="#41-原有问题代码">4.1 原有问题代码</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { forwardRef, useEffect, useImperativeHandle, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> css <span class="hljs-keyword">from</span> <span class="hljs-string">'./index.module.less'</span>;
+<span class="hljs-keyword">import</span> classNames <span class="hljs-keyword">from</span> <span class="hljs-string">'classnames'</span>;
+<span class="hljs-keyword">import</span> { createUidKey } <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils'</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">YlCollapse</span> = (<span class="hljs-params">props: CollapseProps, ref: any</span>) => {
+  <span class="hljs-keyword">const</span> { title, defaultActive, children } = props;
+  <span class="hljs-keyword">const</span> [active, setActive] = <span class="hljs-title function_">useState</span>(defaultActive);
+  <span class="hljs-keyword">const</span> id = <span class="hljs-title function_">createUidKey</span>(title);
+ 
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">containerDiv</span>: <span class="hljs-title class_">HTMLElement</span> | <span class="hljs-literal">null</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">`#<span class="hljs-subst">${id}</span>`</span>);
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">contentDiv</span>: <span class="hljs-title class_">HTMLElement</span> | <span class="hljs-literal">null</span> = containerDiv?.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">`.<span class="hljs-subst">${css.content}</span>`</span>) || <span class="hljs-literal">null</span>;
+ 
+    <span class="hljs-keyword">if</span> (!contentDiv) <span class="hljs-keyword">return</span>;
+ 
+    <span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ResizeObserver</span>(<span class="hljs-function">() =></span> {
+      contentDiv.<span class="hljs-property">style</span>.<span class="hljs-property">maxHeight</span> = active ? <span class="hljs-string">`<span class="hljs-subst">${contentDiv.scrollHeight}</span>px`</span> : <span class="hljs-string">'0px'</span>;
+    });
+ 
+    observer.<span class="hljs-title function_">observe</span>(contentDiv);
+ 
+    contentDiv.<span class="hljs-property">style</span>.<span class="hljs-property">maxHeight</span> = active ? <span class="hljs-string">`<span class="hljs-subst">${contentDiv.scrollHeight}</span>px`</span> : <span class="hljs-string">'0px'</span>;
+ 
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =></span> observer.<span class="hljs-title function_">disconnect</span>();
+  }, [active, id]);
+
+  <span class="hljs-title function_">useImperativeHandle</span>(ref, <span class="hljs-function">() =></span> ({
+    <span class="hljs-title function_">toggle</span>(<span class="hljs-params">status: boolean</span>) {
+      <span class="hljs-title function_">setActive</span>(status);
+    }
+  }));
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.collapse}</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{id}</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.board}</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> setActive(!active)}>
+        {/* ... */}
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.content}</span>></span>{children}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">forwardRef</span>(<span class="hljs-title class_">YlCollapse</span>);
+</code></pre>
+<h4 id="42-优化后的最终代码"><a href="#42-优化后的最终代码">4.2 优化后的最终代码</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span>, { forwardRef, useEffect, useImperativeHandle, useState, useRef } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> css <span class="hljs-keyword">from</span> <span class="hljs-string">'./index.module.less'</span>;
+
+<span class="hljs-comment">// 假设的 Props 类型定义</span>
+interface <span class="hljs-title class_">CollapseProps</span> {
+  <span class="hljs-attr">title</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+  defaultActive?: boolean;
+  <span class="hljs-attr">children</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">YlCollapse</span> = <span class="hljs-title function_">forwardRef</span>(<span class="hljs-function">(<span class="hljs-params">props: CollapseProps, ref: any</span>) =></span> {
+  <span class="hljs-keyword">const</span> { title, defaultActive = <span class="hljs-literal">false</span>, children } = props;
+  <span class="hljs-keyword">const</span> [active, setActive] = <span class="hljs-title function_">useState</span>(defaultActive);
+
+  <span class="hljs-comment">// 使用 useRef 替代 querySelector</span>
+  <span class="hljs-keyword">const</span> contentRef = useRef&#x3C;<span class="hljs-title class_">HTMLDivElement</span>>(<span class="hljs-literal">null</span>); <span class="hljs-comment">// 指向执行动画的外部容器</span>
+  <span class="hljs-keyword">const</span> wrapperRef = useRef&#x3C;<span class="hljs-title class_">HTMLDivElement</span>>(<span class="hljs-literal">null</span>); <span class="hljs-comment">// 指向内部尺寸可变的包裹层</span>
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> contentEl = contentRef.<span class="hljs-property">current</span>;
+    <span class="hljs-keyword">const</span> wrapperEl = wrapperRef.<span class="hljs-property">current</span>;
+
+    <span class="hljs-keyword">if</span> (!contentEl || !wrapperEl) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-comment">// 1. 创建 ResizeObserver 观察内部包裹层的尺寸变化</span>
+    <span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ResizeObserver</span>(<span class="hljs-function">() =></span> {
+      <span class="hljs-keyword">if</span> (active) {
+        <span class="hljs-comment">// 2. 使用 rAF 优化性能，防止布局抖动</span>
+        <span class="hljs-title function_">requestAnimationFrame</span>(<span class="hljs-function">() =></span> {
+          <span class="hljs-keyword">if</span> (contentRef.<span class="hljs-property">current</span> &#x26;&#x26; wrapperRef.<span class="hljs-property">current</span>) {
+            contentRef.<span class="hljs-property">current</span>.<span class="hljs-property">style</span>.<span class="hljs-property">maxHeight</span> = <span class="hljs-string">`<span class="hljs-subst">${wrapperRef.current.scrollHeight}</span>px`</span>;
+          }
+        });
+      }
+    });
+
+    observer.<span class="hljs-title function_">observe</span>(wrapperEl);
+
+    <span class="hljs-comment">// 3. 根据 active 状态设置初始 maxHeight</span>
+    contentEl.<span class="hljs-property">style</span>.<span class="hljs-property">maxHeight</span> = active ? <span class="hljs-string">`<span class="hljs-subst">${wrapperEl.scrollHeight}</span>px`</span> : <span class="hljs-string">'0px'</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =></span> {
+      observer.<span class="hljs-title function_">disconnect</span>();
+    };
+  }, [active]);
+
+  <span class="hljs-title function_">useImperativeHandle</span>(ref, <span class="hljs-function">() =></span> ({
+    <span class="hljs-title function_">toggle</span>(<span class="hljs-params">status: boolean</span>) {
+      <span class="hljs-title function_">setActive</span>(status);
+    }
+  }));
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.collapse}</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.board}</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> setActive(!active)}>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{title}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{active</span> ? <span class="hljs-attr">css.moreIconActive</span> <span class="hljs-attr">:</span> <span class="hljs-attr">css.moreIcon</span>} /></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      
+      {/* 外层容器：负责动画和裁剪 */}
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{css.content}</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{contentRef}</span>></span>
+        {/* 内层包裹层：负责被观察尺寸 */}
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{wrapperRef}</span>></span>
+          {children}
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+});
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">YlCollapse</span>;
+</code></pre>
+<h3 id="5-总结与最佳实践"><a href="#5-总结与最佳实践">5. 总结与最佳实践</a></h3>
+<p>此次修复不仅解决了眼前的 bug，也为我们沉淀了关于动态内容与 CSS 动画交互的最佳实践。</p>
+<ol>
+<li>
+<p><strong>掌握 <code>max-height</code> 动画模式</strong>：当使用 <code>max-height</code> 制作内容自适应的动画时，必须采用“外层动画，内层测量”的嵌套结构，这是解决此类问题的标准模式。</p>
+</li>
+<li>
+<p><strong>坚持 React 的声明式思想</strong>：在组件内部，应始终优先使用 <code>useRef</code> 来操作和引用 DOM 元素，避免使用 <code>document.querySelector</code> 等指令式 API，以保证组件的健壮性和可维护性。</p>
+</li>
+<li>
+<p><strong>关注渲染性能</strong>：对于涉及 DOM 尺寸读取和样式写入的交互，尤其是那些可能被频繁触发的场景（如 <code>ResizeObserver</code>, <code>onScroll</code>），应习惯性地使用 <code>requestAnimationFrame</code> 进行包裹，将性能优化作为编码习惯的一部分。</p>
+</li>
+<li>
+<p><strong>保持组件封装</strong>：一个好的组件应该管理好自己内部的复杂性。此次修复将所有逻辑都封装在 <code>YlCollapse</code> 内部，对父组件完全透明，父组件无需关心其内部实现细节，这符合高内聚、低耦合的设计原则。</p>
+</li>
+</ol>f:[["$","$L18",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L19","前端开发/实际问题解决",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","className":"$undefined","children":"前端开发 / 实际问题解决"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React 折叠面板组件 maxHeight 动画问题修复与优化总结"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-07-28T00:00:00.000Z","children":"2025年7月28日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1305," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",5," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$1a"}}],"$L1b","$L1c"]}],"$L1d"]}]}]]
+1e:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1f:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1b:["$","$L1e",null,{}]
+1c:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L19",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1d:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1f",null,{"headings":[{"level":3,"id":"1-问题背景","text":"1. 问题背景"},{"level":3,"id":"2-根源分析","text":"2. 根源分析"},{"level":3,"id":"3-解决方案与思路","text":"3. 解决方案与思路"},{"level":3,"id":"4-代码对比","text":"4. 代码对比"},{"level":4,"id":"41-原有问题代码","text":"4.1 原有问题代码"},{"level":4,"id":"42-优化后的最终代码","text":"4.2 优化后的最终代码"},{"level":3,"id":"5-总结与最佳实践","text":"5. 总结与最佳实践"}]}]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+12:null
+17:[["$","title","0",{"children":"React 折叠面板组件 maxHeight 动画问题修复与优化总结 | 流年石刻"}],["$","meta","1",{"name":"description","content":"1. 问题背景 项目中有一个可复用的 React 组件 YlCollapse，它实现了一个点击标题可以展开/收起内容的折叠面板。其动画效果是通过 CSS transition 和 maxheight 属性实现的。 遇到的问题是： 当该组件包…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L20","4",{}]]

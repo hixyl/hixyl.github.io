@@ -1,0 +1,370 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+d:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","%E6%8F%92%E6%A7%BD(slog)",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","%E6%8F%92%E6%A7%BD(slog)","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],"$L9"],"$La"]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+f:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+15:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+12:[]
+b:"$W12"
+c:["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","div",null,{"hidden":true,"children":["$","$L15",null,{"children":["$","$10",null,{"name":"Next.Metadata","children":"$L16"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+18:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+19:T3d42,<p>Vue 的插槽（Slot）机制是其组件化系统真正的精髓之一，它解决了“内容分发”的核心问题。彻底理解它，对构建可复用、高灵活性的组件至关重要。</p>
+<p>我们来从“为什么需要插槽”开始，一步步拆解它的用法、原理，以及 Vue 2 和 3 的演进。</p>
+<hr>
+<h3 id="1-为什么需要插槽核心问题"><a href="#1-为什么需要插槽核心问题">1. 为什么需要插槽？（核心问题）</a></h3>
+<p>想象一下，你正在封装一个通用的 <code>&#x3C;Modal></code>（弹窗）组件。这个组件的“架子”是固定的：一个灰色的遮罩层、一个白色的内容框、一个关闭按钮。</p>
+<p>但是，弹窗的<strong>内容</strong>（<code>body</code>）是完全不确定的。</p>
+<ul>
+<li>
+<p>有时候它只显示一行文字。</p>
+</li>
+<li>
+<p>有时候它需要一个复杂的表单。</p>
+</li>
+<li>
+<p>有时候它甚至需要一个“头部”（<code>header</code>）和“底部”（<code>footer</code>）按钮区。</p>
+</li>
+</ul>
+<p>我们不可能为每一种情况都给 <code>&#x3C;Modal></code> 组件传入 <code>props</code>（比如 <code>bodyText</code>、<code>showForm</code>、<code>footerButtons</code>）。这样做会使组件的 <code>props</code> 变得异常臃肿且难以维护。</p>
+<p><strong>插槽的核心思想是：组件只负责“挖坑”（定义框架和布局），而“填坑”（填充具体内容）的权力和责任，则交还给使用该组件的父组件。</strong></p>
+<p>它实现了<strong>控制反转（Inversion of Control）</strong>：子组件（<code>&#x3C;Modal></code>）控制了_在哪里_以及_何时_显示内容，而父组件控制了_显示什么_内容。</p>
+<hr>
+<h3 id="2-插槽的用法从简单到复杂"><a href="#2-插槽的用法从简单到复杂">2. 插槽的用法（从简单到复杂）</a></h3>
+<p>插槽的使用可以分为三类：</p>
+<h4 id="-a-默认插槽-default-slot"><a href="#-a-默认插槽-default-slot">🔹 A. 默认插槽 (Default Slot)</a></h4>
+<p>这是最简单的形式，组件里只有一个“坑”。</p>
+<ul>
+<li>
+<p><strong>子组件 (<code>BaseCard.vue</code>):</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;div class="card">
+  &#x3C;div class="card-header">
+    我是卡片头部
+  &#x3C;/div>
+  &#x3C;div class="card-content">
+    &#x3C;slot>&#x3C;/slot>
+  &#x3C;/div>
+&#x3C;/div>
+</code></pre>
+</li>
+<li>
+<p><strong>父组件 (<code>App.vue</code>):</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;BaseCard>
+  &#x3C;p>这是要插入卡片内容区的文字。&#x3C;/p>
+  &#x3C;img src="..." alt="image">
+&#x3C;/BaseCard>
+</code></pre>
+<p>所有在 <code>&#x3C;BaseCard></code> 标签内部的内容，都会被“塞”进 <code>&#x3C;slot>&#x3C;/slot></code> 所在的位置。</p>
+</li>
+</ul>
+<h4 id="-b-具名插槽-named-slots"><a href="#-b-具名插槽-named-slots">🔹 B. 具名插槽 (Named Slots)</a></h4>
+<p>当一个组件需要多个“坑”时（比如页头、页脚、侧边栏），我们就需要给它们命名。</p>
+<ul>
+<li>
+<p><strong>子组件 (<code>PageLayout.vue</code>):</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;div class="container">
+  &#x3C;header>
+    &#x3C;slot name="header">&#x3C;/slot>
+  &#x3C;/header>
+  &#x3C;main>
+    &#x3C;slot name="default">&#x3C;/slot>
+  &#x3C;/main>
+  &#x3C;footer>
+    &#x3C;slot name="footer">&#x3C;/slot>
+  &#x3C;/footer>
+&#x3C;/div>
+</code></pre>
+</li>
+<li>
+<p><strong>父组件 (<code>App.vue</code>):</strong></p>
+<ul>
+<li>
+<p><strong>Vue 3 语法 (推荐):</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;PageLayout>
+  &#x3C;template v-slot:header>
+    &#x3C;h1>这里是我的网站Logo&#x3C;/h1>
+  &#x3C;/template>
+
+  &#x3C;template #default>
+    &#x3C;p>这里是主要内容...&#x3C;/p>
+  &#x3C;/template>
+
+  &#x3C;template #footer>
+    &#x3C;p>版权所有 © 2025&#x3C;/p>
+  &#x3C;/template>
+&#x3C;/PageLayout>
+</code></pre>
+</li>
+<li>
+<p><strong>Vue 2 语法 (旧):</strong></p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;PageLayout>
+  &#x3C;template slot="header">
+    &#x3C;h1>这里是我的网站Logo&#x3C;/h1>
+  &#x3C;/template>
+
+  &#x3C;p>这里是主要内容...&#x3C;/p>
+
+  &#x3C;template slot="footer">
+    &#x3C;p>版权所有 © 2025&#x3C;/p>
+  &#x3C;/template>
+&#x3C;/PageLayout>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="-c-作用域插槽-scoped-slots"><a href="#-c-作用域插槽-scoped-slots">🔹 C. 作用域插槽 (Scoped Slots)</a></h4>
+<p>这是插槽最强大、也是最关键的用法。它解决了<strong>子组件的数据，如何在父组件的插槽内容中被使用</strong>的问题。</p>
+<ul>
+<li>
+<p><strong>场景：</strong> 想象一个列表组件 <code>&#x3C;UserList></code>，它负责获取用户数据（<code>users</code> 数组），但它_不关心_每一行具体怎么渲染。它希望父组件来决定。</p>
+</li>
+<li>
+<p>子组件 (UserList.vue):</p>
+<p>它在循环时，通过属性绑定将数据（如 user）“暴露”给 <code>&#x3C;slot></code>。</p>
+<p>HTML</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">ul</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">li</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"user in users"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"user.id"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">slot</span> <span class="hljs-attr">:user</span>=<span class="hljs-string">"user"</span> <span class="hljs-attr">:index</span>=<span class="hljs-string">"index"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">slot</span>></span>
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">li</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">ul</span>></span>
+</code></pre>
+</li>
+<li>
+<p><strong>父组件 (<code>App.vue</code>):</strong></p>
+<ul>
+<li>
+<p>Vue 3 语法 (推荐):</p>
+<p>父组件在使用 v-slot 时，可以“接收”子组件暴露的数据。</p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;UserList>
+  &#x3C;template v-slot="slotProps">
+    &#x3C;div>
+      &#x3C;span>{{ slotProps.index }}&#x3C;/span>
+      &#x3C;strong>{{ slotProps.user.name }}&#x3C;/strong>
+    &#x3C;/div>
+  &#x3C;/template>
+
+  &#x3C;template v-slot="{ user, index }">
+    &#x3C;div class="user-profile">
+      &#x3C;span>{{ index + 1 }}.&#x3C;/span>
+      &#x3C;img :src="user.avatar" />
+      &#x3C;span>{{ user.name }}&#x3C;/span>
+    &#x3C;/div>
+  &#x3C;/template>
+&#x3C;/UserList>
+</code></pre>
+</li>
+<li>
+<p>Vue 2 语法 (旧):</p>
+<p>使用 slot-scope 属性来接收。</p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;UserList>
+  &#x3C;template slot-scope="slotProps">
+    &#x3C;div>
+      &#x3C;span>{{ slotProps.index }}&#x3C;/span>
+      &#x3C;strong>{{ slotProps.user.name }}&#x3C;/strong>
+    &#x3C;/div>
+  &#x3C;/template>
+
+  &#x3C;template slot-scope="{ user, index }">
+    ...
+  &#x3C;/template>
+&#x3C;/UserList>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>作用域插槽的本质：</strong> 它将插槽变成了一个“<strong>以子组件数据为参数的函数</strong>”，这个函数在父组件的作用域中定义，但在子组件的作用域中执行。这是一种极其灵活的模式，常用于高阶组件和可复用列表的封装。</p>
+<hr>
+<h3 id="3-实现原理深入理解"><a href="#3-实现原理深入理解">3. 实现原理（深入理解）</a></h3>
+<p>要理解原理，我们必须跳出模板，思考 Vue 是如何编译和渲染的。</p>
+<ol>
+<li>
+<p>编译阶段（父组件）：</p>
+<p>当父组件的模板被编译时，例如：</p>
+<p>HTML</p>
+<pre><code class="hljs language-vue">&#x3C;UserList>
+  &#x3C;template v-slot="{ user }">
+    &#x3C;strong>{{ user.name }}&#x3C;/strong>
+  &#x3C;/template>
+&#x3C;/UserList>
+</code></pre>
+<p>编译器并_不会_在父组件的渲染函数（<code>render</code>）中立刻执行和渲染 <code>&#x3C;strong>{{ user.name }}&#x3C;/strong></code>。</p>
+<p>相反，它会将这个 <code>&#x3C;template></code> 编译成一个<strong>渲染函数</strong>，例如 <code>(scopedData) => VNode</code>。这个函数接受一个参数（即子组件传来的 <code>scopedData</code>，这里是 <code>{ user }</code>），然后返回 VNode（虚拟 DOM 节点）。</p>
+</li>
+<li>
+<p>传递阶段（父组件 -> 子组件）：</p>
+<p>父组件在渲染 <code>&#x3C;UserList></code> 组件时，会将这个编译好的“插槽函数”作为 VNode 的子节点数据（在 Vue 3 中是 slots 对象）传递给 <code>&#x3C;UserList></code> 子组件。</p>
+<p>父组件的渲染大致（伪代码）是：</p>
+<p>h(UserList, null, { default: ({ user }) => h('strong', user.name) })</p>
+<p>（h 是 createElement 的缩写，{...} 就是传递的 $slots 对象）</p>
+</li>
+<li>
+<p>渲染阶段（子组件）：</p>
+<p>子组件（<code>&#x3C;UserList></code>）的渲染函数在执行时，会遇到 <code>&#x3C;slot></code> 标签。例如：</p>
+<p>当它渲染到这里时，它会：</p>
+<p>a. 查找父组件是否传递了 default 插槽（this.$slots.default）。</p>
+<p>b. 如果找到了（发现它是一个函数），子组件会调用这个函数，并把自己的数据（{ user: ..., index: ... }）作为参数传进去。</p>
+<p>c. 即：this.$slots.default({ user: this.user, index: this.index })。</p>
+<p>d. 这个函数（在父组件中定义）被执行，返回了 <strong>...</strong> 的 VNode。</p>
+<p>e. 子组件将这个返回的 VNode 插入到自己 VDOM 树中 <code>&#x3C;slot></code> 标签所在的位置。</p>
+</li>
+</ol>
+<p>总结原理：</p>
+<p>插槽的实现，本质上是父组件向子组件传递了一个或多个 <strong>“VNode 工厂函数”（即插槽函数）。子组件在自己的渲染流程中，决定何时以及如何</strong> （用什么数据）去调用这些函数，并将函数返回的 VNode 渲染到指定位置。</p>
+<hr>
+<h3 id="4-vue-2-与-vue-3-的核心区别"><a href="#4-vue-2-与-vue-3-的核心区别">4. Vue 2 与 Vue 3 的核心区别</a></h3>
+<p>Vue 3 对插槽进行了重大的重构，使其更统一、更高效、更易于理解。</p>
+<h4 id="区别一语法统一-v-slot"><a href="#区别一语法统一-v-slot">区别一：语法统一 (v-slot)</a></h4>
+<ul>
+<li>
+<p><strong>Vue 2:</strong> 语法混乱。具名插槽用 <code>slot="name"</code>，作用域插槽用 <code>slot-scope="props"</code>。两者是不同的属性，令人困惑。</p>
+</li>
+<li>
+<p><strong>Vue 3:</strong> <strong>全面统一为 <code>v-slot</code> 指令。</strong></p>
+<ul>
+<li>
+<p><code>v-slot:header</code> (具名)</p>
+</li>
+<li>
+<p><code>v-slot:default="props"</code> (默认 + 作用域)</p>
+</li>
+<li>
+<p><code>v-slot:header="headerProps"</code> (具名 + 作用域)</p>
+</li>
+<li>
+<p>并提供了缩写 <code>#</code> (例如 <code>#header</code> 和 <code>#default="props"</code>)。</p>
+</li>
+<li>
+<p><code>v-slot</code> 只能用在 <code>&#x3C;template></code> 标签上（只有一个例外：当_只_使用默认插槽时，可以简写在组件标签上，如 <code>&#x3C;UserList v-slot="{ user }"></code>）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="区别二内部实现与性能-最核心的区别"><a href="#区别二内部实现与性能-最核心的区别">区别二：内部实现与性能 (最核心的区别)</a></h4>
+<p>这是最根本的区别，也是 Vue 3 性能提升的原因之一。</p>
+<ul>
+<li>
+<p><strong>Vue 2:</strong> 内部有两种不同的插槽。</p>
+<ol>
+<li>
+<p><strong><code>this.$slots</code> (静态插槽):</strong> 对应非作用域插槽。它是一个<strong>VNode 数组</strong>。</p>
+</li>
+<li>
+<p><strong><code>this.$scopedSlots</code> (作用域插槽):</strong> 对应作用域插槽。它是一个<strong>对象，值是函数</strong> (<code>{ name: (props) => VNode }</code>)。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>问题在于：</strong></p>
+<ul>
+<li>
+<p><strong>不一致：</strong> 开发者在子组件中需要根据情况访问 <code>$slots</code> 或 <code>$scopedSlots</code>。</p>
+</li>
+<li>
+<p><strong>性能损耗：</strong> 静态插槽 (<code>$slots</code>) 是在<strong>父组件渲染时</strong>就被创建成 VNode 数组的。如果父组件更新，会_强制_子组件也更新（因为 VNode 数组是新的引用），即使子组件根本没用到那些插槽，或者插槽内容没变。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vue 3:</strong> <strong>所有插槽都被统一了。</strong></p>
+<ol>
+<li>
+<p><code>this.$slots</code> (Options API) 或 <code>useSlots()</code> (Composition API) 始终是一个<strong>对象，值都是函数</strong> (<code>{ name: (props) => VNode }</code>)。</p>
+</li>
+<li>
+<p><strong>没有静态插槽了</strong>。即使是 <code>v-slot:header</code> 这种不带作用域的，在内部也会被编译成一个函数：<code>header: () => [ VNode... ]</code>。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>带来的好处：</strong></p>
+<ol>
+<li>
+<p><strong>API 一致性：</strong> 子组件始终通过 <code>this.$slots.name()</code> 来调用和渲染插槽。</p>
+</li>
+<li>
+<p><strong>性能优化 (懒执行)：</strong> 插槽函数只有在<strong>子组件实际渲染</strong>（即调用 <code>this.$slots.name()</code>) 时才会被执行。</p>
+</li>
+<li>
+<p><strong>更智能的更新：</strong> 当父组件更新时，只要插槽函数本身没有改变（即父组件的依赖没变），子组件就_不会_因为插槽而强制更新。子组件的更新与父组件的更新<strong>解耦</strong>了。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="总结对比表"><a href="#总结对比表">总结对比表</a></h4>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>Vue 2</strong></th>
+<th><strong>Vue 3</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>具名语法</strong></td>
+<td><code>slot="name"</code> (在 <code>&#x3C;template></code> 或元素上)</td>
+<td><code>v-slot:name</code> 或 <code>#name</code> (几乎只能在 <code>&#x3C;template></code> 上)</td>
+</tr>
+<tr>
+<td><strong>作用域语法</strong></td>
+<td><code>slot-scope="props"</code> (在 <code>&#x3C;template></code> 或元素上)</td>
+<td><code>v-slot="props"</code> 或 <code>v-slot:name="props"</code></td>
+</tr>
+<tr>
+<td><strong>内部 API</strong></td>
+<td><code>$slots</code> (VNode 数组) 和 <code>$scopedSlots</code> (函数对象)</td>
+<td><code>$slots</code> (统一的函数对象)</td>
+</tr>
+<tr>
+<td><strong>性能</strong></td>
+<td>静态插槽在父组件渲染时求值</td>
+<td>所有插槽都在子组件渲染时才“懒执行”</td>
+</tr>
+<tr>
+<td><strong>更新机制</strong></td>
+<td>父组件更新可能导致不必要的子组件更新</td>
+<td>父子组件更新解耦，更高效</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="总结与观点"><a href="#总结与观点">总结与观点</a></h3>
+<p>插槽是 Vue 组件组合的灵魂。从 Vue 2 到 Vue 3 的演进，不仅仅是语法的改变（<code>v-slot</code>），更重要的是内部实现的统一和优化。</p>
+<p>Vue 3 将所有插槽统一为“渲染函数”，实现了<strong>完全的懒加载和更精确的依赖追踪</strong>。这使得组件的父子更新关系更加解耦和高效。这种架构上的清晰统一，是 Vue 3 相较于 Vue 2 在设计哲学上的一大进步。</p>
+<p>你是否希望了解一下如何利用插槽来封装高阶组件（HOC）或者实现“Renderless”组件模式？</p>8:[["$","$L17",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L18","前端开发/vue",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/vue/","className":"$undefined","children":"前端开发 / vue"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"插槽(slog)"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-11-11T00:00:00.000Z","children":"2025年11月11日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2174," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",8," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}],"$L1c"]}]}]]
+1d:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1e:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1a:["$","$L1d",null,{}]
+1b:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L18",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1c:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1e",null,{"headings":[{"level":3,"id":"1-为什么需要插槽核心问题","text":"1. 为什么需要插槽？（核心问题）"},{"level":3,"id":"2-插槽的用法从简单到复杂","text":"2. 插槽的用法（从简单到复杂）"},{"level":4,"id":"-a-默认插槽-default-slot","text":"🔹 A. 默认插槽 (Default Slot)"},{"level":4,"id":"-b-具名插槽-named-slots","text":"🔹 B. 具名插槽 (Named Slots)"},{"level":4,"id":"-c-作用域插槽-scoped-slots","text":"🔹 C. 作用域插槽 (Scoped Slots)"},{"level":3,"id":"3-实现原理深入理解","text":"3. 实现原理（深入理解）"},{"level":3,"id":"4-vue-2-与-vue-3-的核心区别","text":"4. Vue 2 与 Vue 3 的核心区别"},{"level":4,"id":"区别一语法统一-v-slot","text":"区别一：语法统一 (v-slot)"},{"level":4,"id":"区别二内部实现与性能-最核心的区别","text":"区别二：内部实现与性能 (最核心的区别)"},{"level":4,"id":"总结对比表","text":"总结对比表"},{"level":3,"id":"总结与观点","text":"总结与观点"}]}]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+11:null
+16:[["$","title","0",{"children":"插槽(slog) | 流年石刻"}],["$","meta","1",{"name":"description","content":"Vue 的插槽（Slot）机制是其组件化系统真正的精髓之一，它解决了“内容分发”的核心问题。彻底理解它，对构建可复用、高灵活性的组件至关重要。 我们来从“为什么需要插槽”开始，一步步拆解它的用法、原理，以及 Vue 2 和 3 的演进。  …"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1f","4",{}]]

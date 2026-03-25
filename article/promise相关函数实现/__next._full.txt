@@ -1,0 +1,429 @@
+1:"$Sreact.fragment"
+2:I[94277,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[70119,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+4:I[39756,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+5:I[98168,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0m-fjq7yr4k5u.js","/_next/static/chunks/14787qi7nx.7q.js"],"default"]
+6:I[37457,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+7:I[79520,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+b:I[68027,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default",1]
+:HL["/_next/static/chunks/0g~zs8c5~_~uf.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
+0:{"P":null,"c":["","article","promise%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0",""],"q":"","i":false,"f":[[["",{"children":["article",{"children":[["slug","promise%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0j8g4_qst9ksd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0d3shmwh5_nmn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                var t = localStorage.getItem('theme');\n                if (t) { document.documentElement.setAttribute('data-theme', t); }\n                else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {\n                  document.documentElement.setAttribute('data-theme', 'dark');\n                }\n              })();\n            "}}]]}],["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","main",null,{"style":{"position":"relative","zIndex":1,"minHeight":"calc(100vh - 200px)"},"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{"children":["$","$L6",null,{}]}],"templateStyles":[],"templateScripts":[["$","script","script-0",{"src":"/_next/static/chunks/0m-fjq7yr4k5u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/14787qi7nx.7q.js","async":true}]],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"Footer-module__EZoWya__site-footer","children":["$","div",null,{"className":"Footer-module__EZoWya__footer-inner","children":[["$","div",null,{"className":"Footer-module__EZoWya__footer-poetry","children":"闲云潭影日悠悠，物换星移几度秋"}],["$","div",null,{"className":"Footer-module__EZoWya__footer-meta","children":[["$","span",null,{"children":["© ",2026," ","流年石刻"]}],["$","span",null,{"className":"Footer-module__EZoWya__dot","children":"·"}],["$","span",null,{"children":"流年似水，石刻永恒"}]]}]]}]}],[["$","$L7",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-N3DJ3JTVT2"}],["$","$L7",null,{"id":"google-analytics","children":"window.dataLayer = window.dataLayer || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js', new Date());\n                gtag('config', 'G-N3DJ3JTVT2');"}]]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{},null,false,null]},null,false,"$@9"]},null,false,"$@9"]},null,false,null],"$La",false]],"m":"$undefined","G":["$b",["$Lc"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ozBVcz1soOKExL08cmsFl"}
+e:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+9:"$W11"
+a:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0g~zs8c5~_~uf.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+17:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+18:T8315,<p>好的，这是一个非常核心且有深度的 JavaScript 问题。我们不仅要实现这些功能，更重要的是理解其背后的逻辑和原理。</p>
+<p>我会按照以下顺序为你手写实现并解释：</p>
+<ol>
+<li>
+<p><code>Promise.all</code>：等待所有 Promise 都成功。</p>
+</li>
+<li>
+<p><code>Promise.race</code>：返回第一个成功或失败的 Promise 的结果。</p>
+</li>
+<li>
+<p><code>Promise.any</code>：返回第一个成功的 Promise 的结果。</p>
+</li>
+<li>
+<p><code>Promise.allSettled</code>：等待所有 Promise 完成（无论成功或失败）。</p>
+</li>
+<li>
+<p><code>async/await</code> 的模拟实现：通过 Generator 函数来理解其本质。</p>
+</li>
+</ol>
+<hr>
+<h3 id="1-手写实现-promiseall"><a href="#1-手写实现-promiseall">1. 手写实现 <code>Promise.all</code></a></h3>
+<h4 id="核心逻辑"><a href="#核心逻辑">核心逻辑</a></h4>
+<p><code>Promise.all(promises)</code> 接收一个 Promise 数组，并返回一个新的 Promise。</p>
+<ul>
+<li>
+<p><strong>成功</strong>：当且仅当 <code>promises</code> 数组中所有的 Promise 都成功（fulfilled）时，返回的 Promise 才会成功，并且其成功的值是一个包含了所有 Promise 成功值的数组，顺序与原数组一致。</p>
+</li>
+<li>
+<p><strong>失败</strong>：只要 <code>promises</code> 数组中有一个 Promise 失败（rejected），返回的 Promise 就会立即失败，并且其失败的原因是第一个失败的 Promise 的原因。</p>
+</li>
+<li>
+<p><strong>空数组</strong>：如果传入的数组为空，则立即成功，并返回一个空数组。</p>
+</li>
+</ul>
+<h4 id="实现"><a href="#实现">实现</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myPromiseAll</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    <span class="hljs-comment">// 确保输入是可迭代的</span>
+    <span class="hljs-keyword">if</span> (!promises || <span class="hljs-keyword">typeof</span> promises[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>] !== <span class="hljs-string">'function'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">TypeError</span>(<span class="hljs-string">'Argument is not iterable'</span>));
+    }
+
+    <span class="hljs-keyword">const</span> promisesArray = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(promises);
+    <span class="hljs-keyword">const</span> results = [];
+    <span class="hljs-keyword">let</span> completedCount = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">const</span> numPromises = promisesArray.<span class="hljs-property">length</span>;
+
+    <span class="hljs-comment">// 处理空数组的边界情况</span>
+    <span class="hljs-keyword">if</span> (numPromises === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">resolve</span>([]);
+    }
+
+    promisesArray.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">promise, index</span>) =></span> {
+      <span class="hljs-comment">// 使用 Promise.resolve() 来处理非 Promise 的值</span>
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(promise)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> {
+          <span class="hljs-comment">// 保证结果的顺序与输入一致</span>
+          results[index] = value;
+          completedCount++;
+          
+          <span class="hljs-comment">// 当所有 promise 都成功时，resolve 结果数组</span>
+          <span class="hljs-keyword">if</span> (completedCount === numPromises) {
+            <span class="hljs-title function_">resolve</span>(results);
+          }
+        })
+        .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> {
+          <span class="hljs-comment">// 任何一个 promise 失败，整个 myPromiseAll 就失败</span>
+          <span class="hljs-title function_">reject</span>(error);
+        });
+    });
+  });
+}
+
+<span class="hljs-comment">// --- 使用示例 ---</span>
+<span class="hljs-keyword">const</span> p1 = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">const</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">resolve</span>(<span class="hljs-number">2</span>), <span class="hljs-number">100</span>));
+<span class="hljs-keyword">const</span> p3 = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-number">3</span>);
+<span class="hljs-keyword">const</span> p4_reject = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-string">'Error occurred'</span>);
+
+<span class="hljs-title function_">myPromiseAll</span>([p1, p2, p3])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">values</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.all success:'</span>, values)) <span class="hljs-comment">// 输出: Promise.all success: [1, 2, 3]</span>
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.all failed:'</span>, error));
+
+<span class="hljs-title function_">myPromiseAll</span>([p1, p2, p4_reject])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">values</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.all success:'</span>, values))
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.all failed:'</span>, error)); <span class="hljs-comment">// 输出: Promise.all failed: Error occurred</span>
+</code></pre>
+<hr>
+<h3 id="2-手写实现-promiserace"><a href="#2-手写实现-promiserace">2. 手写实现 <code>Promise.race</code></a></h3>
+<h4 id="核心逻辑-1"><a href="#核心逻辑-1">核心逻辑</a></h4>
+<p><code>Promise.race(promises)</code> 接收一个 Promise 数组，并返回一个新的 Promise。</p>
+<ul>
+<li>返回的这个新 Promise 的状态会与 <code>promises</code> 数组中第一个“尘埃落定”（settled，即成功或失败）的 Promise 的状态保持一致。谁快，就用谁的结果。</li>
+</ul>
+<h4 id="实现-1"><a href="#实现-1">实现</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myPromiseRace</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    <span class="hljs-keyword">if</span> (!promises || <span class="hljs-keyword">typeof</span> promises[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>] !== <span class="hljs-string">'function'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">TypeError</span>(<span class="hljs-string">'Argument is not iterable'</span>));
+    }
+
+    <span class="hljs-keyword">const</span> promisesArray = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(promises);
+
+    <span class="hljs-comment">// 如果是空数组，Promise 将永远 pending，符合规范</span>
+    <span class="hljs-keyword">if</span> (promisesArray.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">return</span>;
+    }
+
+    promisesArray.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">promise</span> =></span> {
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(promise)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> {
+          <span class="hljs-comment">// 第一个成功的 promise 会 resolve 外层的 promise</span>
+          <span class="hljs-title function_">resolve</span>(value);
+        })
+        .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> {
+          <span class="hljs-comment">// 第一个失败的 promise 会 reject 外层的 promise</span>
+          <span class="hljs-title function_">reject</span>(error);
+        });
+    });
+  });
+}
+
+<span class="hljs-comment">// --- 使用示例 ---</span>
+<span class="hljs-keyword">const</span> p_fast = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'fast'</span>), <span class="hljs-number">50</span>));
+<span class="hljs-keyword">const</span> p_slow = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'slow'</span>), <span class="hljs-number">200</span>));
+<span class="hljs-keyword">const</span> p_reject_fast = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">_, reject</span>) =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">reject</span>(<span class="hljs-string">'fast reject'</span>), <span class="hljs-number">100</span>));
+
+<span class="hljs-title function_">myPromiseRace</span>([p_fast, p_slow])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.race success:'</span>, value)) <span class="hljs-comment">// 输出: Promise.race success: fast</span>
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.race failed:'</span>, error));
+
+<span class="hljs-title function_">myPromiseRace</span>([p_slow, p_reject_fast])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.race success:'</span>, value))
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.race failed:'</span>, error)); <span class="hljs-comment">// 输出: Promise.race failed: fast reject</span>
+</code></pre>
+<hr>
+<h3 id="3-手写实现-promiseany"><a href="#3-手写实现-promiseany">3. 手写实现 <code>Promise.any</code></a></h3>
+<h4 id="核心逻辑-2"><a href="#核心逻辑-2">核心逻辑</a></h4>
+<p><code>Promise.any(promises)</code> 接收一个 Promise 数组，并返回一个新的 Promise。</p>
+<ul>
+<li>
+<p><strong>成功</strong>：只要 <code>promises</code> 数组中有一个 Promise 成功，返回的 Promise 就会立即成功，并且其成功的值是第一个成功的 Promise 的值。</p>
+</li>
+<li>
+<p><strong>失败</strong>：当且仅当 <code>promises</code> 数组中所有的 Promise 都失败时，返回的 Promise 才会失败，并且其失败的原因是一个 <code>AggregateError</code> 对象，它包含了所有 Promise 的失败原因。</p>
+</li>
+</ul>
+<h4 id="实现-2"><a href="#实现-2">实现</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myPromiseAny</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+    <span class="hljs-keyword">if</span> (!promises || <span class="hljs-keyword">typeof</span> promises[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>] !== <span class="hljs-string">'function'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">TypeError</span>(<span class="hljs-string">'Argument is not iterable'</span>));
+    }
+
+    <span class="hljs-keyword">const</span> promisesArray = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(promises);
+    <span class="hljs-keyword">const</span> numPromises = promisesArray.<span class="hljs-property">length</span>;
+    <span class="hljs-keyword">let</span> errors = [];
+    <span class="hljs-keyword">let</span> rejectedCount = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">if</span> (numPromises === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">AggregateError</span>([], <span class="hljs-string">'All promises were rejected'</span>));
+    }
+
+    promisesArray.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">promise, index</span>) =></span> {
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(promise)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> {
+          <span class="hljs-comment">// 只要有一个成功，就立即 resolve</span>
+          <span class="hljs-title function_">resolve</span>(value);
+        })
+        .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> {
+          errors[index] = error;
+          rejectedCount++;
+
+          <span class="hljs-comment">// 当所有 promise 都失败时，才 reject</span>
+          <span class="hljs-keyword">if</span> (rejectedCount === numPromises) {
+            <span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">AggregateError</span>(errors, <span class="hljs-string">'All promises were rejected'</span>));
+          }
+        });
+    });
+  });
+}
+
+
+<span class="hljs-comment">// --- 使用示例 ---</span>
+<span class="hljs-keyword">const</span> p_any_reject1 = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-string">'any reject 1'</span>);
+<span class="hljs-keyword">const</span> p_any_reject2 = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-string">'any reject 2'</span>);
+<span class="hljs-keyword">const</span> p_any_resolve = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">resolve</span>(<span class="hljs-string">'any resolve'</span>), <span class="hljs-number">100</span>));
+
+<span class="hljs-title function_">myPromiseAny</span>([p_any_reject1, p_any_resolve, p_any_reject2])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.any success:'</span>, value)) <span class="hljs-comment">// 输出: Promise.any success: any resolve</span>
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.any failed:'</span>, error));
+
+<span class="hljs-title function_">myPromiseAny</span>([p_any_reject1, p_any_reject2])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.any success:'</span>, value))
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">error</span> =></span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Promise.any failed:'</span>, error.<span class="hljs-property">message</span>); <span class="hljs-comment">// 输出: Promise.any failed: All promises were rejected</span>
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Errors:'</span>, error.<span class="hljs-property">errors</span>); <span class="hljs-comment">// 输出: Errors: ['any reject 1', 'any reject 2']</span>
+  });
+</code></pre>
+<hr>
+<h3 id="4-手写实现-promiseallsettled"><a href="#4-手写实现-promiseallsettled">4. 手写实现 <code>Promise.allSettled</code></a></h3>
+<h4 id="核心逻辑-3"><a href="#核心逻辑-3">核心逻辑</a></h4>
+<p><code>Promise.allSettled(promises)</code> 接收一个 Promise 数组，并返回一个新的 Promise。</p>
+<ul>
+<li>
+<p>这个新的 Promise <strong>永远不会失败</strong>。</p>
+</li>
+<li>
+<p>它会等待所有 <code>promises</code> 数组中的 Promise 都“尘埃落定”（settled）后，才会成功。</p>
+</li>
+<li>
+<p>其成功的值是一个数组，每个元素都描述了对应 Promise 的结果，格式为 <code>{status: 'fulfilled', value: ...}</code> 或 <code>{status: 'rejected', reason: ...}</code>。</p>
+</li>
+</ul>
+<h4 id="实现-3"><a href="#实现-3">实现</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">myPromiseAllSettled</span>(<span class="hljs-params">promises</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =></span> {
+    <span class="hljs-keyword">if</span> (!promises || <span class="hljs-keyword">typeof</span> promises[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>] !== <span class="hljs-string">'function'</span>) {
+        <span class="hljs-comment">// allSettled 的规范实际上是返回一个被拒绝的Promise</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">TypeError</span>(<span class="hljs-string">'Argument is not iterable'</span>));
+    }
+    
+    <span class="hljs-keyword">const</span> promisesArray = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(promises);
+    <span class="hljs-keyword">const</span> results = [];
+    <span class="hljs-keyword">let</span> settledCount = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">const</span> numPromises = promisesArray.<span class="hljs-property">length</span>;
+
+    <span class="hljs-keyword">if</span> (numPromises === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">resolve</span>([]);
+    }
+
+    promisesArray.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">promise, index</span>) =></span> {
+      <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(promise)
+        .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">value</span> =></span> {
+          results[index] = { <span class="hljs-attr">status</span>: <span class="hljs-string">'fulfilled'</span>, <span class="hljs-attr">value</span>: value };
+        })
+        .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">reason</span> =></span> {
+          results[index] = { <span class="hljs-attr">status</span>: <span class="hljs-string">'rejected'</span>, <span class="hljs-attr">reason</span>: reason };
+        })
+        .<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =></span> {
+          settledCount++;
+          <span class="hljs-keyword">if</span> (settledCount === numPromises) {
+            <span class="hljs-title function_">resolve</span>(results);
+          }
+        });
+    });
+  });
+}
+
+<span class="hljs-comment">// --- 使用示例 ---</span>
+<span class="hljs-keyword">const</span> p_settled_resolve = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">'settled resolve'</span>);
+<span class="hljs-keyword">const</span> p_settled_reject = <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">reject</span>(<span class="hljs-string">'settled reject'</span>);
+<span class="hljs-keyword">const</span> p_settled_pending = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">r</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">r</span>(<span class="hljs-string">'settled pending done'</span>), <span class="hljs-number">100</span>));
+
+<span class="hljs-title function_">myPromiseAllSettled</span>([p_settled_resolve, p_settled_reject, p_settled_pending])
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">results</span> =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Promise.allSettled results:'</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(results, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>)));
+<span class="hljs-comment">/*
+输出:
+Promise.allSettled results: [
+  {
+    "status": "fulfilled",
+    "value": "settled resolve"
+  },
+  {
+    "status": "rejected",
+    "reason": "settled reject"
+  },
+  {
+    "status": "fulfilled",
+    "value": "settled pending done"
+  }
+]
+*/</span>
+</code></pre>
+<hr>
+<h3 id="5-asyncawait-的模拟实现"><a href="#5-asyncawait-的模拟实现">5. <code>async/await</code> 的模拟实现</a></h3>
+<h4 id="核心逻辑-4"><a href="#核心逻辑-4">核心逻辑</a></h4>
+<p>首先要明确，<code>async/await</code> 是 ECMAScript 的语言级特性，我们无法在 JavaScript 代码中“实现”关键字。但我们可以通过编写一个函数来模拟它的行为，从而深刻理解其运行原理。</p>
+<p><code>async/await</code> 本质上是 <strong>Generator 函数</strong> 和 <strong>Promise</strong> 的语法糖。</p>
+<ul>
+<li>
+<p><code>async function</code> 就像一个特殊的 Generator 函数。</p>
+</li>
+<li>
+<p><code>await</code> 关键字会暂停 <code>async function</code> 的执行，就像 Generator 函数中的 <code>yield</code>。</p>
+</li>
+<li>
+<p>JavaScript 引擎在背后有一个“执行器”（Executor），它会自动执行 Generator，处理 <code>yield</code> 后面跟的 Promise，并在 Promise 完成后将结果传回 Generator 继续执行。</p>
+</li>
+</ul>
+<p>我们的目标就是编写这个“执行器”函数。</p>
+<h4 id="实现-4"><a href="#实现-4">实现</a></h4>
+<p>JavaScript</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 这个是执行器函数，它接收一个 generator 函数作为参数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">asyncRunner</span>(<span class="hljs-params">generatorFunc</span>) {
+  <span class="hljs-comment">// 返回一个新的函数，这个函数被调用时会返回一个Promise</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">...args</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =></span> {
+      <span class="hljs-comment">// 1. 创建并启动 generator</span>
+      <span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">generatorFunc</span>(...args);
+
+      <span class="hljs-comment">// 2. 定义一个 step 函数，用于驱动 generator 执行</span>
+      <span class="hljs-keyword">function</span> <span class="hljs-title function_">step</span>(<span class="hljs-params">nextFn</span>) {
+        <span class="hljs-keyword">let</span> generatorResult;
+        <span class="hljs-keyword">try</span> {
+          <span class="hljs-comment">// 3. 调用 generator 的 next/throw 方法</span>
+          generatorResult = <span class="hljs-title function_">nextFn</span>();
+        } <span class="hljs-keyword">catch</span> (error) {
+          <span class="hljs-comment">// 如果 generator 内部出错，直接 reject</span>
+          <span class="hljs-keyword">return</span> <span class="hljs-title function_">reject</span>(error);
+        }
+
+        <span class="hljs-keyword">const</span> { value, done } = generatorResult;
+
+        <span class="hljs-keyword">if</span> (done) {
+          <span class="hljs-comment">// 4. 如果 generator 执行完毕，用最终结果 resolve Promise</span>
+          <span class="hljs-keyword">return</span> <span class="hljs-title function_">resolve</span>(value);
+        }
+
+        <span class="hljs-comment">// 5. 如果 generator 未执行完毕，确保 value 是一个 Promise</span>
+        <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">resolve</span>(value)
+          .<span class="hljs-title function_">then</span>(
+            <span class="hljs-comment">// 6a. 如果 value (Promise) 成功，将成功的值传回 generator 继续执行</span>
+            <span class="hljs-function"><span class="hljs-params">res</span> =></span> {
+              <span class="hljs-title function_">step</span>(<span class="hljs-function">() =></span> generator.<span class="hljs-title function_">next</span>(res));
+            },
+            <span class="hljs-comment">// 6b. 如果 value (Promise) 失败，将错误抛入 generator</span>
+            <span class="hljs-function"><span class="hljs-params">err</span> =></span> {
+              <span class="hljs-title function_">step</span>(<span class="hljs-function">() =></span> generator.<span class="hljs-keyword">throw</span>(err));
+            }
+          );
+      }
+
+      <span class="hljs-comment">// 7. 第一次启动执行</span>
+      <span class="hljs-title function_">step</span>(<span class="hljs-function">() =></span> generator.<span class="hljs-title function_">next</span>(<span class="hljs-literal">undefined</span>));
+    });
+  };
+}
+
+<span class="hljs-comment">// --- 使用示例 ---</span>
+
+<span class="hljs-comment">// 模拟一个异步获取数据的函数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params">data</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =></span> <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">resolve</span>(<span class="hljs-string">`<span class="hljs-subst">${data}</span> - done`</span>), <span class="hljs-number">200</span>));
+}
+
+<span class="hljs-comment">// 这是一个 Generator 函数，它的写法和 async/await 非常相似</span>
+<span class="hljs-keyword">function</span>* <span class="hljs-title function_">myAsyncLogic</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> result1 = <span class="hljs-keyword">yield</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-string">'data1'</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result1); <span class="hljs-comment">// 输出: data1 - done</span>
+
+    <span class="hljs-keyword">const</span> result2 = <span class="hljs-keyword">yield</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-string">'data2'</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result2); <span class="hljs-comment">// 输出: data2 - done</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`All finished: <span class="hljs-subst">${result1}</span>, <span class="hljs-subst">${result2}</span>`</span>;
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">'Caught error in generator:'</span>, e);
+  }
+}
+
+<span class="hljs-comment">// 使用我们的执行器来运行这个 generator</span>
+<span class="hljs-keyword">const</span> myAsyncFunction = <span class="hljs-title function_">asyncRunner</span>(myAsyncLogic);
+
+<span class="hljs-title function_">myAsyncFunction</span>()
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">finalResult</span> =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(finalResult); <span class="hljs-comment">// 输出: All finished: data1 - done, data2 - done</span>
+  });
+
+</code></pre>
+<h4 id="asyncawait-实现小结"><a href="#asyncawait-实现小结"><code>async/await</code> 实现小结</a></h4>
+<p>这个 <code>asyncRunner</code> 函数清晰地揭示了 <code>async/await</code> 的工作流：</p>
+<ol>
+<li>
+<p>调用 <code>async</code> 函数，实际上是创建了一个 Generator 迭代器。</p>
+</li>
+<li>
+<p><code>await</code> 一个 Promise，相当于 <code>yield</code> 这个 Promise，函数执行权交还给执行器。</p>
+</li>
+<li>
+<p>执行器等待这个 Promise 完成。</p>
+</li>
+<li>
+<p>Promise 成功，执行器调用 <code>iterator.next(resolvedValue)</code>，将结果作为 <code>await</code> 表达式的值，恢复函数执行。</p>
+</li>
+<li>
+<p>Promise 失败，执行器调用 <code>iterator.throw(error)</code>，将错误抛入函数内部，可以被 <code>try...catch</code> 捕获。</p>
+</li>
+<li>
+<p>这个过程递归地进行，直到 Generator 执行完毕（<code>done: true</code>），此时最外层的 Promise 被 resolve。</p>
+</li>
+</ol>d:[["$","$L16",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"className":"$undefined","children":[["$","span",null,{"className":"$undefined","children":"📂"}],[["$","$L17","前端开发/js",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/js/","className":"$undefined","children":"前端开发 / js"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"promise相关函数实现"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2025-08-18T00:00:00.000Z","children":"2025年8月18日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1741," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$18"}}],"$L19","$L1a"]}],"$L1b"]}]}]]
+1c:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+1d:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+19:["$","$L1c",null,{}]
+1a:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L17",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+1b:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$L1d",null,{"headings":[{"level":3,"id":"1-手写实现-promiseall","text":"1. 手写实现 Promise.all"},{"level":4,"id":"核心逻辑","text":"核心逻辑"},{"level":4,"id":"实现","text":"实现"},{"level":3,"id":"2-手写实现-promiserace","text":"2. 手写实现 Promise.race"},{"level":4,"id":"核心逻辑-1","text":"核心逻辑"},{"level":4,"id":"实现-1","text":"实现"},{"level":3,"id":"3-手写实现-promiseany","text":"3. 手写实现 Promise.any"},{"level":4,"id":"核心逻辑-2","text":"核心逻辑"},{"level":4,"id":"实现-2","text":"实现"},{"level":3,"id":"4-手写实现-promiseallsettled","text":"4. 手写实现 Promise.allSettled"},{"level":4,"id":"核心逻辑-3","text":"核心逻辑"},{"level":4,"id":"实现-3","text":"实现"},{"level":3,"id":"5-asyncawait-的模拟实现","text":"5. async/await 的模拟实现"},{"level":4,"id":"核心逻辑-4","text":"核心逻辑"},{"level":4,"id":"实现-4","text":"实现"},{"level":4,"id":"asyncawait-实现小结","text":"async/await 实现小结"}]}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1e:I[27201,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"promise相关函数实现 | 流年石刻"}],["$","meta","1",{"name":"description","content":"好的，这是一个非常核心且有深度的 JavaScript 问题。我们不仅要实现这些功能，更重要的是理解其背后的逻辑和原理。 我会按照以下顺序为你手写实现并解释： 1. Promise.all：等待所有 Promise 都成功。      2.…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L1e","4",{}]]

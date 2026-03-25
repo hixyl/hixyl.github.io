@@ -1,0 +1,339 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+3:I[22016,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],""]
+b:I[34574,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+c:I[55132,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0eqp1b9heft3y.js"],"default"]
+d:I[97367,["/_next/static/chunks/0j8g4_qst9ksd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+:HL["/_next/static/chunks/02f1pwhv5qrki.css","style"]
+4:T4887,<p>准备这样一份全面且深度的前端框架面试题库是一个庞大的工程。不仅要考察对API的熟练度，更要深入底层架构、性能调优以及设计模式。</p>
+<p>受限于单次文本输出的物理极限，直接铺开60道题目的长篇代码会导致内容被截断。为了保证<strong>逻辑的深度和事实的严谨性</strong>，我将为你梳理出React和Vue各30道核心面试题的全局图谱，并从中提取出<strong>最具代表性、最能体现框架第一性原理</strong>的题目，进行配有代码的深度解构。</p>
+<hr>
+<h3 id="第一部分react-核心与进阶-30题"><a href="#第一部分react-核心与进阶-30题">第一部分：React 核心与进阶 (30题)</a></h3>
+<p><strong>1-10：底层架构与核心机制</strong></p>
+<ol>
+<li>
+<p><strong>React Fiber 架构的本质是什么？解决了什么问题？</strong> (深度解析见下文)</p>
+</li>
+<li>
+<p><strong>Virtual DOM 的 Diff 算法时间复杂度为什么是 O(n)？</strong> (树的同级比较、组件类型判断、Key的唯一性)</p>
+</li>
+<li>
+<p><strong>React 合成事件 (Synthetic Event) 的工作原理是什么？React 17+ 有何改变？</strong> (事件委托从 document 移到 root 节点)</p>
+</li>
+<li>
+<p><strong>React 18 的并发渲染 (Concurrent Rendering) 是如何运作的？</strong> (时间分片与优先级调度)</p>
+</li>
+<li>
+<p><strong>React 状态更新的批处理 (Batching) 机制是怎样的？</strong> (React 18 的 Automatic Batching)</p>
+</li>
+<li>
+<p><strong>JSX 的本质是什么？React 17 后为什么不需要显式引入 React？</strong> (<code>_jsxRuntime</code>)</p>
+</li>
+<li>
+<p><strong>Hydration (水合) 机制在 SSR 中的作用与潜在的 Mismatch 问题？</strong></p>
+</li>
+<li>
+<p><strong>Hooks 的底层数据结构是什么？为什么不能在条件语句中调用 Hooks？</strong> (基于单向链表)</p>
+</li>
+<li>
+<p><strong>什么是 React Server Components (RSC)？它与 SSR 有何本质区别？</strong></p>
+</li>
+<li>
+<p><strong>React 的 StrictMode 在开发模式下为什么会执行两次渲染？</strong> (暴露副作用)</p>
+</li>
+</ol>
+<p><strong>11-20：Hooks 与状态管理</strong></p>
+<ol start="11">
+<li>
+<p><strong>useEffect 的闭包陷阱 (Stale Closure) 产生的原因及解法？</strong> (深度解析见下文)</p>
+</li>
+<li>
+<p><strong>useEffect 与 useLayoutEffect 的执行时机差异？</strong> (DOM 更新后与浏览器绘制前)</p>
+</li>
+<li>
+<p><strong>useMemo 与 useCallback 的性能损耗陷阱？何时不该用？</strong> (缓存本身的成本 vs 子组件渲染成本)</p>
+</li>
+<li>
+<p><strong>useRef 除了获取 DOM 节点，在维持可变状态方面与 useState 有何不同？</strong> (不触发渲染)</p>
+</li>
+<li>
+<p><strong>React Context API 导致不必要的重渲染如何优化？</strong> (状态拆分或结合 <code>useMemo</code>)</p>
+</li>
+<li>
+<p><strong>Zustand / Jotai 与 Redux 的设计哲学差异是什么？</strong> (原子化状态 vs 集中式单一状态树)</p>
+</li>
+<li>
+<p><strong>如何自定义一个 useFetch Hook 处理竞态条件 (Race Conditions)？</strong></p>
+</li>
+<li>
+<p><strong>useTransition 和 useDeferredValue 在复杂交互中的应用场景？</strong></p>
+</li>
+<li>
+<p><strong>forwardRef 和 useImperativeHandle 的组合使用场景？</strong></p>
+</li>
+<li>
+<p><strong>Redux Middleware (如 Thunk/Saga) 的洋葱模型原理？</strong></p>
+</li>
+</ol>
+<p><strong>21-30：组件设计、路由与性能</strong></p>
+<ol start="21">
+<li>
+<p><strong>HOC (高阶组件)、Render Props 与 Hooks 的演进脉络？</strong> (逻辑复用的范式转移)</p>
+</li>
+<li>
+<p><strong>React.memo 是浅比较还是深比较？如何自定义比较函数？</strong></p>
+</li>
+<li>
+<p><strong>React Router 中 BrowserRouter 与 HashRouter 的底层实现差异？</strong> (History API vs hashchange)</p>
+</li>
+<li>
+<p><strong>如何实现一个 Error Boundary 捕获组件树的异常？</strong></p>
+</li>
+<li>
+<p><strong>Suspense 与 React.lazy 如何配合实现代码分割 (Code Splitting)？</strong></p>
+</li>
+<li>
+<p><strong>Portals 的作用及事件冒泡在 Portals 中的特殊表现？</strong> (DOM树分离，但React事件树未分离)</p>
+</li>
+<li>
+<p><strong>受控组件 (Controlled) 与非受控组件 (Uncontrolled) 的边界在哪里？</strong></p>
+</li>
+<li>
+<p><strong>如何定位和排查 React 应用的内存泄漏？</strong> (清理定时器、解绑事件监听)</p>
+</li>
+<li>
+<p><strong>大型 React 项目的首屏加载优化策略有哪些？</strong></p>
+</li>
+<li>
+<p><strong>大型列表的虚拟滚动 (Virtual Scrolling) 原理及实现要点？</strong></p>
+</li>
+</ol>
+<h4 id="react-深度解构示例"><a href="#react-深度解构示例">React 深度解构示例</a></h4>
+<p><strong>Q: React Fiber 架构的本质是什么？解决了什么问题？</strong></p>
+<ul>
+<li>
+<p><strong>分析：</strong> React 16 之前的 Reconciler 是同步的、递归的。如果组件树庞大，JavaScript 线程会被长时间阻塞，导致页面掉帧、卡顿。Fiber 是一种<strong>基于时间分片的协作式多任务调度机制</strong>。它将渲染工作拆分成微小的任务单元（Fiber Node），允许 React 在执行完一个任务单元后，将控制权交还给浏览器，判断是否有更高优先级的任务（如用户点击、动画）。</p>
+</li>
+<li>
+<p><strong>代码视角：</strong> Fiber 节点本身是一个 JavaScript 对象，构成了一个双向链表树（包含 <code>return</code>, <code>child</code>, <code>sibling</code> 指针），这使得遍历过程可以随时中断和恢复。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-kotlin"><span class="hljs-comment">// 简化的 Fiber 结构</span>
+<span class="hljs-keyword">const</span> fiber = {
+  type: <span class="hljs-string">'div'</span>, <span class="hljs-comment">// 组件类型</span>
+  props: { children: [] },
+  stateNode: <span class="hljs-literal">null</span>, <span class="hljs-comment">// 对应的真实 DOM</span>
+  child: <span class="hljs-literal">null</span>,     <span class="hljs-comment">// 指向第一个子节点</span>
+  sibling: <span class="hljs-literal">null</span>,   <span class="hljs-comment">// 指向下一个兄弟节点</span>
+  <span class="hljs-keyword">return</span>: <span class="hljs-literal">null</span>,    <span class="hljs-comment">// 指向父节点</span>
+  alternate: <span class="hljs-literal">null</span>, <span class="hljs-comment">// 双缓存树（用于对比更新）</span>
+};
+</code></pre>
+<p><strong>Q: useEffect 的闭包陷阱 (Stale Closure) 产生的原因及解法？</strong></p>
+<ul>
+<li>
+<p><strong>分析：</strong> 这是 React 开发中最常见的问题。本质是 JavaScript 的词法作用域与 React 函数组件的执行机制碰撞的结果。每次渲染，组件内部的函数都有自己独立的闭包，捕获了当次渲染时的状态。如果 <code>useEffect</code> 的依赖数组未正确设置，其内部的定时器或异步回调引用的将永远是旧渲染帧的变量。</p>
+</li>
+<li>
+<p><strong>代码解法：</strong> 使用依赖数组、使用函数式更新，或利用 <code>useRef</code> 保持最新值的引用。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-scss">function <span class="hljs-built_in">Counter</span>() {
+  const <span class="hljs-selector-attr">[count, setCount]</span> = <span class="hljs-built_in">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-built_in">useEffect</span>(() => {
+    const timer = <span class="hljs-built_in">setInterval</span>(() => {
+      <span class="hljs-comment">// 错误做法：如果不加依赖，count 永远是 0</span>
+      <span class="hljs-comment">// setCount(count + 1); </span>
+      
+      <span class="hljs-comment">// 正确做法 1：函数式更新（推荐）</span>
+      <span class="hljs-built_in">setCount</span>(prev => prev + <span class="hljs-number">1</span>);
+    }, <span class="hljs-number">1000</span>);
+    return () => <span class="hljs-built_in">clearInterval</span>(timer);
+  }, <span class="hljs-selector-attr">[]</span>); <span class="hljs-comment">// 依赖为空数组，只执行一次</span>
+
+  return &#x3C;<span class="hljs-selector-tag">div</span>>{count}&#x3C;/<span class="hljs-selector-tag">div</span>>;
+}
+</code></pre>
+<hr>
+<h3 id="第二部分vue-核心与进阶-30题"><a href="#第二部分vue-核心与进阶-30题">第二部分：Vue 核心与进阶 (30题)</a></h3>
+<p><strong>1-10：响应式原理与底层机制</strong></p>
+<ol>
+<li>
+<p><strong>Vue 2 的 <code>Object.defineProperty</code> 与 Vue 3 的 <code>Proxy</code> 响应式原理深度对比？</strong> (深度解析见下文)</p>
+</li>
+<li>
+<p><strong>Vue 的依赖收集 (Track) 与派发更新 (Trigger) 流程是如何运转的？</strong></p>
+</li>
+<li>
+<p><strong>Vue.nextTick 的底层实现逻辑？为什么优先使用微任务 (Microtask)？</strong> (深度解析见下文)</p>
+</li>
+<li>
+<p><strong>Vue 3 的编译时优化 (Compiler-Informed Runtime) 包括哪些？</strong> (PatchFlags, 静态提升, 块级树)</p>
+</li>
+<li>
+<p><strong>v-model 的语法糖本质是什么？在自定义组件上如何实现双向绑定？</strong></p>
+</li>
+<li>
+<p><strong>虚拟 DOM 的作用到底是什么？在 Vue 中它是如何转化为真实 DOM 的？</strong></p>
+</li>
+<li>
+<p><strong>Vue Router 的全局守卫、路由守卫、组件守卫的执行顺序？</strong></p>
+</li>
+<li>
+<p><strong>Vue 的 Diff 算法 (双端对比算法 vs Vue 3 快速 Diff) 原理？</strong></p>
+</li>
+<li>
+<p><strong>什么是 Vue 的生命周期？Keep-Alive 相关的特有生命周期是什么？</strong></p>
+</li>
+<li>
+<p><strong>SSR/SSG/CSR 的抉择？Nuxt.js 解决的核心痛点是什么？</strong></p>
+</li>
+</ol>
+<p><strong>11-20：组合式 API (Composition API) 与特性</strong></p>
+<ol start="11">
+<li>
+<p><strong>ref 和 reactive 的本质区别？为什么 ref 需要 <code>.value</code>？</strong> (基本类型包装与 Proxy 代理)</p>
+</li>
+<li>
+<p><strong>computed 和 watch、watchEffect 的使用边界和底层差异？</strong> (缓存计算 vs 副作用侦听)</p>
+</li>
+<li>
+<p><strong>Vue 3 中 <code>setup</code> 函数的执行时机？它为什么没有 <code>this</code>？</strong> (在 beforeCreate 之前)</p>
+</li>
+<li>
+<p><strong>在 Composition API 中如何替代 Vue 2 的 Mixins 进行逻辑复用？</strong> (Composables 函数)</p>
+</li>
+<li>
+<p><strong>shallowRef 和 shallowReactive 的性能优化场景？</strong></p>
+</li>
+<li>
+<p><strong>Vue 3 中如何精确控制 watch 的触发时机 (flush: 'pre' | 'post' | 'sync')？</strong></p>
+</li>
+<li>
+<p><strong>Teleport 组件的作用和底层逻辑？</strong> (将 DOM 挂载到外部结构中)</p>
+</li>
+<li>
+<p><strong>Suspense 在 Vue 3 中的异步组件处理机制？</strong></p>
+</li>
+<li>
+<p><strong>如何编写一个自定义指令 (Custom Directive)？</strong></p>
+</li>
+<li>
+<p><strong><code>&#x3C;script setup></code> 语法糖中的 <code>defineProps</code>, <code>defineEmits</code>, <code>defineExpose</code>？</strong></p>
+</li>
+</ol>
+<p><strong>21-30：架构、通信与性能优化</strong></p>
+<ol start="21">
+<li>
+<p><strong>Vue 组件间通信的 8 种以上方式全解？</strong> (Props, emits, Provide/Inject, Pinia, EventBus, v-model, Refs, attrs)</p>
+</li>
+<li>
+<p><strong>Provide / Inject 与 Pinia (全局状态管理) 的使用场景界限？</strong></p>
+</li>
+<li>
+<p><strong>Pinia 为什么比 Vuex 更适合 Vue 3？</strong> (移除 Mutations，完善的 TS 支持，扁平化架构)</p>
+</li>
+<li>
+<p><strong>v-if 和 v-show 的本质区别及性能考量？</strong> (DOM 节点的销毁/重建 vs CSS display 切换)</p>
+</li>
+<li>
+<p><strong>v-for 中 key 的作用？为什么强烈不建议使用 index 作为 key？</strong> (破坏就地复用策略，导致状态错乱)</p>
+</li>
+<li>
+<p><strong>Vue 项目的 Tree-Shaking 是如何实现的？</strong> (基于 ES Module 的静态分析)</p>
+</li>
+<li>
+<p><strong>如何优化大型 Vue 应用的首屏加载时间？</strong> (异步组件、路由懒加载、资源预加载)</p>
+</li>
+<li>
+<p><strong>长列表渲染优化：v-once 和 v-memo 的作用及虚拟滚动策略？</strong></p>
+</li>
+<li>
+<p><strong>Vue 中的错误处理机制 (<code>errorCaptured</code>, <code>app.config.errorHandler</code>)？</strong></p>
+</li>
+<li>
+<p><strong>Scoped CSS 的原理是什么？深度作用选择器 (<code>:deep()</code>) 的底层实现？</strong> (生成 data-v-xxx 属性)</p>
+</li>
+</ol>
+<h4 id="vue-深度解构示例"><a href="#vue-深度解构示例">Vue 深度解构示例</a></h4>
+<p><strong>Q: Vue 2 的 <code>Object.defineProperty</code> 与 Vue 3 的 <code>Proxy</code> 响应式原理深度对比？</strong></p>
+<ul>
+<li>
+<p><strong>分析：</strong> 这是 Vue 响应式迭代的核心。Vue 2 采用 <code>defineProperty</code> 劫持对象的 getter/setter。<strong>局限性</strong>：它只能劫持已存在的属性，无法检测对象属性的添加和删除（需借用 <code>$set/$delete</code>）；对数组的索引修改和长度变化无能为力（Vue 2 内部重写了数组的 7 个变更方法来兜底）；并且需要递归遍历整个对象，对深层嵌套对象有较大的初始化性能开销。</p>
+</li>
+<li>
+<p><strong>改进：</strong> Vue 3 采用 <code>Proxy</code>。它直接代理整个对象（而非属性），拦截对象上的多达 13 种操作（包括属性增删、原型查找等）。数组的所有操作也能天然响应。并且按需代理（只有在访问到深层属性时才包装成 Proxy），极大提升了初始化性能。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// Vue 3 Proxy 核心思想的简化模型</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reactive</span>(<span class="hljs-params">target</span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> target !== <span class="hljs-string">'object'</span> || target === <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> target;
+  
+  <span class="hljs-keyword">const</span> handler = {
+    <span class="hljs-title function_">get</span>(<span class="hljs-params">target, key, receiver</span>) {
+      <span class="hljs-comment">// 依赖收集 (Track)</span>
+      <span class="hljs-title function_">track</span>(target, key);
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">get</span>(target, key, receiver);
+      <span class="hljs-comment">// 懒代理：访问到嵌套对象时才将其转化为响应式</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> result === <span class="hljs-string">'object'</span> ? <span class="hljs-title function_">reactive</span>(result) : result;
+    },
+    <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value, receiver</span>) {
+      <span class="hljs-keyword">const</span> oldValue = target[key];
+      <span class="hljs-keyword">const</span> result = <span class="hljs-title class_">Reflect</span>.<span class="hljs-title function_">set</span>(target, key, value, receiver);
+      <span class="hljs-keyword">if</span> (oldValue !== value) {
+        <span class="hljs-comment">// 派发更新 (Trigger)</span>
+        <span class="hljs-title function_">trigger</span>(target, key);
+      }
+      <span class="hljs-keyword">return</span> result;
+    }
+  };
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(target, handler);
+}
+</code></pre>
+<p><strong>Q: Vue.nextTick 的底层实现逻辑？为什么优先使用微任务？</strong></p>
+<ul>
+<li>
+<p><strong>分析：</strong> Vue 的 DOM 更新是异步的。当我们修改状态后，Vue 不会立即更新 DOM，而是将所有的状态变更推入一个队列（缓冲批处理同一事件循环中的多次修改），然后在下一个事件循环 tick 中统一执行 DOM 更新。<code>nextTick</code> 就是用于在 DOM 更新完毕后执行回调的方法。</p>
+</li>
+<li>
+<p><strong>优先级：</strong> 浏览器事件循环中，微任务（Microtask）总是在当前宏任务（Macrotask）结束后、UI 渲染之前执行。如果用宏任务（如 <code>setTimeout</code>），会导致浏览器先渲染一次旧数据，然后再执行宏任务更新渲染新数据，造成页面闪烁。因此 Vue 优先采用 <code>Promise.then</code> 或 <code>MutationObserver</code> 等微任务实现异步队列。</p>
+</li>
+</ul>
+<p>JavaScript</p>
+<pre><code class="hljs language-ini">// nextTick 核心思想简化
+let <span class="hljs-attr">isFlushing</span> = <span class="hljs-literal">false</span><span class="hljs-comment">;</span>
+const <span class="hljs-attr">queue</span> = new Set()<span class="hljs-comment">; // 使用 Set 保证任务唯一，实现批处理去重</span>
+const <span class="hljs-attr">p</span> = Promise.resolve()<span class="hljs-comment">;</span>
+
+function nextTick(fn) {
+  return fn ? p.then(fn) : p<span class="hljs-comment">;</span>
+}
+
+function queueJob(job) {
+  queue.add(job)<span class="hljs-comment">;</span>
+  if (!isFlushing) {
+    <span class="hljs-attr">isFlushing</span> = <span class="hljs-literal">true</span><span class="hljs-comment">;</span>
+    // 利用微任务，在同步代码执行完毕后清空队列
+    p.then(() => {
+      queue.forEach(<span class="hljs-attr">job</span> => job())<span class="hljs-comment">;</span>
+      queue.clear()<span class="hljs-comment">;</span>
+      <span class="hljs-attr">isFlushing</span> = <span class="hljs-literal">false</span><span class="hljs-comment">;</span>
+    })<span class="hljs-comment">;</span>
+  }
+}
+</code></pre>
+<hr>
+<p>由于篇幅限制，上述列表展现了完整的知识网络框架，并对最关键的底层原理进行了带代码的剖析。如果你正在准备特定方向的面试（比如你想重点突破“React 的性能优化策略”或是“Vue 3 的编译时优化原理”），你可以指定上面的任意几道题目，我可以继续为你提供极为详尽的包含代码分析的解答。</p>
+<p>你想先深入探讨哪一个方向的技术细节？</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","前端开发/React",{"href":"/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React/","children":"前端开发 / React"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"React面试题30道"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-02-25T00:00:00.000Z","children":"2026年2月25日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2715," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",10," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","Obsidian",{"className":"page-module__y-5DuW__tag","children":"Obsidian"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}]],["$L8","$L9"],"$La"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ozBVcz1soOKExL08cmsFl"}
+5:["$","$Lb",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"第一部分react-核心与进阶-30题","text":"第一部分：React 核心与进阶 (30题)"},{"level":4,"id":"react-深度解构示例","text":"React 深度解构示例"},{"level":3,"id":"第二部分vue-核心与进阶-30题","text":"第二部分：Vue 核心与进阶 (30题)"},{"level":4,"id":"vue-深度解构示例","text":"Vue 深度解构示例"}]}]}]
+8:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/02f1pwhv5qrki.css","precedence":"next"}]
+9:["$","script","script-0",{"src":"/_next/static/chunks/0eqp1b9heft3y.js","async":true}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
