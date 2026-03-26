@@ -2,4 +2,4 @@
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 :HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"article","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"%E7%8E%89%E9%BE%99%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Rs9znfPKWd0HKK3xXf4gZ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"article","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"%E7%8E%89%E9%BE%99%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"cG3Hs3gw3jY8v2R7K4D1T"}
