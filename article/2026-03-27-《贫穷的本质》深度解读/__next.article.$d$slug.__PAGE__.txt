@@ -1,0 +1,40 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+3:I[22016,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],""]
+5:I[34574,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+c:I[55132,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+d:I[71691,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+e:I[97367,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
+4:T1668,<p>提到“穷人”，很多人脑海中可能会浮现出一些刻板印象：他们是不是不够努力？是不是眼光太短浅？或者仅仅是因为运气不好？</p>
+<p>2019年诺贝尔经济学奖得主阿比吉特·班纳吉和埃斯特·迪弗洛，花了15年时间深入五大洲的贫困地区，像测试新药一样去测试各种扶贫政策。他们将这些真实的观察写成了《贫穷的本质：我们为什么摆脱不了贫穷》一书。这本书并没有停留在高高在上的经济学理论，而是俯下身子，带我们走进了穷人真实的日常生活中，去理解他们为什么会做出那些在我们看来“不理智”的选择。</p>
+<h3 id="并非短视与无知而是深陷贫穷陷阱"><a href="#并非短视与无知而是深陷贫穷陷阱">并非短视与无知，而是深陷“贫穷陷阱”</a></h3>
+<p>这本书的核心内容，是对穷人生活的全方位剖析，涵盖了饮食、健康、教育、生育和金融等多个维度。作者通过大量真实的案例告诉我们，<strong>穷人的思维方式其实和我们没有本质区别，真正不同的是他们所处的环境。</strong></p>
+<p>比如在饮食上，当我们以为穷人有了钱会优先买更多主食来填饱肚子时，他们却可能去买口味更好但毫无营养的含糖饮料，甚至攒钱买一台电视机。这不是因为他们虚荣，而是因为在枯燥、高压的贫穷生活中，一点点感官上的甜头或娱乐，是他们仅有的心理慰藉。</p>
+<p>在健康和教育方面，穷人往往表现出令人不解的“拖延症”。比如，明明只需要花一点点钱买个蚊帐就能预防致命的疟疾，他们却不愿意买，非要等病发了再去花大价钱治病；在教育上，穷人父母往往把供孩子读书当成买彩票，一旦发现某个孩子没有展现出绝对的天赋，就会立刻停止投资。</p>
+<p>在金融方面，穷人很难存下钱，也极度缺乏抗风险的能力。一场小病或一次农作物的歉收，就能轻易摧毁他们积攒了十几年的财富。虽然“微型贷款”能帮他们做点小买卖，但因为缺乏管理技能和扩大规模的资本，这些小生意往往只能勉强糊口，根本无法成为跨越阶层的跳板。</p>
+<h3 id="剥开偏见的外衣容错率为零的生活"><a href="#剥开偏见的外衣容错率为零的生活">剥开偏见的外衣：容错率为零的生活</a></h3>
+<p>透过这些生活细节，这本书表达了一个非常深刻的观点：<strong>贫穷不仅仅是缺钱，更是一种剥夺人选择能力的状态。</strong></p>
+<p>我们之所以能过上相对平稳的生活，其实是因为我们享受着无数“看不见的福利”。我们的自来水是净化过的，我们的工资会自动扣除社保和医保，我们的孩子有义务教育兜底。我们不需要每天为了“喝水会不会拉肚子”或者“明天吃什么”去耗费脑力。</p>
+<p>但穷人不同，他们的生活中没有这些“默认的保护网”。他们每天都要面临无数艰难的选择，每一项决定都需要耗费巨大的意志力和认知资源。在心理学上，这被称为“认知带宽”的透支。更可怕的是，<strong>穷人的容错率几乎为零</strong>。普通人犯个错，最多是损失一点钱；穷人做错一个决定（比如选错了一种种子，或者没打疫苗），付出的可能就是生命的代价。</p>
+<p>因此，他们不是不想看长远，而是眼前的生存压力已经耗尽了他们所有的精力。</p>
+<h3 id="告别宏大叙事用微观干预点亮希望"><a href="#告别宏大叙事用微观干预点亮希望">告别宏大叙事，用微观干预点亮希望</a></h3>
+<p>《贫穷的本质》带来的最大启发，在于它彻底打破了传统扶贫观念中“要不就直接砸钱，要不就完全靠自由市场”的二元对立。</p>
+<p>作者指出，那些宏大的经济学口号对穷人往往没有实际帮助。真正有效的是**“微观干预”和“助推”**。比如：</p>
+<ul>
+<li>既然穷人缺乏打疫苗的动力，那就给每个带孩子来打疫苗的母亲发两斤小扁豆。结果显示，这种微小的物质奖励，让疫苗接种率翻了好几倍。</li>
+<li>既然穷人很难靠意志力存钱，那就帮他们建立强制储蓄的账户，或者化肥打折季提前让他们把钱锁定在农资上。</li>
+</ul>
+<p>这本书的意义在于，它用科学的实验精神（随机对照实验）取代了道德评判。它让我们明白，帮助穷人不需要什么惊天动地的奇迹，而是需要耐心、细致地去修补他们生活中的一个个漏洞，降低他们做出“正确选择”的成本。</p>
+<h3 id="一场充满理智与温情的社会实验"><a href="#一场充满理智与温情的社会实验">一场充满理智与温情的社会实验</a></h3>
+<p>总体而言，《贫穷的本质》是一部兼具极高学术价值与人文关怀的杰作。作者没有高高在上地去指责穷人的懒惰，也没有陷入盲目的同情，而是用像手术刀一样精准的实验数据，剖析了贫困的结构性根源。</p>
+<p>对于高中生或者任何想要理解真实社会的读者来说，这本书提供了一个极佳的思维训练场。它教会我们不要轻易对他人下评判，因为你不知道别人经历了怎样的局限；它也告诉我们，面对复杂的社会问题，与其空谈大道理，不如去寻找那些能够切实落地的“小改变”。</p>
+<p>贫穷不是一种基因，而是一个陷阱。只要我们在陷阱边缘递上一根合适的绳子，设计好借力点，很多人是完全有能力自己爬上来的。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","ai读书",{"href":"/categories/ai%E8%AF%BB%E4%B9%A6/","className":"page-module__y-5DuW__meta-link","children":"ai读书"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"逃离“贫穷陷阱”：为什么越穷越难以翻身？——《贫穷的本质》深度解读"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-27T00:00:00.000Z","children":"2026年3月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[1516," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",6," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","经济学",{"className":"page-module__y-5DuW__tag","children":"经济学"}],["$","span","读书",{"className":"page-module__y-5DuW__tag","children":"读书"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],["$","$L5",null,{}],["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":"$L6"}]]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OqXXh0C4mb9MQNzRt4cjv"}
+6:["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Lc",null,{"headings":[{"level":3,"id":"并非短视与无知而是深陷贫穷陷阱","text":"并非短视与无知，而是深陷“贫穷陷阱”"},{"level":3,"id":"剥开偏见的外衣容错率为零的生活","text":"剥开偏见的外衣：容错率为零的生活"},{"level":3,"id":"告别宏大叙事用微观干预点亮希望","text":"告别宏大叙事，用微观干预点亮希望"},{"level":3,"id":"一场充满理智与温情的社会实验","text":"一场充满理智与温情的社会实验"}]}]}]
+8:["$","$Ld",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/068fhd_usdoo4.js","async":true}]
+b:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

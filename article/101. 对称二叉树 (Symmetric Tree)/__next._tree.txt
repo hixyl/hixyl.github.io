@@ -2,4 +2,4 @@
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/chunks/0qyji93gvu336.css","style"]
 :HL["https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"article","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91%20(Symmetric%20Tree)","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"btOGpRQbRnHjZU7o6LWg7"}
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"article","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91%20(Symmetric%20Tree)","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"OqXXh0C4mb9MQNzRt4cjv"}
