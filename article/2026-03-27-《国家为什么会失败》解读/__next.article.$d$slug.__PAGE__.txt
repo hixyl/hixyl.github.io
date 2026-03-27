@@ -1,0 +1,89 @@
+1:"$Sreact.fragment"
+2:I[23422,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+3:I[22016,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],""]
+c:I[34574,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+d:I[55132,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+e:I[71691,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/068fhd_usdoo4.js"],"default"]
+f:I[97367,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+:HL["/_next/static/chunks/0qyji93gvu336.css","style"]
+4:T2322,<p>想象一张从太空中拍摄的朝鲜半岛夜景图：南半部灯火通明，北半部却几乎是一片漆黑。这两个地方的人有着相同的祖先、相同的文化传统、相似的地理环境，但今天的经济发展水平却天差地别。</p>
+<p>为什么会这样？</p>
+<p>这就是《国家为什么会失败》（<em>Why Nations Fail</em>）这本书要回答的核心问题。两位经济学家作者，达隆·阿西莫格鲁（Daron Acemoglu）和詹姆斯·罗宾逊（James A. Robinson），通过考察人类几千年的历史，给出了一个非常明确且逻辑严密的答案：<strong>决定一个国家富裕还是贫穷的根本原因，不是地理位置，不是文化传统，也不是领导人够不够聪明，而是这个国家的“制度”。</strong></p>
+<p>为了让你清晰地理解这套理论，我们把这本书的核心逻辑拆解为以下几个部分。</p>
+<hr>
+<h3 id="一-破除三种常见的迷思"><a href="#一-破除三种常见的迷思">一、 破除三种常见的“迷思”</a></h3>
+<p>在给出自己的答案前，作者首先用事实驳斥了三种最流行的解释国家贫富的假说：</p>
+<ol>
+<li><strong>地理假说：</strong> 有人认为热带国家容易穷，温带国家容易富，因为气候影响人的勤奋程度或疾病传播。
+<ul>
+<li><em>反驳：</em> 看看美国亚利桑那州的诺加利斯（Nogales）和一墙之隔的墨西哥索诺拉州的诺加利斯。两地气候、地理完全一样，但美国这边富裕，墨西哥那边贫穷。</li>
+</ul>
+</li>
+<li><strong>文化假说：</strong> 有人认为某些文化（比如新教伦理）天生让人勤勉，而某些文化让人懒惰。
+<ul>
+<li><em>反驳：</em> 同样的中国文化，在改革开放前后的经济表现完全不同；同种同源的南北韩也是最好的反例。</li>
+</ul>
+</li>
+<li><strong>无知假说：</strong> 有人认为穷国之所以穷，是因为统治者“不懂”经济学，不知道怎么发展。
+<ul>
+<li><em>反驳：</em> 很多统治者其实非常聪明，他们出台破坏经济的政策，不是因为无知，而是因为那些政策对他们自己有利。</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-财富的密码两种不同的制度"><a href="#二-财富的密码两种不同的制度">二、 财富的密码：两种不同的制度</a></h3>
+<p>破除迷思后，作者抛出了全书的核心模型。他们将社会的政治和经济制度分成了两大类：<strong>包容性（Inclusive）</strong> 与 <strong>攫取性（Extractive）</strong>。</p>
+<h4 id="1-包容性制度大家一起把蛋糕做大"><a href="#1-包容性制度大家一起把蛋糕做大">1. 包容性制度（大家一起把蛋糕做大）</a></h4>
+<ul>
+<li><strong>经济上：</strong> 保护个人的私有产权，提供公平的竞争环境。这意味着你发明了新东西，专利是你的；你赚了钱，别人不能随便拿走。它鼓励每个人去投资、去创新。</li>
+<li><strong>政治上：</strong> 权力是分散的、多元的。没有哪一个绝对的利益集团可以肆意妄为，政府受到制约，且必须为大众提供公共服务（如修路、办教育）。</li>
+</ul>
+<h4 id="2-攫取性制度少数人抢走多数人的蛋糕"><a href="#2-攫取性制度少数人抢走多数人的蛋糕">2. 攫取性制度（少数人抢走多数人的蛋糕）</a></h4>
+<ul>
+<li><strong>经济上：</strong> 没有产权保护，或者只保护少数特权阶层。底层普通人创造的财富，会被上层通过赋税、垄断特权等方式“攫取”（榨取）走。因为普通人知道自己赚的钱最终会被抢走，所以没人愿意努力工作或搞发明创造。</li>
+<li><strong>政治上：</strong> 权力高度集中在极少数精英手中。这少数精英利用手中的权力去制定经济规则，目的只有一个：方便自己从大众身上捞钱。</li>
+</ul>
+<p><strong>结论就是：包容性制度带来繁荣，攫取性制度导致衰败。</strong></p>
+<hr>
+<h3 id="三-为什么有些国家死抱着攫取性制度不放"><a href="#三-为什么有些国家死抱着攫取性制度不放">三、 为什么有些国家死抱着“攫取性制度”不放？</a></h3>
+<p>既然包容性制度能让国家富裕，为什么那些穷国的统治者不赶紧改革呢？这就涉及到一个关键的经济学概念：<strong>创造性破坏（Creative Destruction）</strong>。</p>
+<p>技术进步和经济发展，必然会带来“创造性破坏”。比如，汽车的发明（创造）必然会导致马车夫失业（破坏）。
+在攫取性制度下，统治集团往往就是那个“最大的马车行老板”。如果允许普通人去创新、去搞自由市场，虽然国家整体会变富，但<strong>旧势力的经济利益会被摧毁，随之而来的是他们政治权力的丧失</strong>。</p>
+<p>因此，为了保住自己的绝对权力和既得利益，统治精英会本能地、刻意地阻碍技术进步，压制经济的自由发展。他们宁愿统治一个贫穷但完全受控的国家，也不愿看到一个富裕 but 权力不再属于自己的国家。</p>
+<hr>
+<h3 id="四-历史的岔路口制度是如何分化的"><a href="#四-历史的岔路口制度是如何分化的">四、 历史的岔路口：制度是如何分化的？</a></h3>
+<p>你可能会问：既然最初大家都是原始社会，为什么后来有的国家走向了包容，有的走向了攫取？作者提出了两个历史动力学概念：</p>
+<ul>
+<li><strong>关键节点（Critical Junctures）：</strong> 历史上的重大事件，比如黑死病、发现美洲新大陆、工业革命。这些大事件会打破原有的社会平衡。</li>
+<li><strong>制度漂移（Institutional Drift）：</strong> 就像基因突变一样，不同社会在早期可能只有极其微小的制度差异。</li>
+</ul>
+<p><strong>结合起来看：</strong> 以14世纪的黑死病为例，当时欧洲死了一半人口，劳动力变得极其稀缺。</p>
+<ul>
+<li>在<strong>西欧</strong>（如英国），农民利用劳动力稀缺的筹码，向领主争取到了更多的自由和权利，社会开始向包容性方向“漂移”。</li>
+<li>在<strong>东欧</strong>（如俄罗斯），地主为了防止劳动力跑掉，反而联合起来加强了控制，把农民变成了农奴，社会向攫取性方向“漂移”。</li>
+</ul>
+<p>到了几百年后的工业革命（又一个关键节点），稍微偏向包容性的英国，普通人有动力发明蒸汽机，从而一飞冲天；而高度攫取性的东欧帝国，沙皇害怕修铁路会带来思想传播和叛乱，拒绝工业化，最终彻底落后。</p>
+<hr>
+<h3 id="五-惯性的力量为什么富者恒富穷者恒穷"><a href="#五-惯性的力量为什么富者恒富穷者恒穷">五、 惯性的力量：为什么富者恒富，穷者恒穷？</a></h3>
+<p>制度一旦形成，就会产生强大的惯性。</p>
+<ul>
+<li><strong>良性循环：</strong> 在包容性制度下，经济越发展，中产阶级和普通人的力量就越大，他们就越能制约政府，防止任何人搞独裁，从而进一步巩固包容性制度。</li>
+<li><strong>恶性循环（寡头铁律）：</strong> 在攫取性制度下，因为掌握权力就能获得巨额财富，所以各方势力会为了夺权而疯狂内战（比如很多非洲国家）。即使一批叛军推翻了旧暴君，他们面对巨大的财富诱惑，往往会变成新的暴君，继续实行攫取性制度。</li>
+</ul>
+<hr>
+<h3 id="客观审视与总结"><a href="#客观审视与总结">客观审视与总结</a></h3>
+<p>《国家为什么会失败》提供了一个非常强大且符合逻辑的分析框架：<strong>经济动机决定行为，而政治制度决定了经济动机。</strong> 不过，作为一个具有独立思考能力的人，在吸收这套理论时，我们也需要看到它的<strong>局限性</strong>：</p>
+<ol>
+<li><strong>略显绝对化：</strong> 作者将复杂的历史高度简化为了“包容 vs 攫取”的二元对立。但在现实中，很多国家的制度是混合的。</li>
+<li><strong>解释某些现象时存在挑战：</strong> 比如一些东亚国家在起步阶段，政治上是相对集权的（符合攫取性政治特征），但经济上却实现了高速增长。作者认为这只是“不可持续的透支性增长”，但这在学术界仍有很大的争议空间。</li>
+<li><strong>忽略了国际环境的互动：</strong> 早期西方国家的包容性制度，在一定程度上是建立在对全球其他地区（殖民地）的“攫取”之上的，这一点书中有所淡化。</li>
+</ol>
+<p>总而言之，这本书是一把理解宏观历史和国家命运的利器。它告诉我们，繁荣并非天注定，而是源于一个社会能否建立起一套保护每个普通人努力成果、让每个人都能公平参与游戏规则的体系。</p>0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","article",null,{"className":"container page-module__y-5DuW__article-page","children":["$","div",null,{"className":"page-module__y-5DuW__article-layout","children":[["$","div",null,{"className":"page-module__y-5DuW__article-main","children":[["$","header",null,{"className":"page-module__y-5DuW__article-header","children":[["$","div",null,{"children":[["$","span",null,{"children":"📂"}],[["$","$L3","ai读书",{"href":"/categories/ai%E8%AF%BB%E4%B9%A6/","className":"page-module__y-5DuW__meta-link","children":"ai读书"}]]]}],["$","h1",null,{"className":"page-module__y-5DuW__article-title","children":"《国家为什么会失败》解读"}],["$","div",null,{"className":"page-module__y-5DuW__article-meta","children":[["$","time",null,{"dateTime":"2026-03-27T00:00:00.000Z","children":"2026年3月27日"}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":[2068," 字"]}],["$","span",null,{"className":"page-module__y-5DuW__sep","children":"·"}],["$","span",null,{"children":["约 ",7," 分钟"]}]]}],["$","div",null,{"className":"page-module__y-5DuW__article-tags","children":[["$","span","读书笔记",{"className":"page-module__y-5DuW__tag","children":"读书笔记"}],["$","span","社会科学",{"className":"page-module__y-5DuW__tag","children":"社会科学"}]]}]]}],["$","div",null,{"className":"prose page-module__y-5DuW__article-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}]}],"$L8"],["$L9","$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"YDy0RVAlsvP0hoAa8WHGF"}
+5:["$","$Lc",null,{}]
+6:["$","div",null,{"className":"page-module__y-5DuW__article-footer","children":["$","$L3",null,{"href":"/articles/","className":"page-module__y-5DuW__back-link","children":"← 返回文章列表"}]}]
+7:["$","aside",null,{"className":"page-module__y-5DuW__article-sidebar","children":["$","$Ld",null,{"headings":[{"level":3,"id":"一-破除三种常见的迷思","text":"一、 破除三种常见的“迷思”"},{"level":3,"id":"二-财富的密码两种不同的制度","text":"二、 财富的密码：两种不同的制度"},{"level":4,"id":"1-包容性制度大家一起把蛋糕做大","text":"1. 包容性制度（大家一起把蛋糕做大）"},{"level":4,"id":"2-攫取性制度少数人抢走多数人的蛋糕","text":"2. 攫取性制度（少数人抢走多数人的蛋糕）"},{"level":3,"id":"三-为什么有些国家死抱着攫取性制度不放","text":"三、 为什么有些国家死抱着“攫取性制度”不放？"},{"level":3,"id":"四-历史的岔路口制度是如何分化的","text":"四、 历史的岔路口：制度是如何分化的？"},{"level":3,"id":"五-惯性的力量为什么富者恒富穷者恒穷","text":"五、 惯性的力量：为什么富者恒富，穷者恒穷？"},{"level":3,"id":"客观审视与总结","text":"客观审视与总结"}]}]}]
+8:["$","$Le",null,{}]
+9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0qyji93gvu336.css","precedence":"next"}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/068fhd_usdoo4.js","async":true}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null
