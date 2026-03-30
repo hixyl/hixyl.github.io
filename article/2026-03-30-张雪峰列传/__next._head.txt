@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js"],"ViewportBoundary"]
+3:I[97367,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/_next/static/chunks/0kow723u7pjfg.js","/_next/static/chunks/0llxl2y1k~h2u.js","/_next/static/chunks/0n4z.7yu76je-.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"张雪峰列传 | 流年石刻"}],["$","meta","1",{"name":"description","content":"张子彪者，字雪峰，北地黑水人也。其地苦寒，民多质直。子彪少隽干，游学中州，受业于郑。 初，客燕京，佐士子大比之试，藉藉无名。子彪为人长喙锐目，捷给善辩。每论学，辄操乡音，语多谐谑，直指利害，略无隐讳。由是名闻太学，从者甚众。 方是时，天下殷…"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.svg"}],["$","$L5","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"JVx_HPQEeh9BNn_LZN_lJ"}
